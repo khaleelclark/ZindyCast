@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "observed": 8,
+  "catalog": 1,
+  "tiles": [
+    "/api/v1/maps/libre/tiles/1789237200/7/35/53.png",
+    "/api/v1/maps/libre/tiles/1789237200/7/34/53.png",
+    "/api/v1/maps/libre/tiles/1789237200/7/35/52.png",
+    "/api/v1/maps/libre/tiles/1789237200/7/34/52.png",
+    "/api/v1/maps/libre/tiles/1789237200/7/36/53.png",
+    "/api/v1/maps/libre/tiles/1789237200/7/36/52.png",
+    "/api/v1/maps/libre/tiles/1789237200/7/33/53.png",
+    "/api/v1/maps/libre/tiles/1789237200/7/33/52.png",
+    "/api/v1/maps/libre/tiles/1789237800/7/35/53.png",
+    "/api/v1/maps/libre/tiles/1789237800/7/34/53.png",
+    "/api/v1/maps/libre/tiles/1789237800/7/35/52.png",
+    "/api/v1/maps/libre/tiles/1789237800/7/34/52.png",
+    "/api/v1/maps/libre/tiles/1789237800/7/36/53.png",
+    "/api/v1/maps/libre/tiles/1789237800/7/36/52.png",
+    "/api/v1/maps/libre/tiles/1789237800/7/33/53.png",
+    "/api/v1/maps/libre/tiles/1789237800/7/33/52.png"
+  ],
+  "noaa": 1,
+  "forecast": 0,
+  "mapbox": 0,
+  "external": [],
+  "errors": [],
+  "scope": "Live Libre through deployed API only; other weather and basemap fixture, max1catalog16tiles."
+}

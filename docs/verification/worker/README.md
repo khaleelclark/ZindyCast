@@ -1,0 +1,52 @@
+# H3 comparison worker integration — September 11, 2026
+
+Bounded implementation verified with synthetic provider injection and temporary SQLite databases. No live provider calls, worker service launches, installs, remote changes or notifications. Research evidence remains untouched. The reconciliation follow-up additionally owns `packages/jobs/src` and `packages/installations/src`.
+
+## Interface and operation
+
+`ComparisonWorker({jobs, installations, storage, fetchHistory?, clock?, owner?, pollMs?}).runOnce(shutdownSignal?)` handles at most one `comparison-v1` job and returns `idle`, `handled`, or `busy`. Errors acquiring a job or persisting failure/release can propagate; main logs only fixed generic status and continues with a one-second delay. Never log payloads, credentials, URLs or lease tokens. `historyCacheKey(query)` exports the exact shared identity.
+
+Main preserves minute cleanup, adds jobs/installation expiry cleanup, and opens:
+
+- `ZINDYCAST_DB_PATH`, default `var/coordination.sqlite`, with `APP_PROVIDER_LIMITS`.
+- `ZINDYCAST_JOBS_PATH`, default `var/jobs.sqlite`.
+- `ZINDYCAST_INSTALLATIONS_PATH`, default `var/installations.sqlite`.
+
+Paths are resolved from the working directory; API and worker must share paths and identical repository configuration. Directories use mode 0700 and process umask 0077. SIGTERM/SIGINT abort processing, await its return, then close databases. This code does not install or launch a supervised service.
+
+A job has the strict `ComparisonQuerySchema` payload with no bearer: 2–5 distinct locations, 1–366 common UTC dates, and at most 60 sequential chunks. The closing precipitation date must be at most UTC today minus five days. This worker does not implement decade/30-year products or heat categories. Result aggregation preserves requested ERA5/unknown constituent, grid consistency, SI units, null coverage and UTC interval semantics, and parses `ComparisonResultSchema` before fenced completion.
+
+Each attempt is capped at 15 minutes and the persisted job expiry. Job lease is 30 seconds; ownership/state/token/expiry are checked between stages and every 250ms during asynchronous work (test injection allows 5–1000ms). Renewal occurs once less than 20 seconds remain. Polling is subject to event-loop scheduling and bounded SQLite lock delays, so it is not a hard real-time revocation guarantee. Synchronous aggregation cannot be preempted, but publication is checked afterward.
+
+The cache key is exactly `history:era5:5fields:utc:v1:` plus JSON with property order latitude, longitude, startDate, endDate. Fresh entries only; every chunk gets runtime schema, selection, nonfuture retrieval and fixed request URL/model/variables/units checks before progress/cache publication. Missing/stale cache acquires a 20-second refresh lease and rereads cache. Before each upstream call, reserve `ceil(inclusiveDays/14)` Open-Meteo weighted calls. No refunds, no unbudgeted fallbacks, no implicit retries. Requests are abort-raced with a 10-second worker limit (the real adapter also has its own 8-second limit). One-day cache expiry is measured from provider retrieval, never reception or job completion. Expired responses, failed cache writes, invalid cache data, storage errors, quota denial and held refresh leases fail the job; they do not trigger parallel or alternate fetching.
+
+Revoked/absent ownership cancels the acquired job. External cancellation aborts in-flight work and fences results. Confirmed completed/failed/cancelled jobs release admission while preserving retained lookup ownership. Shutdown leaves the running lease and admission intact; after lease expiry the repository may recover the job using a remaining explicit attempt. Validated completed chunks remain reusable in cache. No automatic retry of failed jobs. Released same-ID retries are incompatible with current admission; API should create a newly reserved job.
+
+## Checks
+
+`node_modules/.bin/tsx --test apps/worker/src/*.test.ts` — 11/11 pass; [full TAP](tests.tap). `npm run typecheck` and `npm run build` pass. Node 22.22.1 emits the expected experimental SQLite warning. Root test glob currently excludes worker tests; lead should add `apps/worker/src/*.test.ts` to root test command.
+
+Tests use two independent jobs connections, mocked provider calls and temporary databases. Coverage includes sequential completion/result validation; exact shared cache reuse; cancellation and revocation during pending requests; unowned jobs; latest-date padding; quota denial; malformed cache/provenance; injected storage failure; refresh lease contention/expiry; shutdown and recovery reusing one completed chunk; takeover rejecting late results; renewal and same-instance concurrency; 31-day weight3 plus closing-date weight1 charging. Synthetic values are confined to tests. Retained history evidence supplies fixture metadata only.
+
+## Remaining integration and operational gates
+
+No cross-database transaction or exactly-once guarantee. Revocation can race between final ownership read and completion: API authorization must always enforce current credentials and ownership before returning any result. A crash between terminal job commit and admission release is now recovered by the bounded reconciliation described below. Missing job rows remain ambiguous and charged until mapping expiry.
+
+Main maintenance handles bounded terminal orphan reconciliation, expiry and checkpoint attempts, not backup/restore, disk compaction or pinned-reader WAL growth. Existing repository disk/WAL limitations apply. Fair per-installation scheduling and reserved current-weather quota headroom remain unimplemented. One job at a time applies per worker instance/process; multiple independently launched workers can handle distinct jobs concurrently, while shared quota and per-job/cache leases still coordinate.
+
+No physical-device, browser, live-upstream, service deployment, abrupt process-kill, disk-full, cross-process end-to-end or supervisor restart acceptance is claimed. The deterministic suite verifies cooperative abort/recovery and database coordination. API registration/rate/security, job result/export authorization, user-visible failure wording and full H3 scientific products remain lead integration work.
+
+
+## H3 terminal admission reconciliation follow-up
+
+`InstallationRepository.listActiveJobIds(batchSize=100, afterId?)` is TRUSTED maintenance enumeration, not caller authorization. It returns at most 1–1000 unexpired active mapping IDs in SQLite lexicographic order, including revoked owners. No bearer, payload, result, or lease is returned. It validates the cursor. Retained released ownership and HTTP authentication semantics are unchanged.
+
+`JobRepository.closeTerminalAdmission(id): boolean` checks a retained unexpired terminal row in `BEGIN IMMEDIATE` and commits an idempotent permanent retry fence. It returns false for queued, running (including expired leases), expired, or absent jobs. This avoids decoding large JSON. `retry` now returns false for fenced jobs, even with remaining attempts. A retry committed first leaves a queued job and prevents fencing/release; a fence committed first prevents retry. The additive `zc_jobs_admission_closed` table has at most one small row per job, with foreign-key cascade on job cleanup. No existing job payload or result changes. Both API and worker must be stopped and updated together: old executable versions do not honor the new fence. Do not roll back one process independently.
+
+`AdmissionReconciler(jobs, installations).runBatch(batchSize=100)` returns `{examined,released}`. It advances a private in-memory keyset cursor only after successful processing, wraps after a short page, and restarts safely from the beginning after process restart. Thus retained absent/active reservations cannot permanently hide later terminal rows. A full last page may need one empty batch to wrap. New IDs behind the cursor are visited on the next sweep. Main invokes one batch of 100 at startup and each minute before existing cleanup. Repository limits bound the full sweep; this is eventual maintenance, not instantaneous capacity recovery. An error propagates to the fixed maintenance failure log and leaves the page retryable.
+
+Every release occurs AFTER the retry-fence commit. A crash or installation-write failure between these commits leaves charged capacity with a nonretryable terminal job, repaired idempotently next sweep. Completion cleanup in `ComparisonWorker` uses the same fence-before-release sequence. There is no cross-DB transaction or exactly-once claim. API callers releasing a terminal job should also call `jobs.closeTerminalAdmission(id)` before `installations.releaseJob(id)`; definite enqueue failure remains a distinct authorized release case. API files were outside this assignment. Use new server-generated, never-reused job IDs and reserve/enqueue with the same expiry. Retry after admission release requires a new job ID/reservation; fenced readmission is not implemented.
+
+Reconciliation does not cancel queued/running jobs simply because a mapping is revoked, and never releases their admission. Worker ownership checks still cancel acquired/in-flight revoked jobs. Installation cleanup may remove revoked ownership; worker checks then fail closed. Already cancelled jobs and exhausted-attempt failures from acquire are reclaimed by the next sweep. Absent jobs, even old ones, remain charged until expiry: no grace duration can prove an enqueue did not pause between the two databases. This deliberately preserves reserve-before-enqueue safety. Expiry cleanup remains responsible for expired records.
+
+Validation: `node --import tsx --test packages/jobs/src/*.test.ts packages/installations/src/*.test.ts apps/worker/src/*.test.ts` passes 31/31 ([TAP](reconciliation-tests.tap)); `npm run typecheck` and `npm run build` pass. Five new temporary-database tests cover terminal-before-release orderly reopen, lookup isolation, exhausted acquire, external cancellation/revocation, pagination and bounds, absent/enqueue interleaving, queued/expired-running retention, both retry orderings, release failure, persistent retry fencing, and expiry cleanup. Existing 26 jobs/installation/worker tests remain passing. Tests use independent connections and deterministic interleavings; no simultaneous processes, abrupt crash, actual services, deployment, live provider calls, or production DB mutations were performed.

@@ -1,0 +1,27 @@
+{
+  "time": "2026-09-11T01:35:47.899Z",
+  "browser": "152.0.7977.75",
+  "results": [
+    {
+      "name": "geolocation denied retains manual search",
+      "status": "pass"
+    },
+    {
+      "name": "forecast provider failure stays isolated",
+      "status": "pass"
+    },
+    {
+      "name": "radar provider failure stays isolated",
+      "status": "pass"
+    },
+    {
+      "name": "Alaska radar and explicit global infrared",
+      "status": "pass"
+    },
+    {
+      "name": "Hawaii radar",
+      "status": "pass"
+    }
+  ],
+  "notes": "Forecast/map failure steps deliberately inject explicit error responses into this test browser only; all success weather uses deployed live API."
+}

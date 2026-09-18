@@ -1,0 +1,196 @@
+TAP version 13
+# Subtest: independent C oracle: dry
+ok 1 - independent C oracle: dry
+  ---
+  duration_ms: 2.625453
+  type: 'test'
+  ...
+# Subtest: independent C oracle: humid
+ok 2 - independent C oracle: humid
+  ---
+  duration_ms: 1.183051
+  type: 'test'
+  ...
+# Subtest: independent C oracle: night
+ok 3 - independent C oracle: night
+  ---
+  duration_ms: 0.177837
+  type: 'test'
+  ...
+# Subtest: independent C oracle: wind-0
+ok 4 - independent C oracle: wind-0
+  ---
+  duration_ms: 0.346797
+  type: 'test'
+  ...
+# Subtest: independent C oracle: wind-0.12
+ok 5 - independent C oracle: wind-0.12
+  ---
+  duration_ms: 0.20591
+  type: 'test'
+  ...
+# Subtest: independent C oracle: wind-0.13
+ok 6 - independent C oracle: wind-0.13
+  ---
+  duration_ms: 0.172116
+  type: 'test'
+  ...
+# Subtest: independent C oracle: wind-0.14
+ok 7 - independent C oracle: wind-0.14
+  ---
+  duration_ms: 0.249392
+  type: 'test'
+  ...
+# Subtest: independent C oracle: pressure-1013.25
+ok 8 - independent C oracle: pressure-1013.25
+  ---
+  duration_ms: 0.182686
+  type: 'test'
+  ...
+# Subtest: independent C oracle: pressure-850
+ok 9 - independent C oracle: pressure-850
+  ---
+  duration_ms: 0.438942
+  type: 'test'
+  ...
+# Subtest: independent C oracle: pressure-750
+ok 10 - independent C oracle: pressure-750
+  ---
+  duration_ms: 0.45954
+  type: 'test'
+  ...
+# Subtest: independent C oracle: sunrise-11:00
+ok 11 - independent C oracle: sunrise-11:00
+  ---
+  duration_ms: 0.143692
+  type: 'test'
+  ...
+# Subtest: independent C oracle: sunrise-11:30
+ok 12 - independent C oracle: sunrise-11:30
+  ---
+  duration_ms: 0.118945
+  type: 'test'
+  ...
+# Subtest: independent C oracle: sunrise-12:00
+ok 13 - independent C oracle: sunrise-12:00
+  ---
+  duration_ms: 0.112423
+  type: 'test'
+  ...
+# Subtest: independent C oracle: sunset-00:00
+ok 14 - independent C oracle: sunset-00:00
+  ---
+  duration_ms: 0.113014
+  type: 'test'
+  ...
+# Subtest: independent C oracle: sunset-01:00
+ok 15 - independent C oracle: sunset-01:00
+  ---
+  duration_ms: 0.107694
+  type: 'test'
+  ...
+# Subtest: independent C oracle: sunset-02:00
+ok 16 - independent C oracle: sunset-02:00
+  ---
+  duration_ms: 0.124446
+  type: 'test'
+  ...
+# Subtest: independent C oracle: alaska-summer
+ok 17 - independent C oracle: alaska-summer
+  ---
+  duration_ms: 0.130217
+  type: 'test'
+  ...
+# Subtest: independent C oracle: alaska-winter
+ok 18 - independent C oracle: alaska-winter
+  ---
+  duration_ms: 0.194258
+  type: 'test'
+  ...
+# Subtest: independent C oracle: hawaii
+ok 19 - independent C oracle: hawaii
+  ---
+  duration_ms: 0.160174
+  type: 'test'
+  ...
+# Subtest: independent C oracle: calendar-1950-01-01T00:00:00Z
+ok 20 - independent C oracle: calendar-1950-01-01T00:00:00Z
+  ---
+  duration_ms: 0.169802
+  type: 'test'
+  ...
+# Subtest: independent C oracle: calendar-1991-06-15T20:00:00Z
+ok 21 - independent C oracle: calendar-1991-06-15T20:00:00Z
+  ---
+  duration_ms: 0.163801
+  type: 'test'
+  ...
+# Subtest: independent C oracle: calendar-2000-02-29T12:00:00Z
+ok 22 - independent C oracle: calendar-2000-02-29T12:00:00Z
+  ---
+  duration_ms: 0.17431
+  type: 'test'
+  ...
+# Subtest: independent C oracle: calendar-2020-12-31T23:59:00Z
+ok 23 - independent C oracle: calendar-2020-12-31T23:59:00Z
+  ---
+  duration_ms: 0.16906
+  type: 'test'
+  ...
+# Subtest: independent C oracle: calendar-2049-12-31T23:59:00Z
+ok 24 - independent C oracle: calendar-2049-12-31T23:59:00Z
+  ---
+  duration_ms: 0.209006
+  type: 'test'
+  ...
+# Subtest: independent C oracle: saturated
+ok 25 - independent C oracle: saturated
+  ---
+  duration_ms: 0.133553
+  type: 'test'
+  ...
+# Subtest: independent C oracle: strong-wind
+ok 26 - independent C oracle: strong-wind
+  ---
+  duration_ms: 0.179039
+  type: 'test'
+  ...
+# Subtest: independent C oracle: solar-cap
+ok 27 - independent C oracle: solar-cap
+  ---
+  duration_ms: 0.192926
+  type: 'test'
+  ...
+# Subtest: independent C oracle: stress
+ok 28 - independent C oracle: stress
+  ---
+  duration_ms: 0.305739
+  type: 'test'
+  ...
+# Subtest: invalid, missing, unsupported and temporal inputs are explicit
+ok 29 - invalid, missing, unsupported and temporal inputs are explicit
+  ---
+  duration_ms: 0.296832
+  type: 'test'
+  ...
+# Subtest: floor, cap, extrapolation and provenance remain visible
+ok 30 - floor, cap, extrapolation and provenance remain visible
+  ---
+  duration_ms: 0.467295
+  type: 'test'
+  ...
+# Subtest: activity guidance is separate from metrics and never creates a category
+ok 31 - activity guidance is separate from metrics and never creates a category
+  ---
+  duration_ms: 0.480981
+  type: 'test'
+  ...
+1..31
+# tests 31
+# suites 0
+# pass 31
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 351.755523

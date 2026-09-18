@@ -1,0 +1,204 @@
+TAP version 13
+# (node:752249) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: sequential completion, validated result, shared cache identity and terminal admission release
+ok 1 - sequential completion, validated result, shared cache identity and terminal admission release
+  ---
+  duration_ms: 52.088429
+  type: 'test'
+  ...
+# Subtest: cancel from another actor aborts in-flight work and prevents publication
+ok 2 - cancel from another actor aborts in-flight work and prevents publication
+  ---
+  duration_ms: 10.817315
+  type: 'test'
+  ...
+# Subtest: revoke from another actor aborts in-flight work and prevents publication
+ok 3 - revoke from another actor aborts in-flight work and prevents publication
+  ---
+  duration_ms: 9.840775
+  type: 'test'
+  ...
+# Subtest: unowned payload and too-recent closing padding make no provider calls
+ok 4 - unowned payload and too-recent closing padding make no provider calls
+  ---
+  duration_ms: 5.79822
+  type: 'test'
+  ...
+# Subtest: quota denial and corrupt cached data fail closed without network fallback
+ok 5 - quota denial and corrupt cached data fail closed without network fallback
+  ---
+  duration_ms: 8.559419
+  type: 'test'
+  ...
+# Subtest: shutdown aborts and leaves running lease/admission recoverable; next attempt reuses validated chunks
+ok 6 - shutdown aborts and leaves running lease/admission recoverable; next attempt reuses validated chunks
+  ---
+  duration_ms: 19.350353
+  type: 'test'
+  ...
+# Subtest: lease takeover fences old result and retains new running admission
+ok 7 - lease takeover fences old result and retains new running admission
+  ---
+  duration_ms: 7.937581
+  type: 'test'
+  ...
+# Subtest: heartbeat renews during provider work and runOnce excludes same-instance concurrency
+ok 8 - heartbeat renews during provider work and runOnce excludes same-instance concurrency
+  ---
+  duration_ms: 44.743119
+  type: 'test'
+  ...
+# Subtest: 31-day chunks charge weight three and padding weight one before each request
+ok 9 - 31-day chunks charge weight three and padding weight one before each request
+  ---
+  duration_ms: 41.84442
+  type: 'test'
+  ...
+# Subtest: storage read failure and held cache lease fail without provider work
+ok 10 - storage read failure and held cache lease fail without provider work
+  ---
+  duration_ms: 6.72725
+  type: 'test'
+  ...
+# Subtest: wrong provenance and expired cache write lease are rejected before progress/publication
+ok 11 - wrong provenance and expired cache write lease are rejected before progress/publication
+  ---
+  duration_ms: 10.094826
+  type: 'test'
+  ...
+# (node:752250) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: terminal-before-release restart, idempotent reconciliation and retained lookup isolation
+ok 12 - terminal-before-release restart, idempotent reconciliation and retained lookup isolation
+  ---
+  duration_ms: 11.579367
+  type: 'test'
+  ...
+# Subtest: exhausted acquire failure and external queued cancellation release even after revocation
+ok 13 - exhausted acquire failure and external queued cancellation release even after revocation
+  ---
+  duration_ms: 5.118714
+  type: 'test'
+  ...
+# Subtest: keyset pages retain ambiguous absent, queued and expired-running reservations without starvation
+ok 14 - keyset pages retain ambiguous absent, queued and expired-running reservations without starvation
+  ---
+  duration_ms: 7.187621
+  type: 'test'
+  ...
+# Subtest: retry before fence retains queued admission; committed fence survives release failure and restart
+ok 15 - retry before fence retains queued admission; committed fence survives release failure and restart
+  ---
+  duration_ms: 6.181105
+  type: 'test'
+  ...
+# Subtest: failed job with attempts left cannot retry between fence and release
+ok 16 - failed job with attempts left cannot retry between fence and release
+  ---
+  duration_ms: 4.51464
+  type: 'test'
+  ...
+# (node:752251) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: registration authenticates with digest only; malformed, wrong, unknown and ID-only credentials denied
+ok 17 - registration authenticates with digest only; malformed, wrong, unknown and ID-only credentials denied
+  ---
+  duration_ms: 8.219785
+  type: 'test'
+  ...
+# Subtest: two connections enforce ownership, active admission and terminal release without changing read ownership
+ok 18 - two connections enforce ownership, active admission and terminal release without changing read ownership
+  ---
+  duration_ms: 3.805897
+  type: 'test'
+  ...
+# Subtest: revocation and deletion immediately fence other connections and cleanup removes revoked records
+ok 19 - revocation and deletion immediately fence other connections and cleanup removes revoked records
+  ---
+  duration_ms: 3.687563
+  type: 'test'
+  ...
+# Subtest: expiry is exact across restart and orphan reservation remains charged until expiry
+ok 20 - expiry is exact across restart and orphan reservation remains charged until expiry
+  ---
+  duration_ms: 2.868963
+  type: 'test'
+  ...
+# Subtest: installation and mapping count limits persist across connections; release does not bypass retention cap
+ok 21 - installation and mapping count limits persist across connections; release does not bypass retention cap
+  ---
+  duration_ms: 3.660282
+  type: 'test'
+  ...
+# Subtest: bad input, different persistent config, rollback and lock contention fail closed
+ok 22 - bad input, different persistent config, rollback and lock contention fail closed
+  ---
+  duration_ms: 13.906093
+  type: 'test'
+  ...
+# (node:752252) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: independent connections compete, recover at exact expiry, and fence all late writes
+ok 23 - independent connections compete, recover at exact expiry, and fence all late writes
+  ---
+  duration_ms: 9.345828
+  type: 'test'
+  ...
+# Subtest: progress monotonic per attempt, renew never shortens or revives expired lease
+ok 24 - progress monotonic per attempt, renew never shortens or revives expired lease
+  ---
+  duration_ms: 2.615272
+  type: 'test'
+  ...
+# Subtest: explicit bounded retry and delayed availability survive orderly restart
+ok 25 - explicit bounded retry and delayed availability survive orderly restart
+  ---
+  duration_ms: 3.213555
+  type: 'test'
+  ...
+# Subtest: expired final attempt becomes failed and restart recovers abandoned running work
+ok 26 - expired final attempt becomes failed and restart recovers abandoned running work
+  ---
+  duration_ms: 3.878484
+  type: 'test'
+  ...
+# Subtest: cancel queued/running is terminal and fences late completion
+ok 27 - cancel queued/running is terminal and fences late completion
+  ---
+  duration_ms: 3.546205
+  type: 'test'
+  ...
+# Subtest: fixed lifetime hides all expired states, clamps lease, and cleanup is bounded
+ok 28 - fixed lifetime hides all expired states, clamps lease, and cleanup is bounded
+  ---
+  duration_ms: 4.021576
+  type: 'test'
+  ...
+# Subtest: JSON, job count and combined byte limits fail atomically; duplicate id never overwrites
+ok 29 - JSON, job count and combined byte limits fail atomically; duplicate id never overwrites
+  ---
+  duration_ms: 3.200802
+  type: 'test'
+  ...
+# Subtest: configuration and backwards clock fail closed; kind filtering and input bounds
+ok 30 - configuration and backwards clock fail closed; kind filtering and input bounds
+  ---
+  duration_ms: 2.660287
+  type: 'test'
+  ...
+# Subtest: busy writer fails within configured timeout without changing job
+ok 31 - busy writer fails within configured timeout without changing job
+  ---
+  duration_ms: 23.029941
+  type: 'test'
+  ...
+1..31
+# tests 31
+# suites 0
+# pass 31
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 662.632857

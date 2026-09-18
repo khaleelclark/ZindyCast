@@ -1,0 +1,64 @@
+TAP version 13
+# Subtest: map selection keeps independent sorted advertised timelines and regional radar
+ok 1 - map selection keeps independent sorted advertised timelines and regional radar
+  ---
+  duration_ms: 2.495977
+  type: 'test'
+  ...
+# Subtest: geographic marker uses CRS84 orientation and excludes outside bounds without wrapping antimeridian
+ok 2 - geographic marker uses CRS84 orientation and excludes outside bounds without wrapping antimeridian
+  ---
+  duration_ms: 0.312101
+  type: 'test'
+  ...
+# Subtest: frame validation rejects mismatched product/time and preserves unknown coverage/time warnings
+ok 3 - frame validation rejects mismatched product/time and preserves unknown coverage/time warnings
+  ---
+  duration_ms: 3.22635
+  type: 'test'
+  ...
+# Subtest: bounded frame memory revokes least-recently-used URLs, replacement and disposal
+ok 4 - bounded frame memory revokes least-recently-used URLs, replacement and disposal
+  ---
+  duration_ms: 0.558418
+  type: 'test'
+  ...
+# Subtest: interactive overlay requires explicit Mercator and nonwrapping geographic corners
+ok 5 - interactive overlay requires explicit Mercator and nonwrapping geographic corners
+  ---
+  duration_ms: 5.42346
+  type: 'test'
+  ...
+# Subtest: weather source identity survives loading, frame changes and failure without worker removal races
+ok 6 - weather source identity survives loading, frame changes and failure without worker removal races
+  ---
+  duration_ms: 1.625438
+  type: 'test'
+  ...
+# Subtest: recent playback timeline is capped, chronological and uses only advertised instants
+ok 7 - recent playback timeline is capped, chronological and uses only advertised instants
+  ---
+  duration_ms: 4.012158
+  type: 'test'
+  ...
+# Subtest: persistent radar sample colors match retained NOAA style, not invented rainfall classes
+ok 8 - persistent radar sample colors match retained NOAA style, not invented rainfall classes
+  ---
+  duration_ms: 3.803623
+  type: 'test'
+  ...
+# Subtest: actual mobile browser playback, keyboard scrub, pause, quota and URL cleanup
+ok 9 - actual mobile browser playback, keyboard scrub, pause, quota and URL cleanup
+  ---
+  duration_ms: 18830.217428
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 20270.268546

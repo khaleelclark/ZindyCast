@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "mapboxRequests": 6,
+  "osmRequests": 19,
+  "responses": [
+    {
+      "path": "/styles/v1/mapbox/streets-v12/tiles/512/7/36/52@2x",
+      "status": 200
+    },
+    {
+      "path": "/styles/v1/mapbox/streets-v12/tiles/512/7/36/53@2x",
+      "status": 200
+    },
+    {
+      "path": "/styles/v1/mapbox/streets-v12/tiles/512/7/34/53@2x",
+      "status": 200
+    },
+    {
+      "path": "/styles/v1/mapbox/streets-v12/tiles/512/7/34/52@2x",
+      "status": 200
+    },
+    {
+      "path": "/styles/v1/mapbox/streets-v12/tiles/512/7/35/52@2x",
+      "status": 200
+    },
+    {
+      "path": "/styles/v1/mapbox/streets-v12/tiles/512/7/35/53@2x",
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "sameCanvas": true,
+  "sameCameraMarker": true,
+  "fallback": "simulated 503 after successful live Mapbox",
+  "weather": "retained fixtures only",
+  "limitations": "Live Mapbox basemap at 1100x900; no live weather or physical-device validation."
+}

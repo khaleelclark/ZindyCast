@@ -1,0 +1,269 @@
+{
+  "url": "http://127.0.0.1:4311/api/v1/forecast?latitude=28.858&longitude=-81.17&name=Deltona&timezone=America%2FNew_York",
+  "startedAt": "2026-09-12T20:05:39.452Z",
+  "completedAt": "2026-09-12T20:05:40.298Z",
+  "durationMs": 844,
+  "status": 200,
+  "headers": {
+    "cache-control": "no-store",
+    "connection": "keep-alive",
+    "content-length": "605561",
+    "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://tile.openstreetmap.org https://api.mapbox.com; connect-src 'self' blob: https://tile.openstreetmap.org https://api.mapbox.com; worker-src 'self'; font-src 'self' data:; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Sat, 12 Sep 2026 20:05:40 GMT",
+    "keep-alive": "timeout=5, max=100",
+    "permissions-policy": "camera=(), microphone=(), payment=(), geolocation=(self)",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "DENY"
+  },
+  "localForecastRequests": 1,
+  "maxUpstreamRequests": 1,
+  "maxWeightedCost": 2,
+  "retries": 0,
+  "freshness": "fresh",
+  "provenance": {
+    "provider": "Open-Meteo",
+    "dataset": "Forecast API (best match; constituent models not supplied)",
+    "classification": "modeled",
+    "retrievedAt": "2026-09-12T20:05:40.194Z",
+    "sourceIssuedAt": null,
+    "sourceCoordinates": {
+      "latitude": 28.86714,
+      "longitude": -81.1616
+    },
+    "attribution": "Weather data by Open-Meteo (https://open-meteo.com/), CC BY 4.0"
+  },
+  "location": {
+    "latitude": 28.858,
+    "longitude": -81.17,
+    "id": "28.858,-81.17",
+    "name": "Deltona",
+    "country": "",
+    "timezone": "America/New_York"
+  },
+  "hours": [
+    {
+      "isDay": 1,
+      "shortwaveInstantWm2": 261.7,
+      "shortwaveMeanWm2": 274,
+      "wbgt": {
+        "status": "success",
+        "valueC": 29.71278529639308,
+        "reason": null,
+        "policyVersion": "liljegren-1.1-zindy-ts-1+fao56-eq47-10m+om-instant-v1",
+        "exposure": "modeled_outdoor_short_grass_reference",
+        "wind10mMs": 1.49,
+        "wind2mMs": 1.1144471020002367,
+        "radiationDerivation": "provider_instant_derived_from_preceding_hour_mean",
+        "diagnostics": {
+          "calculationVersion": "liljegren-1.1-zindy-ts-1",
+          "referenceRevision": "cd672a886880b67f3f27bdbf75038d8f7ff0bac2",
+          "input": {
+            "time": "2026-09-12T19:00:00.000Z",
+            "latitude": 28.86714,
+            "longitude": -81.1616,
+            "temperatureC": 29.8,
+            "humidityPercent": 76,
+            "surfacePressureHpa": 1013.2,
+            "wind2mMs": 1.1144471020002367,
+            "ghiWm2": 261.7,
+            "windAssumption": "FAO-56 equation 47; short-grass reference; u2=u10*4.87/ln(67.8*10-5.42); no local shelter or stability inference",
+            "radiationAssumption": "instantaneous",
+            "source": "Open-Meteo Forecast API (best match; constituent models not supplied)"
+          },
+          "windUsedMs": 1.1144471020002367,
+          "windFloored": false,
+          "ghiUsedWm2": 261.7,
+          "ghiCapped": false,
+          "cosineSolarZenith": 0.8264606422875426,
+          "directFraction": 0.012941608519261107,
+          "warnings": [
+            "modeled outdoor sensors; surface temperature equals air temperature"
+          ],
+          "globe": {
+            "status": "success",
+            "temperatureC": 36.97489590342997,
+            "iterations": 17
+          },
+          "naturalWetBulb": {
+            "status": "success",
+            "temperatureC": 27.625437308152982,
+            "iterations": 11
+          },
+          "psychrometricWetBulb": {
+            "status": "success",
+            "temperatureC": 26.206233295366417,
+            "iterations": 11
+          }
+        }
+      },
+      "time": "2026-09-12T19:00:00.000Z",
+      "temperatureC": 29.8,
+      "apparentTemperatureC": 35.8,
+      "humidityPercent": 76,
+      "precipitationMm": 0.4,
+      "precipitationProbability": 20,
+      "windSpeedMs": 1.49,
+      "windGustMs": 2.4,
+      "windDirectionDeg": 228,
+      "weatherCode": 51,
+      "ordinaryWetBulbC": 26.3,
+      "dewPointC": 25.1,
+      "surfacePressureHpa": 1013.2,
+      "cloudCoverPercent": 100,
+      "visibilityM": 19000,
+      "uvIndex": 2.75,
+      "temperatureF": 85.64,
+      "apparentTemperatureF": 96.44
+    },
+    {
+      "isDay": 1,
+      "shortwaveInstantWm2": 115.3,
+      "shortwaveMeanWm2": 126,
+      "wbgt": {
+        "status": "success",
+        "valueC": 27.13277546495081,
+        "reason": null,
+        "policyVersion": "liljegren-1.1-zindy-ts-1+fao56-eq47-10m+om-instant-v1",
+        "exposure": "modeled_outdoor_short_grass_reference",
+        "wind10mMs": 4.9,
+        "wind2mMs": 3.6649602683229263,
+        "radiationDerivation": "provider_instant_derived_from_preceding_hour_mean",
+        "diagnostics": {
+          "calculationVersion": "liljegren-1.1-zindy-ts-1",
+          "referenceRevision": "cd672a886880b67f3f27bdbf75038d8f7ff0bac2",
+          "input": {
+            "time": "2026-09-12T20:00:00.000Z",
+            "latitude": 28.86714,
+            "longitude": -81.1616,
+            "temperatureC": 27.6,
+            "humidityPercent": 89,
+            "surfacePressureHpa": 1012.9,
+            "wind2mMs": 3.6649602683229263,
+            "ghiWm2": 115.3,
+            "windAssumption": "FAO-56 equation 47; short-grass reference; u2=u10*4.87/ln(67.8*10-5.42); no local shelter or stability inference",
+            "radiationAssumption": "instantaneous",
+            "source": "Open-Meteo Forecast API (best match; constituent models not supplied)"
+          },
+          "windUsedMs": 3.6649602683229263,
+          "windFloored": false,
+          "ghiUsedWm2": 115.3,
+          "ghiCapped": false,
+          "cosineSolarZenith": 0.7045330554591082,
+          "directFraction": 0.00002100742007921552,
+          "warnings": [
+            "modeled outdoor sensors; surface temperature equals air temperature"
+          ],
+          "globe": {
+            "status": "success",
+            "temperatureC": 29.4923410639355,
+            "iterations": 8
+          },
+          "naturalWetBulb": {
+            "status": "success",
+            "temperatureC": 26.39186750309102,
+            "iterations": 10
+          },
+          "psychrometricWetBulb": {
+            "status": "success",
+            "temperatureC": 26.09135611312354,
+            "iterations": 9
+          }
+        }
+      },
+      "time": "2026-09-12T20:00:00.000Z",
+      "temperatureC": 27.6,
+      "apparentTemperatureC": 32.2,
+      "humidityPercent": 89,
+      "precipitationMm": 0.4,
+      "precipitationProbability": 25,
+      "windSpeedMs": 4.9,
+      "windGustMs": 6.5,
+      "windDirectionDeg": 92,
+      "weatherCode": 51,
+      "ordinaryWetBulbC": 26.1,
+      "dewPointC": 25.6,
+      "surfacePressureHpa": 1012.9,
+      "cloudCoverPercent": 100,
+      "visibilityM": 14900,
+      "uvIndex": 1.7,
+      "temperatureF": 81.68,
+      "apparentTemperatureF": 89.96000000000001
+    },
+    {
+      "isDay": 1,
+      "shortwaveInstantWm2": 62.8,
+      "shortwaveMeanWm2": 73,
+      "wbgt": {
+        "status": "success",
+        "valueC": 25.79463539936386,
+        "reason": null,
+        "policyVersion": "liljegren-1.1-zindy-ts-1+fao56-eq47-10m+om-instant-v1",
+        "exposure": "modeled_outdoor_short_grass_reference",
+        "wind10mMs": 0.36,
+        "wind2mMs": 0.26926238706045985,
+        "radiationDerivation": "provider_instant_derived_from_preceding_hour_mean",
+        "diagnostics": {
+          "calculationVersion": "liljegren-1.1-zindy-ts-1",
+          "referenceRevision": "cd672a886880b67f3f27bdbf75038d8f7ff0bac2",
+          "input": {
+            "time": "2026-09-12T21:00:00.000Z",
+            "latitude": 28.86714,
+            "longitude": -81.1616,
+            "temperatureC": 26.2,
+            "humidityPercent": 86,
+            "surfacePressureHpa": 1014.1,
+            "wind2mMs": 0.26926238706045985,
+            "ghiWm2": 62.8,
+            "windAssumption": "FAO-56 equation 47; short-grass reference; u2=u10*4.87/ln(67.8*10-5.42); no local shelter or stability inference",
+            "radiationAssumption": "instantaneous",
+            "source": "Open-Meteo Forecast API (best match; constituent models not supplied)"
+          },
+          "windUsedMs": 0.26926238706045985,
+          "windFloored": false,
+          "ghiUsedWm2": 62.8,
+          "ghiCapped": false,
+          "cosineSolarZenith": 0.5369126330912825,
+          "directFraction": 9.621055831003293e-8,
+          "warnings": [
+            "modeled outdoor sensors; surface temperature equals air temperature"
+          ],
+          "globe": {
+            "status": "success",
+            "temperatureC": 28.135372838416686,
+            "iterations": 21
+          },
+          "naturalWetBulb": {
+            "status": "success",
+            "temperatureC": 25.06794404525789,
+            "iterations": 11
+          },
+          "psychrometricWetBulb": {
+            "status": "success",
+            "temperatureC": 24.311252887421517,
+            "iterations": 11
+          }
+        }
+      },
+      "time": "2026-09-12T21:00:00.000Z",
+      "temperatureC": 26.2,
+      "apparentTemperatureC": 31.9,
+      "humidityPercent": 86,
+      "precipitationMm": 0,
+      "precipitationProbability": 38,
+      "windSpeedMs": 0.36,
+      "windGustMs": 2.9,
+      "windDirectionDeg": 34,
+      "weatherCode": 3,
+      "ordinaryWetBulbC": 24.3,
+      "dewPointC": 23.7,
+      "surfacePressureHpa": 1014.1,
+      "cloudCoverPercent": 100,
+      "visibilityM": 15900,
+      "uvIndex": 0.55,
+      "temperatureF": 79.16,
+      "apparentTemperatureF": 89.42
+    }
+  ]
+}

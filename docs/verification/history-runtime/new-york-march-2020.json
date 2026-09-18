@@ -1,0 +1,7494 @@
+{
+  "query": {
+    "latitude": 40.7128,
+    "longitude": -74.006,
+    "startDate": "2020-03-01",
+    "endDate": "2020-03-31"
+  },
+  "timezone": "UTC",
+  "provenance": {
+    "provider": "Open-Meteo",
+    "dataset": "ERA5 (requested)",
+    "requestedModel": "era5",
+    "constituent": null,
+    "classification": "modeled_reanalysis",
+    "sourceCoordinates": {
+      "latitude": 40.75,
+      "longitude": -74
+    },
+    "sourceElevationM": 32,
+    "retrievedAt": "2026-09-11T00:26:47.065Z",
+    "sourceIssuedAt": null,
+    "sourceUpdatedAt": null,
+    "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=40.7128&longitude=-74.006&start_date=2020-03-01&end_date=2020-03-31&models=era5&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Cwind_speed_10m%2Cdew_point_2m&timezone=GMT&timeformat=unixtime&temperature_unit=celsius&wind_speed_unit=ms&precipitation_unit=mm&cell_selection=land",
+    "sourceUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+    "attribution": "Weather data by Open-Meteo; ERA5 by Copernicus Climate Change Service (C3S) / ECMWF",
+    "cellSelection": "land",
+    "downscaling": "provider default elevation adjustment",
+    "calculationVersion": "reanalysis-adapter-v1"
+  },
+  "units": {
+    "temperatureC": "°C",
+    "humidityPercent": "%",
+    "precipitationMm": "mm",
+    "windSpeedMs": "m/s",
+    "dewPointC": "°C"
+  },
+  "intervalSemantics": "instant meteorology; precipitation sum over preceding hour ending at time",
+  "hours": [
+    {
+      "time": "2020-03-01T00:00:00.000Z",
+      "temperatureC": -1,
+      "humidityPercent": 49,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.39,
+      "dewPointC": -10.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-01T01:00:00.000Z",
+      "temperatureC": -1.4,
+      "humidityPercent": 50,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.46,
+      "dewPointC": -10.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-01T02:00:00.000Z",
+      "temperatureC": -1.7,
+      "humidityPercent": 51,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.46,
+      "dewPointC": -10.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-01T03:00:00.000Z",
+      "temperatureC": -2.2,
+      "humidityPercent": 55,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.81,
+      "dewPointC": -10,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-01T04:00:00.000Z",
+      "temperatureC": -2.5,
+      "humidityPercent": 53,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.74,
+      "dewPointC": -10.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-01T05:00:00.000Z",
+      "temperatureC": -2.6,
+      "humidityPercent": 54,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.67,
+      "dewPointC": -10.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-01T06:00:00.000Z",
+      "temperatureC": -2.8,
+      "humidityPercent": 54,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.33,
+      "dewPointC": -10.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-01T07:00:00.000Z",
+      "temperatureC": -2.8,
+      "humidityPercent": 56,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.05,
+      "dewPointC": -10.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-01T08:00:00.000Z",
+      "temperatureC": -2.9,
+      "humidityPercent": 58,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.85,
+      "dewPointC": -10,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-01T09:00:00.000Z",
+      "temperatureC": -3,
+      "humidityPercent": 60,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.9,
+      "dewPointC": -9.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-01T10:00:00.000Z",
+      "temperatureC": -3.3,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.86,
+      "dewPointC": -9.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-01T11:00:00.000Z",
+      "temperatureC": -3.2,
+      "humidityPercent": 64,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.79,
+      "dewPointC": -9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-01T12:00:00.000Z",
+      "temperatureC": -3,
+      "humidityPercent": 65,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.89,
+      "dewPointC": -8.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-01T13:00:00.000Z",
+      "temperatureC": -1.9,
+      "humidityPercent": 57,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.19,
+      "dewPointC": -9.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-01T14:00:00.000Z",
+      "temperatureC": -1,
+      "humidityPercent": 54,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.66,
+      "dewPointC": -9.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-01T15:00:00.000Z",
+      "temperatureC": 1,
+      "humidityPercent": 48,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.14,
+      "dewPointC": -8.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-01T16:00:00.000Z",
+      "temperatureC": 1.8,
+      "humidityPercent": 45,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.11,
+      "dewPointC": -8.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-01T17:00:00.000Z",
+      "temperatureC": 2.9,
+      "humidityPercent": 42,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.01,
+      "dewPointC": -8.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-01T18:00:00.000Z",
+      "temperatureC": 3.8,
+      "humidityPercent": 37,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.32,
+      "dewPointC": -9.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-01T19:00:00.000Z",
+      "temperatureC": 4.6,
+      "humidityPercent": 36,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.11,
+      "dewPointC": -9.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-01T20:00:00.000Z",
+      "temperatureC": 5.3,
+      "humidityPercent": 35,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.09,
+      "dewPointC": -9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-01T21:00:00.000Z",
+      "temperatureC": 5.9,
+      "humidityPercent": 37,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.27,
+      "dewPointC": -7.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-01T22:00:00.000Z",
+      "temperatureC": 5.6,
+      "humidityPercent": 40,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.15,
+      "dewPointC": -6.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-01T23:00:00.000Z",
+      "temperatureC": 5.4,
+      "humidityPercent": 42,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.4,
+      "dewPointC": -6.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T00:00:00.000Z",
+      "temperatureC": 4.4,
+      "humidityPercent": 47,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.52,
+      "dewPointC": -6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T01:00:00.000Z",
+      "temperatureC": 3.6,
+      "humidityPercent": 51,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.43,
+      "dewPointC": -5.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T02:00:00.000Z",
+      "temperatureC": 2.8,
+      "humidityPercent": 57,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.21,
+      "dewPointC": -4.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T03:00:00.000Z",
+      "temperatureC": 1.9,
+      "humidityPercent": 64,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.13,
+      "dewPointC": -4.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T04:00:00.000Z",
+      "temperatureC": 1.5,
+      "humidityPercent": 67,
+      "precipitationMm": 0,
+      "windSpeedMs": 2,
+      "dewPointC": -3.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T05:00:00.000Z",
+      "temperatureC": 1.1,
+      "humidityPercent": 69,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.97,
+      "dewPointC": -3.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T06:00:00.000Z",
+      "temperatureC": 0.9,
+      "humidityPercent": 68,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.62,
+      "dewPointC": -4.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T07:00:00.000Z",
+      "temperatureC": 0.6,
+      "humidityPercent": 69,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.82,
+      "dewPointC": -4.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T08:00:00.000Z",
+      "temperatureC": 0.8,
+      "humidityPercent": 68,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.89,
+      "dewPointC": -4.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T09:00:00.000Z",
+      "temperatureC": 0.4,
+      "humidityPercent": 71,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.13,
+      "dewPointC": -4.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T10:00:00.000Z",
+      "temperatureC": 1.3,
+      "humidityPercent": 74,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.4,
+      "dewPointC": -2.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T11:00:00.000Z",
+      "temperatureC": 1.4,
+      "humidityPercent": 76,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.7,
+      "dewPointC": -2.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T12:00:00.000Z",
+      "temperatureC": 1.8,
+      "humidityPercent": 79,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.73,
+      "dewPointC": -1.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T13:00:00.000Z",
+      "temperatureC": 2.9,
+      "humidityPercent": 78,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.85,
+      "dewPointC": -0.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T14:00:00.000Z",
+      "temperatureC": 4.8,
+      "humidityPercent": 69,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.79,
+      "dewPointC": -0.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T15:00:00.000Z",
+      "temperatureC": 7.3,
+      "humidityPercent": 56,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.18,
+      "dewPointC": -0.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T16:00:00.000Z",
+      "temperatureC": 9.1,
+      "humidityPercent": 50,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.41,
+      "dewPointC": -0.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T17:00:00.000Z",
+      "temperatureC": 10.5,
+      "humidityPercent": 46,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.58,
+      "dewPointC": -0.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T18:00:00.000Z",
+      "temperatureC": 11.9,
+      "humidityPercent": 43,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.64,
+      "dewPointC": -0.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T19:00:00.000Z",
+      "temperatureC": 12.8,
+      "humidityPercent": 41,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.81,
+      "dewPointC": 0,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T20:00:00.000Z",
+      "temperatureC": 13.2,
+      "humidityPercent": 42,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.1,
+      "dewPointC": 0.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T21:00:00.000Z",
+      "temperatureC": 13,
+      "humidityPercent": 44,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.8,
+      "dewPointC": 1.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T22:00:00.000Z",
+      "temperatureC": 12,
+      "humidityPercent": 49,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.75,
+      "dewPointC": 1.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-02T23:00:00.000Z",
+      "temperatureC": 12.2,
+      "humidityPercent": 47,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.55,
+      "dewPointC": 1.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T00:00:00.000Z",
+      "temperatureC": 11.9,
+      "humidityPercent": 48,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.98,
+      "dewPointC": 1.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T01:00:00.000Z",
+      "temperatureC": 11.9,
+      "humidityPercent": 49,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.73,
+      "dewPointC": 1.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T02:00:00.000Z",
+      "temperatureC": 11.8,
+      "humidityPercent": 50,
+      "precipitationMm": 0.1,
+      "windSpeedMs": 4.88,
+      "dewPointC": 1.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T03:00:00.000Z",
+      "temperatureC": 11.4,
+      "humidityPercent": 59,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.74,
+      "dewPointC": 3.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T04:00:00.000Z",
+      "temperatureC": 11.4,
+      "humidityPercent": 61,
+      "precipitationMm": 0.1,
+      "windSpeedMs": 4.89,
+      "dewPointC": 4.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T05:00:00.000Z",
+      "temperatureC": 11.6,
+      "humidityPercent": 68,
+      "precipitationMm": 0.6,
+      "windSpeedMs": 4.95,
+      "dewPointC": 6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T06:00:00.000Z",
+      "temperatureC": 10.7,
+      "humidityPercent": 74,
+      "precipitationMm": 0.8,
+      "windSpeedMs": 4.11,
+      "dewPointC": 6.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T07:00:00.000Z",
+      "temperatureC": 10.4,
+      "humidityPercent": 76,
+      "precipitationMm": 0.5,
+      "windSpeedMs": 3.19,
+      "dewPointC": 6.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T08:00:00.000Z",
+      "temperatureC": 9.9,
+      "humidityPercent": 78,
+      "precipitationMm": 0.4,
+      "windSpeedMs": 2.76,
+      "dewPointC": 6.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T09:00:00.000Z",
+      "temperatureC": 9.1,
+      "humidityPercent": 83,
+      "precipitationMm": 0.1,
+      "windSpeedMs": 2.2,
+      "dewPointC": 6.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T10:00:00.000Z",
+      "temperatureC": 8,
+      "humidityPercent": 89,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.51,
+      "dewPointC": 6.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T11:00:00.000Z",
+      "temperatureC": 7.9,
+      "humidityPercent": 88,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.28,
+      "dewPointC": 6.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T12:00:00.000Z",
+      "temperatureC": 7.8,
+      "humidityPercent": 89,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.96,
+      "dewPointC": 6.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T13:00:00.000Z",
+      "temperatureC": 9.4,
+      "humidityPercent": 87,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.9,
+      "dewPointC": 7.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T14:00:00.000Z",
+      "temperatureC": 11.1,
+      "humidityPercent": 80,
+      "precipitationMm": 0,
+      "windSpeedMs": 0.81,
+      "dewPointC": 7.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T15:00:00.000Z",
+      "temperatureC": 11.5,
+      "humidityPercent": 74,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.5,
+      "dewPointC": 7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T16:00:00.000Z",
+      "temperatureC": 9.9,
+      "humidityPercent": 76,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.3,
+      "dewPointC": 5.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T17:00:00.000Z",
+      "temperatureC": 11.8,
+      "humidityPercent": 68,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.84,
+      "dewPointC": 6.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T18:00:00.000Z",
+      "temperatureC": 11.5,
+      "humidityPercent": 69,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.69,
+      "dewPointC": 5.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T19:00:00.000Z",
+      "temperatureC": 11.2,
+      "humidityPercent": 70,
+      "precipitationMm": 0.1,
+      "windSpeedMs": 3.4,
+      "dewPointC": 5.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T20:00:00.000Z",
+      "temperatureC": 10.7,
+      "humidityPercent": 71,
+      "precipitationMm": 1.2,
+      "windSpeedMs": 3.11,
+      "dewPointC": 5.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T21:00:00.000Z",
+      "temperatureC": 10,
+      "humidityPercent": 78,
+      "precipitationMm": 1.8,
+      "windSpeedMs": 3.25,
+      "dewPointC": 6.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T22:00:00.000Z",
+      "temperatureC": 9.2,
+      "humidityPercent": 88,
+      "precipitationMm": 1,
+      "windSpeedMs": 3.28,
+      "dewPointC": 7.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-03T23:00:00.000Z",
+      "temperatureC": 9.4,
+      "humidityPercent": 87,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.77,
+      "dewPointC": 7.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T00:00:00.000Z",
+      "temperatureC": 9.8,
+      "humidityPercent": 87,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.61,
+      "dewPointC": 7.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T01:00:00.000Z",
+      "temperatureC": 10.4,
+      "humidityPercent": 87,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.89,
+      "dewPointC": 8.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T02:00:00.000Z",
+      "temperatureC": 10.6,
+      "humidityPercent": 89,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.06,
+      "dewPointC": 8.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T03:00:00.000Z",
+      "temperatureC": 10.6,
+      "humidityPercent": 80,
+      "precipitationMm": 1,
+      "windSpeedMs": 4.78,
+      "dewPointC": 7.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T04:00:00.000Z",
+      "temperatureC": 11.1,
+      "humidityPercent": 77,
+      "precipitationMm": 1.1,
+      "windSpeedMs": 6.41,
+      "dewPointC": 7.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T05:00:00.000Z",
+      "temperatureC": 10.5,
+      "humidityPercent": 67,
+      "precipitationMm": 0.2,
+      "windSpeedMs": 6.62,
+      "dewPointC": 4.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T06:00:00.000Z",
+      "temperatureC": 9.1,
+      "humidityPercent": 65,
+      "precipitationMm": 0,
+      "windSpeedMs": 6.3,
+      "dewPointC": 2.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T07:00:00.000Z",
+      "temperatureC": 8.6,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.72,
+      "dewPointC": 2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T08:00:00.000Z",
+      "temperatureC": 8.2,
+      "humidityPercent": 61,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.61,
+      "dewPointC": 1.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T09:00:00.000Z",
+      "temperatureC": 7.6,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.73,
+      "dewPointC": 0.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T10:00:00.000Z",
+      "temperatureC": 7.1,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.46,
+      "dewPointC": 0.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T11:00:00.000Z",
+      "temperatureC": 7.1,
+      "humidityPercent": 64,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.53,
+      "dewPointC": 0.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T12:00:00.000Z",
+      "temperatureC": 6.8,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.35,
+      "dewPointC": 0.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T13:00:00.000Z",
+      "temperatureC": 7.5,
+      "humidityPercent": 58,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.7,
+      "dewPointC": -0.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T14:00:00.000Z",
+      "temperatureC": 8.2,
+      "humidityPercent": 52,
+      "precipitationMm": 0,
+      "windSpeedMs": 7,
+      "dewPointC": -1.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T15:00:00.000Z",
+      "temperatureC": 9.1,
+      "humidityPercent": 44,
+      "precipitationMm": 0,
+      "windSpeedMs": 7.52,
+      "dewPointC": -2.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T16:00:00.000Z",
+      "temperatureC": 9.9,
+      "humidityPercent": 38,
+      "precipitationMm": 0,
+      "windSpeedMs": 7.83,
+      "dewPointC": -3.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T17:00:00.000Z",
+      "temperatureC": 11,
+      "humidityPercent": 33,
+      "precipitationMm": 0,
+      "windSpeedMs": 8.16,
+      "dewPointC": -4.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T18:00:00.000Z",
+      "temperatureC": 11,
+      "humidityPercent": 34,
+      "precipitationMm": 0,
+      "windSpeedMs": 7.63,
+      "dewPointC": -4.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T19:00:00.000Z",
+      "temperatureC": 11.6,
+      "humidityPercent": 33,
+      "precipitationMm": 0,
+      "windSpeedMs": 7.72,
+      "dewPointC": -4.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T20:00:00.000Z",
+      "temperatureC": 12.1,
+      "humidityPercent": 35,
+      "precipitationMm": 0,
+      "windSpeedMs": 7.02,
+      "dewPointC": -3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T21:00:00.000Z",
+      "temperatureC": 12.2,
+      "humidityPercent": 36,
+      "precipitationMm": 0,
+      "windSpeedMs": 6.11,
+      "dewPointC": -2.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T22:00:00.000Z",
+      "temperatureC": 11.5,
+      "humidityPercent": 40,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.9,
+      "dewPointC": -1.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-04T23:00:00.000Z",
+      "temperatureC": 11,
+      "humidityPercent": 41,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.61,
+      "dewPointC": -1.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T00:00:00.000Z",
+      "temperatureC": 10.5,
+      "humidityPercent": 45,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.91,
+      "dewPointC": -1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T01:00:00.000Z",
+      "temperatureC": 10.1,
+      "humidityPercent": 50,
+      "precipitationMm": 0.3,
+      "windSpeedMs": 2.81,
+      "dewPointC": 0,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T02:00:00.000Z",
+      "temperatureC": 9.9,
+      "humidityPercent": 53,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.3,
+      "dewPointC": 0.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T03:00:00.000Z",
+      "temperatureC": 9.1,
+      "humidityPercent": 57,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.53,
+      "dewPointC": 1.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T04:00:00.000Z",
+      "temperatureC": 8.6,
+      "humidityPercent": 61,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.52,
+      "dewPointC": 1.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T05:00:00.000Z",
+      "temperatureC": 7.9,
+      "humidityPercent": 64,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.97,
+      "dewPointC": 1.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T06:00:00.000Z",
+      "temperatureC": 7.1,
+      "humidityPercent": 64,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.89,
+      "dewPointC": 0.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T07:00:00.000Z",
+      "temperatureC": 6.6,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.68,
+      "dewPointC": 0.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T08:00:00.000Z",
+      "temperatureC": 5.9,
+      "humidityPercent": 61,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.95,
+      "dewPointC": -1.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T09:00:00.000Z",
+      "temperatureC": 5.2,
+      "humidityPercent": 59,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.88,
+      "dewPointC": -2.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T10:00:00.000Z",
+      "temperatureC": 4,
+      "humidityPercent": 59,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.47,
+      "dewPointC": -3.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T11:00:00.000Z",
+      "temperatureC": 3.9,
+      "humidityPercent": 59,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.04,
+      "dewPointC": -3.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T12:00:00.000Z",
+      "temperatureC": 4,
+      "humidityPercent": 58,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.75,
+      "dewPointC": -3.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T13:00:00.000Z",
+      "temperatureC": 4.6,
+      "humidityPercent": 54,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.56,
+      "dewPointC": -3.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T14:00:00.000Z",
+      "temperatureC": 5.4,
+      "humidityPercent": 50,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.89,
+      "dewPointC": -4.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T15:00:00.000Z",
+      "temperatureC": 6.8,
+      "humidityPercent": 45,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.34,
+      "dewPointC": -4.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T16:00:00.000Z",
+      "temperatureC": 7.3,
+      "humidityPercent": 43,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.55,
+      "dewPointC": -4.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T17:00:00.000Z",
+      "temperatureC": 7.7,
+      "humidityPercent": 44,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.92,
+      "dewPointC": -3.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T18:00:00.000Z",
+      "temperatureC": 7.9,
+      "humidityPercent": 45,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.73,
+      "dewPointC": -3.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T19:00:00.000Z",
+      "temperatureC": 8.3,
+      "humidityPercent": 44,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.84,
+      "dewPointC": -3.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T20:00:00.000Z",
+      "temperatureC": 8.6,
+      "humidityPercent": 45,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.01,
+      "dewPointC": -2.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T21:00:00.000Z",
+      "temperatureC": 8.8,
+      "humidityPercent": 46,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.7,
+      "dewPointC": -2.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T22:00:00.000Z",
+      "temperatureC": 8.2,
+      "humidityPercent": 47,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.55,
+      "dewPointC": -2.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-05T23:00:00.000Z",
+      "temperatureC": 8.1,
+      "humidityPercent": 46,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.26,
+      "dewPointC": -2.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T00:00:00.000Z",
+      "temperatureC": 6.9,
+      "humidityPercent": 54,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.47,
+      "dewPointC": -1.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T01:00:00.000Z",
+      "temperatureC": 5.8,
+      "humidityPercent": 64,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.47,
+      "dewPointC": -0.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T02:00:00.000Z",
+      "temperatureC": 5,
+      "humidityPercent": 71,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.52,
+      "dewPointC": 0.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T03:00:00.000Z",
+      "temperatureC": 4,
+      "humidityPercent": 76,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.42,
+      "dewPointC": 0.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T04:00:00.000Z",
+      "temperatureC": 3.8,
+      "humidityPercent": 77,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.06,
+      "dewPointC": 0.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T05:00:00.000Z",
+      "temperatureC": 3.8,
+      "humidityPercent": 78,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.6,
+      "dewPointC": 0.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T06:00:00.000Z",
+      "temperatureC": 3.4,
+      "humidityPercent": 79,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.83,
+      "dewPointC": 0.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T07:00:00.000Z",
+      "temperatureC": 3.6,
+      "humidityPercent": 79,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.21,
+      "dewPointC": 0.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T08:00:00.000Z",
+      "temperatureC": 3.6,
+      "humidityPercent": 79,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.71,
+      "dewPointC": 0.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T09:00:00.000Z",
+      "temperatureC": 3.4,
+      "humidityPercent": 82,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.78,
+      "dewPointC": 0.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T10:00:00.000Z",
+      "temperatureC": 2.6,
+      "humidityPercent": 88,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.72,
+      "dewPointC": 0.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T11:00:00.000Z",
+      "temperatureC": 2.4,
+      "humidityPercent": 89,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.26,
+      "dewPointC": 0.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T12:00:00.000Z",
+      "temperatureC": 2.1,
+      "humidityPercent": 89,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.97,
+      "dewPointC": 0.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T13:00:00.000Z",
+      "temperatureC": 3,
+      "humidityPercent": 84,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.83,
+      "dewPointC": 0.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T14:00:00.000Z",
+      "temperatureC": 4.9,
+      "humidityPercent": 79,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.32,
+      "dewPointC": 1.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T15:00:00.000Z",
+      "temperatureC": 6.5,
+      "humidityPercent": 70,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.32,
+      "dewPointC": 1.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T16:00:00.000Z",
+      "temperatureC": 7.1,
+      "humidityPercent": 67,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.95,
+      "dewPointC": 1.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T17:00:00.000Z",
+      "temperatureC": 6.9,
+      "humidityPercent": 70,
+      "precipitationMm": 0.2,
+      "windSpeedMs": 2.94,
+      "dewPointC": 1.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T18:00:00.000Z",
+      "temperatureC": 7.2,
+      "humidityPercent": 69,
+      "precipitationMm": 0.5,
+      "windSpeedMs": 2.98,
+      "dewPointC": 1.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T19:00:00.000Z",
+      "temperatureC": 7,
+      "humidityPercent": 71,
+      "precipitationMm": 0.5,
+      "windSpeedMs": 3.62,
+      "dewPointC": 2.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T20:00:00.000Z",
+      "temperatureC": 6.3,
+      "humidityPercent": 73,
+      "precipitationMm": 0.5,
+      "windSpeedMs": 4.12,
+      "dewPointC": 1.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T21:00:00.000Z",
+      "temperatureC": 5.4,
+      "humidityPercent": 78,
+      "precipitationMm": 0.6,
+      "windSpeedMs": 3.42,
+      "dewPointC": 1.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T22:00:00.000Z",
+      "temperatureC": 4.7,
+      "humidityPercent": 78,
+      "precipitationMm": 0.7,
+      "windSpeedMs": 3.1,
+      "dewPointC": 1.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-06T23:00:00.000Z",
+      "temperatureC": 4.6,
+      "humidityPercent": 78,
+      "precipitationMm": 0.9,
+      "windSpeedMs": 3.54,
+      "dewPointC": 1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T00:00:00.000Z",
+      "temperatureC": 4.3,
+      "humidityPercent": 80,
+      "precipitationMm": 0.6,
+      "windSpeedMs": 3.59,
+      "dewPointC": 1.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T01:00:00.000Z",
+      "temperatureC": 4.3,
+      "humidityPercent": 81,
+      "precipitationMm": 0.2,
+      "windSpeedMs": 3.55,
+      "dewPointC": 1.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T02:00:00.000Z",
+      "temperatureC": 3.8,
+      "humidityPercent": 82,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.4,
+      "dewPointC": 1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T03:00:00.000Z",
+      "temperatureC": 3.6,
+      "humidityPercent": 82,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.65,
+      "dewPointC": 0.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T04:00:00.000Z",
+      "temperatureC": 3.3,
+      "humidityPercent": 84,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.5,
+      "dewPointC": 0.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T05:00:00.000Z",
+      "temperatureC": 3.3,
+      "humidityPercent": 84,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.86,
+      "dewPointC": 0.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T06:00:00.000Z",
+      "temperatureC": 3,
+      "humidityPercent": 85,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.02,
+      "dewPointC": 0.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T07:00:00.000Z",
+      "temperatureC": 3.1,
+      "humidityPercent": 84,
+      "precipitationMm": 0.1,
+      "windSpeedMs": 4.11,
+      "dewPointC": 0.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T08:00:00.000Z",
+      "temperatureC": 2.9,
+      "humidityPercent": 82,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.25,
+      "dewPointC": 0.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T09:00:00.000Z",
+      "temperatureC": 2.4,
+      "humidityPercent": 81,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.72,
+      "dewPointC": -0.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T10:00:00.000Z",
+      "temperatureC": 2,
+      "humidityPercent": 77,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.44,
+      "dewPointC": -1.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T11:00:00.000Z",
+      "temperatureC": 1.9,
+      "humidityPercent": 77,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.85,
+      "dewPointC": -1.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T12:00:00.000Z",
+      "temperatureC": 1.9,
+      "humidityPercent": 74,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.5,
+      "dewPointC": -2.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T13:00:00.000Z",
+      "temperatureC": 2.3,
+      "humidityPercent": 68,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.64,
+      "dewPointC": -3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T14:00:00.000Z",
+      "temperatureC": 2.5,
+      "humidityPercent": 58,
+      "precipitationMm": 0,
+      "windSpeedMs": 7.34,
+      "dewPointC": -4.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T15:00:00.000Z",
+      "temperatureC": 3.8,
+      "humidityPercent": 43,
+      "precipitationMm": 0,
+      "windSpeedMs": 7.25,
+      "dewPointC": -7.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T16:00:00.000Z",
+      "temperatureC": 4.4,
+      "humidityPercent": 37,
+      "precipitationMm": 0,
+      "windSpeedMs": 7.25,
+      "dewPointC": -9.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T17:00:00.000Z",
+      "temperatureC": 5.5,
+      "humidityPercent": 32,
+      "precipitationMm": 0,
+      "windSpeedMs": 6.99,
+      "dewPointC": -9.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T18:00:00.000Z",
+      "temperatureC": 6.4,
+      "humidityPercent": 29,
+      "precipitationMm": 0,
+      "windSpeedMs": 6.58,
+      "dewPointC": -10.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T19:00:00.000Z",
+      "temperatureC": 7,
+      "humidityPercent": 27,
+      "precipitationMm": 0,
+      "windSpeedMs": 6.17,
+      "dewPointC": -10.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T20:00:00.000Z",
+      "temperatureC": 7.6,
+      "humidityPercent": 26,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.95,
+      "dewPointC": -11,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T21:00:00.000Z",
+      "temperatureC": 7.9,
+      "humidityPercent": 24,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.42,
+      "dewPointC": -11.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T22:00:00.000Z",
+      "temperatureC": 7.2,
+      "humidityPercent": 27,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.1,
+      "dewPointC": -10.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-07T23:00:00.000Z",
+      "temperatureC": 6.3,
+      "humidityPercent": 31,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.41,
+      "dewPointC": -9.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T00:00:00.000Z",
+      "temperatureC": 5.7,
+      "humidityPercent": 34,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.91,
+      "dewPointC": -8.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T01:00:00.000Z",
+      "temperatureC": 4.9,
+      "humidityPercent": 38,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.47,
+      "dewPointC": -8.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T02:00:00.000Z",
+      "temperatureC": 4.2,
+      "humidityPercent": 40,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.68,
+      "dewPointC": -8.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T03:00:00.000Z",
+      "temperatureC": 2.9,
+      "humidityPercent": 46,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.68,
+      "dewPointC": -7.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T04:00:00.000Z",
+      "temperatureC": 2.4,
+      "humidityPercent": 48,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.75,
+      "dewPointC": -7.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T05:00:00.000Z",
+      "temperatureC": 1.9,
+      "humidityPercent": 49,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.33,
+      "dewPointC": -7.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T06:00:00.000Z",
+      "temperatureC": 1.7,
+      "humidityPercent": 49,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.9,
+      "dewPointC": -7.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T07:00:00.000Z",
+      "temperatureC": 1.4,
+      "humidityPercent": 51,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.7,
+      "dewPointC": -7.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T08:00:00.000Z",
+      "temperatureC": 1.2,
+      "humidityPercent": 53,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.69,
+      "dewPointC": -7.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T09:00:00.000Z",
+      "temperatureC": 0.9,
+      "humidityPercent": 56,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.72,
+      "dewPointC": -6.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T10:00:00.000Z",
+      "temperatureC": 0,
+      "humidityPercent": 62,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.69,
+      "dewPointC": -6.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T11:00:00.000Z",
+      "temperatureC": 0.1,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.41,
+      "dewPointC": -6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T12:00:00.000Z",
+      "temperatureC": 0.1,
+      "humidityPercent": 64,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.82,
+      "dewPointC": -5.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T13:00:00.000Z",
+      "temperatureC": 1.5,
+      "humidityPercent": 57,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.62,
+      "dewPointC": -6.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T14:00:00.000Z",
+      "temperatureC": 3.7,
+      "humidityPercent": 48,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.9,
+      "dewPointC": -6.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T15:00:00.000Z",
+      "temperatureC": 7.1,
+      "humidityPercent": 38,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.91,
+      "dewPointC": -6.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T16:00:00.000Z",
+      "temperatureC": 8.5,
+      "humidityPercent": 34,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.2,
+      "dewPointC": -6.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T17:00:00.000Z",
+      "temperatureC": 9.5,
+      "humidityPercent": 32,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.81,
+      "dewPointC": -6.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T18:00:00.000Z",
+      "temperatureC": 10.8,
+      "humidityPercent": 32,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.35,
+      "dewPointC": -5.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T19:00:00.000Z",
+      "temperatureC": 11.8,
+      "humidityPercent": 30,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.53,
+      "dewPointC": -5.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T20:00:00.000Z",
+      "temperatureC": 12.5,
+      "humidityPercent": 30,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.44,
+      "dewPointC": -4.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T21:00:00.000Z",
+      "temperatureC": 12.8,
+      "humidityPercent": 32,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.76,
+      "dewPointC": -3.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T22:00:00.000Z",
+      "temperatureC": 12.4,
+      "humidityPercent": 33,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.61,
+      "dewPointC": -3.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-08T23:00:00.000Z",
+      "temperatureC": 12,
+      "humidityPercent": 34,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.42,
+      "dewPointC": -3.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T00:00:00.000Z",
+      "temperatureC": 10.7,
+      "humidityPercent": 39,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.94,
+      "dewPointC": -2.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T01:00:00.000Z",
+      "temperatureC": 10.3,
+      "humidityPercent": 41,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.16,
+      "dewPointC": -2.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T02:00:00.000Z",
+      "temperatureC": 9.8,
+      "humidityPercent": 42,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.16,
+      "dewPointC": -2.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T03:00:00.000Z",
+      "temperatureC": 8.7,
+      "humidityPercent": 43,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.3,
+      "dewPointC": -3.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T04:00:00.000Z",
+      "temperatureC": 8.1,
+      "humidityPercent": 45,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.27,
+      "dewPointC": -3.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T05:00:00.000Z",
+      "temperatureC": 7.4,
+      "humidityPercent": 46,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.27,
+      "dewPointC": -3.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T06:00:00.000Z",
+      "temperatureC": 7.1,
+      "humidityPercent": 48,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.22,
+      "dewPointC": -3.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T07:00:00.000Z",
+      "temperatureC": 7.2,
+      "humidityPercent": 49,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.17,
+      "dewPointC": -2.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T08:00:00.000Z",
+      "temperatureC": 6.7,
+      "humidityPercent": 53,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.03,
+      "dewPointC": -2.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T09:00:00.000Z",
+      "temperatureC": 6.2,
+      "humidityPercent": 56,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.89,
+      "dewPointC": -2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T10:00:00.000Z",
+      "temperatureC": 5.3,
+      "humidityPercent": 61,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.2,
+      "dewPointC": -1.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T11:00:00.000Z",
+      "temperatureC": 5.3,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.13,
+      "dewPointC": -1.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T12:00:00.000Z",
+      "temperatureC": 5,
+      "humidityPercent": 65,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.4,
+      "dewPointC": -1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T13:00:00.000Z",
+      "temperatureC": 6.8,
+      "humidityPercent": 57,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.5,
+      "dewPointC": -1.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T14:00:00.000Z",
+      "temperatureC": 9.1,
+      "humidityPercent": 48,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.49,
+      "dewPointC": -1.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T15:00:00.000Z",
+      "temperatureC": 12,
+      "humidityPercent": 38,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.53,
+      "dewPointC": -1.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T16:00:00.000Z",
+      "temperatureC": 14.4,
+      "humidityPercent": 33,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.85,
+      "dewPointC": -1.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T17:00:00.000Z",
+      "temperatureC": 16.7,
+      "humidityPercent": 29,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.05,
+      "dewPointC": -1.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T18:00:00.000Z",
+      "temperatureC": 18,
+      "humidityPercent": 26,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.22,
+      "dewPointC": -1.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T19:00:00.000Z",
+      "temperatureC": 18.8,
+      "humidityPercent": 25,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.34,
+      "dewPointC": -1.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T20:00:00.000Z",
+      "temperatureC": 19.3,
+      "humidityPercent": 24,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.04,
+      "dewPointC": -2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T21:00:00.000Z",
+      "temperatureC": 18.5,
+      "humidityPercent": 27,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.48,
+      "dewPointC": -0.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T22:00:00.000Z",
+      "temperatureC": 16.7,
+      "humidityPercent": 29,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.94,
+      "dewPointC": -1.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-09T23:00:00.000Z",
+      "temperatureC": 15.9,
+      "humidityPercent": 31,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.12,
+      "dewPointC": -1.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T00:00:00.000Z",
+      "temperatureC": 14.7,
+      "humidityPercent": 35,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.25,
+      "dewPointC": -0.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T01:00:00.000Z",
+      "temperatureC": 14.2,
+      "humidityPercent": 38,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.39,
+      "dewPointC": -0.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T02:00:00.000Z",
+      "temperatureC": 13.6,
+      "humidityPercent": 39,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.54,
+      "dewPointC": -0.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T03:00:00.000Z",
+      "temperatureC": 12.7,
+      "humidityPercent": 42,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.68,
+      "dewPointC": 0.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T04:00:00.000Z",
+      "temperatureC": 12.4,
+      "humidityPercent": 45,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.75,
+      "dewPointC": 0.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T05:00:00.000Z",
+      "temperatureC": 11.9,
+      "humidityPercent": 51,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.62,
+      "dewPointC": 2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T06:00:00.000Z",
+      "temperatureC": 11.4,
+      "humidityPercent": 55,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.64,
+      "dewPointC": 2.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T07:00:00.000Z",
+      "temperatureC": 10.8,
+      "humidityPercent": 56,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.58,
+      "dewPointC": 2.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T08:00:00.000Z",
+      "temperatureC": 10,
+      "humidityPercent": 58,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.28,
+      "dewPointC": 2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T09:00:00.000Z",
+      "temperatureC": 9.6,
+      "humidityPercent": 62,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.18,
+      "dewPointC": 2.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T10:00:00.000Z",
+      "temperatureC": 8.8,
+      "humidityPercent": 60,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.69,
+      "dewPointC": 1.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T11:00:00.000Z",
+      "temperatureC": 9,
+      "humidityPercent": 62,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.83,
+      "dewPointC": 2.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T12:00:00.000Z",
+      "temperatureC": 9.2,
+      "humidityPercent": 64,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.41,
+      "dewPointC": 2.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T13:00:00.000Z",
+      "temperatureC": 10.3,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.82,
+      "dewPointC": 3.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T14:00:00.000Z",
+      "temperatureC": 11.7,
+      "humidityPercent": 61,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.83,
+      "dewPointC": 4.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T15:00:00.000Z",
+      "temperatureC": 14,
+      "humidityPercent": 53,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.14,
+      "dewPointC": 4.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T16:00:00.000Z",
+      "temperatureC": 14.8,
+      "humidityPercent": 53,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.62,
+      "dewPointC": 5.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T17:00:00.000Z",
+      "temperatureC": 16,
+      "humidityPercent": 50,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.96,
+      "dewPointC": 5.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T18:00:00.000Z",
+      "temperatureC": 16.4,
+      "humidityPercent": 50,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.95,
+      "dewPointC": 6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T19:00:00.000Z",
+      "temperatureC": 16.7,
+      "humidityPercent": 51,
+      "precipitationMm": 0,
+      "windSpeedMs": 6.15,
+      "dewPointC": 6.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T20:00:00.000Z",
+      "temperatureC": 16.5,
+      "humidityPercent": 56,
+      "precipitationMm": 0,
+      "windSpeedMs": 6.52,
+      "dewPointC": 7.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T21:00:00.000Z",
+      "temperatureC": 16.3,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.88,
+      "dewPointC": 9.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T22:00:00.000Z",
+      "temperatureC": 17.3,
+      "humidityPercent": 67,
+      "precipitationMm": 1,
+      "windSpeedMs": 3.72,
+      "dewPointC": 11.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-10T23:00:00.000Z",
+      "temperatureC": 16.7,
+      "humidityPercent": 71,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.86,
+      "dewPointC": 11.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T00:00:00.000Z",
+      "temperatureC": 16.4,
+      "humidityPercent": 71,
+      "precipitationMm": 0.2,
+      "windSpeedMs": 4.25,
+      "dewPointC": 11.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T01:00:00.000Z",
+      "temperatureC": 16.3,
+      "humidityPercent": 73,
+      "precipitationMm": 0.3,
+      "windSpeedMs": 4.49,
+      "dewPointC": 11.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T02:00:00.000Z",
+      "temperatureC": 16,
+      "humidityPercent": 77,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.52,
+      "dewPointC": 12,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T03:00:00.000Z",
+      "temperatureC": 14.8,
+      "humidityPercent": 74,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.31,
+      "dewPointC": 10.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T04:00:00.000Z",
+      "temperatureC": 14.3,
+      "humidityPercent": 71,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.02,
+      "dewPointC": 9.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T05:00:00.000Z",
+      "temperatureC": 12.2,
+      "humidityPercent": 68,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.36,
+      "dewPointC": 6.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T06:00:00.000Z",
+      "temperatureC": 10.5,
+      "humidityPercent": 67,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.86,
+      "dewPointC": 4.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T07:00:00.000Z",
+      "temperatureC": 10.1,
+      "humidityPercent": 66,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.64,
+      "dewPointC": 4.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T08:00:00.000Z",
+      "temperatureC": 9.2,
+      "humidityPercent": 67,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.14,
+      "dewPointC": 3.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T09:00:00.000Z",
+      "temperatureC": 7.9,
+      "humidityPercent": 70,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.52,
+      "dewPointC": 2.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T10:00:00.000Z",
+      "temperatureC": 6.1,
+      "humidityPercent": 68,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.98,
+      "dewPointC": 0.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T11:00:00.000Z",
+      "temperatureC": 5.9,
+      "humidityPercent": 67,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.98,
+      "dewPointC": 0.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T12:00:00.000Z",
+      "temperatureC": 5.9,
+      "humidityPercent": 67,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.13,
+      "dewPointC": 0.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T13:00:00.000Z",
+      "temperatureC": 6.7,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.28,
+      "dewPointC": 0.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T14:00:00.000Z",
+      "temperatureC": 7.6,
+      "humidityPercent": 57,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.4,
+      "dewPointC": -0.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T15:00:00.000Z",
+      "temperatureC": 9.2,
+      "humidityPercent": 49,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.15,
+      "dewPointC": -0.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T16:00:00.000Z",
+      "temperatureC": 9.4,
+      "humidityPercent": 50,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.93,
+      "dewPointC": -0.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T17:00:00.000Z",
+      "temperatureC": 9.6,
+      "humidityPercent": 50,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.71,
+      "dewPointC": -0.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T18:00:00.000Z",
+      "temperatureC": 9.7,
+      "humidityPercent": 48,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.14,
+      "dewPointC": -0.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T19:00:00.000Z",
+      "temperatureC": 11.4,
+      "humidityPercent": 34,
+      "precipitationMm": 0,
+      "windSpeedMs": 0.95,
+      "dewPointC": -4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T20:00:00.000Z",
+      "temperatureC": 10.7,
+      "humidityPercent": 41,
+      "precipitationMm": 0,
+      "windSpeedMs": 0.89,
+      "dewPointC": -2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T21:00:00.000Z",
+      "temperatureC": 10.4,
+      "humidityPercent": 47,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.77,
+      "dewPointC": -0.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T22:00:00.000Z",
+      "temperatureC": 9.9,
+      "humidityPercent": 45,
+      "precipitationMm": 0,
+      "windSpeedMs": 0.82,
+      "dewPointC": -1.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-11T23:00:00.000Z",
+      "temperatureC": 9.7,
+      "humidityPercent": 49,
+      "precipitationMm": 0.2,
+      "windSpeedMs": 1.2,
+      "dewPointC": -0.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T00:00:00.000Z",
+      "temperatureC": 9.4,
+      "humidityPercent": 52,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.58,
+      "dewPointC": 0,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T01:00:00.000Z",
+      "temperatureC": 9.1,
+      "humidityPercent": 55,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.86,
+      "dewPointC": 0.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T02:00:00.000Z",
+      "temperatureC": 8.2,
+      "humidityPercent": 56,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.7,
+      "dewPointC": -0.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T03:00:00.000Z",
+      "temperatureC": 7.1,
+      "humidityPercent": 60,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.21,
+      "dewPointC": -0.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T04:00:00.000Z",
+      "temperatureC": 6.8,
+      "humidityPercent": 61,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.4,
+      "dewPointC": -0.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T05:00:00.000Z",
+      "temperatureC": 6.1,
+      "humidityPercent": 65,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.65,
+      "dewPointC": -0.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T06:00:00.000Z",
+      "temperatureC": 5.8,
+      "humidityPercent": 68,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.73,
+      "dewPointC": 0.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T07:00:00.000Z",
+      "temperatureC": 5.4,
+      "humidityPercent": 70,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.7,
+      "dewPointC": 0.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T08:00:00.000Z",
+      "temperatureC": 5,
+      "humidityPercent": 75,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.32,
+      "dewPointC": 0.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T09:00:00.000Z",
+      "temperatureC": 4.5,
+      "humidityPercent": 78,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.46,
+      "dewPointC": 0.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T10:00:00.000Z",
+      "temperatureC": 4.7,
+      "humidityPercent": 73,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.05,
+      "dewPointC": 0.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T11:00:00.000Z",
+      "temperatureC": 4.5,
+      "humidityPercent": 75,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.2,
+      "dewPointC": 0.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T12:00:00.000Z",
+      "temperatureC": 5.1,
+      "humidityPercent": 75,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.09,
+      "dewPointC": 1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T13:00:00.000Z",
+      "temperatureC": 5.6,
+      "humidityPercent": 74,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.55,
+      "dewPointC": 1.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T14:00:00.000Z",
+      "temperatureC": 5.9,
+      "humidityPercent": 74,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.51,
+      "dewPointC": 1.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T15:00:00.000Z",
+      "temperatureC": 6.9,
+      "humidityPercent": 73,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.01,
+      "dewPointC": 2.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T16:00:00.000Z",
+      "temperatureC": 7.2,
+      "humidityPercent": 75,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.56,
+      "dewPointC": 3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T17:00:00.000Z",
+      "temperatureC": 7.7,
+      "humidityPercent": 75,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.82,
+      "dewPointC": 3.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T18:00:00.000Z",
+      "temperatureC": 8,
+      "humidityPercent": 71,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.82,
+      "dewPointC": 3.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T19:00:00.000Z",
+      "temperatureC": 8.2,
+      "humidityPercent": 70,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.85,
+      "dewPointC": 3.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T20:00:00.000Z",
+      "temperatureC": 8.1,
+      "humidityPercent": 71,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.94,
+      "dewPointC": 3.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T21:00:00.000Z",
+      "temperatureC": 8.3,
+      "humidityPercent": 72,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.23,
+      "dewPointC": 3.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T22:00:00.000Z",
+      "temperatureC": 8.1,
+      "humidityPercent": 78,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.71,
+      "dewPointC": 4.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-12T23:00:00.000Z",
+      "temperatureC": 8.1,
+      "humidityPercent": 78,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.84,
+      "dewPointC": 4.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T00:00:00.000Z",
+      "temperatureC": 7.9,
+      "humidityPercent": 77,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.28,
+      "dewPointC": 4.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T01:00:00.000Z",
+      "temperatureC": 7.8,
+      "humidityPercent": 77,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.72,
+      "dewPointC": 3.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T02:00:00.000Z",
+      "temperatureC": 7.9,
+      "humidityPercent": 77,
+      "precipitationMm": 0.6,
+      "windSpeedMs": 3.61,
+      "dewPointC": 4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T03:00:00.000Z",
+      "temperatureC": 7.8,
+      "humidityPercent": 84,
+      "precipitationMm": 0.2,
+      "windSpeedMs": 3.35,
+      "dewPointC": 5.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T04:00:00.000Z",
+      "temperatureC": 7.8,
+      "humidityPercent": 84,
+      "precipitationMm": 0.4,
+      "windSpeedMs": 4.02,
+      "dewPointC": 5.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T05:00:00.000Z",
+      "temperatureC": 7.9,
+      "humidityPercent": 87,
+      "precipitationMm": 0.6,
+      "windSpeedMs": 4.51,
+      "dewPointC": 5.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T06:00:00.000Z",
+      "temperatureC": 8.1,
+      "humidityPercent": 89,
+      "precipitationMm": 1.1,
+      "windSpeedMs": 4.47,
+      "dewPointC": 6.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T07:00:00.000Z",
+      "temperatureC": 8.3,
+      "humidityPercent": 89,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.2,
+      "dewPointC": 6.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T08:00:00.000Z",
+      "temperatureC": 8.6,
+      "humidityPercent": 91,
+      "precipitationMm": 0.5,
+      "windSpeedMs": 3.71,
+      "dewPointC": 7.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T09:00:00.000Z",
+      "temperatureC": 8.7,
+      "humidityPercent": 91,
+      "precipitationMm": 0.6,
+      "windSpeedMs": 3.45,
+      "dewPointC": 7.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T10:00:00.000Z",
+      "temperatureC": 10.1,
+      "humidityPercent": 94,
+      "precipitationMm": 0.9,
+      "windSpeedMs": 3.7,
+      "dewPointC": 9.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T11:00:00.000Z",
+      "temperatureC": 10.4,
+      "humidityPercent": 93,
+      "precipitationMm": 1.7,
+      "windSpeedMs": 3.96,
+      "dewPointC": 9.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T12:00:00.000Z",
+      "temperatureC": 10.5,
+      "humidityPercent": 93,
+      "precipitationMm": 1.4,
+      "windSpeedMs": 4.39,
+      "dewPointC": 9.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T13:00:00.000Z",
+      "temperatureC": 10.9,
+      "humidityPercent": 93,
+      "precipitationMm": 0.8,
+      "windSpeedMs": 4.46,
+      "dewPointC": 9.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T14:00:00.000Z",
+      "temperatureC": 11.3,
+      "humidityPercent": 94,
+      "precipitationMm": 1.9,
+      "windSpeedMs": 3.3,
+      "dewPointC": 10.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T15:00:00.000Z",
+      "temperatureC": 12.5,
+      "humidityPercent": 88,
+      "precipitationMm": 0.4,
+      "windSpeedMs": 3.16,
+      "dewPointC": 10.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T16:00:00.000Z",
+      "temperatureC": 14.1,
+      "humidityPercent": 84,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.11,
+      "dewPointC": 11.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T17:00:00.000Z",
+      "temperatureC": 16.1,
+      "humidityPercent": 74,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.78,
+      "dewPointC": 11.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T18:00:00.000Z",
+      "temperatureC": 16.8,
+      "humidityPercent": 71,
+      "precipitationMm": 0,
+      "windSpeedMs": 6.49,
+      "dewPointC": 11.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T19:00:00.000Z",
+      "temperatureC": 17.8,
+      "humidityPercent": 67,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.93,
+      "dewPointC": 11.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T20:00:00.000Z",
+      "temperatureC": 19,
+      "humidityPercent": 49,
+      "precipitationMm": 0,
+      "windSpeedMs": 6.4,
+      "dewPointC": 8.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T21:00:00.000Z",
+      "temperatureC": 18.8,
+      "humidityPercent": 37,
+      "precipitationMm": 0,
+      "windSpeedMs": 6.51,
+      "dewPointC": 3.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T22:00:00.000Z",
+      "temperatureC": 17.6,
+      "humidityPercent": 27,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.76,
+      "dewPointC": -1.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-13T23:00:00.000Z",
+      "temperatureC": 16.4,
+      "humidityPercent": 28,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.33,
+      "dewPointC": -2.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T00:00:00.000Z",
+      "temperatureC": 15.2,
+      "humidityPercent": 28,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.54,
+      "dewPointC": -3.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T01:00:00.000Z",
+      "temperatureC": 14.5,
+      "humidityPercent": 29,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.73,
+      "dewPointC": -3.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T02:00:00.000Z",
+      "temperatureC": 13.4,
+      "humidityPercent": 32,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.43,
+      "dewPointC": -2.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T03:00:00.000Z",
+      "temperatureC": 11.5,
+      "humidityPercent": 35,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.24,
+      "dewPointC": -3.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T04:00:00.000Z",
+      "temperatureC": 10.8,
+      "humidityPercent": 37,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.39,
+      "dewPointC": -3.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T05:00:00.000Z",
+      "temperatureC": 9.5,
+      "humidityPercent": 38,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.31,
+      "dewPointC": -4.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T06:00:00.000Z",
+      "temperatureC": 8.9,
+      "humidityPercent": 40,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.34,
+      "dewPointC": -4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T07:00:00.000Z",
+      "temperatureC": 8.4,
+      "humidityPercent": 42,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.33,
+      "dewPointC": -3.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T08:00:00.000Z",
+      "temperatureC": 7.8,
+      "humidityPercent": 44,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.25,
+      "dewPointC": -3.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T09:00:00.000Z",
+      "temperatureC": 7,
+      "humidityPercent": 47,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.94,
+      "dewPointC": -3.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T10:00:00.000Z",
+      "temperatureC": 6.3,
+      "humidityPercent": 50,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.4,
+      "dewPointC": -3.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T11:00:00.000Z",
+      "temperatureC": 6.1,
+      "humidityPercent": 51,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.86,
+      "dewPointC": -3.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T12:00:00.000Z",
+      "temperatureC": 6.3,
+      "humidityPercent": 50,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.16,
+      "dewPointC": -3.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T13:00:00.000Z",
+      "temperatureC": 6.9,
+      "humidityPercent": 45,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.61,
+      "dewPointC": -4.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T14:00:00.000Z",
+      "temperatureC": 7.3,
+      "humidityPercent": 43,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.97,
+      "dewPointC": -4.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T15:00:00.000Z",
+      "temperatureC": 8.9,
+      "humidityPercent": 39,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.35,
+      "dewPointC": -4.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T16:00:00.000Z",
+      "temperatureC": 9.5,
+      "humidityPercent": 38,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.3,
+      "dewPointC": -4.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T17:00:00.000Z",
+      "temperatureC": 10.4,
+      "humidityPercent": 36,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.52,
+      "dewPointC": -4.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T18:00:00.000Z",
+      "temperatureC": 10.9,
+      "humidityPercent": 35,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.72,
+      "dewPointC": -3.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T19:00:00.000Z",
+      "temperatureC": 11.1,
+      "humidityPercent": 36,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.16,
+      "dewPointC": -3.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T20:00:00.000Z",
+      "temperatureC": 11.7,
+      "humidityPercent": 34,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.05,
+      "dewPointC": -3.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T21:00:00.000Z",
+      "temperatureC": 11.7,
+      "humidityPercent": 35,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.78,
+      "dewPointC": -3.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T22:00:00.000Z",
+      "temperatureC": 10.8,
+      "humidityPercent": 39,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.69,
+      "dewPointC": -2.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-14T23:00:00.000Z",
+      "temperatureC": 10.4,
+      "humidityPercent": 40,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.77,
+      "dewPointC": -2.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T00:00:00.000Z",
+      "temperatureC": 10,
+      "humidityPercent": 42,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.33,
+      "dewPointC": -2.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T01:00:00.000Z",
+      "temperatureC": 9.7,
+      "humidityPercent": 42,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.82,
+      "dewPointC": -2.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T02:00:00.000Z",
+      "temperatureC": 9.1,
+      "humidityPercent": 44,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.82,
+      "dewPointC": -2.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T03:00:00.000Z",
+      "temperatureC": 8.2,
+      "humidityPercent": 49,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.13,
+      "dewPointC": -1.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T04:00:00.000Z",
+      "temperatureC": 8,
+      "humidityPercent": 50,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.5,
+      "dewPointC": -1.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T05:00:00.000Z",
+      "temperatureC": 7.5,
+      "humidityPercent": 53,
+      "precipitationMm": 0.1,
+      "windSpeedMs": 2.66,
+      "dewPointC": -1.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T06:00:00.000Z",
+      "temperatureC": 6.9,
+      "humidityPercent": 53,
+      "precipitationMm": 0.1,
+      "windSpeedMs": 2.28,
+      "dewPointC": -2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T07:00:00.000Z",
+      "temperatureC": 6.5,
+      "humidityPercent": 52,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.21,
+      "dewPointC": -2.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T08:00:00.000Z",
+      "temperatureC": 6.2,
+      "humidityPercent": 54,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.1,
+      "dewPointC": -2.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T09:00:00.000Z",
+      "temperatureC": 5.9,
+      "humidityPercent": 55,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.9,
+      "dewPointC": -2.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T10:00:00.000Z",
+      "temperatureC": 5.9,
+      "humidityPercent": 58,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.7,
+      "dewPointC": -1.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T11:00:00.000Z",
+      "temperatureC": 5.7,
+      "humidityPercent": 59,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.71,
+      "dewPointC": -1.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T12:00:00.000Z",
+      "temperatureC": 5.6,
+      "humidityPercent": 59,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.2,
+      "dewPointC": -1.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T13:00:00.000Z",
+      "temperatureC": 5.9,
+      "humidityPercent": 56,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.98,
+      "dewPointC": -2.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T14:00:00.000Z",
+      "temperatureC": 6.3,
+      "humidityPercent": 53,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.59,
+      "dewPointC": -2.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T15:00:00.000Z",
+      "temperatureC": 7.8,
+      "humidityPercent": 45,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.24,
+      "dewPointC": -3.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T16:00:00.000Z",
+      "temperatureC": 8.5,
+      "humidityPercent": 42,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.81,
+      "dewPointC": -3.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T17:00:00.000Z",
+      "temperatureC": 9.3,
+      "humidityPercent": 38,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.5,
+      "dewPointC": -4.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T18:00:00.000Z",
+      "temperatureC": 9.8,
+      "humidityPercent": 35,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.42,
+      "dewPointC": -4.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T19:00:00.000Z",
+      "temperatureC": 10.3,
+      "humidityPercent": 34,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.43,
+      "dewPointC": -4.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T20:00:00.000Z",
+      "temperatureC": 11,
+      "humidityPercent": 32,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.81,
+      "dewPointC": -5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T21:00:00.000Z",
+      "temperatureC": 11.4,
+      "humidityPercent": 31,
+      "precipitationMm": 0,
+      "windSpeedMs": 3,
+      "dewPointC": -5.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T22:00:00.000Z",
+      "temperatureC": 10.4,
+      "humidityPercent": 33,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.7,
+      "dewPointC": -5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-15T23:00:00.000Z",
+      "temperatureC": 9.9,
+      "humidityPercent": 37,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.89,
+      "dewPointC": -4.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T00:00:00.000Z",
+      "temperatureC": 8.7,
+      "humidityPercent": 43,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.93,
+      "dewPointC": -3.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T01:00:00.000Z",
+      "temperatureC": 7.5,
+      "humidityPercent": 47,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.86,
+      "dewPointC": -3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T02:00:00.000Z",
+      "temperatureC": 6.9,
+      "humidityPercent": 48,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.14,
+      "dewPointC": -3.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T03:00:00.000Z",
+      "temperatureC": 5.3,
+      "humidityPercent": 52,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.33,
+      "dewPointC": -3.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T04:00:00.000Z",
+      "temperatureC": 4.7,
+      "humidityPercent": 53,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.14,
+      "dewPointC": -4.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T05:00:00.000Z",
+      "temperatureC": 3.7,
+      "humidityPercent": 50,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.85,
+      "dewPointC": -5.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T06:00:00.000Z",
+      "temperatureC": 3.6,
+      "humidityPercent": 49,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.48,
+      "dewPointC": -6.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T07:00:00.000Z",
+      "temperatureC": 2.6,
+      "humidityPercent": 51,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.36,
+      "dewPointC": -6.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T08:00:00.000Z",
+      "temperatureC": 1.8,
+      "humidityPercent": 52,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.16,
+      "dewPointC": -6.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T09:00:00.000Z",
+      "temperatureC": 1.1,
+      "humidityPercent": 54,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.97,
+      "dewPointC": -7.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T10:00:00.000Z",
+      "temperatureC": 0.2,
+      "humidityPercent": 58,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.85,
+      "dewPointC": -7.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T11:00:00.000Z",
+      "temperatureC": -0.2,
+      "humidityPercent": 58,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.94,
+      "dewPointC": -7.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T12:00:00.000Z",
+      "temperatureC": 0.1,
+      "humidityPercent": 55,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.17,
+      "dewPointC": -7.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T13:00:00.000Z",
+      "temperatureC": 0.9,
+      "humidityPercent": 51,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.05,
+      "dewPointC": -8.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T14:00:00.000Z",
+      "temperatureC": 1.8,
+      "humidityPercent": 52,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.96,
+      "dewPointC": -6.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T15:00:00.000Z",
+      "temperatureC": 3.7,
+      "humidityPercent": 54,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.44,
+      "dewPointC": -4.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T16:00:00.000Z",
+      "temperatureC": 4.3,
+      "humidityPercent": 57,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.41,
+      "dewPointC": -3.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T17:00:00.000Z",
+      "temperatureC": 5.1,
+      "humidityPercent": 57,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.26,
+      "dewPointC": -2.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T18:00:00.000Z",
+      "temperatureC": 5.4,
+      "humidityPercent": 56,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.35,
+      "dewPointC": -2.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T19:00:00.000Z",
+      "temperatureC": 5.7,
+      "humidityPercent": 57,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.67,
+      "dewPointC": -2.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T20:00:00.000Z",
+      "temperatureC": 5.8,
+      "humidityPercent": 58,
+      "precipitationMm": 0,
+      "windSpeedMs": 4,
+      "dewPointC": -1.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T21:00:00.000Z",
+      "temperatureC": 5.9,
+      "humidityPercent": 59,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.39,
+      "dewPointC": -1.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T22:00:00.000Z",
+      "temperatureC": 5.3,
+      "humidityPercent": 61,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.96,
+      "dewPointC": -1.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-16T23:00:00.000Z",
+      "temperatureC": 5.3,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.39,
+      "dewPointC": -1.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T00:00:00.000Z",
+      "temperatureC": 5.1,
+      "humidityPercent": 65,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.05,
+      "dewPointC": -1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T01:00:00.000Z",
+      "temperatureC": 5,
+      "humidityPercent": 67,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.01,
+      "dewPointC": -0.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T02:00:00.000Z",
+      "temperatureC": 5,
+      "humidityPercent": 69,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.01,
+      "dewPointC": -0.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T03:00:00.000Z",
+      "temperatureC": 5,
+      "humidityPercent": 71,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.09,
+      "dewPointC": 0.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T04:00:00.000Z",
+      "temperatureC": 5.3,
+      "humidityPercent": 69,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.26,
+      "dewPointC": 0,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T05:00:00.000Z",
+      "temperatureC": 5.4,
+      "humidityPercent": 70,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.95,
+      "dewPointC": 0.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T06:00:00.000Z",
+      "temperatureC": 5.7,
+      "humidityPercent": 72,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.21,
+      "dewPointC": 1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T07:00:00.000Z",
+      "temperatureC": 5.6,
+      "humidityPercent": 75,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.31,
+      "dewPointC": 1.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T08:00:00.000Z",
+      "temperatureC": 5.4,
+      "humidityPercent": 79,
+      "precipitationMm": 0.3,
+      "windSpeedMs": 2.44,
+      "dewPointC": 2.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T09:00:00.000Z",
+      "temperatureC": 5.3,
+      "humidityPercent": 80,
+      "precipitationMm": 0.7,
+      "windSpeedMs": 2.24,
+      "dewPointC": 2.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T10:00:00.000Z",
+      "temperatureC": 5.3,
+      "humidityPercent": 88,
+      "precipitationMm": 0.2,
+      "windSpeedMs": 1.41,
+      "dewPointC": 3.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T11:00:00.000Z",
+      "temperatureC": 4.9,
+      "humidityPercent": 90,
+      "precipitationMm": 0.3,
+      "windSpeedMs": 1.66,
+      "dewPointC": 3.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T12:00:00.000Z",
+      "temperatureC": 5.6,
+      "humidityPercent": 88,
+      "precipitationMm": 1,
+      "windSpeedMs": 2.35,
+      "dewPointC": 3.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T13:00:00.000Z",
+      "temperatureC": 5.5,
+      "humidityPercent": 90,
+      "precipitationMm": 0.4,
+      "windSpeedMs": 1.57,
+      "dewPointC": 4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T14:00:00.000Z",
+      "temperatureC": 6.2,
+      "humidityPercent": 89,
+      "precipitationMm": 1,
+      "windSpeedMs": 1,
+      "dewPointC": 4.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T15:00:00.000Z",
+      "temperatureC": 7.3,
+      "humidityPercent": 81,
+      "precipitationMm": 0.2,
+      "windSpeedMs": 0.92,
+      "dewPointC": 4.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T16:00:00.000Z",
+      "temperatureC": 7.8,
+      "humidityPercent": 82,
+      "precipitationMm": 0,
+      "windSpeedMs": 0,
+      "dewPointC": 4.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T17:00:00.000Z",
+      "temperatureC": 8.8,
+      "humidityPercent": 78,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.24,
+      "dewPointC": 5.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T18:00:00.000Z",
+      "temperatureC": 9.2,
+      "humidityPercent": 76,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.3,
+      "dewPointC": 5.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T19:00:00.000Z",
+      "temperatureC": 9.4,
+      "humidityPercent": 75,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.8,
+      "dewPointC": 5.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T20:00:00.000Z",
+      "temperatureC": 10,
+      "humidityPercent": 74,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.3,
+      "dewPointC": 5.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T21:00:00.000Z",
+      "temperatureC": 10.7,
+      "humidityPercent": 70,
+      "precipitationMm": 0,
+      "windSpeedMs": 4,
+      "dewPointC": 5.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T22:00:00.000Z",
+      "temperatureC": 10.8,
+      "humidityPercent": 67,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.21,
+      "dewPointC": 4.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-17T23:00:00.000Z",
+      "temperatureC": 10.5,
+      "humidityPercent": 68,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.01,
+      "dewPointC": 4.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T00:00:00.000Z",
+      "temperatureC": 9.9,
+      "humidityPercent": 70,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.42,
+      "dewPointC": 4.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T01:00:00.000Z",
+      "temperatureC": 9.2,
+      "humidityPercent": 71,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.6,
+      "dewPointC": 4.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T02:00:00.000Z",
+      "temperatureC": 9,
+      "humidityPercent": 71,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.72,
+      "dewPointC": 4.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T03:00:00.000Z",
+      "temperatureC": 8.2,
+      "humidityPercent": 74,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.38,
+      "dewPointC": 3.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T04:00:00.000Z",
+      "temperatureC": 8,
+      "humidityPercent": 75,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.28,
+      "dewPointC": 3.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T05:00:00.000Z",
+      "temperatureC": 7.9,
+      "humidityPercent": 72,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.33,
+      "dewPointC": 3.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T06:00:00.000Z",
+      "temperatureC": 7.4,
+      "humidityPercent": 69,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.28,
+      "dewPointC": 2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T07:00:00.000Z",
+      "temperatureC": 7.1,
+      "humidityPercent": 65,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.19,
+      "dewPointC": 1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T08:00:00.000Z",
+      "temperatureC": 6.5,
+      "humidityPercent": 64,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.13,
+      "dewPointC": 0.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T09:00:00.000Z",
+      "temperatureC": 5.5,
+      "humidityPercent": 66,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.2,
+      "dewPointC": -0.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T10:00:00.000Z",
+      "temperatureC": 3.9,
+      "humidityPercent": 72,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.19,
+      "dewPointC": -0.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T11:00:00.000Z",
+      "temperatureC": 3.9,
+      "humidityPercent": 74,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.08,
+      "dewPointC": -0.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T12:00:00.000Z",
+      "temperatureC": 3.5,
+      "humidityPercent": 76,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.57,
+      "dewPointC": -0.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T13:00:00.000Z",
+      "temperatureC": 5.6,
+      "humidityPercent": 65,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.14,
+      "dewPointC": -0.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T14:00:00.000Z",
+      "temperatureC": 6.9,
+      "humidityPercent": 53,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.12,
+      "dewPointC": -1.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T15:00:00.000Z",
+      "temperatureC": 8.7,
+      "humidityPercent": 47,
+      "precipitationMm": 0,
+      "windSpeedMs": 1,
+      "dewPointC": -2.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T16:00:00.000Z",
+      "temperatureC": 9.3,
+      "humidityPercent": 43,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.22,
+      "dewPointC": -2.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T17:00:00.000Z",
+      "temperatureC": 9.4,
+      "humidityPercent": 47,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.32,
+      "dewPointC": -1.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T18:00:00.000Z",
+      "temperatureC": 9.8,
+      "humidityPercent": 45,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.6,
+      "dewPointC": -1.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T19:00:00.000Z",
+      "temperatureC": 10.3,
+      "humidityPercent": 43,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.61,
+      "dewPointC": -1.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T20:00:00.000Z",
+      "temperatureC": 10.2,
+      "humidityPercent": 43,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.92,
+      "dewPointC": -1.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T21:00:00.000Z",
+      "temperatureC": 9.9,
+      "humidityPercent": 44,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.44,
+      "dewPointC": -1.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T22:00:00.000Z",
+      "temperatureC": 8.9,
+      "humidityPercent": 50,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.54,
+      "dewPointC": -0.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-18T23:00:00.000Z",
+      "temperatureC": 8.5,
+      "humidityPercent": 54,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.89,
+      "dewPointC": -0.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T00:00:00.000Z",
+      "temperatureC": 8,
+      "humidityPercent": 57,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.89,
+      "dewPointC": -0.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T01:00:00.000Z",
+      "temperatureC": 8,
+      "humidityPercent": 57,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.22,
+      "dewPointC": -0.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T02:00:00.000Z",
+      "temperatureC": 7.9,
+      "humidityPercent": 57,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.49,
+      "dewPointC": -0.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T03:00:00.000Z",
+      "temperatureC": 7.3,
+      "humidityPercent": 62,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.67,
+      "dewPointC": 0.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T04:00:00.000Z",
+      "temperatureC": 7.4,
+      "humidityPercent": 62,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.16,
+      "dewPointC": 0.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T05:00:00.000Z",
+      "temperatureC": 6.9,
+      "humidityPercent": 67,
+      "precipitationMm": 0.1,
+      "windSpeedMs": 3.05,
+      "dewPointC": 1.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T06:00:00.000Z",
+      "temperatureC": 6.4,
+      "humidityPercent": 71,
+      "precipitationMm": 1.3,
+      "windSpeedMs": 2.55,
+      "dewPointC": 1.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T07:00:00.000Z",
+      "temperatureC": 6,
+      "humidityPercent": 79,
+      "precipitationMm": 2,
+      "windSpeedMs": 3.1,
+      "dewPointC": 2.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T08:00:00.000Z",
+      "temperatureC": 5.7,
+      "humidityPercent": 84,
+      "precipitationMm": 2.7,
+      "windSpeedMs": 3.71,
+      "dewPointC": 3.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T09:00:00.000Z",
+      "temperatureC": 5.7,
+      "humidityPercent": 87,
+      "precipitationMm": 3.4,
+      "windSpeedMs": 4.14,
+      "dewPointC": 3.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T10:00:00.000Z",
+      "temperatureC": 5.8,
+      "humidityPercent": 90,
+      "precipitationMm": 3.2,
+      "windSpeedMs": 4.29,
+      "dewPointC": 4.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T11:00:00.000Z",
+      "temperatureC": 6.1,
+      "humidityPercent": 89,
+      "precipitationMm": 2.4,
+      "windSpeedMs": 3.54,
+      "dewPointC": 4.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T12:00:00.000Z",
+      "temperatureC": 6.3,
+      "humidityPercent": 91,
+      "precipitationMm": 0.5,
+      "windSpeedMs": 3.81,
+      "dewPointC": 4.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T13:00:00.000Z",
+      "temperatureC": 6.4,
+      "humidityPercent": 91,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.07,
+      "dewPointC": 5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T14:00:00.000Z",
+      "temperatureC": 6.5,
+      "humidityPercent": 91,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.12,
+      "dewPointC": 5.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T15:00:00.000Z",
+      "temperatureC": 7.3,
+      "humidityPercent": 85,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.98,
+      "dewPointC": 5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T16:00:00.000Z",
+      "temperatureC": 7.9,
+      "humidityPercent": 85,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.67,
+      "dewPointC": 5.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T17:00:00.000Z",
+      "temperatureC": 8.2,
+      "humidityPercent": 83,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.09,
+      "dewPointC": 5.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T18:00:00.000Z",
+      "temperatureC": 8.5,
+      "humidityPercent": 82,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.42,
+      "dewPointC": 5.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T19:00:00.000Z",
+      "temperatureC": 9,
+      "humidityPercent": 81,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.97,
+      "dewPointC": 5.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T20:00:00.000Z",
+      "temperatureC": 9.1,
+      "humidityPercent": 80,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.58,
+      "dewPointC": 5.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T21:00:00.000Z",
+      "temperatureC": 9.3,
+      "humidityPercent": 78,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.84,
+      "dewPointC": 5.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T22:00:00.000Z",
+      "temperatureC": 8.9,
+      "humidityPercent": 83,
+      "precipitationMm": 0,
+      "windSpeedMs": 0.8,
+      "dewPointC": 6.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-19T23:00:00.000Z",
+      "temperatureC": 9.1,
+      "humidityPercent": 82,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.21,
+      "dewPointC": 6.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T00:00:00.000Z",
+      "temperatureC": 9.1,
+      "humidityPercent": 83,
+      "precipitationMm": 0,
+      "windSpeedMs": 0.7,
+      "dewPointC": 6.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T01:00:00.000Z",
+      "temperatureC": 9.1,
+      "humidityPercent": 84,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.22,
+      "dewPointC": 6.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T02:00:00.000Z",
+      "temperatureC": 9,
+      "humidityPercent": 85,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.63,
+      "dewPointC": 6.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T03:00:00.000Z",
+      "temperatureC": 8.7,
+      "humidityPercent": 87,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.49,
+      "dewPointC": 6.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T04:00:00.000Z",
+      "temperatureC": 8.6,
+      "humidityPercent": 88,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.89,
+      "dewPointC": 6.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T05:00:00.000Z",
+      "temperatureC": 8.3,
+      "humidityPercent": 88,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.8,
+      "dewPointC": 6.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T06:00:00.000Z",
+      "temperatureC": 8.3,
+      "humidityPercent": 87,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.18,
+      "dewPointC": 6.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T07:00:00.000Z",
+      "temperatureC": 7.9,
+      "humidityPercent": 87,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.73,
+      "dewPointC": 5.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T08:00:00.000Z",
+      "temperatureC": 7.5,
+      "humidityPercent": 88,
+      "precipitationMm": 0.1,
+      "windSpeedMs": 2.42,
+      "dewPointC": 5.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T09:00:00.000Z",
+      "temperatureC": 7.6,
+      "humidityPercent": 91,
+      "precipitationMm": 0.4,
+      "windSpeedMs": 2.31,
+      "dewPointC": 6.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T10:00:00.000Z",
+      "temperatureC": 7.6,
+      "humidityPercent": 94,
+      "precipitationMm": 0,
+      "windSpeedMs": 0.82,
+      "dewPointC": 6.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T11:00:00.000Z",
+      "temperatureC": 7.4,
+      "humidityPercent": 95,
+      "precipitationMm": 0,
+      "windSpeedMs": 0.78,
+      "dewPointC": 6.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T12:00:00.000Z",
+      "temperatureC": 8,
+      "humidityPercent": 93,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.21,
+      "dewPointC": 7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T13:00:00.000Z",
+      "temperatureC": 8.8,
+      "humidityPercent": 92,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.94,
+      "dewPointC": 7.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T14:00:00.000Z",
+      "temperatureC": 10.8,
+      "humidityPercent": 89,
+      "precipitationMm": 0.5,
+      "windSpeedMs": 2.14,
+      "dewPointC": 9.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T15:00:00.000Z",
+      "temperatureC": 14.6,
+      "humidityPercent": 78,
+      "precipitationMm": 0.9,
+      "windSpeedMs": 2.41,
+      "dewPointC": 10.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T16:00:00.000Z",
+      "temperatureC": 15.5,
+      "humidityPercent": 77,
+      "precipitationMm": 0.3,
+      "windSpeedMs": 2.48,
+      "dewPointC": 11.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T17:00:00.000Z",
+      "temperatureC": 16.5,
+      "humidityPercent": 76,
+      "precipitationMm": 0.7,
+      "windSpeedMs": 4.7,
+      "dewPointC": 12.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T18:00:00.000Z",
+      "temperatureC": 17.2,
+      "humidityPercent": 73,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.12,
+      "dewPointC": 12.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T19:00:00.000Z",
+      "temperatureC": 18.5,
+      "humidityPercent": 69,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.39,
+      "dewPointC": 12.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T20:00:00.000Z",
+      "temperatureC": 20.6,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.59,
+      "dewPointC": 13.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T21:00:00.000Z",
+      "temperatureC": 21.7,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 6.16,
+      "dewPointC": 14.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T22:00:00.000Z",
+      "temperatureC": 21.6,
+      "humidityPercent": 56,
+      "precipitationMm": 0.1,
+      "windSpeedMs": 3.72,
+      "dewPointC": 12.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-20T23:00:00.000Z",
+      "temperatureC": 20.6,
+      "humidityPercent": 60,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.45,
+      "dewPointC": 12.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T00:00:00.000Z",
+      "temperatureC": 19.8,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 4,
+      "dewPointC": 12.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T01:00:00.000Z",
+      "temperatureC": 19.7,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.41,
+      "dewPointC": 12.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T02:00:00.000Z",
+      "temperatureC": 19.5,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.75,
+      "dewPointC": 12.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T03:00:00.000Z",
+      "temperatureC": 18.6,
+      "humidityPercent": 60,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.81,
+      "dewPointC": 10.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T04:00:00.000Z",
+      "temperatureC": 17.9,
+      "humidityPercent": 57,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.21,
+      "dewPointC": 9.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T05:00:00.000Z",
+      "temperatureC": 16.3,
+      "humidityPercent": 60,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.06,
+      "dewPointC": 8.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T06:00:00.000Z",
+      "temperatureC": 15.1,
+      "humidityPercent": 57,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.27,
+      "dewPointC": 6.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T07:00:00.000Z",
+      "temperatureC": 13.8,
+      "humidityPercent": 56,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.91,
+      "dewPointC": 5.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T08:00:00.000Z",
+      "temperatureC": 11.7,
+      "humidityPercent": 56,
+      "precipitationMm": 0,
+      "windSpeedMs": 6.48,
+      "dewPointC": 3.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T09:00:00.000Z",
+      "temperatureC": 9.8,
+      "humidityPercent": 57,
+      "precipitationMm": 0,
+      "windSpeedMs": 6.41,
+      "dewPointC": 1.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T10:00:00.000Z",
+      "temperatureC": 7.3,
+      "humidityPercent": 56,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.22,
+      "dewPointC": -0.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T11:00:00.000Z",
+      "temperatureC": 6.6,
+      "humidityPercent": 57,
+      "precipitationMm": 0,
+      "windSpeedMs": 5,
+      "dewPointC": -1.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T12:00:00.000Z",
+      "temperatureC": 6.3,
+      "humidityPercent": 58,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.88,
+      "dewPointC": -1.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T13:00:00.000Z",
+      "temperatureC": 6.1,
+      "humidityPercent": 59,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.54,
+      "dewPointC": -1.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T14:00:00.000Z",
+      "temperatureC": 6.1,
+      "humidityPercent": 57,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.46,
+      "dewPointC": -1.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T15:00:00.000Z",
+      "temperatureC": 7.2,
+      "humidityPercent": 50,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.51,
+      "dewPointC": -2.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T16:00:00.000Z",
+      "temperatureC": 7.8,
+      "humidityPercent": 47,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.43,
+      "dewPointC": -2.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T17:00:00.000Z",
+      "temperatureC": 8.5,
+      "humidityPercent": 42,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.06,
+      "dewPointC": -3.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T18:00:00.000Z",
+      "temperatureC": 9.2,
+      "humidityPercent": 39,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.47,
+      "dewPointC": -4.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T19:00:00.000Z",
+      "temperatureC": 9.5,
+      "humidityPercent": 37,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.89,
+      "dewPointC": -4.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T20:00:00.000Z",
+      "temperatureC": 10,
+      "humidityPercent": 34,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.47,
+      "dewPointC": -5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T21:00:00.000Z",
+      "temperatureC": 10.1,
+      "humidityPercent": 33,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.26,
+      "dewPointC": -5.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T22:00:00.000Z",
+      "temperatureC": 9.5,
+      "humidityPercent": 33,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.02,
+      "dewPointC": -6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-21T23:00:00.000Z",
+      "temperatureC": 9.2,
+      "humidityPercent": 34,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.77,
+      "dewPointC": -6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T00:00:00.000Z",
+      "temperatureC": 8.1,
+      "humidityPercent": 42,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.63,
+      "dewPointC": -3.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T01:00:00.000Z",
+      "temperatureC": 7.3,
+      "humidityPercent": 46,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.98,
+      "dewPointC": -3.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T02:00:00.000Z",
+      "temperatureC": 6.4,
+      "humidityPercent": 48,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.56,
+      "dewPointC": -3.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T03:00:00.000Z",
+      "temperatureC": 5.1,
+      "humidityPercent": 50,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.21,
+      "dewPointC": -4.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T04:00:00.000Z",
+      "temperatureC": 4.6,
+      "humidityPercent": 50,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.18,
+      "dewPointC": -4.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T05:00:00.000Z",
+      "temperatureC": 3.7,
+      "humidityPercent": 50,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.63,
+      "dewPointC": -5.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T06:00:00.000Z",
+      "temperatureC": 3.8,
+      "humidityPercent": 49,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.85,
+      "dewPointC": -6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T07:00:00.000Z",
+      "temperatureC": 3.1,
+      "humidityPercent": 51,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.1,
+      "dewPointC": -6.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T08:00:00.000Z",
+      "temperatureC": 2.6,
+      "humidityPercent": 53,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.98,
+      "dewPointC": -6.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T09:00:00.000Z",
+      "temperatureC": 1.8,
+      "humidityPercent": 54,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.05,
+      "dewPointC": -6.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T10:00:00.000Z",
+      "temperatureC": 1.1,
+      "humidityPercent": 54,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.52,
+      "dewPointC": -7.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T11:00:00.000Z",
+      "temperatureC": 0.9,
+      "humidityPercent": 53,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.74,
+      "dewPointC": -7.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T12:00:00.000Z",
+      "temperatureC": 1,
+      "humidityPercent": 51,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.91,
+      "dewPointC": -8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T13:00:00.000Z",
+      "temperatureC": 1.1,
+      "humidityPercent": 50,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.84,
+      "dewPointC": -8.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T14:00:00.000Z",
+      "temperatureC": 1.5,
+      "humidityPercent": 47,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.6,
+      "dewPointC": -8.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T15:00:00.000Z",
+      "temperatureC": 2.9,
+      "humidityPercent": 44,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.1,
+      "dewPointC": -8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T16:00:00.000Z",
+      "temperatureC": 3.4,
+      "humidityPercent": 43,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.68,
+      "dewPointC": -7.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T17:00:00.000Z",
+      "temperatureC": 4.1,
+      "humidityPercent": 43,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.03,
+      "dewPointC": -7.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T18:00:00.000Z",
+      "temperatureC": 4.5,
+      "humidityPercent": 44,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.91,
+      "dewPointC": -6.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T19:00:00.000Z",
+      "temperatureC": 5,
+      "humidityPercent": 46,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.98,
+      "dewPointC": -5.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T20:00:00.000Z",
+      "temperatureC": 5.4,
+      "humidityPercent": 47,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.07,
+      "dewPointC": -5.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T21:00:00.000Z",
+      "temperatureC": 5.4,
+      "humidityPercent": 49,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.49,
+      "dewPointC": -4.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T22:00:00.000Z",
+      "temperatureC": 4.8,
+      "humidityPercent": 52,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.76,
+      "dewPointC": -4.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-22T23:00:00.000Z",
+      "temperatureC": 4.5,
+      "humidityPercent": 55,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.97,
+      "dewPointC": -3.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T00:00:00.000Z",
+      "temperatureC": 3.8,
+      "humidityPercent": 60,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.33,
+      "dewPointC": -3.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T01:00:00.000Z",
+      "temperatureC": 3.6,
+      "humidityPercent": 61,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.14,
+      "dewPointC": -3.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T02:00:00.000Z",
+      "temperatureC": 3.6,
+      "humidityPercent": 61,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.12,
+      "dewPointC": -3.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T03:00:00.000Z",
+      "temperatureC": 3.4,
+      "humidityPercent": 62,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.16,
+      "dewPointC": -3.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T04:00:00.000Z",
+      "temperatureC": 3.4,
+      "humidityPercent": 61,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.85,
+      "dewPointC": -3.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T05:00:00.000Z",
+      "temperatureC": 3.3,
+      "humidityPercent": 64,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.3,
+      "dewPointC": -2.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T06:00:00.000Z",
+      "temperatureC": 3.6,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.24,
+      "dewPointC": -2.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T07:00:00.000Z",
+      "temperatureC": 3.6,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.03,
+      "dewPointC": -2.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T08:00:00.000Z",
+      "temperatureC": 3.6,
+      "humidityPercent": 68,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.86,
+      "dewPointC": -1.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T09:00:00.000Z",
+      "temperatureC": 3.2,
+      "humidityPercent": 74,
+      "precipitationMm": 0.2,
+      "windSpeedMs": 4.55,
+      "dewPointC": -1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T10:00:00.000Z",
+      "temperatureC": 3.3,
+      "humidityPercent": 79,
+      "precipitationMm": 0.3,
+      "windSpeedMs": 4.26,
+      "dewPointC": 0,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T11:00:00.000Z",
+      "temperatureC": 3.1,
+      "humidityPercent": 81,
+      "precipitationMm": 0.2,
+      "windSpeedMs": 5.4,
+      "dewPointC": 0.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T12:00:00.000Z",
+      "temperatureC": 3.1,
+      "humidityPercent": 81,
+      "precipitationMm": 0.4,
+      "windSpeedMs": 6.12,
+      "dewPointC": 0.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T13:00:00.000Z",
+      "temperatureC": 3.2,
+      "humidityPercent": 84,
+      "precipitationMm": 0.5,
+      "windSpeedMs": 6.51,
+      "dewPointC": 0.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T14:00:00.000Z",
+      "temperatureC": 3.4,
+      "humidityPercent": 84,
+      "precipitationMm": 1,
+      "windSpeedMs": 6.13,
+      "dewPointC": 0.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T15:00:00.000Z",
+      "temperatureC": 3.8,
+      "humidityPercent": 87,
+      "precipitationMm": 0.8,
+      "windSpeedMs": 6.6,
+      "dewPointC": 1.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T16:00:00.000Z",
+      "temperatureC": 4.2,
+      "humidityPercent": 86,
+      "precipitationMm": 1.3,
+      "windSpeedMs": 6.49,
+      "dewPointC": 2.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T17:00:00.000Z",
+      "temperatureC": 3.9,
+      "humidityPercent": 91,
+      "precipitationMm": 1.7,
+      "windSpeedMs": 6.45,
+      "dewPointC": 2.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T18:00:00.000Z",
+      "temperatureC": 4.1,
+      "humidityPercent": 92,
+      "precipitationMm": 1.7,
+      "windSpeedMs": 6.45,
+      "dewPointC": 2.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T19:00:00.000Z",
+      "temperatureC": 4.5,
+      "humidityPercent": 90,
+      "precipitationMm": 1.5,
+      "windSpeedMs": 6.69,
+      "dewPointC": 3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T20:00:00.000Z",
+      "temperatureC": 4.9,
+      "humidityPercent": 90,
+      "precipitationMm": 1.4,
+      "windSpeedMs": 6.63,
+      "dewPointC": 3.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T21:00:00.000Z",
+      "temperatureC": 5.3,
+      "humidityPercent": 90,
+      "precipitationMm": 2.2,
+      "windSpeedMs": 6.56,
+      "dewPointC": 3.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T22:00:00.000Z",
+      "temperatureC": 5.1,
+      "humidityPercent": 88,
+      "precipitationMm": 1.7,
+      "windSpeedMs": 4.46,
+      "dewPointC": 3.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-23T23:00:00.000Z",
+      "temperatureC": 5,
+      "humidityPercent": 90,
+      "precipitationMm": 1.3,
+      "windSpeedMs": 5.55,
+      "dewPointC": 3.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T00:00:00.000Z",
+      "temperatureC": 5,
+      "humidityPercent": 90,
+      "precipitationMm": 0.5,
+      "windSpeedMs": 6.2,
+      "dewPointC": 3.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T01:00:00.000Z",
+      "temperatureC": 4.4,
+      "humidityPercent": 90,
+      "precipitationMm": 0.6,
+      "windSpeedMs": 5.71,
+      "dewPointC": 2.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T02:00:00.000Z",
+      "temperatureC": 3.7,
+      "humidityPercent": 88,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.18,
+      "dewPointC": 2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T03:00:00.000Z",
+      "temperatureC": 3.3,
+      "humidityPercent": 87,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.29,
+      "dewPointC": 1.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T04:00:00.000Z",
+      "temperatureC": 3.3,
+      "humidityPercent": 85,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.07,
+      "dewPointC": 1.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T05:00:00.000Z",
+      "temperatureC": 3.2,
+      "humidityPercent": 85,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.27,
+      "dewPointC": 1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T06:00:00.000Z",
+      "temperatureC": 3.2,
+      "humidityPercent": 86,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.78,
+      "dewPointC": 1.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T07:00:00.000Z",
+      "temperatureC": 3,
+      "humidityPercent": 88,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.47,
+      "dewPointC": 1.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T08:00:00.000Z",
+      "temperatureC": 2.8,
+      "humidityPercent": 89,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.06,
+      "dewPointC": 1.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T09:00:00.000Z",
+      "temperatureC": 3,
+      "humidityPercent": 89,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.28,
+      "dewPointC": 1.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T10:00:00.000Z",
+      "temperatureC": 3,
+      "humidityPercent": 85,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.92,
+      "dewPointC": 0.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T11:00:00.000Z",
+      "temperatureC": 3,
+      "humidityPercent": 85,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.66,
+      "dewPointC": 0.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T12:00:00.000Z",
+      "temperatureC": 4,
+      "humidityPercent": 81,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.08,
+      "dewPointC": 1.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T13:00:00.000Z",
+      "temperatureC": 5,
+      "humidityPercent": 77,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.36,
+      "dewPointC": 1.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T14:00:00.000Z",
+      "temperatureC": 6,
+      "humidityPercent": 73,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.34,
+      "dewPointC": 1.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T15:00:00.000Z",
+      "temperatureC": 8.1,
+      "humidityPercent": 60,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.1,
+      "dewPointC": 0.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T16:00:00.000Z",
+      "temperatureC": 8.7,
+      "humidityPercent": 61,
+      "precipitationMm": 0,
+      "windSpeedMs": 3,
+      "dewPointC": 1.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T17:00:00.000Z",
+      "temperatureC": 9.5,
+      "humidityPercent": 58,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.56,
+      "dewPointC": 1.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T18:00:00.000Z",
+      "temperatureC": 10.1,
+      "humidityPercent": 57,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.61,
+      "dewPointC": 1.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T19:00:00.000Z",
+      "temperatureC": 10.6,
+      "humidityPercent": 54,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.82,
+      "dewPointC": 1.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T20:00:00.000Z",
+      "temperatureC": 11.3,
+      "humidityPercent": 52,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.64,
+      "dewPointC": 1.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T21:00:00.000Z",
+      "temperatureC": 11.7,
+      "humidityPercent": 50,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.38,
+      "dewPointC": 1.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T22:00:00.000Z",
+      "temperatureC": 10.5,
+      "humidityPercent": 55,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.62,
+      "dewPointC": 1.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-24T23:00:00.000Z",
+      "temperatureC": 10.5,
+      "humidityPercent": 54,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.72,
+      "dewPointC": 1.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T00:00:00.000Z",
+      "temperatureC": 9.5,
+      "humidityPercent": 59,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.97,
+      "dewPointC": 1.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T01:00:00.000Z",
+      "temperatureC": 8.4,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.73,
+      "dewPointC": 1.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T02:00:00.000Z",
+      "temperatureC": 7.4,
+      "humidityPercent": 68,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.2,
+      "dewPointC": 1.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T03:00:00.000Z",
+      "temperatureC": 6.3,
+      "humidityPercent": 73,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.18,
+      "dewPointC": 1.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T04:00:00.000Z",
+      "temperatureC": 6,
+      "humidityPercent": 74,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.54,
+      "dewPointC": 1.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T05:00:00.000Z",
+      "temperatureC": 5.5,
+      "humidityPercent": 74,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.82,
+      "dewPointC": 1.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T06:00:00.000Z",
+      "temperatureC": 5.1,
+      "humidityPercent": 75,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.89,
+      "dewPointC": 1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T07:00:00.000Z",
+      "temperatureC": 5.1,
+      "humidityPercent": 73,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.98,
+      "dewPointC": 0.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T08:00:00.000Z",
+      "temperatureC": 4.7,
+      "humidityPercent": 73,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.17,
+      "dewPointC": 0.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T09:00:00.000Z",
+      "temperatureC": 4.6,
+      "humidityPercent": 77,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.94,
+      "dewPointC": 0.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T10:00:00.000Z",
+      "temperatureC": 4.9,
+      "humidityPercent": 78,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.56,
+      "dewPointC": 1.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T11:00:00.000Z",
+      "temperatureC": 5.2,
+      "humidityPercent": 79,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.33,
+      "dewPointC": 1.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T12:00:00.000Z",
+      "temperatureC": 5.3,
+      "humidityPercent": 79,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.81,
+      "dewPointC": 2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T13:00:00.000Z",
+      "temperatureC": 5.5,
+      "humidityPercent": 79,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.03,
+      "dewPointC": 2.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T14:00:00.000Z",
+      "temperatureC": 6,
+      "humidityPercent": 77,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.36,
+      "dewPointC": 2.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T15:00:00.000Z",
+      "temperatureC": 6.6,
+      "humidityPercent": 74,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.76,
+      "dewPointC": 2.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T16:00:00.000Z",
+      "temperatureC": 7,
+      "humidityPercent": 74,
+      "precipitationMm": 0,
+      "windSpeedMs": 6.23,
+      "dewPointC": 2.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T17:00:00.000Z",
+      "temperatureC": 7.1,
+      "humidityPercent": 74,
+      "precipitationMm": 0.1,
+      "windSpeedMs": 5.94,
+      "dewPointC": 2.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T18:00:00.000Z",
+      "temperatureC": 7.4,
+      "humidityPercent": 72,
+      "precipitationMm": 0.3,
+      "windSpeedMs": 5.91,
+      "dewPointC": 2.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T19:00:00.000Z",
+      "temperatureC": 7.3,
+      "humidityPercent": 73,
+      "precipitationMm": 0,
+      "windSpeedMs": 6,
+      "dewPointC": 2.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T20:00:00.000Z",
+      "temperatureC": 7.4,
+      "humidityPercent": 72,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.49,
+      "dewPointC": 2.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T21:00:00.000Z",
+      "temperatureC": 7.2,
+      "humidityPercent": 71,
+      "precipitationMm": 0,
+      "windSpeedMs": 5.25,
+      "dewPointC": 2.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T22:00:00.000Z",
+      "temperatureC": 7,
+      "humidityPercent": 69,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.81,
+      "dewPointC": 1.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-25T23:00:00.000Z",
+      "temperatureC": 6.8,
+      "humidityPercent": 70,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.62,
+      "dewPointC": 1.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T00:00:00.000Z",
+      "temperatureC": 6.8,
+      "humidityPercent": 74,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.22,
+      "dewPointC": 2.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T01:00:00.000Z",
+      "temperatureC": 6.7,
+      "humidityPercent": 75,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.14,
+      "dewPointC": 2.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T02:00:00.000Z",
+      "temperatureC": 6.6,
+      "humidityPercent": 75,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.89,
+      "dewPointC": 2.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T03:00:00.000Z",
+      "temperatureC": 5.6,
+      "humidityPercent": 76,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.62,
+      "dewPointC": 1.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T04:00:00.000Z",
+      "temperatureC": 5.5,
+      "humidityPercent": 76,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.5,
+      "dewPointC": 1.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T05:00:00.000Z",
+      "temperatureC": 4.9,
+      "humidityPercent": 78,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.52,
+      "dewPointC": 1.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T06:00:00.000Z",
+      "temperatureC": 4.3,
+      "humidityPercent": 81,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.6,
+      "dewPointC": 1.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T07:00:00.000Z",
+      "temperatureC": 4.1,
+      "humidityPercent": 82,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.5,
+      "dewPointC": 1.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T08:00:00.000Z",
+      "temperatureC": 3.7,
+      "humidityPercent": 81,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.33,
+      "dewPointC": 0.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T09:00:00.000Z",
+      "temperatureC": 3.2,
+      "humidityPercent": 84,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.84,
+      "dewPointC": 0.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T10:00:00.000Z",
+      "temperatureC": 3,
+      "humidityPercent": 85,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.81,
+      "dewPointC": 0.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T11:00:00.000Z",
+      "temperatureC": 3,
+      "humidityPercent": 85,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.53,
+      "dewPointC": 0.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T12:00:00.000Z",
+      "temperatureC": 3.1,
+      "humidityPercent": 83,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.4,
+      "dewPointC": 0.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T13:00:00.000Z",
+      "temperatureC": 4.2,
+      "humidityPercent": 73,
+      "precipitationMm": 0,
+      "windSpeedMs": 0.89,
+      "dewPointC": -0.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T14:00:00.000Z",
+      "temperatureC": 5.6,
+      "humidityPercent": 66,
+      "precipitationMm": 0,
+      "windSpeedMs": 0.63,
+      "dewPointC": -0.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T15:00:00.000Z",
+      "temperatureC": 7.7,
+      "humidityPercent": 61,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.24,
+      "dewPointC": 0.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T16:00:00.000Z",
+      "temperatureC": 8.9,
+      "humidityPercent": 58,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.71,
+      "dewPointC": 1.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T17:00:00.000Z",
+      "temperatureC": 9.9,
+      "humidityPercent": 56,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.1,
+      "dewPointC": 1.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T18:00:00.000Z",
+      "temperatureC": 10.9,
+      "humidityPercent": 54,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.69,
+      "dewPointC": 1.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T19:00:00.000Z",
+      "temperatureC": 11.5,
+      "humidityPercent": 53,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.05,
+      "dewPointC": 2.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T20:00:00.000Z",
+      "temperatureC": 12.4,
+      "humidityPercent": 52,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.26,
+      "dewPointC": 2.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T21:00:00.000Z",
+      "temperatureC": 12.9,
+      "humidityPercent": 50,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.49,
+      "dewPointC": 2.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T22:00:00.000Z",
+      "temperatureC": 12.1,
+      "humidityPercent": 59,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.7,
+      "dewPointC": 4.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-26T23:00:00.000Z",
+      "temperatureC": 11.3,
+      "humidityPercent": 61,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.2,
+      "dewPointC": 4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T00:00:00.000Z",
+      "temperatureC": 10.6,
+      "humidityPercent": 62,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.4,
+      "dewPointC": 3.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T01:00:00.000Z",
+      "temperatureC": 10.5,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.95,
+      "dewPointC": 3.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T02:00:00.000Z",
+      "temperatureC": 10.3,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.38,
+      "dewPointC": 3.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T03:00:00.000Z",
+      "temperatureC": 10,
+      "humidityPercent": 68,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.91,
+      "dewPointC": 4.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T04:00:00.000Z",
+      "temperatureC": 10.1,
+      "humidityPercent": 68,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.03,
+      "dewPointC": 4.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T05:00:00.000Z",
+      "temperatureC": 9.8,
+      "humidityPercent": 69,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.05,
+      "dewPointC": 4.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T06:00:00.000Z",
+      "temperatureC": 9.8,
+      "humidityPercent": 70,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.81,
+      "dewPointC": 4.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T07:00:00.000Z",
+      "temperatureC": 9.7,
+      "humidityPercent": 72,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.62,
+      "dewPointC": 4.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T08:00:00.000Z",
+      "temperatureC": 9.6,
+      "humidityPercent": 75,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.1,
+      "dewPointC": 5.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T09:00:00.000Z",
+      "temperatureC": 9.4,
+      "humidityPercent": 78,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.73,
+      "dewPointC": 5.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T10:00:00.000Z",
+      "temperatureC": 9.6,
+      "humidityPercent": 76,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.21,
+      "dewPointC": 5.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T11:00:00.000Z",
+      "temperatureC": 9.7,
+      "humidityPercent": 76,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.18,
+      "dewPointC": 5.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T12:00:00.000Z",
+      "temperatureC": 9.7,
+      "humidityPercent": 79,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.7,
+      "dewPointC": 6.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T13:00:00.000Z",
+      "temperatureC": 10.7,
+      "humidityPercent": 75,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.55,
+      "dewPointC": 6.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T14:00:00.000Z",
+      "temperatureC": 12.3,
+      "humidityPercent": 68,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.69,
+      "dewPointC": 6.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T15:00:00.000Z",
+      "temperatureC": 14.6,
+      "humidityPercent": 52,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.93,
+      "dewPointC": 4.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T16:00:00.000Z",
+      "temperatureC": 15.3,
+      "humidityPercent": 42,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.77,
+      "dewPointC": 2.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T17:00:00.000Z",
+      "temperatureC": 16,
+      "humidityPercent": 36,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.7,
+      "dewPointC": 0.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T18:00:00.000Z",
+      "temperatureC": 16.5,
+      "humidityPercent": 32,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.61,
+      "dewPointC": -0.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T19:00:00.000Z",
+      "temperatureC": 16.7,
+      "humidityPercent": 31,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.16,
+      "dewPointC": -0.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T20:00:00.000Z",
+      "temperatureC": 16.9,
+      "humidityPercent": 32,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.59,
+      "dewPointC": 0,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T21:00:00.000Z",
+      "temperatureC": 16.3,
+      "humidityPercent": 36,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.94,
+      "dewPointC": 1.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T22:00:00.000Z",
+      "temperatureC": 17.3,
+      "humidityPercent": 22,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.79,
+      "dewPointC": -4.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-27T23:00:00.000Z",
+      "temperatureC": 18.7,
+      "humidityPercent": 14,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.39,
+      "dewPointC": -9.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T00:00:00.000Z",
+      "temperatureC": 15.7,
+      "humidityPercent": 29,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.06,
+      "dewPointC": -2.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T01:00:00.000Z",
+      "temperatureC": 13.1,
+      "humidityPercent": 43,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.12,
+      "dewPointC": 1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T02:00:00.000Z",
+      "temperatureC": 11.8,
+      "humidityPercent": 48,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.15,
+      "dewPointC": 1.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T03:00:00.000Z",
+      "temperatureC": 10.8,
+      "humidityPercent": 49,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.84,
+      "dewPointC": 0.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T04:00:00.000Z",
+      "temperatureC": 10.2,
+      "humidityPercent": 50,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.6,
+      "dewPointC": 0.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T05:00:00.000Z",
+      "temperatureC": 9.7,
+      "humidityPercent": 51,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.05,
+      "dewPointC": 0.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T06:00:00.000Z",
+      "temperatureC": 9.4,
+      "humidityPercent": 53,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.44,
+      "dewPointC": 0.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T07:00:00.000Z",
+      "temperatureC": 9.2,
+      "humidityPercent": 54,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.75,
+      "dewPointC": 0.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T08:00:00.000Z",
+      "temperatureC": 8.6,
+      "humidityPercent": 55,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.55,
+      "dewPointC": 0,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T09:00:00.000Z",
+      "temperatureC": 7.8,
+      "humidityPercent": 58,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.5,
+      "dewPointC": 0.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T10:00:00.000Z",
+      "temperatureC": 8,
+      "humidityPercent": 61,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.18,
+      "dewPointC": 0.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T11:00:00.000Z",
+      "temperatureC": 7.9,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.83,
+      "dewPointC": 1.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T12:00:00.000Z",
+      "temperatureC": 8.3,
+      "humidityPercent": 62,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.55,
+      "dewPointC": 1.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T13:00:00.000Z",
+      "temperatureC": 8.7,
+      "humidityPercent": 61,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.69,
+      "dewPointC": 1.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T14:00:00.000Z",
+      "temperatureC": 8.6,
+      "humidityPercent": 63,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.7,
+      "dewPointC": 1.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T15:00:00.000Z",
+      "temperatureC": 8.9,
+      "humidityPercent": 64,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.8,
+      "dewPointC": 2.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T16:00:00.000Z",
+      "temperatureC": 9,
+      "humidityPercent": 63,
+      "precipitationMm": 0.4,
+      "windSpeedMs": 2.77,
+      "dewPointC": 2.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T17:00:00.000Z",
+      "temperatureC": 8.6,
+      "humidityPercent": 73,
+      "precipitationMm": 1,
+      "windSpeedMs": 2.73,
+      "dewPointC": 4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T18:00:00.000Z",
+      "temperatureC": 8.4,
+      "humidityPercent": 72,
+      "precipitationMm": 0.9,
+      "windSpeedMs": 3.22,
+      "dewPointC": 3.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T19:00:00.000Z",
+      "temperatureC": 8,
+      "humidityPercent": 74,
+      "precipitationMm": 2,
+      "windSpeedMs": 3.23,
+      "dewPointC": 3.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T20:00:00.000Z",
+      "temperatureC": 7.9,
+      "humidityPercent": 77,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.35,
+      "dewPointC": 4.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T21:00:00.000Z",
+      "temperatureC": 7.7,
+      "humidityPercent": 79,
+      "precipitationMm": 0.2,
+      "windSpeedMs": 3.64,
+      "dewPointC": 4.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T22:00:00.000Z",
+      "temperatureC": 8.1,
+      "humidityPercent": 86,
+      "precipitationMm": 0.5,
+      "windSpeedMs": 3.05,
+      "dewPointC": 6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-28T23:00:00.000Z",
+      "temperatureC": 8,
+      "humidityPercent": 87,
+      "precipitationMm": 0.3,
+      "windSpeedMs": 3.64,
+      "dewPointC": 6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T00:00:00.000Z",
+      "temperatureC": 7.9,
+      "humidityPercent": 89,
+      "precipitationMm": 0.5,
+      "windSpeedMs": 3.5,
+      "dewPointC": 6.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T01:00:00.000Z",
+      "temperatureC": 8.1,
+      "humidityPercent": 89,
+      "precipitationMm": 0.4,
+      "windSpeedMs": 3.94,
+      "dewPointC": 6.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T02:00:00.000Z",
+      "temperatureC": 8.3,
+      "humidityPercent": 90,
+      "precipitationMm": 0.2,
+      "windSpeedMs": 4.85,
+      "dewPointC": 6.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T03:00:00.000Z",
+      "temperatureC": 8.4,
+      "humidityPercent": 91,
+      "precipitationMm": 0.4,
+      "windSpeedMs": 4.61,
+      "dewPointC": 7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T04:00:00.000Z",
+      "temperatureC": 8.5,
+      "humidityPercent": 91,
+      "precipitationMm": 0.1,
+      "windSpeedMs": 4.46,
+      "dewPointC": 7.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T05:00:00.000Z",
+      "temperatureC": 8.5,
+      "humidityPercent": 92,
+      "precipitationMm": 0.2,
+      "windSpeedMs": 4.17,
+      "dewPointC": 7.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T06:00:00.000Z",
+      "temperatureC": 8.4,
+      "humidityPercent": 92,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.31,
+      "dewPointC": 7.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T07:00:00.000Z",
+      "temperatureC": 8.2,
+      "humidityPercent": 92,
+      "precipitationMm": 0.1,
+      "windSpeedMs": 4.74,
+      "dewPointC": 7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T08:00:00.000Z",
+      "temperatureC": 8.2,
+      "humidityPercent": 92,
+      "precipitationMm": 0.3,
+      "windSpeedMs": 4.9,
+      "dewPointC": 7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T09:00:00.000Z",
+      "temperatureC": 8,
+      "humidityPercent": 92,
+      "precipitationMm": 0.5,
+      "windSpeedMs": 5.15,
+      "dewPointC": 6.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T10:00:00.000Z",
+      "temperatureC": 8.2,
+      "humidityPercent": 94,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.96,
+      "dewPointC": 7.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T11:00:00.000Z",
+      "temperatureC": 8.3,
+      "humidityPercent": 94,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.89,
+      "dewPointC": 7.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T12:00:00.000Z",
+      "temperatureC": 8.5,
+      "humidityPercent": 92,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.69,
+      "dewPointC": 7.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T13:00:00.000Z",
+      "temperatureC": 8.8,
+      "humidityPercent": 91,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.34,
+      "dewPointC": 7.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T14:00:00.000Z",
+      "temperatureC": 9,
+      "humidityPercent": 90,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.94,
+      "dewPointC": 7.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T15:00:00.000Z",
+      "temperatureC": 9.7,
+      "humidityPercent": 87,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.33,
+      "dewPointC": 7.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T16:00:00.000Z",
+      "temperatureC": 9.3,
+      "humidityPercent": 89,
+      "precipitationMm": 0.6,
+      "windSpeedMs": 4.62,
+      "dewPointC": 7.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T17:00:00.000Z",
+      "temperatureC": 9.5,
+      "humidityPercent": 87,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.05,
+      "dewPointC": 7.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T18:00:00.000Z",
+      "temperatureC": 9.3,
+      "humidityPercent": 88,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.98,
+      "dewPointC": 7.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T19:00:00.000Z",
+      "temperatureC": 8.9,
+      "humidityPercent": 89,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.15,
+      "dewPointC": 7.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T20:00:00.000Z",
+      "temperatureC": 8.7,
+      "humidityPercent": 89,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.85,
+      "dewPointC": 6.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T21:00:00.000Z",
+      "temperatureC": 8.5,
+      "humidityPercent": 87,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.82,
+      "dewPointC": 6.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T22:00:00.000Z",
+      "temperatureC": 8.1,
+      "humidityPercent": 93,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.56,
+      "dewPointC": 7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-29T23:00:00.000Z",
+      "temperatureC": 8.1,
+      "humidityPercent": 92,
+      "precipitationMm": 0,
+      "windSpeedMs": 4.04,
+      "dewPointC": 6.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T00:00:00.000Z",
+      "temperatureC": 8.1,
+      "humidityPercent": 92,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.19,
+      "dewPointC": 6.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T01:00:00.000Z",
+      "temperatureC": 8.2,
+      "humidityPercent": 92,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.22,
+      "dewPointC": 6.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T02:00:00.000Z",
+      "temperatureC": 8.4,
+      "humidityPercent": 92,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.22,
+      "dewPointC": 7.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T03:00:00.000Z",
+      "temperatureC": 8.2,
+      "humidityPercent": 92,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.08,
+      "dewPointC": 6.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T04:00:00.000Z",
+      "temperatureC": 8.2,
+      "humidityPercent": 91,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.75,
+      "dewPointC": 6.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T05:00:00.000Z",
+      "temperatureC": 8.3,
+      "humidityPercent": 91,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.75,
+      "dewPointC": 6.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T06:00:00.000Z",
+      "temperatureC": 8.5,
+      "humidityPercent": 90,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.91,
+      "dewPointC": 7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T07:00:00.000Z",
+      "temperatureC": 8.2,
+      "humidityPercent": 90,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.72,
+      "dewPointC": 6.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T08:00:00.000Z",
+      "temperatureC": 8.1,
+      "humidityPercent": 90,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.56,
+      "dewPointC": 6.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T09:00:00.000Z",
+      "temperatureC": 7.6,
+      "humidityPercent": 89,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.69,
+      "dewPointC": 5.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T10:00:00.000Z",
+      "temperatureC": 7.1,
+      "humidityPercent": 88,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.38,
+      "dewPointC": 5.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T11:00:00.000Z",
+      "temperatureC": 7.1,
+      "humidityPercent": 88,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.06,
+      "dewPointC": 5.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T12:00:00.000Z",
+      "temperatureC": 6.7,
+      "humidityPercent": 88,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.64,
+      "dewPointC": 4.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T13:00:00.000Z",
+      "temperatureC": 6.8,
+      "humidityPercent": 88,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.42,
+      "dewPointC": 4.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T14:00:00.000Z",
+      "temperatureC": 7.1,
+      "humidityPercent": 87,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.14,
+      "dewPointC": 5.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T15:00:00.000Z",
+      "temperatureC": 7.7,
+      "humidityPercent": 78,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.57,
+      "dewPointC": 4.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T16:00:00.000Z",
+      "temperatureC": 8.1,
+      "humidityPercent": 78,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.91,
+      "dewPointC": 4.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T17:00:00.000Z",
+      "temperatureC": 8.8,
+      "humidityPercent": 75,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.14,
+      "dewPointC": 4.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T18:00:00.000Z",
+      "temperatureC": 9.5,
+      "humidityPercent": 74,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.88,
+      "dewPointC": 5.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T19:00:00.000Z",
+      "temperatureC": 9.4,
+      "humidityPercent": 77,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.52,
+      "dewPointC": 5.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T20:00:00.000Z",
+      "temperatureC": 9,
+      "humidityPercent": 77,
+      "precipitationMm": 0.3,
+      "windSpeedMs": 2.77,
+      "dewPointC": 5.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T21:00:00.000Z",
+      "temperatureC": 10.8,
+      "humidityPercent": 69,
+      "precipitationMm": 0.8,
+      "windSpeedMs": 2.86,
+      "dewPointC": 5.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T22:00:00.000Z",
+      "temperatureC": 8.2,
+      "humidityPercent": 88,
+      "precipitationMm": 0.7,
+      "windSpeedMs": 1.89,
+      "dewPointC": 6.3,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-30T23:00:00.000Z",
+      "temperatureC": 8,
+      "humidityPercent": 88,
+      "precipitationMm": 0.1,
+      "windSpeedMs": 2.48,
+      "dewPointC": 6.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T00:00:00.000Z",
+      "temperatureC": 7.6,
+      "humidityPercent": 89,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.42,
+      "dewPointC": 5.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T01:00:00.000Z",
+      "temperatureC": 6.9,
+      "humidityPercent": 90,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.26,
+      "dewPointC": 5.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T02:00:00.000Z",
+      "temperatureC": 6.8,
+      "humidityPercent": 90,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.21,
+      "dewPointC": 5.4,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T03:00:00.000Z",
+      "temperatureC": 6.7,
+      "humidityPercent": 92,
+      "precipitationMm": 0.3,
+      "windSpeedMs": 2.14,
+      "dewPointC": 5.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T04:00:00.000Z",
+      "temperatureC": 7,
+      "humidityPercent": 92,
+      "precipitationMm": 0.6,
+      "windSpeedMs": 2.55,
+      "dewPointC": 5.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T05:00:00.000Z",
+      "temperatureC": 6.7,
+      "humidityPercent": 94,
+      "precipitationMm": 0.6,
+      "windSpeedMs": 2.51,
+      "dewPointC": 5.7,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T06:00:00.000Z",
+      "temperatureC": 6.5,
+      "humidityPercent": 91,
+      "precipitationMm": 0.3,
+      "windSpeedMs": 2.71,
+      "dewPointC": 5.1,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T07:00:00.000Z",
+      "temperatureC": 6.1,
+      "humidityPercent": 89,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.71,
+      "dewPointC": 4.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T08:00:00.000Z",
+      "temperatureC": 5.9,
+      "humidityPercent": 85,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.93,
+      "dewPointC": 3.6,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T09:00:00.000Z",
+      "temperatureC": 5.5,
+      "humidityPercent": 84,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.26,
+      "dewPointC": 2.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T10:00:00.000Z",
+      "temperatureC": 5.6,
+      "humidityPercent": 80,
+      "precipitationMm": 0.2,
+      "windSpeedMs": 2.72,
+      "dewPointC": 2.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T11:00:00.000Z",
+      "temperatureC": 5.3,
+      "humidityPercent": 79,
+      "precipitationMm": 0.2,
+      "windSpeedMs": 2.94,
+      "dewPointC": 2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T12:00:00.000Z",
+      "temperatureC": 5.2,
+      "humidityPercent": 79,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.01,
+      "dewPointC": 1.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T13:00:00.000Z",
+      "temperatureC": 5.5,
+      "humidityPercent": 77,
+      "precipitationMm": 0,
+      "windSpeedMs": 3.13,
+      "dewPointC": 1.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T14:00:00.000Z",
+      "temperatureC": 5.7,
+      "humidityPercent": 77,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.63,
+      "dewPointC": 1.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T15:00:00.000Z",
+      "temperatureC": 6.4,
+      "humidityPercent": 71,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.4,
+      "dewPointC": 1.5,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T16:00:00.000Z",
+      "temperatureC": 6.7,
+      "humidityPercent": 72,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.92,
+      "dewPointC": 2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T17:00:00.000Z",
+      "temperatureC": 6.9,
+      "humidityPercent": 70,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.46,
+      "dewPointC": 1.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T18:00:00.000Z",
+      "temperatureC": 7.2,
+      "humidityPercent": 69,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.32,
+      "dewPointC": 1.8,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T19:00:00.000Z",
+      "temperatureC": 7.5,
+      "humidityPercent": 69,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.17,
+      "dewPointC": 2.2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T20:00:00.000Z",
+      "temperatureC": 7.7,
+      "humidityPercent": 67,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.61,
+      "dewPointC": 1.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T21:00:00.000Z",
+      "temperatureC": 7.7,
+      "humidityPercent": 66,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.99,
+      "dewPointC": 1.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T22:00:00.000Z",
+      "temperatureC": 7.4,
+      "humidityPercent": 68,
+      "precipitationMm": 0,
+      "windSpeedMs": 1.98,
+      "dewPointC": 2,
+      "sourceHourPresent": true,
+      "missingFields": []
+    },
+    {
+      "time": "2020-03-31T23:00:00.000Z",
+      "temperatureC": 7.2,
+      "humidityPercent": 69,
+      "precipitationMm": 0,
+      "windSpeedMs": 2.28,
+      "dewPointC": 1.9,
+      "sourceHourPresent": true,
+      "missingFields": []
+    }
+  ],
+  "completeness": {
+    "status": "complete",
+    "expectedHours": 744,
+    "sourceHours": 744,
+    "completeHours": 744,
+    "missingHours": 0,
+    "validCounts": {
+      "temperatureC": 744,
+      "humidityPercent": 744,
+      "precipitationMm": 744,
+      "windSpeedMs": 744,
+      "dewPointC": 744
+    }
+  }
+}

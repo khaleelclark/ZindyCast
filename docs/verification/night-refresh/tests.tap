@@ -1,0 +1,931 @@
+TAP version 13
+# (node:3411488) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: strict current route uses fixed three-hour/three-station contract and coalesces a five-call reservation
+ok 1 - strict current route uses fixed three-hour/three-station contract and coalesces a five-call reservation
+  ---
+  duration_ms: 224.762014
+  type: 'test'
+  ...
+# (node:3411488) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time
+# Subtest: invalid, duplicate, blank and unknown query values never call the observation provider
+ok 2 - invalid, duplicate, blank and unknown query values never call the observation provider
+  ---
+  duration_ms: 23.830602
+  type: 'test'
+  ...
+# Subtest: manual refresh revalidates the same cache after ten seconds, coalesces, and preserves observation time
+ok 3 - manual refresh revalidates the same cache after ten seconds, coalesces, and preserves observation time
+  ---
+  duration_ms: 45.665966
+  type: 'test'
+  ...
+# Subtest: manual refresh preserves quota enforcement and marks retained reports stale on denial or outage
+ok 4 - manual refresh preserves quota enforcement and marks retained reports stale on denial or outage
+  ---
+  duration_ms: 41.342447
+  type: 'test'
+  ...
+# Subtest: stale cache is explicit during outage, but wrong geography is never a fallback
+ok 5 - stale cache is explicit during outage, but wrong geography is never a fallback
+  ---
+  duration_ms: 32.61516
+  type: 'test'
+  ...
+# Subtest: malformed quality metadata and future retrievals fail at the API binding
+ok 6 - malformed quality metadata and future retrievals fail at the API binding
+  ---
+  duration_ms: 24.0246
+  type: 'test'
+  ...
+# Subtest: NWS quota denial happens before fetch; provider rate and no-data errors map without private details
+ok 7 - NWS quota denial happens before fetch; provider rate and no-data errors map without private details
+  ---
+  duration_ms: 18.369961
+  type: 'test'
+  ...
+# Subtest: alerts validate location, unavailable state and complete official text independently
+ok 8 - alerts validate location, unavailable state and complete official text independently
+  ---
+  duration_ms: 36.309666
+  type: 'test'
+  ...
+# Subtest: expired, ended, test and cancellation records never appear as current alerts
+ok 9 - expired, ended, test and cancellation records never appear as current alerts
+  ---
+  duration_ms: 0.927607
+  type: 'test'
+  ...
+# Subtest: official links only navigate to HTTPS NWS domains
+ok 10 - official links only navigate to HTTPS NWS domains
+  ---
+  duration_ms: 0.329654
+  type: 'test'
+  ...
+# Subtest: basemap failure is source-scoped and sticky; explicit selection preserves weather and tolerates denied storage
+ok 11 - basemap failure is source-scoped and sticky; explicit selection preserves weather and tolerates denied storage
+  ---
+  duration_ms: 6.34159
+  type: 'test'
+  ...
+# Subtest: static tile URLs stay pinned to Streets v12, 512 @2x and valid XYZ
+ok 12 - static tile URLs stay pinned to Streets v12, 512 @2x and valid XYZ
+  ---
+  duration_ms: 0.733359
+  type: 'test'
+  ...
+# Subtest: actual Chrome basemap transitions and failure fixtures
+ok 13 - actual Chrome basemap transitions and failure fixtures # SKIP
+  ---
+  duration_ms: 0.159442
+  type: 'test'
+  ...
+# Subtest: admission validates status/count, never caches permits, and aborts before requesting
+ok 14 - admission validates status/count, never caches permits, and aborts before requesting
+  ---
+  duration_ms: 150.907281
+  type: 'test'
+  ...
+# Subtest: actual Chrome shared quota admission fixtures
+ok 15 - actual Chrome shared quota admission fixtures # SKIP
+  ---
+  duration_ms: 0.214817
+  type: 'test'
+  ...
+# Subtest: chart breaks missing values/hours but keeps repeated local DST hours in chronological order
+ok 16 - chart breaks missing values/hours but keeps repeated local DST hours in chronological order
+  ---
+  duration_ms: 11.137013
+  type: 'test'
+  ...
+# Subtest: chart renders accessible SVG and meaningful missing-data text
+ok 17 - chart renders accessible SVG and meaningful missing-data text
+  ---
+  duration_ms: 123.897929
+  type: 'test'
+  ...
+# Subtest: exact readouts retain zero, independent missing values, units and DST timezone
+ok 18 - exact readouts retain zero, independent missing values, units and DST timezone
+  ---
+  duration_ms: 3.090804
+  type: 'test'
+  ...
+# Subtest: city search starts with labeled native search input and polite status, without fabricated locations
+ok 19 - city search starts with labeled native search input and polite status, without fabricated locations
+  ---
+  duration_ms: 75.612431
+  type: 'test'
+  ...
+# Subtest: climate controls bind normalized coordinates and timezone; dates and full-year bounds are strict
+ok 20 - climate controls bind normalized coordinates and timezone; dates and full-year bounds are strict
+  ---
+  duration_ms: 8.140998
+  type: 'test'
+  ...
+# Subtest: quick periods are inclusive and never imply a 30-year climate normal
+ok 21 - quick periods are inclusive and never imply a 30-year climate normal
+  ---
+  duration_ms: 2.290348
+  type: 'test'
+  ...
+# Subtest: job response rejects wrong identity, changed timezone, invalid expiry and completed without result
+ok 22 - job response rejects wrong identity, changed timezone, invalid expiry and completed without result
+  ---
+  duration_ms: 7.448758
+  type: 'test'
+  ...
+# Subtest: detail selection accepts a month, rejects spillovers, invalid dates and unknown cities
+ok 23 - detail selection accepts a month, rejects spillovers, invalid dates and unknown cities
+  ---
+  duration_ms: 0.675259
+  type: 'test'
+  ...
+# Subtest: detail validates location/calendar and rejects unordered or out-of-window hourly values
+ok 24 - detail validates location/calendar and rejects unordered or out-of-window hourly values
+  ---
+  duration_ms: 13.019498
+  type: 'test'
+  ...
+# Subtest: completed response binds result query, each city timezone and plan windows before display
+ok 25 - completed response binds result query, each city timezone and plan windows before display
+  ---
+  duration_ms: 362.676779
+  type: 'test'
+  ...
+# Subtest: detail rejects shifted UTC boundaries and preserves null hours and zero endpoints
+ok 26 - detail rejects shifted UTC boundaries and preserves null hours and zero endpoints
+  ---
+  duration_ms: 11.528083
+  type: 'test'
+  ...
+# Subtest: converts temperature, wet bulb, wind, precipitation and seconds once; zero and null remain distinct
+ok 27 - converts temperature, wet bulb, wind, precipitation and seconds once; zero and null remain distinct
+  ---
+  duration_ms: 7.5874
+  type: 'test'
+  ...
+# Subtest: partial/no-data headlines cannot expose available values as full coverage
+ok 28 - partial/no-data headlines cannot expose available values as full coverage
+  ---
+  duration_ms: 0.438801
+  type: 'test'
+  ...
+# Subtest: climatology requires explicit valid year, clips leap month and never drills multi-year overview
+ok 29 - climatology requires explicit valid year, clips leap month and never drills multi-year overview
+  ---
+  duration_ms: 8.774378
+  type: 'test'
+  ...
+# Subtest: period drilling respects partial months and maximum 31 local days
+ok 30 - period drilling respects partial months and maximum 31 local days
+  ---
+  duration_ms: 0.249082
+  type: 'test'
+  ...
+# Subtest: daily high/low summaries apply only to temperature metrics
+ok 31 - daily high/low summaries apply only to temperature metrics
+  ---
+  duration_ms: 0.409535
+  type: 'test'
+  ...
+# Subtest: visual means convert SI values once, retaining negatives, zeros, and nulls
+ok 32 - visual means convert SI values once, retaining negatives, zeros, and nulls
+  ---
+  duration_ms: 5.896638
+  type: 'test'
+  ...
+# Subtest: city color/order stay fixed across metric and unit changes without replacing missing means with zero
+ok 33 - city color/order stay fixed across metric and unit changes without replacing missing means with zero
+  ---
+  duration_ms: 6.249456
+  type: 'test'
+  ...
+# Subtest: comparison bounds use shared UTC dates, six-day lag, distinct coordinates and leap years
+ok 34 - comparison bounds use shared UTC dates, six-day lag, distinct coordinates and leap years
+  ---
+  duration_ms: 4.733654
+  type: 'test'
+  ...
+# Subtest: job identity, selection, units and completeness mismatch rejected before display
+ok 35 - job identity, selection, units and completeness mismatch rejected before display
+  ---
+  duration_ms: 27.042626
+  type: 'test'
+  ...
+# Subtest: partial summaries retain zero, null totals, units and common-hours caveat in accessible table
+ok 36 - partial summaries retain zero, null totals, units and common-hours caveat in accessible table
+  ---
+  duration_ms: 69.929549
+  type: 'test'
+  ...
+# Subtest: registration is lazy, coalesced, persisted and recovered without repeat registration
+ok 37 - registration is lazy, coalesced, persisted and recovered without repeat registration
+  ---
+  duration_ms: 1.924925
+  type: 'test'
+  ...
+# Subtest: storage failure before registration prevents mutation; failure after registration preserves credential for save retry
+ok 38 - storage failure before registration prevents mutation; failure after registration preserves credential for save retry
+  ---
+  duration_ms: 1.446449
+  type: 'test'
+  ...
+# Subtest: uncertain registration response and expired credentials never trigger automatic duplicate registration
+ok 39 - uncertain registration response and expired credentials never trigger automatic duplicate registration
+  ---
+  duration_ms: 0.956492
+  type: 'test'
+  ...
+# Subtest: comparison CSV quotes labels, neutralizes formulas and controls, and preserves numeric negatives
+ok 40 - comparison CSV quotes labels, neutralizes formulas and controls, and preserves numeric negatives
+  ---
+  duration_ms: 0.765149
+  type: 'test'
+  ...
+# Subtest: export uses displayed validated snapshot with SI summaries, exact counts, nulls and every source chunk
+ok 41 - export uses displayed validated snapshot with SI summaries, exact counts, nulls and every source chunk
+  ---
+  duration_ms: 28.061756
+  type: 'test'
+  ...
+# Subtest: CSV rejects malformed results and excessive chunk exports
+ok 42 - CSV rejects malformed results and excessive chunk exports
+  ---
+  duration_ms: 4.04475
+  type: 'test'
+  ...
+# Subtest: visual overview precedes closed detail table and explicitly distinguishes missing and unequal coverage
+ok 43 - visual overview precedes closed detail table and explicitly distinguishes missing and unequal coverage
+  ---
+  duration_ms: 9.735628
+  type: 'test'
+  ...
+# Subtest: current estimate keeps its own instant and rejects old/future/unfresh data
+ok 44 - current estimate keeps its own instant and rejects old/future/unfresh data
+  ---
+  duration_ms: 145.718505
+  type: 'test'
+  ...
+# Subtest: daily planning summary states an hourly maximum and only a broad daypart
+ok 45 - daily planning summary states an hourly maximum and only a broad daypart
+  ---
+  duration_ms: 61.931461
+  type: 'test'
+  ...
+# Subtest: zero and missing probability do not invent a likely rain period
+ok 46 - zero and missing probability do not invent a likely rain period
+  ---
+  duration_ms: 34.2099
+  type: 'test'
+  ...
+# Subtest: wet-bulb numerical range preserves missingness, zero and constant values without risk categories
+ok 47 - wet-bulb numerical range preserves missingness, zero and constant values without risk categories
+  ---
+  duration_ms: 43.352274
+  type: 'test'
+  ...
+# Subtest: wind compass retains from-direction and distinguishes missing direction from north and zero speed
+ok 48 - wind compass retains from-direction and distinguishes missing direction from north and zero speed
+  ---
+  duration_ms: 2.665628
+  type: 'test'
+  ...
+# Subtest: hour strip renders moon at night and zone-qualified times
+ok 49 - hour strip renders moon at night and zone-qualified times
+  ---
+  duration_ms: 32.381386
+  type: 'test'
+  ...
+# Subtest: positions actual values only; no fabricated position for stale, missing, equal or outside ranges
+ok 50 - positions actual values only; no fabricated position for stale, missing, equal or outside ranges
+  ---
+  duration_ms: 2.200508
+  type: 'test'
+  ...
+# Subtest: today range includes earlier hours, excludes adjacent local dates, and covers repeated DST hour
+ok 51 - today range includes earlier hours, excludes adjacent local dates, and covers repeated DST hour
+  ---
+  duration_ms: 36.391151
+  type: 'test'
+  ...
+# Subtest: readable exact units and truthful neutral descriptions independent of SVG
+ok 52 - readable exact units and truthful neutral descriptions independent of SVG
+  ---
+  duration_ms: 40.916381
+  type: 'test'
+  ...
+# Subtest: 85.5°F uses the same temperature color at any daily-relative position
+ok 53 - 85.5°F uses the same temperature color at any daily-relative position
+  ---
+  duration_ms: 5.485298
+  type: 'test'
+  ...
+# Subtest: station mode uses fixed numeric endpoints independently of forecast range and coverage
+ok 54 - station mode uses fixed numeric endpoints independently of forecast range and coverage
+  ---
+  duration_ms: 28.279429
+  type: 'test'
+  ...
+# Subtest: temperature colors are unit-independent and stale/missing gauges stay neutral
+ok 55 - temperature colors are unit-independent and stale/missing gauges stay neutral
+  ---
+  duration_ms: 4.748593
+  type: 'test'
+  ...
+# Subtest: future eligibility preserves pinned run and rejects past/expired/mismatched catalogs
+ok 56 - future eligibility preserves pinned run and rejects past/expired/mismatched catalogs
+  ---
+  duration_ms: 43.774945
+  type: 'test'
+  ...
+# Subtest: playback spans advertised horizon within six-frame and 32-tile bounds, including sparse times
+ok 57 - playback spans advertised horizon within six-frame and 32-tile bounds, including sparse times
+  ---
+  duration_ms: 11.981752
+  type: 'test'
+  ...
+# Subtest: tile session serializes selected visible work, no-store XYZ, disposal fences queued requests
+ok 58 - tile session serializes selected visible work, no-store XYZ, disposal fences queued requests
+  ---
+  duration_ms: 140.882826
+  type: 'test'
+  ...
+# Subtest: 429 stops whole session and queued work; malformed/bounded PNG rejected; abort signals propagated
+ok 59 - 429 stops whole session and queued work; malformed/bounded PNG rejected; abort signals propagated
+  ---
+  duration_ms: 9.853482
+  type: 'test'
+  ...
+# Subtest: decoded tile cache is exact-run/frame/XYZ bounded, copied, expired and shared across sessions; cooldown cannot be bypassed
+ok 60 - decoded tile cache is exact-run/frame/XYZ bounded, copied, expired and shared across sessions; cooldown cannot be bypassed
+  ---
+  duration_ms: 54.493675
+  type: 'test'
+  ...
+# Subtest: expired forecasts are removed and slow responses cannot repopulate or display them
+ok 61 - expired forecasts are removed and slow responses cannot repopulate or display them
+  ---
+  duration_ms: 19.206014
+  type: 'test'
+  ...
+# Subtest: browser forecast XYZ, pinned times, same canvas, keyboard, stale, quota and regional gating
+ok 62 - browser forecast XYZ, pinned times, same canvas, keyboard, stale, quota and regional gating # SKIP
+  ---
+  duration_ms: 0.375932
+  type: 'test'
+  ...
+# Subtest: Tulsa effects preserve source limits and missing/boundary status without a safe category
+ok 63 - Tulsa effects preserve source limits and missing/boundary status without a safe category
+  ---
+  duration_ms: 24.418776
+  type: 'test'
+  ...
+# Subtest: effects keep all five source bands selectable in either unit system
+ok 64 - effects keep all five source bands selectable in either unit system
+  ---
+  duration_ms: 5.774957
+  type: 'test'
+  ...
+# Subtest: available summaries preserve zero, negative and all-missing values without imputing
+ok 65 - available summaries preserve zero, negative and all-missing values without imputing
+  ---
+  duration_ms: 3.700778
+  type: 'test'
+  ...
+# Subtest: daily ranges use UTC labels and available hour counts, never a fabricated complete day
+ok 66 - daily ranges use UTC labels and available hour counts, never a fabricated complete day
+  ---
+  duration_ms: 0.769968
+  type: 'test'
+  ...
+# Subtest: station visual screen excludes QC failures, unknowns, traces and presumed zeros; retains real zero
+ok 67 - station visual screen excludes QC failures, unknowns, traces and presumed zeros; retains real zero
+  ---
+  duration_ms: 0.510677
+  type: 'test'
+  ...
+# Subtest: UTC dates enforce leap months, 31-day bound and availability lag independently of DST
+ok 68 - UTC dates enforce leap months, 31-day bound and availability lag independently of DST
+  ---
+  duration_ms: 24.152111
+  type: 'test'
+  ...
+# Subtest: response identity and export stay tied to successful coordinates/dates, with safe label
+ok 69 - response identity and export stay tied to successful coordinates/dates, with safe label
+  ---
+  duration_ms: 49.076044
+  type: 'test'
+  ...
+# Subtest: partial history renders nullable units, source differences, UTC rain semantics and chart gaps
+ok 70 - partial history renders nullable units, source differences, UTC rain semantics and chart gaps
+  ---
+  duration_ms: 167.786529
+  type: 'test'
+  ...
+# Subtest: displayed normalized snapshot exports without fetch, with identical metadata, zeros and nulls
+ok 71 - displayed normalized snapshot exports without fetch, with identical metadata, zeros and nulls
+  ---
+  duration_ms: 13.778264
+  type: 'test'
+  ...
+# Subtest: Libre timelines preserve advertised epochs, reject invalid/stale catalogs and expire future frames
+ok 72 - Libre timelines preserve advertised epochs, reject invalid/stale catalogs and expire future frames
+  ---
+  duration_ms: 31.936975
+  type: 'test'
+  ...
+# Subtest: Libre visible tile cache is bounded and isolates returned bytes
+ok 73 - Libre visible tile cache is bounded and isolates returned bytes
+  ---
+  duration_ms: 4.160229
+  type: 'test'
+  ...
+# Subtest: Libre sessions pin header/PNG dimensions, reuse cache, and stop queued work on failure or cancellation
+ok 74 - Libre sessions pin header/PNG dimensions, reuse cache, and stop queued work on failure or cancellation
+  ---
+  duration_ms: 171.28274
+  type: 'test'
+  ...
+# Subtest: Libre playback samples the whole advertised horizon within visible tile capacity
+ok 75 - Libre playback samples the whole advertised horizon within visible tile capacity
+  ---
+  duration_ms: 0.670079
+  type: 'test'
+  ...
+# Subtest: Four eight-tile frames stay warm within the 32-tile decoded cache
+ok 76 - Four eight-tile frames stay warm within the 32-tile decoded cache
+  ---
+  duration_ms: 75.190983
+  type: 'test'
+  ...
+# Subtest: Mapbox config accepts only a bounded public token and defaults to no external provider
+ok 77 - Mapbox config accepts only a bounded public token and defaults to no external provider
+  ---
+  duration_ms: 8.544432
+  type: 'test'
+  ...
+# Subtest: map selection keeps independent sorted advertised timelines and regional radar
+ok 78 - map selection keeps independent sorted advertised timelines and regional radar
+  ---
+  duration_ms: 3.831747
+  type: 'test'
+  ...
+# Subtest: geographic marker uses CRS84 orientation and excludes outside bounds without wrapping antimeridian
+ok 79 - geographic marker uses CRS84 orientation and excludes outside bounds without wrapping antimeridian
+  ---
+  duration_ms: 0.402462
+  type: 'test'
+  ...
+# Subtest: frame validation rejects mismatched product/time and preserves unknown coverage/time warnings
+ok 80 - frame validation rejects mismatched product/time and preserves unknown coverage/time warnings
+  ---
+  duration_ms: 3.823331
+  type: 'test'
+  ...
+# Subtest: bounded frame memory revokes least-recently-used URLs, replacement and disposal
+ok 81 - bounded frame memory revokes least-recently-used URLs, replacement and disposal
+  ---
+  duration_ms: 0.663748
+  type: 'test'
+  ...
+# Subtest: interactive overlay requires explicit Mercator and nonwrapping geographic corners
+ok 82 - interactive overlay requires explicit Mercator and nonwrapping geographic corners
+  ---
+  duration_ms: 16.028206
+  type: 'test'
+  ...
+# Subtest: weather source identity survives loading, frame changes and failure without worker removal races
+ok 83 - weather source identity survives loading, frame changes and failure without worker removal races
+  ---
+  duration_ms: 3.837338
+  type: 'test'
+  ...
+# Subtest: recent playback timeline is capped, chronological and uses only advertised instants
+ok 84 - recent playback timeline is capped, chronological and uses only advertised instants
+  ---
+  duration_ms: 7.781998
+  type: 'test'
+  ...
+# Subtest: persistent radar sample colors match retained NOAA style, not invented rainfall classes
+ok 85 - persistent radar sample colors match retained NOAA style, not invented rainfall classes
+  ---
+  duration_ms: 11.082199
+  type: 'test'
+  ...
+# Subtest: actual mobile browser playback, keyboard scrub, pause, quota and URL cleanup
+ok 86 - actual mobile browser playback, keyboard scrub, pause, quota and URL cleanup # SKIP
+  ---
+  duration_ms: 0.692642
+  type: 'test'
+  ...
+# Subtest: shared metric definitions preserve conversions, missingness and display precision
+ok 87 - shared metric definitions preserve conversions, missingness and display precision
+  ---
+  duration_ms: 2.442306
+  type: 'test'
+  ...
+# Subtest: statistic labels make hourly probability and available-hour summaries explicit
+ok 88 - statistic labels make hourly probability and available-hour summaries explicit
+  ---
+  duration_ms: 0.338692
+  type: 'test'
+  ...
+# Subtest: service worker shows only bounded unexpired warnings, never incoming navigation URLs
+ok 89 - service worker shows only bounded unexpired warnings, never incoming navigation URLs
+  ---
+  duration_ms: 5.227691
+  type: 'test'
+  ...
+# Subtest: selects one nearby quality-checked report and calculates feels like from its own inputs
+ok 90 - selects one nearby quality-checked report and calculates feels like from its own inputs
+  ---
+  duration_ms: 14.606764
+  type: 'test'
+  ...
+# Subtest: rejects stale, future, old, distant, and wrong-city readings
+ok 91 - rejects stale, future, old, distant, and wrong-city readings
+  ---
+  duration_ms: 5.583895
+  type: 'test'
+  ...
+# Subtest: does not fill rejected or missing station measurements from another record/station/model
+ok 92 - does not fill rejected or missing station measurements from another record/station/model
+  ---
+  duration_ms: 0.584647
+  type: 'test'
+  ...
+# Subtest: uses next nearby eligible station without splicing and excludes older reports from rejected latest
+ok 93 - uses next nearby eligible station without splicing and excludes older reports from rejected latest
+  ---
+  duration_ms: 0.576602
+  type: 'test'
+  ...
+# Subtest: headline remains available without forecast; model details cannot masquerade as observed values
+ok 94 - headline remains available without forecast; model details cannot masquerade as observed values
+  ---
+  duration_ms: 369.130792
+  type: 'test'
+  ...
+# Subtest: NWS regression reference values, SI output and no wind dependency
+ok 95 - NWS regression reference values, SI output and no wind dependency
+  ---
+  duration_ms: 4.073144
+  type: 'test'
+  ...
+# Subtest: NWS dry and humid corrections and correction boundaries
+ok 96 - NWS dry and humid corrections and correction boundaries
+  ---
+  duration_ms: 0.418112
+  type: 'test'
+  ...
+# Subtest: screening retains the averaged simple result and handles humid air below 80 F
+ok 97 - screening retains the averaged simple result and handles humid air below 80 F
+  ---
+  duration_ms: 0.266635
+  type: 'test'
+  ...
+# Subtest: cold reference agrees with published rounded NWS example
+ok 98 - cold reference agrees with published rounded NWS example
+  ---
+  duration_ms: 0.220327
+  type: 'test'
+  ...
+# Subtest: wind chill includes 50 F, excludes exactly 3 mph and needs observed wind
+ok 99 - wind chill includes 50 F, excludes exactly 3 mph and needs observed wind
+  ---
+  duration_ms: 0.336277
+  type: 'test'
+  ...
+# Subtest: missing RH is unavailable whenever a heat-index branch could apply
+ok 100 - missing RH is unavailable whenever a heat-index branch could apply
+  ---
+  duration_ms: 0.473677
+  type: 'test'
+  ...
+# Subtest: reject invalid SI inputs without coercing, clamping or emitting nonfinite values
+ok 101 - reject invalid SI inputs without coercing, clamping or emitting nonfinite values
+  ---
+  duration_ms: 0.287174
+  type: 'test'
+  ...
+# Subtest: refresh coalesces wakeups, pauses hidden, resumes once due and stops without catch-up
+ok 102 - refresh coalesces wakeups, pauses hidden, resumes once due and stops without catch-up
+  ---
+  duration_ms: 8.124307
+  type: 'test'
+  ...
+# Subtest: timeout covers slow JSON body and aborts underlying request
+ok 103 - timeout covers slow JSON body and aborts underlying request
+  ---
+  duration_ms: 13.816346
+  type: 'test'
+  ...
+# Subtest: caller cancellation is preserved instead of becoming a timeout
+ok 104 - caller cancellation is preserved instead of becoming a timeout
+  ---
+  duration_ms: 5.281833
+  type: 'test'
+  ...
+# Subtest: structured unavailable errors retain the not-configured distinction on non-200 responses
+ok 105 - structured unavailable errors retain the not-configured distinction on non-200 responses
+  ---
+  duration_ms: 61.721273
+  type: 'test'
+  ...
+# Subtest: CSV export validates media type and applies body timeout
+ok 106 - CSV export validates media type and applies body timeout
+  ---
+  duration_ms: 23.830051
+  type: 'test'
+  ...
+# Subtest: protected JSON mutations carry only header credentials, reject remote targets and redirects
+ok 107 - protected JSON mutations carry only header credentials, reject remote targets and redirects
+  ---
+  duration_ms: 1.462751
+  type: 'test'
+  ...
+# Subtest: lighting follows location sunrise and sunset instants through the entire day
+ok 108 - lighting follows location sunrise and sunset instants through the entire day
+  ---
+  duration_ms: 2.337106
+  type: 'test'
+  ...
+# Subtest: offset/DST instants are equivalent and short days have nonoverlapping windows
+ok 109 - offset/DST instants are equivalent and short days have nonoverlapping windows
+  ---
+  duration_ms: 0.454891
+  type: 'test'
+  ...
+# Subtest: missing or invalid astronomy uses supplied daylight, while stale data stays neutral
+ok 110 - missing or invalid astronomy uses supplied daylight, while stale data stays neutral
+  ---
+  duration_ms: 0.314285
+  type: 'test'
+  ...
+# Subtest: nearby response identity, radius, candidate IDs and computed distance are validated
+ok 111 - nearby response identity, radius, candidate IDs and computed distance are validated
+  ---
+  duration_ms: 12.372262
+  type: 'test'
+  ...
+# Subtest: candidate metadata distinguishes nulls, city/station positions, eligibility and explicit load
+ok 112 - candidate metadata distinguishes nulls, city/station positions, eligibility and explicit load
+  ---
+  duration_ms: 32.950264
+  type: 'test'
+  ...
+# Subtest: explicit station and source calendar selection validates IDs, leap days, future and inclusive 366-day bounds
+ok 113 - explicit station and source calendar selection validates IDs, leap days, future and inclusive 366-day bounds
+  ---
+  duration_ms: 6.344396
+  type: 'test'
+  ...
+# Subtest: response guard rejects wrong station/date and malformed counts, quality, timeline or source link
+ok 114 - response guard rejects wrong station/date and malformed counts, quality, timeline or source link
+  ---
+  duration_ms: 18.294598
+  type: 'test'
+  ...
+# Subtest: station markup preserves flags, unaccepted numeric values, null/zero, coverage and unknown observation intervals
+ok 115 - station markup preserves flags, unaccepted numeric values, null/zero, coverage and unknown observation intervals
+  ---
+  duration_ms: 38.141005
+  type: 'test'
+  ...
+# Subtest: History retains reanalysis by default and station entry works independently without city or automatic loading
+ok 116 - History retains reanalysis by default and station entry works independently without city or automatic loading
+  ---
+  duration_ms: 17.489042
+  type: 'test'
+  ...
+# Subtest: worker excludes all data and release-check requests
+ok 117 - worker excludes all data and release-check requests
+  ---
+  duration_ms: 5.360442
+  type: 'test'
+  ...
+# Subtest: production shell installation caches generated entry assets
+ok 118 - production shell installation caches generated entry assets
+  ---
+  duration_ms: 73.152052
+  type: 'test'
+  ...
+# Subtest: three-release open tabs retain their assets; fallback never uses old HTML or icons
+ok 119 - three-release open tabs retain their assets; fallback never uses old HTML or icons
+  ---
+  duration_ms: 6.238765
+  type: 'test'
+  ...
+# Subtest: pruning waits for no windows and no competing install, preserving one prior shell
+ok 120 - pruning waits for no windows and no competing install, preserving one prior shell
+  ---
+  duration_ms: 5.014227
+  type: 'test'
+  ...
+# Subtest: release mismatch fails before cache writes and asset failure preserves active shell
+ok 121 - release mismatch fails before cache writes and asset failure preserves active shell
+  ---
+  duration_ms: 5.134144
+  type: 'test'
+  ...
+# Subtest: installation waits for explicit activation and ignores unrelated messages
+ok 122 - installation waits for explicit activation and ignores unrelated messages
+  ---
+  duration_ms: 2.702618
+  type: 'test'
+  ...
+# Subtest: reinstalling the same shell identity does not overwrite or delete its active cache
+ok 123 - reinstalling the same shell identity does not overwrite or delete its active cache
+  ---
+  duration_ms: 5.353579
+  type: 'test'
+  ...
+# Subtest: visited hashed lazy assets survive offline/old-release fallback but HTML/errors never cache
+ok 124 - visited hashed lazy assets survive offline/old-release fallback but HTML/errors never cache
+  ---
+  duration_ms: 4.417466
+  type: 'test'
+  ...
+# Subtest: WBGT marker requires successful co-timed eligible hour and fresh online state; never substitutes ordinary wet-bulb
+ok 125 - WBGT marker requires successful co-timed eligible hour and fresh online state; never substitutes ordinary wet-bulb
+  ---
+  duration_ms: 60.363442
+  type: 'test'
+  ...
+# Subtest: Tulsa exact endpoints retain ambiguity before display rounding and convert scale ticks
+ok 126 - Tulsa exact endpoints retain ambiguity before display rounding and convert scale ticks
+  ---
+  duration_ms: 38.422779
+  type: 'test'
+  ...
+# Subtest: visible 24-hour graph preserve real hour spacing, missing gaps, zero, bounds and accessible values
+ok 127 - visible 24-hour graph preserve real hour spacing, missing gaps, zero, bounds and accessible values
+  ---
+  duration_ms: 4.917393
+  type: 'test'
+  ...
+# Subtest: heat precautions precede trend without the removed lower estimate
+ok 128 - heat precautions precede trend without the removed lower estimate
+  ---
+  duration_ms: 1.864902
+  type: 'test'
+  ...
+# Subtest: heat interaction controls and compact hourly list preserve endpoints, all slots and missingness without removed disclosures
+ok 129 - heat interaction controls and compact hourly list preserve endpoints, all slots and missingness without removed disclosures
+  ---
+  duration_ms: 3.378429
+  type: 'test'
+  ...
+# Subtest: heat graph point labels distinguish DST repeated hours
+ok 130 - heat graph point labels distinguish DST repeated hours
+  ---
+  duration_ms: 1.898305
+  type: 'test'
+  ...
+# Subtest: equal bands center every interior value and leave exact boundaries neutral
+ok 131 - equal bands center every interior value and leave exact boundaries neutral
+  ---
+  duration_ms: 33.428169
+  type: 'test'
+  ...
+# Subtest: WMO weather icons distinguish precipitation, freezing, fog, snow and hail; unknown remains neutral
+ok 132 - WMO weather icons distinguish precipitation, freezing, fog, snow and hail; unknown remains neutral
+  ---
+  duration_ms: 32.94258
+  type: 'test'
+  ...
+# Subtest: weather theme uses supplied daylight and requires fresh current weather
+ok 133 - weather theme uses supplied daylight and requires fresh current weather
+  ---
+  duration_ms: 0.453769
+  type: 'test'
+  ...
+# Subtest: decorative scene renders deterministically without interactive or network elements
+ok 134 - decorative scene renders deterministically without interactive or network elements
+  ---
+  duration_ms: 24.803806
+  type: 'test'
+  ...
+# Subtest: all recognized weather scenes clear when current conditions are stale or missing
+ok 135 - all recognized weather scenes clear when current conditions are stale or missing
+  ---
+  duration_ms: 0.583596
+  type: 'test'
+  ...
+# Subtest: observed sky decoration follows station descriptions independently of daylight
+ok 136 - observed sky decoration follows station descriptions independently of daylight
+  ---
+  duration_ms: 0.948978
+  type: 'test'
+  ...
+# Subtest: chart conversion keeps exact values and nulls, with distinct repeated DST instants
+ok 137 - chart conversion keeps exact values and nulls, with distinct repeated DST instants
+  ---
+  duration_ms: 2.31785
+  type: 'test'
+  ...
+# Subtest: missing intervals and independent nulls remain gaps without invented measurements
+ok 138 - missing intervals and independent nulls remain gaps without invented measurements
+  ---
+  duration_ms: 1.574121
+  type: 'test'
+  ...
+# Subtest: SI conversions retain missingness and legitimate zeros
+ok 139 - SI conversions retain missingness and legitimate zeros
+  ---
+  duration_ms: 2.607509
+  type: 'test'
+  ...
+# Subtest: local calendar uses location timezone across UTC midnight and DST repeat
+ok 140 - local calendar uses location timezone across UTC midnight and DST repeat
+  ---
+  duration_ms: 21.507352
+  type: 'test'
+  ...
+# Subtest: current conditions never borrow a future or expired hour
+ok 141 - current conditions never borrow a future or expired hour
+  ---
+  duration_ms: 0.387524
+  type: 'test'
+  ...
+# Subtest: runtime validation rejects old location and unordered timelines
+ok 142 - runtime validation rejects old location and unordered timelines
+  ---
+  duration_ms: 15.642876
+  type: 'test'
+  ...
+# Subtest: daily aggregation retains null-only temperatures and a repeated local hour
+ok 143 - daily aggregation retains null-only temperatures and a repeated local hour
+  ---
+  duration_ms: 1.852138
+  type: 'test'
+  ...
+# Subtest: midnight precipitation belongs to preceding date, missing intervals stay missing
+ok 144 - midnight precipitation belongs to preceding date, missing intervals stay missing
+  ---
+  duration_ms: 3.755372
+  type: 'test'
+  ...
+# Subtest: precipitation uses 23/25 actual intervals on spring/fall local DST days
+ok 145 - precipitation uses 23/25 actual intervals on spring/fall local DST days
+  ---
+  duration_ms: 26.660212
+  type: 'test'
+  ...
+# Subtest: night and unknown daylight never imply sunshine
+ok 146 - night and unknown daylight never imply sunshine
+  ---
+  duration_ms: 23.419915
+  type: 'test'
+  ...
+# Subtest: periods preserve repeated DST night hours and missing/partial rain
+ok 147 - periods preserve repeated DST night hours and missing/partial rain
+  ---
+  duration_ms: 58.033048
+  type: 'test'
+  ...
+# Subtest: astronomy uses exact local valid date and rejects mismatches and duplicate dates
+ok 148 - astronomy uses exact local valid date and rejects mismatches and duplicate dates
+  ---
+  duration_ms: 4.467291
+  type: 'test'
+  ...
+# Subtest: daily wording shows forecast conditions and hourly maxima without obscuring missing or DST hours
+ok 149 - daily wording shows forecast conditions and hourly maxima without obscuring missing or DST hours
+  ---
+  duration_ms: 4.401926
+  type: 'test'
+  ...
+# Subtest: wildfire area is bounded, clamps poles/date line and compares exact selection
+ok 150 - wildfire area is bounded, clamps poles/date line and compares exact selection
+  ---
+  duration_ms: 5.146897
+  type: 'test'
+  ...
+# Subtest: wildfire response guards bbox, timestamps, metadata and identity without name joins
+ok 151 - wildfire response guards bbox, timestamps, metadata and identity without name joins
+  ---
+  duration_ms: 30.369236
+  type: 'test'
+  ...
+# Subtest: wildfire rendering separates capture/edit/incident/retrieval, geometry and category evidence
+ok 152 - wildfire rendering separates capture/edit/incident/retrieval, geometry and category evidence
+  ---
+  duration_ms: 17.126776
+  type: 'test'
+  ...
+# Subtest: empty and initial/offline views do not claim all clear or load fixture data
+ok 153 - empty and initial/offline views do not claim all clear or load fixture data
+  ---
+  duration_ms: 10.439812
+  type: 'test'
+  ...
+1..153
+# tests 153
+# suites 0
+# pass 149
+# fail 0
+# cancelled 0
+# skipped 4
+# todo 0
+# duration_ms 10807.738505

@@ -1,0 +1,70 @@
+{
+  "requests": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4311/api/v1/alerts?latitude=30.26715&longitude=-97.74306"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4311/api/v1/forecast?latitude=30.26715&longitude=-97.74306&id=open-meteo%3A4671654&name=Austin&admin1=Texas&admin2=Travis&country=United+States&timezone=America%2FChicago"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4311/api/v1/maps"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4311/api/v1/maps/frame?product=radar-conus&west=-100.07765&south=28.07539&east=-95.40847&north=32.41105&width=800&height=500&projection=EPSG%3A3857&time=2026-09-11T02%3A32%3A04.000Z"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4311/api/v1/maps/frame?product=radar-conus&west=-98.65493&south=29.06435&east=-96.83119&north=31.45539&width=800&height=500&projection=EPSG%3A3857&time=2026-09-11T02%3A32%3A04.000Z"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4311/api/v1/maps"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4311/api/v1/maps/frame?product=radar-conus&west=-98.65493&south=28.96107&east=-96.83119&north=31.55609&width=800&height=500&projection=EPSG%3A3857&time=2026-09-11T02%3A32%3A04.000Z"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4311/api/v1/maps/frame?product=satellite-goes-infrared&west=-98.65493&south=28.96107&east=-96.83119&north=31.55609&width=800&height=500&projection=EPSG%3A3857&time=2026-09-11T02%3A33%3A00.000Z"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4311/api/v1/maps/frame?product=satellite-goes-infrared&west=-98.65493&south=28.96107&east=-96.83119&north=31.55609&width=800&height=500&projection=EPSG%3A3857&time=2026-09-11T02%3A28%3A00.000Z"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4311/api/v1/maps/frame?product=satellite-goes-infrared&west=-98.19899&south=29.61622&east=-97.28713&north=30.91379&width=800&height=500&projection=EPSG%3A3857&time=2026-09-11T02%3A28%3A00.000Z"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4311/api/v1/history?latitude=30.26715&longitude=-97.74306&startDate=2020-07-15&endDate=2020-07-15&name=Austin%2C+Travis%2C+Texas%2C+United+States&format=json"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4311/api/v1/history?latitude=30.26715&longitude=-97.74306&startDate=2020-07-15&endDate=2020-07-15&name=Austin%2C+Travis%2C+Texas%2C+United+States&format=csv"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4311/api/v1/alerts?latitude=30.26715&longitude=-97.74306"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4311/api/v1/maps"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4311/api/v1/alerts?latitude=30.26715&longitude=-97.74306"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4311/api/v1/forecast?latitude=30.26715&longitude=-97.74306&id=open-meteo%3A4671654&name=Austin&admin1=Texas&admin2=Travis&country=United+States&timezone=America%2FChicago"
+    }
+  ],
+  "errors": [],
+  "note": "Requests after history.csv export are intercepted and aborted locally; not live server requests."
+}

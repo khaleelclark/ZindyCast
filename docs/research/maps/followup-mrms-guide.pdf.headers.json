@@ -1,0 +1,24 @@
+{
+  "url": "https://vlab.noaa.gov/documents/96675/0/MRMS_ALL.pdf/e410f6ce-7833-b434-e342-fec3a577c35f?t=1696004704287",
+  "retrieved_at": "2026-09-10T23:37:00.353978+00:00",
+  "status": 200,
+  "headers": {
+    "Date": "Thu, 10 Sep 2026 23:37:00 GMT",
+    "Content-Type": "application/pdf",
+    "Content-Length": "42395786",
+    "Connection": "close",
+    "Strict-Transport-Security": "max-age=31536000;includeSubDomains",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1",
+    "Last-Modified": "Fri, 29 Sep 2023 16:25:04 GMT",
+    "Cache-Control": "private",
+    "Content-Disposition": "inline; filename=\"MRMS_ALL.pdf\""
+  },
+  "final_url": "https://vlab.noaa.gov/documents/96675/0/MRMS_ALL.pdf/e410f6ce-7833-b434-e342-fec3a577c35f?t=1696004704287",
+  "bytes": 12000000,
+  "truncated": true,
+  "body_retained": false,
+  "note": "Stopped at 12 MB bound; advertised 42,395,786 bytes. Partial PDF removed; not treated as inspected full document.",
+  "privacy_note": "Provider session cookie omitted from shareable evidence."
+}

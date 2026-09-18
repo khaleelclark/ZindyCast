@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://api.librewxr.net/public/weather-maps.json",
+    "status": 403,
+    "error": "urllib.error.HTTPError: HTTP Error 403: Forbidden",
+    "bodyRetained": false,
+    "attempts": 1
+  },
+  {
+    "url": "https://api.librewxr.net/v2/radar/0/512/10/28.858/-81.17/6/1_0.png",
+    "status": 403,
+    "headers": {
+      "Date": "Sat, 12 Sep 2026 18:08:57 GMT",
+      "Content-Type": "text/plain; charset=UTF-8",
+      "Content-Length": "17",
+      "Connection": "close",
+      "Cache-Control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+      "Expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+      "Referrer-Policy": "same-origin",
+      "Server-Timing": "cfEdge;dur=2,cfOrigin;dur=0",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=FGAEnKbY9GkhUuJN0EY%2F1S96sxXDWGO%2FX8cs4q2ArBj0QOygzqWkMnYW1Hjd6E3wxrnj6NKX0lU1yTQEAImj%2F9bEB%2BpzPDhbxaXnfk30%2ByEFg%2FjYwf2uPgMi6qYl4%2F55BD52Cyz1732yN1%2Bp6zap\"}]}",
+      "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "Server": "cloudflare",
+      "CF-RAY": "a3a0dc482b7da64c-MIA",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "milliseconds": 147,
+    "retrievedAt": "2026-09-12T18:08:57.654499+00:00",
+    "bytes": 17
+  },
+  {
+    "url": "https://api.librewxr.net/v2/radar/0/512/10/28.858/-81.17/6/1_0.png",
+    "status": 200,
+    "headers": {
+      "accept-ranges": "bytes",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cache-control": "public, max-age=300",
+      "cf-cache-status": "MISS",
+      "cf-ray": "a3a0dcc3ad77572e-MIA",
+      "content-length": "81009",
+      "content-type": "image/png",
+      "date": "Sat, 12 Sep 2026 18:09:19 GMT",
+      "etag": "\"fcbbca605cd852d0\"",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=3bq9%2FGCErExFcBEMwE6tq1qSxCXsMDEG2JEQfE8f9JyeWBFG4vFLfcMeY%2Blfp5hdRO2k%2BTt%2FiawOD62kVEFSSMRqNbpU4Cx8yvbuPnwORsuVwLiYzg9WtMyWveb3v4zua8ac%2FrGw4IW29urFlLXf\"}]}",
+      "server": "cloudflare",
+      "server-timing": "cfCacheStatus;desc=\"MISS\", cfEdge;dur=12,cfOrigin;dur=2179",
+      "x-frame-timestamp": "1789236000"
+    },
+    "bytes": 81009,
+    "retrievedAt": "2026-09-12T18:09:19.649Z",
+    "client": "Actual Chrome navigation",
+    "calls": 1
+  }
+]

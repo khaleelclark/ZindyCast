@@ -1,0 +1,38 @@
+{
+  "at": "2026-09-11T16:27:16.811Z",
+  "tiles": [
+    {
+      "url": "/api/v1/maps/forecast/tiles/hrrr-202609111400-f0150/7/29/52.png",
+      "status": 200,
+      "valid": "2026-09-11T16:30:00.000Z"
+    },
+    {
+      "url": "/api/v1/maps/forecast/tiles/hrrr-202609111400-f0150/7/28/52.png",
+      "status": 200,
+      "valid": "2026-09-11T16:30:00.000Z"
+    },
+    {
+      "url": "/api/v1/maps/forecast/tiles/hrrr-202609111400-f0150/7/29/53.png",
+      "status": 200,
+      "valid": "2026-09-11T16:30:00.000Z"
+    },
+    {
+      "url": "/api/v1/maps/forecast/tiles/hrrr-202609111400-f0150/7/28/53.png",
+      "status": 200,
+      "valid": "2026-09-11T16:30:00.000Z"
+    }
+  ],
+  "errors": [],
+  "sizes": [
+    {
+      "width": 1280,
+      "scroll": 1280,
+      "font": "16px"
+    },
+    {
+      "width": 390,
+      "scroll": 390,
+      "font": "16px"
+    }
+  ]
+}

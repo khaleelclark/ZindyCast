@@ -1,0 +1,21 @@
+{
+  "browser": "152.0.7977.75",
+  "pageErrors": [],
+  "liveCalls": 0,
+  "mobileWidth": 390,
+  "desktopWidth": 1280,
+  "units": [
+    "us",
+    "metric"
+  ],
+  "methods": [
+    "hover",
+    "focus",
+    "arrows",
+    "Escape",
+    "tap",
+    "click"
+  ],
+  "missing": "independent and both",
+  "dst": "1AM PDT and 1AM PST"
+}

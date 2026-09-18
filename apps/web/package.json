@@ -1,0 +1,25 @@
+{
+  "name": "@zindycast/web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "rsbuild dev",
+    "build": "rsbuild build"
+  },
+  "dependencies": {
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.1",
+    "@mui/material": "9.4.0",
+    "@mui/x-charts": "9.13.0",
+    "@zindycast/contracts": "0.1.0",
+    "@zindycast/heat": "0.1.0",
+    "maplibre-gl": "6.9.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "2.2.5",
+    "@rsbuild/plugin-react": "2.1.0"
+  }
+}

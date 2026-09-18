@@ -1,0 +1,12 @@
+# Stable night background and explicit refresh — September 18, 2026
+
+User reproduced night sky flashing during manual Refresh, then becoming neutral when station response arrived. Cause: the earlier observed-source migration gated both decorative weather and astronomical sky phase on `!observed`. Refresh cleared observations, briefly exposing the model scene before disabling it again.
+
+- Sky phase now follows current-local-date sunrise/sunset independently of observed versus modeled weather. Valid same-day astronomy remains usable during a forecast update error; stale model isDay is not substituted. Station descriptions drive decorative rain/cloud/clear conditions with explicit unknown fallback.
+- Preserve a still-eligible same-location observation during revalidation. Expiry, offline, error, and wrong-city gates remain. Successful observation receipt supplies the current selection clock so a slower response is not incorrectly rejected as future-dated against the last minute tick.
+- Manual Refresh requests `refresh=1`. Existing shared cache/coalescing/quota logic revalidates after10seconds instead of always returning the ordinary five-minute cache. Automated refresh keeps its five-minute cadence; no notification or verification registration is created. Returned query identity excludes the refresh flag, and observation timestamps are untouched.
+- Button shows Refreshing… while pending. Completed request shows a separate Checked at timestamp; station time/age remains the actual source report time. A successful refresh cannot manufacture a newer station report.
+
+Required typecheck/build passed.153 relevant tests:149passed,4existing opt-in tests skipped,0failed. API regression covers ordinary cache, manual refresh cooldown, concurrent coalescing, quota/outage stale behavior, invalid query values and unchanged report timestamps. Chrome390/1440 fixture suite verifies visible moon/night phase with station data, pending-refresh retention, no neutral-phase mutation, explicit checked time, manual refresh request, missing/stale/outage/old-location/offline behavior. External requests blocked; screenshots are synthetic fixture evidence, not live weather. Physical devices are not claimed.
+
+Published served frontend and restarted only the ZindyCast API service for the updated route. No provider selection, heat calculation, gauge palette, worker or unrelated service change.

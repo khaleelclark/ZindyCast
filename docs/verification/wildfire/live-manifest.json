@@ -1,0 +1,17 @@
+{
+  "note": "Normalized output, not raw upstream. At most two live requests.",
+  "requests": [
+    {
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_Current/FeatureServer/0/query?f=json&where=OBJECTID%3E-1&outFields=OBJECTID%2CGlobalID%2CSourceGlobalID%2CIrwinID%2CUniqueFireIdentifier%2CIncidentName%2CIncidentTypeCategory%2CModifiedOnDateTime_dt&geometry=-152%2C64%2C-149%2C66&geometryType=esriGeometryEnvelope&inSR=4326&outSR=4326&spatialRel=esriSpatialRelIntersects&returnGeometry=true&returnZ=false&returnM=false&orderByFields=OBJECTID+ASC&resultRecordCount=500",
+      "requestedAt": "2026-09-11T01:02:08.365Z",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Interagency_Perimeters_Current/FeatureServer/0/query?f=json&where=OBJECTID%3E-1&outFields=OBJECTID%2CGlobalID%2Cpoly_SourceGlobalID%2Cattr_SourceGlobalID%2Cpoly_IRWINID%2Cattr_IrwinID%2Cattr_UniqueFireIdentifier%2Cattr_IncidentName%2Cattr_IncidentTypeCategory%2Cattr_ModifiedOnDateTime_dt%2Cpoly_PolygonDateTime%2Cpoly_DateCurrent%2Cpoly_CreateDate&geometry=-152%2C64%2C-149%2C66&geometryType=esriGeometryEnvelope&inSR=4326&outSR=4326&spatialRel=esriSpatialRelIntersects&returnGeometry=true&returnZ=false&returnM=false&orderByFields=OBJECTID+ASC&resultRecordCount=500",
+      "requestedAt": "2026-09-11T01:02:08.873Z",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8"
+    }
+  ]
+}

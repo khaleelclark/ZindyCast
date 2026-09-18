@@ -1,0 +1,24 @@
+{
+  "url": "http://127.0.0.1:4311/api/v1/forecast?latitude=28.858&longitude=-81.17&name=Deltona&timezone=America%2FNew_York",
+  "startedAt": "2026-09-12T20:05:39.452Z",
+  "completedAt": "2026-09-12T20:05:40.298Z",
+  "durationMs": 844,
+  "status": 200,
+  "headers": {
+    "cache-control": "no-store",
+    "connection": "keep-alive",
+    "content-length": "605561",
+    "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://tile.openstreetmap.org https://api.mapbox.com; connect-src 'self' blob: https://tile.openstreetmap.org https://api.mapbox.com; worker-src 'self'; font-src 'self' data:; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Sat, 12 Sep 2026 20:05:40 GMT",
+    "keep-alive": "timeout=5, max=100",
+    "permissions-policy": "camera=(), microphone=(), payment=(), geolocation=(self)",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "DENY"
+  },
+  "localForecastRequests": 1,
+  "maxUpstreamRequests": 1,
+  "maxWeightedCost": 2,
+  "retries": 0
+}

@@ -1,0 +1,52 @@
+TAP version 13
+# Subtest: future eligibility preserves pinned run and rejects past/expired/mismatched catalogs
+ok 1 - future eligibility preserves pinned run and rejects past/expired/mismatched catalogs
+  ---
+  duration_ms: 8.278319
+  type: 'test'
+  ...
+# Subtest: playback spans advertised horizon within six-frame and 32-tile bounds, including sparse times
+ok 2 - playback spans advertised horizon within six-frame and 32-tile bounds, including sparse times
+  ---
+  duration_ms: 1.597516
+  type: 'test'
+  ...
+# Subtest: tile session serializes selected visible work, no-store XYZ, disposal fences queued requests
+ok 3 - tile session serializes selected visible work, no-store XYZ, disposal fences queued requests
+  ---
+  duration_ms: 63.861228
+  type: 'test'
+  ...
+# Subtest: 429 stops whole session and queued work; malformed/bounded PNG rejected; abort signals propagated
+ok 4 - 429 stops whole session and queued work; malformed/bounded PNG rejected; abort signals propagated
+  ---
+  duration_ms: 4.591606
+  type: 'test'
+  ...
+# Subtest: decoded tile cache is exact-run/frame/XYZ bounded, copied, expired and shared across sessions; cooldown cannot be bypassed
+ok 5 - decoded tile cache is exact-run/frame/XYZ bounded, copied, expired and shared across sessions; cooldown cannot be bypassed
+  ---
+  duration_ms: 23.691871
+  type: 'test'
+  ...
+# Subtest: expired forecasts are removed and slow responses cannot repopulate or display them
+ok 6 - expired forecasts are removed and slow responses cannot repopulate or display them
+  ---
+  duration_ms: 1.976403
+  type: 'test'
+  ...
+# Subtest: browser forecast XYZ, pinned times, same canvas, keyboard, stale, quota and regional gating
+ok 7 - browser forecast XYZ, pinned times, same canvas, keyboard, stale, quota and regional gating
+  ---
+  duration_ms: 43226.418139
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 44772.661945

@@ -1,0 +1,2452 @@
+{
+  "homr-USC00087982-v2.json": {
+    "ncdcStnId": "20004482",
+    "identifiers": [
+      {
+        "idType": "GHCND",
+        "id": "USC00087982",
+        "date": {
+          "beginDate": "1956-06-01T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "idType": "GHCND",
+        "id": "USC00087977",
+        "date": {
+          "beginDate": "1926-12-20T00:00:00.000",
+          "endDate": "1956-06-01T00:00:00.000"
+        }
+      },
+      {
+        "idType": "GHCND",
+        "id": "USC00087977",
+        "date": {
+          "beginDate": "1913-02-12T00:00:00.000",
+          "endDate": "1926-11-22T00:00:00.000"
+        }
+      },
+      {
+        "idType": "GHCND",
+        "id": "USC00087977",
+        "date": {
+          "beginDate": "1882-09-01T00:00:00.000",
+          "endDate": "1887-06-30T00:00:00.000"
+        }
+      },
+      {
+        "idType": "GHCNMLT",
+        "id": "USC00087982",
+        "date": {
+          "beginDate": "1956-06-01T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "idType": "GHCNMLT",
+        "id": "USC00087977",
+        "date": {
+          "beginDate": "1926-12-20T00:00:00.000",
+          "endDate": "1956-06-01T00:00:00.000"
+        }
+      },
+      {
+        "idType": "GHCNMLT",
+        "id": "USC00087977",
+        "date": {
+          "beginDate": "1913-02-12T00:00:00.000",
+          "endDate": "1926-11-22T00:00:00.000"
+        }
+      },
+      {
+        "idType": "GHCNMLT",
+        "id": "USC00087977",
+        "date": {
+          "beginDate": "1882-09-01T00:00:00.000",
+          "endDate": "1887-06-30T00:00:00.000"
+        }
+      },
+      {
+        "idType": "COOP",
+        "id": "087982",
+        "date": {
+          "beginDate": "1956-06-01T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "idType": "COOP",
+        "id": "087977",
+        "date": {
+          "beginDate": "1926-12-20T00:00:00.000",
+          "endDate": "1956-06-01T00:00:00.000"
+        }
+      },
+      {
+        "idType": "COOP",
+        "id": "087977",
+        "date": {
+          "beginDate": "1913-02-12T00:00:00.000",
+          "endDate": "1926-11-22T00:00:00.000"
+        }
+      },
+      {
+        "idType": "COOP",
+        "id": "087977",
+        "date": {
+          "beginDate": "1882-09-01T00:00:00.000",
+          "endDate": "1887-06-30T00:00:00.000"
+        }
+      },
+      {
+        "idType": "NWSLI",
+        "id": "SFNF1",
+        "date": {
+          "beginDate": "1987-10-01T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "idType": "NCDCSTNID",
+        "id": "20004482",
+        "date": {
+          "beginDate": "1926-12-20T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "idType": "NCDCSTNID",
+        "id": "20004482",
+        "date": {
+          "beginDate": "1913-02-12T00:00:00.000",
+          "endDate": "1926-11-22T00:00:00.000"
+        }
+      },
+      {
+        "idType": "NCDCSTNID",
+        "id": "20004482",
+        "date": {
+          "beginDate": "1882-09-01T00:00:00.000",
+          "endDate": "1887-06-30T00:00:00.000"
+        }
+      }
+    ],
+    "coordinate_epochs": [
+      {
+        "latitude_rptd": "28.8147",
+        "longitude_rptd": "-81.2778",
+        "latitude_dec": "28.8147",
+        "longitude_dec": "-81.2778",
+        "latitude_dms": "28,48,53,N",
+        "longitude_dms": "081,16,40,W",
+        "precision": "DDddddd",
+        "datum_horiz": "NAD83",
+        "source": "GPS - GARMIN MODEL III",
+        "date": {
+          "beginDate": "2023-06-15T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "latitude_rptd": "28.8147",
+        "longitude_rptd": "-81.2778",
+        "latitude_dec": "28.8147",
+        "longitude_dec": "-81.2778",
+        "latitude_dms": "28,48,53,N",
+        "longitude_dms": "081,16,40,W",
+        "precision": "DDdddd",
+        "datum_horiz": "NAD83",
+        "source": "GPS - GARMIN MODEL III",
+        "date": {
+          "beginDate": "2016-03-13T00:00:00.000",
+          "endDate": "2023-06-15T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "28,48,53,N",
+        "longitude_rptd": "081,16,40,W",
+        "latitude_dec": "28.8147",
+        "longitude_dec": "-81.2778",
+        "latitude_dms": "28,48,53,N",
+        "longitude_dms": "081,16,40,W",
+        "precision": "DDMMSS",
+        "datum_horiz": "NAD83",
+        "source": "GPS - GARMIN MODEL III",
+        "date": {
+          "beginDate": "2010-07-01T00:00:00.000",
+          "endDate": "2016-03-13T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "28,48,53,N",
+        "longitude_rptd": "081,16,40,W",
+        "latitude_dec": "28.81472",
+        "longitude_dec": "-81.27778",
+        "latitude_dms": "28,48,53,N",
+        "longitude_dms": "081,16,40,W",
+        "precision": "DDMMSS",
+        "datum_horiz": "NAD83",
+        "source": "GPS - GARMIN MODEL III",
+        "date": {
+          "beginDate": "2005-03-01T00:00:00.000",
+          "endDate": "2010-07-01T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "28,48,09,N",
+        "longitude_rptd": "081,16,07,W",
+        "latitude_dec": "28.8025",
+        "longitude_dec": "-81.26861",
+        "latitude_dms": "28,48,09,N",
+        "longitude_dms": "081,16,07,W",
+        "precision": "DDMMSS",
+        "date": {
+          "beginDate": "1995-02-01T00:00:00.000",
+          "endDate": "2005-03-01T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "28,48,,N",
+        "longitude_rptd": "081,14,,W",
+        "latitude_dec": "28.8",
+        "longitude_dec": "-81.23333",
+        "latitude_dms": "28,48,00,N",
+        "longitude_dms": "081,14,00,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "1967-11-01T00:00:00.000",
+          "endDate": "1995-02-01T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "28,48,,N",
+        "longitude_rptd": "081,15,,W",
+        "latitude_dec": "28.8",
+        "longitude_dec": "-81.25",
+        "latitude_dms": "28,48,00,N",
+        "longitude_dms": "081,15,00,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "1956-06-01T00:00:00.000",
+          "endDate": "1967-11-01T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "28,49,,N",
+        "longitude_rptd": "081,15,,W",
+        "latitude_dec": "28.81667",
+        "longitude_dec": "-81.25",
+        "latitude_dms": "28,49,00,N",
+        "longitude_dms": "081,15,00,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "1954-08-01T00:00:00.000",
+          "endDate": "1956-06-01T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "28,48,,N",
+        "longitude_rptd": "081,16,,W",
+        "latitude_dec": "28.8",
+        "longitude_dec": "-81.26667",
+        "latitude_dms": "28,48,00,N",
+        "longitude_dms": "081,16,00,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "1948-07-01T00:00:00.000",
+          "endDate": "1954-08-01T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "28,48,,N",
+        "longitude_rptd": "081,17,,W",
+        "latitude_dec": "28.8",
+        "longitude_dec": "-81.283333",
+        "latitude_dms": "28,48,00,N",
+        "longitude_dms": "081,17,00,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "1940-01-06T00:00:00.000",
+          "endDate": "1948-07-01T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "28,49,,N",
+        "longitude_rptd": "081,16,,W",
+        "latitude_dec": "28.816667",
+        "longitude_dec": "-81.266667",
+        "latitude_dms": "28,49,00,N",
+        "longitude_dms": "081,16,00,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "1926-12-20T00:00:00.000",
+          "endDate": "1940-01-06T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "28,49,,N",
+        "longitude_rptd": "081,16,,W",
+        "latitude_dec": "28.816667",
+        "longitude_dec": "-81.266667",
+        "latitude_dms": "28,49,00,N",
+        "longitude_dms": "081,16,00,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "1913-02-12T00:00:00.000",
+          "endDate": "1926-11-22T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "28,49,,N",
+        "longitude_rptd": "081,16,,W",
+        "latitude_dec": "28.816667",
+        "longitude_dec": "-81.266667",
+        "latitude_dms": "28,49,00,N",
+        "longitude_dms": "081,16,00,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "1882-09-01T00:00:00.000",
+          "endDate": "1887-06-30T00:00:00.000"
+        }
+      }
+    ],
+    "elevation_epochs": [
+      {
+        "elevationType": "GROUND",
+        "elevationFeet": "12",
+        "elevationMeters": "3.7",
+        "date": {
+          "beginDate": "1995-02-01T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "elevationType": "GROUND",
+        "elevationFeet": "15",
+        "elevationMeters": "4.6",
+        "date": {
+          "beginDate": "1967-11-01T00:00:00.000",
+          "endDate": "1995-02-01T00:00:00.000"
+        }
+      },
+      {
+        "elevationType": "GROUND",
+        "elevationFeet": "10",
+        "elevationMeters": "3",
+        "date": {
+          "beginDate": "1954-08-01T00:00:00.000",
+          "endDate": "1967-11-01T00:00:00.000"
+        }
+      },
+      {
+        "elevationType": "GROUND",
+        "elevationFeet": "30",
+        "elevationMeters": "9.1",
+        "date": {
+          "beginDate": "1948-07-01T00:00:00.000",
+          "endDate": "1954-08-01T00:00:00.000"
+        }
+      },
+      {
+        "elevationType": "GROUND",
+        "elevationFeet": "26",
+        "elevationMeters": "7.9",
+        "date": {
+          "beginDate": "1940-01-06T00:00:00.000",
+          "endDate": "1948-07-01T00:00:00.000"
+        }
+      }
+    ],
+    "utc_offsets": [
+      {
+        "utcOffset": "-5",
+        "date": {
+          "beginDate": "1882-09-01T00:00:00.000",
+          "endDate": "1887-06-30T00:00:00.000"
+        }
+      },
+      {
+        "utcOffset": "-5",
+        "date": {
+          "beginDate": "1913-02-12T00:00:00.000",
+          "endDate": "1926-11-22T00:00:00.000"
+        }
+      },
+      {
+        "utcOffset": "-5",
+        "date": {
+          "beginDate": "1926-12-20T00:00:00.000",
+          "endDate": "Present"
+        }
+      }
+    ],
+    "relocations": [
+      {
+        "relocation": "12 ft E",
+        "date": "2005-03-01T00:00:00.000"
+      },
+      {
+        "relocation": "1.3 mi NE",
+        "date": "1951-06-11T00:00:00.000"
+      }
+    ],
+    "remarks_since_1991": [
+      {
+        "type": "NWS COOP INGEST",
+        "remark": "3 YEAR UPDATE\r\nUPDATE OBSERVER INFO\r\nMETADATA CONVERSION CORRECTIONS.",
+        "date": {
+          "beginDate": "2023-06-15T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "type": "NWS COOP INGEST",
+        "remark": "REPORTING METHOD FOR TEMPERATURE, OBSERVER REMARKS.\r\nMETADATA CONVERSION CORRECTIONS.",
+        "date": {
+          "beginDate": "2016-03-13T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "type": "NWS COOP INGEST",
+        "remark": "CHANGED PRIMARY OBSERVER AND PHONE #. FEW MORE DETAILS ON ADDRESS.",
+        "date": {
+          "beginDate": "2014-04-09T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "type": "NWS COOP INGEST",
+        "remark": "CHANGE NWSREP.  STATION GOING PAPERLESS. CHANGE FROM IVROCS TO WXCODER3 AS MAIN OPSERVATION INPUT.",
+        "date": {
+          "beginDate": "2011-02-01T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "type": "NWS COOP INGEST",
+        "remark": "CHANGE PRIMARY AND SECONDARY AUTH.  STATION GOING PAPERLESS.",
+        "date": {
+          "beginDate": "2010-07-01T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "type": "NWS COOP INGEST",
+        "remark": "CHANGE PC ROSA TO IV ROCS. ",
+        "date": {
+          "beginDate": "2005-10-05T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "type": "NWS COOP INGEST",
+        "remark": "MMTS MOVED APPROX 12 FEET EAST TO ACCOMMODATE OBSERVERS AND TO PREVENT POTENTIAL DAMAGE FROM OCCASIONAL TRAFFIC FLOW CLOSE TO THIS AREA. CHANGE TO EXPOSURE DUE TO MAJOR CONSTRUCTION, TREE GROWTH. REMOVE INOPERATIVE TOUCH TONE PHONE. CHANGE DRIVING DIRECTIONS. ADD HORIZONTAL REF DATUM (NAD83) AND ADJUSTED (CORRECTED) LAT/LON. THIS LAT/LON CORRECTION EXTENDS TO RENDITION 12. CHANGE PRIMARY OBSERVER. ",
+        "date": {
+          "beginDate": "2005-03-01T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "type": "RIVER BASIN (COOP NETWORK)",
+        "remark": "ST. JOHNS",
+        "date": {
+          "beginDate": "1967-11-01T00:00:00.000",
+          "endDate": "Present"
+        }
+      }
+    ],
+    "elements_field_present": true,
+    "core_element_epochs_since_1991": [
+      {
+        "dataProgram": "COOP SOD",
+        "element": "PRECIP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "RDP-WXCDR3",
+        "equipment": {
+          "equipment": "SRG-STN",
+          "equipmentAzimuth": "000",
+          "equipmentDistance": "0",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2023-06-15T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "TEMP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "RDP-WXCDR3",
+        "equipment": {
+          "equipment": "NIMBUS",
+          "equipmentAzimuth": "090",
+          "equipmentDistance": "3",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2023-06-15T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "PRECIP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "RDP-WXCDR3",
+        "equipment": {
+          "equipment": "SRG",
+          "equipmentAzimuth": "000",
+          "equipmentDistance": "0",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2016-03-13T00:00:00.000",
+          "endDate": "2023-06-15T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "TEMP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "RDP-WXCDR3",
+        "equipment": {
+          "equipment": "NIMBUS",
+          "equipmentAzimuth": "090",
+          "equipmentDistance": "3",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2016-03-13T00:00:00.000",
+          "endDate": "2023-06-15T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "PRECIP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "RDP-WXCDR3",
+        "equipment": {
+          "equipment": "SRG",
+          "equipmentAzimuth": "000",
+          "equipmentDistance": "0",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2014-04-09T00:00:00.000",
+          "endDate": "2016-03-13T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "TEMP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "RDP-WXCDR3",
+        "equipment": {
+          "equipment": "MMTS",
+          "equipmentAzimuth": "090",
+          "equipmentDistance": "3",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2014-04-09T00:00:00.000",
+          "endDate": "2016-03-13T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "PRECIP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "RDP-WXCDR3",
+        "equipment": {
+          "equipment": "SRG",
+          "equipmentAzimuth": "000",
+          "equipmentDistance": "0",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2011-02-01T00:00:00.000",
+          "endDate": "2014-04-09T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "TEMP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "RDP-WXCDR3",
+        "equipment": {
+          "equipment": "MMTS",
+          "equipmentAzimuth": "090",
+          "equipmentDistance": "03",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2011-02-01T00:00:00.000",
+          "endDate": "2014-04-09T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "PRECIP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "RDP-IVROCS",
+        "equipment": {
+          "equipment": "SRG",
+          "equipmentAzimuth": "000",
+          "equipmentDistance": "0",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2010-07-01T00:00:00.000",
+          "endDate": "2011-02-01T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "TEMP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "RDP-IVROCS",
+        "equipment": {
+          "equipment": "MMTS",
+          "equipmentAzimuth": "090",
+          "equipmentDistance": "03",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2010-07-01T00:00:00.000",
+          "endDate": "2011-02-01T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "PRECIP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "B91",
+        "equipment": {
+          "equipment": "SRG",
+          "equipmentAzimuth": "000",
+          "equipmentDistance": "0",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "1999-11-30T00:00:00.000",
+          "endDate": "2010-07-01T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "TEMP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "B91",
+        "equipment": {
+          "equipment": "MMTS",
+          "equipmentAzimuth": "090",
+          "equipmentDistance": "03",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "1999-11-30T00:00:00.000",
+          "endDate": "2010-07-01T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "PRECIP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "B91",
+        "equipment": {
+          "equipment": "SRG",
+          "equipmentAzimuth": "000",
+          "equipmentDistance": "0",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "1995-02-01T00:00:00.000",
+          "endDate": "1999-11-30T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "TEMP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "equipment": {
+          "equipment": "MXMN"
+        },
+        "date": {
+          "beginDate": "1995-02-01T00:00:00.000",
+          "endDate": "1999-11-30T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "PRECIP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "equipment": {
+          "equipment": "SRG",
+          "equipmentAzimuth": "000",
+          "equipmentDistance": "0",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "1987-10-01T00:00:00.000",
+          "endDate": "1995-02-01T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "TEMP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "equipment": {
+          "equipment": "MXMN"
+        },
+        "date": {
+          "beginDate": "1987-10-01T00:00:00.000",
+          "endDate": "1995-02-01T00:00:00.000"
+        }
+      }
+    ]
+  },
+  "homr-USC00427516-v2.json": {
+    "ncdcStnId": "20026076",
+    "identifiers": [
+      {
+        "idType": "GHCND",
+        "id": "USC00427516",
+        "date": {
+          "beginDate": "2014-11-19T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "idType": "GHCND",
+        "id": "USC00427516",
+        "date": {
+          "beginDate": "1942-09-27T00:00:00.000",
+          "endDate": "2013-10-17T00:00:00.000"
+        }
+      },
+      {
+        "idType": "GHCND",
+        "id": "USC00427516",
+        "date": {
+          "beginDate": "1916-05-28T00:00:00.000",
+          "endDate": "1942-09-25T00:00:00.000"
+        }
+      },
+      {
+        "idType": "GHCND",
+        "id": "USC00427516",
+        "date": {
+          "beginDate": "1877-10-01T00:00:00.000",
+          "endDate": "1909-09-30T00:00:00.000"
+        }
+      },
+      {
+        "idType": "GHCNMLT",
+        "id": "USC00427516",
+        "date": {
+          "beginDate": "2014-11-19T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "idType": "GHCNMLT",
+        "id": "USC00427516",
+        "date": {
+          "beginDate": "1942-09-27T00:00:00.000",
+          "endDate": "2013-10-17T00:00:00.000"
+        }
+      },
+      {
+        "idType": "GHCNMLT",
+        "id": "USC00427516",
+        "date": {
+          "beginDate": "1916-05-28T00:00:00.000",
+          "endDate": "1942-09-25T00:00:00.000"
+        }
+      },
+      {
+        "idType": "GHCNMLT",
+        "id": "USC00427516",
+        "date": {
+          "beginDate": "1877-10-01T00:00:00.000",
+          "endDate": "1909-09-30T00:00:00.000"
+        }
+      },
+      {
+        "idType": "COOP",
+        "id": "427516",
+        "date": {
+          "beginDate": "2014-11-19T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "idType": "COOP",
+        "id": "427516",
+        "date": {
+          "beginDate": "1942-09-27T00:00:00.000",
+          "endDate": "2013-10-17T00:00:00.000"
+        }
+      },
+      {
+        "idType": "COOP",
+        "id": "427516",
+        "date": {
+          "beginDate": "1916-05-28T00:00:00.000",
+          "endDate": "1942-09-25T00:00:00.000"
+        }
+      },
+      {
+        "idType": "COOP",
+        "id": "427516",
+        "date": {
+          "beginDate": "1877-10-01T00:00:00.000",
+          "endDate": "1909-09-30T00:00:00.000"
+        }
+      },
+      {
+        "idType": "NWSLI",
+        "id": "SGUU1",
+        "date": {
+          "beginDate": "2014-11-19T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "idType": "NWSLI",
+        "id": "SGUU1",
+        "date": {
+          "beginDate": "1986-07-15T00:00:00.000",
+          "endDate": "2013-10-17T00:00:00.000"
+        }
+      },
+      {
+        "idType": "NCDCSTNID",
+        "id": "20026076",
+        "date": {
+          "beginDate": "2014-11-19T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "idType": "NCDCSTNID",
+        "id": "20026076",
+        "date": {
+          "beginDate": "1942-09-27T00:00:00.000",
+          "endDate": "2013-10-17T00:00:00.000"
+        }
+      },
+      {
+        "idType": "NCDCSTNID",
+        "id": "20026076",
+        "date": {
+          "beginDate": "1916-05-28T00:00:00.000",
+          "endDate": "1942-09-25T00:00:00.000"
+        }
+      },
+      {
+        "idType": "NCDCSTNID",
+        "id": "20026076",
+        "date": {
+          "beginDate": "1877-10-01T00:00:00.000",
+          "endDate": "1909-09-30T00:00:00.000"
+        }
+      },
+      {
+        "idType": "HPD",
+        "id": "USC00427516",
+        "date": {
+          "beginDate": "2014-11-19T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "idType": "HPD",
+        "id": "USC00427516",
+        "date": {
+          "beginDate": "1942-09-27T00:00:00.000",
+          "endDate": "2013-10-17T00:00:00.000"
+        }
+      },
+      {
+        "idType": "HPD",
+        "id": "USC00427516",
+        "date": {
+          "beginDate": "1916-05-28T00:00:00.000",
+          "endDate": "1942-09-25T00:00:00.000"
+        }
+      },
+      {
+        "idType": "HPD",
+        "id": "USC00427516",
+        "date": {
+          "beginDate": "1877-10-01T00:00:00.000",
+          "endDate": "1909-09-30T00:00:00.000"
+        }
+      }
+    ],
+    "coordinate_epochs": [
+      {
+        "latitude_rptd": "37.119",
+        "longitude_rptd": "-113.6068",
+        "latitude_dec": "37.119",
+        "longitude_dec": "-113.6068",
+        "latitude_dms": "37,07,08,N",
+        "longitude_dms": "113,36,24,W",
+        "precision": "DDddddd",
+        "datum_horiz": "NAD83",
+        "source": "GPS - LOWRANCE GLOBAL MAP 100",
+        "date": {
+          "beginDate": "2018-02-02T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "latitude_rptd": "37.119",
+        "longitude_rptd": "-113.6068",
+        "latitude_dec": "37.119",
+        "longitude_dec": "-113.6068",
+        "latitude_dms": "37,07,08,N",
+        "longitude_dms": "113,36,24,W",
+        "precision": "DDdddd",
+        "datum_horiz": "NAD83",
+        "source": "GPS - LOWRANCE GLOBAL MAP 100",
+        "date": {
+          "beginDate": "2014-11-19T00:00:00.000",
+          "endDate": "2018-02-02T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "37,06,25,N",
+        "longitude_rptd": "113,33,40,W",
+        "latitude_dec": "37.1069",
+        "longitude_dec": "-113.5611",
+        "latitude_dms": "37,06,25,N",
+        "longitude_dms": "113,33,40,W",
+        "precision": "DDMMSS",
+        "datum_horiz": "NAD83",
+        "source": "GPS - LOWRANCE GLOBAL MAP 100",
+        "date": {
+          "beginDate": "2005-01-21T00:00:00.000",
+          "endDate": "2013-10-17T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "37,06,25,N",
+        "longitude_rptd": "113,33,40,W",
+        "latitude_dec": "37.10694",
+        "longitude_dec": "-113.56111",
+        "latitude_dms": "37,06,25,N",
+        "longitude_dms": "113,33,40,W",
+        "precision": "DDMMSS",
+        "datum_horiz": "NAD83",
+        "source": "GPS - LOWRANCE GLOBAL MAP 100",
+        "date": {
+          "beginDate": "2001-07-25T00:00:00.000",
+          "endDate": "2005-01-21T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "37,06,22,N",
+        "longitude_rptd": "113,34,02,W",
+        "latitude_dec": "37.10611",
+        "longitude_dec": "-113.56722",
+        "latitude_dms": "37,06,22,N",
+        "longitude_dms": "113,34,02,W",
+        "precision": "DDMMSS",
+        "datum_horiz": "NAD83",
+        "source": "GPS - LOWRANCE GLOBAL MAP 100",
+        "date": {
+          "beginDate": "2001-04-27T00:00:00.000",
+          "endDate": "2001-07-25T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "37,06,22,N",
+        "longitude_rptd": "113,34,02,W",
+        "latitude_dec": "37.10611",
+        "longitude_dec": "-113.56722",
+        "latitude_dms": "37,06,22,N",
+        "longitude_dms": "113,34,02,W",
+        "precision": "DDMMSS",
+        "date": {
+          "beginDate": "1997-12-11T00:00:00.000",
+          "endDate": "2001-04-27T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "37,06,,N",
+        "longitude_rptd": "113,34,,W",
+        "latitude_dec": "37.1",
+        "longitude_dec": "-113.56667",
+        "latitude_dms": "37,06,00,N",
+        "longitude_dms": "113,34,00,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "1993-10-01T00:00:00.000",
+          "endDate": "1997-12-11T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "37,07,,N",
+        "longitude_rptd": "113,34,,W",
+        "latitude_dec": "37.11667",
+        "longitude_dec": "-113.56667",
+        "latitude_dms": "37,07,00,N",
+        "longitude_dms": "113,34,00,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "1986-07-15T00:00:00.000",
+          "endDate": "1993-10-01T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "37,06,,N",
+        "longitude_rptd": "113,34,,W",
+        "latitude_dec": "37.1",
+        "longitude_dec": "-113.56667",
+        "latitude_dms": "37,06,00,N",
+        "longitude_dms": "113,34,00,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "1985-03-01T00:00:00.000",
+          "endDate": "1986-07-15T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "37,06,,N",
+        "longitude_rptd": "113,36,,W",
+        "latitude_dec": "37.1",
+        "longitude_dec": "-113.6",
+        "latitude_dms": "37,06,00,N",
+        "longitude_dms": "113,36,00,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "1982-03-10T00:00:00.000",
+          "endDate": "1985-03-01T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "37,06,,N",
+        "longitude_rptd": "113,35,,W",
+        "latitude_dec": "37.1",
+        "longitude_dec": "-113.58333",
+        "latitude_dms": "37,06,00,N",
+        "longitude_dms": "113,35,00,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "1981-12-02T00:00:00.000",
+          "endDate": "1982-03-10T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "37,07,,N",
+        "longitude_rptd": "113,34,,W",
+        "latitude_dec": "37.11667",
+        "longitude_dec": "-113.56667",
+        "latitude_dms": "37,07,00,N",
+        "longitude_dms": "113,34,00,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "1970-07-01T00:00:00.000",
+          "endDate": "1981-12-02T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "37,07,,N",
+        "longitude_rptd": "113,35,,W",
+        "latitude_dec": "37.11667",
+        "longitude_dec": "-113.58333",
+        "latitude_dms": "37,07,00,N",
+        "longitude_dms": "113,35,00,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "1966-05-01T00:00:00.000",
+          "endDate": "1970-07-01T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "37,06,,N",
+        "longitude_rptd": "113,34,,W",
+        "latitude_dec": "37.1",
+        "longitude_dec": "-113.56667",
+        "latitude_dms": "37,06,00,N",
+        "longitude_dms": "113,34,00,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "1942-09-27T00:00:00.000",
+          "endDate": "1966-05-01T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "37,07,,N",
+        "longitude_rptd": "113,35,,W",
+        "latitude_dec": "37.11667",
+        "longitude_dec": "-113.58333",
+        "latitude_dms": "37,07,00,N",
+        "longitude_dms": "113,35,00,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "1936-09-09T00:00:00.000",
+          "endDate": "1942-09-25T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "37,06,,N",
+        "longitude_rptd": "113,35,,W",
+        "latitude_dec": "37.1",
+        "longitude_dec": "-113.58333",
+        "latitude_dms": "37,06,00,N",
+        "longitude_dms": "113,35,00,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "1916-05-28T00:00:00.000",
+          "endDate": "1936-09-09T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "37,06,,N",
+        "longitude_rptd": "113,35,,W",
+        "latitude_dec": "37.1",
+        "longitude_dec": "-113.58333",
+        "latitude_dms": "37,06,00,N",
+        "longitude_dms": "113,35,00,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "1892-10-01T00:00:00.000",
+          "endDate": "1909-09-30T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "37,06,,N",
+        "longitude_rptd": "113,35,,W",
+        "latitude_dec": "37.1",
+        "longitude_dec": "-113.583333",
+        "latitude_dms": "37,06,00,N",
+        "longitude_dms": "113,35,00,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "1877-10-01T00:00:00.000",
+          "endDate": "1892-10-01T00:00:00.000"
+        }
+      }
+    ],
+    "elevation_epochs": [
+      {
+        "elevationType": "GROUND",
+        "elevationFeet": "2857",
+        "elevationMeters": "870.8",
+        "groundElevDatum": "NAVD88",
+        "date": {
+          "beginDate": "2014-11-19T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "elevationType": "GROUND",
+        "elevationFeet": "2770",
+        "elevationMeters": "844.3",
+        "groundElevDatum": "NAVD88",
+        "date": {
+          "beginDate": "2001-04-27T00:00:00.000",
+          "endDate": "2013-10-17T00:00:00.000"
+        }
+      },
+      {
+        "elevationType": "GROUND",
+        "elevationFeet": "2770",
+        "elevationMeters": "844.3",
+        "date": {
+          "beginDate": "1993-10-01T00:00:00.000",
+          "endDate": "2001-04-27T00:00:00.000"
+        }
+      },
+      {
+        "elevationType": "GROUND",
+        "elevationFeet": "2760",
+        "elevationMeters": "841.2",
+        "date": {
+          "beginDate": "1987-12-03T00:00:00.000",
+          "endDate": "1993-10-01T00:00:00.000"
+        }
+      },
+      {
+        "elevationType": "GROUND",
+        "elevationFeet": "2758",
+        "elevationMeters": "840.6",
+        "date": {
+          "beginDate": "1987-09-07T00:00:00.000",
+          "endDate": "1987-12-03T00:00:00.000"
+        }
+      },
+      {
+        "elevationType": "GROUND",
+        "elevationFeet": "2759",
+        "elevationMeters": "840.9",
+        "date": {
+          "beginDate": "1986-07-15T00:00:00.000",
+          "endDate": "1987-09-07T00:00:00.000"
+        }
+      },
+      {
+        "elevationType": "GROUND",
+        "elevationFeet": "2761",
+        "elevationMeters": "841.6",
+        "date": {
+          "beginDate": "1982-03-10T00:00:00.000",
+          "endDate": "1986-07-15T00:00:00.000"
+        }
+      },
+      {
+        "elevationType": "GROUND",
+        "elevationFeet": "2701",
+        "elevationMeters": "823.3",
+        "date": {
+          "beginDate": "1981-12-02T00:00:00.000",
+          "endDate": "1982-03-10T00:00:00.000"
+        }
+      },
+      {
+        "elevationType": "GROUND",
+        "elevationFeet": "2762",
+        "elevationMeters": "841.9",
+        "date": {
+          "beginDate": "1970-07-01T00:00:00.000",
+          "endDate": "1981-12-02T00:00:00.000"
+        }
+      },
+      {
+        "elevationType": "GROUND",
+        "elevationFeet": "2822",
+        "elevationMeters": "860.1",
+        "date": {
+          "beginDate": "1966-05-01T00:00:00.000",
+          "endDate": "1970-07-01T00:00:00.000"
+        }
+      },
+      {
+        "elevationType": "GROUND",
+        "elevationFeet": "2703",
+        "elevationMeters": "823.9",
+        "date": {
+          "beginDate": "1942-09-27T00:00:00.000",
+          "endDate": "1966-05-01T00:00:00.000"
+        }
+      },
+      {
+        "elevationType": "GROUND",
+        "elevationFeet": "2880",
+        "elevationMeters": "877.8",
+        "date": {
+          "beginDate": "1916-05-28T00:00:00.000",
+          "endDate": "1942-09-25T00:00:00.000"
+        }
+      },
+      {
+        "elevationType": "GROUND",
+        "elevationFeet": "2880",
+        "elevationMeters": "877.8",
+        "date": {
+          "beginDate": "1877-10-01T00:00:00.000",
+          "endDate": "1909-09-30T00:00:00.000"
+        }
+      }
+    ],
+    "utc_offsets": [
+      {
+        "utcOffset": "-7",
+        "date": {
+          "beginDate": "1877-10-01T00:00:00.000",
+          "endDate": "1909-09-30T00:00:00.000"
+        }
+      },
+      {
+        "utcOffset": "-7",
+        "date": {
+          "beginDate": "1916-05-28T00:00:00.000",
+          "endDate": "1942-09-25T00:00:00.000"
+        }
+      },
+      {
+        "utcOffset": "-7",
+        "date": {
+          "beginDate": "1942-09-27T00:00:00.000",
+          "endDate": "2013-10-17T00:00:00.000"
+        }
+      },
+      {
+        "utcOffset": "-7",
+        "date": {
+          "beginDate": "2014-11-19T00:00:00.000",
+          "endDate": "Present"
+        }
+      }
+    ],
+    "relocations": [
+      {
+        "relocation": "2.5 mi WNW",
+        "date": "2014-11-19T00:00:00.000"
+      },
+      {
+        "relocation": ".5 mi E",
+        "date": "2001-07-25T00:00:00.000"
+      },
+      {
+        "relocation": "50 ft W",
+        "date": "1996-04-16T00:00:00.000"
+      },
+      {
+        "relocation": ".1 mi N",
+        "date": "1993-10-01T00:00:00.000"
+      },
+      {
+        "relocation": ".2 mi SE",
+        "date": "1986-07-15T00:00:00.000"
+      },
+      {
+        "relocation": ".6 mi E",
+        "date": "1982-03-10T00:00:00.000"
+      },
+      {
+        "relocation": ".7 mi W",
+        "date": "1981-12-02T00:00:00.000"
+      },
+      {
+        "relocation": "20 ft W",
+        "date": "1978-10-02T00:00:00.000"
+      },
+      {
+        "relocation": "20 ft E",
+        "date": "1978-05-01T00:00:00.000"
+      },
+      {
+        "relocation": "1.3 mi ESE",
+        "date": "1970-07-07T00:00:00.000"
+      },
+      {
+        "relocation": "1.3 mi SE",
+        "date": "1970-07-01T00:00:00.000"
+      },
+      {
+        "relocation": ".7 mi NW",
+        "date": "1966-05-16T00:00:00.000"
+      },
+      {
+        "relocation": "50 ft E",
+        "date": "1949-03-03T00:00:00.000"
+      }
+    ],
+    "remarks_since_1991": [
+      {
+        "type": "NWS COOP INGEST",
+        "remark": "CORRECT THE STATION START DATE TO 10/01/1877 FROM RENDITION 22 THROUGH RENDITION 33.",
+        "date": {
+          "beginDate": "2022-07-13T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "type": "NWS COOP INGEST",
+        "remark": "CORRECT THE STATION START DATE TO 10/01/1877 AS DOCUMENTED IN THE HISTORICAL OBSERVING METADATA REPOSITORY (HOMR) AND HARD COPY FILES.",
+        "date": {
+          "beginDate": "2022-07-13T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "type": "NWS COOP INGEST",
+        "remark": "UPDATED DIRECTIONS.",
+        "date": {
+          "beginDate": "2020-01-23T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "type": "NWS COOP INGEST",
+        "remark": "THREE YEAR REVIEW. UPDATED TOPOGRAPHY. UPDATED DRIVING DIRECTIONS. UPDATED OBSERVER INFORMATION. VEF INSTEAD OF SLC AS RECIPIENT.",
+        "date": {
+          "beginDate": "2018-02-02T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "type": "NWS COOP INGEST",
+        "remark": "RELOCATED EQUIPMENT AT NEW OBSERVERS HOUSE 2.5 MILE WNW OF PREVIOUS LOCATION AND 2.5 NW OF ORIGINAL LOCATION. ELEV. DIFFERENCE IS +20 FT FROM ORIGINAL SITE. -87 FT FROM PREVIOUS SITE. COMPATIBLE MOVE. UPDATED TO INDIVIDUAL STATION DESIGNATION, LAT/LON, ELEV. REMOVED FPR-D AND HOURLY REPORTING. ADDED SNOWFALL AND SNOW DEPTH AS ELEMENTS AS WELL AS SNOWBOARD AND SNOW STICK FOR EQUIPMENT. UPDATED DRIVING DIRECTIONS AND OBSTRUCTIONS.",
+        "date": {
+          "beginDate": "2014-11-19T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "type": "NWS COOP INGEST",
+        "remark": "UPDATED FOR NEW OBSERVER AND PHONE NUMBER. DUE TO EQUIPMENT ISSUES AND STAFFING F&P DATA WILL BE DISCONTINUED IN THE HPD PUBLICATION UNTIL FURTHER NOTICE.",
+        "date": {
+          "beginDate": "2013-05-20T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "type": "NWS COOP INGEST",
+        "remark": "UPDATED EQUIPMENT. UNDER OBSERVED ELEMENT HOURLY PRECIPITATION, CHANGED F&P TO FPR-D. IN REPORTING LINE, CHANGE B18 TO ADP AND DATA INGEST VIA TO MEMORY CARD. S VALUE -2.2958 O VALUE -3.3215 BATTERY VOLTAGE 12.0 AND PRECIPITATION START VALUE 2.51 INCHES.",
+        "date": {
+          "beginDate": "2012-08-27T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "type": "NWS COOP INGEST",
+        "remark": "CHANGE...5 YEAR UPDATE. DELETED F11 REPORTING METHOD.",
+        "date": {
+          "beginDate": "2010-01-23T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "type": "NWS COOP INGEST",
+        "remark": "CHANGE.EQUIPMENT SECTION - REPLACE MMTS1 WITH NIMBUS.",
+        "date": {
+          "beginDate": "2005-07-19T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "type": "NWS COOP INGEST",
+        "remark": "CHANGE...OBSERVATION SECT.",
+        "date": {
+          "beginDate": "2005-01-21T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "type": "RIVER BASIN (COOP NETWORK)",
+        "remark": "VIRGIN",
+        "date": {
+          "beginDate": "1993-10-01T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "type": "TYPE REMARK-COOP",
+        "remark": "KELLY TEDD IS THE SON OF THE FORMER OBSERVER",
+        "date": {
+          "beginDate": "1990-05-01T00:00:00.000",
+          "endDate": "1993-07-01T00:00:00.000"
+        }
+      },
+      {
+        "type": "RIVER BASIN (COOP NETWORK)",
+        "remark": "COLORADO",
+        "date": {
+          "beginDate": "1942-09-27T00:00:00.000",
+          "endDate": "1993-10-01T00:00:00.000"
+        }
+      },
+      {
+        "type": "HC CODE FROM S2K",
+        "remark": "HCN HAS # 427516.",
+        "date": {
+          "beginDate": "Unknown",
+          "endDate": "Present"
+        }
+      }
+    ],
+    "elements_field_present": true,
+    "core_element_epochs_since_1991": [
+      {
+        "dataProgram": "COOP SOD",
+        "element": "PRECIP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "RDP-WXCDR3",
+        "equipment": {
+          "equipment": "SRG-STN",
+          "equipmentAzimuth": "000",
+          "equipmentDistance": "0",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2018-02-02T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "TEMP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "RDP-WXCDR3",
+        "equipment": {
+          "equipment": "NIMBUS",
+          "equipmentAzimuth": "280",
+          "equipmentDistance": "6",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2018-02-02T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "PRECIP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "RDP-WXCDR3",
+        "equipment": {
+          "equipment": "SRG",
+          "equipmentAzimuth": "000",
+          "equipmentDistance": "0",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2014-11-19T00:00:00.000",
+          "endDate": "2018-02-02T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "TEMP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "RDP-WXCDR3",
+        "equipment": {
+          "equipment": "NIMBUS",
+          "equipmentAzimuth": "280",
+          "equipmentDistance": "6",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2014-11-19T00:00:00.000",
+          "endDate": "2018-02-02T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP HPD",
+        "element": "PRECIP",
+        "frequency": "HOURLY",
+        "observationTime": "2400",
+        "receiver": "NCEI",
+        "reportingMethod": "ADP",
+        "equipment": {
+          "equipment": "FPR-D",
+          "equipmentMods": "RCRD",
+          "equipmentAzimuth": "090",
+          "equipmentDistance": "5",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2013-05-20T00:00:00.000",
+          "endDate": "2013-10-17T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "PRECIP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "RDP-WXCDR3",
+        "equipment": {
+          "equipment": "SRG",
+          "equipmentAzimuth": "000",
+          "equipmentDistance": "0",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2013-05-20T00:00:00.000",
+          "endDate": "2013-10-17T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "TEMP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "RDP-WXCDR3",
+        "equipment": {
+          "equipment": "NIMBUS",
+          "equipmentAzimuth": "270",
+          "equipmentDistance": "150",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2013-05-20T00:00:00.000",
+          "endDate": "2013-10-17T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP HPD",
+        "element": "PRECIP",
+        "frequency": "HOURLY",
+        "observationTime": "2400",
+        "publishedFlag": "HPD",
+        "receiver": "NCEI",
+        "reportingMethod": "ADP",
+        "equipment": {
+          "equipment": "FPR-D",
+          "equipmentMods": "RCRD",
+          "equipmentAzimuth": "090",
+          "equipmentDistance": "5",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2012-08-27T00:00:00.000",
+          "endDate": "2013-05-20T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "PRECIP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "RDP-WXCDR3",
+        "equipment": {
+          "equipment": "SRG",
+          "equipmentAzimuth": "000",
+          "equipmentDistance": "0",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2012-08-27T00:00:00.000",
+          "endDate": "2013-05-20T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "TEMP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "RDP-WXCDR3",
+        "equipment": {
+          "equipment": "NIMBUS",
+          "equipmentAzimuth": "270",
+          "equipmentDistance": "150",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2012-08-27T00:00:00.000",
+          "endDate": "2013-05-20T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP HPD",
+        "element": "PRECIP",
+        "frequency": "HOURLY",
+        "observationTime": "2400",
+        "publishedFlag": "HPD",
+        "receiver": "NCEI",
+        "reportingMethod": "B18",
+        "equipment": {
+          "equipment": "F&P",
+          "equipmentMods": "RCRD",
+          "equipmentAzimuth": "090",
+          "equipmentDistance": "5",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2010-01-23T00:00:00.000",
+          "endDate": "2012-08-27T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "PRECIP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "RDP-WXCDR3",
+        "equipment": {
+          "equipment": "SRG",
+          "equipmentAzimuth": "000",
+          "equipmentDistance": "0",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2010-01-23T00:00:00.000",
+          "endDate": "2012-08-27T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "TEMP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "RDP-WXCDR3",
+        "equipment": {
+          "equipment": "NIMBUS",
+          "equipmentAzimuth": "270",
+          "equipmentDistance": "150",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2010-01-23T00:00:00.000",
+          "endDate": "2012-08-27T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP HPD",
+        "element": "PRECIP",
+        "frequency": "HOURLY",
+        "observationTime": "2400",
+        "publishedFlag": "HPD",
+        "receiver": "NCEI",
+        "reportingMethod": "B18",
+        "equipment": {
+          "equipment": "F&P",
+          "equipmentMods": "RCRD",
+          "equipmentAzimuth": "090",
+          "equipmentDistance": "5",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2005-07-19T00:00:00.000",
+          "endDate": "2010-01-23T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "PRECIP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "B91",
+        "equipment": {
+          "equipment": "SRG",
+          "equipmentAzimuth": "000",
+          "equipmentDistance": "0",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2005-07-19T00:00:00.000",
+          "endDate": "2010-01-23T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "TEMP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "B91",
+        "equipment": {
+          "equipment": "NIMBUS",
+          "equipmentAzimuth": "270",
+          "equipmentDistance": "150",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2005-07-19T00:00:00.000",
+          "endDate": "2010-01-23T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP HPD",
+        "element": "PRECIP",
+        "frequency": "HOURLY",
+        "observationTime": "2400",
+        "publishedFlag": "HPD",
+        "receiver": "NCEI",
+        "reportingMethod": "B18",
+        "equipment": {
+          "equipment": "F&P",
+          "equipmentMods": "RCRD",
+          "equipmentAzimuth": "090",
+          "equipmentDistance": "5",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2005-01-21T00:00:00.000",
+          "endDate": "2005-07-19T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "PRECIP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "B91",
+        "equipment": {
+          "equipment": "SRG",
+          "equipmentAzimuth": "000",
+          "equipmentDistance": "0",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2005-01-21T00:00:00.000",
+          "endDate": "2005-07-19T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "TEMP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "B91",
+        "equipment": {
+          "equipment": "MMTS",
+          "equipmentAzimuth": "270",
+          "equipmentDistance": "150",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2005-01-21T00:00:00.000",
+          "endDate": "2005-07-19T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP HPD",
+        "element": "PRECIP",
+        "equipment": {
+          "equipment": "F&P",
+          "equipmentMods": "RCRD",
+          "equipmentAzimuth": "090",
+          "equipmentDistance": "5",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2001-07-25T00:00:00.000",
+          "endDate": "2005-01-21T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "PRECIP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "B91",
+        "equipment": {
+          "equipment": "SRG",
+          "equipmentAzimuth": "000",
+          "equipmentDistance": "0",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2001-07-25T00:00:00.000",
+          "endDate": "2005-01-21T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "TEMP",
+        "frequency": "DAILY",
+        "observationTime": "0800",
+        "publishedFlag": "CD",
+        "receiver": "NCEI",
+        "reportingMethod": "B91",
+        "equipment": {
+          "equipment": "MMTS",
+          "equipmentAzimuth": "270",
+          "equipmentDistance": "150",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "2001-07-25T00:00:00.000",
+          "endDate": "2005-01-21T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP HPD",
+        "element": "PRECIP",
+        "equipment": {
+          "equipment": "F&P",
+          "equipmentMods": "RCRD",
+          "equipmentAzimuth": "090",
+          "equipmentDistance": "5",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "1999-06-14T00:00:00.000",
+          "endDate": "2001-07-25T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "PRECIP",
+        "frequency": "DAILY",
+        "observationTime": "1700",
+        "equipment": {
+          "equipment": "SRG",
+          "equipmentAzimuth": "000",
+          "equipmentDistance": "0",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "1999-06-14T00:00:00.000",
+          "endDate": "2001-07-25T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "TEMP",
+        "frequency": "DAILY",
+        "observationTime": "1700",
+        "equipment": {
+          "equipment": "MMTS"
+        },
+        "date": {
+          "beginDate": "1999-06-14T00:00:00.000",
+          "endDate": "2001-07-25T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP HPD",
+        "element": "PRECIP",
+        "equipment": {
+          "equipment": "F&P",
+          "equipmentMods": "RCRD",
+          "equipmentAzimuth": "090",
+          "equipmentDistance": "5",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "1997-12-11T00:00:00.000",
+          "endDate": "1999-06-14T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "PRECIP",
+        "frequency": "DAILY",
+        "observationTime": "1700",
+        "equipment": {
+          "equipment": "SRG",
+          "equipmentAzimuth": "000",
+          "equipmentDistance": "0",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "1997-12-11T00:00:00.000",
+          "endDate": "1999-06-14T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "TEMP",
+        "frequency": "DAILY",
+        "observationTime": "1700",
+        "equipment": {
+          "equipment": "MMTS"
+        },
+        "date": {
+          "beginDate": "1997-12-11T00:00:00.000",
+          "endDate": "1999-06-14T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP HPD",
+        "element": "PRECIP",
+        "frequency": "HOURLY",
+        "observationTime": "2400",
+        "equipment": {
+          "equipment": "F&P",
+          "equipmentMods": "RCRD"
+        },
+        "date": {
+          "beginDate": "1995-07-01T00:00:00.000",
+          "endDate": "1997-12-11T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "PRECIP",
+        "frequency": "DAILY",
+        "observationTime": "1700",
+        "equipment": {
+          "equipment": "SRG",
+          "equipmentAzimuth": "000",
+          "equipmentDistance": "0",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "1995-07-01T00:00:00.000",
+          "endDate": "1997-12-11T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "TEMP",
+        "frequency": "DAILY",
+        "observationTime": "1700",
+        "equipment": {
+          "equipment": "MMTS"
+        },
+        "date": {
+          "beginDate": "1995-07-01T00:00:00.000",
+          "endDate": "1997-12-11T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP HPD",
+        "element": "PRECIP",
+        "frequency": "HOURLY",
+        "observationTime": "2400",
+        "date": {
+          "beginDate": "1993-10-01T00:00:00.000",
+          "endDate": "1995-07-01T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "PRECIP",
+        "frequency": "DAILY",
+        "observationTime": "1700",
+        "equipment": {
+          "equipment": "SRG",
+          "equipmentAzimuth": "000",
+          "equipmentDistance": "0",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "1993-10-01T00:00:00.000",
+          "endDate": "1995-07-01T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "TEMP",
+        "frequency": "DAILY",
+        "observationTime": "1700",
+        "equipment": {
+          "equipment": "MMTS"
+        },
+        "date": {
+          "beginDate": "1993-10-01T00:00:00.000",
+          "endDate": "1995-07-01T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP HPD",
+        "element": "PRECIP",
+        "frequency": "HOURLY",
+        "observationTime": "2400",
+        "date": {
+          "beginDate": "1993-07-01T00:00:00.000",
+          "endDate": "1993-10-01T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "PRECIP",
+        "frequency": "DAILY",
+        "observationTime": "1700",
+        "equipment": {
+          "equipment": "SRG",
+          "equipmentAzimuth": "000",
+          "equipmentDistance": "0",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "1993-07-01T00:00:00.000",
+          "endDate": "1993-10-01T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "TEMP",
+        "frequency": "DAILY",
+        "observationTime": "1700",
+        "equipment": {
+          "equipment": "MXMN"
+        },
+        "date": {
+          "beginDate": "1993-07-01T00:00:00.000",
+          "endDate": "1993-10-01T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP HPD",
+        "element": "PRECIP",
+        "frequency": "HOURLY",
+        "observationTime": "2400",
+        "date": {
+          "beginDate": "1987-12-03T00:00:00.000",
+          "endDate": "1993-07-01T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "PRECIP",
+        "frequency": "DAILY",
+        "observationTime": "1700",
+        "equipment": {
+          "equipment": "SRG",
+          "equipmentAzimuth": "000",
+          "equipmentDistance": "0",
+          "equipmentDistanceUnits": "ft"
+        },
+        "date": {
+          "beginDate": "1987-12-03T00:00:00.000",
+          "endDate": "1993-07-01T00:00:00.000"
+        }
+      },
+      {
+        "dataProgram": "COOP SOD",
+        "element": "TEMP",
+        "frequency": "DAILY",
+        "observationTime": "1700",
+        "equipment": {
+          "equipment": "MXMN"
+        },
+        "date": {
+          "beginDate": "1987-12-03T00:00:00.000",
+          "endDate": "1993-07-01T00:00:00.000"
+        }
+      }
+    ]
+  },
+  "homr-USW00023186-v2.json": {
+    "ncdcStnId": "20026079",
+    "identifiers": [
+      {
+        "idType": "GHCND",
+        "id": "USW00023186",
+        "date": {
+          "beginDate": "1976-09-01T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "idType": "GHCND",
+        "id": "USW00023186",
+        "date": {
+          "beginDate": "1959-01-01T00:00:00.000",
+          "endDate": "1960-09-25T00:00:00.000"
+        }
+      },
+      {
+        "idType": "GHCND",
+        "id": "USW00023186",
+        "date": {
+          "beginDate": "1945-12-15T00:00:00.000",
+          "endDate": "1948-06-21T00:00:00.000"
+        }
+      },
+      {
+        "idType": "WBAN",
+        "id": "23186",
+        "date": {
+          "beginDate": "1976-09-01T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "idType": "WBAN",
+        "id": "23186",
+        "date": {
+          "beginDate": "1959-01-01T00:00:00.000",
+          "endDate": "1960-09-25T00:00:00.000"
+        }
+      },
+      {
+        "idType": "WBAN",
+        "id": "23186",
+        "date": {
+          "beginDate": "1945-12-15T00:00:00.000",
+          "endDate": "1948-06-21T00:00:00.000"
+        }
+      },
+      {
+        "idType": "FAA",
+        "id": "SGU",
+        "date": {
+          "beginDate": "1976-09-01T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "idType": "ICAO",
+        "id": "KSGU",
+        "date": {
+          "beginDate": "1995-01-01T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "idType": "NCDCSTNID",
+        "id": "20026079",
+        "date": {
+          "beginDate": "1976-09-01T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "idType": "NCDCSTNID",
+        "id": "20026079",
+        "date": {
+          "beginDate": "1959-01-01T00:00:00.000",
+          "endDate": "1960-09-25T00:00:00.000"
+        }
+      },
+      {
+        "idType": "NCDCSTNID",
+        "id": "20026079",
+        "date": {
+          "beginDate": "1945-12-15T00:00:00.000",
+          "endDate": "1948-06-21T00:00:00.000"
+        }
+      },
+      {
+        "idType": "GHCNH",
+        "id": "USW00023186",
+        "date": {
+          "beginDate": "1976-09-01T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "idType": "GHCNH",
+        "id": "USW00023186",
+        "date": {
+          "beginDate": "1959-01-01T00:00:00.000",
+          "endDate": "1960-09-25T00:00:00.000"
+        }
+      },
+      {
+        "idType": "GHCNH",
+        "id": "USW00023186",
+        "date": {
+          "beginDate": "1945-12-15T00:00:00.000",
+          "endDate": "1948-06-21T00:00:00.000"
+        }
+      }
+    ],
+    "coordinate_epochs": [
+      {
+        "latitude_rptd": "37,03,,N",
+        "longitude_rptd": "113,30,,W",
+        "latitude_dec": "37.0451",
+        "longitude_dec": "-113.50561",
+        "latitude_dms": "37,02,42,N",
+        "longitude_dms": "113,30,20,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "2011-04-15T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "latitude_rptd": "37.0451",
+        "longitude_rptd": "-113.50561",
+        "latitude_dec": "37.0451",
+        "longitude_dec": "-113.50561",
+        "latitude_dms": "37,02,42,N",
+        "longitude_dms": "113,30,20,W",
+        "precision": "DDddddd",
+        "date": {
+          "beginDate": "2001-03-01T00:00:00.000",
+          "endDate": "2011-04-15T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "37,06,,N",
+        "longitude_rptd": "113,36,,W",
+        "latitude_dec": "37.1",
+        "longitude_dec": "-113.6",
+        "latitude_dms": "37,06,00,N",
+        "longitude_dms": "113,36,00,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "1976-09-01T00:00:00.000",
+          "endDate": "2001-03-01T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "37,05,,N",
+        "longitude_rptd": "113,36,,W",
+        "latitude_dec": "37.08333",
+        "longitude_dec": "-113.6",
+        "latitude_dms": "37,05,00,N",
+        "longitude_dms": "113,36,00,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "1959-01-01T00:00:00.000",
+          "endDate": "1960-09-25T00:00:00.000"
+        }
+      },
+      {
+        "latitude_rptd": "37,05,,N",
+        "longitude_rptd": "113,36,,W",
+        "latitude_dec": "37.08333",
+        "longitude_dec": "-113.6",
+        "latitude_dms": "37,05,00,N",
+        "longitude_dms": "113,36,00,W",
+        "precision": "DDMM",
+        "date": {
+          "beginDate": "1945-12-15T00:00:00.000",
+          "endDate": "1948-06-21T00:00:00.000"
+        }
+      }
+    ],
+    "elevation_epochs": [
+      {
+        "elevationType": "GROUND",
+        "elevationFeet": "2936",
+        "elevationMeters": "894.9",
+        "date": {
+          "beginDate": "1976-09-01T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "elevationType": "GROUND",
+        "elevationFeet": "2940",
+        "elevationMeters": "896.1",
+        "date": {
+          "beginDate": "1959-01-01T00:00:00.000",
+          "endDate": "1960-09-25T00:00:00.000"
+        }
+      },
+      {
+        "elevationType": "GROUND",
+        "elevationFeet": "2903",
+        "elevationMeters": "884.8",
+        "date": {
+          "beginDate": "1945-12-15T00:00:00.000",
+          "endDate": "1948-06-21T00:00:00.000"
+        }
+      },
+      {
+        "elevationType": "AIRPORT",
+        "elevationFeet": "2938",
+        "elevationMeters": "895.5",
+        "date": {
+          "beginDate": "1976-09-01T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "elevationType": "AIRPORT",
+        "elevationFeet": "2940",
+        "elevationMeters": "896.1",
+        "date": {
+          "beginDate": "1959-01-01T00:00:00.000",
+          "endDate": "1960-09-25T00:00:00.000"
+        }
+      },
+      {
+        "elevationType": "BAROMETRIC",
+        "elevationFeet": "2950",
+        "elevationMeters": "899.2",
+        "date": {
+          "beginDate": "1976-09-01T00:00:00.000",
+          "endDate": "Present"
+        }
+      },
+      {
+        "elevationType": "BAROMETRIC",
+        "elevationFeet": "2906",
+        "elevationMeters": "885.7",
+        "date": {
+          "beginDate": "1945-12-15T00:00:00.000",
+          "endDate": "1948-06-21T00:00:00.000"
+        }
+      }
+    ],
+    "utc_offsets": [
+      {
+        "utcOffset": "-7",
+        "date": {
+          "beginDate": "1945-12-15T00:00:00.000",
+          "endDate": "1948-06-21T00:00:00.000"
+        }
+      },
+      {
+        "utcOffset": "-7",
+        "date": {
+          "beginDate": "1959-01-01T00:00:00.000",
+          "endDate": "1960-09-25T00:00:00.000"
+        }
+      },
+      {
+        "utcOffset": "-7",
+        "date": {
+          "beginDate": "1976-09-01T00:00:00.000",
+          "endDate": "Present"
+        }
+      }
+    ],
+    "relocations": [],
+    "remarks_since_1991": [
+      {
+        "type": "GENERAL",
+        "remark": "SGU ASOS, AS SEEN ON MESOWEST: 37.04510 , -113.50561\r\n\r\nPER NWS THIS STATION WAS MOVED 15 YEARS AGO.  NO DATE, DISTANCE OR DIRECTION PROVIDED.  USED THE INFORMATION FROM MESOWEST TO UPDATE THE COORDINATES. ",
+        "date": {
+          "beginDate": "2023-03-23T00:00:00.000",
+          "endDate": "Present"
+        }
+      }
+    ],
+    "elements_field_present": false,
+    "core_element_epochs_since_1991": []
+  }
+}

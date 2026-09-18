@@ -1,0 +1,15 @@
+{
+  "bytes": 22871,
+  "warning": null,
+  "cacheControl": "max-age=600, public",
+  "retrievedAt": "2026-09-11T01:13:09.448Z",
+  "contentType": "image/png",
+  "productId": "radar-conus",
+  "requestedTime": "2026-09-11T01:04:07.000Z",
+  "actualSourceTime": null,
+  "sourceTimeStatus": "advertised_time_requested",
+  "extentRelation": "inside",
+  "coverageState": "unknown",
+  "attribution": "NOAA nowCOAST; NWS / OAR MRMS",
+  "imageBase64Length": 30496
+}

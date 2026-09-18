@@ -1,0 +1,14 @@
+{
+  "cookies": [],
+  "origins": [
+    {
+      "origin": "http://127.0.0.1:4311",
+      "localStorage": [
+        {
+          "name": "zindycast.preferences.v1",
+          "value": "{\"units\":\"us\",\"activity\":\"walking\",\"saved\":[],\"selected\":{\"latitude\":30.26715,\"longitude\":-97.74306,\"id\":\"open-meteo:4671654\",\"name\":\"Austin\",\"admin1\":\"Texas\",\"admin2\":\"Travis\",\"country\":\"United States\",\"timezone\":\"America/Chicago\"}}"
+        }
+      ]
+    }
+  ]
+}

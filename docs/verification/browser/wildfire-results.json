@@ -1,0 +1,13 @@
+{
+  "time": "2026-09-11T01:36:46.735Z",
+  "http": 200,
+  "bbox": {
+    "west": -123.28801,
+    "south": 36.75212,
+    "east": -119.28801,
+    "north": 40.75212
+  },
+  "incidents": 17,
+  "perimeters": 2,
+  "coverage": "unknown"
+}

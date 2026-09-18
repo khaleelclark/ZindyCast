@@ -1,0 +1,62 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "ready": true,
+      "noaaCrop": {
+        "sx": 144.38044444445404,
+        "sy": 0.15826029528398067,
+        "width": 512,
+        "height": 500
+      },
+      "libreCrop": {
+        "sx": 0,
+        "sy": 6,
+        "width": 512,
+        "height": 500
+      },
+      "world": 524288,
+      "origin": {
+        "ox": 143676,
+        "oy": 217962
+      },
+      "overflow": false,
+      "dimensions": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "ready": true,
+      "noaaCrop": {
+        "sx": 144.38044444445404,
+        "sy": 0.15826029528398067,
+        "width": 512,
+        "height": 500
+      },
+      "libreCrop": {
+        "sx": 0,
+        "sy": 6,
+        "width": 512,
+        "height": 500
+      },
+      "world": 524288,
+      "origin": {
+        "ox": 143676,
+        "oy": 217962
+      },
+      "overflow": false,
+      "dimensions": []
+    }
+  ],
+  "errors": [],
+  "outside": 0,
+  "requests": [
+    "/librewxr-trial/trial.html",
+    "/radar-deep-audit/zoom10.png",
+    "/librewxr-trial/libre-observed.png",
+    "/librewxr-trial/trial.html",
+    "/radar-deep-audit/zoom10.png",
+    "/librewxr-trial/libre-observed.png"
+  ]
+}

@@ -1,0 +1,49 @@
+import {chromium,expect} from '@playwright/test';
+import {readFile,mkdir,writeFile} from 'node:fs/promises';
+import {createServer} from 'node:http';
+import {resolve,extname} from 'node:path';
+const root=resolve(process.env.OBSERVED_BUILD??'/tmp/zindycast-observed-dist'),dir='docs/verification/observed-current';
+await mkdir(dir,{recursive:true});
+const now=Date.parse('2026-09-12T20:15:00Z');
+const template=JSON.parse(await readFile('docs/verification/current-hour-jump/forecast.json','utf8')).data;
+const place={...template.location,name:'Fixture Osteen',latitude:28.846,longitude:-81.162,id:'fixture-osteen'};
+const second={...place,name:'Fixture Second',latitude:29.846,id:'fixture-second'};
+function forecast(location){const data=structuredClone(template);data.location=location;data.provenance.retrievedAt=new Date(now).toISOString();data.current={time:new Date(now).toISOString(),intervalSeconds:900,temperatureC:28.333,apparentTemperatureC:29.722,humidityPercent:64,windSpeedMs:6.25,windDirectionDeg:43,weatherCode:0,isDay:1,cloudCoverPercent:4};return {status:'success',freshness:'fresh',data};}
+const units={temperatureC:'wmoUnit:degC',dewPointC:'wmoUnit:degC',humidityPercent:'wmoUnit:percent',windSpeedMs:'wmoUnit:m_s-1',windGustMs:'wmoUnit:m_s-1',windDirectionDeg:'wmoUnit:degree_(angle)',barometricPressurePa:'wmoUnit:Pa',visibilityM:'wmoUnit:m',precipitationLastHourMm:'wmoUnit:mm'};
+function observations(location,mode){
+ const time=new Date(now-(mode==='old'?91:20)*60000).toISOString(),point={latitude:location.latitude,longitude:location.longitude};
+ const values={temperatureC:(88-32)*5/9,dewPointC:21.5,humidityPercent:58,windSpeedMs:6.25,windGustMs:9.8,windDirectionDeg:43,barometricPressurePa:101800,visibilityM:16093.44,precipitationLastHourMm:0};
+ const measurements=Object.fromEntries(Object.entries(values).map(([key,value])=>[key,{value:mode==='missing'&&key==='humidityPercent'?null:value,qualityControl:'V',qualityMeaning:'verified_pass_levels_1_2_3'}]));
+ if(mode==='badqc'){measurements.temperatureC.qualityControl='Q';measurements.temperatureC.qualityMeaning='questioned_failed_level_2_or_3';}
+ return {status:'success',freshness:mode==='stale'?'stale':'fresh',data:{query:{latitude:location.latitude,longitude:location.longitude,since:new Date(now-10800000).toISOString(),until:new Date(now).toISOString(),stationLimit:3},stations:[{stationId:'FIXTURE',name:location.name+' station',coordinates:point,elevationM:16,distanceKm:0,sourceUrl:'https://api.weather.gov/stations/FIXTURE',latestObservationTime:time,observations:[{sourceId:`https://api.weather.gov/stations/FIXTURE/observations/${encodeURIComponent(time)}`,time,textDescription:'Mostly Cloudy',measurements,missingFields:mode==='missing'?['humidityPercent']:[]}]}],candidateCount:1,candidateSetTruncated:false,provider:'NWS',dataset:'NWS API station observations (MADIS ingest)',classification:'observed',retrievedAt:new Date(now).toISOString(),stationListSourceUrl:'https://api.weather.gov/gridpoints/MLB/26,68/stations?limit=5',selectionPolicy:'distance-ranked candidates only; no automatic representativeness selection',stationContinuity:'observations remain grouped by station; no cross-station splice',intervalSemantics:'station instants; precipitationLastHourMm is the reported preceding-hour accumulation ending at observation time',units,qualityControlSourceUrl:'https://madis.ncep.noaa.gov/madis_sfc_qc_notes.shtml',attribution:'Synthetic fixture NWS'}};
+}
+const server=createServer(async(req,res)=>{try{const path=resolve(root,'.'+new URL(req.url,'http://fixture').pathname.replace(/\/$/,'/index.html'));if(!path.startsWith(root+'/'))throw Error();const data=await readFile(path);res.writeHead(200,{'Content-Type':({'.html':'text/html','.js':'application/javascript','.css':'text/css','.json':'application/json','.svg':'image/svg+xml'}[extname(path)]??'application/octet-stream')});res.end(data);}catch{res.writeHead(404);res.end();}});
+await new Promise(r=>server.listen(0,'127.0.0.1',r));const origin=`http://127.0.0.1:${server.address().port}`;
+const browser=await chromium.launch({executablePath:'/usr/bin/google-chrome',headless:true});const results=[];
+try{
+for(const width of [320,390,768,1440]){
+ const context=await browser.newContext({viewport:{width,height:1000},serviceWorkers:'block'});let mode='fresh',forecastFails=false,observationCalls=0,forecastCalls=0,release;
+ const errors=[],external=[];
+ await context.route('**/*',async route=>{const url=new URL(route.request().url());if(url.origin!==origin){external.push(url.origin);return route.abort();}if(!url.pathname.startsWith('/api/'))return route.continue();
+ const loc=Number(url.searchParams.get('latitude'))===second.latitude?second:place;
+ const respond=(body,status=200)=>route.fulfill({status,contentType:'application/json',body:JSON.stringify(body)});
+ if(url.pathname==='/api/v1/forecast'){forecastCalls++;return respond(forecastFails?{status:'error',code:'provider_error',message:'Fixture forecast outage'}:forecast(loc),forecastFails?503:200);}
+ if(url.pathname==='/api/v1/observations'){observationCalls++;if(mode==='delay'&&loc===place)await new Promise(r=>release=r);if(mode==='error')return respond({status:'error',code:'provider_error',message:'Fixture station outage'},503);return respond(observations(loc,mode));}
+ return respond({status:'error',code:'provider_error',message:'Fixture service unavailable'},503);
+ });
+ await context.addInitScript(({place,second})=>localStorage.setItem('zindycast.preferences.v1',JSON.stringify({units:'us',activity:'walking',saved:[place,second],selected:place,backgroundMotion:false})),{place,second});
+ const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));await page.clock.install({time:new Date(now)});
+ await page.goto(origin);const summary=page.locator('.current-summary'),gauge=page.locator('.feels-gauge-value');
+ await expect(summary).toHaveAttribute('data-current-source','station');await expect(gauge).toHaveText('94.3°F');await expect(summary).toContainText('88°');await expect(summary).toContainText('Mostly Cloudy');await expect(summary).not.toContainText('Clear sky');await expect(page.locator('.feels-gauge-face svg')).toBeVisible();await expect(page.locator('.feels-gauge-face linearGradient')).toHaveCount(1);await expect(page.locator('.feels-gauge-endpoints')).toHaveCount(0);await expect(summary).toContainText('20 min ago');
+ const initial=[observationCalls,forecastCalls];await page.getByRole('button',{name:'°C',exact:true}).click();await expect(gauge).toHaveText('34.6°C');await page.getByRole('button',{name:'°F',exact:true}).click();expect([observationCalls,forecastCalls]).toEqual(initial);
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:`${dir}/station-${width}.png`,fullPage:false});
+ for(const scenario of ['old','stale','badqc','error','missing']){mode=scenario;await summary.getByRole('button',{name:'Refresh',exact:true}).click();await expect(summary.getByRole('button',{name:'Refresh',exact:true})).toBeEnabled();if(scenario==='missing'){await expect(summary).toHaveAttribute('data-current-source','station');await expect(gauge).toHaveText('Unavailable');await expect(summary).toContainText('88°');}else{await expect(summary).toHaveAttribute('data-current-source','model');await expect(gauge).toHaveText('85.5°F');await expect(summary).toContainText('Model estimate');if(scenario==='error'){await expect(summary).toContainText('Station service unavailable');await expect(summary).not.toContainText('No recent nearby station');}}}
+ // Observations remain usable during a complete forecast outage.
+ mode='fresh';forecastFails=true;await page.reload();await expect(summary).toHaveAttribute('data-current-source','station');await expect(gauge).toHaveText('94.3°F');await expect(page.getByText(/Fixture forecast outage/)).toBeVisible();
+ forecastFails=false;mode='delay';await page.reload();await expect.poll(()=>!!release).toBe(true);await page.getByRole('button',{name:'Change location',exact:true}).click();await page.getByRole('button',{name:'Fixture Second',exact:true}).click();await expect(summary).toContainText('Fixture Second station');release();await page.waitForTimeout(150);await expect(summary).not.toContainText('Fixture Osteen station');
+ const beforeHidden=observationCalls;await page.evaluate(()=>{Object.defineProperty(document,'hidden',{configurable:true,value:true});document.dispatchEvent(new Event('visibilitychange'));});await page.clock.fastForward(11*60_000);expect(observationCalls).toBe(beforeHidden);await expect(summary).toHaveAttribute('data-current-source','model');
+ await page.evaluate(()=>window.dispatchEvent(new Event('offline')));await expect(summary).toHaveCount(0);await expect(page.getByText(/You’re offline/)).toBeVisible();
+ expect(errors).toEqual([]);results.push({width,observationCalls,forecastCalls,errors,blockedExternalRequests:external.length,states:['station','units','expired','stale','bad-quality','station-outage','missing-humidity','forecast-outage','late-old-location','hidden-refresh-pause','clock-expiry','offline'],overflow:false});await context.close();
+}
+await writeFile(`${dir}/browser.json`,JSON.stringify({fixtureOnly:true,results},null,2));console.log(JSON.stringify(results));
+}finally{await browser.close();await new Promise(r=>server.close(r));}

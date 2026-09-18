@@ -1,0 +1,10 @@
+{
+  "id": "/", "name": "ZindyCast — Weather beyond temperature", "short_name": "ZindyCast",
+  "description": "Detailed weather with feels-like temperature and outdoor context.",
+  "start_url": "/", "scope": "/", "display": "standalone", "lang": "en-US",
+  "background_color": "#f7f7f0", "theme_color": "#234e47",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icon-maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}

@@ -1,0 +1,21 @@
+# Production hardening — in progress
+
+Scope: deployed private Tailscale application, September 11, 2026. User requested a production hardening pass. Not a public-hosting authorization or certification of unfinished features.
+
+Lead: root/static headers/configuration/integration; API reviewer: comparisons and cache; web reviewer: frontend/map/service-worker races; operations reviewer: jobs/installations/worker/deploy. Separate reports arrive before final release decision.
+
+Initial dependency audit: zero reported npm vulnerabilities (retained npm-audit.json); this is not proof of absence of security bugs. Added app-wide CSP restricting scripts/workers to self, framing/base/object protection, explicit OSM/blob resource allowances and inline styles required by MUI. Added nosniff/referrer/permissions headers. Finite connection/keepalive/request-per-socket limits; no global network configuration changed. Corrected framework body-too-large/unsupported media errors to retain client-error status rather than misleading 503. Header and invalid-body tests pass. These changes are not deployed until integrated browser CSP compatibility is verified.
+
+Sources: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy and https://fastify.dev/docs/latest/Reference/Server/ checked September 11. Remaining: joined defect reports, fixes, integrated tests/browser CSP checks, backup/restore evidence, deployment/recovery instructions and explicit readiness limitations.
+
+## Integrated release result
+
+Deployed September 11 at 02:28 UTC. 235 root unit/integration tests pass; six distinct deploy tests pass (backup, abrupt crash and real bounded SQLITE_FULL for jobs/installations/storage). Typecheck/build pass. Final live MUI/WBGT/map browser audit passes eight checks; installed-shell migration passes with synthetic legacy fixtures. No physical-device claim. npm audit reports zero vulnerabilities.
+
+Integrated API origin/Host allowlist in server config: canonical private HTTPS plus explicit loopback origins, ignoring forwarded identity. Unknown Host tested421; wrong scheme/origin tests pass. Added CSP, framing/object/base restrictions, security headers, bounded socket lifetimes and correct400/413/415 handling. Headers retain MUI inline styles and only required OSM/blob image connectivity. Cache policy/coalesced-result fixes and auth isolation checks integrated. Persistent map-source lifecycle and lazy SW cache fixes integrated. Original SQLite errors preserved across automatic rollback in all three repositories; all repositories are attempted during shutdown; rejected shutdown is logged generically and exits nonzero. LimitCORE=0 installed in both existing units; no unrelated service/Tailscale changes.
+
+Both units active, measured API ~68MB and worker ~49MB at initial verification, MemoryMax512MiB and LimitCORE0. Local and private HTTPS health200 (deployment host DNS workaround curl --resolve used; no DNS changes). Live Host rejection421. Stopped snapshot of ALL THREE actual DBs plus isolated restored-copy integrity checks passed; live DBs were not replaced. Private recovery set: $HOME/.local/state/zindycast-backups/hardening-20260911T022836Z, including0600 source/build/lockfile archive. Same-disk snapshots do not protect against host/disk loss.
+
+### Readiness limits
+
+Hardened private deployment, not unconditional full-product certification. Physical iPhone/Android/Safari/touch/accessibility acceptance remains open. Backups are manual/on-host; off-host disaster recovery and scheduled retention are not established. Existing docs/operations stopped3DB and quota/revocation rollback cautions remain mandatory. No power-loss/WAL append ENOSPC/full-host-load or reboot claim. Registration's hourly limit resets with process restart but durable installation/job caps remain. Old tabs that never visited a lazy chunk may need reload after subsequent builds; release asset retention remains an operations consideration. Known optional MapLibre build warning remains, with explicitly packaged worker tested. Unfinished planned data products/notifications/long climate windows remain unavailable. Heat is a modeled reference exposure, not individualized safety guidance.

@@ -1,0 +1,6 @@
+{
+  "startedAt": "2026-09-11T08:11:01.587Z",
+  "finishedAt": "2026-09-11T08:11:05.972Z",
+  "requests": 1,
+  "error": "StationError: NOAA returned invalid or oversized station metadata."
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "name": "florida-satellite.png",
+    "width": 800,
+    "height": 600,
+    "opaque": 480000,
+    "transparent": 0,
+    "gray": 480000,
+    "uniqueRgba": 132,
+    "redRange": [
+      54,
+      186
+    ]
+  },
+  {
+    "name": "forecast-z9.png",
+    "width": 256,
+    "height": 256,
+    "opaque": 80,
+    "transparent": 65456,
+    "gray": 65456,
+    "uniqueRgba": 3,
+    "redRange": [
+      0,
+      185
+    ]
+  }
+]

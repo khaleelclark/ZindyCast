@@ -1,0 +1,51 @@
+{
+  "fixtureOnly": true,
+  "results": [
+    {
+      "width": 390,
+      "observationCalls": 10,
+      "forecastCalls": 10,
+      "manualCalls": 7,
+      "errors": [],
+      "blockedExternalRequests": 16,
+      "states": [
+        "station",
+        "units",
+        "expired",
+        "stale",
+        "bad-quality",
+        "station-outage",
+        "missing-humidity",
+        "forecast-outage",
+        "late-old-location",
+        "hidden-refresh-pause",
+        "clock-expiry",
+        "offline"
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "observationCalls": 10,
+      "forecastCalls": 10,
+      "manualCalls": 7,
+      "errors": [],
+      "blockedExternalRequests": 15,
+      "states": [
+        "station",
+        "units",
+        "expired",
+        "stale",
+        "bad-quality",
+        "station-outage",
+        "missing-humidity",
+        "forecast-outage",
+        "late-old-location",
+        "hidden-refresh-pause",
+        "clock-expiry",
+        "offline"
+      ],
+      "overflow": false
+    }
+  ]
+}

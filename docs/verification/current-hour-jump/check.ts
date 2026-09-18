@@ -1,0 +1,10 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import assert from 'node:assert/strict';
+import {ForecastResponseSchema} from '../../../packages/contracts/src/index.ts';
+import {currentHour,temperature} from '../../../apps/web/src/weather.ts';
+const dir='docs/verification/current-hour-jump/';
+const result=ForecastResponseSchema.parse(JSON.parse(readFileSync(dir+'forecast.json','utf8')));
+assert.equal(result.status,'success');if(result.status!=='success')throw Error();
+const points=['2026-09-12T19:59:00Z','2026-09-12T20:00:00Z','2026-09-12T20:03:00Z'].map(now=>{const h=currentHour(result.data.hours,Date.parse(now));assert.ok(h);return{now,selectedTime:h.time,air:temperature(h.temperatureC,'us'),feels:temperature(h.apparentTemperatureC,'us')};});
+assert.equal(points[0].selectedTime,'2026-09-12T19:00:00.000Z');assert.equal(points[1].selectedTime,'2026-09-12T20:00:00.000Z');assert.equal(points[2].selectedTime,points[1].selectedTime);assert.equal(points[1].air,'82°');assert.equal(points[1].feels,'90°');
+writeFileSync(dir+'selection-results.json',JSON.stringify({status:'pass',type:'retained-response code replay; not historical browser capture',points},null,2));console.log(points);

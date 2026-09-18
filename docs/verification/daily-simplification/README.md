@@ -1,0 +1,7 @@
+# Daily forecast simplification — September 11, 2026
+
+Removed Next hours & tomorrow and Hourly heat. Daily outlook shows conditions, high/low, maximum hourly rain chance and wind. A short explanation retains hourly probability semantics. Partial forecasts are explicitly marked; no hourly interval counts in the default presentation. Thunderstorms/precipitation present in the period are surfaced instead of the unhelpful Mixed conditions label.
+
+17 focused weather/heat tests passed, including 25-hour DST coverage, missing values, zero rain/wind, precipitation conditions and heat graph keyboard labels. Typecheck and isolated production build passed (existing MapLibre warning).
+
+Actual Chrome fixture-only test at 390×844 and 1280×844 passed requested removals, daily labels and no horizontal page overflow; zero live provider requests and page exceptions. Screenshots visually inspected. Browser script uses the current apps/web/dist release. This is layout evidence, not live forecast verification. Combined release built and published. Typecheck and 75 web tests passed (2 opt-in browser tests skipped). Actual fixture Chrome hourly interaction, daily layout/removals, and heat interaction scripts passed against the served build, with zero live provider calls. Hourly checks cover hover/tap/keyboard, both units, missing values, repeated DST hours, touch scrolling and mobile/desktop overflow. Existing MapLibre build warning remains. Physical devices and screen readers were not tested.

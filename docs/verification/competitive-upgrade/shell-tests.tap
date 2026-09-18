@@ -1,0 +1,84 @@
+TAP version 13
+# (node:5276) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: production shell revalidates, API bypasses caches and unknown data never becomes HTML
+ok 1 - production shell revalidates, API bypasses caches and unknown data never becomes HTML
+  ---
+  duration_ms: 111.67035
+  type: 'test'
+  ...
+# Subtest: oversized and malformed request bodies remain client errors without reflecting payloads
+ok 2 - oversized and malformed request bodies remain client errors without reflecting payloads
+  ---
+  duration_ms: 12.311657
+  type: 'test'
+  ...
+# Subtest: compressed public assets negotiate encoding with exact decoded bytes and cache variation
+ok 3 - compressed public assets negotiate encoding with exact decoded bytes and cache variation
+  ---
+  duration_ms: 23.937474
+  type: 'test'
+  ...
+# Subtest: service worker shows only bounded unexpired warnings, never incoming navigation URLs
+ok 4 - service worker shows only bounded unexpired warnings, never incoming navigation URLs
+  ---
+  duration_ms: 3.484673
+  type: 'test'
+  ...
+# Subtest: worker excludes all data and release-check requests
+ok 5 - worker excludes all data and release-check requests
+  ---
+  duration_ms: 3.31983
+  type: 'test'
+  ...
+# Subtest: production shell installation caches generated entry assets
+ok 6 - production shell installation caches generated entry assets
+  ---
+  duration_ms: 44.190528
+  type: 'test'
+  ...
+# Subtest: three-release open tabs retain their assets; fallback never uses old HTML or icons
+ok 7 - three-release open tabs retain their assets; fallback never uses old HTML or icons
+  ---
+  duration_ms: 3.940115
+  type: 'test'
+  ...
+# Subtest: pruning waits for no windows and no competing install, preserving one prior shell
+ok 8 - pruning waits for no windows and no competing install, preserving one prior shell
+  ---
+  duration_ms: 3.83133
+  type: 'test'
+  ...
+# Subtest: release mismatch fails before cache writes and asset failure preserves active shell
+ok 9 - release mismatch fails before cache writes and asset failure preserves active shell
+  ---
+  duration_ms: 3.59969
+  type: 'test'
+  ...
+# Subtest: installation waits for explicit activation and ignores unrelated messages
+ok 10 - installation waits for explicit activation and ignores unrelated messages
+  ---
+  duration_ms: 2.360943
+  type: 'test'
+  ...
+# Subtest: reinstalling the same shell identity does not overwrite or delete its active cache
+ok 11 - reinstalling the same shell identity does not overwrite or delete its active cache
+  ---
+  duration_ms: 3.740016
+  type: 'test'
+  ...
+# Subtest: visited hashed lazy assets survive offline/old-release fallback but HTML/errors never cache
+ok 12 - visited hashed lazy assets survive offline/old-release fallback but HTML/errors never cache
+  ---
+  duration_ms: 2.774196
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 728.775872

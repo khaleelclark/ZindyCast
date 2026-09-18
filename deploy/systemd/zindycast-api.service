@@ -1,0 +1,33 @@
+[Unit]
+Description=ZindyCast private API and web
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+[Service]
+Type=simple
+# Default checkout location; override in a user-unit drop-in if installed elsewhere.
+WorkingDirectory=%h/ZindyCast
+EnvironmentFile=%h/.config/zindycast/runtime.env
+ExecStartPre=/usr/bin/node -e "if(process.versions.node!=='22.22.1')process.exit(1)"
+ExecStart=/usr/bin/node --import tsx apps/api/src/server.ts
+Restart=on-failure
+RestartSec=5
+KillSignal=SIGTERM
+KillMode=control-group
+TimeoutStopSec=45
+UMask=0077
+NoNewPrivileges=yes
+MemoryHigh=384M
+MemoryMax=512M
+CPUQuota=100%
+TasksMax=64
+LimitNOFILE=4096
+LimitCORE=0
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=zindycast-api
+LogRateLimitIntervalSec=30s
+LogRateLimitBurst=100
+
+[Install]
+WantedBy=default.target

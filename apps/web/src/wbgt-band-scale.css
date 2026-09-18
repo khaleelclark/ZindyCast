@@ -1,0 +1,26 @@
+/* Equal source-reference bands; these colors do not define a new heat policy. */
+.wbgt-panel.wbgt-banded {
+  --wbgt-0: #216839; --wbgt-1: #59651d; --wbgt-2: #806000;
+  --wbgt-3: #a3440b; --wbgt-4: #b32624; --wbgt-current: #394b59;
+}
+.wbgt-banded[data-wbgt-band="0"] { --wbgt-current: var(--wbgt-0); }
+.wbgt-banded[data-wbgt-band="1"] { --wbgt-current: var(--wbgt-1); }
+.wbgt-banded[data-wbgt-band="2"] { --wbgt-current: var(--wbgt-2); }
+.wbgt-banded[data-wbgt-band="3"] { --wbgt-current: var(--wbgt-3); }
+.wbgt-banded[data-wbgt-band="4"] { --wbgt-current: var(--wbgt-4); }
+.hero .heat-card .wbgt-panel.wbgt-banded .metric-row > strong.wbgt-value,
+.wbgt-panel.wbgt-banded .metric-row > strong.wbgt-value { color: var(--wbgt-current); }
+.wbgt-panel.wbgt-banded .wbgt-scale-track { background: none; height: 14px; margin: 34px 0 7px; border-radius: 0; }
+.wbgt-banded .wbgt-band { box-sizing: border-box; border-right: 2px solid #fff; }
+.wbgt-banded .wbgt-band:last-of-type { border-right: 0; }
+.wbgt-panel.wbgt-banded .wbgt-band-0, .wbgt-banded .heat-band-swatch-0 { background: var(--wbgt-0); }
+.wbgt-panel.wbgt-banded .wbgt-band-1, .wbgt-banded .heat-band-swatch-1 { background: var(--wbgt-1); }
+.wbgt-panel.wbgt-banded .wbgt-band-2, .wbgt-banded .heat-band-swatch-2 { background: var(--wbgt-2); }
+.wbgt-panel.wbgt-banded .wbgt-band-3, .wbgt-banded .heat-band-swatch-3 { background: var(--wbgt-3); }
+.wbgt-panel.wbgt-banded .wbgt-band-4, .wbgt-banded .heat-band-swatch-4 { background: var(--wbgt-4); }
+.wbgt-banded .wbgt-band-labels { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); text-align: center; font-size: .75rem; font-variant-numeric: tabular-nums; }
+.wbgt-banded .wbgt-band-labels > span { white-space: nowrap; }
+.wbgt-banded .wbgt-band-labels small { display: block; font-size: .7rem; }
+.wbgt-banded .wbgt-band-caption { display: block; font-weight: 400; margin-top: 4px; }
+.wbgt-banded .wbgt-marker { color: var(--wbgt-current); }
+@media (max-width: 450px) { .wbgt-banded .wbgt-band-labels { font-size: .65rem; } }

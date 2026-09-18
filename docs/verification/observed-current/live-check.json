@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-09-17T20:26:58.716Z",
+  "location": {
+    "id": "public-osteen-center",
+    "name": "Osteen approximate public center",
+    "latitude": 28.846,
+    "longitude": -81.162,
+    "timezone": "America/New_York",
+    "country": "US"
+  },
+  "health": {
+    "status": "ok",
+    "service": "api",
+    "version": "0.1.0"
+  },
+  "httpStatus": 200,
+  "selected": {
+    "id": "KSFB",
+    "name": "Orlando / Sanford Airport",
+    "distanceKm": 11.048420482111789,
+    "time": "2026-09-17T20:10:00.000Z",
+    "temperatureF": 87.80000000000001,
+    "humidity": 58.813923696437,
+    "windMs": 6.6899999999999995,
+    "feelsLikeF": 94.1970502733775,
+    "method": "heat-index",
+    "partialHistory": true
+  }
+}

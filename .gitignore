@@ -1,0 +1,28 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+var/
+*.log
+
+# Local exports and one-off chat artifacts, not application source.
+/zindycast-source-snapshot.zip
+/hello.txt
+
+# Local database files and private credentials.
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.pem
+*.key
+
+# Local backups and operating-system metadata.
+/backups/
+*.sqlite-journal
+.DS_Store
+Thumbs.db
+
+# Historical screenshots retained locally; not exhaustively privacy-reviewed.
+/docs/verification/**/*.png
+/docs/reviews/**/*.png

@@ -1,0 +1,60 @@
+TAP version 13
+# (node:719675) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: calendar labels retain leap day, expand absent months, preserve SI zero/missing/raw flags
+ok 1 - calendar labels retain leap day, expand absent months, preserve SI zero/missing/raw flags
+  ---
+  duration_ms: 13.789393
+  type: 'test'
+  ...
+# Subtest: QC screen counts do not imply eligibility; unknown flags remain explicit and values preserved
+ok 2 - QC screen counts do not imply eligibility; unknown flags remain explicit and values preserved
+  ---
+  duration_ms: 1.155638
+  type: 'test'
+  ...
+# Subtest: real research complete file and known raw examples pass without mutating evidence
+ok 3 - real research complete file and known raw examples pass without mutating evidence
+  ---
+  duration_ms: 75.991828
+  type: 'test'
+  ...
+# Subtest: bounds reject malformed IDs/dates/ranges; calendar works before epoch and at DST without invented hours
+ok 4 - bounds reject malformed IDs/dates/ranges; calendar works before epoch and at DST without invented hours
+  ---
+  duration_ms: 1.195253
+  type: 'test'
+  ...
+# Subtest: fixed width, mixed station, duplicate rows, invalid padding/month/integer/flags rejected including irrelevant elements
+ok 5 - fixed width, mixed station, duplicate rows, invalid padding/month/integer/flags rejected including irrelevant elements
+  ---
+  duration_ms: 1.228286
+  type: 'test'
+  ...
+# Subtest: result runtime schema rejects edited values/counts/timeline/identity
+ok 6 - result runtime schema rejects edited values/counts/timeline/identity
+  ---
+  duration_ms: 2.763223
+  type: 'test'
+  ...
+# Subtest: fetch is fixed-source complete-file bounded, query snapshotted, rate/errors/partial/html/oversize rejected
+ok 7 - fetch is fixed-source complete-file bounded, query snapshotted, rate/errors/partial/html/oversize rejected
+  ---
+  duration_ms: 57.13612
+  type: 'test'
+  ...
+# Subtest: pre-abort, in-flight abort and deadlines bound stalled fetch and body
+ok 8 - pre-abort, in-flight abort and deadlines bound stalled fetch and body
+  ---
+  duration_ms: 3.874657
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 559.871788

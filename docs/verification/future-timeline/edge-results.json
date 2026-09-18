@@ -1,0 +1,20 @@
+{
+  "results": [
+    {
+      "name": "missing",
+      "noFurtherTileRequests": true
+    },
+    {
+      "name": "expired",
+      "noFurtherTileRequests": true
+    }
+  ],
+  "errors": [],
+  "requests": [
+    "/api/v1/maps/forecast/tiles/hrrr-202609111400-f0150/7/20/49.png",
+    "/api/v1/maps/forecast/tiles/hrrr-202609111400-f0150/7/20/48.png",
+    "/api/v1/maps/forecast/tiles/hrrr-202609111400-f0150/7/21/49.png",
+    "/api/v1/maps/forecast/tiles/hrrr-202609111400-f0150/7/21/48.png"
+  ],
+  "fixtureOnly": true
+}

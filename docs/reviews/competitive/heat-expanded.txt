@@ -1,0 +1,528 @@
+Skip to weather
+◒
+ZindyCast
+Weather beyond temperature
+°F
+°C
+Today
+Maps
+History
+Compare
+Settings
+Search cities
+Search cities
+Search cities
+⌖ Use my location
+Austin
+Texas
+Austin, Travis, Texas, United States
+★ Saved · remove
+Austin
+
+Travis · Texas · United States
+
+Thursday, September 10 at 9:39 PM · America/Chicago
+
+NATIONAL WEATHER SERVICE
+
+Official alerts
+Refresh alerts
+
+No active alerts reported. This is not an all-clear; conditions and alert coverage can change.
+
+Alert source & refresh timing
+NWS forecasts and warnings ↗
+
+MODELED CONDITIONS · THIS HOUR
+
+☀
+Feels like
+91°F
+N
+↑
+10 mph
+From 135° · 10 m
+
+Air temperature 87° · Clear sky
+
+Humidity
+57%
+Wind · 10 m
+10 mph
+Rain chance
+4%
+
+HEAT & HUMIDITY
+
+Beyond air temperature
+Estimated outdoor WBGT
+78.5°F
+
+Modeled outdoor · short-grass reference
+
+Hourly estimate at Sep 10, 9:00 PM CDT
+
+NWS Tulsa WBGT reference bands
+80°
+85°
+88°
+90°
+▼
+Lower heat stress
+Higher heat stress
+Reference ticks in °F · not personal safety limits
+Next 48 hours · WBGT forecast
+92.2°F
+72.7°F
+Thu, 9 PM CDT
+Sat, 8 PM CDT
+48/48 values · gaps are missing · America/Chicago
+WBGT hourly values
+WBGT inputs, method & source
+
+Liljegren estimate: wind adjusted from modeled 10 m wind using FAO-56 short-grass assumptions; solar radiation is a provider-derived endpoint estimate. Shelter, surfaces, clothing and exertion change exposure. Activity does not change this environmental number. No safe-time estimate or automatic heat categories.
+
+Tulsa’s nonoperational prototype written bands are reference information. Exact published endpoints have no specified assignment. Scale version: nws-tulsa-text-reference-2026-09-11-v1.
+
+Open-Meteo · Forecast API (best match; constituent models not supplied). Retrieved 2026-09-11T02:38:14.457Z; source issued not provided. Source grid 30.269146, -97.75338. Weather data by Open-Meteo (https://open-meteo.com/), CC BY 4.0
+
+Globe 86.4°F · natural wet-bulb 74.9°F. Natural wet-bulb is a WBGT component, separate from ordinary wet-bulb below.
+
+Input policy: liljegren-1.1-zindy-ts-1+fao56-eq47-10m+om-instant-v1. Raw 10 m wind 4.38 m/s; adjusted 2 m wind 3.2760257092355953 m/s.
+
+{
+  "calculationVersion": "liljegren-1.1-zindy-ts-1",
+  "referenceRevision": "cd672a886880b67f3f27bdbf75038d8f7ff0bac2",
+  "input": {
+    "time": "2026-09-11T02:00:00.000Z",
+    "latitude": 30.269146,
+    "longitude": -97.75338,
+    "temperatureC": 30.8,
+    "humidityPercent": 57,
+    "surfacePressureHpa": 994.7,
+    "wind2mMs": 3.2760257092355953,
+    "ghiWm2": 0,
+    "windAssumption": "FAO-56 equation 47; short-grass reference; u2=u10*4.87/ln(67.8*10-5.42); no local shelter or stability inference",
+    "radiationAssumption": "instantaneous",
+    "source": "Open-Meteo Forecast API (best match; constituent models not supplied)"
+  },
+  "windUsedMs": 3.2760257092355953,
+  "windFloored": false,
+  "ghiUsedWm2": 0,
+  "ghiCapped": false,
+  "cosineSolarZenith": -0.29671159611920117,
+  "directFraction": 0,
+  "warnings": [
+    "modeled outdoor sensors; surface temperature equals air temperature"
+  ],
+  "globe": {
+    "status": "success",
+    "temperatureC": 30.205964207236036,
+    "iterations": 8
+  },
+  "naturalWetBulb": {
+    "status": "success",
+    "temperatureC": 23.84631222047159,
+    "iterations": 13
+  },
+  "psychrometricWetBulb": {
+    "status": "success",
+    "temperatureC": 23.768916655205658,
+    "iterations": 14
+  }
+}
+Estimated ordinary wet-bulb
+76°
+
+Not WBGT · method under review.
+
+Next 48 hours · numerical range
+73°
+79°
+48 available values · marker is current hour · no danger bands
+Heat metrics & limitations
+
+OBSERVED WEATHER · NOAA NOWCOAST
+
+Local radar & satellite
+
+Austin · 30.267°, -97.743° · Observed imagery
+
+Region
+CONUS
+AK
+HI
+Product
+CONUS Weather Radar Base Reflectivity
+GOES East & West Satellite Longwave Imagery
+Global Satellite Longwave Imagery
+Advertised time (UTC)
+2026-09-10 18:04:07Z
+2026-09-10 18:08:11Z
+2026-09-10 18:12:11Z
+2026-09-10 18:16:11Z
+2026-09-10 18:20:15Z
+2026-09-10 18:24:12Z
+2026-09-10 18:28:20Z
+2026-09-10 18:32:13Z
+2026-09-10 18:36:03Z
+2026-09-10 18:40:14Z
+2026-09-10 18:44:24Z
+2026-09-10 18:48:11Z
+2026-09-10 18:52:14Z
+2026-09-10 18:56:11Z
+2026-09-10 19:00:03Z
+2026-09-10 19:04:21Z
+2026-09-10 19:08:22Z
+2026-09-10 19:12:09Z
+2026-09-10 19:16:10Z
+2026-09-10 19:20:10Z
+2026-09-10 19:24:07Z
+2026-09-10 19:28:19Z
+2026-09-10 19:32:10Z
+2026-09-10 19:36:04Z
+2026-09-10 19:40:12Z
+2026-09-10 19:44:18Z
+2026-09-10 19:48:08Z
+2026-09-10 19:52:13Z
+2026-09-10 19:56:03Z
+2026-09-10 20:00:12Z
+2026-09-10 20:04:18Z
+2026-09-10 20:08:03Z
+2026-09-10 20:12:08Z
+2026-09-10 20:16:15Z
+2026-09-10 20:20:07Z
+2026-09-10 20:24:10Z
+2026-09-10 20:28:18Z
+2026-09-10 20:32:08Z
+2026-09-10 20:36:08Z
+2026-09-10 20:40:02Z
+2026-09-10 20:44:13Z
+2026-09-10 20:48:04Z
+2026-09-10 20:52:19Z
+2026-09-10 20:56:14Z
+2026-09-10 21:00:13Z
+2026-09-10 21:04:00Z
+2026-09-10 21:08:05Z
+2026-09-10 21:12:18Z
+2026-09-10 21:16:21Z
+2026-09-10 21:20:22Z
+2026-09-10 21:24:14Z
+2026-09-10 21:28:10Z
+2026-09-10 21:32:16Z
+2026-09-10 21:36:12Z
+2026-09-10 21:40:14Z
+2026-09-10 21:44:10Z
+2026-09-10 21:48:16Z
+2026-09-10 21:52:12Z
+2026-09-10 21:56:07Z
+2026-09-10 22:00:12Z
+2026-09-10 22:04:08Z
+2026-09-10 22:08:08Z
+2026-09-10 22:12:06Z
+2026-09-10 22:16:21Z
+2026-09-10 22:20:15Z
+2026-09-10 22:24:05Z
+2026-09-10 22:28:20Z
+2026-09-10 22:32:11Z
+2026-09-10 22:36:14Z
+2026-09-10 22:40:19Z
+2026-09-10 22:44:19Z
+2026-09-10 22:48:05Z
+2026-09-10 22:52:18Z
+2026-09-10 22:56:19Z
+2026-09-10 23:00:13Z
+2026-09-10 23:04:13Z
+2026-09-10 23:08:17Z
+2026-09-10 23:12:18Z
+2026-09-10 23:16:16Z
+2026-09-10 23:20:16Z
+2026-09-10 23:24:12Z
+2026-09-10 23:28:13Z
+2026-09-10 23:32:00Z
+2026-09-10 23:36:13Z
+2026-09-10 23:40:11Z
+2026-09-10 23:44:17Z
+2026-09-10 23:48:18Z
+2026-09-10 23:52:07Z
+2026-09-10 23:56:19Z
+2026-09-11 00:00:06Z
+2026-09-11 00:04:05Z
+2026-09-11 00:08:14Z
+2026-09-11 00:12:14Z
+2026-09-11 00:16:13Z
+2026-09-11 00:20:04Z
+2026-09-11 00:24:06Z
+2026-09-11 00:28:12Z
+2026-09-11 00:32:20Z
+2026-09-11 00:36:19Z
+2026-09-11 00:40:16Z
+2026-09-11 00:44:07Z
+2026-09-11 00:48:17Z
+2026-09-11 00:52:08Z
+2026-09-11 00:56:02Z
+2026-09-11 01:00:14Z
+2026-09-11 01:04:07Z
+2026-09-11 01:08:10Z
+2026-09-11 01:12:09Z
+2026-09-11 01:16:17Z
+2026-09-11 01:20:08Z
+2026-09-11 01:24:08Z
+2026-09-11 01:28:04Z
+2026-09-11 01:32:02Z
+2026-09-11 01:36:08Z
+2026-09-11 01:40:14Z
+2026-09-11 01:44:12Z
+2026-09-11 01:48:13Z
+2026-09-11 01:52:16Z
+2026-09-11 01:56:08Z
+2026-09-11 02:00:14Z
+2026-09-11 02:04:16Z
+2026-09-11 02:08:14Z
+2026-09-11 02:12:22Z
+2026-09-11 02:16:12Z
+2026-09-11 02:20:13Z
+2026-09-11 02:24:12Z
+2026-09-11 02:28:17Z
+2026-09-11 02:32:04Z
+Previous frame
+Next frame
+Refresh catalog & frame
+128 of 128 advertised times
+
+Coverage unknown · blank imagery does not mean clear weather. Actual observation time unconfirmed.
+
+Center city
+Fit region
+Weather opacity 65%
+50 km
+© OpenStreetMap contributors
+
+© OpenStreetMap contributors · Report a map issue · Weather: NOAA nowCOAST
+
+Dashed boundary: requested image footprint, not radar coverage. North up · latitude limited to ±85° · no date-line wrapping.
+
+Map sources, legend & timing
+
+PLAN YOUR TIME OUTSIDE
+
+What’s your pace?
+Activity
+Relaxing outside
+Walking / light activity
+Strenuous activity
+
+Exercise adds substantial heat load. Reduce intensity and use cooler times and places; organized activities should follow their own heat procedures.
+
+General guidance · no safe-time estimate.
+
+Personal factors
+NWS heat safety ↗
+
+THE DAYS AHEAD
+
+Daily outlook
+High / low · available-hour rain
+7 days
+10 days
+14 days
+Daily ranges & rain intervals
+Thu
+Sep 10
+89°
+85°
+0.00 in
+6 rain intervals
+5 hours
+5 temp values
+Fri
+Sep 11
+100°
+81°
+0.00 in
+24 rain intervals
+24 hours
+24 temp values
+Sat
+Sep 12
+101°
+78°
+0.00 in
+24 rain intervals
+24 hours
+24 temp values
+Sun
+Sep 13
+101°
+80°
+0.00 in
+24 rain intervals
+24 hours
+24 temp values
+Mon
+Sep 14
+103°
+79°
+0.00 in
+24 rain intervals
+24 hours
+24 temp values
+Tue
+Sep 15
+102°
+80°
+0.00 in
+24 rain intervals
+24 hours
+24 temp values
+Wed
+Sep 16
+100°
+79°
+0.00 in
+24 rain intervals
+24 hours
+24 temp values
+Thu
+Sep 17
+100°
+80°
+0.00 in
+24 rain intervals
+24 hours
+24 temp values
+Fri
+Sep 18
+100°
+78°
+0.00 in
+24 rain intervals
+24 hours
+24 temp values
+Sat
+Sep 19
+103°
+81°
+0.00 in
+24 rain intervals
+24 hours
+24 temp values
+
+A CLOSER LOOK
+
+This hour’s details
+Wind gusts
+19 mph
+Wind direction
+135° from north
+Preceding-hour rain
+0.00 in
+Dew point
+70°
+Surface pressure
+29.37 inHg
+Cloud cover
+0%
+Visibility
+19.3 mi
+UV index
+0.0
+Sunrise / sunset
+Unavailable
+Measurement details
+
+HOUR BY HOUR
+
+Next 48 hours
+48 available hours
+9 PM
+☀
+91°
+feels like
+4%
+rain chance
+10 PM
+☀
+91°
+feels like
+1%
+rain chance
+11 PM
+☀
+92°
+feels like
+1%
+rain chance
+12 AM
+☁
+91°
+feels like
+1%
+rain chance
+1 AM
+☁
+92°
+feels like
+1%
+rain chance
+2 AM
+☁
+90°
+feels like
+1%
+rain chance
+3 AM
+☁
+90°
+feels like
+3%
+rain chance
+4 AM
+☁
+90°
+feels like
+4%
+rain chance
+5 AM
+☁
+90°
+feels like
+2%
+rain chance
+6 AM
+☁
+90°
+feels like
+2%
+rain chance
+7 AM
+☁
+90°
+feels like
+3%
+rain chance
+8 AM
+☁
+90°
+feels like
+2%
+rain chance
+Air temperature: 78° to 101°, 48 values. Feels like: 86° to 106°, 48 values. Units: °F. Solid teal: air temperature; dashed brown: feels like. Gaps indicate missing hours or values.
+73°
+91°
+109°
+Thu, 9 PM CDT
+Fri, 12 PM CDT
+Sat, 4 AM CDT
+Sat, 8 PM CDT
+
+Times in America/Chicago. Read exact values and other measurements in the table below.
+
+Hourly forecast table
+Forecast sources & timing
+Weather / geocoding: Open-Meteo
+Location data: GeoNames
+WBGT software notice
+ZindyCast
+A clearer picture of your weather.
+Forecast estimates · no safe-exposure countdowns

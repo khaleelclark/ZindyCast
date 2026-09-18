@@ -1,0 +1,103 @@
+{
+  "status": "success",
+  "freshness": "fresh",
+  "data": {
+    "provider": "Iowa Environmental Mesonet",
+    "sourceModel": "NOAA/NCEP HRRR",
+    "version": "iem-hrrr-refd-v1",
+    "productId": "forecast-hrrr-conus",
+    "classification": "modeled",
+    "temporalKind": "forecast",
+    "quantity": "simulated_reflectivity_1000m_agl",
+    "units": "dBZ",
+    "region": "CONUS",
+    "coverageState": "unknown",
+    "retrievedAt": "2026-09-12T17:33:28.021Z",
+    "evaluatedAt": "2026-09-12T17:35:06.584Z",
+    "modelRunTime": "2026-09-12T14:00:00.000Z",
+    "horizonEnd": "2026-09-13T08:00:00.000Z",
+    "frames": [
+      {
+        "id": "hrrr-202609121400-f0225",
+        "modelRunTime": "2026-09-12T14:00:00.000Z",
+        "forecastLeadMinutes": 225,
+        "validTime": "2026-09-12T17:45:00.000Z"
+      },
+      {
+        "id": "hrrr-202609121400-f0240",
+        "modelRunTime": "2026-09-12T14:00:00.000Z",
+        "forecastLeadMinutes": 240,
+        "validTime": "2026-09-12T18:00:00.000Z"
+      },
+      {
+        "id": "hrrr-202609121400-f0255",
+        "modelRunTime": "2026-09-12T14:00:00.000Z",
+        "forecastLeadMinutes": 255,
+        "validTime": "2026-09-12T18:15:00.000Z"
+      },
+      {
+        "id": "hrrr-202609121400-f0270",
+        "modelRunTime": "2026-09-12T14:00:00.000Z",
+        "forecastLeadMinutes": 270,
+        "validTime": "2026-09-12T18:30:00.000Z"
+      },
+      {
+        "id": "hrrr-202609121400-f0285",
+        "modelRunTime": "2026-09-12T14:00:00.000Z",
+        "forecastLeadMinutes": 285,
+        "validTime": "2026-09-12T18:45:00.000Z"
+      },
+      {
+        "id": "hrrr-202609121400-f0300",
+        "modelRunTime": "2026-09-12T14:00:00.000Z",
+        "forecastLeadMinutes": 300,
+        "validTime": "2026-09-12T19:00:00.000Z"
+      },
+      {
+        "id": "hrrr-202609121400-f0315",
+        "modelRunTime": "2026-09-12T14:00:00.000Z",
+        "forecastLeadMinutes": 315,
+        "validTime": "2026-09-12T19:15:00.000Z"
+      },
+      {
+        "id": "hrrr-202609121400-f0330",
+        "modelRunTime": "2026-09-12T14:00:00.000Z",
+        "forecastLeadMinutes": 330,
+        "validTime": "2026-09-12T19:30:00.000Z"
+      },
+      {
+        "id": "hrrr-202609121400-f0345",
+        "modelRunTime": "2026-09-12T14:00:00.000Z",
+        "forecastLeadMinutes": 345,
+        "validTime": "2026-09-12T19:45:00.000Z"
+      },
+      {
+        "id": "hrrr-202609121400-f0360",
+        "modelRunTime": "2026-09-12T14:00:00.000Z",
+        "forecastLeadMinutes": 360,
+        "validTime": "2026-09-12T20:00:00.000Z"
+      },
+      {
+        "id": "hrrr-202609121400-f0375",
+        "modelRunTime": "2026-09-12T14:00:00.000Z",
+        "forecastLeadMinutes": 375,
+        "validTime": "2026-09-12T20:15:00.000Z"
+      },
+      {
+        "id": "hrrr-202609121400-f0390",
+        "modelRunTime": "2026-09-12T14:00:00.000Z",
+        "forecastLeadMinutes": 390,
+        "validTime": "2026-09-12T20:30:00.000Z"
+      }
+    ],
+    "defaultFrameId": "hrrr-202609121400-f0225",
+    "sourceUrl": "https://mesonet.agron.iastate.edu/data/gis/images/4326/hrrr/refd_1080.json",
+    "attribution": "NOAA/NCEP HRRR; Iowa Environmental Mesonet",
+    "legend": {
+      "kind": "illustrative",
+      "explanation": "Simulated reflectivity; quantitative palette not independently verified. Blank pixels do not establish no precipitation or model coverage."
+    },
+    "sourceTimeStatus": "pinned_model_run_requested",
+    "actualSourceTime": null
+  }
+}

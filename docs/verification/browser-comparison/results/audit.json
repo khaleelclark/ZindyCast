@@ -1,0 +1,224 @@
+{
+  "started": "2026-09-11T01:21:23.993Z",
+  "checks": [
+    {
+      "pass": "Two cities searched and saved through UI"
+    },
+    {
+      "pass": "First UI creation registers installation (201)"
+    },
+    {
+      "pass": "Live job completes; two cities, five variables and 24-hour denominators"
+    },
+    {
+      "pass": "Saved CSV bytes match original selection and all live SI statistics; unavailable issue/update and inapplicable totals blank"
+    },
+    {
+      "pass": "Metric display selection leaves downloaded SI snapshot byte-identical"
+    },
+    {
+      "pass": "Actual reload retains completed job, two saved cities and metric preference"
+    },
+    {
+      "pass": "Separate second UI creation and cancellation reach cancelled state"
+    },
+    {
+      "pass": "Cancelled job reference/status survive reload"
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/v1/locations",
+      "query": "?q=Roseville",
+      "potentialUpstream": 1
+    },
+    {
+      "response": 200,
+      "path": "/api/v1/locations"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/alerts",
+      "query": "?latitude=38.75212&longitude=-121.28801",
+      "potentialUpstream": 1
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/forecast",
+      "query": "?latitude=38.75212&longitude=-121.28801&id=open-meteo%3A5388881&name=Roseville&admin1=California&admin2=Placer&country=United+States&timezone=America%2FLos_Angeles",
+      "potentialUpstream": 1
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/locations",
+      "query": "?q=Honolulu",
+      "potentialUpstream": 1
+    },
+    {
+      "response": 200,
+      "path": "/api/v1/locations"
+    },
+    {
+      "response": 200,
+      "path": "/api/v1/alerts"
+    },
+    {
+      "response": 200,
+      "path": "/api/v1/forecast"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/alerts",
+      "query": "?latitude=21.30694&longitude=-157.85834",
+      "potentialUpstream": 1
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/forecast",
+      "query": "?latitude=21.30694&longitude=-157.85834&id=open-meteo%3A5856195&name=Honolulu&admin1=Hawaii&admin2=Honolulu+County&country=United+States&timezone=Pacific%2FHonolulu",
+      "potentialUpstream": 1
+    },
+    {
+      "response": 200,
+      "path": "/api/v1/forecast"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/installations",
+      "query": "",
+      "potentialUpstream": 0
+    },
+    {
+      "response": 201,
+      "path": "/api/v1/installations"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/comparisons",
+      "query": "",
+      "potentialUpstream": 2
+    },
+    {
+      "response": 202,
+      "path": "/api/v1/comparisons"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/comparisons/:job",
+      "query": "",
+      "potentialUpstream": 0
+    },
+    {
+      "response": 200,
+      "path": "/api/v1/comparisons/:job"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/comparisons/:job",
+      "query": "",
+      "potentialUpstream": 0
+    },
+    {
+      "response": 200,
+      "path": "/api/v1/comparisons/:job"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/alerts",
+      "query": "?latitude=21.30694&longitude=-157.85834",
+      "potentialUpstream": 1
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/forecast",
+      "query": "?latitude=21.30694&longitude=-157.85834&id=open-meteo%3A5856195&name=Honolulu&admin1=Hawaii&admin2=Honolulu+County&country=United+States&timezone=Pacific%2FHonolulu",
+      "potentialUpstream": 1
+    },
+    {
+      "response": 200,
+      "path": "/api/v1/alerts"
+    },
+    {
+      "response": 200,
+      "path": "/api/v1/forecast"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/comparisons/:job",
+      "query": "",
+      "potentialUpstream": 0
+    },
+    {
+      "response": 200,
+      "path": "/api/v1/comparisons/:job"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/comparisons",
+      "query": "",
+      "potentialUpstream": 2
+    },
+    {
+      "response": 202,
+      "path": "/api/v1/comparisons"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/comparisons/:job",
+      "query": "",
+      "potentialUpstream": 0
+    },
+    {
+      "response": 200,
+      "path": "/api/v1/comparisons/:job"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/comparisons/:job/cancel",
+      "query": "",
+      "potentialUpstream": 0
+    },
+    {
+      "response": 200,
+      "path": "/api/v1/comparisons/:job/cancel"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/alerts",
+      "blocked": "budget"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/forecast",
+      "blocked": "budget"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/comparisons/:job",
+      "query": "",
+      "potentialUpstream": 0
+    },
+    {
+      "response": 200,
+      "path": "/api/v1/comparisons/:job"
+    }
+  ],
+  "consoleErrors": [
+    {
+      "type": "error",
+      "location": "/api/v1/alerts",
+      "text": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "type": "error",
+      "location": "/api/v1/forecast",
+      "text": "Failed to load resource: net::ERR_FAILED"
+    }
+  ],
+  "pageErrors": [],
+  "providerPotential": 12,
+  "browser": "152.0.7977.75",
+  "outcome": "passed",
+  "finished": "2026-09-11T01:21:31.263Z"
+}

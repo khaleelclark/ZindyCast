@@ -1,0 +1,56 @@
+/* Today follows the same reading order visually and in the document. */
+.forecast-jumps { gap: 8px; margin: 12px 0; flex-wrap: wrap; }
+.forecast-jumps a { padding: 4px 16px; border-radius: 24px; text-decoration: none; background: #ffffffb8; }
+.forecast-jumps a:hover { background: #fff; }
+#current, #hourly, #daily, #today-radar { scroll-margin-top: 16px; }
+.dashboard-grid { grid-template-columns: minmax(0, 1.85fr) minmax(320px, 1fr); gap: 20px; }
+.dashboard-grid .hero { grid-column: 1; grid-row: 1; }
+.dashboard-grid .today-map { grid-column: 2; grid-row: 1; }
+.dashboard-grid .hourly-card { grid-column: 1 / -1; grid-row: 2; }
+.dashboard-grid .outlook { grid-column: 1 / -1; grid-row: 3; }
+.hero .current-location { font-size: 1.35rem; }
+.hero .current-time { margin-bottom: 8px; }
+.hero .current-summary .wind-widget { margin: 8px 0; }
+.current-details dl > div { padding: 10px 0; }
+.current-details dl > div:last-child { border-bottom: 0; }
+.current-details dd { max-width: 62%; }
+.hero .heat-card.MuiCard-root { margin-top: 18px; padding-top: 16px; }
+.wbgt-panel .metric-row h3 { margin: 0; }
+.dashboard-grid .wbgt-explanation { font-size: .9rem; margin: 4px 0; }
+.heat-method, .heat-trend { border-top: 1px solid #71849730; }
+.wbgt-panel .heat-method { margin-top: 10px; }
+.wbgt-panel .heat-band-status { margin-bottom: 8px; }
+.wbgt-panel .heat-band-status small { font-size: .8rem; }
+.dashboard-grid .wbgt-panel summary { padding: 8px 0; }
+.dashboard-grid summary, .alerts-card summary { box-sizing: border-box; min-height: 44px; }
+.heat-disclosures { display: flex; flex-wrap: wrap; gap: 0 20px; border-top: 1px solid #71849730; }
+.hero .heat-disclosures > details { margin-top: 0; border-top: 0; flex: 1 1 200px; }
+.hero .heat-disclosures > details[open] { flex-basis: 100%; }
+.today-map .compact-map.MuiCard-root > .interactive-map { height: 340px; min-height: 340px; flex: 0 0 auto; }
+.alerts-card.MuiCard-root { padding: 14px 20px; margin: 12px 0; border-left: 4px solid #b66c29; }
+.alerts-card h2 { font-size: 1rem; }
+.alerts-card h2 small { font-weight: 400; }
+.alerts-card .official-alert { margin-top: 8px; padding-top: 8px; }
+.alert-summary { display: flex; gap: 8px 20px; align-items: baseline; flex-wrap: wrap; }
+.alert-summary h3, .alert-summary p { margin: 0; }
+.alert-summary h3 { font-size: 1rem; }
+.alert-summary p { font-size: .875rem; }
+.alerts-card details { margin-top: 0; }
+.alerts-card summary { padding: 6px 0; }
+.app-shell[data-motion="paused"] .weather-backdrop span { animation-play-state: paused; }
+@media (max-width: 1000px) {
+  .dashboard-grid { display: flex; flex-direction: column; }
+  .dashboard-grid .hero { order: 0; }
+  .dashboard-grid .today-map { order: 3; }
+  .dashboard-grid .hourly-card { order: 1; }
+  .dashboard-grid .outlook { order: 2; }
+}
+@media (max-width: 700px) {
+  .forecast-jumps { gap: 6px; }
+  .forecast-jumps a { padding: 4px 12px; }
+  .alerts-card.MuiCard-root { padding: 12px 16px; }
+  .alerts-card .section-top { gap: 8px; }
+  .alerts-card .section-top > button { padding: 4px 8px; font-size: .75rem; }
+  .current-overview { gap: 16px; }
+  .current-details dl > div { padding: 8px 0; }
+}

@@ -1,0 +1,139 @@
+TAP version 13
+# (node:1137688) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: strict query; exact selection one-day cache; concurrent coalescing
+ok 1 - strict query; exact selection one-day cache; concurrent coalescing
+  ---
+  duration_ms: 195.344996
+  type: 'test'
+  ...
+# Subtest: query mismatch refetches; stale outage never returns old candidates
+ok 2 - query mismatch refetches; stale outage never returns old candidates
+  ---
+  duration_ms: 72.219377
+  type: 'test'
+  ...
+# Subtest: NOAA quota charged before fetch and upstream retry-after preserved
+ok 3 - NOAA quota charged before fetch and upstream retry-after preserved
+  ---
+  duration_ms: 9.522956
+  type: 'test'
+  ...
+# (node:1137689) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: NOAA retained fixed-width evidence parses; synthetic missing metadata stays null
+ok 4 - NOAA retained fixed-width evidence parses; synthetic missing metadata stays null
+  ---
+  duration_ms: 51.655711
+  type: 'test'
+  ...
+# Subtest: nearest ten within 150km, stable ID ties, US scope and dateline geometry
+ok 5 - nearest ten within 150km, stable ID ties, US scope and dateline geometry
+  ---
+  duration_ms: 1.24591
+  type: 'test'
+  ...
+# Subtest: reject corrupt width/IDs/coordinates/flags/duplicates and invalid query/time
+ok 6 - reject corrupt width/IDs/coordinates/flags/duplicates and invalid query/time
+  ---
+  duration_ms: 2.101701
+  type: 'test'
+  ...
+# Subtest: fixed URL, no redirects, bounded body/status/type and cancellation
+ok 7 - fixed URL, no redirects, bounded body/status/type and cancellation
+  ---
+  duration_ms: 76.429911
+  type: 'test'
+  ...
+# Subtest: 12 second deadline rejects noncooperative stalled fetch
+ok 8 - 12 second deadline rejects noncooperative stalled fetch
+  ---
+  duration_ms: 1.407385
+  type: 'test'
+  ...
+# (node:1137690) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: calendar labels retain leap day, expand absent months, preserve SI zero/missing/raw flags
+ok 9 - calendar labels retain leap day, expand absent months, preserve SI zero/missing/raw flags
+  ---
+  duration_ms: 16.40562
+  type: 'test'
+  ...
+# Subtest: QC screen counts do not imply eligibility; unknown flags remain explicit and values preserved
+ok 10 - QC screen counts do not imply eligibility; unknown flags remain explicit and values preserved
+  ---
+  duration_ms: 1.311224
+  type: 'test'
+  ...
+# Subtest: real research complete file and known raw examples pass without mutating evidence
+ok 11 - real research complete file and known raw examples pass without mutating evidence
+  ---
+  duration_ms: 82.921296
+  type: 'test'
+  ...
+# Subtest: bounds reject malformed IDs/dates/ranges; calendar works before epoch and at DST without invented hours
+ok 12 - bounds reject malformed IDs/dates/ranges; calendar works before epoch and at DST without invented hours
+  ---
+  duration_ms: 1.094232
+  type: 'test'
+  ...
+# Subtest: fixed width, mixed station, duplicate rows, invalid padding/month/integer/flags rejected including irrelevant elements
+ok 13 - fixed width, mixed station, duplicate rows, invalid padding/month/integer/flags rejected including irrelevant elements
+  ---
+  duration_ms: 1.269925
+  type: 'test'
+  ...
+# Subtest: result runtime schema rejects edited values/counts/timeline/identity
+ok 14 - result runtime schema rejects edited values/counts/timeline/identity
+  ---
+  duration_ms: 4.640759
+  type: 'test'
+  ...
+# Subtest: fetch is fixed-source complete-file bounded, query snapshotted, rate/errors/partial/html/oversize rejected
+ok 15 - fetch is fixed-source complete-file bounded, query snapshotted, rate/errors/partial/html/oversize rejected
+  ---
+  duration_ms: 59.783394
+  type: 'test'
+  ...
+# Subtest: pre-abort, in-flight abort and deadlines bound stalled fetch and body
+ok 16 - pre-abort, in-flight abort and deadlines bound stalled fetch and body
+  ---
+  duration_ms: 4.655126
+  type: 'test'
+  ...
+# (node:1137691) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: shared runtime schema is the same object; route validates input and returns bounded normalized cached data
+ok 17 - shared runtime schema is the same object; route validates input and returns bounded normalized cached data
+  ---
+  duration_ms: 155.659194
+  type: 'test'
+  ...
+# Subtest: NOAA quota refusal prevents fetch; upstream retry-after and failures map correctly
+ok 18 - NOAA quota refusal prevents fetch; upstream retry-after and failures map correctly
+  ---
+  duration_ms: 15.427258
+  type: 'test'
+  ...
+# Subtest: cache refuses mismatched query, never serves stale, stores selected JSON with one-day expiry
+ok 19 - cache refuses mismatched query, never serves stale, stores selected JSON with one-day expiry
+  ---
+  duration_ms: 19.682768
+  type: 'test'
+  ...
+# (node:1137691) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time
+# Subtest: 12-second route deadline aborts stalled provider before cache lease expires
+ok 20 - 12-second route deadline aborts stalled provider before cache lease expires
+  ---
+  duration_ms: 6.087188
+  type: 'test'
+  ...
+1..20
+# tests 20
+# suites 0
+# pass 20
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 980.29524

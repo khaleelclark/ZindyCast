@@ -1,0 +1,40 @@
+{
+  "recorded_at": "2026-09-10T23:40:09.647767+00:00",
+  "sources": [
+    {
+      "url": "https://www.nssl.noaa.gov/projects/mrms/operational/tables.php",
+      "access": "web search full table excerpt; native TLS certificate validation failed, not bypassed",
+      "finding": "MRMS v12.2 ReflectivityAtLowestAltitude: missing -99, no coverage -999; RadarQualityIndex missing -1, no coverage -3. These are native GRIB2 definitions, not nowCOAST Band1 definitions."
+    },
+    {
+      "url": "https://vlab.noaa.gov/documents/96675/0/MRMS_ALL.pdf/e410f6ce-7833-b434-e342-fec3a577c35f?t=1696004704287",
+      "access": "Indexed primary-source excerpt p13; web open 403. Native 200 download stopped at 12 MB, partial body removed. Full PDF not read.",
+      "finding": "Indexed guide says missing includes coverage without reflectivity return or return removed by QC. No coverage separately categorized. Treat this as indexed excerpt evidence, not full-PDF audit."
+    },
+    {
+      "url": "https://vlab.noaa.gov/web/wdtd/-/radar-quality-index-rqi-?selectedFolder=668045",
+      "access": "web search exposed full relevant text",
+      "finding": "RQI measures QPE uncertainty from blockage, beam height/width and freezing level. May guide coverage-void analysis, but is not proof of no surface precipitation. Version 12.2 guide, 1 km and 2-minute product."
+    },
+    {
+      "url": "https://radar3pub.ncep.noaa.gov/",
+      "access": "One web GET via official radar FAQ link; live status sample #1",
+      "finding": "Page status 2026-09-10 23:00:01 UTC; table includes CONUS/Alaska/Hawaii stations. PHKI last receipt 17:08:45 UTC that date; PAHG 22:58:15, PHMO 23:01:20. Page footer 23:03 UTC. Site receipt status, not per-pixel mosaic coverage. No independent raw HTTP headers available from web tool."
+    },
+    {
+      "url": "https://www.weather.gov/radarfaq",
+      "access": "web open plus saved native HTML",
+      "finding": "National regional BREF.QCD is quality-controlled base reflectivity. Blank local-radar image can be due to offline radar; FAQ links official status. This explanation does not classify every blank mosaic pixel."
+    },
+    {
+      "url": "https://docs.airnowapi.org/webservices",
+      "access": "web open readable; native GET 403 recorded",
+      "finding": "Replacement current forecasts by reporting area/lat-long/ZIP; current observations by reporting-area code or ZIP/lat-long; daily site observations by bbox; historical reporting-area services. Old services retiring fall 2026. Logged-out text exposes descriptions but no endpoint detail links or numeric quotas."
+    },
+    {
+      "url": "https://docs.airnowapi.org/",
+      "access": "web open readable",
+      "finding": "Public account access through login; preliminary data. No account, key request, contact, or activation performed."
+    }
+  ]
+}

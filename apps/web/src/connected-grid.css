@@ -1,0 +1,168 @@
+/* One connected weather surface; structure comes from spacing and shared rules. */
+.app-shell[data-weather]{--grid-line:#264c6533;--glass:rgba(250,253,255,.62);--ink:#173b50;--muted:#3d5b6e;color:var(--ink)}
+.app-shell[data-weather] .MuiButton-root{border-radius:10px;border-color:#406d8845;color:#205b79;font-size:.875rem;letter-spacing:0;box-shadow:none;gap:8px;background:#f7fcff66;padding:8px 14px;line-height:1.35}
+.app-shell[data-weather] .MuiButton-root:hover{background:#ffffffb3;border-color:#315d7b80}
+.app-shell[data-weather] .MuiButton-root[aria-pressed="true"]{background:#225b76;color:#fff;border-color:#225b76;box-shadow:none}
+.app-shell[data-weather] .MuiButton-root:disabled{color:#526978;background:#e5edf14d;opacity:.65}
+.app-shell[data-weather] .masthead{padding:24px 0 16px}.app-shell[data-weather] .brand{color:var(--ink)}
+.app-shell[data-weather] .units{background:transparent;padding:0;gap:4px}
+.app-shell[data-weather] .background-toggle{border-color:transparent;background:transparent;font-size:.8rem}
+.app-shell[data-weather] .navigation{background:transparent;border-radius:0;padding:0;border-bottom:1px solid var(--grid-line);margin-bottom:18px;box-shadow:none}
+.app-shell[data-weather] .navigation .MuiTab-root{color:var(--muted);padding:12px 20px;min-height:48px}
+.app-shell[data-weather] .navigation .Mui-selected{color:#164a66;background:#f8fcff40}
+.app-shell[data-weather] .location-tools.MuiCard-root{display:flex;align-items:flex-start;gap:12px;padding:0;margin:0;border:0;border-radius:0;background:transparent;box-shadow:none;overflow:visible}
+.app-shell .location-tools .search-wrap{flex:1;max-width:none;min-width:0}
+.app-shell .location-tools .MuiOutlinedInput-root{height:46px;border-radius:10px;background:#f9fcff88}
+.app-shell .location-tools .MuiOutlinedInput-input{min-height:0;padding:12px 14px;border:0;background:transparent;box-shadow:none}
+.app-shell .location-tools .MuiOutlinedInput-notchedOutline{border-color:#406d8850}
+.app-shell .location-tools .MuiInputLabel-root{color:#36566b}
+.app-shell .location-tools .location-actions{display:flex;align-items:flex-start;gap:8px;flex-shrink:0}
+.app-shell .location-actions .selection-save{display:flex;align-items:center;margin:0;padding:0;gap:8px}
+.app-shell .location-actions .selection-save>span{display:none}
+.app-shell .location-actions .MuiButton-root{height:46px;white-space:nowrap;margin:0}
+.app-shell .locate-button svg{flex-shrink:0}
+.app-shell .search-status:empty{display:none}.app-shell .search-results{background:#f7fbff;box-shadow:0 8px 28px #19394c26}
+.app-shell[data-weather] .saved-places{gap:8px;margin:12px 0}.app-shell .saved-places .MuiButton-root{background:transparent;border:0;padding:6px 10px;font-weight:500}
+.app-shell .page-heading{margin:28px 0 16px}.app-shell .page-heading h1{font-size:clamp(1.8rem,3vw,2.7rem);letter-spacing:-.04em}
+.app-shell .page-heading .subtle,.app-shell .location-subtitle{color:var(--muted)}
+.app-shell .forecast-jumps{margin:16px 0 0;padding:0 18px;background:var(--glass);border:1px solid var(--grid-line);border-bottom:0;border-radius:16px 16px 0 0;gap:4px}
+.app-shell .forecast-jumps a{background:transparent;border-radius:0;min-height:44px;display:inline-flex;align-items:center;padding:10px 14px;color:#225b76;font-weight:600}
+.app-shell .forecast-jumps a:hover{background:#ffffff60}
+.app-shell[data-weather] .dashboard-grid{gap:0;background:var(--glass);border:1px solid var(--grid-line);border-radius:0 0 16px 16px;box-shadow:none;overflow:clip}
+.app-shell[data-weather] .dashboard-grid .card,.app-shell[data-weather] .dashboard-grid .MuiCard-root{background:transparent;border:0;border-radius:0;box-shadow:none}
+.app-shell[data-weather] .dashboard-grid>.card{padding:26px 28px;margin:0}
+.app-shell[data-weather] .dashboard-grid .hero{background:transparent}
+.app-shell[data-weather] .dashboard-grid .hourly-card,.app-shell[data-weather] .dashboard-grid .outlook{border-top:1px solid var(--grid-line)}
+.app-shell[data-weather] .dashboard-grid .today-map{margin:0;padding:24px;border-left:1px solid var(--grid-line);align-self:start;min-width:0}
+.app-shell[data-weather] .today-map .compact-map.MuiCard-root{padding:0;margin:0}
+.app-shell[data-weather] .today-map .interactive-map{border-radius:10px;border:1px solid var(--grid-line);height:340px;min-height:340px}
+.app-shell[data-weather] .hero .heat-card.MuiCard-root{border-top:1px solid var(--grid-line);padding:18px 0 0;margin-top:20px}
+.app-shell .hero .current-location{font-weight:650}.app-shell .current-details{border-color:var(--grid-line)}
+.app-shell .hero .hero-bottom,.app-shell .heat-disclosures,.app-shell .heat-trend,.app-shell .heat-method{border-color:var(--grid-line)}
+.app-shell .hero .hero-bottom span,.app-shell .current-details dt,.app-shell .subtle,.app-shell .eyebrow{color:var(--muted)}
+.app-shell .dashboard-grid h2{font-size:1.25rem;font-weight:650;letter-spacing:-.02em}
+.app-shell .dashboard-grid .section-top{gap:12px;align-items:center}
+.app-shell .dashboard-grid .section-top .eyebrow{font-size:.7rem;margin-bottom:4px}
+.app-shell .hourly-strip{background:transparent;border-radius:0;box-shadow:none}
+.app-shell .hourly-strip>*{background:transparent;border-radius:0;border-color:var(--grid-line)}
+.app-shell .forecast-day.daily-row{border-color:var(--grid-line);background:transparent}
+.app-shell .segmented{background:#e7f1f466;border-radius:10px;padding:3px;gap:3px}
+.app-shell .segmented .MuiButton-root{border:0;min-width:0;padding:7px 12px;background:transparent}
+.app-shell .dashboard-grid summary{font-weight:600;color:#244e65}
+.app-shell .dashboard-grid .map-settings,.app-shell .dashboard-grid details{border-color:var(--grid-line)}
+.app-shell[data-weather] .card:not(.hero):not(.hourly-card):not(.outlook):not(.heat-card):not(.compact-map){background:var(--glass);box-shadow:none;border-color:var(--grid-line)}
+.app-shell .alerts-card.MuiCard-root{background:#fff3dcdd;border-radius:10px;box-shadow:none}
+.app-shell .notice{border-radius:8px}.app-shell footer{border-top:1px solid var(--grid-line);margin-top:24px;color:var(--muted)}
+@media(max-width:1000px){.app-shell[data-weather] .dashboard-grid .today-map{border-left:0;border-top:1px solid var(--grid-line);padding:24px}.app-shell .current-overview{gap:20px}}
+@media(max-width:700px){
+ .app-shell[data-weather]{padding:0 16px}.app-shell[data-weather] .masthead{gap:8px;padding:9px 0 5px}
+ .app-shell .brand{font-size:1.35rem}.app-shell .brand small{font-size:.65rem}.app-shell .brand-mark{font-size:2.3rem}
+ .app-shell[data-weather] .navigation .MuiTab-root{min-width:0;padding:10px 6px;font-size:.82rem}
+ .app-shell[data-weather] .location-tools.MuiCard-root{flex-direction:column;gap:8px}.app-shell .location-tools .search-wrap{width:100%}
+ .app-shell .location-tools .location-actions{width:100%;justify-content:space-between;gap:8px}.app-shell .location-actions .MuiButton-root{font-size:.82rem;padding:8px 12px}
+ .app-shell .header-controls{gap:4px}.app-shell[data-weather] .background-toggle{padding:3px 4px;min-height:32px;font-size:.65rem}
+ .app-shell[data-weather] .units .MuiButton-root{padding:6px 10px;min-width:40px;min-height:40px}
+ .app-shell .page-heading{margin-top:22px}.app-shell .forecast-jumps{padding:0 6px}.app-shell .forecast-jumps a{padding:10px 12px;font-size:.875rem}
+ .app-shell[data-weather] .dashboard-grid>.card,.app-shell[data-weather] .dashboard-grid .today-map{padding:20px 16px}
+ .app-shell .dashboard-grid .section-top{flex-wrap:wrap}.app-shell .forecast-day.daily-row{gap:8px}
+}
+@media(prefers-contrast:more){.app-shell[data-weather]{--glass:#f8fbff;--grid-line:#254359;--muted:#254359}}
+@media(forced-colors:active){.app-shell[data-weather] .dashboard-grid{background:Canvas;border-color:CanvasText}.app-shell .weather-backdrop{display:none}}
+.app-shell .selected-location-label{margin:10px 0;color:var(--muted);font-size:.9rem}
+.app-shell .alerts-quiet{background:transparent;border:0;padding:0;margin:12px 0;gap:6px 18px}
+@media(max-width:700px){.app-shell .saved-places .MuiButton-root{min-height:36px}.app-shell .page-heading{margin:16px 0 10px}.app-shell .alerts-quiet{margin:8px 0}.app-shell .alerts-quiet summary{min-height:36px}.app-shell .alerts-quiet p{margin:0;min-height:36px}.app-shell .forecast-jumps{margin-top:12px}}
+
+/* Daily-use hierarchy: one place header, a compact answer, then progressive detail. */
+.app-shell .selected-place-header{display:flex;justify-content:space-between;align-items:center;gap:18px;margin:14px 0 10px;padding:10px 2px 14px;border-bottom:1px solid var(--grid-line)}
+.app-shell .selected-place-header h1{font-size:clamp(1.55rem,3vw,2.2rem);letter-spacing:-.035em;overflow-wrap:anywhere}
+.app-shell .selected-place-header p{margin:2px 0;color:var(--muted)}
+.app-shell .selected-place-actions{display:flex;gap:8px;flex-shrink:0}
+.short-action-label{display:none}
+.app-shell .alerts-card{grid-column:1/-1;grid-row:2}.app-shell .alerts-quiet{grid-column:1/-1;grid-row:6}
+.app-shell .daily-summary-card{grid-column:1/-1;grid-row:3;border-top:1px solid var(--grid-line)!important}
+.app-shell .hourly-card{grid-column:1/-1;grid-row:4}
+.app-shell .outlook{grid-column:1/-1;grid-row:5}
+.app-shell .observations-card{grid-column:1/-1;grid-row:7;border-top:1px solid var(--grid-line)!important}
+.app-shell .observations-card>section+section{margin-top:24px;padding-top:20px;border-top:1px solid var(--grid-line)}
+.daily-summary-heading,.next-hours-heading{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.daily-summary-heading p{margin:0}.next-hours-heading{margin:16px 0 8px}.next-hours-heading h3{margin:0}
+.planning-days{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:12px;border-block:1px solid var(--grid-line)}
+.planning-days article{padding:12px 18px 12px 0;min-width:0}.planning-days article+article{border-left:1px solid var(--grid-line);padding-left:18px}
+.planning-days h3,.planning-days p{margin:2px 0}.planning-days small{display:block;color:var(--muted);margin-top:4px}
+.comparison-presets{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:16px 0}
+.comparison-presets>span{font-weight:650;margin-right:4px}.comparison-presets .MuiButton-root{border:1px solid var(--grid-line)}
+.legacy-compare{margin:18px 0;padding:0 16px;border:1px solid var(--grid-line);border-radius:12px;background:var(--glass)}
+.legacy-compare>.comparison-panel{margin-top:0!important}
+.settings .background-toggle.MuiButton-root{display:inline-flex}
+
+/* Keep the daily plan and radar in one right-hand column. */
+@media(min-width:1001px){
+ .app-shell[data-weather] .dashboard-grid{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);grid-template-rows:auto auto}
+ .app-shell .dashboard-grid .hero{grid-column:1;grid-row:1/span 2}
+ .app-shell .dashboard-grid .daily-summary-card{grid-column:2;grid-row:1;border-top:0!important;border-left:1px solid var(--grid-line)!important}
+ .app-shell .dashboard-grid .today-map{grid-column:2;grid-row:2}
+ .app-shell .dashboard-grid .alerts-card{grid-column:1/-1;grid-row:3}
+ .app-shell .dashboard-grid .hourly-card{grid-column:1/-1;grid-row:4}
+ .app-shell .dashboard-grid .outlook{grid-column:1/-1;grid-row:5}
+ .app-shell .dashboard-grid .observations-card{grid-column:1/-1;grid-row:6}
+ .app-shell .dashboard-grid .alerts-quiet{grid-column:1/-1;grid-row:7}
+ .app-shell .daily-summary-heading{display:block}
+ .app-shell .daily-summary .hourly-strip>div{min-width:118px}
+}
+
+@media(max-width:1000px){
+ .app-shell .alerts-card{order:1;grid-row:auto}.app-shell .daily-summary-card{order:2;grid-row:auto}.app-shell .today-map{order:3;grid-row:auto}.app-shell .hourly-card{order:4;grid-row:auto}.app-shell .outlook{order:5;grid-row:auto}.app-shell .observations-card{order:6;grid-row:auto}.app-shell .alerts-quiet{order:7;grid-row:auto}
+}
+@media(max-width:700px){
+ .app-shell .selected-place-header{align-items:center;flex-wrap:nowrap;gap:4px;margin:6px 0 4px;padding:4px 0 6px}
+ .app-shell .selected-place-header h1{font-size:1.45rem}.app-shell .selected-place-header p:not(.subtle){font-size:.82rem}.app-shell .selected-place-header .subtle{display:none}
+ .app-shell .selected-place-actions{width:auto;flex-direction:row;justify-content:flex-end;gap:4px;margin-left:auto}.app-shell .selected-place-actions .MuiButton-root{min-height:36px;padding:4px 7px;font-size:.72rem}.app-shell .selected-place-actions .wide-action-label{display:none}.app-shell .selected-place-actions .short-action-label{display:inline}
+ .app-shell .forecast-jumps{display:none}
+ .app-shell[data-weather] .navigation{margin-bottom:4px}
+ .app-shell[data-weather] .dashboard-grid{border-radius:14px;margin-top:8px}
+ .app-shell[data-weather] .dashboard-grid>.hero{display:flex;flex-direction:column;padding-block:14px}.app-shell .hero .current-overview{display:contents}.app-shell .hero .current-summary{order:0}.app-shell .hero .heat-card{order:1}.app-shell .hero .current-details{order:2}
+ .app-shell .hero .current-location{font-size:1.05rem}.app-shell[data-weather] .hero .section-top{min-height:38px}
+ .app-shell .hero .weather-symbol .weather-icon{width:42px;height:42px}
+ .app-shell .hero .current-time{display:flex;align-items:center;justify-content:space-between;gap:6px;margin:0;font-size:.72rem}.app-shell .hero .current-time .MuiButton-root{flex-shrink:0}
+ .app-shell .hero .actual,.app-shell .hero .today-temperature-range{display:inline;font-size:.8rem;margin:2px 8px 2px 0}.app-shell .hero .actual strong{font-size:.95rem}
+ .app-shell .hero .hero-bottom{margin-top:8px;padding-top:8px}.app-shell .hero .hero-bottom strong{font-size:.9rem}.app-shell .hero .hero-bottom span{font-size:.65rem}
+ .app-shell .current-overview{gap:4px}.app-shell .current-details{padding-top:0}.app-shell .current-details>summary{font-size:.8rem}
+ 
+ .app-shell .hero .heat-card.MuiCard-root{margin-top:6px;padding-top:8px}.app-shell .heat-card>.eyebrow,.app-shell .heat-card>h2{display:none}
+ .app-shell .wbgt-panel{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:8px;align-items:center}.app-shell .wbgt-panel .metric-row{grid-column:1/-1;margin-top:0}.app-shell .wbgt-panel .metric-row strong{font-size:1.25rem}.app-shell .wbgt-explanation{display:none}.app-shell .wbgt-interpretation{grid-column:1/-1;margin:0;border-top:0}.app-shell .wbgt-interpretation>summary{min-height:36px;padding:6px 0;font-size:.72rem}
+ .app-shell .daily-summary-card{padding-top:8px!important;padding-bottom:14px!important}.daily-summary-heading h2{font-size:1.05rem}.daily-summary-heading>.subtle{display:none}
+ .daily-summary-heading>.eyebrow{display:none}.planning-days{grid-template-columns:1fr;margin-top:5px}.planning-days article{padding:5px 0;font-size:.72rem}.planning-days article+article{border-left:0;padding-left:0}.planning-days h3{font-size:.82rem}.planning-days p{line-height:1.3}.planning-days small{font-size:.62rem}
+ .next-hours-heading{margin:10px 0 5px;font-size:.78rem}.next-hours-heading h3{font-size:.9rem}
+ .daily-summary .hourly-strip{gap:0}.daily-summary .hourly-strip>div{min-width:112px;padding:8px 6px}
+ .comparison-presets{align-items:stretch}.comparison-presets>span{width:100%}.comparison-presets .MuiButton-root{flex:1 1 calc(50% - 8px);font-size:.8rem}
+}
+@media(prefers-reduced-motion:reduce){.settings .background-toggle.MuiButton-root{display:inline-flex}}
+
+/* Reflow from the space inside each panel, not just the browser width. */
+.app-shell .hero { container: current-panel / inline-size; }
+.app-shell .hero .current-overview { display:grid;grid-template-columns:minmax(0,1fr);gap:20px; }
+.app-shell .hero .current-details { width:auto;margin:0;padding:16px 0 0;border-left:0;border-top:1px solid var(--grid-line); }
+.app-shell .hero .wind-widget { float:none;margin:12px 0;flex-wrap:wrap; }
+.app-shell .hero .current-time { display:flex;flex-wrap:wrap;align-items:center;gap:8px;height:auto; }
+.app-shell .hero .hero-bottom { display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,100px),1fr));gap:12px; }
+.app-shell .hero .current-details dl>div { display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start; }
+.app-shell .hero .current-details dd { max-width:none;min-width:0; }
+.app-shell .selected-place-header { flex-wrap:wrap; }
+.app-shell .selected-place-header>div { min-width:0; }
+.app-shell .selected-place-actions { flex-wrap:wrap;max-width:100%; }
+.app-shell .daily-summary { container: daily-plan / inline-size;min-width:0; }
+.app-shell .daily-summary .hourly-strip { display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,110px),1fr));overflow:visible;width:100%; }
+.app-shell .daily-summary .hourly-strip>div { min-width:0;width:auto; }
+.app-shell .next-hours-heading { flex-wrap:wrap;gap:8px; }
+@container current-panel (min-width:640px) {
+ .app-shell .hero .current-overview { grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:24px; }
+ .app-shell .hero .current-details { border-top:0;border-left:1px solid var(--grid-line);padding:0 0 0 20px; }
+}
+@container daily-plan (max-width:440px) {
+ .planning-days { grid-template-columns:minmax(0,1fr); }
+ .planning-days article,.planning-days article+article { padding:12px 0;border-left:0; }
+ .planning-days article+article { border-top:1px solid var(--grid-line); }
+}
+
+/* Keep measured conditions and forecast high/low visibly separate at every width. */
+.app-shell .hero .current-summary .today-temperature-range{display:block;margin-top:8px}

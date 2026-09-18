@@ -1,0 +1,34 @@
+{
+  "cases": 28,
+  "toleranceC": 0.01,
+  "maxAbsoluteDifference": {
+    "globeC": 0.0002144498363136904,
+    "naturalWetBulbC": 0.00005710143809167789,
+    "psychrometricWetBulbC": 0.00008225730588229396,
+    "wbgtC": 0.00007213790480520288,
+    "cosineSolarZenith": 3.024856103095441e-8,
+    "directFraction": 4.031913902746709e-8,
+    "ghiUsedWm2": 0.00005090460513201833
+  },
+  "failures": [
+    {
+      "id": "stress",
+      "status": "component_failure",
+      "globe": {
+        "status": "nonconvergence",
+        "temperatureC": null,
+        "iterations": 50
+      },
+      "naturalWetBulb": {
+        "status": "nonconvergence",
+        "temperatureC": null,
+        "iterations": 50
+      },
+      "psychrometricWetBulb": {
+        "status": "success",
+        "temperatureC": 13.147110257305883,
+        "iterations": 4
+      }
+    }
+  ]
+}

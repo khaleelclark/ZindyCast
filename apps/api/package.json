@@ -1,0 +1,21 @@
+{
+  "name": "@zindycast/api",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "dependencies": {
+    "fastify": "5.12.3",
+    "@zindycast/contracts": "0.1.0",
+    "@zindycast/providers": "0.1.0",
+    "zod": "4.6.2",
+    "@zindycast/storage": "0.1.0",
+    "@fastify/static": "10.1.3",
+    "@zindycast/maps": "0.1.0",
+    "@zindycast/history": "0.1.0",
+    "@zindycast/jobs": "0.1.0",
+    "@zindycast/installations": "0.1.0",
+    "@zindycast/comparison": "0.1.0",
+    "@zindycast/stations": "0.1.0",
+    "@zindycast/verification": "0.1.0"
+  }
+}

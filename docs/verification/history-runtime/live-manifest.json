@@ -1,0 +1,72 @@
+{
+  "completedAt": "2026-09-11T00:26:47.283Z",
+  "count": 2,
+  "requests": [
+    {
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=40.7128&longitude=-74.006&start_date=2020-03-01&end_date=2020-03-31&models=era5&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Cwind_speed_10m%2Cdew_point_2m&timezone=GMT&timeformat=unixtime&temperature_unit=celsius&wind_speed_unit=ms&precipitation_unit=mm&cell_selection=land",
+      "beganAt": "2026-09-11T00:26:46.222Z",
+      "headersAt": "2026-09-11T00:26:47.039Z",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "date": "Fri, 11 Sep 2026 00:26:46 GMT"
+    },
+    {
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=21.3069&longitude=-157.8583&start_date=1940-01-01&end_date=1940-01-01&models=era5&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Cwind_speed_10m%2Cdew_point_2m&timezone=GMT&timeformat=unixtime&temperature_unit=celsius&wind_speed_unit=ms&precipitation_unit=mm&cell_selection=land",
+      "beganAt": "2026-09-11T00:26:47.090Z",
+      "headersAt": "2026-09-11T00:26:47.280Z",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "date": "Fri, 11 Sep 2026 00:26:47 GMT"
+    }
+  ],
+  "results": [
+    {
+      "name": "new-york-march-2020",
+      "outcome": "success",
+      "completeness": {
+        "status": "complete",
+        "expectedHours": 744,
+        "sourceHours": 744,
+        "completeHours": 744,
+        "missingHours": 0,
+        "validCounts": {
+          "temperatureC": 744,
+          "humidityPercent": 744,
+          "precipitationMm": 744,
+          "windSpeedMs": 744,
+          "dewPointC": 744
+        }
+      },
+      "sourceCoordinates": {
+        "latitude": 40.75,
+        "longitude": -74
+      },
+      "firstTime": "2020-03-01T00:00:00.000Z",
+      "lastTime": "2020-03-31T23:00:00.000Z"
+    },
+    {
+      "name": "honolulu-january-1940",
+      "outcome": "success",
+      "completeness": {
+        "status": "partial",
+        "expectedHours": 24,
+        "sourceHours": 24,
+        "completeHours": 19,
+        "missingHours": 0,
+        "validCounts": {
+          "temperatureC": 24,
+          "humidityPercent": 24,
+          "precipitationMm": 19,
+          "windSpeedMs": 24,
+          "dewPointC": 24
+        }
+      },
+      "sourceCoordinates": {
+        "latitude": 21.5,
+        "longitude": -158
+      },
+      "firstTime": "1940-01-01T00:00:00.000Z",
+      "lastTime": "1940-01-01T23:00:00.000Z"
+    }
+  ]
+}

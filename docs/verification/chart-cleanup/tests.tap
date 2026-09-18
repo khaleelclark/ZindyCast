@@ -1,0 +1,64 @@
+TAP version 13
+# Subtest: Tulsa guidance preserves source break rows and missing/boundary status without a safe category
+ok 1 - Tulsa guidance preserves source break rows and missing/boundary status without a safe category
+  ---
+  duration_ms: 10.310367
+  type: 'test'
+  ...
+# Subtest: WBGT marker requires successful co-timed eligible hour and fresh online state; never substitutes ordinary wet-bulb
+ok 2 - WBGT marker requires successful co-timed eligible hour and fresh online state; never substitutes ordinary wet-bulb
+  ---
+  duration_ms: 57.408659
+  type: 'test'
+  ...
+# Subtest: Tulsa exact endpoints retain ambiguity before display rounding and convert scale ticks
+ok 3 - Tulsa exact endpoints retain ambiguity before display rounding and convert scale ticks
+  ---
+  duration_ms: 36.555624
+  type: 'test'
+  ...
+# Subtest: visible 24-hour graph preserve real hour spacing, missing gaps, zero, bounds and accessible values
+ok 4 - visible 24-hour graph preserve real hour spacing, missing gaps, zero, bounds and accessible values
+  ---
+  duration_ms: 5.068299
+  type: 'test'
+  ...
+# Subtest: heat precautions precede trend without the removed lower estimate
+ok 5 - heat precautions precede trend without the removed lower estimate
+  ---
+  duration_ms: 1.860173
+  type: 'test'
+  ...
+# Subtest: heat interaction controls and compact hourly list preserve endpoints, all slots and missingness without removed disclosures
+ok 6 - heat interaction controls and compact hourly list preserve endpoints, all slots and missingness without removed disclosures
+  ---
+  duration_ms: 3.343873
+  type: 'test'
+  ...
+# Subtest: heat graph point labels distinguish DST repeated hours
+ok 7 - heat graph point labels distinguish DST repeated hours
+  ---
+  duration_ms: 1.842209
+  type: 'test'
+  ...
+# Subtest: chart conversion keeps exact values and nulls, with distinct repeated DST instants
+ok 8 - chart conversion keeps exact values and nulls, with distinct repeated DST instants
+  ---
+  duration_ms: 2.154521
+  type: 'test'
+  ...
+# Subtest: missing intervals and independent nulls remain gaps without invented measurements
+ok 9 - missing intervals and independent nulls remain gaps without invented measurements
+  ---
+  duration_ms: 1.315391
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2096.625873

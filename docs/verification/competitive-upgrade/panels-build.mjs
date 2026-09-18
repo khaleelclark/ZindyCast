@@ -1,0 +1,3 @@
+import {createRsbuild} from '@rsbuild/core';
+import {pluginReact} from '@rsbuild/plugin-react';
+const b=await createRsbuild({cwd:(process.cwd() + '/apps/web'),rsbuildConfig:{plugins:[pluginReact()],resolve:{alias:{'react/jsx-runtime':(process.cwd() + '/node_modules/react/jsx-runtime.js')}},tools:{rspack:{resolve:{extensionAlias:{'.js':['.ts','.tsx','.js']}}}},source:{entry:{index:(process.cwd() + '/docs/verification/competitive-upgrade/panels-entry.tsx')},define:{'process.env.PUBLIC_MAPBOX_ACCESS_TOKEN':'""'}},output:{distPath:{root:'/tmp/competitive-panels-dist'}},html:{title:'Fixture test'}}});await b.build();

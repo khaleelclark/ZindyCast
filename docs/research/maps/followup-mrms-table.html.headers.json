@@ -1,0 +1,5 @@
+{
+  "url": "https://www.nssl.noaa.gov/projects/mrms/operational/tables.php",
+  "retrieved_at": "2026-09-10T23:37:39.834665+00:00",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+}

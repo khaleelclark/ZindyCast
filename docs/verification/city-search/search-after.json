@@ -1,0 +1,17 @@
+[
+  {
+    "query": "Boston",
+    "visibleMs": 299.48327900000004,
+    "requests": 1
+  },
+  {
+    "query": "Deltona",
+    "visibleMs": 295.024766,
+    "requests": 1
+  },
+  {
+    "query": "Boston",
+    "visibleMs": 12.061833999999862,
+    "requests": 0
+  }
+]

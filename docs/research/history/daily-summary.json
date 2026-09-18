@@ -1,0 +1,1982 @@
+{
+  "USC00427516": {
+    "first_nonmissing_date": "1893-01-01",
+    "last_nonmissing_date": "2026-09-09",
+    "periods": {
+      "baseline": {
+        "TMAX": {
+          "expected_days": 10958,
+          "present_days": 9688,
+          "unflagged_days": 9643,
+          "qflag_counts": {
+            " ": 9643,
+            "I": 41,
+            "S": 4
+          },
+          "mflag_counts": {
+            " ": 9688
+          }
+        },
+        "TMIN": {
+          "expected_days": 10958,
+          "present_days": 9684,
+          "unflagged_days": 9663,
+          "qflag_counts": {
+            " ": 9663,
+            "S": 2,
+            "I": 19
+          },
+          "mflag_counts": {
+            " ": 9684
+          }
+        },
+        "PRCP": {
+          "expected_days": 10958,
+          "present_days": 9924,
+          "unflagged_days": 9914,
+          "qflag_counts": {
+            " ": 9914,
+            "L": 10
+          },
+          "mflag_counts": {
+            "P": 4165,
+            " ": 5484,
+            "T": 275
+          }
+        },
+        "AWND": {
+          "expected_days": 10958,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        },
+        "ADPT": {
+          "expected_days": 10958,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        },
+        "RHAV": {
+          "expected_days": 10958,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        },
+        "AWBT": {
+          "expected_days": 10958,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        }
+      },
+      "recent": {
+        "TMAX": {
+          "expected_days": 3653,
+          "present_days": 3648,
+          "unflagged_days": 3648,
+          "qflag_counts": {
+            " ": 3648
+          },
+          "mflag_counts": {
+            " ": 3648
+          }
+        },
+        "TMIN": {
+          "expected_days": 3653,
+          "present_days": 3648,
+          "unflagged_days": 3648,
+          "qflag_counts": {
+            " ": 3648
+          },
+          "mflag_counts": {
+            " ": 3648
+          }
+        },
+        "PRCP": {
+          "expected_days": 3653,
+          "present_days": 3649,
+          "unflagged_days": 3649,
+          "qflag_counts": {
+            " ": 3649
+          },
+          "mflag_counts": {
+            " ": 3578,
+            "T": 71
+          }
+        },
+        "AWND": {
+          "expected_days": 3653,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        },
+        "ADPT": {
+          "expected_days": 3653,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        },
+        "RHAV": {
+          "expected_days": 3653,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        },
+        "AWBT": {
+          "expected_days": 3653,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        }
+      },
+      "sample_july_2020": {
+        "TMAX": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            " ": 31
+          }
+        },
+        "TMIN": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            " ": 31
+          }
+        },
+        "PRCP": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            " ": 31
+          }
+        },
+        "AWND": {
+          "expected_days": 31,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        },
+        "ADPT": {
+          "expected_days": 31,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        },
+        "RHAV": {
+          "expected_days": 31,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        },
+        "AWBT": {
+          "expected_days": 31,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        }
+      }
+    },
+    "flagged_examples": [
+      {
+        "date": "1901-01-31",
+        "variable": "TOBS",
+        "value": -33,
+        "mflag": " ",
+        "qflag": "I",
+        "sflag": "6"
+      },
+      {
+        "date": "1901-02-01",
+        "variable": "TMIN",
+        "value": -22,
+        "mflag": " ",
+        "qflag": "I",
+        "sflag": "6"
+      },
+      {
+        "date": "1902-02-14",
+        "variable": "TMAX",
+        "value": 178,
+        "mflag": " ",
+        "qflag": "I",
+        "sflag": "6"
+      },
+      {
+        "date": "1902-02-14",
+        "variable": "TOBS",
+        "value": 200,
+        "mflag": " ",
+        "qflag": "I",
+        "sflag": "6"
+      },
+      {
+        "date": "1902-05-31",
+        "variable": "TOBS",
+        "value": 300,
+        "mflag": " ",
+        "qflag": "I",
+        "sflag": "6"
+      },
+      {
+        "date": "1902-06-01",
+        "variable": "TMAX",
+        "value": 278,
+        "mflag": " ",
+        "qflag": "I",
+        "sflag": "6"
+      },
+      {
+        "date": "1902-11-25",
+        "variable": "TMAX",
+        "value": 117,
+        "mflag": " ",
+        "qflag": "I",
+        "sflag": "6"
+      },
+      {
+        "date": "1902-11-24",
+        "variable": "TOBS",
+        "value": 128,
+        "mflag": " ",
+        "qflag": "I",
+        "sflag": "6"
+      }
+    ],
+    "sample_july15_2020": [
+      {
+        "date": "2020-07-15",
+        "variable": "TMAX",
+        "value": 406,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "7"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "TMIN",
+        "value": 200,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "7"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "TOBS",
+        "value": 256,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "7"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "PRCP",
+        "value": 0,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "7"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "SNOW",
+        "value": 0,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "7"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "SNWD",
+        "value": 0,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "7"
+      }
+    ]
+  },
+  "USW00003184": {
+    "first_nonmissing_date": "1998-09-01",
+    "last_nonmissing_date": "2026-09-08",
+    "periods": {
+      "baseline": {
+        "TMAX": {
+          "expected_days": 10958,
+          "present_days": 8105,
+          "unflagged_days": 8103,
+          "qflag_counts": {
+            " ": 8103,
+            "S": 2
+          },
+          "mflag_counts": {
+            " ": 8105
+          }
+        },
+        "TMIN": {
+          "expected_days": 10958,
+          "present_days": 8093,
+          "unflagged_days": 8092,
+          "qflag_counts": {
+            " ": 8092,
+            "S": 1
+          },
+          "mflag_counts": {
+            " ": 8093
+          }
+        },
+        "PRCP": {
+          "expected_days": 10958,
+          "present_days": 8141,
+          "unflagged_days": 8141,
+          "qflag_counts": {
+            " ": 8141
+          },
+          "mflag_counts": {
+            "T": 519,
+            " ": 7622
+          }
+        },
+        "AWND": {
+          "expected_days": 10958,
+          "present_days": 8100,
+          "unflagged_days": 8100,
+          "qflag_counts": {
+            " ": 8100
+          },
+          "mflag_counts": {
+            " ": 8100
+          }
+        },
+        "ADPT": {
+          "expected_days": 10958,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        },
+        "RHAV": {
+          "expected_days": 10958,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        },
+        "AWBT": {
+          "expected_days": 10958,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        }
+      },
+      "recent": {
+        "TMAX": {
+          "expected_days": 3653,
+          "present_days": 3627,
+          "unflagged_days": 3626,
+          "qflag_counts": {
+            " ": 3626,
+            "S": 1
+          },
+          "mflag_counts": {
+            " ": 3627
+          }
+        },
+        "TMIN": {
+          "expected_days": 3653,
+          "present_days": 3614,
+          "unflagged_days": 3614,
+          "qflag_counts": {
+            " ": 3614
+          },
+          "mflag_counts": {
+            " ": 3614
+          }
+        },
+        "PRCP": {
+          "expected_days": 3653,
+          "present_days": 3631,
+          "unflagged_days": 3631,
+          "qflag_counts": {
+            " ": 3631
+          },
+          "mflag_counts": {
+            " ": 3404,
+            "T": 227
+          }
+        },
+        "AWND": {
+          "expected_days": 3653,
+          "present_days": 3610,
+          "unflagged_days": 3610,
+          "qflag_counts": {
+            " ": 3610
+          },
+          "mflag_counts": {
+            " ": 3610
+          }
+        },
+        "ADPT": {
+          "expected_days": 3653,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        },
+        "RHAV": {
+          "expected_days": 3653,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        },
+        "AWBT": {
+          "expected_days": 3653,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        }
+      },
+      "sample_july_2020": {
+        "TMAX": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            " ": 31
+          }
+        },
+        "TMIN": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            " ": 31
+          }
+        },
+        "PRCP": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            " ": 30,
+            "T": 1
+          }
+        },
+        "AWND": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            " ": 31
+          }
+        },
+        "ADPT": {
+          "expected_days": 31,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        },
+        "RHAV": {
+          "expected_days": 31,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        },
+        "AWBT": {
+          "expected_days": 31,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        }
+      }
+    },
+    "flagged_examples": [
+      {
+        "date": "2000-09-01",
+        "variable": "TAVG",
+        "value": -178,
+        "mflag": " ",
+        "qflag": "G",
+        "sflag": "W"
+      },
+      {
+        "date": "2000-10-08",
+        "variable": "TAVG",
+        "value": -178,
+        "mflag": " ",
+        "qflag": "G",
+        "sflag": "W"
+      },
+      {
+        "date": "2001-06-01",
+        "variable": "TAVG",
+        "value": -178,
+        "mflag": " ",
+        "qflag": "G",
+        "sflag": "W"
+      },
+      {
+        "date": "2001-07-01",
+        "variable": "TAVG",
+        "value": -178,
+        "mflag": " ",
+        "qflag": "G",
+        "sflag": "W"
+      },
+      {
+        "date": "2002-03-10",
+        "variable": "TAVG",
+        "value": -178,
+        "mflag": " ",
+        "qflag": "G",
+        "sflag": "W"
+      },
+      {
+        "date": "2002-03-11",
+        "variable": "TAVG",
+        "value": -178,
+        "mflag": " ",
+        "qflag": "G",
+        "sflag": "W"
+      },
+      {
+        "date": "2002-03-12",
+        "variable": "TAVG",
+        "value": -178,
+        "mflag": " ",
+        "qflag": "G",
+        "sflag": "W"
+      },
+      {
+        "date": "2002-04-04",
+        "variable": "TMIN",
+        "value": 61,
+        "mflag": " ",
+        "qflag": "S",
+        "sflag": "W"
+      }
+    ],
+    "sample_july15_2020": [
+      {
+        "date": "2020-07-15",
+        "variable": "TMAX",
+        "value": 411,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "TMIN",
+        "value": 294,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "PRCP",
+        "value": 0,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "AWND",
+        "value": 26,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WDF2",
+        "value": 280,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WDF5",
+        "value": 280,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WSF2",
+        "value": 76,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WSF5",
+        "value": 103,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WT03",
+        "value": -9999,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": " "
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WT08",
+        "value": -9999,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": " "
+      }
+    ]
+  },
+  "USW00012854": {
+    "first_nonmissing_date": "1945-04-01",
+    "last_nonmissing_date": "2026-09-08",
+    "periods": {
+      "baseline": {
+        "TMAX": {
+          "expected_days": 10958,
+          "present_days": 7969,
+          "unflagged_days": 7969,
+          "qflag_counts": {
+            " ": 7969
+          },
+          "mflag_counts": {
+            " ": 7969
+          }
+        },
+        "TMIN": {
+          "expected_days": 10958,
+          "present_days": 7969,
+          "unflagged_days": 7968,
+          "qflag_counts": {
+            " ": 7968,
+            "G": 1
+          },
+          "mflag_counts": {
+            " ": 7969
+          }
+        },
+        "PRCP": {
+          "expected_days": 10958,
+          "present_days": 7977,
+          "unflagged_days": 7977,
+          "qflag_counts": {
+            " ": 7977
+          },
+          "mflag_counts": {
+            " ": 7240,
+            "T": 737
+          }
+        },
+        "AWND": {
+          "expected_days": 10958,
+          "present_days": 7977,
+          "unflagged_days": 7977,
+          "qflag_counts": {
+            " ": 7977
+          },
+          "mflag_counts": {
+            " ": 7977
+          }
+        },
+        "ADPT": {
+          "expected_days": 10958,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        },
+        "RHAV": {
+          "expected_days": 10958,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        },
+        "AWBT": {
+          "expected_days": 10958,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        }
+      },
+      "recent": {
+        "TMAX": {
+          "expected_days": 3653,
+          "present_days": 3653,
+          "unflagged_days": 3653,
+          "qflag_counts": {
+            " ": 3653
+          },
+          "mflag_counts": {
+            " ": 3653
+          }
+        },
+        "TMIN": {
+          "expected_days": 3653,
+          "present_days": 3653,
+          "unflagged_days": 3653,
+          "qflag_counts": {
+            " ": 3653
+          },
+          "mflag_counts": {
+            " ": 3653
+          }
+        },
+        "PRCP": {
+          "expected_days": 3653,
+          "present_days": 3653,
+          "unflagged_days": 3653,
+          "qflag_counts": {
+            " ": 3653
+          },
+          "mflag_counts": {
+            "T": 382,
+            " ": 3271
+          }
+        },
+        "AWND": {
+          "expected_days": 3653,
+          "present_days": 3647,
+          "unflagged_days": 3647,
+          "qflag_counts": {
+            " ": 3647
+          },
+          "mflag_counts": {
+            " ": 3647
+          }
+        },
+        "ADPT": {
+          "expected_days": 3653,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        },
+        "RHAV": {
+          "expected_days": 3653,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        },
+        "AWBT": {
+          "expected_days": 3653,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        }
+      },
+      "sample_july_2020": {
+        "TMAX": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            " ": 31
+          }
+        },
+        "TMIN": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            " ": 31
+          }
+        },
+        "PRCP": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            "T": 4,
+            " ": 27
+          }
+        },
+        "AWND": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            " ": 31
+          }
+        },
+        "ADPT": {
+          "expected_days": 31,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        },
+        "RHAV": {
+          "expected_days": 31,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        },
+        "AWBT": {
+          "expected_days": 31,
+          "present_days": 0,
+          "unflagged_days": 0,
+          "qflag_counts": {},
+          "mflag_counts": {}
+        }
+      }
+    },
+    "flagged_examples": [
+      {
+        "date": "1945-11-15",
+        "variable": "TMAX",
+        "value": 167,
+        "mflag": " ",
+        "qflag": "I",
+        "sflag": "X"
+      },
+      {
+        "date": "1945-11-14",
+        "variable": "TMIN",
+        "value": 194,
+        "mflag": " ",
+        "qflag": "I",
+        "sflag": "X"
+      },
+      {
+        "date": "1945-12-05",
+        "variable": "TMAX",
+        "value": 117,
+        "mflag": " ",
+        "qflag": "I",
+        "sflag": "X"
+      },
+      {
+        "date": "1945-12-20",
+        "variable": "TMAX",
+        "value": 100,
+        "mflag": " ",
+        "qflag": "I",
+        "sflag": "X"
+      },
+      {
+        "date": "1945-12-04",
+        "variable": "TMIN",
+        "value": 128,
+        "mflag": " ",
+        "qflag": "I",
+        "sflag": "X"
+      },
+      {
+        "date": "1945-12-19",
+        "variable": "TMIN",
+        "value": 156,
+        "mflag": " ",
+        "qflag": "I",
+        "sflag": "X"
+      },
+      {
+        "date": "1953-04-14",
+        "variable": "TMAX",
+        "value": 200,
+        "mflag": " ",
+        "qflag": "I",
+        "sflag": "X"
+      },
+      {
+        "date": "1953-04-20",
+        "variable": "TMAX",
+        "value": 200,
+        "mflag": " ",
+        "qflag": "I",
+        "sflag": "X"
+      }
+    ],
+    "sample_july15_2020": [
+      {
+        "date": "2020-07-15",
+        "variable": "TMAX",
+        "value": 350,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "TMIN",
+        "value": 228,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "PRCP",
+        "value": 58,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "SNOW",
+        "value": 0,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "SNWD",
+        "value": 0,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "AWND",
+        "value": 27,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WDF2",
+        "value": 260,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WDF5",
+        "value": 260,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WSF2",
+        "value": 130,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WSF5",
+        "value": 148,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WT01",
+        "value": -9999,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": " "
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WT02",
+        "value": -9999,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": " "
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WT03",
+        "value": 1,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WT08",
+        "value": -9999,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": " "
+      }
+    ]
+  },
+  "USW00022521": {
+    "first_nonmissing_date": "1939-06-01",
+    "last_nonmissing_date": "2026-09-08",
+    "periods": {
+      "baseline": {
+        "TMAX": {
+          "expected_days": 10958,
+          "present_days": 10941,
+          "unflagged_days": 10941,
+          "qflag_counts": {
+            " ": 10941
+          },
+          "mflag_counts": {
+            " ": 10941
+          }
+        },
+        "TMIN": {
+          "expected_days": 10958,
+          "present_days": 10938,
+          "unflagged_days": 10938,
+          "qflag_counts": {
+            " ": 10938
+          },
+          "mflag_counts": {
+            " ": 10938
+          }
+        },
+        "PRCP": {
+          "expected_days": 10958,
+          "present_days": 10958,
+          "unflagged_days": 10958,
+          "qflag_counts": {
+            " ": 10958
+          },
+          "mflag_counts": {
+            " ": 7476,
+            "T": 3482
+          }
+        },
+        "AWND": {
+          "expected_days": 10958,
+          "present_days": 10957,
+          "unflagged_days": 10957,
+          "qflag_counts": {
+            " ": 10957
+          },
+          "mflag_counts": {
+            " ": 10957
+          }
+        },
+        "ADPT": {
+          "expected_days": 10958,
+          "present_days": 5405,
+          "unflagged_days": 5405,
+          "qflag_counts": {
+            " ": 5405
+          },
+          "mflag_counts": {
+            " ": 5405
+          }
+        },
+        "RHAV": {
+          "expected_days": 10958,
+          "present_days": 5410,
+          "unflagged_days": 5410,
+          "qflag_counts": {
+            " ": 5410
+          },
+          "mflag_counts": {
+            " ": 5410
+          }
+        },
+        "AWBT": {
+          "expected_days": 10958,
+          "present_days": 5405,
+          "unflagged_days": 5405,
+          "qflag_counts": {
+            " ": 5405
+          },
+          "mflag_counts": {
+            " ": 5405
+          }
+        }
+      },
+      "recent": {
+        "TMAX": {
+          "expected_days": 3653,
+          "present_days": 3651,
+          "unflagged_days": 3651,
+          "qflag_counts": {
+            " ": 3651
+          },
+          "mflag_counts": {
+            " ": 3651
+          }
+        },
+        "TMIN": {
+          "expected_days": 3653,
+          "present_days": 3648,
+          "unflagged_days": 3648,
+          "qflag_counts": {
+            " ": 3648
+          },
+          "mflag_counts": {
+            " ": 3648
+          }
+        },
+        "PRCP": {
+          "expected_days": 3653,
+          "present_days": 3651,
+          "unflagged_days": 3651,
+          "qflag_counts": {
+            " ": 3651
+          },
+          "mflag_counts": {
+            "T": 1249,
+            " ": 2402
+          }
+        },
+        "AWND": {
+          "expected_days": 3653,
+          "present_days": 3649,
+          "unflagged_days": 3649,
+          "qflag_counts": {
+            " ": 3649
+          },
+          "mflag_counts": {
+            " ": 3649
+          }
+        },
+        "ADPT": {
+          "expected_days": 3653,
+          "present_days": 3215,
+          "unflagged_days": 3215,
+          "qflag_counts": {
+            " ": 3215
+          },
+          "mflag_counts": {
+            " ": 3215
+          }
+        },
+        "RHAV": {
+          "expected_days": 3653,
+          "present_days": 3218,
+          "unflagged_days": 3218,
+          "qflag_counts": {
+            " ": 3218
+          },
+          "mflag_counts": {
+            " ": 3218
+          }
+        },
+        "AWBT": {
+          "expected_days": 3653,
+          "present_days": 3215,
+          "unflagged_days": 3215,
+          "qflag_counts": {
+            " ": 3215
+          },
+          "mflag_counts": {
+            " ": 3215
+          }
+        }
+      },
+      "sample_july_2020": {
+        "TMAX": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            " ": 31
+          }
+        },
+        "TMIN": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            " ": 31
+          }
+        },
+        "PRCP": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            "T": 16,
+            " ": 15
+          }
+        },
+        "AWND": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            " ": 31
+          }
+        },
+        "ADPT": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            " ": 31
+          }
+        },
+        "RHAV": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            " ": 31
+          }
+        },
+        "AWBT": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            " ": 31
+          }
+        }
+      }
+    },
+    "flagged_examples": [
+      {
+        "date": "1953-07-01",
+        "variable": "TOBS",
+        "value": -178,
+        "mflag": " ",
+        "qflag": "O",
+        "sflag": "0"
+      },
+      {
+        "date": "1954-07-20",
+        "variable": "PGTM",
+        "value": 5000,
+        "mflag": " ",
+        "qflag": "X",
+        "sflag": "X"
+      },
+      {
+        "date": "1954-07-20",
+        "variable": "WSFG",
+        "value": 1176,
+        "mflag": " ",
+        "qflag": "X",
+        "sflag": "X"
+      },
+      {
+        "date": "1966-09-29",
+        "variable": "PGTM",
+        "value": 8130,
+        "mflag": " ",
+        "qflag": "X",
+        "sflag": "X"
+      },
+      {
+        "date": "1968-11-29",
+        "variable": "TMAX",
+        "value": 239,
+        "mflag": " ",
+        "qflag": "I",
+        "sflag": "0"
+      },
+      {
+        "date": "1968-11-28",
+        "variable": "TOBS",
+        "value": 250,
+        "mflag": " ",
+        "qflag": "I",
+        "sflag": "0"
+      },
+      {
+        "date": "2001-11-28",
+        "variable": "WSF2",
+        "value": 4103,
+        "mflag": " ",
+        "qflag": "X",
+        "sflag": "X"
+      },
+      {
+        "date": "2004-03-24",
+        "variable": "TAVG",
+        "value": -178,
+        "mflag": " ",
+        "qflag": "G",
+        "sflag": "W"
+      }
+    ],
+    "sample_july15_2020": [
+      {
+        "date": "2020-07-15",
+        "variable": "TMAX",
+        "value": 306,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "TMIN",
+        "value": 239,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "PRCP",
+        "value": 0,
+        "mflag": "T",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "ADPT",
+        "value": 189,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "ASLP",
+        "value": 10149,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "ASTP",
+        "value": 10146,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "AWBT",
+        "value": 217,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "AWND",
+        "value": 62,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "RHAV",
+        "value": 61,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "RHMN",
+        "value": 48,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "RHMX",
+        "value": 79,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WDF2",
+        "value": 70,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WDF5",
+        "value": 80,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WSF2",
+        "value": 103,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WSF5",
+        "value": 139,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WT01",
+        "value": -9999,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": " "
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WT08",
+        "value": -9999,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": " "
+      }
+    ]
+  },
+  "USW00026451": {
+    "first_nonmissing_date": "1952-04-01",
+    "last_nonmissing_date": "2026-09-08",
+    "periods": {
+      "baseline": {
+        "TMAX": {
+          "expected_days": 10958,
+          "present_days": 10958,
+          "unflagged_days": 10957,
+          "qflag_counts": {
+            " ": 10957,
+            "I": 1
+          },
+          "mflag_counts": {
+            " ": 10958
+          }
+        },
+        "TMIN": {
+          "expected_days": 10958,
+          "present_days": 10958,
+          "unflagged_days": 10958,
+          "qflag_counts": {
+            " ": 10958
+          },
+          "mflag_counts": {
+            " ": 10958
+          }
+        },
+        "PRCP": {
+          "expected_days": 10958,
+          "present_days": 10958,
+          "unflagged_days": 10958,
+          "qflag_counts": {
+            " ": 10958
+          },
+          "mflag_counts": {
+            " ": 8533,
+            "T": 2425
+          }
+        },
+        "AWND": {
+          "expected_days": 10958,
+          "present_days": 10956,
+          "unflagged_days": 10956,
+          "qflag_counts": {
+            " ": 10956
+          },
+          "mflag_counts": {
+            " ": 10956
+          }
+        },
+        "ADPT": {
+          "expected_days": 10958,
+          "present_days": 5403,
+          "unflagged_days": 5403,
+          "qflag_counts": {
+            " ": 5403
+          },
+          "mflag_counts": {
+            " ": 5403
+          }
+        },
+        "RHAV": {
+          "expected_days": 10958,
+          "present_days": 5410,
+          "unflagged_days": 5410,
+          "qflag_counts": {
+            " ": 5410
+          },
+          "mflag_counts": {
+            " ": 5410
+          }
+        },
+        "AWBT": {
+          "expected_days": 10958,
+          "present_days": 5403,
+          "unflagged_days": 5403,
+          "qflag_counts": {
+            " ": 5403
+          },
+          "mflag_counts": {
+            " ": 5403
+          }
+        }
+      },
+      "recent": {
+        "TMAX": {
+          "expected_days": 3653,
+          "present_days": 3653,
+          "unflagged_days": 3653,
+          "qflag_counts": {
+            " ": 3653
+          },
+          "mflag_counts": {
+            " ": 3653
+          }
+        },
+        "TMIN": {
+          "expected_days": 3653,
+          "present_days": 3653,
+          "unflagged_days": 3653,
+          "qflag_counts": {
+            " ": 3653
+          },
+          "mflag_counts": {
+            " ": 3653
+          }
+        },
+        "PRCP": {
+          "expected_days": 3653,
+          "present_days": 3653,
+          "unflagged_days": 3653,
+          "qflag_counts": {
+            " ": 3653
+          },
+          "mflag_counts": {
+            "T": 718,
+            " ": 2935
+          }
+        },
+        "AWND": {
+          "expected_days": 3653,
+          "present_days": 3652,
+          "unflagged_days": 3652,
+          "qflag_counts": {
+            " ": 3652
+          },
+          "mflag_counts": {
+            " ": 3652
+          }
+        },
+        "ADPT": {
+          "expected_days": 3653,
+          "present_days": 3240,
+          "unflagged_days": 3240,
+          "qflag_counts": {
+            " ": 3240
+          },
+          "mflag_counts": {
+            " ": 3240
+          }
+        },
+        "RHAV": {
+          "expected_days": 3653,
+          "present_days": 3244,
+          "unflagged_days": 3244,
+          "qflag_counts": {
+            " ": 3244
+          },
+          "mflag_counts": {
+            " ": 3244
+          }
+        },
+        "AWBT": {
+          "expected_days": 3653,
+          "present_days": 3240,
+          "unflagged_days": 3240,
+          "qflag_counts": {
+            " ": 3240
+          },
+          "mflag_counts": {
+            " ": 3240
+          }
+        }
+      },
+      "sample_july_2020": {
+        "TMAX": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            " ": 31
+          }
+        },
+        "TMIN": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            " ": 31
+          }
+        },
+        "PRCP": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            " ": 22,
+            "T": 9
+          }
+        },
+        "AWND": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            " ": 31
+          }
+        },
+        "ADPT": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            " ": 31
+          }
+        },
+        "RHAV": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            " ": 31
+          }
+        },
+        "AWBT": {
+          "expected_days": 31,
+          "present_days": 31,
+          "unflagged_days": 31,
+          "qflag_counts": {
+            " ": 31
+          },
+          "mflag_counts": {
+            " ": 31
+          }
+        }
+      }
+    },
+    "flagged_examples": [
+      {
+        "date": "1957-09-06",
+        "variable": "PGTM",
+        "value": 2854,
+        "mflag": " ",
+        "qflag": "X",
+        "sflag": "X"
+      },
+      {
+        "date": "1957-12-04",
+        "variable": "PGTM",
+        "value": 2748,
+        "mflag": " ",
+        "qflag": "X",
+        "sflag": "X"
+      },
+      {
+        "date": "1964-03-03",
+        "variable": "WDFG",
+        "value": 440,
+        "mflag": " ",
+        "qflag": "X",
+        "sflag": "X"
+      },
+      {
+        "date": "1964-03-10",
+        "variable": "WDFG",
+        "value": 880,
+        "mflag": " ",
+        "qflag": "X",
+        "sflag": "X"
+      },
+      {
+        "date": "1964-03-24",
+        "variable": "WDFG",
+        "value": 770,
+        "mflag": " ",
+        "qflag": "X",
+        "sflag": "X"
+      },
+      {
+        "date": "1965-11-30",
+        "variable": "PGTM",
+        "value": 9736,
+        "mflag": " ",
+        "qflag": "X",
+        "sflag": "X"
+      },
+      {
+        "date": "1971-08-31",
+        "variable": "TOBS",
+        "value": 122,
+        "mflag": " ",
+        "qflag": "I",
+        "sflag": "0"
+      },
+      {
+        "date": "1971-09-01",
+        "variable": "TMAX",
+        "value": 111,
+        "mflag": " ",
+        "qflag": "I",
+        "sflag": "0"
+      }
+    ],
+    "sample_july15_2020": [
+      {
+        "date": "2020-07-15",
+        "variable": "TMAX",
+        "value": 239,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "TMIN",
+        "value": 111,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "PRCP",
+        "value": 0,
+        "mflag": "T",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "SNOW",
+        "value": 0,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "SNWD",
+        "value": 0,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "ADPT",
+        "value": 106,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "ASLP",
+        "value": 10091,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "ASTP",
+        "value": 10041,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "AWBT",
+        "value": 139,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "AWND",
+        "value": 19,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "PGTM",
+        "value": 735,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "RHAV",
+        "value": 63,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "RHMN",
+        "value": 33,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "RHMX",
+        "value": 90,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WDF2",
+        "value": 160,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WDF5",
+        "value": 160,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WSF2",
+        "value": 54,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      },
+      {
+        "date": "2020-07-15",
+        "variable": "WSF5",
+        "value": 67,
+        "mflag": " ",
+        "qflag": " ",
+        "sflag": "W"
+      }
+    ]
+  }
+}

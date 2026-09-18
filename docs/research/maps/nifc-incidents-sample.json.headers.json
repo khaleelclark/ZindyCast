@@ -1,0 +1,33 @@
+{
+  "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_Current/FeatureServer/0/query?f=json&where=1%3D1&outFields=%2A&returnGeometry=false&resultRecordCount=3",
+  "retrievedAt": "2026-09-10T22:37:11.216066+00:00",
+  "status": 200,
+  "headers": {
+    "Date": "Thu, 10 Sep 2026 22:37:11 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "23670",
+    "Connection": "close",
+    "Cache-Control": "public, max-age=300, s-maxage=300",
+    "Last-Modified": "Thu, 10 Sep 2026 22:37:09 GMT",
+    "ETag": "sd274850_75209884",
+    "Vary": "X-Esri-Authorization",
+    "x-arcgis-upstream": "us1h03c01",
+    "Strict-Transport-Security": "max-age=63072000",
+    "X-ArcGIS-Trace-Id": "20260910T223710Z-17b6cdf98ddgclgdhC1BN1f2uc0000001ab0000000004x9t",
+    "x-esri-query-request-units": "3",
+    "x-esri-tiles-basic-query-mode": "true",
+    "x-esri-tiles-basic-query-type": "Basic",
+    "x-esri-org-request-units-per-min": "usage=10120;max=115200",
+    "X-ArcGIS-Correlation-Id": "20e11c424718144c",
+    "X-ArcGIS-Instance": "hddc33guw0000OU",
+    "Request-Context": "appId=cid-v1:c9ad63c9-c5eb-4318-96f4-984a8d346da6",
+    "Access-Control-Expose-Headers": "Request-Context",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Esri-Authorization",
+    "Access-Control-Allow-Credentials": "true",
+    "x-azure-ref": "20260910T223710Z-17b6cdf98ddgclgdhC1BN1f2uc0000001ab0000000004x9t",
+    "x-fd-int-roxy-purgeid": "0",
+    "X-Cache": "TCP_MISS",
+    "Accept-Ranges": "bytes"
+  }
+}

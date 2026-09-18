@@ -1,0 +1,730 @@
+[
+  {
+    "id": "dry",
+    "input": {
+      "time": "2020-07-15T20:00:00Z",
+      "latitude": 33.86,
+      "longitude": -112.14,
+      "temperatureC": 42,
+      "humidityPercent": 15,
+      "surfacePressureHpa": 950,
+      "wind2mMs": 2,
+      "ghiWm2": 900,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 56.4469833,
+      "naturalWetBulbC": 23.1652775,
+      "psychrometricWetBulbC": 20.5453739,
+      "wbgtC": 31.7050915,
+      "cosineSolarZenith": 0.970911622,
+      "directFraction": 0.745148063,
+      "ghiUsedWm2": 900.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "humid",
+    "input": {
+      "time": "2020-07-15T18:00:00Z",
+      "latitude": 28.9,
+      "longitude": -81.26,
+      "temperatureC": 33,
+      "humidityPercent": 75,
+      "surfacePressureHpa": 1010,
+      "wind2mMs": 2,
+      "ghiWm2": 800,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 47.8117294,
+      "naturalWetBulbC": 30.7234745,
+      "psychrometricWetBulbC": 29.0060978,
+      "wbgtC": 34.3687782,
+      "cosineSolarZenith": 0.984533727,
+      "directFraction": 0.600532711,
+      "ghiUsedWm2": 800.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "night",
+    "input": {
+      "time": "2020-07-16T06:00:00Z",
+      "latitude": 28.9,
+      "longitude": -81.26,
+      "temperatureC": 28,
+      "humidityPercent": 90,
+      "surfacePressureHpa": 1010,
+      "wind2mMs": 1,
+      "ghiWm2": 0,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 27.5037479,
+      "naturalWetBulbC": 26.5998173,
+      "psychrometricWetBulbC": 26.6183109,
+      "wbgtC": 26.9206219,
+      "cosineSolarZenith": -0.636294305,
+      "directFraction": 0.0,
+      "ghiUsedWm2": 0.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "wind-0",
+    "input": {
+      "time": "2020-07-15T20:00:00Z",
+      "latitude": 33.86,
+      "longitude": -112.14,
+      "temperatureC": 42,
+      "humidityPercent": 15,
+      "surfacePressureHpa": 950,
+      "wind2mMs": 0,
+      "ghiWm2": 900,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 71.6959763,
+      "naturalWetBulbC": 30.8602848,
+      "psychrometricWetBulbC": 20.5453739,
+      "wbgtC": 40.1413956,
+      "cosineSolarZenith": 0.970911622,
+      "directFraction": 0.745148063,
+      "ghiUsedWm2": 900.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "wind-0.12",
+    "input": {
+      "time": "2020-07-15T20:00:00Z",
+      "latitude": 33.86,
+      "longitude": -112.14,
+      "temperatureC": 42,
+      "humidityPercent": 15,
+      "surfacePressureHpa": 950,
+      "wind2mMs": 0.12,
+      "ghiWm2": 900,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 71.6959763,
+      "naturalWetBulbC": 30.8602848,
+      "psychrometricWetBulbC": 20.5453739,
+      "wbgtC": 40.1413956,
+      "cosineSolarZenith": 0.970911622,
+      "directFraction": 0.745148063,
+      "ghiUsedWm2": 900.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "wind-0.13",
+    "input": {
+      "time": "2020-07-15T20:00:00Z",
+      "latitude": 33.86,
+      "longitude": -112.14,
+      "temperatureC": 42,
+      "humidityPercent": 15,
+      "surfacePressureHpa": 950,
+      "wind2mMs": 0.13,
+      "ghiWm2": 900,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 71.6959763,
+      "naturalWetBulbC": 30.8602848,
+      "psychrometricWetBulbC": 20.5453739,
+      "wbgtC": 40.1413956,
+      "cosineSolarZenith": 0.970911622,
+      "directFraction": 0.745148063,
+      "ghiUsedWm2": 900.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "wind-0.14",
+    "input": {
+      "time": "2020-07-15T20:00:00Z",
+      "latitude": 33.86,
+      "longitude": -112.14,
+      "temperatureC": 42,
+      "humidityPercent": 15,
+      "surfacePressureHpa": 950,
+      "wind2mMs": 0.14,
+      "ghiWm2": 900,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 71.3108444,
+      "naturalWetBulbC": 30.5345402,
+      "psychrometricWetBulbC": 20.5453739,
+      "wbgtC": 39.8363457,
+      "cosineSolarZenith": 0.970911622,
+      "directFraction": 0.745148063,
+      "ghiUsedWm2": 900.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "pressure-1013.25",
+    "input": {
+      "time": "2020-07-15T20:00:00Z",
+      "latitude": 33.86,
+      "longitude": -112.14,
+      "temperatureC": 42,
+      "humidityPercent": 15,
+      "surfacePressureHpa": 1013.25,
+      "wind2mMs": 2,
+      "ghiWm2": 900,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 56.1186752,
+      "naturalWetBulbC": 23.5215702,
+      "psychrometricWetBulbC": 20.9240971,
+      "wbgtC": 31.888834,
+      "cosineSolarZenith": 0.970911622,
+      "directFraction": 0.745148063,
+      "ghiUsedWm2": 900.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "pressure-850",
+    "input": {
+      "time": "2020-07-15T20:00:00Z",
+      "latitude": 33.86,
+      "longitude": -112.14,
+      "temperatureC": 42,
+      "humidityPercent": 15,
+      "surfacePressureHpa": 850,
+      "wind2mMs": 2,
+      "ghiWm2": 900,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 57.0169601,
+      "naturalWetBulbC": 22.5542545,
+      "psychrometricWetBulbC": 19.9003544,
+      "wbgtC": 31.3913708,
+      "cosineSolarZenith": 0.970911622,
+      "directFraction": 0.745148063,
+      "ghiUsedWm2": 900.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "pressure-750",
+    "input": {
+      "time": "2020-07-15T20:00:00Z",
+      "latitude": 33.86,
+      "longitude": -112.14,
+      "temperatureC": 42,
+      "humidityPercent": 15,
+      "surfacePressureHpa": 750,
+      "wind2mMs": 2,
+      "ghiWm2": 900,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 57.6727219,
+      "naturalWetBulbC": 21.8810368,
+      "psychrometricWetBulbC": 19.1950626,
+      "wbgtC": 31.0512695,
+      "cosineSolarZenith": 0.970911622,
+      "directFraction": 0.745148063,
+      "ghiUsedWm2": 900.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "sunrise-11:00",
+    "input": {
+      "time": "2020-07-15T11:00:00Z",
+      "latitude": 28.9,
+      "longitude": -81.26,
+      "temperatureC": 27,
+      "humidityPercent": 90,
+      "surfacePressureHpa": 1010,
+      "wind2mMs": 1,
+      "ghiWm2": 0,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 26.4288273,
+      "naturalWetBulbC": 25.6171513,
+      "psychrometricWetBulbC": 25.6491337,
+      "wbgtC": 25.9177704,
+      "cosineSolarZenith": 0.0679699332,
+      "directFraction": 0.0,
+      "ghiUsedWm2": 0.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "sunrise-11:30",
+    "input": {
+      "time": "2020-07-15T11:30:00Z",
+      "latitude": 28.9,
+      "longitude": -81.26,
+      "temperatureC": 27,
+      "humidityPercent": 90,
+      "surfacePressureHpa": 1010,
+      "wind2mMs": 1,
+      "ghiWm2": 20,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 27.0779667,
+      "naturalWetBulbC": 25.7387638,
+      "psychrometricWetBulbC": 25.6491337,
+      "wbgtC": 26.1327286,
+      "cosineSolarZenith": 0.172383413,
+      "directFraction": 1.19896811e-07,
+      "ghiUsedWm2": 20.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "sunrise-12:00",
+    "input": {
+      "time": "2020-07-15T12:00:00Z",
+      "latitude": 28.9,
+      "longitude": -81.26,
+      "temperatureC": 27,
+      "humidityPercent": 90,
+      "surfacePressureHpa": 1010,
+      "wind2mMs": 1,
+      "ghiWm2": 100,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 29.6241398,
+      "naturalWetBulbC": 26.2067509,
+      "psychrometricWetBulbC": 25.6491337,
+      "wbgtC": 26.969553,
+      "cosineSolarZenith": 0.278295428,
+      "directFraction": 0.0320581682,
+      "ghiUsedWm2": 100.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "sunset-00:00",
+    "input": {
+      "time": "2020-07-16T00:00:00Z",
+      "latitude": 28.9,
+      "longitude": -81.26,
+      "temperatureC": 29,
+      "humidityPercent": 80,
+      "surfacePressureHpa": 1010,
+      "wind2mMs": 1,
+      "ghiWm2": 100,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 40.1311264,
+      "naturalWetBulbC": 27.5027714,
+      "psychrometricWetBulbC": 26.0849857,
+      "wbgtC": 30.1781654,
+      "cosineSolarZenith": 0.0753495917,
+      "directFraction": 0.899999976,
+      "ghiUsedWm2": 84.7569962,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "sunset-01:00",
+    "input": {
+      "time": "2020-07-16T01:00:00Z",
+      "latitude": 28.9,
+      "longitude": -81.26,
+      "temperatureC": 29,
+      "humidityPercent": 80,
+      "surfacePressureHpa": 1010,
+      "wind2mMs": 1,
+      "ghiWm2": 20,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 29.0635624,
+      "naturalWetBulbC": 26.234705,
+      "psychrometricWetBulbC": 26.0849857,
+      "wbgtC": 27.0770054,
+      "cosineSolarZenith": -0.134140909,
+      "directFraction": 0.0,
+      "ghiUsedWm2": 20.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "sunset-02:00",
+    "input": {
+      "time": "2020-07-16T02:00:00Z",
+      "latitude": 28.9,
+      "longitude": -81.26,
+      "temperatureC": 29,
+      "humidityPercent": 80,
+      "surfacePressureHpa": 1010,
+      "wind2mMs": 1,
+      "ghiWm2": 0,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 28.4137516,
+      "naturalWetBulbC": 26.1176701,
+      "psychrometricWetBulbC": 26.0849857,
+      "wbgtC": 26.8651199,
+      "cosineSolarZenith": -0.319379568,
+      "directFraction": 0.0,
+      "ghiUsedWm2": 0.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "alaska-summer",
+    "input": {
+      "time": "2020-06-21T22:00:00Z",
+      "latitude": 61.22,
+      "longitude": -149.9,
+      "temperatureC": 24,
+      "humidityPercent": 50,
+      "surfacePressureHpa": 1000,
+      "wind2mMs": 2,
+      "ghiWm2": 650,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 36.1779099,
+      "naturalWetBulbC": 19.3012943,
+      "psychrometricWetBulbC": 16.86413,
+      "wbgtC": 23.1464882,
+      "cosineSolarZenith": 0.790294588,
+      "directFraction": 0.614102542,
+      "ghiUsedWm2": 650.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "alaska-winter",
+    "input": {
+      "time": "2020-12-21T22:00:00Z",
+      "latitude": 61.22,
+      "longitude": -149.9,
+      "temperatureC": -10,
+      "humidityPercent": 80,
+      "surfacePressureHpa": 1000,
+      "wind2mMs": 2,
+      "ghiWm2": 0,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": -11.7222652,
+      "naturalWetBulbC": -11.2247982,
+      "psychrometricWetBulbC": -10.6521664,
+      "wbgtC": -11.2018118,
+      "cosineSolarZenith": 0.095926106,
+      "directFraction": 0.0,
+      "ghiUsedWm2": 0.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "hawaii",
+    "input": {
+      "time": "2020-07-15T22:00:00Z",
+      "latitude": 21.31,
+      "longitude": -157.86,
+      "temperatureC": 30,
+      "humidityPercent": 65,
+      "surfacePressureHpa": 1012,
+      "wind2mMs": 3,
+      "ghiWm2": 900,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 43.3237839,
+      "naturalWetBulbC": 26.1383305,
+      "psychrometricWetBulbC": 24.5449467,
+      "wbgtC": 29.9615879,
+      "cosineSolarZenith": 0.988328993,
+      "directFraction": 0.726221144,
+      "ghiUsedWm2": 900.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "calendar-1950-01-01T00:00:00Z",
+    "input": {
+      "time": "1950-01-01T00:00:00Z",
+      "latitude": 33.86,
+      "longitude": -112.14,
+      "temperatureC": 42,
+      "humidityPercent": 15,
+      "surfacePressureHpa": 950,
+      "wind2mMs": 2,
+      "ghiWm2": 0,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 40.3371506,
+      "naturalWetBulbC": 20.9712467,
+      "psychrometricWetBulbC": 20.5453739,
+      "wbgtC": 26.9473038,
+      "cosineSolarZenith": 0.0826022997,
+      "directFraction": 0.0,
+      "ghiUsedWm2": 0.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "calendar-1991-06-15T20:00:00Z",
+    "input": {
+      "time": "1991-06-15T20:00:00Z",
+      "latitude": 33.86,
+      "longitude": -112.14,
+      "temperatureC": 42,
+      "humidityPercent": 15,
+      "surfacePressureHpa": 950,
+      "wind2mMs": 2,
+      "ghiWm2": 0,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 40.3371506,
+      "naturalWetBulbC": 20.9712467,
+      "psychrometricWetBulbC": 20.5453739,
+      "wbgtC": 26.9473038,
+      "cosineSolarZenith": 0.976137042,
+      "directFraction": 0.0,
+      "ghiUsedWm2": 0.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "calendar-2000-02-29T12:00:00Z",
+    "input": {
+      "time": "2000-02-29T12:00:00Z",
+      "latitude": 33.86,
+      "longitude": -112.14,
+      "temperatureC": 42,
+      "humidityPercent": 15,
+      "surfacePressureHpa": 950,
+      "wind2mMs": 2,
+      "ghiWm2": 0,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 40.3371506,
+      "naturalWetBulbC": 20.9712467,
+      "psychrometricWetBulbC": 20.5453739,
+      "wbgtC": 26.9473038,
+      "cosineSolarZenith": -0.426145464,
+      "directFraction": 0.0,
+      "ghiUsedWm2": 0.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "calendar-2020-12-31T23:59:00Z",
+    "input": {
+      "time": "2020-12-31T23:59:00Z",
+      "latitude": 33.86,
+      "longitude": -112.14,
+      "temperatureC": 42,
+      "humidityPercent": 15,
+      "surfacePressureHpa": 950,
+      "wind2mMs": 2,
+      "ghiWm2": 0,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 40.3371506,
+      "naturalWetBulbC": 20.9712467,
+      "psychrometricWetBulbC": 20.5453739,
+      "wbgtC": 26.9473038,
+      "cosineSolarZenith": 0.0892871246,
+      "directFraction": 0.0,
+      "ghiUsedWm2": 0.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "calendar-2049-12-31T23:59:00Z",
+    "input": {
+      "time": "2049-12-31T23:59:00Z",
+      "latitude": 33.86,
+      "longitude": -112.14,
+      "temperatureC": 42,
+      "humidityPercent": 15,
+      "surfacePressureHpa": 950,
+      "wind2mMs": 2,
+      "ghiWm2": 0,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 40.3371506,
+      "naturalWetBulbC": 20.9712467,
+      "psychrometricWetBulbC": 20.5453739,
+      "wbgtC": 26.9473038,
+      "cosineSolarZenith": 0.0867068246,
+      "directFraction": 0.0,
+      "ghiUsedWm2": 0.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "saturated",
+    "input": {
+      "time": "2020-07-15T20:00:00Z",
+      "latitude": 33.86,
+      "longitude": -112.14,
+      "temperatureC": 30,
+      "humidityPercent": 100,
+      "surfacePressureHpa": 950,
+      "wind2mMs": 2,
+      "ghiWm2": 900,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 46.3044968,
+      "naturalWetBulbC": 31.5482121,
+      "psychrometricWetBulbC": 29.9999943,
+      "wbgtC": 34.3446465,
+      "cosineSolarZenith": 0.970911622,
+      "directFraction": 0.745148063,
+      "ghiUsedWm2": 900.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "strong-wind",
+    "input": {
+      "time": "2020-07-15T20:00:00Z",
+      "latitude": 33.86,
+      "longitude": -112.14,
+      "temperatureC": 42,
+      "humidityPercent": 15,
+      "surfacePressureHpa": 950,
+      "wind2mMs": 50,
+      "ghiWm2": 900,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 45.7304306,
+      "naturalWetBulbC": 20.9511662,
+      "psychrometricWetBulbC": 20.5453739,
+      "wbgtC": 28.0119019,
+      "cosineSolarZenith": 0.970911622,
+      "directFraction": 0.745148063,
+      "ghiUsedWm2": 900.0,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "solar-cap",
+    "input": {
+      "time": "2020-07-15T20:00:00Z",
+      "latitude": 33.86,
+      "longitude": -112.14,
+      "temperatureC": 42,
+      "humidityPercent": 15,
+      "surfacePressureHpa": 950,
+      "wind2mMs": 2,
+      "ghiWm2": 2000,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": 58.4904709,
+      "naturalWetBulbC": 23.1765079,
+      "psychrometricWetBulbC": 20.5453739,
+      "wbgtC": 32.1216507,
+      "cosineSolarZenith": 0.970911622,
+      "directFraction": 0.899999976,
+      "ghiUsedWm2": 1092.1095,
+      "originalStatus": 0
+    }
+  },
+  {
+    "id": "stress",
+    "input": {
+      "time": "2020-07-15T20:00:00Z",
+      "latitude": 33.86,
+      "longitude": -112.14,
+      "temperatureC": 60,
+      "humidityPercent": 5,
+      "surfacePressureHpa": 200,
+      "wind2mMs": 0,
+      "ghiWm2": 2000,
+      "windAssumption": "synthetic explicit 2m wind; no height conversion",
+      "radiationAssumption": "instantaneous",
+      "source": "synthetic independent C reference case"
+    },
+    "expected": {
+      "globeC": -9999.0,
+      "naturalWetBulbC": -9999.0,
+      "psychrometricWetBulbC": 13.147028,
+      "wbgtC": -9999.0,
+      "cosineSolarZenith": 0.970911622,
+      "directFraction": 0.899999976,
+      "ghiUsedWm2": 1092.1095,
+      "originalStatus": -1
+    }
+  }
+]

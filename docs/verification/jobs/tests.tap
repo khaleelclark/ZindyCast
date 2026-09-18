@@ -1,0 +1,66 @@
+TAP version 13
+# (node:689954) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: independent connections compete, recover at exact expiry, and fence all late writes
+ok 1 - independent connections compete, recover at exact expiry, and fence all late writes
+  ---
+  duration_ms: 8.990816
+  type: 'test'
+  ...
+# Subtest: progress monotonic per attempt, renew never shortens or revives expired lease
+ok 2 - progress monotonic per attempt, renew never shortens or revives expired lease
+  ---
+  duration_ms: 2.44337
+  type: 'test'
+  ...
+# Subtest: explicit bounded retry and delayed availability survive orderly restart
+ok 3 - explicit bounded retry and delayed availability survive orderly restart
+  ---
+  duration_ms: 2.944099
+  type: 'test'
+  ...
+# Subtest: expired final attempt becomes failed and restart recovers abandoned running work
+ok 4 - expired final attempt becomes failed and restart recovers abandoned running work
+  ---
+  duration_ms: 2.852194
+  type: 'test'
+  ...
+# Subtest: cancel queued/running is terminal and fences late completion
+ok 5 - cancel queued/running is terminal and fences late completion
+  ---
+  duration_ms: 3.687337
+  type: 'test'
+  ...
+# Subtest: fixed lifetime hides all expired states, clamps lease, and cleanup is bounded
+ok 6 - fixed lifetime hides all expired states, clamps lease, and cleanup is bounded
+  ---
+  duration_ms: 2.714994
+  type: 'test'
+  ...
+# Subtest: JSON, job count and combined byte limits fail atomically; duplicate id never overwrites
+ok 7 - JSON, job count and combined byte limits fail atomically; duplicate id never overwrites
+  ---
+  duration_ms: 2.922768
+  type: 'test'
+  ...
+# Subtest: configuration and backwards clock fail closed; kind filtering and input bounds
+ok 8 - configuration and backwards clock fail closed; kind filtering and input bounds
+  ---
+  duration_ms: 2.227691
+  type: 'test'
+  ...
+# Subtest: busy writer fails within configured timeout without changing job
+ok 9 - busy writer fails within configured timeout without changing job
+  ---
+  duration_ms: 22.932973
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 359.038123

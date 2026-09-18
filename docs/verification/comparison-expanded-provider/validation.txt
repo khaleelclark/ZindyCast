@@ -1,0 +1,1 @@
+PASS retained ERA5 response: 24 contiguous UTC hours, 11 hourly fields, 3 daily fields, exact units and range checks; no network.

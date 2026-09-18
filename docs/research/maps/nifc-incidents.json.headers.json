@@ -1,0 +1,28 @@
+{
+  "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_Current/FeatureServer/0?f=pjson",
+  "status": 200,
+  "headers": {
+    "Date": "Thu, 10 Sep 2026 22:36:18 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "43501",
+    "Connection": "close",
+    "Cache-Control": "public, max-age=300, s-maxage=300",
+    "Last-Modified": "Thu, 10 Sep 2026 22:33:23 GMT",
+    "ETag": "2022463996",
+    "Vary": "X-Esri-Authorization",
+    "x-arcgis-upstream": "us1h03c01",
+    "Strict-Transport-Security": "max-age=63072000",
+    "X-ArcGIS-Trace-Id": "20260910T223618Z-r1f96b76469zhcjlhC1BL1qacg0000001kwg000000000rbn",
+    "X-ArcGIS-Correlation-Id": "a2185ddb90a74484",
+    "X-ArcGIS-Instance": "hddc33guw0000P6",
+    "Request-Context": "appId=cid-v1:c9ad63c9-c5eb-4318-96f4-984a8d346da6",
+    "Access-Control-Expose-Headers": "Request-Context",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Esri-Authorization",
+    "Access-Control-Allow-Credentials": "true",
+    "x-azure-ref": "20260910T223618Z-r1f96b76469zhcjlhC1BL1qacg0000001kwg000000000rbn",
+    "x-fd-int-roxy-purgeid": "0",
+    "X-Cache": "TCP_MISS",
+    "Accept-Ranges": "bytes"
+  }
+}

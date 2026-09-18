@@ -1,0 +1,21 @@
+{
+  "time": "2026-09-11T01:16:52.958Z",
+  "browser": "152.0.7977.75",
+  "results": [
+    "actual service worker controls reloaded page",
+    "offline shell navigation reload and unit preference persistence",
+    "actual Cache Storage contains no API entries",
+    "online reload recovery"
+  ],
+  "cachedPaths": [
+    "/manifest.webmanifest",
+    "/icon.svg",
+    "/icon-maskable.svg",
+    "/static/js/lib-react.899acfa937.js",
+    "/static/js/638.d11f92ee6d.js",
+    "/static/js/index.c89e5b9d5d.js",
+    "/static/css/index.040fc966a9.css",
+    "/"
+  ],
+  "limits": "Desktop Chrome at localhost; physical installation, iOS icons, push and multi-release update still require checks."
+}

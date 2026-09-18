@@ -1,0 +1,31 @@
+{
+  "requests": [
+    {
+      "url": "https://api.open-meteo.com/v1/forecast?latitude=21.31&longitude=-157.86&hourly=temperature_2m%2Capparent_temperature%2Crelative_humidity_2m%2Cprecipitation%2Cprecipitation_probability%2Cwind_speed_10m%2Cwind_gusts_10m%2Cwind_direction_10m%2Cweather_code%2Cwet_bulb_temperature_2m%2Cdew_point_2m%2Csurface_pressure%2Ccloud_cover%2Cvisibility%2Cuv_index%2Cshortwave_radiation_instant%2Cshortwave_radiation&forecast_days=14&timezone=GMT&timeformat=unixtime&temperature_unit=celsius&wind_speed_unit=ms&precipitation_unit=mm",
+      "startedAt": "2026-09-11T01:57:12.565Z",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "contentLength": ""
+    }
+  ],
+  "completedAt": "2026-09-11T01:57:13.445Z",
+  "provenance": {
+    "provider": "Open-Meteo",
+    "dataset": "Forecast API (best match; constituent models not supplied)",
+    "classification": "modeled",
+    "retrievedAt": "2026-09-11T01:57:13.425Z",
+    "sourceIssuedAt": null,
+    "sourceCoordinates": {
+      "latitude": 21.335676,
+      "longitude": -157.88991
+    },
+    "attribution": "Weather data by Open-Meteo (https://open-meteo.com/), CC BY 4.0"
+  },
+  "hours": 336,
+  "missingFields": [],
+  "success": 336,
+  "unavailable": 0,
+  "serializedBytes": 601423,
+  "reasons": [],
+  "note": "Normalized live provider result, not raw upstream; bounded availability evidence, not observational accuracy or browser acceptance."
+}

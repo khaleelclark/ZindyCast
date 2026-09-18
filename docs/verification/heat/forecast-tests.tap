@@ -1,0 +1,250 @@
+TAP version 13
+# Subtest: FAO conversion, raw inputs, geometry and separate components survive the REST contract
+ok 1 - FAO conversion, raw inputs, geometry and separate components survive the REST contract
+  ---
+  duration_ms: 9.958789
+  type: 'test'
+  ...
+# Subtest: calm night retains legitimate zeros and the solver floor
+ok 2 - calm night retains legitimate zeros and the solver floor
+  ---
+  duration_ms: 0.495609
+  type: 'test'
+  ...
+# Subtest: missing inputs never use mean GHI or ordinary wet bulb as substitutes
+ok 3 - missing inputs never use mean GHI or ordinary wet bulb as substitutes
+  ---
+  duration_ms: 0.672454
+  type: 'test'
+  ...
+# Subtest: invalid dates, unsupported years/domain and malformed values fail explicitly
+ok 4 - invalid dates, unsupported years/domain and malformed values fail explicitly
+  ---
+  duration_ms: 0.795426
+  type: 'test'
+  ...
+# Subtest: adapter preserves independent C oracle horizon, cap, domain and failure diagnostics
+ok 5 - adapter preserves independent C oracle horizon, cap, domain and failure diagnostics
+  ---
+  duration_ms: 5.165762
+  type: 'test'
+  ...
+# Subtest: independent C oracle: dry
+ok 6 - independent C oracle: dry
+  ---
+  duration_ms: 2.813979
+  type: 'test'
+  ...
+# Subtest: independent C oracle: humid
+ok 7 - independent C oracle: humid
+  ---
+  duration_ms: 0.33758
+  type: 'test'
+  ...
+# Subtest: independent C oracle: night
+ok 8 - independent C oracle: night
+  ---
+  duration_ms: 0.974144
+  type: 'test'
+  ...
+# Subtest: independent C oracle: wind-0
+ok 9 - independent C oracle: wind-0
+  ---
+  duration_ms: 0.356666
+  type: 'test'
+  ...
+# Subtest: independent C oracle: wind-0.12
+ok 10 - independent C oracle: wind-0.12
+  ---
+  duration_ms: 0.218514
+  type: 'test'
+  ...
+# Subtest: independent C oracle: wind-0.13
+ok 11 - independent C oracle: wind-0.13
+  ---
+  duration_ms: 0.17459
+  type: 'test'
+  ...
+# Subtest: independent C oracle: wind-0.14
+ok 12 - independent C oracle: wind-0.14
+  ---
+  duration_ms: 0.29593
+  type: 'test'
+  ...
+# Subtest: independent C oracle: pressure-1013.25
+ok 13 - independent C oracle: pressure-1013.25
+  ---
+  duration_ms: 0.186232
+  type: 'test'
+  ...
+# Subtest: independent C oracle: pressure-850
+ok 14 - independent C oracle: pressure-850
+  ---
+  duration_ms: 0.561694
+  type: 'test'
+  ...
+# Subtest: independent C oracle: pressure-750
+ok 15 - independent C oracle: pressure-750
+  ---
+  duration_ms: 0.472244
+  type: 'test'
+  ...
+# Subtest: independent C oracle: sunrise-11:00
+ok 16 - independent C oracle: sunrise-11:00
+  ---
+  duration_ms: 0.14778
+  type: 'test'
+  ...
+# Subtest: independent C oracle: sunrise-11:30
+ok 17 - independent C oracle: sunrise-11:30
+  ---
+  duration_ms: 0.127982
+  type: 'test'
+  ...
+# Subtest: independent C oracle: sunrise-12:00
+ok 18 - independent C oracle: sunrise-12:00
+  ---
+  duration_ms: 0.123664
+  type: 'test'
+  ...
+# Subtest: independent C oracle: sunset-00:00
+ok 19 - independent C oracle: sunset-00:00
+  ---
+  duration_ms: 0.12142
+  type: 'test'
+  ...
+# Subtest: independent C oracle: sunset-01:00
+ok 20 - independent C oracle: sunset-01:00
+  ---
+  duration_ms: 0.111551
+  type: 'test'
+  ...
+# Subtest: independent C oracle: sunset-02:00
+ok 21 - independent C oracle: sunset-02:00
+  ---
+  duration_ms: 0.110469
+  type: 'test'
+  ...
+# Subtest: independent C oracle: alaska-summer
+ok 22 - independent C oracle: alaska-summer
+  ---
+  duration_ms: 0.132351
+  type: 'test'
+  ...
+# Subtest: independent C oracle: alaska-winter
+ok 23 - independent C oracle: alaska-winter
+  ---
+  duration_ms: 0.162538
+  type: 'test'
+  ...
+# Subtest: independent C oracle: hawaii
+ok 24 - independent C oracle: hawaii
+  ---
+  duration_ms: 0.180993
+  type: 'test'
+  ...
+# Subtest: independent C oracle: calendar-1950-01-01T00:00:00Z
+ok 25 - independent C oracle: calendar-1950-01-01T00:00:00Z
+  ---
+  duration_ms: 0.177696
+  type: 'test'
+  ...
+# Subtest: independent C oracle: calendar-1991-06-15T20:00:00Z
+ok 26 - independent C oracle: calendar-1991-06-15T20:00:00Z
+  ---
+  duration_ms: 0.180973
+  type: 'test'
+  ...
+# Subtest: independent C oracle: calendar-2000-02-29T12:00:00Z
+ok 27 - independent C oracle: calendar-2000-02-29T12:00:00Z
+  ---
+  duration_ms: 0.166495
+  type: 'test'
+  ...
+# Subtest: independent C oracle: calendar-2020-12-31T23:59:00Z
+ok 28 - independent C oracle: calendar-2020-12-31T23:59:00Z
+  ---
+  duration_ms: 0.170883
+  type: 'test'
+  ...
+# Subtest: independent C oracle: calendar-2049-12-31T23:59:00Z
+ok 29 - independent C oracle: calendar-2049-12-31T23:59:00Z
+  ---
+  duration_ms: 0.228693
+  type: 'test'
+  ...
+# Subtest: independent C oracle: saturated
+ok 30 - independent C oracle: saturated
+  ---
+  duration_ms: 0.159702
+  type: 'test'
+  ...
+# Subtest: independent C oracle: strong-wind
+ok 31 - independent C oracle: strong-wind
+  ---
+  duration_ms: 0.184209
+  type: 'test'
+  ...
+# Subtest: independent C oracle: solar-cap
+ok 32 - independent C oracle: solar-cap
+  ---
+  duration_ms: 0.199818
+  type: 'test'
+  ...
+# Subtest: independent C oracle: stress
+ok 33 - independent C oracle: stress
+  ---
+  duration_ms: 0.3382
+  type: 'test'
+  ...
+# Subtest: invalid, missing, unsupported and temporal inputs are explicit
+ok 34 - invalid, missing, unsupported and temporal inputs are explicit
+  ---
+  duration_ms: 0.311891
+  type: 'test'
+  ...
+# Subtest: floor, cap, extrapolation and provenance remain visible
+ok 35 - floor, cap, extrapolation and provenance remain visible
+  ---
+  duration_ms: 0.718651
+  type: 'test'
+  ...
+# Subtest: activity guidance is separate from metrics and never creates a category
+ok 36 - activity guidance is separate from metrics and never creates a category
+  ---
+  duration_ms: 0.564879
+  type: 'test'
+  ...
+# Subtest: every printed endpoint is unresolved while nearby unrounded values retain their band
+ok 37 - every printed endpoint is unresolved while nearby unrounded values retain their band
+  ---
+  duration_ms: 1.565334
+  type: 'test'
+  ...
+# Subtest: viewport clips only marker, retains true value and reference band, and positions monotonically
+ok 38 - viewport clips only marker, retains true value and reference band, and positions monotonically
+  ---
+  duration_ms: 0.492633
+  type: 'test'
+  ...
+# Subtest: wrong metrics, missing/nonfinite values and invalid domains never produce markers
+ok 39 - wrong metrics, missing/nonfinite values and invalid domains never produce markers
+  ---
+  duration_ms: 1.49412
+  type: 'test'
+  ...
+# Subtest: source description is immutable and keeps categorical notifications disabled
+ok 40 - source description is immutable and keeps categorical notifications disabled
+  ---
+  duration_ms: 0.136358
+  type: 'test'
+  ...
+1..40
+# tests 40
+# suites 0
+# pass 40
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 456.35222

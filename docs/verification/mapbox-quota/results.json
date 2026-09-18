@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "case": "no key",
+      "admissions": 0,
+      "mapbox": 0
+    },
+    {
+      "case": "standard preference",
+      "admissions": 0,
+      "mapbox": 0
+    },
+    {
+      "case": "limit",
+      "mapbox": 0,
+      "initialAdmissions": 6,
+      "elapsedMs": 2081,
+      "sticky": true,
+      "retryCannotBypass": true
+    },
+    {
+      "case": "unavailable",
+      "mapbox": 0,
+      "initialAdmissions": 6,
+      "elapsedMs": 1929,
+      "sticky": true,
+      "retryCannotBypass": true
+    },
+    {
+      "case": "malformed",
+      "mapbox": 0,
+      "initialAdmissions": 6,
+      "elapsedMs": 2048,
+      "sticky": true,
+      "retryCannotBypass": true
+    },
+    {
+      "case": "broken",
+      "mapbox": 0,
+      "initialAdmissions": 6,
+      "elapsedMs": 2032,
+      "sticky": true,
+      "retryCannotBypass": true
+    },
+    {
+      "case": "timeout",
+      "mapbox": 0,
+      "initialAdmissions": 6,
+      "elapsedMs": 5786,
+      "sticky": true,
+      "retryCannotBypass": true
+    },
+    {
+      "case": "cancel during pending permit",
+      "mapbox": 0,
+      "weatherReady": true
+    },
+    {
+      "case": "shared fixture counter across two installations",
+      "successfulPermits": 8,
+      "actualMapboxFetches": 8,
+      "secondClientFetches": 0,
+      "sameCanvasCameraWeather": true,
+      "standardBypassesAdmission": true
+    }
+  ],
+  "limitations": "All network intercepted. Synthetic Mapbox tiles and shared admission fixture; retained weather. No production counter, Mapbox, NOAA, or IEM requests. Server persistence and atomicity remain lead acceptance gates."
+}

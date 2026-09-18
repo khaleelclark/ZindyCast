@@ -1,0 +1,76 @@
+TAP version 13
+# Subtest: positions actual values only; no fabricated position for stale, missing, equal or outside ranges
+ok 1 - positions actual values only; no fabricated position for stale, missing, equal or outside ranges
+  ---
+  duration_ms: 1.270286
+  type: 'test'
+  ...
+# Subtest: today range includes earlier hours, excludes adjacent local dates, and covers repeated DST hour
+ok 2 - today range includes earlier hours, excludes adjacent local dates, and covers repeated DST hour
+  ---
+  duration_ms: 20.047748
+  type: 'test'
+  ...
+# Subtest: readable exact units and truthful neutral descriptions independent of SVG
+ok 3 - readable exact units and truthful neutral descriptions independent of SVG
+  ---
+  duration_ms: 13.101874
+  type: 'test'
+  ...
+# Subtest: 85.5°F uses the same temperature color at any daily-relative position
+ok 4 - 85.5°F uses the same temperature color at any daily-relative position
+  ---
+  duration_ms: 1.178592
+  type: 'test'
+  ...
+# Subtest: station mode uses fixed numeric endpoints independently of forecast range and coverage
+ok 5 - station mode uses fixed numeric endpoints independently of forecast range and coverage
+  ---
+  duration_ms: 4.801904
+  type: 'test'
+  ...
+# Subtest: temperature colors are unit-independent and stale/missing gauges stay neutral
+ok 6 - temperature colors are unit-independent and stale/missing gauges stay neutral
+  ---
+  duration_ms: 0.874436
+  type: 'test'
+  ...
+# Subtest: selects one nearby quality-checked report and calculates feels like from its own inputs
+ok 7 - selects one nearby quality-checked report and calculates feels like from its own inputs
+  ---
+  duration_ms: 11.839984
+  type: 'test'
+  ...
+# Subtest: rejects stale, future, old, distant, and wrong-city readings
+ok 8 - rejects stale, future, old, distant, and wrong-city readings
+  ---
+  duration_ms: 4.795562
+  type: 'test'
+  ...
+# Subtest: does not fill rejected or missing station measurements from another record/station/model
+ok 9 - does not fill rejected or missing station measurements from another record/station/model
+  ---
+  duration_ms: 0.485038
+  type: 'test'
+  ...
+# Subtest: uses next nearby eligible station without splicing and excludes older reports from rejected latest
+ok 10 - uses next nearby eligible station without splicing and excludes older reports from rejected latest
+  ---
+  duration_ms: 0.534692
+  type: 'test'
+  ...
+# Subtest: headline remains available without forecast; model details cannot masquerade as observed values
+ok 11 - headline remains available without forecast; model details cannot masquerade as observed values
+  ---
+  duration_ms: 280.432574
+  type: 'test'
+  ...
+1..11
+# tests 11
+# suites 0
+# pass 11
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2497.637678

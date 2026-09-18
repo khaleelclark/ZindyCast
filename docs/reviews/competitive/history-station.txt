@@ -1,0 +1,47 @@
+Skip to weather
+◒
+ZindyCast
+Weather beyond temperature
+°F
+°C
+Today
+Maps
+History
+Compare
+Settings
+Search cities
+Search cities
+Search cities
+⌖ Use my location
+Austin
+Texas
+Austin, Travis, Texas, United States
+★ Saved · remove
+History source
+Modeled reanalysis · city coordinates
+Station daily summaries · explicit station ID
+
+Station selection is independent of the selected city. No nearest station is chosen or associated automatically.
+
+EXPLORE PAST WEATHER · NOAA STATION DAILY SUMMARIES
+
+Station history
+
+US GHCN-Daily station ID · 1–366 source dates
+
+Observation time & accumulation intervals unknown. Station metadata not retrieved.
+
+Station selection & date limitations
+US GHCN-Daily station ID
+Start source date
+End source date
+Load station / retry
+
+Enter an 11-character US GHCN-Daily station ID and 1–366 valid inclusive source calendar dates, no later than today.
+
+Weather / geocoding: Open-Meteo
+Location data: GeoNames
+WBGT software notice
+ZindyCast
+A clearer picture of your weather.
+Forecast estimates · no safe-exposure countdowns

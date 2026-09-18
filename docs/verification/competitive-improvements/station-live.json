@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-11T08:17:29.939Z",
+  "candidateSelection": true,
+  "noAutomaticStationHistory": true,
+  "csvBytes": 23983,
+  "noExportRequest": true,
+  "requests": [
+    "/api/v1/locations",
+    "/api/v1/stations/nearby",
+    "/api/v1/locations",
+    "/api/v1/forecast",
+    "/api/v1/history"
+  ],
+  "errors": []
+}

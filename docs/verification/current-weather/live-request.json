@@ -1,0 +1,16 @@
+{
+  "url": "https://api.open-meteo.com/v1/forecast?latitude=28.858&longitude=-81.17&current=temperature_2m%2Capparent_temperature%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_direction_10m%2Cweather_code%2Cis_day%2Ccloud_cover&timezone=GMT&timeformat=unixtime&temperature_unit=celsius&wind_speed_unit=ms",
+  "startedAt": "2026-09-12T20:09:05.480Z",
+  "receivedAt": "2026-09-12T20:09:06.358Z",
+  "durationMs": 874.2860949999999,
+  "status": 200,
+  "headers": {
+    "connection": "keep-alive",
+    "content-encoding": "deflate",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Sat, 12 Sep 2026 20:09:06 GMT",
+    "transfer-encoding": "chunked"
+  },
+  "requests": 1,
+  "weightedUnits": 1
+}

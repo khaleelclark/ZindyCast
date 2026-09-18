@@ -1,0 +1,25 @@
+.comparison-visuals { min-width: 0; margin: 1.5rem 0; }
+.comparison-visual-heading { display: flex; align-items: end; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+.comparison-visual-heading h2 { margin: .25rem 0; }
+.comparison-visual-heading p { margin: .35rem 0; }
+.comparison-visual-heading label { display: grid; gap: .35rem; font-size: .85rem; font-weight: 650; }
+.comparison-coverage { padding: .8rem 0; border-bottom: 1px solid #c7d3d8; font-size: .85rem; line-height: 1.5; }
+.comparison-mean-chart { min-width: 0; margin: 1rem 0; }
+.comparison-mean-chart figcaption { font-weight: 650; }
+.comparison-mean-chart p { margin: .25rem 0; font-size: .8rem; }
+.comparison-city-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,190px),1fr)); gap: 0; border-top: 1px solid #c7d3d8; }
+.comparison-city-summary { min-width: 0; padding: 1rem; border-bottom: 1px solid #c7d3d8; border-right: 1px solid #c7d3d8; }
+.comparison-city-summary h3 { display: flex; align-items: baseline; gap: .5rem; min-height: 3.5em; margin: 0 0 .6rem; overflow-wrap: anywhere; font-size: .95rem; }
+.comparison-city-number { display: inline-grid; place-items: center; flex: 0 0 1.65rem; height: 1.65rem; border-radius: 50%; background: var(--comparison-city-color); color: white; font-size: .8rem; }
+.comparison-city-value { margin: .5rem 0 .85rem; color: var(--comparison-city-color); font-size: clamp(1.5rem,2.8vw,2.1rem); font-weight: 700; font-variant-numeric: tabular-nums; }
+.comparison-city-value small { display: block; color: #4b616b; font-size: .75rem; font-weight: 400; }
+.comparison-city-summary dl { display: grid; gap: .35rem; margin: 0; font-size: .85rem; font-variant-numeric: tabular-nums; }
+.comparison-city-summary dl div { display: flex; justify-content: space-between; gap: .5rem; }
+.comparison-city-summary dd { margin: 0; }
+.comparison-city-coverage, .comparison-rain-note { font-size: .75rem; line-height: 1.5; margin: .8rem 0 0; }
+@media (max-width: 600px) {
+  .comparison-visual-heading { display: grid; }
+  .comparison-city-grid { grid-template-columns: minmax(0,1fr); }
+  .comparison-city-summary { padding: 1rem 0; border-right: 0; }
+  .comparison-city-summary h3 { min-height: 0; }
+}

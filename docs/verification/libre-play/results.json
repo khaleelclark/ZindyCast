@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "mobile": false,
+      "future": false,
+      "frames": [
+        1789232784,
+        1789235184,
+        1789236984,
+        1789239384
+      ],
+      "warmExtraGET": 0,
+      "requests": 24
+    },
+    {
+      "mobile": false,
+      "future": true,
+      "frames": [
+        1789239684,
+        1789240884,
+        1789241784,
+        1789242984
+      ],
+      "warmExtraGET": 0,
+      "requests": 24
+    },
+    {
+      "mobile": true,
+      "future": false,
+      "frames": [
+        1789232784,
+        1789233984,
+        1789235184,
+        1789236984,
+        1789238184,
+        1789239384
+      ],
+      "warmExtraGET": 0,
+      "requests": 20
+    },
+    {
+      "mobile": true,
+      "future": true,
+      "frames": [
+        1789239684,
+        1789240284,
+        1789240884,
+        1789241784,
+        1789242384,
+        1789242984
+      ],
+      "warmExtraGET": 0,
+      "requests": 20
+    }
+  ]
+}

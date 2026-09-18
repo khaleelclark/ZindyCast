@@ -1,0 +1,122 @@
+{
+  "query": {
+    "latitude": 21.3069,
+    "longitude": -157.8583
+  },
+  "candidates": [
+    {
+      "id": "USC00510211",
+      "name": "BERETANIA PUMP STN 705",
+      "coordinates": {
+        "latitude": 21.3061,
+        "longitude": -157.8531
+      },
+      "elevationM": 6.1,
+      "distanceKm": 0.5459881052684534
+    },
+    {
+      "id": "USC00510177",
+      "name": "ALOHA TWR 704.8",
+      "coordinates": {
+        "latitude": 21.3039,
+        "longitude": -157.8625
+      },
+      "elevationM": 42.7,
+      "distanceKm": 0.5482626047139382
+    },
+    {
+      "id": "USC00514617",
+      "name": "KINAU STREET",
+      "coordinates": {
+        "latitude": 21.3,
+        "longitude": -157.85
+      },
+      "elevationM": 15.2,
+      "distanceKm": 1.1523950370999732
+    },
+    {
+      "id": "USC00518808",
+      "name": "US NAVAL STN",
+      "coordinates": {
+        "latitude": 21.3,
+        "longitude": -157.8667
+      },
+      "elevationM": 3,
+      "distanceKm": 1.1601453761883307
+    },
+    {
+      "id": "USC00518316",
+      "name": "PUNCHBOWL CRATER 709",
+      "coordinates": {
+        "latitude": 21.3103,
+        "longitude": -157.8458
+      },
+      "elevationM": 103,
+      "distanceKm": 1.3489769044016746
+    },
+    {
+      "id": "USW00022522",
+      "name": "HONOLULU SUBSTN 407",
+      "coordinates": {
+        "latitude": 21.3167,
+        "longitude": -157.8667
+      },
+      "elevationM": 4,
+      "distanceKm": 1.394508810941575
+    },
+    {
+      "id": "USC00516141",
+      "name": "MARYKNOLL SCHOOL 707.4",
+      "coordinates": {
+        "latitude": 21.3014,
+        "longitude": -157.8336
+      },
+      "elevationM": 51.2,
+      "distanceKm": 2.6309006819662053
+    },
+    {
+      "id": "USC00512146",
+      "name": "H SP A EXP STN 707",
+      "coordinates": {
+        "latitude": 21.3,
+        "longitude": -157.8333
+      },
+      "elevationM": 14.9,
+      "distanceKm": 2.7011782812919884
+    },
+    {
+      "id": "USC00510397",
+      "name": "COLLEGE HILLS",
+      "coordinates": {
+        "latitude": 21.3167,
+        "longitude": -157.8333
+      },
+      "elevationM": 53.3,
+      "distanceKm": 2.8096984172988555
+    },
+    {
+      "id": "USC00512225",
+      "name": "INSANE ASYLUM",
+      "coordinates": {
+        "latitude": 21.3333,
+        "longitude": -157.8667
+      },
+      "elevationM": 9.1,
+      "distanceKm": 3.061785656142649
+    }
+  ],
+  "radiusKm": 150,
+  "limit": 10,
+  "countryScope": "US",
+  "ordering": "distance_then_id",
+  "metadataRetrievedAt": "2026-09-11T08:15:48.819Z",
+  "sourceUrl": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-stations.txt",
+  "provider": "NOAA NCEI",
+  "dataset": "GHCN-Daily station metadata",
+  "adapterVersion": "ghcnd-discovery-v1",
+  "sourceUpdatedAt": null,
+  "completeness": "not_assessed",
+  "timeHistory": "not_assessed",
+  "eligibility": "not_assessed",
+  "proximityMeaning": "not_a_scientific_recommendation"
+}

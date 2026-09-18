@@ -1,0 +1,5 @@
+# Reload page position — September 12, 2026
+
+Reload-only startup handling disables automatic scroll restoration, removes the prior fragment with replaceState (preserving path/query/history state), and resets scroll immediately and on first pageshow. Daily/hourly links remain normal in-page navigation. No resets on forecast arrival, clock ticks, disclosures or background updates.
+
+Typecheck, production build and three dashboard node:test tests pass. Chrome fixture-only tests/browser/reload-position.mjs passes at 1440×1000 and 390×844: Daily link scrolls down, reload strips #daily and stays at zero after forecast arrives, plain scrolled reload stays at zero, and Daily links still work afterward. The actual service-worker update migration audit also passes with added #daily/top assertions across update-button reloads, retaining preferences and offline shell functionality. No live weather calls or physical-device claims. Existing MapLibre build warning remains. Published through existing local web build.

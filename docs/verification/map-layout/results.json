@@ -1,0 +1,53 @@
+{
+  "measurements": [
+    {
+      "width": 1280,
+      "open": false,
+      "cardBottom": 1506.203125,
+      "lastBottom": 1489.203125,
+      "nextTop": 1522.203125,
+      "viewport": 1280
+    },
+    {
+      "width": 1280,
+      "open": true,
+      "cardBottom": 1759.375,
+      "lastBottom": 1742.375,
+      "nextTop": 1775.375,
+      "viewport": 1280
+    },
+    {
+      "width": 800,
+      "open": false,
+      "cardBottom": 1649.828125,
+      "lastBottom": 1632.828125,
+      "nextTop": 1665.828125,
+      "viewport": 800
+    },
+    {
+      "width": 800,
+      "open": true,
+      "cardBottom": 1799.828125,
+      "lastBottom": 1782.828125,
+      "nextTop": 1815.828125,
+      "viewport": 800
+    },
+    {
+      "width": 390,
+      "open": false,
+      "cardBottom": 2025.46875,
+      "lastBottom": 2009.46875,
+      "nextTop": 4019.28125,
+      "viewport": 390
+    },
+    {
+      "width": 390,
+      "open": true,
+      "cardBottom": 2175.46875,
+      "lastBottom": 2159.46875,
+      "nextTop": 4169.28125,
+      "viewport": 390
+    }
+  ],
+  "errors": []
+}

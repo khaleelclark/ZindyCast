@@ -1,0 +1,12 @@
+{
+  "name": "@zindycast/providers",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "exports": "./src/index.ts",
+  "dependencies": {
+    "@zindycast/contracts": "0.1.0",
+    "zod": "4.6.2",
+    "@zindycast/heat": "0.1.0"
+  }
+}

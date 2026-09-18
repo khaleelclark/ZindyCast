@@ -1,0 +1,141 @@
+TAP version 13
+# (node:3217454) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: strict current route uses fixed three-hour/three-station contract and coalesces a five-call reservation
+ok 1 - strict current route uses fixed three-hour/three-station contract and coalesces a five-call reservation
+  ---
+  duration_ms: 133.984196
+  type: 'test'
+  ...
+# (node:3217454) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time
+# Subtest: invalid, duplicate, blank and unknown query values never call the observation provider
+ok 2 - invalid, duplicate, blank and unknown query values never call the observation provider
+  ---
+  duration_ms: 7.152164
+  type: 'test'
+  ...
+# Subtest: stale cache is explicit during outage, but wrong geography is never a fallback
+ok 3 - stale cache is explicit during outage, but wrong geography is never a fallback
+  ---
+  duration_ms: 15.911764
+  type: 'test'
+  ...
+# Subtest: malformed quality metadata and future retrievals fail at the API binding
+ok 4 - malformed quality metadata and future retrievals fail at the API binding
+  ---
+  duration_ms: 7.950116
+  type: 'test'
+  ...
+# Subtest: NWS quota denial happens before fetch; provider rate and no-data errors map without private details
+ok 5 - NWS quota denial happens before fetch; provider rate and no-data errors map without private details
+  ---
+  duration_ms: 9.701292
+  type: 'test'
+  ...
+# Subtest: selects one nearby quality-checked report and calculates feels like from its own inputs
+ok 6 - selects one nearby quality-checked report and calculates feels like from its own inputs
+  ---
+  duration_ms: 14.676504
+  type: 'test'
+  ...
+# Subtest: rejects stale, future, old, distant, and wrong-city readings
+ok 7 - rejects stale, future, old, distant, and wrong-city readings
+  ---
+  duration_ms: 4.623266
+  type: 'test'
+  ...
+# Subtest: does not fill rejected or missing station measurements from another record/station/model
+ok 8 - does not fill rejected or missing station measurements from another record/station/model
+  ---
+  duration_ms: 0.492393
+  type: 'test'
+  ...
+# Subtest: uses next nearby eligible station without splicing and excludes older reports from rejected latest
+ok 9 - uses next nearby eligible station without splicing and excludes older reports from rejected latest
+  ---
+  duration_ms: 0.508042
+  type: 'test'
+  ...
+# Subtest: headline remains available without forecast; model details cannot masquerade as observed values
+ok 10 - headline remains available without forecast; model details cannot masquerade as observed values
+  ---
+  duration_ms: 274.148566
+  type: 'test'
+  ...
+# (node:3217456) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: bounded nearby histories retain station identity, distance, elevation, time, missingness and exact MADIS flags
+ok 11 - bounded nearby histories retain station identity, distance, elevation, time, missingness and exact MADIS flags
+  ---
+  duration_ms: 82.310177
+  type: 'test'
+  ...
+# Subtest: historical records remain per-station, newest-first, bounded to since/until and never splice candidates
+ok 12 - historical records remain per-station, newest-first, bounded to since/until and never splice candidates
+  ---
+  duration_ms: 10.238168
+  type: 'test'
+  ...
+# Subtest: NWS km/h wind normalizes to SI while retaining quality flags, nulls and calm zero
+ok 13 - NWS km/h wind normalizes to SI while retaining quality flags, nulls and calm zero
+  ---
+  duration_ms: 9.154286
+  type: 'test'
+  ...
+# Subtest: empty station or observation collections are explicit successful no-published-record states
+ok 14 - empty station or observation collections are explicit successful no-published-record states
+  ---
+  duration_ms: 2.628147
+  type: 'test'
+  ...
+# Subtest: documented optional feature IDs use canonical station/time endpoints without changing data identity
+ok 15 - documented optional feature IDs use canonical station/time endpoints without changing data identity
+  ---
+  duration_ms: 2.788651
+  type: 'test'
+  ...
+# Subtest: a paginated first page stays explicitly partial without additional requests or out-of-window rows
+ok 16 - a paginated first page stays explicitly partial without additional requests or out-of-window rows
+  ---
+  duration_ms: 2.04881
+  type: 'test'
+  ...
+# Subtest: malformed units, flags, linked origins, geography, identity, duplicates and oversized history fail closed
+ok 17 - malformed units, flags, linked origins, geography, identity, duplicates and oversized history fail closed
+  ---
+  duration_ms: 27.42641
+  type: 'test'
+  ...
+# Subtest: invalid inputs never fetch; seven-day bound is inclusive
+ok 18 - invalid inputs never fetch; seven-day bound is inclusive
+  ---
+  duration_ms: 1.515209
+  type: 'test'
+  ...
+# Subtest: HTTP limits preserve Retry-After while other failures and content errors are sanitized
+ok 19 - HTTP limits preserve Retry-After while other failures and content errors are sanitized
+  ---
+  duration_ms: 1.622432
+  type: 'test'
+  ...
+# Subtest: caller cancellation is preserved and the ten-second deadline includes response streaming
+ok 20 - caller cancellation is preserved and the ten-second deadline includes response streaming
+  ---
+  duration_ms: 2.891285
+  type: 'test'
+  ...
+# Subtest: precise city and GPS coordinates use canonical NWS point precision without changing requested identity
+ok 21 - precise city and GPS coordinates use canonical NWS point precision without changing requested identity
+  ---
+  duration_ms: 2.082665
+  type: 'test'
+  ...
+1..21
+# tests 21
+# suites 0
+# pass 21
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2442.33814

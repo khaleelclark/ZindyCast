@@ -1,0 +1,32 @@
+{
+  "url": "https://nowcoast.noaa.gov/geoserver/ows?service=WMS&version=1.1.1&request=GetStyles&layers=weather_radar:conus_base_reflectivity_mosaic,weather_radar:alaska_base_reflectivity_mosaic,weather_radar:hawaii_base_reflectivity_mosaic",
+  "retrieved_at": "2026-09-10T23:37:39.834987+00:00",
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/vnd.ogc.sld+xml",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Date": "Thu, 10 Sep 2026 23:37:40 GMT",
+    "Access-Control-Allow-Headers": "DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range",
+    "Access-Control-Expose-Headers": "Content-Length,Content-Range",
+    "Server": "nginx/1.30.0",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Content-Security-Policy": "base-uri 'self'; default-src 'none'; child-src 'self'; connect-src 'self'; font-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; form-action 'self'; frame-ancestors 'self';",
+    "X-Control-flow-delay-ms": "0",
+    "Content-Disposition": "inline; filename=geoserver-GetStyles.application",
+    "Expires": "Thu, 10 Sep 2026 23:47:40 GMT",
+    "Cache-Control": "max-age=600",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    "X-Cache": "Miss from cloudfront",
+    "Via": "1.1 cfe3b9acd1b9f18658471d185f06bf9c.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "MIA3-P4",
+    "X-Amz-Cf-Id": "m_tJA1_-1RVMxibSWNtiERgv9gb96btOxxEgCDZ89shC2PEeDSC6ew==",
+    "X-XSS-Protection": "1; mode=block",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Strict-Transport-Security": "max-age=31536000"
+  },
+  "final_url": "https://nowcoast.noaa.gov/geoserver/ows?service=WMS&version=1.1.1&request=GetStyles&layers=weather_radar:conus_base_reflectivity_mosaic,weather_radar:alaska_base_reflectivity_mosaic,weather_radar:hawaii_base_reflectivity_mosaic",
+  "bytes": 24248
+}

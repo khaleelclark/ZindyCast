@@ -1,0 +1,27 @@
+# Forecast WBGT adapter verification
+
+September 11, 2026. Implements the lead-accepted [numerical input policy](../../decisions/tulsa-wbgt.md#lead-integration-decision), using the unchanged independently checked [Liljegren port](README.md). Older verification documents retain their historical integration gates; this document records the newly accepted short-grass adapter only.
+
+`deriveForecastWbgt(hour, returnedCoordinates, source): WbgtEstimate` is exported from `@zindycast/heat`, together with the Tulsa informational scale/position helper. The hour accepts nullable temperatureC, humidityPercent, surfacePressureHpa and windSpeedMs (10 m), optional nullable shortwaveInstantWm2 and shortwaveMeanWm2, and canonical UTC time. It never fetches or mutates inputs. Units and co-timed series identity must already be validated by the provider. Pass returned series coordinates for geometry and a meaningful provider/dataset derivation identity as source; retain requested city separately.
+
+Wind is converted with exact `4.87 / Math.log(67.8 * 10 - 5.42)` (0.7479510751679441), sourced to [FAO-56 chapter 3 equation 47](https://www.fao.org/4/X0490E/x0490e07.htm#wind%20speed). Raw 10 m and converted 2 m values are retained separately from the solver's 0.13 m/s floor. This is modeled outdoor short-grass reference exposure, not a local shelter/stability estimate. Policy version is `liljegren-1.1-zindy-ts-1+fao56-eq47-10m+om-instant-v1`.
+
+Missing required fields return unavailable with their names; nonfinite/invalid values and unsupported domain/year return the solver reason with its status prefix. No missing instant GHI fallback exists: the optional preceding-hour mean is deliberately ignored by calculation and must remain on the enclosing Hour. Legitimate zero wind and nighttime GHI survive. Empty source or invalid geometry/time fails. Any failed solver component yields null WBGT and preserves all component diagnostics, including converged components. Success preserves source/time/geometry, all solver warnings, adjustments, iterations, version and reference revision. No new risk labels, thresholds, safe times, ordinary-wet-bulb substitution, activity dependence or notification behavior exist.
+
+Shared schema compatibility: all test outputs validate with WbgtEstimateSchema, including missing/invalid/failure cases. No contract edit is required. Diagnostics are absent for invalid/missing inputs because the solver never ran; the original Hour remains the raw meteorological record. The enclosing forecast owns retrieval/freshness, requested location, preceding-hour mean provenance, per-field units and current-hour selection. This helper does not itself establish that an arbitrary source string represents a valid Open-Meteo instantaneous field.
+
+## Checks
+
+`node --import tsx --test packages/heat/src/*.test.ts`: **40/40 pass**, full output in [forecast-tests.tap](forecast-tests.tap). Five new tests exercise formula/provenance/weighting and component distinction, calm night, all missing inputs/no mean fallback, malformed time/domain/source/geometry, and reuse all 28 independent C oracle cases through inverse wind conversion. The inverse conversion is solely test preparation to preserve the original oracle inputs. Existing horizon/sunrise/sunset, cap, pressure, supported-year edges and nonconvergence checks remain; agreement within 0.01°C measures implementation parity, not physical accuracy.
+
+Initial typecheck found and corrected adapter literal-inference/union-narrowing errors. Final `npm run typecheck` has no heat errors but is **blocked by concurrent web integration**: dashboard-visuals.test.ts lacks new WbgtPanelProps now/zone/online/freshness/aged; wbgt-panel.tsx imports not-yet-exported contracts Provenance. Those files are outside this assignment.
+
+Isolated production build passes: `npm run build --workspace @zindycast/web -- --distPath <temporary-directory>`, temporary directory automatically removed. Existing MapLibre dynamic-dependency warning remains. This build occurred before concurrent web typecheck errors appeared; lead must run final integrated checks. Served build assets were not changed.
+
+## Bounded runtime sample
+
+Node v22.22.1 on the deployment host, one process: 336 synthetic hourly instants starting 2020-07-15 UTC at latitude28.9/longitude−81.26, temperature33°C, RH75%, surface pressure1010hPa, 10m wind3m/s, GHI800 for UTC hours12–23 and0 otherwise. This deliberately synthetic timing also exercises supplied radiation near/below the reference horizon; it is not weather or a physically verified radiation series.
+
+First 336-hour adapter batch: **13.43 ms**. Twenty subsequent batches: min3.28 ms, median3.91 ms, max6.10 ms. All336 returned success. Serialized estimate array including all diagnostics: **440,221 bytes**. Timing includes adapter/solver calls and result array allocation, excludes network, schema parse, JSON serialization, cache, scheduling and browser work. This is an observed local sample, not a latency upper bound, load test or RSS measurement. Each component remains bounded at50 solver iterations.
+
+No provider calls, browser actions, services, root/config, contracts, provider/API/UI or production data changes. Full [Argonne notice](../../../packages/heat/reference/NOTICE.txt) remains required for distribution. Lead still owns provider/cache/schema integration and live/browser checks; no integrated live-display acceptance is claimed here.

@@ -1,0 +1,9 @@
+# Heat effects wording — September 11, 2026
+
+Primary source checked: [NWS Tulsa WBGT](https://www.weather.gov/tsa/wbgt), “Suggested Actions and Impact Prevention” table. Its Effects column leaves <80°F blank; the 80–85, 85–88, 88–90 and >90°F rows all describe bodily stress from working or exercising in direct sunlight. The source differentiates them by exposure durations (45, 30, 20 and 15 minutes), not by distinct symptoms. Its calculator remains labeled a nonoperational prototype.
+
+The requested “Effects on body” UI paraphrases the common effect in all four upper rows, and explicitly identifies the unspecified lower row without implying no risk. It omits exposure durations and break schedules rather than implying a personal safe exposure time. It does not invent cramps, exhaustion or heatstroke thresholds, severity labels, or a universal family classifier. Repeated effects across rows are deliberate: the source does not support distinct symptom descriptions. Existing source numeric boundaries, equality ambiguity, unit conversion and active-band handling remain unchanged.
+
+Focused verification: `npx tsx --test apps/web/src/heat-guidance.test.ts`. Tests cover supported text, absent time/symptom claims, lower-row missingness, all five active bands in both unit systems, exact ambiguous boundaries and missing WBGT. Browser acceptance and integration remain the lead's responsibility.
+
+Integration refinement: the supplied screenshot specifically includes Tulsa's Effects column and its four reference durations. Final UI retains those durations as explicitly attributed source references (45, 30, 20, 15 min), with adjacent text stating they are neither safe exposure limits nor personal predictions. The underlying bodily effect remains heat strain during direct-sun work or exercise, without invented symptom thresholds. This supersedes the initial omission described above. Source table rechecked by the integration lead on September 11, 2026.

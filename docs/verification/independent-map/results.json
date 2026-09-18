@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "requests": 3,
+  "errors": [],
+  "viewports": [
+    "1440x1000",
+    "1100x900",
+    "390x844"
+  ],
+  "disclosureTogglesPerViewport": 4,
+  "unitsChanged": true,
+  "mapDimensionsUnchanged": true,
+  "chartHoverSamples": 20,
+  "parentClockAdvanceMs": 61000,
+  "stableCanvas": true,
+  "noReadyTransitions": true,
+  "limitations": "Synthetic weather timing and retained map fixtures; all external requests blocked. No physical device or live-weather claim."
+}

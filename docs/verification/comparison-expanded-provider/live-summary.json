@@ -1,0 +1,115 @@
+{
+  "latitude": 28.75,
+  "longitude": -81.25,
+  "elevation": 21.0,
+  "timezone": "GMT",
+  "utc_offset_seconds": 0,
+  "hourly_units": {
+    "time": "unixtime",
+    "temperature_2m": "\u00b0C",
+    "relative_humidity_2m": "%",
+    "precipitation": "mm",
+    "wind_speed_10m": "m/s",
+    "dew_point_2m": "\u00b0C",
+    "wet_bulb_temperature_2m": "\u00b0C",
+    "sunshine_duration": "s",
+    "cloud_cover": "%",
+    "weather_code": "wmo code",
+    "is_day": "",
+    "shortwave_radiation": "W/m\u00b2"
+  },
+  "daily_units": {
+    "time": "unixtime",
+    "sunrise": "unixtime",
+    "sunset": "unixtime",
+    "daylight_duration": "s"
+  },
+  "daily": {
+    "time": [
+      1752537600
+    ],
+    "sunrise": [
+      1752575822
+    ],
+    "sunset": [
+      1752625484
+    ],
+    "daylight_duration": [
+      49671.27
+    ]
+  },
+  "fields": {
+    "time": {
+      "count": 24,
+      "nulls": 0,
+      "min": 1752537600,
+      "max": 1752620400
+    },
+    "temperature_2m": {
+      "count": 24,
+      "nulls": 0,
+      "min": 23.8,
+      "max": 28.2
+    },
+    "relative_humidity_2m": {
+      "count": 24,
+      "nulls": 0,
+      "min": 83,
+      "max": 95
+    },
+    "precipitation": {
+      "count": 24,
+      "nulls": 0,
+      "min": 0.0,
+      "max": 7.2
+    },
+    "wind_speed_10m": {
+      "count": 24,
+      "nulls": 0,
+      "min": 1.7,
+      "max": 3.4
+    },
+    "dew_point_2m": {
+      "count": 24,
+      "nulls": 0,
+      "min": 22.9,
+      "max": 25.1
+    },
+    "wet_bulb_temperature_2m": {
+      "count": 24,
+      "nulls": 0,
+      "min": 23.2,
+      "max": 25.9
+    },
+    "sunshine_duration": {
+      "count": 24,
+      "nulls": 0,
+      "min": 0.0,
+      "max": 3600.0
+    },
+    "cloud_cover": {
+      "count": 24,
+      "nulls": 0,
+      "min": 45,
+      "max": 100
+    },
+    "weather_code": {
+      "count": 24,
+      "nulls": 0,
+      "min": 2,
+      "max": 63
+    },
+    "is_day": {
+      "count": 24,
+      "nulls": 0,
+      "min": 0,
+      "max": 1
+    },
+    "shortwave_radiation": {
+      "count": 24,
+      "nulls": 0,
+      "min": 0.0,
+      "max": 307.0
+    }
+  }
+}

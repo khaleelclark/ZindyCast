@@ -1,0 +1,20 @@
+[
+  {
+    "file": "ghcnd-stations.txt",
+    "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-stations.txt",
+    "bytes": 11395086,
+    "accessed": "2026-09-10T22:36:42.840774+00:00"
+  },
+  {
+    "file": "ghcnd-inventory.txt",
+    "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-inventory.txt",
+    "bytes": 25000000,
+    "accessed": "2026-09-10T22:36:52.595190+00:00"
+  },
+  {
+    "file": "ghcnd-readme.txt",
+    "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/readme.txt",
+    "bytes": 28567,
+    "accessed": "2026-09-10T22:36:14.738854+00:00"
+  }
+]

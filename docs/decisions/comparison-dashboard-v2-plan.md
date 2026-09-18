@@ -1,0 +1,11 @@
+# Detailed comparison dashboard v2 — authorized implementation
+
+User approved the full proposed dashboard on 2026-09-13. No further user input is needed to start; $0 budget persists.
+
+Deliver: 2–5 city period overview; monthly average daily high/low, mean, min/max with dates; precipitation, humidity, dew point, wind, ordinary wet-bulb and sunshine where validated; monthly graphs; daily drill-down and hourly detail; weather-day/cloud summaries with explicit reproducible definitions; expanded full-period/month/day CSV retaining current exports. City local calendar dates, DST/leap days, missing coverage, day-weighted aggregate summaries; fixed city colors. Single-year weather distinct from multiyear averages. No fabricated WBGT, source weather events, thresholds or distributions.
+
+Current v1 pipeline is UTC-only, 1–366 days, five hourly fields, fixed strict source URL, summaries only. Existing completed jobs and CSVs must remain readable. Prefer versioned v2 request/job/result path rather than silently changing v1 semantics. Location timezone must enter validated v2 contract. Fetch UTC padding around each location's local selection and closing preceding-hour precipitation interval; preserve chunk/cache/rate controls and bounded payloads. Extended field adapter/keys must not contaminate existing five-field caches. Worker job processing and resource caps must be audited before raising date bounds for multiyear averages. Do not raise upstream budgets or mutate persistent provider configuration.
+
+Active feasibility requests: Providers verifies one bounded ERA5 day with extra fields; Heat science provides aggregation/coverage/weather-count policy. Lead owns contracts/API/job integration and release. After those gates, delegate disjoint v2 adapter/statistics and UI modules with precise contracts. Existing History/Current/maps unrelated changes stay intact.
+
+Acceptance: fixture math high/low vs hourly mean, zeros/nulls/partial days/DST/leap/month boundaries/unequal cities; local-day totals; old job compatibility; job cancellation/expiry/offline; responsive actual Chrome 390/1440 full-year, month/day/hour navigation, tooltips, CSV exact snapshot; bounded live provider field probe only unless new narrow check needed; root build/typecheck/tests and deliberate local service publication last.

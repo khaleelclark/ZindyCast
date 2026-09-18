@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "sourceCoordinates": {
+    "latitude": 28.86714,
+    "longitude": -81.1616
+  },
+  "data": {
+    "time": "2026-09-12T20:00:00.000Z",
+    "intervalSeconds": 900,
+    "temperatureC": 27.6,
+    "apparentTemperatureC": 32.2,
+    "humidityPercent": 89,
+    "windSpeedMs": 4.9,
+    "windDirectionDeg": 92,
+    "weatherCode": 51,
+    "isDay": 1,
+    "cloudCoverPercent": 100
+  }
+}

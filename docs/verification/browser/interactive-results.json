@@ -1,0 +1,58 @@
+{
+  "time": "2026-09-11T01:34:48.487Z",
+  "browser": "152.0.7977.75",
+  "results": [
+    "initial Mercator overlay loaded",
+    "zoom requests new geographic viewport",
+    "pan requests new viewport",
+    "opacity input changes",
+    "previous frame on current viewport",
+    "Alaska radar and global infrared rendered",
+    "Hawaii radar rendered",
+    "offline removes map and reconnect restores rendered overlay",
+    "mobile map no horizontal page overflow"
+  ],
+  "errors": [],
+  "frames": [
+    {
+      "status": 200,
+      "projection": "EPSG:3857",
+      "requestedTime": "2026-09-11T01:28:04.000Z"
+    },
+    {
+      "status": 200,
+      "projection": "EPSG:3857",
+      "requestedTime": "2026-09-11T01:28:04.000Z"
+    },
+    {
+      "status": 200,
+      "projection": "EPSG:3857",
+      "requestedTime": "2026-09-11T01:28:04.000Z"
+    },
+    {
+      "status": 200,
+      "projection": "EPSG:3857",
+      "requestedTime": "2026-09-11T01:24:08.000Z"
+    },
+    {
+      "status": 200,
+      "projection": "EPSG:3857",
+      "requestedTime": "2026-09-11T01:28:55.000Z"
+    },
+    {
+      "status": 200,
+      "projection": "EPSG:3857",
+      "requestedTime": "2026-09-11T00:00:00.000Z"
+    },
+    {
+      "status": 200,
+      "projection": "EPSG:3857",
+      "requestedTime": "2026-09-11T01:28:57.000Z"
+    },
+    {
+      "status": 200,
+      "projection": "EPSG:3857",
+      "requestedTime": "2026-09-11T01:28:57.000Z"
+    }
+  ]
+}

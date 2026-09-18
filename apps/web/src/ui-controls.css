@@ -1,0 +1,82 @@
+/* Shared control contract. MapLibre and MUI composite inputs keep their own layout. */
+:root {
+  --control-radius: 10px;
+  --control-height: 44px;
+  --control-border: #7693a8;
+  --control-surface: #f8fcffe6;
+  --control-ink: #19364b;
+  --control-accent: #086e9d;
+  --control-focus: #0878ad;
+}
+.app-shell :is(.MuiButton-root,button:not([class*="Mui"]):not(.interactive-map button):not(.wbgt-marker)) {
+  min-height: var(--control-height);
+  border-radius: var(--control-radius);
+  font-family: inherit;
+  font-size: .9375rem;
+  font-weight: 650;
+  line-height: 1.4;
+  padding: 9px 14px;
+  box-shadow: none;
+  text-transform: none;
+}
+.app-shell button:not([class*="Mui"]):not(.interactive-map button):not(.wbgt-marker) {
+  border: 1px solid var(--control-border);
+  color: var(--control-ink);
+  background: var(--control-surface);
+  cursor: pointer;
+}
+.app-shell :is(button.primary,.MuiButton-containedPrimary) {
+  color: #fff;
+  border-color: var(--control-accent);
+  background: var(--control-accent);
+}
+.app-shell :is(button.primary,.MuiButton-containedPrimary):hover { background: #07557a; }
+.app-shell :is(button:disabled,.MuiButton-root.Mui-disabled):not(.interactive-map button):not(.wbgt-marker) {
+  color: #657887;
+  background: #e4ebf0;
+  border-color: #bdcbd5;
+  cursor: not-allowed;
+  opacity: 1;
+}
+.app-shell :is(select,input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=color]):not([class*="Mui"])) {
+  box-sizing: border-box;
+  min-height: var(--control-height);
+  min-width: 0;
+  max-width: 100%;
+  border: 1px solid var(--control-border);
+  border-radius: var(--control-radius);
+  background: var(--control-surface);
+  color: var(--control-ink);
+  padding: 10px 12px;
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.app-shell select { padding-right: 28px; }
+.app-shell :is(input[type=checkbox],input[type=radio]) { accent-color: var(--control-accent); }
+.app-shell summary {
+  min-height: var(--control-height);
+  padding-block: 10px;
+  font-size: .9375rem;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.app-shell :is(button,a,input,select,summary,[tabindex]):focus-visible {
+  outline: 3px solid var(--control-focus);
+  outline-offset: 3px;
+}
+.app-shell :is(.table-scroll,.climate-table-scroll) { scrollbar-gutter: stable; }
+.app-shell :is(.notice,.map-status,[role=status]) { overflow-wrap: anywhere; }
+@media (hover:hover) {
+  .app-shell button:not([class*="Mui"]):not(.interactive-map button):not(.wbgt-marker):not(:disabled):not(.primary):hover { background: #e6f1f8; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .app-shell :is(button,input,select) { transition: none; }
+}
+
+/* Match native fields without styling MUI's outline fieldset as a form group. */
+.app-shell .MuiOutlinedInput-root { min-height: var(--control-height); border-radius: var(--control-radius); background: var(--control-surface); color: var(--control-ink); }
+.app-shell .MuiOutlinedInput-input { min-height: 0; padding: 12px 14px; border: 0; background: transparent; font-size: 1rem; }
+.app-shell .MuiOutlinedInput-notchedOutline { border-color: var(--control-border); }
+.app-shell .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline { border-color: var(--control-focus); }

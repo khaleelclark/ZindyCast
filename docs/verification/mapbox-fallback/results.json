@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "case": "no token",
+      "mapboxRequests": 0,
+      "weatherReady": true
+    },
+    {
+      "case": "remembered standard",
+      "mapboxRequests": 0,
+      "weatherReady": true
+    },
+    {
+      "case": "manual switch 1024 and 512 fixture PNGs",
+      "sameCanvas": true,
+      "sameMarkerTransform": true,
+      "observedNoExtraGET": true,
+      "forecastNoExtraGET": true,
+      "forecastTimePreserved": true,
+      "forecastFailurePreserved": true,
+      "logoVisible": true,
+      "noMobileOverflow": true,
+      "errors": []
+    },
+    {
+      "case": "401",
+      "elapsedMs": 2002,
+      "failedRequestCount": 6,
+      "stickyAcrossRemount": true,
+      "explicitRecovery": true,
+      "weatherReady": true,
+      "errors": []
+    },
+    {
+      "case": "403",
+      "elapsedMs": 1893,
+      "failedRequestCount": 6,
+      "stickyAcrossRemount": true,
+      "explicitRecovery": true,
+      "weatherReady": true,
+      "errors": []
+    },
+    {
+      "case": "429",
+      "elapsedMs": 2012,
+      "failedRequestCount": 6,
+      "stickyAcrossRemount": true,
+      "explicitRecovery": true,
+      "weatherReady": true,
+      "errors": []
+    },
+    {
+      "case": "500",
+      "elapsedMs": 1990,
+      "failedRequestCount": 6,
+      "stickyAcrossRemount": true,
+      "explicitRecovery": true,
+      "weatherReady": true,
+      "errors": []
+    },
+    {
+      "case": "timeout",
+      "elapsedMs": 12871,
+      "failedRequestCount": 6,
+      "stickyAcrossRemount": true,
+      "explicitRecovery": true,
+      "weatherReady": true,
+      "errors": []
+    },
+    {
+      "case": "timeout after successful load and zoom",
+      "cameraAndWeatherPreserved": true,
+      "errors": []
+    }
+  ],
+  "limitations": "Synthetic basemap grids (512/1024 PNG), retained observed imagery with adapted request metadata, synthetic forecast catalog and retained PNG. No actual Mapbox style/token entitlement or physical device acceptance; zero live provider calls."
+}

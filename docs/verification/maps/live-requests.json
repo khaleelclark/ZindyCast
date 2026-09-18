@@ -1,0 +1,63 @@
+[
+  {
+    "url": "https://nowcoast.noaa.gov/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+    "requestedAt": "2026-09-11T00:16:18.703Z",
+    "status": 200,
+    "headers": {
+      "access-control-allow-headers": "DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "Content-Length,Content-Range",
+      "age": "163",
+      "cache-control": "max-age=600, public",
+      "connection": "keep-alive",
+      "content-disposition": "inline; filename=getcapabilities_1.3.0.xml",
+      "content-security-policy": "base-uri 'self'; default-src 'none'; child-src 'self'; connect-src 'self'; font-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; form-action 'self'; frame-ancestors 'self';",
+      "content-type": "text/xml",
+      "date": "Fri, 11 Sep 2026 00:13:36 GMT",
+      "expires": "Fri, 11 Sep 2026 00:23:36 GMT",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "server": "nginx/1.30.0",
+      "strict-transport-security": "max-age=31536000",
+      "transfer-encoding": "chunked",
+      "via": "1.1 2728c3f101372b03f20e60efec519398.cloudfront.net (CloudFront)",
+      "x-amz-cf-id": "fpD7wGaHjlnTKCJxMuSHwG6urk1Vh6gyj4S11I0tFBaciaABarmrbw==",
+      "x-amz-cf-pop": "MIA3-P4",
+      "x-cache": "Hit from cloudfront",
+      "x-content-type-options": "nosniff",
+      "x-control-flow-delay-ms": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block"
+    }
+  },
+  {
+    "url": "https://nowcoast.noaa.gov/geoserver/ows?service=WMS&version=1.3.0&request=GetMap&layers=weather_radar%3Aalaska_base_reflectivity_mosaic&styles=&crs=CRS%3A84&bbox=-170%2C52%2C-130%2C72&width=800&height=500&format=image%2Fpng&transparent=true&time=2026-09-11T00%3A08%3A58.000Z",
+    "requestedAt": "2026-09-11T00:16:19.396Z",
+    "status": 200,
+    "headers": {
+      "access-control-allow-headers": "DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "Content-Length,Content-Range",
+      "cache-control": "max-age=600, public",
+      "connection": "keep-alive",
+      "content-disposition": "inline; filename=weather_radar-alaska_base_reflectivity_mosaic.png",
+      "content-security-policy": "base-uri 'self'; default-src 'none'; child-src 'self'; connect-src 'self'; font-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; form-action 'self'; frame-ancestors 'self';",
+      "content-type": "image/png",
+      "date": "Fri, 11 Sep 2026 00:16:19 GMT",
+      "expires": "Fri, 11 Sep 2026 00:26:19 GMT",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "server": "nginx/1.30.0",
+      "strict-transport-security": "max-age=31536000",
+      "transfer-encoding": "chunked",
+      "via": "1.1 2728c3f101372b03f20e60efec519398.cloudfront.net (CloudFront)",
+      "x-amz-cf-id": "8t8I9hqyyzrZn_-Q-oarVUG9fdRvsOOVwAQ1pDmmQNrIjLQ5xDZe2g==",
+      "x-amz-cf-pop": "MIA3-P4",
+      "x-cache": "Miss from cloudfront",
+      "x-content-type-options": "nosniff",
+      "x-control-flow-delay-ms": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block"
+    }
+  }
+]

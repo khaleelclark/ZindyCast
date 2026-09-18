@@ -1,0 +1,32 @@
+[
+  {
+    "file": "ghcnd-stations.txt",
+    "bytes": 11395086,
+    "sha256": "91e4bd9b4c991c3ea9c19062eae73bca118cad0f4a436e33149ff345bffc8f9c",
+    "retention": "replaced by relevant subset; ghcnd-inventory.txt was an incomplete failed download, not used"
+  },
+  {
+    "file": "ghcnh-station-list.csv",
+    "bytes": 2203945,
+    "sha256": "812ea50bd5efd1b9cc09d5800c55825b3d43b3c5aa75ab17b2848f43b1bfaaef",
+    "retention": "replaced by relevant subset; ghcnd-inventory.txt was an incomplete failed download, not used"
+  },
+  {
+    "file": "ghcnd-inventory.txt",
+    "bytes": 9745662,
+    "sha256": "c86b73861913c5d2015e0f68086b930b59d3e2388537635c4feedf80768f539e",
+    "retention": "replaced by relevant subset; ghcnd-inventory.txt was an incomplete failed download, not used"
+  },
+  {
+    "file": "ghcnd-inventory-us-mid.txt",
+    "bytes": 7000000,
+    "sha256": "9d18f8791dd60660fbad6a938673ae8a5ae4d33dd2ed9df3ea7ad832181ce807",
+    "retention": "replaced by relevant subset; ghcnd-inventory.txt was an incomplete failed download, not used"
+  },
+  {
+    "file": "ghcnd-inventory-us-tail.txt",
+    "bytes": 10999416,
+    "sha256": "41b3bdb1d1bfb95e028987e0281dc25743f970f2f7deb2cbeb6d09c2051d7435",
+    "retention": "replaced by relevant subset; ghcnd-inventory.txt was an incomplete failed download, not used"
+  }
+]

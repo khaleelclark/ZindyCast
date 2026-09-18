@@ -1,0 +1,31 @@
+{
+  "url": "https://nowcoast.noaa.gov/geoserver/ows?service=WMS&version=1.3.0&request=GetMap&layers=weather_radar%3Aconus_base_reflectivity_mosaic&styles=&crs=CRS%3A84&bbox=-125%2C24%2C-66%2C50&width=800&height=500&format=image%2Fpng&transparent=true&time=2026-09-10T22%3A28%3A20Z",
+  "retrievedAt": "2026-09-10T22:37:10.192856+00:00",
+  "status": 200,
+  "headers": {
+    "Content-Type": "image/png",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Date": "Thu, 10 Sep 2026 22:37:10 GMT",
+    "Access-Control-Allow-Headers": "DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range",
+    "Access-Control-Expose-Headers": "Content-Length,Content-Range",
+    "Server": "nginx/1.30.0",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Content-Security-Policy": "base-uri 'self'; default-src 'none'; child-src 'self'; connect-src 'self'; font-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; form-action 'self'; frame-ancestors 'self';",
+    "X-Control-flow-delay-ms": "0",
+    "Warning": "99 Nearest value used: time=2026-09-10T22:28:20.000Z ISO8601 (weather_radar:conus_base_reflectivity_mosaic)",
+    "Content-Disposition": "inline; filename=weather_radar-conus_base_reflectivity_mosaic.png",
+    "Expires": "Thu, 10 Sep 2026 22:47:10 GMT",
+    "Cache-Control": "max-age=600",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    "X-Cache": "Miss from cloudfront",
+    "Via": "1.1 ed047841b922f7dcf5bcfb295eb3311c.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "MIA3-P4",
+    "X-Amz-Cf-Id": "nfJGqaMUTwsrc0PwtFOfVo0omFQaSaBZIUXDZI-EINN_oqSmEJBTkw==",
+    "X-XSS-Protection": "1; mode=block",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Strict-Transport-Security": "max-age=31536000"
+  }
+}

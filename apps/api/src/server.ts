@@ -1,0 +1,34 @@
+import {VerificationRepository} from '@zindycast/verification';
+import {NotificationRepository} from './notifications-store.js';
+import {notificationConfig} from './notification-config.js';
+import {registerBoundary} from './boundary.js';
+import { createApp } from './app.js';
+import * as providers from '@zindycast/providers';
+const port = Number(process.env.API_PORT ?? 4311);
+const host = process.env.API_HOST ?? '127.0.0.1';
+if (!Number.isInteger(port) || port < 1024 || port > 65535) throw new Error('API_PORT must be an integer from 1024 to 65535');
+const { mkdirSync } = await import('node:fs');
+const { resolve, dirname } = await import('node:path');
+const { SharedStorage, APP_PROVIDER_LIMITS } = await import('@zindycast/storage');
+const dbPath = resolve(process.env.ZINDYCAST_DB_PATH ?? 'var/coordination.sqlite');
+mkdirSync(dirname(dbPath), {recursive:true,mode:0o700});
+process.umask(0o077);
+const {JobRepository}=await import('@zindycast/jobs');
+const {InstallationRepository}=await import('@zindycast/installations');
+const jobsPath=resolve(process.env.ZINDYCAST_JOBS_PATH??'var/jobs.sqlite');
+const installationsPath=resolve(process.env.ZINDYCAST_INSTALLATIONS_PATH??'var/installations.sqlite');
+for(const path of [jobsPath,installationsPath])mkdirSync(dirname(path),{recursive:true,mode:0o700});
+const notificationsPath=resolve(process.env.ZINDYCAST_NOTIFICATIONS_PATH??'var/notifications.sqlite');
+mkdirSync(dirname(notificationsPath),{recursive:true,mode:0o700});
+const verificationPath=resolve(process.env.ZINDYCAST_VERIFICATION_PATH??'var/verification.sqlite');
+mkdirSync(dirname(verificationPath),{recursive:true,mode:0o700});
+const pushConfig=notificationConfig();
+const app = createApp(providers, new SharedStorage({path:dbPath,providers:APP_PROVIDER_LIMITS}),{jobs:new JobRepository({path:jobsPath}),installations:new InstallationRepository({path:installationsPath})},{repo:new NotificationRepository(notificationsPath),publicKey:pushConfig?.publicKey??null},new VerificationRepository({path:verificationPath}));
+registerBoundary(app,[...(process.env.ZINDYCAST_PUBLIC_ORIGIN ? [process.env.ZINDYCAST_PUBLIC_ORIGIN] : []), 'http://127.0.0.1:4310', 'http://localhost:4310', `http://127.0.0.1:${port}`, `http://localhost:${port}`]);
+if (process.env.SERVE_WEB === '1') {
+  const { serveWeb } = await import('./static.js');
+  await serveWeb(app, resolve('apps/web/dist'));
+}
+for (const signal of ['SIGINT', 'SIGTERM'] as const) process.once(signal, () => { void app.close().catch(()=>{console.error('ZindyCast API shutdown_failed');process.exitCode=1;}); });
+await app.listen({ host, port });
+console.log(`ZindyCast API listening on ${host}:${port}`);

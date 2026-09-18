@@ -1,0 +1,24 @@
+{
+  "url": "https://www.weather.gov/radarfaq",
+  "retrieved_at": "2026-09-10T23:37:00.354325+00:00",
+  "status": 200,
+  "headers": {
+    "Server": "Apache",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "no-referrer",
+    "Content-Security-Policy": "default-src 'self'           *.weather.gov *.noaa.gov           code.jquery.com           cdn.gov.cfigroup.com           s.go-mpulse.net           *.digitalgov.gov           *.google-analytics.com           www.googletagmanager.com           *.arcgis.com *.arcgisonline.com            *.google.com           *.youtube.com *.youtube-nocookie.com           *.twitter.com *.x.com           *.facebook.com           data: * mediastream: * blob: * about: * 'unsafe-eval' 'unsafe-inline'    ",
+    "X-Content-Security-Policy": "default-src 'self' 'unsafe-inline' 'unsafe-eval' *",
+    "X-XSS-Protection": "1; mode=block",
+    "Access-Control-Allow-Origin": "*",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Vary": "Accept-Encoding",
+    "Cache-Control": "max-age=180",
+    "Expires": "Thu, 10 Sep 2026 23:40:00 GMT",
+    "Date": "Thu, 10 Sep 2026 23:37:00 GMT",
+    "Content-Length": "44937",
+    "Connection": "close",
+    "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains ; preload"
+  },
+  "final_url": "https://www.weather.gov/radarfaq",
+  "bytes": 44937
+}

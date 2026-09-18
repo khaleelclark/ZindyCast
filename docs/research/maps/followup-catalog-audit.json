@@ -1,0 +1,30 @@
+{
+  "recorded_at": "2026-09-10T23:40:09.647767+00:00",
+  "radar_layers": [
+    {
+      "name": "weather_radar:base_reflectivity_mosaic",
+      "abstract": ""
+    },
+    {
+      "name": "weather_radar:conus_base_reflectivity_mosaic",
+      "abstract": "Weather radar base reflectivity mosaics of CONUS radar data from Weather Surveillance Radar 1988 Doppler (WSR-88D) sites operated by NWS and DOD and also from Terminal Doppler Weather Radars at major airports. The colors on the map represent the strength of the energy reflected back towards the radar measured in dBZ. The horizontal resolution is  1km (0.62 mi). The mosaics are updated approximately every 4 minutes. Data source: NWS & OAR Multi-Radar/Multi-Sensor (MRMS) System."
+    },
+    {
+      "name": "weather_radar:alaska_base_reflectivity_mosaic",
+      "abstract": "Weather radar base reflectivity mosaics of Alaska radar data from Weather Surveillance Radar 1988 Doppler (WSR-88D) sites operated by NWS and DOD and also from Terminal Doppler Weather Radars at major airports. The colors on the map represent the strength of the energy reflected back towards the radar measured in dBZ. The horizontal resolution is  1km (0.62 mi). The mosaics are updated approximately every 4 minutes. Data source: NWS & OAR Multi-Radar/Multi-Sensor (MRMS) System."
+    },
+    {
+      "name": "weather_radar:hawaii_base_reflectivity_mosaic",
+      "abstract": "Weather radar base reflectivity mosaics of Hawaii radar data from Weather Surveillance Radar 1988 Doppler (WSR-88D) sites operated by NWS and DOD and also from Terminal Doppler Weather Radars at major airports. The colors on the map represent the strength of the energy reflected back towards the radar measured in dBZ. The horizontal resolution is  1km (0.62 mi). The mosaics are updated approximately every 4 minutes. Data source: NWS & OAR Multi-Radar/Multi-Sensor (MRMS) System."
+    },
+    {
+      "name": "weather_radar:caribbean_base_reflectivity_mosaic",
+      "abstract": "Weather radar base reflectivity mosaics of Caribbean radar data from Weather Surveillance Radar 1988 Doppler (WSR-88D) sites operated by NWS and DOD and also from Terminal Doppler Weather Radars at major airports. The colors on the map represent the strength of the energy reflected back towards the radar measured in dBZ. The horizontal resolution is  1km (0.62 mi). The mosaics are updated approximately every 4 minutes. Data source: NWS & OAR Multi-Radar/Multi-Sensor (MRMS) System."
+    },
+    {
+      "name": "weather_radar:guam_base_reflectivity_mosaic",
+      "abstract": "Weather radar base reflectivity mosaics of Guam radar data from Weather Surveillance Radar 1988 Doppler (WSR-88D) sites operated by NWS and DOD and also from Terminal Doppler Weather Radars at major airports. The colors on the map represent the strength of the energy reflected back towards the radar measured in dBZ. The horizontal resolution is  1km (0.62 mi). The mosaics are updated approximately every 4 minutes. Data source: NWS & OAR Multi-Radar/Multi-Sensor (MRMS) System."
+    }
+  ],
+  "finding": "No radar coverage/status/quality mask advertised among named layers; s100 coverage layers concern hydrographic products, not radar."
+}

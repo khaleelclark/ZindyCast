@@ -1,0 +1,78 @@
+TAP version 13
+# (node:657817) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: cache shares JSON, preserves metadata and exact expiry/stale boundaries through restart
+ok 1 - cache shares JSON, preserves metadata and exact expiry/stale boundaries through restart
+  ---
+  duration_ms: 7.930892
+  type: 'test'
+  ...
+# Subtest: entry and total UTF-8 byte/count bounds, replacement accounting, older write protection
+ok 2 - entry and total UTF-8 byte/count bounds, replacement accounting, older write protection
+  ---
+  duration_ms: 4.338097
+  type: 'test'
+  ...
+# Subtest: rejects malformed JSON, timestamps and configuration mismatch without corrupting records
+ok 3 - rejects malformed JSON, timestamps and configuration mismatch without corrupting records
+  ---
+  duration_ms: 2.39737
+  type: 'test'
+  ...
+# Subtest: two connections compete for lease; token fences late release and cache publication after takeover
+ok 4 - two connections compete for lease; token fences late release and cache publication after takeover
+  ---
+  duration_ms: 2.70288
+  type: 'test'
+  ...
+# Subtest: lease capacity and restart expiry do not require successful original-owner release
+ok 5 - lease capacity and restart expiry do not require successful original-owner release
+  ---
+  duration_ms: 2.454249
+  type: 'test'
+  ...
+# Subtest: weighted quota denial rolls back all four windows across independent connections and restart
+ok 6 - weighted quota denial rolls back all four windows across independent connections and restart
+  ---
+  duration_ms: 4.204053
+  type: 'test'
+  ...
+# Subtest: rolling quotas prevent midnight/month boundary bursts and isolate configured providers
+ok 7 - rolling quotas prevent midnight/month boundary bursts and isolate configured providers
+  ---
+  duration_ms: 2.023283
+  type: 'test'
+  ...
+# Subtest: quota ledger capacity fails closed; bounded cleanup reclaims old entries
+ok 8 - quota ledger capacity fails closed; bounded cleanup reclaims old entries
+  ---
+  duration_ms: 2.29629
+  type: 'test'
+  ...
+# Subtest: clock rollback fails closed for coordinated mutations
+ok 9 - clock rollback fails closed for coordinated mutations
+  ---
+  duration_ms: 2.231958
+  type: 'test'
+  ...
+# Subtest: bounded lock wait surfaces contention; cleanup measures physical DB/WAL/SHM and truncates WAL
+ok 10 - bounded lock wait surfaces contention; cleanup measures physical DB/WAL/SHM and truncates WAL
+  ---
+  duration_ms: 23.17736
+  type: 'test'
+  ...
+# Subtest: simultaneous independent processes admit exactly one lease and one final quota unit
+ok 11 - simultaneous independent processes admit exactly one lease and one final quota unit
+  ---
+  duration_ms: 263.134846
+  type: 'test'
+  ...
+1..11
+# tests 11
+# suites 0
+# pass 11
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 631.210461

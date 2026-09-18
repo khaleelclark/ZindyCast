@@ -1,0 +1,17 @@
+{
+  "name": "@zindycast/worker",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "dependencies": {
+    "@zindycast/comparison": "0.1.0",
+    "@zindycast/contracts": "0.1.0",
+    "@zindycast/history": "0.1.0",
+    "@zindycast/installations": "0.1.0",
+    "@zindycast/jobs": "0.1.0",
+    "@zindycast/storage": "0.1.0",
+    "web-push": "3.6.7",
+    "@zindycast/verification": "0.1.0",
+    "@zindycast/providers": "0.1.0"
+  }
+}

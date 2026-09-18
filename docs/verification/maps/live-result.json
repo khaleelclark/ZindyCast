@@ -1,0 +1,17 @@
+{
+  "catalogSource": "https://nowcoast.noaa.gov/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+  "requestUrl": "https://nowcoast.noaa.gov/geoserver/ows?service=WMS&version=1.3.0&request=GetMap&layers=weather_radar%3Aalaska_base_reflectivity_mosaic&styles=&crs=CRS%3A84&bbox=-170%2C52%2C-130%2C72&width=800&height=500&format=image%2Fpng&transparent=true&time=2026-09-11T00%3A08%3A58.000Z",
+  "warning": null,
+  "cacheControl": "max-age=600, public",
+  "retrievedAt": "2026-09-11T00:16:19.608Z",
+  "contentType": "image/png",
+  "productId": "radar-alaska",
+  "requestedTime": "2026-09-11T00:08:58.000Z",
+  "actualSourceTime": null,
+  "sourceTimeStatus": "advertised_time_requested",
+  "extentRelation": "inside",
+  "coverageState": "unknown",
+  "attribution": "NOAA nowCOAST; NWS / OAR MRMS",
+  "byteLength": 10508,
+  "sha256": "c5342ad62f5622e1bbac9c5fd612f0e3a75ec884def5ac1307e9e05409cd23ee"
+}

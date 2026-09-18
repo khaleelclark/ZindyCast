@@ -1,0 +1,146 @@
+[
+  {
+    "file": "USC00087982.dly",
+    "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/USC00087982.dly",
+    "retrieved_at": "2026-09-10T23:36:50.877772+00:00",
+    "status": 200,
+    "headers": {
+      "Date": "Thu, 10 Sep 2026 23:36:51 GMT",
+      "Server": "Apache",
+      "Strict-Transport-Security": "max-age=31536000",
+      "Last-Modified": "Wed, 09 Sep 2026 23:57:08 GMT",
+      "ETag": "\"1647c0-65b159bebf18a\"",
+      "Accept-Ranges": "bytes",
+      "Content-Length": "1460160",
+      "Content-Type": "text/plain",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Headers": "X-Requested-With, Content-Type",
+      "Connection": "close"
+    },
+    "bytes": 1460160,
+    "sha256": "1de110100b96e97a4612086ddf942c1ce39a403cc975aaf2761928b9c36bc19e"
+  },
+  {
+    "file": "USC00021282.dly",
+    "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/USC00021282.dly",
+    "retrieved_at": "2026-09-10T23:36:50.878174+00:00",
+    "status": 200,
+    "headers": {
+      "Date": "Thu, 10 Sep 2026 23:36:51 GMT",
+      "Server": "Apache",
+      "Strict-Transport-Security": "max-age=31536000",
+      "Last-Modified": "Wed, 09 Sep 2026 23:54:33 GMT",
+      "ETag": "\"119568-65b1592b120cb\"",
+      "Accept-Ranges": "bytes",
+      "Content-Length": "1152360",
+      "Content-Type": "text/plain",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Headers": "X-Requested-With, Content-Type",
+      "Connection": "close"
+    },
+    "bytes": 1152360,
+    "sha256": "ad82e5a6b19f5423917abfdf8c686e2690fce65ad676ca1dd3f2793bbf020279"
+  },
+  {
+    "file": "USW00023271.dly",
+    "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/USW00023271.dly",
+    "retrieved_at": "2026-09-10T23:36:50.878463+00:00",
+    "status": 200,
+    "headers": {
+      "Date": "Thu, 10 Sep 2026 23:36:51 GMT",
+      "Server": "Apache",
+      "Strict-Transport-Security": "max-age=31536000",
+      "Last-Modified": "Thu, 10 Sep 2026 00:20:33 GMT",
+      "ETag": "\"1add9e-65b15efa97319\"",
+      "Accept-Ranges": "bytes",
+      "Content-Length": "1760670",
+      "Content-Type": "text/plain",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Headers": "X-Requested-With, Content-Type",
+      "Connection": "close"
+    },
+    "bytes": 1760670,
+    "sha256": "ad652af1fe0841182f25c7f73a78bdd254fcf9574feadfb5717595b618c97ebd"
+  },
+  {
+    "file": "USW00024234.dly",
+    "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/USW00024234.dly",
+    "retrieved_at": "2026-09-10T23:36:50.878772+00:00",
+    "status": 200,
+    "headers": {
+      "Date": "Thu, 10 Sep 2026 23:36:51 GMT",
+      "Server": "Apache",
+      "Strict-Transport-Security": "max-age=31536000",
+      "Last-Modified": "Thu, 10 Sep 2026 00:21:18 GMT",
+      "ETag": "\"16c10a-65b15f25abcad\"",
+      "Accept-Ranges": "bytes",
+      "Content-Length": "1491210",
+      "Content-Type": "text/plain",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Headers": "X-Requested-With, Content-Type",
+      "Connection": "close"
+    },
+    "bytes": 1491210,
+    "sha256": "abc39b3af0eb62e077ab8a2a10e4aecf4e7e58364809dbcf589bba5c0c5f4d1f"
+  },
+  {
+    "file": "homr-USW00023186-v2.json",
+    "url": "https://www.ncei.noaa.gov/access/homr/services/station/search?qid=GHCND:USW00023186&date=all&phrData=true",
+    "retrieved_at": "2026-09-10T23:36:52.371856+00:00",
+    "status": 200,
+    "headers": {
+      "Date": "Thu, 10 Sep 2026 23:36:52 GMT",
+      "Server": "Apache",
+      "Strict-Transport-Security": "max-age=31536000",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, OPTIONS",
+      "Access-Control-Max-Age": "3600",
+      "Access-Control-Allow-Headers": "X-Requested-With, Content-Type",
+      "Content-Type": "application/json",
+      "Connection": "close",
+      "Transfer-Encoding": "chunked"
+    },
+    "bytes": 61909,
+    "sha256": "dde48374923bb89631555ed1e46123efe65b7748d10e1e1105d955917e7ca995"
+  },
+  {
+    "file": "homr-USC00427516-v2.json",
+    "url": "https://www.ncei.noaa.gov/access/homr/services/station/search?qid=GHCND:USC00427516&date=all&phrData=true",
+    "retrieved_at": "2026-09-10T23:36:52.411111+00:00",
+    "status": 200,
+    "headers": {
+      "Date": "Thu, 10 Sep 2026 23:36:52 GMT",
+      "Server": "Apache",
+      "Strict-Transport-Security": "max-age=31536000",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, OPTIONS",
+      "Access-Control-Max-Age": "3600",
+      "Access-Control-Allow-Headers": "X-Requested-With, Content-Type",
+      "Content-Type": "application/json",
+      "Connection": "close",
+      "Transfer-Encoding": "chunked"
+    },
+    "bytes": 112576,
+    "sha256": "5ccf0720fbdafd3459126d808e9e702ead4da72858cb36af48bc8ec2f6282e9f"
+  },
+  {
+    "file": "homr-USC00087982-v2.json",
+    "url": "https://www.ncei.noaa.gov/access/homr/services/station/search?qid=GHCND:USC00087982&date=all&phrData=true",
+    "retrieved_at": "2026-09-10T23:36:52.490667+00:00",
+    "status": 200,
+    "headers": {
+      "Date": "Thu, 10 Sep 2026 23:36:52 GMT",
+      "Server": "Apache",
+      "Strict-Transport-Security": "max-age=31536000",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, OPTIONS",
+      "Access-Control-Max-Age": "3600",
+      "Access-Control-Allow-Headers": "X-Requested-With, Content-Type",
+      "Content-Type": "application/json",
+      "Connection": "close",
+      "Transfer-Encoding": "chunked"
+    },
+    "bytes": 92065,
+    "sha256": "628dcfcfb0e6e332076941ae1a69f30977dc4463cba1bb75df32272255c430d2"
+  }
+]

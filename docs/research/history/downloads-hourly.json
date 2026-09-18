@@ -1,0 +1,20 @@
+[
+  {
+    "file": "ghcnh-station-list.csv",
+    "url": "https://www.ncei.noaa.gov/oa/global-historical-climatology-network/hourly/doc/ghcnh-station-list.csv",
+    "bytes": 2203945,
+    "accessed": "2026-09-10T22:36:43.207019+00:00"
+  },
+  {
+    "file": "ghcnh_DOCUMENTATION.pdf",
+    "url": "https://www.ncei.noaa.gov/oa/global-historical-climatology-network/hourly/doc/ghcnh_DOCUMENTATION.pdf",
+    "bytes": 423879,
+    "accessed": "2026-09-10T22:36:41.506577+00:00"
+  },
+  {
+    "file": "homr-st-george.json",
+    "url": "https://www.ncei.noaa.gov/access/homr/services/station/search?name=ST%20GEORGE&nameMod=starts&state=UT&date=all&phrData=false",
+    "bytes": 115141,
+    "accessed": "2026-09-10T22:36:41.186105+00:00"
+  }
+]

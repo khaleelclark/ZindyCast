@@ -1,0 +1,14 @@
+[
+  {
+    "file": "ghcnd-by-year-readme.txt",
+    "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/by_year/readme.txt",
+    "retrieved_at": "2026-09-10T23:38:09.238682+00:00",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "ghcnd-by-year-format.rtf",
+    "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/by_year/ghcn-daily-by_year-format.rtf",
+    "retrieved_at": "2026-09-10T23:38:09.486528+00:00",
+    "error": "HTTP Error 404: Not Found"
+  }
+]

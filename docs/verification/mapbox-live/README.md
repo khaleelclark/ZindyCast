@@ -1,0 +1,9 @@
+# Mapbox activation — September 12, 2026
+
+User saved URL-restricted public token in ignored apps/web/.env.local. Token validated without displaying it. Production typecheck/build passed; app API service restarted to activate narrowly scoped Mapbox CSP permission. Five config/CSP/static tests pass. No dependencies or unrelated services changed.
+
+Actual Chrome at the private HTTPS origin loaded real Streets v12 tiles. Final audit: six Mapbox HTTP 200 responses, correctly sized 1016×583 canvas within 1018×585 map container, screenshot visually inspected. Manual standard-map switch and subsequent simulated Mapbox503 fall back while retaining canvas, marker transform and retained weather readiness. Zero uncaught page errors. Browser closed. Weather APIs were retained fixtures throughout; this is actual basemap evidence, not a new meteorological data audit. Physical-device testing not claimed.
+
+First navigation overlapped the API restart and failed before tile loading. First rendering audit reached successful Mapbox rendering but sampled marker/canvas before viewport settlement; full-page screenshot showed only an initial canvas area and later marker assertion failed. Corrected harness explicitly scrolls map into view and lets layout settle before capturing dimensions and exercising fallback. Final map screenshot covers the whole canvas. First rendering run had a hard16 Mapbox-request ceiling; final six requests yield at most22 Mapbox requests across both attempts (first attempt count was not retained). No repeated NOAA/IEM calls. OSM visible fallback calls were bounded at12 per audit.
+
+Reproduction is a live billing-capable check; do not run routinely. `node docs/verification/mapbox-live/browser.mjs` uses existing public token in served build, actual permitted HTTPS origin, at most16 Mapbox requests and12 OSM tiles per run, then simulates503. No query strings/tokens are retained in evidence.

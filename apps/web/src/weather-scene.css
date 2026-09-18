@@ -1,0 +1,66 @@
+/* Phase controls light independently of precipitation. Legacy atmosphere is fallback only. */
+.app-shell.app-shell[data-weather]{--sky:#e5edf2;--horizon-color:#edd4b7}
+.app-shell.app-shell[data-weather="night"]{--sky:#aebdd0}
+.app-shell.app-shell[data-sky-phase="day"]{--sky:#d5e5ee}
+.app-shell.app-shell[data-sky-phase="dawn"]{--sky:#d2dae6;--horizon-color:#efc58f}
+.app-shell.app-shell[data-sky-phase="dusk"]{--sky:#ccd2e1;--horizon-color:#dba5a6}
+.app-shell.app-shell[data-sky-phase="night"]{--sky:#9baec4;--horizon-color:#9baec4}
+.app-shell.app-shell[data-sky-phase="neutral"]{--sky:#e5edf2}
+.app-shell.app-shell[data-weather]::after{display:none}
+.app-shell[data-weather] .weather-backdrop{position:fixed;inset:0;z-index:-1;overflow:hidden;contain:strict;pointer-events:none}
+.app-shell[data-weather] .weather-backdrop svg{position:absolute;inset:0;width:100%;height:100%;min-width:0;max-height:none;overflow:hidden;pointer-events:none}
+.weather-backdrop :is(.scene-sun,.scene-moon,.scene-stars,.scene-cloud,.scene-rain,.scene-snow,.scene-fog,.scene-horizon){display:none}
+.weather-backdrop .scene-cloud{color:#f3f6f8;opacity:.8;animation:scene-cloud-drift 100s ease-in-out infinite alternate}
+.weather-backdrop .scene-cloud-0{--cloud-x:30px;--cloud-y:0px;--cloud-scale:1.5;animation-delay:-12s}
+.weather-backdrop .scene-cloud-1{--cloud-x:820px;--cloud-y:80px;--cloud-scale:2.2;animation-duration:123s;animation-delay:-40s}
+.weather-backdrop .scene-cloud-2{--cloud-x:120px;--cloud-y:390px;--cloud-scale:2.7;animation-duration:145s;animation-delay:-19s;opacity:.5}
+.weather-backdrop .scene-cloud-3{--cloud-x:1050px;--cloud-y:640px;--cloud-scale:1.8;animation-duration:112s;animation-delay:-54s;opacity:.6}
+.weather-backdrop .scene-cloud-4{--cloud-x:550px;--cloud-y:210px;--cloud-scale:2.4;animation-duration:132s;animation-delay:-85s;opacity:.45}
+.weather-backdrop .scene-cloud-5{--cloud-x:-150px;--cloud-y:740px;--cloud-scale:2.6;animation-duration:154s;animation-delay:-66s;opacity:.35}
+.app-shell:is([data-sky-phase="day"],[data-sky-phase="dawn"],[data-sky-phase="dusk"]) .scene-sun,.app-shell:not([data-sky-phase])[data-weather="sunny"] .scene-sun{display:block;animation:scene-sun-breathe 30s ease-in-out infinite alternate}
+.app-shell:is([data-sky-phase="dawn"],[data-sky-phase="dusk"]) .scene-horizon{display:block}
+.app-shell:is([data-sky-phase="dawn"],[data-sky-phase="dusk"]) .scene-sun{transform:translateY(560px)}
+.app-shell[data-sky-phase="night"] :is(.scene-moon,.scene-stars),.app-shell:not([data-sky-phase])[data-weather="night"] :is(.scene-moon,.scene-stars){display:block}
+.weather-backdrop .scene-stars{animation:scene-star-shimmer 18s ease-in-out infinite alternate}
+.app-shell[data-weather-kind]:not([data-weather-kind="clear"]):not([data-weather-kind="unknown"]) .scene-cloud,.app-shell:not([data-weather-kind]):is([data-weather="cloudy"],[data-weather="rain"],[data-weather="snow"],[data-weather="storm"]) .scene-cloud{display:block}
+.app-shell[data-sky-phase="night"] .scene-cloud{color:#a8b8ca;opacity:.9}
+.app-shell:is([data-weather-kind="storm"],[data-weather-kind="hail"]) .scene-cloud{color:#879db2}
+.app-shell[data-weather-kind="partly-cloudy"] :is(.scene-cloud-2,.scene-cloud-4,.scene-cloud-5){display:none}
+.app-shell:is([data-weather-kind="cloudy"],[data-weather-kind="fog"],[data-weather-kind="rain"],[data-weather-kind="storm"],[data-weather-kind="snow"],[data-weather-kind="hail"]) :is(.scene-sun,.scene-moon){opacity:.32;animation:none}
+.app-shell:is([data-weather-kind="cloudy"],[data-weather-kind="fog"],[data-weather-kind="rain"],[data-weather-kind="storm"],[data-weather-kind="snow"],[data-weather-kind="hail"]) .scene-stars{opacity:.22;animation:none}
+.app-shell:is([data-weather-kind="rain"],[data-weather-kind="drizzle"],[data-weather-kind="freezing-rain"],[data-weather-kind="storm"],[data-weather-kind="hail"]) .scene-rain,.app-shell:not([data-weather-kind]):is([data-weather="rain"],[data-weather="storm"]) .scene-rain{display:block;color:#6d92b0;opacity:.34}
+.app-shell[data-sky-phase="night"] .scene-rain{color:#e0eaf1;opacity:.3}
+.weather-backdrop .scene-rainfall{animation:scene-rain-fall 5s linear infinite}
+.app-shell[data-weather-kind="drizzle"] .scene-rain{opacity:.18}
+.app-shell[data-weather-kind="snow"] .scene-snow,.app-shell:not([data-weather-kind])[data-weather="snow"] .scene-snow{display:block;opacity:.8}
+.weather-backdrop .scene-snowfall{animation:scene-snow-fall 18s linear infinite}
+.app-shell[data-weather-kind="fog"] .scene-fog,.app-shell:not([data-weather-kind])[data-weather="fog"] .scene-fog{display:block;color:#f3f5f7}
+.weather-backdrop .scene-mist{animation:scene-fog-drift 68s ease-in-out infinite alternate}
+.app-shell.app-shell[data-sky-phase="neutral"] .weather-backdrop,.app-shell.app-shell:not([data-sky-phase])[data-weather="neutral"] .weather-backdrop{display:none}
+@keyframes scene-cloud-drift{from{transform:translate(var(--cloud-x),var(--cloud-y)) scale(var(--cloud-scale))}to{transform:translate(calc(var(--cloud-x) + 90px),calc(var(--cloud-y) + 12px)) scale(var(--cloud-scale))}}
+@keyframes scene-sun-breathe{from{opacity:.65}to{opacity:.9}}
+@keyframes scene-star-shimmer{from{opacity:.55}to{opacity:.85}}
+@keyframes scene-rain-fall{from{transform:translate(25px,-80px)}to{transform:translate(-25px,80px)}}
+@keyframes scene-snow-fall{from{transform:translate(-12px,-70px)}to{transform:translate(12px,70px)}}
+@keyframes scene-fog-drift{from{transform:translateX(-60px)}to{transform:translateX(60px)}}
+.app-shell[data-motion="paused"] .weather-backdrop .scene-motion,.app-shell .weather-backdrop[data-paused="true"] .scene-motion{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.app-shell .weather-backdrop .scene-motion{animation:none!important}.weather-backdrop .scene-cloud{transform:translate(var(--cloud-x),var(--cloud-y)) scale(var(--cloud-scale))}}
+
+.app-shell[data-sky-phase="night"]{--scene-cloud-color:#bbc8d7}
+.app-shell:is([data-weather-kind="storm"],[data-weather-kind="hail"]){--scene-cloud-color:#afbdcc}
+
+/* Night is a dark sky, not a daylight palette tinted blue. Keep reading surfaces light. */
+.app-shell.app-shell[data-sky-phase="night"]{--sky:#101c36;--horizon-color:#253454;--glass:rgba(239,246,253,.86);--scene-cloud-color:#61728f}
+.app-shell.app-shell[data-sky-phase="dusk"]{--sky:#34405e;--horizon-color:#be8090;--glass:rgba(245,246,253,.86)}
+.app-shell.app-shell:is([data-sky-phase="night"],[data-sky-phase="dusk"]) :is(.brand,.brand small,.page-heading,.page-heading .subtle,.selected-place-header,.selected-place-header p,.selected-place-header .subtle,.location-subtitle,.selected-location-label,footer,footer a){color:#e5edf9}
+.app-shell.app-shell:is([data-sky-phase="night"],[data-sky-phase="dusk"]) .navigation .MuiTab-root{color:#d9e6f7}
+.app-shell.app-shell:is([data-sky-phase="night"],[data-sky-phase="dusk"]) .navigation .Mui-selected{color:#fff;background:#dce9ff20}
+.app-shell.app-shell:is([data-sky-phase="night"],[data-sky-phase="dusk"]) :is(.background-toggle,.saved-places .MuiButton-root){color:#e5edf9}
+.app-shell.app-shell:is([data-sky-phase="night"],[data-sky-phase="dusk"]) .location-tools .MuiOutlinedInput-root{background:#edf4f7e8}
+.app-shell.app-shell:is([data-sky-phase="night"],[data-sky-phase="dusk"]) .location-actions .MuiButton-root{background:#edf4f7e8}
+.app-shell.app-shell[data-sky-phase="night"] .scene-cloud{opacity:.45}
+.app-shell.app-shell[data-sky-phase="night"] .scene-stars{opacity:.9;animation:scene-star-shimmer 18s ease-in-out infinite alternate}
+.app-shell.app-shell[data-sky-phase="night"]:is([data-weather-kind="cloudy"],[data-weather-kind="fog"],[data-weather-kind="rain"],[data-weather-kind="storm"],[data-weather-kind="snow"],[data-weather-kind="hail"]) .scene-stars{opacity:.5;animation:none}
+.app-shell.app-shell[data-sky-phase="dusk"] .scene-stars{display:block;opacity:.45}
+.app-shell.app-shell:is([data-sky-phase="night"],[data-sky-phase="dusk"]) .saved-places .MuiButton-root small{color:#c6d4e8}
+.app-shell.app-shell:is([data-sky-phase="night"],[data-sky-phase="dusk"]) .units .MuiButton-root:not([aria-pressed="true"]){background:#edf4f7e8}

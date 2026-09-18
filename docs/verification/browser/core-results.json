@@ -1,0 +1,51 @@
+{
+  "time": "2026-09-11T01:35:39.969Z",
+  "browser": "152.0.7977.75",
+  "results": [
+    {
+      "name": "ambiguous city search and live forecast",
+      "status": "pass"
+    },
+    {
+      "name": "save location / units / horizon / activity",
+      "status": "pass"
+    },
+    {
+      "name": "hourly chart and table",
+      "status": "pass"
+    },
+    {
+      "name": "preferences survive reload",
+      "status": "pass"
+    },
+    {
+      "name": "geolocation granted",
+      "status": "pass"
+    },
+    {
+      "name": "radar current and previous frame",
+      "status": "pass"
+    },
+    {
+      "name": "satellite product",
+      "status": "pass"
+    },
+    {
+      "name": "mobile layout no horizontal overflow",
+      "status": "pass"
+    },
+    {
+      "name": "offline hides weather, reconnect restores",
+      "status": "pass"
+    },
+    {
+      "name": "settings remove saved location",
+      "status": "pass"
+    },
+    {
+      "name": "service worker registration",
+      "status": "pass"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,52 @@
+TAP version 13
+# Subtest: preserved independent NOAA regional and infrared timelines and extents
+ok 1 - preserved independent NOAA regional and infrared timelines and extents
+  ---
+  duration_ms: 84.825429
+  type: 'test'
+  ...
+# Subtest: malformed/DTD/deep/oversized XML fails closed
+ok 2 - malformed/DTD/deep/oversized XML fails closed
+  ---
+  duration_ms: 2.983714
+  type: 'test'
+  ...
+# Subtest: missing layer and interval times fail independently without fabricating frames
+ok 3 - missing layer and interval times fail independently without fabricating frames
+  ---
+  duration_ms: 170.549582
+  type: 'test'
+  ...
+# Subtest: builder fixes origin, layer, styles, CRS84 and exact source time
+ok 4 - builder fixes origin, layer, styles, CRS84 and exact source time
+  ---
+  duration_ms: 473.818212
+  type: 'test'
+  ...
+# Subtest: mocked bounded metadata/image fetch preserves Warning without inventing actual time
+ok 5 - mocked bounded metadata/image fetch preserves Warning without inventing actual time
+  ---
+  duration_ms: 169.425882
+  type: 'test'
+  ...
+# Subtest: provider HTTP/XML masquerading as image/oversize/invalid PNG are rejected
+ok 6 - provider HTTP/XML masquerading as image/oversize/invalid PNG are rejected
+  ---
+  duration_ms: 366.275988
+  type: 'test'
+  ...
+# Subtest: cancellation signal reaches fetch and no retry occurs
+ok 7 - cancellation signal reaches fetch and no retry occurs
+  ---
+  duration_ms: 0.703493
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1644.890787

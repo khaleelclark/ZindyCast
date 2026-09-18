@@ -1,0 +1,33 @@
+{
+  "name": "zindycast",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=22.22.1 <23"
+  },
+  "packageManager": "npm@9.2.0",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "npm run build --workspace @zindycast/web && node scripts/compress-web.mjs",
+    "dev:web": "npm run dev --workspace @zindycast/web",
+    "dev:api": "node --env-file-if-exists=.env --import tsx --watch apps/api/src/server.ts",
+    "dev:worker": "node --env-file-if-exists=.env --import tsx apps/worker/src/main.ts",
+    "test": "tsx --test packages/*/src/*.test.ts apps/api/src/*.test.ts apps/web/src/*.test.ts apps/worker/src/*.test.ts",
+    "start": "node --env-file-if-exists=.env --import tsx scripts/start.mjs",
+    "start:worker": "node --env-file-if-exists=.env --import tsx apps/worker/src/main.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "22.20.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/web-push": "3.6.4",
+    "tsx": "4.23.13",
+    "typescript": "7.0.2"
+  }
+}

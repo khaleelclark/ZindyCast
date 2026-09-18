@@ -1,0 +1,33 @@
+[Unit]
+Description=ZindyCast comparison worker and bounded cleanup
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+[Service]
+Type=simple
+# Must match the API checkout when using relative database paths.
+WorkingDirectory=%h/ZindyCast
+EnvironmentFile=%h/.config/zindycast/runtime.env
+ExecStartPre=/usr/bin/node -e "if(process.versions.node!=='22.22.1')process.exit(1)"
+ExecStart=/usr/bin/node --import tsx apps/worker/src/main.ts
+Restart=on-failure
+RestartSec=5
+KillSignal=SIGTERM
+KillMode=control-group
+TimeoutStopSec=45
+UMask=0077
+NoNewPrivileges=yes
+MemoryHigh=384M
+MemoryMax=512M
+CPUQuota=100%
+TasksMax=64
+LimitNOFILE=4096
+LimitCORE=0
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=zindycast-worker
+LogRateLimitIntervalSec=30s
+LogRateLimitBurst=100
+
+[Install]
+WantedBy=default.target

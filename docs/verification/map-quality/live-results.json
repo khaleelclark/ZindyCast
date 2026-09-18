@@ -1,0 +1,59 @@
+{
+  "live": true,
+  "apiGetCount": 3,
+  "maximumNewNoaaRequests": 4,
+  "calls": [
+    {
+      "url": "/api/v1/maps",
+      "at": "2026-09-11T21:36:02.927Z",
+      "replay": false
+    },
+    {
+      "url": "/api/v1/maps/frame?product=radar-conus&west=-84.83943&south=27.36089&east=-77.50057&north=30.33386&width=800&height=500&projection=EPSG%3A3857&time=2026-09-11T21%3A28%3A12.000Z",
+      "at": "2026-09-11T21:36:04.141Z",
+      "replay": false
+    },
+    {
+      "url": "/api/v1/maps/frame?product=satellite-goes-infrared&west=-84.83943&south=27.36089&east=-77.50057&north=30.33386&width=800&height=500&projection=EPSG%3A3857&time=2026-09-11T21%3A28%3A00.000Z",
+      "at": "2026-09-11T21:36:04.822Z",
+      "replay": false
+    },
+    {
+      "url": "/api/v1/maps/frame?product=satellite-goes-infrared&west=-84.83943&south=27.36089&east=-77.50057&north=30.33386&width=800&height=500&projection=EPSG%3A3857&time=2026-09-11T21%3A28%3A00.000Z",
+      "at": "2026-09-11T21:36:07.448Z",
+      "replay": true
+    },
+    {
+      "url": "/api/v1/maps/frame?product=radar-conus&west=-84.83943&south=27.36089&east=-77.50057&north=30.33386&width=800&height=500&projection=EPSG%3A3857&time=2026-09-11T21%3A28%3A12.000Z",
+      "at": "2026-09-11T21:36:07.588Z",
+      "replay": true
+    },
+    {
+      "url": "/api/v1/maps/frame?product=satellite-goes-infrared&west=-84.83943&south=27.36089&east=-77.50057&north=30.33386&width=800&height=500&projection=EPSG%3A3857&time=2026-09-11T21%3A28%3A00.000Z",
+      "at": "2026-09-11T21:36:07.758Z",
+      "replay": true
+    },
+    {
+      "url": "/api/v1/maps/frame?product=radar-conus&west=-84.83943&south=27.36089&east=-77.50057&north=30.33386&width=800&height=500&projection=EPSG%3A3857&time=2026-09-11T21%3A28%3A12.000Z",
+      "at": "2026-09-11T21:36:07.868Z",
+      "replay": true
+    }
+  ],
+  "errors": [],
+  "defaultOpacity": "0.65",
+  "radarOpacity": "0.45",
+  "restoredSatelliteOpacity": "0.75",
+  "restoredRadarOpacity": "0.75",
+  "stats": {
+    "width": 800,
+    "height": 500,
+    "opaque": 400000,
+    "gray": 400000,
+    "min": 63,
+    "max": 233,
+    "colors": 169
+  },
+  "clock": "Radar · 7 min since advertised time",
+  "sameCanvas": true,
+  "limitations": "Forecast and other weather APIs intentionally unavailable; future transition tests unavailability path here. OSM visible tiles allowed. Replays use exact retained API metadata; no provider/geographic accuracy assertion."
+}

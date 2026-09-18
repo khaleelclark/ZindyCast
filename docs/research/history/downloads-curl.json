@@ -1,0 +1,50 @@
+[
+  {
+    "file": "ghcnd-stations.txt",
+    "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-stations.txt",
+    "status": "200",
+    "error": "",
+    "bytes": 11395086,
+    "accessed": "2026-09-10T22:37:45.297483+00:00"
+  },
+  {
+    "file": "ghcnd-inventory.txt",
+    "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-inventory.txt",
+    "status": "200",
+    "error": "curl: (28) Operation timed out after 35000 milliseconds with 9745662 out of 35999416 bytes received\n",
+    "bytes": 9745662,
+    "accessed": "2026-09-10T22:37:49.281837+00:00"
+  },
+  {
+    "file": "ghcnd-readme.txt",
+    "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/readme.txt",
+    "status": "200",
+    "error": "",
+    "bytes": 28567,
+    "accessed": "2026-09-10T22:37:14.931310+00:00"
+  },
+  {
+    "file": "ghcnh-station-list.csv",
+    "url": "https://www.ncei.noaa.gov/oa/global-historical-climatology-network/hourly/doc/ghcnh-station-list.csv",
+    "status": "200",
+    "error": "",
+    "bytes": 2203945,
+    "accessed": "2026-09-10T22:37:33.901792+00:00"
+  },
+  {
+    "file": "ghcnh_DOCUMENTATION.pdf",
+    "url": "https://www.ncei.noaa.gov/oa/global-historical-climatology-network/hourly/doc/ghcnh_DOCUMENTATION.pdf",
+    "status": "200",
+    "error": "",
+    "bytes": 423879,
+    "accessed": "2026-09-10T22:37:34.513807+00:00"
+  },
+  {
+    "file": "homr-st-george.json",
+    "url": "https://www.ncei.noaa.gov/access/homr/services/station/search?name=ST%20GEORGE&nameMod=starts&state=UT&date=all&phrData=false",
+    "status": "200",
+    "error": "",
+    "bytes": 115141,
+    "accessed": "2026-09-10T22:37:35.231332+00:00"
+  }
+]

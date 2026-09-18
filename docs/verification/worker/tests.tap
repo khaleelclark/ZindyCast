@@ -1,0 +1,78 @@
+TAP version 13
+# (node:718730) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: sequential completion, validated result, shared cache identity and terminal admission release
+ok 1 - sequential completion, validated result, shared cache identity and terminal admission release
+  ---
+  duration_ms: 53.029374
+  type: 'test'
+  ...
+# Subtest: cancel from another actor aborts in-flight work and prevents publication
+ok 2 - cancel from another actor aborts in-flight work and prevents publication
+  ---
+  duration_ms: 12.170348
+  type: 'test'
+  ...
+# Subtest: revoke from another actor aborts in-flight work and prevents publication
+ok 3 - revoke from another actor aborts in-flight work and prevents publication
+  ---
+  duration_ms: 10.771789
+  type: 'test'
+  ...
+# Subtest: unowned payload and too-recent closing padding make no provider calls
+ok 4 - unowned payload and too-recent closing padding make no provider calls
+  ---
+  duration_ms: 6.707021
+  type: 'test'
+  ...
+# Subtest: quota denial and corrupt cached data fail closed without network fallback
+ok 5 - quota denial and corrupt cached data fail closed without network fallback
+  ---
+  duration_ms: 8.995054
+  type: 'test'
+  ...
+# Subtest: shutdown aborts and leaves running lease/admission recoverable; next attempt reuses validated chunks
+ok 6 - shutdown aborts and leaves running lease/admission recoverable; next attempt reuses validated chunks
+  ---
+  duration_ms: 18.742583
+  type: 'test'
+  ...
+# Subtest: lease takeover fences old result and retains new running admission
+ok 7 - lease takeover fences old result and retains new running admission
+  ---
+  duration_ms: 8.030527
+  type: 'test'
+  ...
+# Subtest: heartbeat renews during provider work and runOnce excludes same-instance concurrency
+ok 8 - heartbeat renews during provider work and runOnce excludes same-instance concurrency
+  ---
+  duration_ms: 43.285551
+  type: 'test'
+  ...
+# Subtest: 31-day chunks charge weight three and padding weight one before each request
+ok 9 - 31-day chunks charge weight three and padding weight one before each request
+  ---
+  duration_ms: 38.604307
+  type: 'test'
+  ...
+# Subtest: storage read failure and held cache lease fail without provider work
+ok 10 - storage read failure and held cache lease fail without provider work
+  ---
+  duration_ms: 6.188178
+  type: 'test'
+  ...
+# Subtest: wrong provenance and expired cache write lease are rejected before progress/publication
+ok 11 - wrong provenance and expired cache write lease are rejected before progress/publication
+  ---
+  duration_ms: 9.818153
+  type: 'test'
+  ...
+1..11
+# tests 11
+# suites 0
+# pass 11
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 632.413513

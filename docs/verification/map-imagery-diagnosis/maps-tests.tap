@@ -1,0 +1,58 @@
+TAP version 13
+# Subtest: preserved independent NOAA regional and infrared timelines and extents
+ok 1 - preserved independent NOAA regional and infrared timelines and extents
+  ---
+  duration_ms: 82.304097
+  type: 'test'
+  ...
+# Subtest: malformed/DTD/deep/oversized XML fails closed
+ok 2 - malformed/DTD/deep/oversized XML fails closed
+  ---
+  duration_ms: 1.797634
+  type: 'test'
+  ...
+# Subtest: missing layer and interval times fail independently without fabricating frames
+ok 3 - missing layer and interval times fail independently without fabricating frames
+  ---
+  duration_ms: 152.000827
+  type: 'test'
+  ...
+# Subtest: builder fixes origin, layer, styles, CRS84 and exact source time
+ok 4 - builder fixes origin, layer, styles, CRS84 and exact source time
+  ---
+  duration_ms: 415.992932
+  type: 'test'
+  ...
+# Subtest: mocked bounded metadata/image fetch preserves Warning without inventing actual time
+ok 5 - mocked bounded metadata/image fetch preserves Warning without inventing actual time
+  ---
+  duration_ms: 154.690881
+  type: 'test'
+  ...
+# Subtest: provider HTTP/XML masquerading as image/oversize/invalid PNG are rejected
+ok 6 - provider HTTP/XML masquerading as image/oversize/invalid PNG are rejected
+  ---
+  duration_ms: 342.347522
+  type: 'test'
+  ...
+# Subtest: cancellation signal reaches fetch and no retry occurs
+ok 7 - cancellation signal reaches fetch and no retry occurs
+  ---
+  duration_ms: 0.673575
+  type: 'test'
+  ...
+# Subtest: Mercator meters match independent known corners and reject polar/wrapping bounds
+ok 8 - Mercator meters match independent known corners and reject polar/wrapping bounds
+  ---
+  duration_ms: 200.014795
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1664.432017

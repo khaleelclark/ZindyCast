@@ -1,0 +1,178 @@
+Skip to weather
+◒
+ZindyCast
+Weather beyond temperature
+°F
+°C
+Today
+Maps
+History
+Compare
+Settings
+Search cities
+Search cities
+Search cities
+⌖ Use my location
+Austin
+Texas
+Austin, Travis, Texas, United States
+★ Saved · remove
+
+OBSERVED WEATHER · NOAA NOWCOAST
+
+Radar & satellite
+
+Austin · 30.267°, -97.743° · Observed imagery
+
+Region
+CONUS
+AK
+HI
+Product
+CONUS Weather Radar Base Reflectivity
+GOES East & West Satellite Longwave Imagery
+Global Satellite Longwave Imagery
+Advertised time (UTC)
+2026-09-10 18:03:00Z
+2026-09-10 18:08:00Z
+2026-09-10 18:13:00Z
+2026-09-10 18:18:00Z
+2026-09-10 18:23:00Z
+2026-09-10 18:28:00Z
+2026-09-10 18:33:00Z
+2026-09-10 18:38:00Z
+2026-09-10 18:43:00Z
+2026-09-10 18:48:00Z
+2026-09-10 18:53:00Z
+2026-09-10 18:58:00Z
+2026-09-10 19:03:00Z
+2026-09-10 19:08:00Z
+2026-09-10 19:13:00Z
+2026-09-10 19:18:00Z
+2026-09-10 19:23:00Z
+2026-09-10 19:28:00Z
+2026-09-10 19:33:00Z
+2026-09-10 19:38:00Z
+2026-09-10 19:43:00Z
+2026-09-10 19:48:00Z
+2026-09-10 19:53:00Z
+2026-09-10 19:58:00Z
+2026-09-10 20:03:00Z
+2026-09-10 20:08:00Z
+2026-09-10 20:13:00Z
+2026-09-10 20:18:00Z
+2026-09-10 20:23:00Z
+2026-09-10 20:28:00Z
+2026-09-10 20:33:00Z
+2026-09-10 20:38:00Z
+2026-09-10 20:43:00Z
+2026-09-10 20:48:00Z
+2026-09-10 20:53:00Z
+2026-09-10 20:58:00Z
+2026-09-10 21:03:00Z
+2026-09-10 21:08:00Z
+2026-09-10 21:13:00Z
+2026-09-10 21:18:00Z
+2026-09-10 21:23:00Z
+2026-09-10 21:28:00Z
+2026-09-10 21:33:00Z
+2026-09-10 21:38:00Z
+2026-09-10 21:43:00Z
+2026-09-10 21:48:00Z
+2026-09-10 21:53:00Z
+2026-09-10 21:58:00Z
+2026-09-10 22:03:00Z
+2026-09-10 22:08:00Z
+2026-09-10 22:13:00Z
+2026-09-10 22:18:00Z
+2026-09-10 22:23:00Z
+2026-09-10 22:28:00Z
+2026-09-10 22:33:00Z
+2026-09-10 22:38:00Z
+2026-09-10 22:43:00Z
+2026-09-10 22:48:00Z
+2026-09-10 22:53:00Z
+2026-09-10 22:58:00Z
+2026-09-10 23:03:00Z
+2026-09-10 23:08:00Z
+2026-09-10 23:13:00Z
+2026-09-10 23:18:00Z
+2026-09-10 23:23:00Z
+2026-09-10 23:28:00Z
+2026-09-10 23:33:00Z
+2026-09-10 23:38:00Z
+2026-09-10 23:43:00Z
+2026-09-10 23:48:00Z
+2026-09-10 23:53:00Z
+2026-09-10 23:58:00Z
+2026-09-11 00:03:00Z
+2026-09-11 00:08:00Z
+2026-09-11 00:13:00Z
+2026-09-11 00:18:00Z
+2026-09-11 00:23:00Z
+2026-09-11 00:28:00Z
+2026-09-11 00:33:00Z
+2026-09-11 00:38:00Z
+2026-09-11 00:43:00Z
+2026-09-11 00:48:00Z
+2026-09-11 00:53:00Z
+2026-09-11 00:58:00Z
+2026-09-11 01:03:00Z
+2026-09-11 01:08:00Z
+2026-09-11 01:13:00Z
+2026-09-11 01:18:00Z
+2026-09-11 01:23:00Z
+2026-09-11 01:28:00Z
+2026-09-11 01:33:00Z
+2026-09-11 01:38:00Z
+2026-09-11 01:43:00Z
+2026-09-11 01:48:00Z
+2026-09-11 01:53:00Z
+2026-09-11 01:58:00Z
+2026-09-11 02:03:00Z
+2026-09-11 02:08:00Z
+2026-09-11 02:13:00Z
+2026-09-11 02:18:00Z
+2026-09-11 02:23:00Z
+2026-09-11 02:28:00Z
+2026-09-11 02:33:00Z
+Previous frame
+Next frame
+Refresh catalog & frame
+102 of 103 advertised times
+
+Coverage unknown · blank imagery does not mean clear weather. Actual observation time unconfirmed.
+
+Center city
+Fit region
+Weather opacity 65%
+20 km
+© OpenStreetMap contributors
+
+© OpenStreetMap contributors · Report a map issue · Weather: NOAA nowCOAST
+
+Dashed boundary: requested image footprint, not radar coverage. North up · latitude limited to ±85° · no date-line wrapping.
+
+Legend, source & timing
+Map capabilities
+
+Manual frame navigation only. Pan, zoom and labeled basemap available. Temperature/wind overlays and animation are forthcoming.
+
+NIFC / WFIGS · PUBLISHED INCIDENT MAPPING
+
+Wildfire & prescribed-fire evidence
+
+Coverage unknown · no records ≠ no fire. Perimeters are not evacuation zones or safety boundaries.
+
+Wildfire limitations
+Query area & categories
+Load wildfire evidence
+
+NIFC official maps ↗ · NIFC / WFIGS; IRWIN / DOI, USDA Forest Service, partner agencies and NWCG.
+
+Weather / geocoding: Open-Meteo
+Location data: GeoNames
+WBGT software notice
+ZindyCast
+A clearer picture of your weather.
+Forecast estimates · no safe-exposure countdowns

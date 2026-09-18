@@ -1,0 +1,170 @@
+{
+  "date": "2026-09-10",
+  "offline_checks": [
+    {
+      "command": "python3 docs/research/history/analyze-samples.py",
+      "exit_code": 0,
+      "stdout": "Verified fixed-width daily parsing, valid calendar days, unique daily counts, and complete PSV rows for 5 daily / 5 hourly stations.\n"
+    },
+    {
+      "command": "python3 docs/research/history/rank-metadata.py",
+      "exit_code": 0,
+      "stdout": "Roseville CA Placer [('USW00023271', 'SACRAMENTO 5 ESE', 24.64, 11.6, [1877, 2025]), ('USC00040383', 'AUBURN', 24.7, 393.8, [1905, 2026]), ('USW00023232', 'SACRAMENTO AP ASOS', 32.73, 5.8, [1941, 2026])]\nSt George UT [('USC00427516', 'ST GEORGE', 2.59, 870.8, [1893, 2026]), ('USC00424968', 'LA VERKIN', 29.96, 973.5, [1950, 2026]), ('USC00426181', 'NEW HARMONY', 47.71, 1574.9, [1952, 2026])]\nAnthem AZ [('USC00021282', 'CAREFREE', 23.33, 771.1, [1962, 2026]), ('USC00029634', 'YOUNGTOWN', 33.51, 345.9, [1964, 2026]), ('USC00020632', 'BARTLETT DAM', 46.36, 502.9, [1940, 2026])]\nDeltona FL [('USC00087982', 'SANFORD', 9.64, 3.7, [1956, 2026]), ('USC00082229', 'DELAND 1 SSE', 12.61, 7.6, [1892, 2026]), ('USW00012854', 'ORLANDO SANFORD AP', 13.61, 14.9, [1945, 2026])]\nLees Summit MO [('USW00013988', 'KANSAS CITY DWTN AP', 30.03, 226.2, [1934, 2026]), ('USC00232568', 'ELM', 30.4, 259.1, [1989, 2025]), ('USC00235916', 'NAPOLEON', 36.97, 207.3, [1985, 2026])]\nAustin TX [('USW00013958', 'AUSTIN-CAMP MABRY', 6.18, 204.2, [1938, 2026]), ('USW00013904', 'AUSTIN BERGSTROM INTL AP', 11.14, 146.6, [1948, 2026]), ('USC00412585', 'DRIPPING SPRINGS 6 E', 24.1, 330.4, [1984, 2026])]\nLos Angeles CA [('USW00093134', 'LOS ANGELES DOWNTOWN/USC', 5.4, 54.6, [1906, 2026]), ('USC00046719', 'PASADENA', 14.05, 263.3, [1893, 2026]), ('USC00042214', 'CULVER CITY', 16.54, 28.0, [1935, 2026])]\nSan Francisco CA [('USW00023272', 'SAN FRANCISCO DWTN', 0.81, 45.7, [1921, 2026]), ('USC00047767', 'SAN FRANCISCO OCEANSIDE', 9.17, 2.4, [1958, 2026]), ('USC00046336', 'OAKLAND MUSEUM', 13.88, 9.1, [1970, 2026])]\nMonroe NY Orange [('USC00309292', 'W PT', 20.0, 97.5, [1890, 2025]), ('USC00307742', 'SHRUB OAK', 29.22, 140.8, [1950, 2026]), ('USC00281582', 'CHARLOTTEBURG RSVR', 38.92, 237.1, [1893, 2026])]\nSeattle WA [('USW00024234', 'SEATTLE BOEING FLD', 6.86, 7.6, [1948, 2026]), ('USW00094290', 'SEATTLE SAND PT WFO', 10.69, 18.3, [1986, 2026]), ('USW00024233', 'SEATTLE TACOMA AP', 18.01, 112.5, [1948, 2026])]\nCamas WA Clark [('USC00358634', 'TROUTDALE', 3.84, 10.1, [1948, 2026]), ('USC00457696', 'SKAMANIA FISH HATCHERY', 14.66, 132.6, [1965, 2026]), ('USW00024229', 'PORTLAND INTL AP', 16.35, 6.7, [1938, 2026])]\nAnchorage AK [('USW00026409', 'ANCHORAGE MERRILL FLD', 2.32, 38.4, [1916, 2026]), ('USW00026451', 'ANCHORAGE TED STEVENS INTL AP', 8.73, 38.1, [1952, 2026]), ('USC00503163', 'FT RICHARDSON WTP', 13.42, 143.3, [1990, 2026])]\nHonolulu HI [('USC00516128', 'MANOA LYON ARBO 785.2', 6.31, 152.4, [1975, 2026]), ('USW00022521', 'HONOLULU INTL AP', 8.56, 1.8, [1940, 2026]), ('USW00022519', 'KANEOHE BAY MCAS', 18.21, 3.0, [1942, 2026])]\n"
+    }
+  ],
+  "summary_reproduction_identical": true,
+  "report_relative_links_valid": true,
+  "note": "Workspace is not a git repository; no git diff/status validation available. All writes confined to owned report/evidence paths.",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 5596,
+      "sha256": "cf13a2ab7fde95f3fe9ba0c430a07610fd5a3c2cb7c665e5bb783778d871ea46"
+    },
+    {
+      "file": "USC00427516.dly",
+      "bytes": 2583900,
+      "sha256": "83dedcd9b71d3e71c0e8ade621308b0ccc5d23322e0c347bf9c64e7a0f963672"
+    },
+    {
+      "file": "USW00003184-2020-head.psv",
+      "bytes": 262144,
+      "sha256": "b43f8146043458ec3c2c5596918bbecc6c81356c9cdcfb53979d739cde6eef4f"
+    },
+    {
+      "file": "USW00003184.dly",
+      "bytes": 1048410,
+      "sha256": "add62d5400342dd7de1d5f419b543c656af2cf40595ff187a23510585a114e6b"
+    },
+    {
+      "file": "USW00012854-2020-head.psv",
+      "bytes": 262144,
+      "sha256": "7ada74cc3d8b79c6aa7b6f3c27a271481983b72c57c86bc61adeac9ea7241963"
+    },
+    {
+      "file": "USW00012854.dly",
+      "bytes": 1772820,
+      "sha256": "815142e8bfa8af5bb87c6909ef6d7d19d2b6a52f4975b0cf7691eb5697f57b0d"
+    },
+    {
+      "file": "USW00022521-2020-head.psv",
+      "bytes": 262144,
+      "sha256": "4cd186d737ecc6132c264f6a010a81a1e810b920c0cc463b1d65c17f538ce7b9"
+    },
+    {
+      "file": "USW00022521.dly",
+      "bytes": 3807540,
+      "sha256": "8f164bd0953220e8dc1b0ecfce71a2a6bad2c69f5e41f4b296dcca96156d89dd"
+    },
+    {
+      "file": "USW00023186-2020-head.psv",
+      "bytes": 262144,
+      "sha256": "5a378cfeb0db325c34d468e239095735b20bc512cdda977d95297ba86bbb0210"
+    },
+    {
+      "file": "USW00026451-2020-head.psv",
+      "bytes": 262144,
+      "sha256": "088041ea5512eb46c1b8943926f02c173ec19070a6096fe51264f833795fac29"
+    },
+    {
+      "file": "USW00026451.dly",
+      "bytes": 4486320,
+      "sha256": "6a152dcb600ae1c5f069ddeb58794e907e3f53f94c884ba76a118afd8c1f0fed"
+    },
+    {
+      "file": "USW00093198-2020-head.psv",
+      "bytes": 262,
+      "sha256": "cf5351a1bf865cbe253bd2e22d10933d36cf99b6d6364f67e9064dbba0cfe512"
+    },
+    {
+      "file": "analyze-samples.py",
+      "bytes": 3458,
+      "sha256": "386186e8a110f929d62d399f376952e1969e603b7d8604adf76038f2f8584d31"
+    },
+    {
+      "file": "candidates.json",
+      "bytes": 174177,
+      "sha256": "8245d5133d79ac5eac666ee0e8ff3a9a1d073bf434a32321002e1f88c34ac720"
+    },
+    {
+      "file": "daily-summary.json",
+      "bytes": 43176,
+      "sha256": "0fbf1db9f32744426a70a871e75a97a22776034b66b74abceadc843a38abaf64"
+    },
+    {
+      "file": "downloads-curl.json",
+      "bytes": 1634,
+      "sha256": "cb147228f73e9c13d05fd8b552fcc17bbe4bbe53f0405993fd638f63ad5ca633"
+    },
+    {
+      "file": "downloads-hourly.json",
+      "bytes": 729,
+      "sha256": "5ab5796e2c6b2ff5fa7b2dc6f34ffaad1dbb43a72bff35ca85d655a3d6e96f58"
+    },
+    {
+      "file": "downloads.json",
+      "bytes": 579,
+      "sha256": "cd4bce563b8fde8f1b00343949b07cd649eea8bbbcfd31f958909ba53e7d62c3"
+    },
+    {
+      "file": "ghcnd-inventory-subset.txt",
+      "bytes": 1170792,
+      "sha256": "f6fc7e9c715675c013fe5b2e251a1f95addb79df483846990aeca755122682a4"
+    },
+    {
+      "file": "ghcnd-readme.txt",
+      "bytes": 28567,
+      "sha256": "3a71ae355252a6693a56a473ed7182b500ae7816c2cb2b2ce708c1e9ea9dcfde"
+    },
+    {
+      "file": "ghcnd-stations-subset.txt",
+      "bytes": 456402,
+      "sha256": "4023e014c3dc2c6d48d84969e761ab39af8a47935bb4c49c862262637ea97841"
+    },
+    {
+      "file": "ghcnh-documentation.txt",
+      "bytes": 34482,
+      "sha256": "272280c49c55a8d550b61bf3dc503bc948329c6a1929409e8f3cac0115ec7964"
+    },
+    {
+      "file": "ghcnh-station-list-subset.csv",
+      "bytes": 22740,
+      "sha256": "e5c9047f5540ad8142dc2d46b9499b50068e82d6835ac4d01c1d1847dc61d0e0"
+    },
+    {
+      "file": "ghcnh_DOCUMENTATION.pdf",
+      "bytes": 423879,
+      "sha256": "df5694efdc2d498f006a343165bae65701d14809174b9bed660149bd4fe591b7"
+    },
+    {
+      "file": "homr-st-george.json",
+      "bytes": 115141,
+      "sha256": "f08bd36faccb388184ddba332aaa07c211a6534f5a8437dcdeb87325913cd42e"
+    },
+    {
+      "file": "hourly-summary.json",
+      "bytes": 162100,
+      "sha256": "964137ccf5d0ede53ce8884b61473751c78f79931a614a6c93c06c91cb996622"
+    },
+    {
+      "file": "inventory-mid-headers.txt",
+      "bytes": 423,
+      "sha256": "3428dec2d02ed5219623f3a3181f02b53340b630aff08b64a7564729a8385808"
+    },
+    {
+      "file": "rank-metadata.py",
+      "bytes": 1540,
+      "sha256": "01f60f8ab5c26a0c6e6e097804c7848b599389c472c5170dfc47f081b05db635"
+    },
+    {
+      "file": "sample-downloads.json",
+      "bytes": 3471,
+      "sha256": "09710c71d5763fdd75d26b3f260025f8dfa70a8091bc9e1988755827e8091138"
+    },
+    {
+      "file": "source-subsetting.json",
+      "bytes": 1322,
+      "sha256": "50b5c2088c09b20583b8374b4ae2ccbe41d08640f4e34082edf337855b0754b9"
+    }
+  ]
+}

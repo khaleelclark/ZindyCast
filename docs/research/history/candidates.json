@@ -1,0 +1,9402 @@
+[
+  {
+    "city": "Roseville CA Placer",
+    "latitude": 38.7521,
+    "longitude": -121.288,
+    "coordinate_status": "approximate research center, not persisted app location",
+    "hourly_nearest_metadata": [
+      {
+        "GHCN_ID": "USW00023208",
+        "LATITUDE": "38.6667",
+        "LONGITUDE": "-121.4",
+        "ELEVATION": "23.5",
+        "STATE": "CA",
+        "NAME": "SACRAMENTO MCCLELLAN AFB",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KMCC",
+        "ISO_CODE": "US",
+        "distance_km": 13.59
+      },
+      {
+        "GHCN_ID": "USW00000205",
+        "LATITUDE": "38.9089",
+        "LONGITUDE": "-121.3511",
+        "ELEVATION": "37.2",
+        "STATE": "CA",
+        "NAME": "LINCOLN RGNL AP",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KLHM",
+        "ISO_CODE": "US",
+        "distance_km": 18.27
+      },
+      {
+        "GHCN_ID": "USW00023206",
+        "LATITUDE": "38.5667",
+        "LONGITUDE": "-121.3",
+        "ELEVATION": "30.2",
+        "STATE": "CA",
+        "NAME": "SACRAMENTO MATHER AFB",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KMHR",
+        "ISO_CODE": "US",
+        "distance_km": 20.64
+      },
+      {
+        "GHCN_ID": "USW00023271",
+        "LATITUDE": "38.5553",
+        "LONGITUDE": "-121.4183",
+        "ELEVATION": "11.6",
+        "STATE": "CA",
+        "NAME": "SACRAMENTO 5 ESE",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 24.64
+      },
+      {
+        "GHCN_ID": "USP047633-1",
+        "LATITUDE": "38.58",
+        "LONGITUDE": "-121.5",
+        "ELEVATION": "12.0",
+        "STATE": "",
+        "NAME": "SACRAMENTO",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 26.55
+      }
+    ],
+    "daily_nearest_three_core_inventory": [
+      {
+        "id": "USC00041773",
+        "latitude": 38.7,
+        "longitude": -121.3,
+        "elevation": 43.0,
+        "name": "CITRUS HEIGHTS",
+        "distance_km": 5.89,
+        "inventory": {
+          "TMAX": [
+            1972,
+            1972
+          ],
+          "TMIN": [
+            1972,
+            1972
+          ],
+          "PRCP": [
+            1960,
+            1975
+          ],
+          "SNOW": [
+            1960,
+            1975
+          ],
+          "SNWD": [
+            1960,
+            1975
+          ],
+          "DAPR": [
+            1964,
+            1969
+          ],
+          "MDPR": [
+            1964,
+            1969
+          ],
+          "WT01": [
+            1960,
+            1962
+          ],
+          "WT03": [
+            1960,
+            1975
+          ],
+          "WT05": [
+            1960,
+            1970
+          ],
+          "WT11": [
+            1962,
+            1962
+          ],
+          "WT14": [
+            1965,
+            1965
+          ]
+        }
+      },
+      {
+        "id": "USC00047516",
+        "latitude": 38.8,
+        "longitude": -121.2333,
+        "elevation": 75.9,
+        "name": "ROCKLIN",
+        "distance_km": 7.13,
+        "inventory": {
+          "TMAX": [
+            1904,
+            1976
+          ],
+          "TMIN": [
+            1904,
+            1976
+          ],
+          "TOBS": [
+            1914,
+            1976
+          ],
+          "PRCP": [
+            1904,
+            1976
+          ],
+          "SNOW": [
+            1908,
+            1976
+          ],
+          "SNWD": [
+            1916,
+            1976
+          ],
+          "DAPR": [
+            1949,
+            1969
+          ],
+          "MDPR": [
+            1949,
+            1969
+          ],
+          "WT01": [
+            1904,
+            1963
+          ],
+          "WT03": [
+            1949,
+            1975
+          ],
+          "WT05": [
+            1950,
+            1976
+          ],
+          "WT08": [
+            1910,
+            1949
+          ],
+          "WT11": [
+            1912,
+            1962
+          ],
+          "WT14": [
+            1949,
+            1950
+          ],
+          "WT16": [
+            1904,
+            1936
+          ],
+          "WT18": [
+            1916,
+            1930
+          ]
+        }
+      },
+      {
+        "id": "USC00043111",
+        "latitude": 38.6833,
+        "longitude": -121.1833,
+        "elevation": 75.9,
+        "name": "FOLSOM",
+        "distance_km": 11.88,
+        "inventory": {
+          "TMAX": [
+            1904,
+            1955
+          ],
+          "TMIN": [
+            1904,
+            1955
+          ],
+          "TOBS": [
+            1910,
+            1955
+          ],
+          "PRCP": [
+            1893,
+            1955
+          ],
+          "SNOW": [
+            1898,
+            1955
+          ],
+          "SNWD": [
+            1918,
+            1955
+          ],
+          "WT01": [
+            1894,
+            1941
+          ],
+          "WT03": [
+            1949,
+            1949
+          ],
+          "WT08": [
+            1894,
+            1933
+          ],
+          "WT14": [
+            1913,
+            1913
+          ],
+          "WT16": [
+            1893,
+            1941
+          ],
+          "WT18": [
+            1916,
+            1916
+          ]
+        }
+      },
+      {
+        "id": "USC00043113",
+        "latitude": 38.7,
+        "longitude": -121.1667,
+        "elevation": 106.7,
+        "name": "FOLSOM DAM",
+        "distance_km": 12.01,
+        "inventory": {
+          "TMAX": [
+            1955,
+            1993
+          ],
+          "TMIN": [
+            1955,
+            1993
+          ],
+          "TOBS": [
+            1955,
+            1993
+          ],
+          "PRCP": [
+            1955,
+            1993
+          ],
+          "SNOW": [
+            1955,
+            1993
+          ],
+          "SNWD": [
+            1955,
+            1993
+          ],
+          "DAEV": [
+            1959,
+            1981
+          ],
+          "DAPR": [
+            1978,
+            1978
+          ],
+          "DAWM": [
+            1956,
+            1973
+          ],
+          "EVAP": [
+            1955,
+            1993
+          ],
+          "MDEV": [
+            1959,
+            1981
+          ],
+          "MDPR": [
+            1978,
+            1978
+          ],
+          "MDWM": [
+            1956,
+            1973
+          ],
+          "WDMV": [
+            1955,
+            1989
+          ],
+          "WT01": [
+            1956,
+            1962
+          ],
+          "WT08": [
+            1959,
+            1961
+          ]
+        }
+      }
+    ],
+    "daily_inventory_covers_baseline_and_recent_candidates": [
+      {
+        "id": "USW00023271",
+        "latitude": 38.5553,
+        "longitude": -121.4183,
+        "elevation": 11.6,
+        "name": "SACRAMENTO 5 ESE",
+        "distance_km": 24.64,
+        "inventory": {
+          "TMAX": [
+            1877,
+            2025
+          ],
+          "TMIN": [
+            1877,
+            2025
+          ],
+          "PRCP": [
+            1877,
+            2025
+          ],
+          "SNOW": [
+            1948,
+            2025
+          ],
+          "SNWD": [
+            1948,
+            2025
+          ],
+          "FRGB": [
+            1948,
+            1950
+          ],
+          "FRGT": [
+            1948,
+            1950
+          ],
+          "FRTH": [
+            1948,
+            1950
+          ],
+          "GAHT": [
+            1948,
+            1964
+          ],
+          "PGTM": [
+            1948,
+            1948
+          ],
+          "TAVG": [
+            1998,
+            2002
+          ],
+          "THIC": [
+            1948,
+            1950
+          ],
+          "WDFG": [
+            1948,
+            1948
+          ],
+          "WSFG": [
+            1948,
+            1948
+          ],
+          "WT01": [
+            1948,
+            2020
+          ],
+          "WT02": [
+            2020,
+            2020
+          ],
+          "WT03": [
+            2023,
+            2023
+          ],
+          "WT05": [
+            1948,
+            2018
+          ],
+          "WT08": [
+            1948,
+            2019
+          ],
+          "WT16": [
+            1948,
+            1952
+          ]
+        }
+      },
+      {
+        "id": "USC00040383",
+        "latitude": 38.9072,
+        "longitude": -121.0839,
+        "elevation": 393.8,
+        "name": "AUBURN",
+        "distance_km": 24.7,
+        "inventory": {
+          "TMAX": [
+            1905,
+            2026
+          ],
+          "TMIN": [
+            1905,
+            2026
+          ],
+          "TOBS": [
+            1939,
+            2026
+          ],
+          "PRCP": [
+            1905,
+            2026
+          ],
+          "SNOW": [
+            1905,
+            2026
+          ],
+          "SNWD": [
+            1908,
+            2026
+          ],
+          "DAPR": [
+            1970,
+            2026
+          ],
+          "MDPR": [
+            1970,
+            2026
+          ],
+          "WT01": [
+            1906,
+            2008
+          ],
+          "WT03": [
+            1923,
+            1997
+          ],
+          "WT04": [
+            1928,
+            1996
+          ],
+          "WT05": [
+            1949,
+            1998
+          ],
+          "WT06": [
+            1971,
+            1982
+          ],
+          "WT08": [
+            1949,
+            1949
+          ],
+          "WT09": [
+            1951,
+            1951
+          ],
+          "WT11": [
+            1949,
+            2000
+          ],
+          "WT14": [
+            1909,
+            1972
+          ],
+          "WT16": [
+            1905,
+            1938
+          ],
+          "WT18": [
+            1909,
+            1937
+          ]
+        }
+      },
+      {
+        "id": "USW00023232",
+        "latitude": 38.5067,
+        "longitude": -121.4961,
+        "elevation": 5.8,
+        "name": "SACRAMENTO AP ASOS",
+        "distance_km": 32.73,
+        "inventory": {
+          "TMAX": [
+            1941,
+            2026
+          ],
+          "TMIN": [
+            1941,
+            2026
+          ],
+          "PRCP": [
+            1941,
+            2026
+          ],
+          "SNOW": [
+            1941,
+            2025
+          ],
+          "SNWD": [
+            1941,
+            1998
+          ],
+          "ACMH": [
+            1965,
+            1996
+          ],
+          "ACSH": [
+            1965,
+            1998
+          ],
+          "ADPT": [
+            2006,
+            2024
+          ],
+          "ASLP": [
+            2006,
+            2024
+          ],
+          "ASTP": [
+            2006,
+            2024
+          ],
+          "AWBT": [
+            2006,
+            2024
+          ],
+          "AWND": [
+            1984,
+            2026
+          ],
+          "FMTM": [
+            1985,
+            2012
+          ],
+          "FRGT": [
+            1963,
+            1963
+          ],
+          "PGTM": [
+            1953,
+            2025
+          ],
+          "PSUN": [
+            1965,
+            1983
+          ],
+          "RHAV": [
+            2006,
+            2024
+          ],
+          "RHMN": [
+            2006,
+            2024
+          ],
+          "RHMX": [
+            2006,
+            2024
+          ],
+          "TAVG": [
+            1998,
+            2005
+          ],
+          "THIC": [
+            1963,
+            1963
+          ],
+          "TSUN": [
+            1965,
+            2005
+          ],
+          "WDF1": [
+            1969,
+            1996
+          ],
+          "WDF2": [
+            1996,
+            2026
+          ],
+          "WDF5": [
+            1998,
+            2026
+          ],
+          "WDFG": [
+            1953,
+            1998
+          ],
+          "WDFM": [
+            1965,
+            1996
+          ],
+          "WESD": [
+            1977,
+            2010
+          ],
+          "WSF1": [
+            1969,
+            1996
+          ],
+          "WSF2": [
+            1996,
+            2026
+          ],
+          "WSF5": [
+            1998,
+            2026
+          ],
+          "WSFG": [
+            1953,
+            1998
+          ],
+          "WSFM": [
+            1965,
+            1996
+          ],
+          "WT01": [
+            1947,
+            2026
+          ],
+          "WT02": [
+            1965,
+            2026
+          ],
+          "WT03": [
+            1942,
+            2026
+          ],
+          "WT04": [
+            1968,
+            1994
+          ],
+          "WT05": [
+            1948,
+            2010
+          ],
+          "WT07": [
+            1958,
+            2010
+          ],
+          "WT08": [
+            1947,
+            2026
+          ],
+          "WT09": [
+            1974,
+            2010
+          ],
+          "WT10": [
+            2015,
+            2015
+          ],
+          "WT13": [
+            1996,
+            2013
+          ],
+          "WT14": [
+            1984,
+            2005
+          ],
+          "WT16": [
+            1947,
+            2013
+          ],
+          "WT18": [
+            1949,
+            2004
+          ],
+          "WT21": [
+            1997,
+            2012
+          ],
+          "WT22": [
+            1984,
+            2013
+          ],
+          "WV03": [
+            2000,
+            2005
+          ],
+          "WV20": [
+            1997,
+            1998
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "city": "St George UT",
+    "latitude": 37.1041,
+    "longitude": -113.5841,
+    "coordinate_status": "approximate research center, not persisted app location",
+    "hourly_nearest_metadata": [
+      {
+        "GHCN_ID": "USW00023186",
+        "LATITUDE": "37.1",
+        "LONGITUDE": "-113.6",
+        "ELEVATION": "894.9",
+        "STATE": "UT",
+        "NAME": "ST GEORGE MUNI AP",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KSGU",
+        "ISO_CODE": "US",
+        "distance_km": 1.48
+      },
+      {
+        "GHCN_ID": "USC00427516",
+        "LATITUDE": "37.119",
+        "LONGITUDE": "-113.6068",
+        "ELEVATION": "870.8",
+        "STATE": "UT",
+        "NAME": "ST. GEORGE",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 2.61
+      },
+      {
+        "GHCN_ID": "USW00093198",
+        "LATITUDE": "37.05",
+        "LONGITUDE": "-113.5167",
+        "ELEVATION": "882.7",
+        "STATE": "UT",
+        "NAME": "ST GEORGE INTERM FLD",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KDXZ",
+        "ISO_CODE": "US",
+        "distance_km": 8.48
+      },
+      {
+        "GHCN_ID": "USW00053166",
+        "LATITUDE": "37.2158",
+        "LONGITUDE": "-113.3794",
+        "ELEVATION": "1041.5",
+        "STATE": "UT",
+        "NAME": "ST. GEORGE 15 NE",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 21.98
+      },
+      {
+        "GHCN_ID": "USW00053013",
+        "LATITUDE": "37.4572",
+        "LONGITUDE": "-113.2247",
+        "ELEVATION": "1553.3",
+        "STATE": "UT",
+        "NAME": "CEDAR CITY 18 SSE",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 50.52
+      }
+    ],
+    "daily_nearest_three_core_inventory": [
+      {
+        "id": "USW00023186",
+        "latitude": 37.1,
+        "longitude": -113.6,
+        "elevation": 894.9,
+        "name": "ST GEORGE MUNI AP",
+        "distance_km": 1.48,
+        "inventory": {
+          "TMAX": [
+            2017,
+            2026
+          ],
+          "TMIN": [
+            2017,
+            2026
+          ],
+          "PRCP": [
+            2017,
+            2026
+          ],
+          "AWND": [
+            2017,
+            2025
+          ],
+          "PGTM": [
+            2017,
+            2025
+          ],
+          "TAVG": [
+            2025,
+            2026
+          ],
+          "WDF2": [
+            2017,
+            2025
+          ],
+          "WDF5": [
+            2017,
+            2025
+          ],
+          "WSF2": [
+            2017,
+            2025
+          ],
+          "WSF5": [
+            2017,
+            2025
+          ],
+          "WT01": [
+            2017,
+            2025
+          ],
+          "WT02": [
+            2018,
+            2024
+          ],
+          "WT03": [
+            2017,
+            2025
+          ],
+          "WT08": [
+            2017,
+            2025
+          ]
+        }
+      },
+      {
+        "id": "USC00427516",
+        "latitude": 37.1189,
+        "longitude": -113.6067,
+        "elevation": 870.8,
+        "name": "ST GEORGE",
+        "distance_km": 2.59,
+        "inventory": {
+          "TMAX": [
+            1893,
+            2026
+          ],
+          "TMIN": [
+            1893,
+            2026
+          ],
+          "TOBS": [
+            1901,
+            2026
+          ],
+          "PRCP": [
+            1893,
+            2026
+          ],
+          "SNOW": [
+            1894,
+            2026
+          ],
+          "SNWD": [
+            1898,
+            2026
+          ],
+          "DAEV": [
+            1971,
+            1992
+          ],
+          "DAPR": [
+            1948,
+            2022
+          ],
+          "DASF": [
+            1949,
+            1949
+          ],
+          "DAWM": [
+            1971,
+            1993
+          ],
+          "EVAP": [
+            1971,
+            1993
+          ],
+          "MDEV": [
+            1971,
+            1992
+          ],
+          "MDPR": [
+            1948,
+            2022
+          ],
+          "MDSF": [
+            1949,
+            1949
+          ],
+          "MDWM": [
+            1971,
+            1993
+          ],
+          "MNPN": [
+            1971,
+            1992
+          ],
+          "MXPN": [
+            1971,
+            1992
+          ],
+          "SN02": [
+            1982,
+            1993
+          ],
+          "SX02": [
+            1982,
+            1993
+          ],
+          "WDMV": [
+            1971,
+            1993
+          ],
+          "WT01": [
+            1905,
+            1997
+          ],
+          "WT03": [
+            1917,
+            2001
+          ],
+          "WT04": [
+            1912,
+            1996
+          ],
+          "WT05": [
+            1912,
+            2001
+          ],
+          "WT06": [
+            1995,
+            1995
+          ],
+          "WT08": [
+            1894,
+            1929
+          ],
+          "WT11": [
+            1942,
+            2002
+          ],
+          "WT14": [
+            1942,
+            1950
+          ],
+          "WT16": [
+            1909,
+            1912
+          ],
+          "WT18": [
+            1909,
+            1909
+          ]
+        }
+      },
+      {
+        "id": "USW00093198",
+        "latitude": 37.05,
+        "longitude": -113.5167,
+        "elevation": 882.7,
+        "name": "ST GEORGE CAA AP",
+        "distance_km": 8.48,
+        "inventory": {
+          "TMAX": [
+            1948,
+            1954
+          ],
+          "TMIN": [
+            1948,
+            1954
+          ],
+          "PRCP": [
+            1948,
+            1954
+          ],
+          "SNOW": [
+            1948,
+            1954
+          ],
+          "SNWD": [
+            1948,
+            1954
+          ],
+          "WSFG": [
+            1949,
+            1949
+          ],
+          "WT01": [
+            1948,
+            1954
+          ],
+          "WT03": [
+            1948,
+            1954
+          ],
+          "WT05": [
+            1949,
+            1952
+          ],
+          "WT06": [
+            1954,
+            1954
+          ],
+          "WT07": [
+            1951,
+            1951
+          ],
+          "WT09": [
+            1949,
+            1952
+          ],
+          "WT16": [
+            1948,
+            1954
+          ],
+          "WT18": [
+            1948,
+            1954
+          ]
+        }
+      },
+      {
+        "id": "USW00053166",
+        "latitude": 37.2158,
+        "longitude": -113.3794,
+        "elevation": 1041.5,
+        "name": "ST. GEORGE 15 NE",
+        "distance_km": 21.98,
+        "inventory": {
+          "TMAX": [
+            2010,
+            2012
+          ],
+          "TMIN": [
+            2010,
+            2012
+          ],
+          "PRCP": [
+            2010,
+            2012
+          ]
+        }
+      }
+    ],
+    "daily_inventory_covers_baseline_and_recent_candidates": [
+      {
+        "id": "USC00427516",
+        "latitude": 37.1189,
+        "longitude": -113.6067,
+        "elevation": 870.8,
+        "name": "ST GEORGE",
+        "distance_km": 2.59,
+        "inventory": {
+          "TMAX": [
+            1893,
+            2026
+          ],
+          "TMIN": [
+            1893,
+            2026
+          ],
+          "TOBS": [
+            1901,
+            2026
+          ],
+          "PRCP": [
+            1893,
+            2026
+          ],
+          "SNOW": [
+            1894,
+            2026
+          ],
+          "SNWD": [
+            1898,
+            2026
+          ],
+          "DAEV": [
+            1971,
+            1992
+          ],
+          "DAPR": [
+            1948,
+            2022
+          ],
+          "DASF": [
+            1949,
+            1949
+          ],
+          "DAWM": [
+            1971,
+            1993
+          ],
+          "EVAP": [
+            1971,
+            1993
+          ],
+          "MDEV": [
+            1971,
+            1992
+          ],
+          "MDPR": [
+            1948,
+            2022
+          ],
+          "MDSF": [
+            1949,
+            1949
+          ],
+          "MDWM": [
+            1971,
+            1993
+          ],
+          "MNPN": [
+            1971,
+            1992
+          ],
+          "MXPN": [
+            1971,
+            1992
+          ],
+          "SN02": [
+            1982,
+            1993
+          ],
+          "SX02": [
+            1982,
+            1993
+          ],
+          "WDMV": [
+            1971,
+            1993
+          ],
+          "WT01": [
+            1905,
+            1997
+          ],
+          "WT03": [
+            1917,
+            2001
+          ],
+          "WT04": [
+            1912,
+            1996
+          ],
+          "WT05": [
+            1912,
+            2001
+          ],
+          "WT06": [
+            1995,
+            1995
+          ],
+          "WT08": [
+            1894,
+            1929
+          ],
+          "WT11": [
+            1942,
+            2002
+          ],
+          "WT14": [
+            1942,
+            1950
+          ],
+          "WT16": [
+            1909,
+            1912
+          ],
+          "WT18": [
+            1909,
+            1909
+          ]
+        }
+      },
+      {
+        "id": "USC00424968",
+        "latitude": 37.2008,
+        "longitude": -113.2686,
+        "elevation": 973.5,
+        "name": "LA VERKIN",
+        "distance_km": 29.96,
+        "inventory": {
+          "TMAX": [
+            1950,
+            2026
+          ],
+          "TMIN": [
+            1950,
+            2026
+          ],
+          "TOBS": [
+            1950,
+            2026
+          ],
+          "PRCP": [
+            1950,
+            2026
+          ],
+          "SNOW": [
+            1950,
+            2026
+          ],
+          "SNWD": [
+            1950,
+            2020
+          ],
+          "DAPR": [
+            1951,
+            2024
+          ],
+          "DASF": [
+            1962,
+            1962
+          ],
+          "MDPR": [
+            1951,
+            2024
+          ],
+          "MDSF": [
+            1962,
+            1962
+          ],
+          "WT01": [
+            1957,
+            2023
+          ],
+          "WT03": [
+            1950,
+            2026
+          ],
+          "WT04": [
+            1961,
+            2012
+          ],
+          "WT05": [
+            1952,
+            2023
+          ],
+          "WT07": [
+            1950,
+            1962
+          ],
+          "WT08": [
+            1950,
+            1962
+          ],
+          "WT10": [
+            1954,
+            1954
+          ],
+          "WT11": [
+            1950,
+            2009
+          ],
+          "WT14": [
+            1950,
+            1950
+          ]
+        }
+      },
+      {
+        "id": "USC00426181",
+        "latitude": 37.4636,
+        "longitude": -113.2897,
+        "elevation": 1574.9,
+        "name": "NEW HARMONY",
+        "distance_km": 47.71,
+        "inventory": {
+          "TMAX": [
+            1952,
+            2026
+          ],
+          "TMIN": [
+            1952,
+            2026
+          ],
+          "TOBS": [
+            1952,
+            2026
+          ],
+          "PRCP": [
+            1911,
+            2026
+          ],
+          "SNOW": [
+            1911,
+            2026
+          ],
+          "SNWD": [
+            1911,
+            2026
+          ],
+          "DAPR": [
+            1949,
+            2026
+          ],
+          "DASF": [
+            1951,
+            1972
+          ],
+          "MDPR": [
+            1949,
+            2026
+          ],
+          "MDSF": [
+            1951,
+            2009
+          ],
+          "WT01": [
+            1952,
+            2000
+          ],
+          "WT03": [
+            1959,
+            2004
+          ],
+          "WT04": [
+            1954,
+            2003
+          ],
+          "WT05": [
+            1949,
+            2004
+          ],
+          "WT09": [
+            1950,
+            1950
+          ],
+          "WT11": [
+            1958,
+            2004
+          ],
+          "WT14": [
+            1950,
+            1950
+          ],
+          "WT16": [
+            1941,
+            1941
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "city": "Anthem AZ",
+    "latitude": 33.8673,
+    "longitude": -112.1468,
+    "coordinate_status": "approximate research center, not persisted app location",
+    "hourly_nearest_metadata": [
+      {
+        "GHCN_ID": "USW00003184",
+        "LATITUDE": "33.6903",
+        "LONGITUDE": "-112.0661",
+        "ELEVATION": "453.2",
+        "STATE": "AZ",
+        "NAME": "PHOENIX DEER VALLEY MUNI AP",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KDVT",
+        "ISO_CODE": "US",
+        "distance_km": 21.05
+      },
+      {
+        "GHCN_ID": "USW00003192",
+        "LATITUDE": "33.6122",
+        "LONGITUDE": "-111.923",
+        "ELEVATION": "436.2",
+        "STATE": "AZ",
+        "NAME": "SCOTTSDALE MUNI AP",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KSDL",
+        "ISO_CODE": "US",
+        "distance_km": 35.11
+      },
+      {
+        "GHCN_ID": "USW00053126",
+        "LATITUDE": "33.5272",
+        "LONGITUDE": "-112.295",
+        "ELEVATION": "324.9",
+        "STATE": "AZ",
+        "NAME": "GLENDALE MUNI AP",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KGEU",
+        "ISO_CODE": "US",
+        "distance_km": 40.23
+      },
+      {
+        "GHCN_ID": "USW00023111",
+        "LATITUDE": "33.55",
+        "LONGITUDE": "-112.3667",
+        "ELEVATION": "330.7",
+        "STATE": "AZ",
+        "NAME": "PHOENIX LUKE AFB",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KLUF",
+        "ISO_CODE": "US",
+        "distance_km": 40.73
+      },
+      {
+        "GHCN_ID": "USC00022329",
+        "LATITUDE": "34.2097",
+        "LONGITUDE": "-112.3453",
+        "ELEVATION": "1804.4",
+        "STATE": "AZ",
+        "NAME": "CROWN KING",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 42.24
+      }
+    ],
+    "daily_nearest_three_core_inventory": [
+      {
+        "id": "USC00024770",
+        "latitude": 33.8383,
+        "longitude": -112.2661,
+        "elevation": 468.2,
+        "name": "LAKE PLEASANT",
+        "distance_km": 11.48,
+        "inventory": {
+          "TMAX": [
+            1962,
+            1977
+          ],
+          "TMIN": [
+            1962,
+            1977
+          ],
+          "TOBS": [
+            1962,
+            1977
+          ],
+          "PRCP": [
+            1959,
+            1977
+          ],
+          "SNOW": [
+            1959,
+            1977
+          ],
+          "SNWD": [
+            1959,
+            1977
+          ],
+          "DAPR": [
+            1966,
+            1966
+          ],
+          "MDPR": [
+            1966,
+            1966
+          ],
+          "WT03": [
+            1959,
+            1976
+          ],
+          "WT05": [
+            1960,
+            1972
+          ],
+          "WT06": [
+            1959,
+            1963
+          ],
+          "WT08": [
+            1959,
+            1963
+          ],
+          "WT09": [
+            1959,
+            1963
+          ]
+        }
+      },
+      {
+        "id": "USC00021361",
+        "latitude": 33.8333,
+        "longitude": -111.95,
+        "elevation": 647.1,
+        "name": "CAVE CREEK",
+        "distance_km": 18.56,
+        "inventory": {
+          "TMAX": [
+            1907,
+            1961
+          ],
+          "TMIN": [
+            1907,
+            1961
+          ],
+          "TOBS": [
+            1913,
+            1961
+          ],
+          "PRCP": [
+            1907,
+            1961
+          ],
+          "SNOW": [
+            1907,
+            1961
+          ],
+          "SNWD": [
+            1909,
+            1961
+          ],
+          "DAPR": [
+            1951,
+            1960
+          ],
+          "MDPR": [
+            1951,
+            1960
+          ],
+          "WT01": [
+            1951,
+            1951
+          ],
+          "WT03": [
+            1950,
+            1961
+          ],
+          "WT05": [
+            1951,
+            1959
+          ],
+          "WT06": [
+            1959,
+            1959
+          ],
+          "WT08": [
+            1915,
+            1951
+          ],
+          "WT11": [
+            1950,
+            1956
+          ],
+          "WT14": [
+            1950,
+            1950
+          ]
+        }
+      },
+      {
+        "id": "USW00003184",
+        "latitude": 33.6903,
+        "longitude": -112.0661,
+        "elevation": 453.2,
+        "name": "PHOENIX DEER VALLEY MUNI AP",
+        "distance_km": 21.05,
+        "inventory": {
+          "TMAX": [
+            1998,
+            2026
+          ],
+          "TMIN": [
+            1998,
+            2026
+          ],
+          "PRCP": [
+            1998,
+            2026
+          ],
+          "SNOW": [
+            2011,
+            2026
+          ],
+          "SNWD": [
+            1998,
+            2026
+          ],
+          "AWND": [
+            1998,
+            2026
+          ],
+          "FMTM": [
+            1998,
+            2005
+          ],
+          "PGTM": [
+            1998,
+            2025
+          ],
+          "TAVG": [
+            1998,
+            2005
+          ],
+          "TSUN": [
+            2000,
+            2005
+          ],
+          "WDF2": [
+            1998,
+            2026
+          ],
+          "WDF5": [
+            1998,
+            2026
+          ],
+          "WSF2": [
+            1998,
+            2026
+          ],
+          "WSF5": [
+            1998,
+            2026
+          ],
+          "WT01": [
+            2006,
+            2026
+          ],
+          "WT02": [
+            2006,
+            2022
+          ],
+          "WT03": [
+            2006,
+            2026
+          ],
+          "WT07": [
+            2013,
+            2022
+          ],
+          "WT08": [
+            2006,
+            2026
+          ]
+        }
+      },
+      {
+        "id": "USC00021282",
+        "latitude": 33.8164,
+        "longitude": -111.9017,
+        "elevation": 771.1,
+        "name": "CAREFREE",
+        "distance_km": 23.33,
+        "inventory": {
+          "TMAX": [
+            1962,
+            2026
+          ],
+          "TMIN": [
+            1962,
+            2026
+          ],
+          "TOBS": [
+            1962,
+            2026
+          ],
+          "PRCP": [
+            1962,
+            2026
+          ],
+          "SNOW": [
+            1962,
+            2026
+          ],
+          "SNWD": [
+            1962,
+            2026
+          ],
+          "DAPR": [
+            1967,
+            2026
+          ],
+          "MDPR": [
+            1967,
+            2026
+          ],
+          "WT01": [
+            1997,
+            2008
+          ],
+          "WT03": [
+            1962,
+            2025
+          ],
+          "WT04": [
+            1965,
+            2010
+          ],
+          "WT05": [
+            1964,
+            2022
+          ],
+          "WT06": [
+            1962,
+            1963
+          ],
+          "WT11": [
+            1986,
+            2025
+          ]
+        }
+      }
+    ],
+    "daily_inventory_covers_baseline_and_recent_candidates": [
+      {
+        "id": "USC00021282",
+        "latitude": 33.8164,
+        "longitude": -111.9017,
+        "elevation": 771.1,
+        "name": "CAREFREE",
+        "distance_km": 23.33,
+        "inventory": {
+          "TMAX": [
+            1962,
+            2026
+          ],
+          "TMIN": [
+            1962,
+            2026
+          ],
+          "TOBS": [
+            1962,
+            2026
+          ],
+          "PRCP": [
+            1962,
+            2026
+          ],
+          "SNOW": [
+            1962,
+            2026
+          ],
+          "SNWD": [
+            1962,
+            2026
+          ],
+          "DAPR": [
+            1967,
+            2026
+          ],
+          "MDPR": [
+            1967,
+            2026
+          ],
+          "WT01": [
+            1997,
+            2008
+          ],
+          "WT03": [
+            1962,
+            2025
+          ],
+          "WT04": [
+            1965,
+            2010
+          ],
+          "WT05": [
+            1964,
+            2022
+          ],
+          "WT06": [
+            1962,
+            1963
+          ],
+          "WT11": [
+            1986,
+            2025
+          ]
+        }
+      },
+      {
+        "id": "USC00029634",
+        "latitude": 33.5944,
+        "longitude": -112.3006,
+        "elevation": 345.9,
+        "name": "YOUNGTOWN",
+        "distance_km": 33.51,
+        "inventory": {
+          "TMAX": [
+            1964,
+            2026
+          ],
+          "TMIN": [
+            1964,
+            2026
+          ],
+          "TOBS": [
+            1964,
+            2026
+          ],
+          "PRCP": [
+            1964,
+            2026
+          ],
+          "SNOW": [
+            1964,
+            2026
+          ],
+          "SNWD": [
+            1964,
+            2026
+          ],
+          "DAPR": [
+            1997,
+            2025
+          ],
+          "MDPR": [
+            1997,
+            2025
+          ],
+          "WT01": [
+            1984,
+            1996
+          ],
+          "WT03": [
+            1964,
+            2018
+          ],
+          "WT04": [
+            1983,
+            1983
+          ],
+          "WT05": [
+            1965,
+            2013
+          ],
+          "WT06": [
+            1965,
+            1986
+          ],
+          "WT11": [
+            1982,
+            1996
+          ]
+        }
+      },
+      {
+        "id": "USC00020632",
+        "latitude": 33.8097,
+        "longitude": -111.6497,
+        "elevation": 502.9,
+        "name": "BARTLETT DAM",
+        "distance_km": 46.36,
+        "inventory": {
+          "TMAX": [
+            1940,
+            2026
+          ],
+          "TMIN": [
+            1940,
+            2026
+          ],
+          "TOBS": [
+            1940,
+            2026
+          ],
+          "PRCP": [
+            1939,
+            2026
+          ],
+          "SNOW": [
+            1939,
+            2026
+          ],
+          "SNWD": [
+            1939,
+            2026
+          ],
+          "DAEV": [
+            1950,
+            2005
+          ],
+          "DAPR": [
+            1967,
+            2026
+          ],
+          "DAWM": [
+            1951,
+            2005
+          ],
+          "EVAP": [
+            1948,
+            2022
+          ],
+          "MDEV": [
+            1950,
+            2005
+          ],
+          "MDPR": [
+            1967,
+            2026
+          ],
+          "MDWM": [
+            1951,
+            2005
+          ],
+          "MNPN": [
+            1968,
+            2007
+          ],
+          "MXPN": [
+            1968,
+            2007
+          ],
+          "WDMV": [
+            1948,
+            2011
+          ],
+          "WT03": [
+            1939,
+            2025
+          ],
+          "WT04": [
+            1942,
+            1942
+          ],
+          "WT05": [
+            1942,
+            1952
+          ],
+          "WT07": [
+            1940,
+            1950
+          ],
+          "WT11": [
+            1940,
+            1952
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "city": "Deltona FL",
+    "latitude": 28.9005,
+    "longitude": -81.2637,
+    "coordinate_status": "approximate research center, not persisted app location",
+    "hourly_nearest_metadata": [
+      {
+        "GHCN_ID": "USW00012854",
+        "LATITUDE": "28.7794",
+        "LONGITUDE": "-81.2436",
+        "ELEVATION": "14.9",
+        "STATE": "FL",
+        "NAME": "ORLANDO SANFORD AP",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KSFB",
+        "ISO_CODE": "US",
+        "distance_km": 13.61
+      },
+      {
+        "GHCN_ID": "USC00082229",
+        "LATITUDE": "29.0667",
+        "LONGITUDE": "-81.2833",
+        "ELEVATION": "8.8",
+        "STATE": "FL",
+        "NAME": "DELAND 3 NE",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 18.58
+      },
+      {
+        "GHCN_ID": "USW00000299",
+        "LATITUDE": "29.0669",
+        "LONGITUDE": "-81.2831",
+        "ELEVATION": "24.1",
+        "STATE": "FL",
+        "NAME": "DELAND MUNI AP",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KDED",
+        "ISO_CODE": "US",
+        "distance_km": 18.6
+      },
+      {
+        "GHCN_ID": "USW00012847",
+        "LATITUDE": "29.0833",
+        "LONGITUDE": "-81.4167",
+        "ELEVATION": "32.0",
+        "STATE": "FL",
+        "NAME": "DELAND NAS",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 25.19
+      },
+      {
+        "GHCN_ID": "USW00092808",
+        "LATITUDE": "29.0542",
+        "LONGITUDE": "-80.9483",
+        "ELEVATION": "3.0",
+        "STATE": "FL",
+        "NAME": "NEW SMYRNA BEACH MUNI AP",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KEVB",
+        "ISO_CODE": "US",
+        "distance_km": 35.12
+      }
+    ],
+    "daily_nearest_three_core_inventory": [
+      {
+        "id": "USC00086584",
+        "latitude": 28.9333,
+        "longitude": -81.3,
+        "elevation": 15.8,
+        "name": "ORANGE CITY",
+        "distance_km": 5.08,
+        "inventory": {
+          "TMAX": [
+            1892,
+            1921
+          ],
+          "TMIN": [
+            1892,
+            1921
+          ],
+          "TOBS": [
+            1901,
+            1950
+          ],
+          "PRCP": [
+            1892,
+            1951
+          ],
+          "SNOW": [
+            1917,
+            1950
+          ],
+          "SNWD": [
+            1948,
+            1950
+          ],
+          "DAPR": [
+            1948,
+            1950
+          ],
+          "MDPR": [
+            1948,
+            1950
+          ],
+          "WT03": [
+            1904,
+            1904
+          ],
+          "WT05": [
+            1904,
+            1904
+          ],
+          "WT08": [
+            1893,
+            1920
+          ],
+          "WT16": [
+            1893,
+            1920
+          ]
+        }
+      },
+      {
+        "id": "USC00087977",
+        "latitude": 28.8167,
+        "longitude": -81.25,
+        "elevation": 3.0,
+        "name": "SANFORD EXP STN",
+        "distance_km": 9.41,
+        "inventory": {
+          "TMAX": [
+            1899,
+            1956
+          ],
+          "TMIN": [
+            1899,
+            1956
+          ],
+          "TOBS": [
+            1899,
+            1956
+          ],
+          "PRCP": [
+            1899,
+            1956
+          ],
+          "SNOW": [
+            1899,
+            1956
+          ],
+          "SNWD": [
+            1899,
+            1956
+          ],
+          "WT01": [
+            1949,
+            1954
+          ],
+          "WT03": [
+            1949,
+            1955
+          ],
+          "WT05": [
+            1954,
+            1954
+          ],
+          "WT08": [
+            1949,
+            1950
+          ],
+          "WT11": [
+            1949,
+            1954
+          ],
+          "WT14": [
+            1949,
+            1950
+          ]
+        }
+      },
+      {
+        "id": "USC00087982",
+        "latitude": 28.8147,
+        "longitude": -81.2778,
+        "elevation": 3.7,
+        "name": "SANFORD",
+        "distance_km": 9.64,
+        "inventory": {
+          "TMAX": [
+            1956,
+            2026
+          ],
+          "TMIN": [
+            1956,
+            2026
+          ],
+          "TOBS": [
+            1956,
+            2026
+          ],
+          "PRCP": [
+            1956,
+            2026
+          ],
+          "SNOW": [
+            1956,
+            2010
+          ],
+          "SNWD": [
+            1956,
+            2010
+          ],
+          "DAPR": [
+            1970,
+            2026
+          ],
+          "MDPR": [
+            1970,
+            2026
+          ],
+          "SN02": [
+            1982,
+            1999
+          ],
+          "SX02": [
+            1982,
+            1999
+          ],
+          "WT01": [
+            1988,
+            1993
+          ],
+          "WT03": [
+            1967,
+            1978
+          ],
+          "WT05": [
+            1971,
+            1976
+          ]
+        }
+      },
+      {
+        "id": "USC00082229",
+        "latitude": 29.0097,
+        "longitude": -81.2986,
+        "elevation": 7.6,
+        "name": "DELAND 1 SSE",
+        "distance_km": 12.61,
+        "inventory": {
+          "TMAX": [
+            1892,
+            2026
+          ],
+          "TMIN": [
+            1892,
+            2026
+          ],
+          "TOBS": [
+            1909,
+            2026
+          ],
+          "PRCP": [
+            1895,
+            2026
+          ],
+          "SNOW": [
+            1905,
+            2010
+          ],
+          "SNWD": [
+            1948,
+            2010
+          ],
+          "DAPR": [
+            1933,
+            2025
+          ],
+          "MDPR": [
+            1933,
+            2025
+          ],
+          "WT01": [
+            1949,
+            2007
+          ],
+          "WT03": [
+            1917,
+            1986
+          ],
+          "WT04": [
+            1951,
+            1951
+          ],
+          "WT05": [
+            1951,
+            1985
+          ],
+          "WT06": [
+            1951,
+            1984
+          ],
+          "WT10": [
+            1950,
+            1950
+          ],
+          "WT11": [
+            1949,
+            1989
+          ],
+          "WT14": [
+            1949,
+            1961
+          ],
+          "WT16": [
+            1899,
+            1904
+          ]
+        }
+      }
+    ],
+    "daily_inventory_covers_baseline_and_recent_candidates": [
+      {
+        "id": "USC00087982",
+        "latitude": 28.8147,
+        "longitude": -81.2778,
+        "elevation": 3.7,
+        "name": "SANFORD",
+        "distance_km": 9.64,
+        "inventory": {
+          "TMAX": [
+            1956,
+            2026
+          ],
+          "TMIN": [
+            1956,
+            2026
+          ],
+          "TOBS": [
+            1956,
+            2026
+          ],
+          "PRCP": [
+            1956,
+            2026
+          ],
+          "SNOW": [
+            1956,
+            2010
+          ],
+          "SNWD": [
+            1956,
+            2010
+          ],
+          "DAPR": [
+            1970,
+            2026
+          ],
+          "MDPR": [
+            1970,
+            2026
+          ],
+          "SN02": [
+            1982,
+            1999
+          ],
+          "SX02": [
+            1982,
+            1999
+          ],
+          "WT01": [
+            1988,
+            1993
+          ],
+          "WT03": [
+            1967,
+            1978
+          ],
+          "WT05": [
+            1971,
+            1976
+          ]
+        }
+      },
+      {
+        "id": "USC00082229",
+        "latitude": 29.0097,
+        "longitude": -81.2986,
+        "elevation": 7.6,
+        "name": "DELAND 1 SSE",
+        "distance_km": 12.61,
+        "inventory": {
+          "TMAX": [
+            1892,
+            2026
+          ],
+          "TMIN": [
+            1892,
+            2026
+          ],
+          "TOBS": [
+            1909,
+            2026
+          ],
+          "PRCP": [
+            1895,
+            2026
+          ],
+          "SNOW": [
+            1905,
+            2010
+          ],
+          "SNWD": [
+            1948,
+            2010
+          ],
+          "DAPR": [
+            1933,
+            2025
+          ],
+          "MDPR": [
+            1933,
+            2025
+          ],
+          "WT01": [
+            1949,
+            2007
+          ],
+          "WT03": [
+            1917,
+            1986
+          ],
+          "WT04": [
+            1951,
+            1951
+          ],
+          "WT05": [
+            1951,
+            1985
+          ],
+          "WT06": [
+            1951,
+            1984
+          ],
+          "WT10": [
+            1950,
+            1950
+          ],
+          "WT11": [
+            1949,
+            1989
+          ],
+          "WT14": [
+            1949,
+            1961
+          ],
+          "WT16": [
+            1899,
+            1904
+          ]
+        }
+      },
+      {
+        "id": "USW00012854",
+        "latitude": 28.7794,
+        "longitude": -81.2436,
+        "elevation": 14.9,
+        "name": "ORLANDO SANFORD AP",
+        "distance_km": 13.61,
+        "inventory": {
+          "TMAX": [
+            1945,
+            2026
+          ],
+          "TMIN": [
+            1945,
+            2026
+          ],
+          "PRCP": [
+            1945,
+            2026
+          ],
+          "SNOW": [
+            1945,
+            2026
+          ],
+          "SNWD": [
+            1945,
+            2026
+          ],
+          "ACMH": [
+            1965,
+            1968
+          ],
+          "ACSH": [
+            1965,
+            1968
+          ],
+          "AWND": [
+            1999,
+            2026
+          ],
+          "FMTM": [
+            1999,
+            2005
+          ],
+          "PGTM": [
+            1952,
+            2025
+          ],
+          "TAVG": [
+            1999,
+            2005
+          ],
+          "TSUN": [
+            2002,
+            2005
+          ],
+          "WDF1": [
+            1965,
+            1965
+          ],
+          "WDF2": [
+            1999,
+            2026
+          ],
+          "WDF5": [
+            1999,
+            2026
+          ],
+          "WDFG": [
+            1952,
+            1968
+          ],
+          "WSF1": [
+            1965,
+            1965
+          ],
+          "WSF2": [
+            1999,
+            2026
+          ],
+          "WSF5": [
+            1999,
+            2026
+          ],
+          "WSFG": [
+            1952,
+            1968
+          ],
+          "WT01": [
+            1945,
+            2026
+          ],
+          "WT02": [
+            1965,
+            2026
+          ],
+          "WT03": [
+            1945,
+            2026
+          ],
+          "WT05": [
+            1945,
+            2023
+          ],
+          "WT07": [
+            1945,
+            2013
+          ],
+          "WT08": [
+            1945,
+            2026
+          ],
+          "WT10": [
+            2008,
+            2024
+          ],
+          "WT16": [
+            1945,
+            1968
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "city": "Lees Summit MO",
+    "latitude": 38.9108,
+    "longitude": -94.3822,
+    "coordinate_status": "approximate research center, not persisted app location",
+    "hourly_nearest_metadata": [
+      {
+        "GHCN_ID": "USC00238524",
+        "LATITUDE": "38.9482",
+        "LONGITUDE": "-94.397",
+        "ELEVATION": "287.1",
+        "STATE": "MO",
+        "NAME": "UNITY VILLAGE",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 4.35
+      },
+      {
+        "GHCN_ID": "USW00053879",
+        "LATITUDE": "38.9578",
+        "LONGITUDE": "-94.3711",
+        "ELEVATION": "304.8",
+        "STATE": "MO",
+        "NAME": "LEES SUMMIT MUNI AP",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KLXT",
+        "ISO_CODE": "US",
+        "distance_km": 5.31
+      },
+      {
+        "GHCN_ID": "USW00003929",
+        "LATITUDE": "38.8439",
+        "LONGITUDE": "-94.5603",
+        "ELEVATION": "321.9",
+        "STATE": "MO",
+        "NAME": "KANSAS CITY R GEBAUR AP",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KGVW",
+        "ISO_CODE": "US",
+        "distance_km": 17.12
+      },
+      {
+        "GHCN_ID": "USW00093972",
+        "LATITUDE": "39.1",
+        "LONGITUDE": "-94.5833",
+        "ELEVATION": "294.1",
+        "STATE": "MO",
+        "NAME": "KANSAS CITY",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 27.29
+      },
+      {
+        "GHCN_ID": "USP234370-1",
+        "LATITUDE": "39.11",
+        "LONGITUDE": "-94.58",
+        "ELEVATION": "253.0",
+        "STATE": "",
+        "NAME": "KANSASCITY",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 27.98
+      }
+    ],
+    "daily_nearest_three_core_inventory": [
+      {
+        "id": "USC00238526",
+        "latitude": 38.9389,
+        "longitude": -94.3558,
+        "elevation": 286.5,
+        "name": "UNITY VILLAGE 2.6ESE",
+        "distance_km": 3.87,
+        "inventory": {
+          "TMAX": [
+            2007,
+            2007
+          ],
+          "TMIN": [
+            2007,
+            2007
+          ],
+          "TOBS": [
+            2007,
+            2007
+          ],
+          "PRCP": [
+            2007,
+            2007
+          ],
+          "SNOW": [
+            2007,
+            2007
+          ],
+          "SNWD": [
+            2007,
+            2007
+          ],
+          "WT01": [
+            2007,
+            2007
+          ],
+          "WT03": [
+            2007,
+            2007
+          ],
+          "WT04": [
+            2007,
+            2007
+          ],
+          "WT05": [
+            2007,
+            2007
+          ],
+          "WT06": [
+            2007,
+            2007
+          ]
+        }
+      },
+      {
+        "id": "USC00234850",
+        "latitude": 38.8969,
+        "longitude": -94.3397,
+        "elevation": 320.0,
+        "name": "LEES SUMMIT REED WR",
+        "distance_km": 3.99,
+        "inventory": {
+          "TMAX": [
+            1962,
+            2023
+          ],
+          "TMIN": [
+            1962,
+            2023
+          ],
+          "TOBS": [
+            1962,
+            2011
+          ],
+          "PRCP": [
+            1962,
+            2023
+          ],
+          "SNOW": [
+            1962,
+            2011
+          ],
+          "SNWD": [
+            1962,
+            2011
+          ],
+          "DAPR": [
+            1969,
+            2011
+          ],
+          "MDPR": [
+            1969,
+            2011
+          ],
+          "MDSF": [
+            2009,
+            2010
+          ],
+          "WT01": [
+            1962,
+            1994
+          ],
+          "WT03": [
+            1962,
+            1992
+          ],
+          "WT04": [
+            1962,
+            1992
+          ],
+          "WT05": [
+            1963,
+            1989
+          ],
+          "WT06": [
+            1962,
+            1994
+          ],
+          "WT11": [
+            1965,
+            1984
+          ],
+          "WT14": [
+            1963,
+            1967
+          ],
+          "WT16": [
+            1963,
+            1966
+          ],
+          "WT18": [
+            1963,
+            1966
+          ]
+        }
+      },
+      {
+        "id": "USW00053879",
+        "latitude": 38.9578,
+        "longitude": -94.3711,
+        "elevation": 304.8,
+        "name": "LEES SUMMIT MUNI AP",
+        "distance_km": 5.31,
+        "inventory": {
+          "TMAX": [
+            2002,
+            2026
+          ],
+          "TMIN": [
+            2002,
+            2026
+          ],
+          "PRCP": [
+            2002,
+            2026
+          ],
+          "SNOW": [
+            2011,
+            2026
+          ],
+          "SNWD": [
+            2011,
+            2018
+          ],
+          "AWND": [
+            2002,
+            2026
+          ],
+          "FMTM": [
+            2002,
+            2005
+          ],
+          "PGTM": [
+            2002,
+            2025
+          ],
+          "PSUN": [
+            2014,
+            2019
+          ],
+          "TAVG": [
+            2002,
+            2005
+          ],
+          "TSUN": [
+            2002,
+            2019
+          ],
+          "WDF2": [
+            2002,
+            2026
+          ],
+          "WDF5": [
+            2002,
+            2026
+          ],
+          "WSF2": [
+            2002,
+            2026
+          ],
+          "WSF5": [
+            2002,
+            2026
+          ],
+          "WT01": [
+            2006,
+            2026
+          ],
+          "WT02": [
+            2006,
+            2026
+          ],
+          "WT03": [
+            2006,
+            2026
+          ],
+          "WT04": [
+            2013,
+            2022
+          ],
+          "WT06": [
+            2013,
+            2026
+          ],
+          "WT08": [
+            2006,
+            2026
+          ],
+          "WT09": [
+            2014,
+            2024
+          ]
+        }
+      },
+      {
+        "id": "USC00230760",
+        "latitude": 38.9833,
+        "longitude": -94.3333,
+        "elevation": -999.9,
+        "name": "BLUE SPRINGS",
+        "distance_km": 9.1,
+        "inventory": {
+          "TMAX": [
+            1903,
+            1906
+          ],
+          "TMIN": [
+            1903,
+            1906
+          ],
+          "TOBS": [
+            1903,
+            1906
+          ],
+          "PRCP": [
+            1903,
+            1906
+          ],
+          "SNOW": [
+            1903,
+            1906
+          ],
+          "SNWD": [
+            1903,
+            1906
+          ],
+          "WT03": [
+            1906,
+            1906
+          ],
+          "WT08": [
+            1904,
+            1906
+          ],
+          "WT14": [
+            1905,
+            1906
+          ],
+          "WT16": [
+            1905,
+            1906
+          ],
+          "WT18": [
+            1905,
+            1906
+          ]
+        }
+      }
+    ],
+    "daily_inventory_covers_baseline_and_recent_candidates": [
+      {
+        "id": "USW00013988",
+        "latitude": 39.1278,
+        "longitude": -94.5892,
+        "elevation": 226.2,
+        "name": "KANSAS CITY DWTN AP",
+        "distance_km": 30.03,
+        "inventory": {
+          "TMAX": [
+            1934,
+            2026
+          ],
+          "TMIN": [
+            1934,
+            2026
+          ],
+          "TOBS": [
+            1995,
+            2003
+          ],
+          "PRCP": [
+            1934,
+            2026
+          ],
+          "SNOW": [
+            1934,
+            2023
+          ],
+          "SNWD": [
+            1934,
+            2023
+          ],
+          "ACMH": [
+            1965,
+            1988
+          ],
+          "ACSH": [
+            1965,
+            1988
+          ],
+          "AWND": [
+            1984,
+            2026
+          ],
+          "DAPR": [
+            1996,
+            1996
+          ],
+          "FMTM": [
+            1985,
+            2005
+          ],
+          "FRGB": [
+            1949,
+            1963
+          ],
+          "FRGT": [
+            1949,
+            1963
+          ],
+          "FRTH": [
+            1949,
+            1963
+          ],
+          "GAHT": [
+            1948,
+            1964
+          ],
+          "MDPR": [
+            1996,
+            1996
+          ],
+          "PGTM": [
+            1957,
+            2025
+          ],
+          "PSUN": [
+            1965,
+            2018
+          ],
+          "TAVG": [
+            1998,
+            2005
+          ],
+          "THIC": [
+            1949,
+            1964
+          ],
+          "TSUN": [
+            1965,
+            2018
+          ],
+          "WDF1": [
+            1985,
+            1988
+          ],
+          "WDF2": [
+            1998,
+            2026
+          ],
+          "WDF5": [
+            1998,
+            2026
+          ],
+          "WDFG": [
+            1957,
+            1972
+          ],
+          "WDFM": [
+            1965,
+            1972
+          ],
+          "WESD": [
+            1952,
+            1971
+          ],
+          "WSF1": [
+            1985,
+            1988
+          ],
+          "WSF2": [
+            1998,
+            2026
+          ],
+          "WSF5": [
+            1998,
+            2026
+          ],
+          "WSFG": [
+            1953,
+            1972
+          ],
+          "WSFM": [
+            1965,
+            1972
+          ],
+          "WT01": [
+            1934,
+            2026
+          ],
+          "WT02": [
+            1965,
+            2026
+          ],
+          "WT03": [
+            1934,
+            2026
+          ],
+          "WT04": [
+            1934,
+            2015
+          ],
+          "WT05": [
+            1934,
+            2023
+          ],
+          "WT06": [
+            1934,
+            2025
+          ],
+          "WT07": [
+            1934,
+            1985
+          ],
+          "WT08": [
+            1934,
+            2026
+          ],
+          "WT09": [
+            1940,
+            2022
+          ],
+          "WT11": [
+            1949,
+            2011
+          ],
+          "WT14": [
+            1949,
+            1989
+          ],
+          "WT15": [
+            1984,
+            1989
+          ],
+          "WT16": [
+            1934,
+            1989
+          ],
+          "WT17": [
+            1984,
+            1989
+          ],
+          "WT18": [
+            1934,
+            1989
+          ],
+          "WT22": [
+            1984,
+            1988
+          ]
+        }
+      },
+      {
+        "id": "USC00232568",
+        "latitude": 38.8681,
+        "longitude": -94.0353,
+        "elevation": 259.1,
+        "name": "ELM",
+        "distance_km": 30.4,
+        "inventory": {
+          "TMAX": [
+            1989,
+            2025
+          ],
+          "TMIN": [
+            1989,
+            2025
+          ],
+          "TOBS": [
+            1991,
+            2025
+          ],
+          "PRCP": [
+            1988,
+            2026
+          ],
+          "SNOW": [
+            1989,
+            2025
+          ],
+          "SNWD": [
+            1989,
+            2025
+          ],
+          "DAPR": [
+            1995,
+            2024
+          ],
+          "MDPR": [
+            1995,
+            2024
+          ],
+          "MDSF": [
+            2010,
+            2010
+          ],
+          "WT01": [
+            2004,
+            2024
+          ],
+          "WT03": [
+            2019,
+            2024
+          ],
+          "WT06": [
+            2004,
+            2023
+          ],
+          "WT11": [
+            2023,
+            2023
+          ]
+        }
+      },
+      {
+        "id": "USC00235916",
+        "latitude": 39.1331,
+        "longitude": -94.0639,
+        "elevation": 207.3,
+        "name": "NAPOLEON",
+        "distance_km": 36.97,
+        "inventory": {
+          "TMAX": [
+            1985,
+            2026
+          ],
+          "TMIN": [
+            1985,
+            2026
+          ],
+          "TOBS": [
+            1985,
+            2026
+          ],
+          "PRCP": [
+            1985,
+            2026
+          ],
+          "SNOW": [
+            1990,
+            2026
+          ],
+          "SNWD": [
+            1992,
+            2026
+          ],
+          "DAPR": [
+            2011,
+            2025
+          ],
+          "MDPR": [
+            2009,
+            2025
+          ],
+          "MDSF": [
+            2009,
+            2010
+          ],
+          "WT01": [
+            2019,
+            2021
+          ],
+          "WT03": [
+            2019,
+            2021
+          ],
+          "WT04": [
+            2020,
+            2020
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "city": "Austin TX",
+    "latitude": 30.2672,
+    "longitude": -97.7431,
+    "coordinate_status": "approximate research center, not persisted app location",
+    "hourly_nearest_metadata": [
+      {
+        "GHCN_ID": "USW00093923",
+        "LATITUDE": "30.2833",
+        "LONGITUDE": "-97.7333",
+        "ELEVATION": "180.1",
+        "STATE": "TX",
+        "NAME": "AUSTIN",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 2.02
+      },
+      {
+        "GHCN_ID": "USW00013958",
+        "LATITUDE": "30.3208",
+        "LONGITUDE": "-97.7603",
+        "ELEVATION": "204.2",
+        "STATE": "TX",
+        "NAME": "AUSTIN-CAMP MABRY",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "72254",
+        "ICAO": "KATT",
+        "ISO_CODE": "US",
+        "distance_km": 6.18
+      },
+      {
+        "GHCN_ID": "USW00013904",
+        "LATITUDE": "30.1831",
+        "LONGITUDE": "-97.68",
+        "ELEVATION": "146.6",
+        "STATE": "TX",
+        "NAME": "AUSTIN BERGSTROM INTL AP",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "74745",
+        "ICAO": "KAUS",
+        "ISO_CODE": "US",
+        "distance_km": 11.14
+      },
+      {
+        "GHCN_ID": "USW00000230",
+        "LATITUDE": "30.395",
+        "LONGITUDE": "-97.5669",
+        "ELEVATION": "188.1",
+        "STATE": "TX",
+        "NAME": "AUSTIN EXECUTIVE AP",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KEDC",
+        "ISO_CODE": "US",
+        "distance_km": 22.09
+      },
+      {
+        "GHCN_ID": "USC00411541",
+        "LATITUDE": "30.0833",
+        "LONGITUDE": "-97.5",
+        "ELEVATION": "149.0",
+        "STATE": "TX",
+        "NAME": "CEDAR CREEK",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 31.05
+      }
+    ],
+    "daily_nearest_three_core_inventory": [
+      {
+        "id": "USC00410420",
+        "latitude": 30.2833,
+        "longitude": -97.7333,
+        "elevation": -999.9,
+        "name": "AUSTIN",
+        "distance_km": 2.02,
+        "inventory": {
+          "TMAX": [
+            1893,
+            1942
+          ],
+          "TMIN": [
+            1893,
+            1942
+          ],
+          "TOBS": [
+            1901,
+            1916
+          ],
+          "PRCP": [
+            1893,
+            1942
+          ],
+          "SNOW": [
+            1893,
+            1942
+          ],
+          "SNWD": [
+            1905,
+            1942
+          ],
+          "WT01": [
+            1897,
+            1916
+          ],
+          "WT03": [
+            1897,
+            1897
+          ],
+          "WT04": [
+            1898,
+            1940
+          ],
+          "WT05": [
+            1927,
+            1938
+          ],
+          "WT08": [
+            1910,
+            1916
+          ],
+          "WT09": [
+            1897,
+            1897
+          ],
+          "WT14": [
+            1915,
+            1915
+          ],
+          "WT16": [
+            1897,
+            1915
+          ],
+          "WT18": [
+            1900,
+            1900
+          ]
+        }
+      },
+      {
+        "id": "USC00410431",
+        "latitude": 30.2247,
+        "longitude": -97.7328,
+        "elevation": 173.7,
+        "name": "AUSTIN 6S",
+        "distance_km": 4.83,
+        "inventory": {
+          "TMAX": [
+            2004,
+            2019
+          ],
+          "TMIN": [
+            2004,
+            2019
+          ],
+          "TOBS": [
+            2004,
+            2019
+          ],
+          "PRCP": [
+            2004,
+            2019
+          ],
+          "SNOW": [
+            2004,
+            2019
+          ],
+          "SNWD": [
+            2004,
+            2019
+          ],
+          "DAPR": [
+            2008,
+            2018
+          ],
+          "MDPR": [
+            2008,
+            2018
+          ],
+          "WT01": [
+            2004,
+            2019
+          ],
+          "WT03": [
+            2004,
+            2018
+          ],
+          "WT04": [
+            2005,
+            2018
+          ],
+          "WT05": [
+            2004,
+            2006
+          ],
+          "WT06": [
+            2018,
+            2018
+          ],
+          "WT11": [
+            2004,
+            2019
+          ]
+        }
+      },
+      {
+        "id": "USW00013958",
+        "latitude": 30.3208,
+        "longitude": -97.7603,
+        "elevation": 204.2,
+        "name": "AUSTIN-CAMP MABRY",
+        "distance_km": 6.18,
+        "inventory": {
+          "TMAX": [
+            1938,
+            2026
+          ],
+          "TMIN": [
+            1938,
+            2026
+          ],
+          "TOBS": [
+            1981,
+            1981
+          ],
+          "PRCP": [
+            1938,
+            2026
+          ],
+          "SNOW": [
+            1938,
+            2026
+          ],
+          "SNWD": [
+            1938,
+            2026
+          ],
+          "ACMH": [
+            1965,
+            1995
+          ],
+          "ACSH": [
+            1965,
+            1995
+          ],
+          "ADPT": [
+            2006,
+            2024
+          ],
+          "ASLP": [
+            2006,
+            2024
+          ],
+          "ASTP": [
+            2006,
+            2024
+          ],
+          "AWBT": [
+            2006,
+            2024
+          ],
+          "AWND": [
+            1984,
+            2026
+          ],
+          "DAEV": [
+            1979,
+            1995
+          ],
+          "DAWM": [
+            1979,
+            1995
+          ],
+          "EVAP": [
+            1979,
+            1996
+          ],
+          "FMTM": [
+            1984,
+            2012
+          ],
+          "FRGT": [
+            1963,
+            1963
+          ],
+          "GAHT": [
+            1948,
+            1963
+          ],
+          "MDEV": [
+            1979,
+            1995
+          ],
+          "MDWM": [
+            1979,
+            1995
+          ],
+          "MNPN": [
+            1979,
+            1996
+          ],
+          "MXPN": [
+            1979,
+            1996
+          ],
+          "PGTM": [
+            1971,
+            2025
+          ],
+          "PSUN": [
+            1965,
+            2009
+          ],
+          "RHAV": [
+            2006,
+            2024
+          ],
+          "RHMN": [
+            2006,
+            2024
+          ],
+          "RHMX": [
+            2006,
+            2024
+          ],
+          "SN02": [
+            1982,
+            1996
+          ],
+          "SX02": [
+            1982,
+            1996
+          ],
+          "TAVG": [
+            1998,
+            2005
+          ],
+          "THIC": [
+            1963,
+            1963
+          ],
+          "TSUN": [
+            1965,
+            2009
+          ],
+          "WDF1": [
+            1979,
+            1995
+          ],
+          "WDF2": [
+            1995,
+            2026
+          ],
+          "WDF5": [
+            1995,
+            2026
+          ],
+          "WDFG": [
+            1971,
+            1995
+          ],
+          "WDFM": [
+            1965,
+            1979
+          ],
+          "WDMV": [
+            1979,
+            1996
+          ],
+          "WESD": [
+            1952,
+            2010
+          ],
+          "WSF1": [
+            1979,
+            1995
+          ],
+          "WSF2": [
+            1995,
+            2026
+          ],
+          "WSF5": [
+            1995,
+            2026
+          ],
+          "WSFG": [
+            1952,
+            1995
+          ],
+          "WSFM": [
+            1965,
+            1979
+          ],
+          "WT01": [
+            1948,
+            2026
+          ],
+          "WT02": [
+            1965,
+            2026
+          ],
+          "WT03": [
+            1942,
+            2026
+          ],
+          "WT04": [
+            1939,
+            2026
+          ],
+          "WT05": [
+            1948,
+            2024
+          ],
+          "WT06": [
+            1947,
+            2026
+          ],
+          "WT07": [
+            1948,
+            2025
+          ],
+          "WT08": [
+            1948,
+            2026
+          ],
+          "WT09": [
+            1962,
+            2010
+          ],
+          "WT10": [
+            1997,
+            1997
+          ],
+          "WT11": [
+            1948,
+            2001
+          ],
+          "WT13": [
+            1996,
+            2013
+          ],
+          "WT14": [
+            1955,
+            2010
+          ],
+          "WT15": [
+            1985,
+            1998
+          ],
+          "WT16": [
+            1948,
+            2013
+          ],
+          "WT17": [
+            1985,
+            2011
+          ],
+          "WT18": [
+            1948,
+            2011
+          ],
+          "WT19": [
+            1997,
+            2013
+          ],
+          "WT21": [
+            1996,
+            1998
+          ],
+          "WT22": [
+            2003,
+            2011
+          ],
+          "WV03": [
+            2000,
+            2005
+          ]
+        }
+      },
+      {
+        "id": "USC00414185",
+        "latitude": 30.2333,
+        "longitude": -97.6833,
+        "elevation": 144.8,
+        "name": "HILL'S RANCH",
+        "distance_km": 6.87,
+        "inventory": {
+          "TMAX": [
+            1916,
+            1930
+          ],
+          "TMIN": [
+            1916,
+            1930
+          ],
+          "TOBS": [
+            1916,
+            1930
+          ],
+          "PRCP": [
+            1916,
+            1930
+          ],
+          "SNOW": [
+            1929,
+            1930
+          ],
+          "SNWD": [
+            1929,
+            1929
+          ],
+          "EVAP": [
+            1916,
+            1930
+          ],
+          "WDMV": [
+            1916,
+            1930
+          ]
+        }
+      }
+    ],
+    "daily_inventory_covers_baseline_and_recent_candidates": [
+      {
+        "id": "USW00013958",
+        "latitude": 30.3208,
+        "longitude": -97.7603,
+        "elevation": 204.2,
+        "name": "AUSTIN-CAMP MABRY",
+        "distance_km": 6.18,
+        "inventory": {
+          "TMAX": [
+            1938,
+            2026
+          ],
+          "TMIN": [
+            1938,
+            2026
+          ],
+          "TOBS": [
+            1981,
+            1981
+          ],
+          "PRCP": [
+            1938,
+            2026
+          ],
+          "SNOW": [
+            1938,
+            2026
+          ],
+          "SNWD": [
+            1938,
+            2026
+          ],
+          "ACMH": [
+            1965,
+            1995
+          ],
+          "ACSH": [
+            1965,
+            1995
+          ],
+          "ADPT": [
+            2006,
+            2024
+          ],
+          "ASLP": [
+            2006,
+            2024
+          ],
+          "ASTP": [
+            2006,
+            2024
+          ],
+          "AWBT": [
+            2006,
+            2024
+          ],
+          "AWND": [
+            1984,
+            2026
+          ],
+          "DAEV": [
+            1979,
+            1995
+          ],
+          "DAWM": [
+            1979,
+            1995
+          ],
+          "EVAP": [
+            1979,
+            1996
+          ],
+          "FMTM": [
+            1984,
+            2012
+          ],
+          "FRGT": [
+            1963,
+            1963
+          ],
+          "GAHT": [
+            1948,
+            1963
+          ],
+          "MDEV": [
+            1979,
+            1995
+          ],
+          "MDWM": [
+            1979,
+            1995
+          ],
+          "MNPN": [
+            1979,
+            1996
+          ],
+          "MXPN": [
+            1979,
+            1996
+          ],
+          "PGTM": [
+            1971,
+            2025
+          ],
+          "PSUN": [
+            1965,
+            2009
+          ],
+          "RHAV": [
+            2006,
+            2024
+          ],
+          "RHMN": [
+            2006,
+            2024
+          ],
+          "RHMX": [
+            2006,
+            2024
+          ],
+          "SN02": [
+            1982,
+            1996
+          ],
+          "SX02": [
+            1982,
+            1996
+          ],
+          "TAVG": [
+            1998,
+            2005
+          ],
+          "THIC": [
+            1963,
+            1963
+          ],
+          "TSUN": [
+            1965,
+            2009
+          ],
+          "WDF1": [
+            1979,
+            1995
+          ],
+          "WDF2": [
+            1995,
+            2026
+          ],
+          "WDF5": [
+            1995,
+            2026
+          ],
+          "WDFG": [
+            1971,
+            1995
+          ],
+          "WDFM": [
+            1965,
+            1979
+          ],
+          "WDMV": [
+            1979,
+            1996
+          ],
+          "WESD": [
+            1952,
+            2010
+          ],
+          "WSF1": [
+            1979,
+            1995
+          ],
+          "WSF2": [
+            1995,
+            2026
+          ],
+          "WSF5": [
+            1995,
+            2026
+          ],
+          "WSFG": [
+            1952,
+            1995
+          ],
+          "WSFM": [
+            1965,
+            1979
+          ],
+          "WT01": [
+            1948,
+            2026
+          ],
+          "WT02": [
+            1965,
+            2026
+          ],
+          "WT03": [
+            1942,
+            2026
+          ],
+          "WT04": [
+            1939,
+            2026
+          ],
+          "WT05": [
+            1948,
+            2024
+          ],
+          "WT06": [
+            1947,
+            2026
+          ],
+          "WT07": [
+            1948,
+            2025
+          ],
+          "WT08": [
+            1948,
+            2026
+          ],
+          "WT09": [
+            1962,
+            2010
+          ],
+          "WT10": [
+            1997,
+            1997
+          ],
+          "WT11": [
+            1948,
+            2001
+          ],
+          "WT13": [
+            1996,
+            2013
+          ],
+          "WT14": [
+            1955,
+            2010
+          ],
+          "WT15": [
+            1985,
+            1998
+          ],
+          "WT16": [
+            1948,
+            2013
+          ],
+          "WT17": [
+            1985,
+            2011
+          ],
+          "WT18": [
+            1948,
+            2011
+          ],
+          "WT19": [
+            1997,
+            2013
+          ],
+          "WT21": [
+            1996,
+            1998
+          ],
+          "WT22": [
+            2003,
+            2011
+          ],
+          "WV03": [
+            2000,
+            2005
+          ]
+        }
+      },
+      {
+        "id": "USW00013904",
+        "latitude": 30.1831,
+        "longitude": -97.68,
+        "elevation": 146.6,
+        "name": "AUSTIN BERGSTROM INTL AP",
+        "distance_km": 11.14,
+        "inventory": {
+          "TMAX": [
+            1948,
+            2026
+          ],
+          "TMIN": [
+            1948,
+            2026
+          ],
+          "PRCP": [
+            1948,
+            2026
+          ],
+          "SNOW": [
+            1948,
+            2026
+          ],
+          "SNWD": [
+            1948,
+            2026
+          ],
+          "ADPT": [
+            2006,
+            2024
+          ],
+          "ASLP": [
+            2006,
+            2024
+          ],
+          "ASTP": [
+            2006,
+            2024
+          ],
+          "AWBT": [
+            2006,
+            2024
+          ],
+          "AWND": [
+            1998,
+            2026
+          ],
+          "FMTM": [
+            1998,
+            2012
+          ],
+          "PGTM": [
+            1948,
+            2025
+          ],
+          "PSUN": [
+            2006,
+            2006
+          ],
+          "RHAV": [
+            2006,
+            2024
+          ],
+          "RHMN": [
+            2006,
+            2024
+          ],
+          "RHMX": [
+            2006,
+            2024
+          ],
+          "TAVG": [
+            1998,
+            2005
+          ],
+          "THIC": [
+            1948,
+            1948
+          ],
+          "TSUN": [
+            1999,
+            2006
+          ],
+          "WDF2": [
+            1998,
+            2026
+          ],
+          "WDF5": [
+            1998,
+            2026
+          ],
+          "WDFG": [
+            1948,
+            1970
+          ],
+          "WSF2": [
+            1998,
+            2026
+          ],
+          "WSF5": [
+            1998,
+            2026
+          ],
+          "WSFG": [
+            1948,
+            1970
+          ],
+          "WT01": [
+            1949,
+            2026
+          ],
+          "WT02": [
+            1999,
+            2026
+          ],
+          "WT03": [
+            1949,
+            2026
+          ],
+          "WT04": [
+            1951,
+            2026
+          ],
+          "WT05": [
+            1950,
+            2025
+          ],
+          "WT06": [
+            1950,
+            2026
+          ],
+          "WT07": [
+            1948,
+            2025
+          ],
+          "WT08": [
+            1949,
+            2026
+          ],
+          "WT09": [
+            1948,
+            2021
+          ],
+          "WT10": [
+            2001,
+            2001
+          ],
+          "WT11": [
+            2000,
+            2013
+          ],
+          "WT13": [
+            1999,
+            2013
+          ],
+          "WT14": [
+            1999,
+            2013
+          ],
+          "WT15": [
+            2000,
+            2008
+          ],
+          "WT16": [
+            1949,
+            2013
+          ],
+          "WT17": [
+            2000,
+            2009
+          ],
+          "WT18": [
+            1949,
+            2012
+          ],
+          "WT21": [
+            1999,
+            2013
+          ],
+          "WT22": [
+            1999,
+            2010
+          ],
+          "WV03": [
+            2000,
+            2003
+          ]
+        }
+      },
+      {
+        "id": "USC00412585",
+        "latitude": 30.2194,
+        "longitude": -97.9878,
+        "elevation": 330.4,
+        "name": "DRIPPING SPRINGS 6 E",
+        "distance_km": 24.1,
+        "inventory": {
+          "TMAX": [
+            1984,
+            2026
+          ],
+          "TMIN": [
+            1984,
+            2026
+          ],
+          "TOBS": [
+            1984,
+            2026
+          ],
+          "PRCP": [
+            1984,
+            2026
+          ],
+          "SNOW": [
+            1984,
+            2026
+          ],
+          "SNWD": [
+            1984,
+            2026
+          ],
+          "WT01": [
+            1984,
+            2026
+          ],
+          "WT03": [
+            1984,
+            2026
+          ],
+          "WT04": [
+            1985,
+            2026
+          ],
+          "WT05": [
+            1987,
+            2024
+          ],
+          "WT06": [
+            1985,
+            2026
+          ],
+          "WT11": [
+            1985,
+            2025
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "city": "Los Angeles CA",
+    "latitude": 34.0522,
+    "longitude": -118.2437,
+    "coordinate_status": "approximate research center, not persisted app location",
+    "hourly_nearest_metadata": [
+      {
+        "GHCN_ID": "USP045115-1",
+        "LATITUDE": "34.05",
+        "LONGITUDE": "-118.24",
+        "ELEVATION": "87.0",
+        "STATE": "",
+        "NAME": "LOSANGELES",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 0.42
+      },
+      {
+        "GHCN_ID": "USP045115-2",
+        "LATITUDE": "34.06",
+        "LONGITUDE": "-118.24",
+        "ELEVATION": "89.0",
+        "STATE": "",
+        "NAME": "LOSANGELES",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 0.93
+      },
+      {
+        "GHCN_ID": "USW00093134",
+        "LATITUDE": "34.0236",
+        "LONGITUDE": "-118.2911",
+        "ELEVATION": "54.6",
+        "STATE": "CA",
+        "NAME": "LOS ANGELES DOWNTOWN/USC",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KCQT",
+        "ISO_CODE": "US",
+        "distance_km": 5.4
+      },
+      {
+        "GHCN_ID": "USA00749169",
+        "LATITUDE": "34.133",
+        "LONGITUDE": "-118.133",
+        "ELEVATION": "231.0",
+        "STATE": "CA",
+        "NAME": "PASADENA",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 13.59
+      },
+      {
+        "GHCN_ID": "USW00003167",
+        "LATITUDE": "33.9236",
+        "LONGITUDE": "-118.3328",
+        "ELEVATION": "16.8",
+        "STATE": "CA",
+        "NAME": "HAWTHORNE MUNI AP",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KHHR",
+        "ISO_CODE": "US",
+        "distance_km": 16.49
+      }
+    ],
+    "daily_nearest_three_core_inventory": [
+      {
+        "id": "USW00093134",
+        "latitude": 34.0236,
+        "longitude": -118.2911,
+        "elevation": 54.6,
+        "name": "LOS ANGELES DOWNTOWN/USC",
+        "distance_km": 5.4,
+        "inventory": {
+          "TMAX": [
+            1906,
+            2026
+          ],
+          "TMIN": [
+            1906,
+            2026
+          ],
+          "TOBS": [
+            1949,
+            1949
+          ],
+          "PRCP": [
+            1906,
+            2026
+          ],
+          "SNOW": [
+            1913,
+            2024
+          ],
+          "SNWD": [
+            1921,
+            2026
+          ],
+          "ACSH": [
+            1965,
+            1977
+          ],
+          "ADPT": [
+            2006,
+            2024
+          ],
+          "ASLP": [
+            2006,
+            2024
+          ],
+          "ASTP": [
+            2006,
+            2024
+          ],
+          "AWBT": [
+            2006,
+            2024
+          ],
+          "AWND": [
+            1999,
+            2026
+          ],
+          "FMTM": [
+            1999,
+            2012
+          ],
+          "PGTM": [
+            1963,
+            2019
+          ],
+          "PSUN": [
+            1965,
+            1977
+          ],
+          "RHAV": [
+            2006,
+            2024
+          ],
+          "RHMN": [
+            2006,
+            2024
+          ],
+          "RHMX": [
+            2006,
+            2024
+          ],
+          "TAVG": [
+            1998,
+            2005
+          ],
+          "TSUN": [
+            1965,
+            2005
+          ],
+          "WDF2": [
+            1999,
+            2026
+          ],
+          "WDF5": [
+            1999,
+            2026
+          ],
+          "WDFG": [
+            1963,
+            1963
+          ],
+          "WDFM": [
+            1965,
+            1977
+          ],
+          "WESD": [
+            1977,
+            1977
+          ],
+          "WSF2": [
+            1999,
+            2026
+          ],
+          "WSF5": [
+            1999,
+            2026
+          ],
+          "WSFG": [
+            1950,
+            1963
+          ],
+          "WSFM": [
+            1965,
+            1977
+          ],
+          "WT01": [
+            1948,
+            2024
+          ],
+          "WT02": [
+            1999,
+            2024
+          ],
+          "WT03": [
+            1948,
+            1963
+          ],
+          "WT04": [
+            1951,
+            1952
+          ],
+          "WT05": [
+            1921,
+            2010
+          ],
+          "WT07": [
+            1948,
+            2010
+          ],
+          "WT08": [
+            1935,
+            2024
+          ],
+          "WT09": [
+            2008,
+            2010
+          ],
+          "WT13": [
+            1999,
+            2013
+          ],
+          "WT14": [
+            1906,
+            1906
+          ],
+          "WT16": [
+            1906,
+            2013
+          ],
+          "WT18": [
+            1947,
+            2006
+          ],
+          "WT19": [
+            2005,
+            2005
+          ]
+        }
+      },
+      {
+        "id": "USC00043450",
+        "latitude": 34.15,
+        "longitude": -118.2667,
+        "elevation": 161.8,
+        "name": "GLENDALE STAPENHORST F",
+        "distance_km": 11.08,
+        "inventory": {
+          "TMAX": [
+            1929,
+            1940
+          ],
+          "TMIN": [
+            1929,
+            1940
+          ],
+          "TOBS": [
+            1931,
+            1935
+          ],
+          "PRCP": [
+            1929,
+            1971
+          ],
+          "SNOW": [
+            1932,
+            1971
+          ],
+          "SNWD": [
+            1932,
+            1971
+          ],
+          "DAPR": [
+            1952,
+            1952
+          ],
+          "MDPR": [
+            1952,
+            1952
+          ],
+          "WT05": [
+            1956,
+            1956
+          ],
+          "WT08": [
+            1931,
+            1933
+          ],
+          "WT14": [
+            1949,
+            1950
+          ]
+        }
+      },
+      {
+        "id": "USC00048963",
+        "latitude": 34.1333,
+        "longitude": -118.3167,
+        "elevation": 396.8,
+        "name": "TOPANGA CANYON WOODLAN",
+        "distance_km": 11.25,
+        "inventory": {
+          "TMAX": [
+            1927,
+            1930
+          ],
+          "TMIN": [
+            1927,
+            1930
+          ],
+          "PRCP": [
+            1927,
+            1930
+          ]
+        }
+      },
+      {
+        "id": "USC00045790",
+        "latitude": 34.0192,
+        "longitude": -118.1053,
+        "elevation": 75.0,
+        "name": "MONTEBELLO",
+        "distance_km": 13.27,
+        "inventory": {
+          "TMAX": [
+            1979,
+            2011
+          ],
+          "TMIN": [
+            1979,
+            2011
+          ],
+          "TOBS": [
+            1979,
+            2011
+          ],
+          "PRCP": [
+            1979,
+            2010
+          ],
+          "SNOW": [
+            1979,
+            2010
+          ],
+          "SNWD": [
+            1979,
+            2010
+          ],
+          "DAPR": [
+            1979,
+            2004
+          ],
+          "MDPR": [
+            1979,
+            2005
+          ],
+          "WT01": [
+            1985,
+            2010
+          ],
+          "WT03": [
+            1979,
+            2005
+          ],
+          "WT05": [
+            1983,
+            1983
+          ],
+          "WT11": [
+            1983,
+            1984
+          ]
+        }
+      }
+    ],
+    "daily_inventory_covers_baseline_and_recent_candidates": [
+      {
+        "id": "USW00093134",
+        "latitude": 34.0236,
+        "longitude": -118.2911,
+        "elevation": 54.6,
+        "name": "LOS ANGELES DOWNTOWN/USC",
+        "distance_km": 5.4,
+        "inventory": {
+          "TMAX": [
+            1906,
+            2026
+          ],
+          "TMIN": [
+            1906,
+            2026
+          ],
+          "TOBS": [
+            1949,
+            1949
+          ],
+          "PRCP": [
+            1906,
+            2026
+          ],
+          "SNOW": [
+            1913,
+            2024
+          ],
+          "SNWD": [
+            1921,
+            2026
+          ],
+          "ACSH": [
+            1965,
+            1977
+          ],
+          "ADPT": [
+            2006,
+            2024
+          ],
+          "ASLP": [
+            2006,
+            2024
+          ],
+          "ASTP": [
+            2006,
+            2024
+          ],
+          "AWBT": [
+            2006,
+            2024
+          ],
+          "AWND": [
+            1999,
+            2026
+          ],
+          "FMTM": [
+            1999,
+            2012
+          ],
+          "PGTM": [
+            1963,
+            2019
+          ],
+          "PSUN": [
+            1965,
+            1977
+          ],
+          "RHAV": [
+            2006,
+            2024
+          ],
+          "RHMN": [
+            2006,
+            2024
+          ],
+          "RHMX": [
+            2006,
+            2024
+          ],
+          "TAVG": [
+            1998,
+            2005
+          ],
+          "TSUN": [
+            1965,
+            2005
+          ],
+          "WDF2": [
+            1999,
+            2026
+          ],
+          "WDF5": [
+            1999,
+            2026
+          ],
+          "WDFG": [
+            1963,
+            1963
+          ],
+          "WDFM": [
+            1965,
+            1977
+          ],
+          "WESD": [
+            1977,
+            1977
+          ],
+          "WSF2": [
+            1999,
+            2026
+          ],
+          "WSF5": [
+            1999,
+            2026
+          ],
+          "WSFG": [
+            1950,
+            1963
+          ],
+          "WSFM": [
+            1965,
+            1977
+          ],
+          "WT01": [
+            1948,
+            2024
+          ],
+          "WT02": [
+            1999,
+            2024
+          ],
+          "WT03": [
+            1948,
+            1963
+          ],
+          "WT04": [
+            1951,
+            1952
+          ],
+          "WT05": [
+            1921,
+            2010
+          ],
+          "WT07": [
+            1948,
+            2010
+          ],
+          "WT08": [
+            1935,
+            2024
+          ],
+          "WT09": [
+            2008,
+            2010
+          ],
+          "WT13": [
+            1999,
+            2013
+          ],
+          "WT14": [
+            1906,
+            1906
+          ],
+          "WT16": [
+            1906,
+            2013
+          ],
+          "WT18": [
+            1947,
+            2006
+          ],
+          "WT19": [
+            2005,
+            2005
+          ]
+        }
+      },
+      {
+        "id": "USC00046719",
+        "latitude": 34.1483,
+        "longitude": -118.1447,
+        "elevation": 263.3,
+        "name": "PASADENA",
+        "distance_km": 14.05,
+        "inventory": {
+          "TMAX": [
+            1893,
+            2026
+          ],
+          "TMIN": [
+            1893,
+            2026
+          ],
+          "TOBS": [
+            1908,
+            2026
+          ],
+          "PRCP": [
+            1893,
+            2026
+          ],
+          "SNOW": [
+            1893,
+            2010
+          ],
+          "SNWD": [
+            1908,
+            2010
+          ],
+          "DAPR": [
+            1945,
+            2006
+          ],
+          "MDPR": [
+            1945,
+            2006
+          ],
+          "WT01": [
+            1906,
+            2002
+          ],
+          "WT03": [
+            1908,
+            1986
+          ],
+          "WT04": [
+            1937,
+            1973
+          ],
+          "WT05": [
+            1928,
+            2002
+          ],
+          "WT06": [
+            1979,
+            1979
+          ],
+          "WT07": [
+            1949,
+            1949
+          ],
+          "WT08": [
+            1923,
+            1961
+          ],
+          "WT11": [
+            1908,
+            1999
+          ],
+          "WT14": [
+            1922,
+            1949
+          ],
+          "WT16": [
+            1906,
+            1908
+          ]
+        }
+      },
+      {
+        "id": "USC00042214",
+        "latitude": 34.005,
+        "longitude": -118.4139,
+        "elevation": 28.0,
+        "name": "CULVER CITY",
+        "distance_km": 16.54,
+        "inventory": {
+          "TMAX": [
+            1935,
+            2026
+          ],
+          "TMIN": [
+            1935,
+            2026
+          ],
+          "TOBS": [
+            1935,
+            2026
+          ],
+          "PRCP": [
+            1935,
+            2026
+          ],
+          "SNOW": [
+            1935,
+            2013
+          ],
+          "SNWD": [
+            1935,
+            2013
+          ],
+          "DAPR": [
+            1955,
+            2020
+          ],
+          "MDPR": [
+            1955,
+            2020
+          ],
+          "WT01": [
+            1935,
+            2025
+          ],
+          "WT03": [
+            1935,
+            2023
+          ],
+          "WT04": [
+            1950,
+            1950
+          ],
+          "WT05": [
+            1935,
+            1935
+          ],
+          "WT06": [
+            2006,
+            2019
+          ],
+          "WT08": [
+            1936,
+            1951
+          ],
+          "WT11": [
+            1944,
+            2023
+          ],
+          "WT14": [
+            1943,
+            1951
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "city": "San Francisco CA",
+    "latitude": 37.7749,
+    "longitude": -122.4194,
+    "coordinate_status": "approximate research center, not persisted app location",
+    "hourly_nearest_metadata": [
+      {
+        "GHCN_ID": "USW00023272",
+        "LATITUDE": "37.7706",
+        "LONGITUDE": "-122.4269",
+        "ELEVATION": "45.7",
+        "STATE": "CA",
+        "NAME": "SAN FRANCISCO DWTN",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 0.81
+      },
+      {
+        "GHCN_ID": "USP047772-1",
+        "LATITUDE": "37.79",
+        "LONGITUDE": "-122.41",
+        "ELEVATION": "40.0",
+        "STATE": "",
+        "NAME": "SANFRANCISCO",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 1.87
+      },
+      {
+        "GHCN_ID": "USP047769-2",
+        "LATITUDE": "37.79",
+        "LONGITUDE": "-122.4",
+        "ELEVATION": "5.0",
+        "STATE": "",
+        "NAME": "CA_SAN_FRANCISCO",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 2.39
+      },
+      {
+        "GHCN_ID": "USP047772-2",
+        "LATITUDE": "37.79",
+        "LONGITUDE": "-122.4",
+        "ELEVATION": "5.0",
+        "STATE": "",
+        "NAME": "SANFRANCISCO",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 2.39
+      },
+      {
+        "GHCN_ID": "USP047772-3",
+        "LATITUDE": "37.79",
+        "LONGITUDE": "-122.4",
+        "ELEVATION": "8.0",
+        "STATE": "",
+        "NAME": "SANFRANCISCO",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 2.39
+      }
+    ],
+    "daily_nearest_three_core_inventory": [
+      {
+        "id": "USW00023272",
+        "latitude": 37.7706,
+        "longitude": -122.4269,
+        "elevation": 45.7,
+        "name": "SAN FRANCISCO DWTN",
+        "distance_km": 0.81,
+        "inventory": {
+          "TMAX": [
+            1921,
+            2026
+          ],
+          "TMIN": [
+            1921,
+            2026
+          ],
+          "TOBS": [
+            2007,
+            2026
+          ],
+          "PRCP": [
+            1921,
+            2026
+          ],
+          "SNOW": [
+            1921,
+            2020
+          ],
+          "SNWD": [
+            1922,
+            2026
+          ],
+          "DAPR": [
+            1975,
+            1980
+          ],
+          "MDPR": [
+            1975,
+            1980
+          ],
+          "PSUN": [
+            1965,
+            1974
+          ],
+          "TAVG": [
+            1998,
+            2002
+          ],
+          "TSUN": [
+            1965,
+            1974
+          ],
+          "WDFM": [
+            1965,
+            1973
+          ],
+          "WSF1": [
+            1973,
+            1973
+          ],
+          "WSFG": [
+            1948,
+            1954
+          ],
+          "WSFM": [
+            1965,
+            1973
+          ],
+          "WT01": [
+            1952,
+            2025
+          ],
+          "WT03": [
+            1922,
+            2023
+          ],
+          "WT04": [
+            1922,
+            1963
+          ],
+          "WT05": [
+            1922,
+            1963
+          ],
+          "WT08": [
+            1933,
+            1952
+          ],
+          "WT11": [
+            2011,
+            2011
+          ],
+          "WT16": [
+            1922,
+            1959
+          ],
+          "WT18": [
+            1922,
+            1941
+          ]
+        }
+      },
+      {
+        "id": "USC00047765",
+        "latitude": 37.7667,
+        "longitude": -122.4667,
+        "elevation": 75.9,
+        "name": "SAN FRAN ACAD OF SCI",
+        "distance_km": 4.26,
+        "inventory": {
+          "TMAX": [
+            1951,
+            1957
+          ],
+          "TMIN": [
+            1951,
+            1957
+          ],
+          "TOBS": [
+            1951,
+            1957
+          ],
+          "PRCP": [
+            1951,
+            1957
+          ],
+          "SNOW": [
+            1951,
+            1957
+          ],
+          "SNWD": [
+            1951,
+            1957
+          ],
+          "DAPR": [
+            1952,
+            1957
+          ],
+          "MDPR": [
+            1952,
+            1957
+          ],
+          "WT01": [
+            1951,
+            1956
+          ],
+          "WT03": [
+            1951,
+            1954
+          ],
+          "WT05": [
+            1951,
+            1954
+          ],
+          "WT11": [
+            1951,
+            1954
+          ],
+          "WT14": [
+            1953,
+            1953
+          ]
+        }
+      },
+      {
+        "id": "USC00047767",
+        "latitude": 37.7281,
+        "longitude": -122.5053,
+        "elevation": 2.4,
+        "name": "SAN FRANCISCO OCEANSIDE",
+        "distance_km": 9.17,
+        "inventory": {
+          "TMAX": [
+            1958,
+            2026
+          ],
+          "TMIN": [
+            1958,
+            2026
+          ],
+          "TOBS": [
+            1958,
+            2023
+          ],
+          "PRCP": [
+            1948,
+            2026
+          ],
+          "SNOW": [
+            1948,
+            2010
+          ],
+          "SNWD": [
+            1948,
+            2010
+          ],
+          "DAPR": [
+            1948,
+            2004
+          ],
+          "MDPR": [
+            1948,
+            2010
+          ],
+          "WT01": [
+            1958,
+            2010
+          ],
+          "WT03": [
+            1965,
+            1965
+          ]
+        }
+      },
+      {
+        "id": "USW00023239",
+        "latitude": 37.7333,
+        "longitude": -122.3167,
+        "elevation": 4.9,
+        "name": "ALAMEDA NAS",
+        "distance_km": 10.14,
+        "inventory": {
+          "TMAX": [
+            1945,
+            1996
+          ],
+          "TMIN": [
+            1945,
+            1996
+          ],
+          "PRCP": [
+            1945,
+            1996
+          ],
+          "SNOW": [
+            1945,
+            1996
+          ],
+          "SNWD": [
+            1945,
+            1996
+          ],
+          "ACMH": [
+            1965,
+            1975
+          ],
+          "ACSH": [
+            1965,
+            1975
+          ],
+          "AWND": [
+            1986,
+            1996
+          ],
+          "PGTM": [
+            1948,
+            1996
+          ],
+          "WDFG": [
+            1948,
+            1996
+          ],
+          "WSFG": [
+            1948,
+            1996
+          ],
+          "WT01": [
+            1945,
+            1996
+          ],
+          "WT02": [
+            1965,
+            1996
+          ],
+          "WT03": [
+            1945,
+            1996
+          ],
+          "WT04": [
+            1967,
+            1979
+          ],
+          "WT05": [
+            1947,
+            1996
+          ],
+          "WT07": [
+            1978,
+            1978
+          ],
+          "WT08": [
+            1945,
+            1996
+          ],
+          "WT14": [
+            1986,
+            1996
+          ],
+          "WT16": [
+            1945,
+            1996
+          ],
+          "WT18": [
+            1951,
+            1976
+          ]
+        }
+      }
+    ],
+    "daily_inventory_covers_baseline_and_recent_candidates": [
+      {
+        "id": "USW00023272",
+        "latitude": 37.7706,
+        "longitude": -122.4269,
+        "elevation": 45.7,
+        "name": "SAN FRANCISCO DWTN",
+        "distance_km": 0.81,
+        "inventory": {
+          "TMAX": [
+            1921,
+            2026
+          ],
+          "TMIN": [
+            1921,
+            2026
+          ],
+          "TOBS": [
+            2007,
+            2026
+          ],
+          "PRCP": [
+            1921,
+            2026
+          ],
+          "SNOW": [
+            1921,
+            2020
+          ],
+          "SNWD": [
+            1922,
+            2026
+          ],
+          "DAPR": [
+            1975,
+            1980
+          ],
+          "MDPR": [
+            1975,
+            1980
+          ],
+          "PSUN": [
+            1965,
+            1974
+          ],
+          "TAVG": [
+            1998,
+            2002
+          ],
+          "TSUN": [
+            1965,
+            1974
+          ],
+          "WDFM": [
+            1965,
+            1973
+          ],
+          "WSF1": [
+            1973,
+            1973
+          ],
+          "WSFG": [
+            1948,
+            1954
+          ],
+          "WSFM": [
+            1965,
+            1973
+          ],
+          "WT01": [
+            1952,
+            2025
+          ],
+          "WT03": [
+            1922,
+            2023
+          ],
+          "WT04": [
+            1922,
+            1963
+          ],
+          "WT05": [
+            1922,
+            1963
+          ],
+          "WT08": [
+            1933,
+            1952
+          ],
+          "WT11": [
+            2011,
+            2011
+          ],
+          "WT16": [
+            1922,
+            1959
+          ],
+          "WT18": [
+            1922,
+            1941
+          ]
+        }
+      },
+      {
+        "id": "USC00047767",
+        "latitude": 37.7281,
+        "longitude": -122.5053,
+        "elevation": 2.4,
+        "name": "SAN FRANCISCO OCEANSIDE",
+        "distance_km": 9.17,
+        "inventory": {
+          "TMAX": [
+            1958,
+            2026
+          ],
+          "TMIN": [
+            1958,
+            2026
+          ],
+          "TOBS": [
+            1958,
+            2023
+          ],
+          "PRCP": [
+            1948,
+            2026
+          ],
+          "SNOW": [
+            1948,
+            2010
+          ],
+          "SNWD": [
+            1948,
+            2010
+          ],
+          "DAPR": [
+            1948,
+            2004
+          ],
+          "MDPR": [
+            1948,
+            2010
+          ],
+          "WT01": [
+            1958,
+            2010
+          ],
+          "WT03": [
+            1965,
+            1965
+          ]
+        }
+      },
+      {
+        "id": "USC00046336",
+        "latitude": 37.7983,
+        "longitude": -122.2642,
+        "elevation": 9.1,
+        "name": "OAKLAND MUSEUM",
+        "distance_km": 13.88,
+        "inventory": {
+          "TMAX": [
+            1970,
+            2026
+          ],
+          "TMIN": [
+            1970,
+            2026
+          ],
+          "TOBS": [
+            1996,
+            2026
+          ],
+          "PRCP": [
+            1970,
+            2026
+          ],
+          "SNOW": [
+            1970,
+            2013
+          ],
+          "SNWD": [
+            1970,
+            2013
+          ],
+          "DAPR": [
+            1974,
+            2023
+          ],
+          "MDPR": [
+            1974,
+            2023
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "city": "Monroe NY Orange",
+    "latitude": 41.3307,
+    "longitude": -74.1868,
+    "coordinate_status": "approximate research center, not persisted app location",
+    "hourly_nearest_metadata": [
+      {
+        "GHCN_ID": "USW00014797",
+        "LATITUDE": "41.3167",
+        "LONGITUDE": "-74.0",
+        "ELEVATION": "396.8",
+        "STATE": "NY",
+        "NAME": "BEAR MTN WB",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 15.68
+      },
+      {
+        "GHCN_ID": "USW00014714",
+        "LATITUDE": "41.5",
+        "LONGITUDE": "-74.1",
+        "ELEVATION": "177.1",
+        "STATE": "NY",
+        "NAME": "STEWART FLD",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KSWF",
+        "ISO_CODE": "US",
+        "distance_km": 20.17
+      },
+      {
+        "GHCN_ID": "USW00004789",
+        "LATITUDE": "41.5092",
+        "LONGITUDE": "-74.2644",
+        "ELEVATION": "108.2",
+        "STATE": "NY",
+        "NAME": "MONTGOMERY ORANGE CO AP",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KMGJ",
+        "ISO_CODE": "US",
+        "distance_km": 20.88
+      },
+      {
+        "GHCN_ID": "USW00054793",
+        "LATITUDE": "41.1992",
+        "LONGITUDE": "-74.6258",
+        "ELEVATION": "127.4",
+        "STATE": "NJ",
+        "NAME": "SUSSEX AP",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KFWN",
+        "ISO_CODE": "US",
+        "distance_km": 39.5
+      },
+      {
+        "GHCN_ID": "USW00014757",
+        "LATITUDE": "41.6258",
+        "LONGITUDE": "-73.8817",
+        "ELEVATION": "46.6",
+        "STATE": "NY",
+        "NAME": "POUGHKEEPSIE AP",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KPOU",
+        "ISO_CODE": "US",
+        "distance_km": 41.51
+      }
+    ],
+    "daily_nearest_three_core_inventory": [
+      {
+        "id": "USC00307420",
+        "latitude": 41.4333,
+        "longitude": -74.1167,
+        "elevation": 95.7,
+        "name": "SALISBURY MILLS",
+        "distance_km": 12.82,
+        "inventory": {
+          "TMAX": [
+            1899,
+            1910
+          ],
+          "TMIN": [
+            1899,
+            1910
+          ],
+          "TOBS": [
+            1910,
+            1910
+          ],
+          "PRCP": [
+            1899,
+            1910
+          ],
+          "SNOW": [
+            1899,
+            1910
+          ],
+          "SNWD": [
+            1900,
+            1909
+          ],
+          "WT01": [
+            1906,
+            1908
+          ],
+          "WT08": [
+            1903,
+            1903
+          ],
+          "WT16": [
+            1899,
+            1899
+          ]
+        }
+      },
+      {
+        "id": "USW00014797",
+        "latitude": 41.3167,
+        "longitude": -74.0,
+        "elevation": 396.8,
+        "name": "BEAR MTN WB",
+        "distance_km": 15.68,
+        "inventory": {
+          "TMAX": [
+            1948,
+            1953
+          ],
+          "TMIN": [
+            1948,
+            1953
+          ],
+          "TOBS": [
+            1949,
+            1950
+          ],
+          "PRCP": [
+            1948,
+            1953
+          ],
+          "SNOW": [
+            1948,
+            1953
+          ],
+          "SNWD": [
+            1948,
+            1953
+          ],
+          "WESD": [
+            1952,
+            1953
+          ],
+          "WT01": [
+            1948,
+            1953
+          ],
+          "WT03": [
+            1948,
+            1953
+          ],
+          "WT04": [
+            1948,
+            1953
+          ],
+          "WT05": [
+            1948,
+            1952
+          ],
+          "WT06": [
+            1948,
+            1953
+          ],
+          "WT08": [
+            1948,
+            1953
+          ],
+          "WT11": [
+            1949,
+            1950
+          ],
+          "WT14": [
+            1949,
+            1949
+          ],
+          "WT16": [
+            1948,
+            1953
+          ],
+          "WT18": [
+            1948,
+            1953
+          ]
+        }
+      },
+      {
+        "id": "USC00309292",
+        "latitude": 41.3906,
+        "longitude": -73.9608,
+        "elevation": 97.5,
+        "name": "W PT",
+        "distance_km": 20.0,
+        "inventory": {
+          "TMAX": [
+            1890,
+            2025
+          ],
+          "TMIN": [
+            1890,
+            2025
+          ],
+          "TOBS": [
+            1906,
+            2025
+          ],
+          "PRCP": [
+            1890,
+            2025
+          ],
+          "SNOW": [
+            1890,
+            2025
+          ],
+          "SNWD": [
+            1892,
+            2025
+          ],
+          "DAPR": [
+            1899,
+            2024
+          ],
+          "DASF": [
+            1899,
+            1982
+          ],
+          "MDPR": [
+            1899,
+            2024
+          ],
+          "MDSF": [
+            1899,
+            1982
+          ],
+          "WT01": [
+            1907,
+            2024
+          ],
+          "WT03": [
+            1949,
+            2012
+          ],
+          "WT04": [
+            1949,
+            2010
+          ],
+          "WT05": [
+            1949,
+            2009
+          ],
+          "WT06": [
+            1949,
+            2009
+          ],
+          "WT08": [
+            1907,
+            1955
+          ],
+          "WT09": [
+            1949,
+            1950
+          ],
+          "WT11": [
+            1949,
+            2010
+          ],
+          "WT14": [
+            1932,
+            1950
+          ],
+          "WT16": [
+            1906,
+            1932
+          ],
+          "WT18": [
+            1920,
+            1932
+          ]
+        }
+      },
+      {
+        "id": "USC00303152",
+        "latitude": 41.2167,
+        "longitude": -74.0,
+        "elevation": 56.7,
+        "name": "GARNERVILLE",
+        "distance_km": 20.11,
+        "inventory": {
+          "TMAX": [
+            1983,
+            1989
+          ],
+          "TMIN": [
+            1983,
+            1989
+          ],
+          "TOBS": [
+            1983,
+            1989
+          ],
+          "PRCP": [
+            1983,
+            1989
+          ],
+          "SNOW": [
+            1983,
+            1989
+          ],
+          "SNWD": [
+            1983,
+            1989
+          ],
+          "WT01": [
+            1983,
+            1989
+          ],
+          "WT03": [
+            1983,
+            1989
+          ],
+          "WT04": [
+            1983,
+            1989
+          ],
+          "WT05": [
+            1984,
+            1986
+          ],
+          "WT06": [
+            1983,
+            1989
+          ],
+          "WT11": [
+            1983,
+            1988
+          ]
+        }
+      }
+    ],
+    "daily_inventory_covers_baseline_and_recent_candidates": [
+      {
+        "id": "USC00309292",
+        "latitude": 41.3906,
+        "longitude": -73.9608,
+        "elevation": 97.5,
+        "name": "W PT",
+        "distance_km": 20.0,
+        "inventory": {
+          "TMAX": [
+            1890,
+            2025
+          ],
+          "TMIN": [
+            1890,
+            2025
+          ],
+          "TOBS": [
+            1906,
+            2025
+          ],
+          "PRCP": [
+            1890,
+            2025
+          ],
+          "SNOW": [
+            1890,
+            2025
+          ],
+          "SNWD": [
+            1892,
+            2025
+          ],
+          "DAPR": [
+            1899,
+            2024
+          ],
+          "DASF": [
+            1899,
+            1982
+          ],
+          "MDPR": [
+            1899,
+            2024
+          ],
+          "MDSF": [
+            1899,
+            1982
+          ],
+          "WT01": [
+            1907,
+            2024
+          ],
+          "WT03": [
+            1949,
+            2012
+          ],
+          "WT04": [
+            1949,
+            2010
+          ],
+          "WT05": [
+            1949,
+            2009
+          ],
+          "WT06": [
+            1949,
+            2009
+          ],
+          "WT08": [
+            1907,
+            1955
+          ],
+          "WT09": [
+            1949,
+            1950
+          ],
+          "WT11": [
+            1949,
+            2010
+          ],
+          "WT14": [
+            1932,
+            1950
+          ],
+          "WT16": [
+            1906,
+            1932
+          ],
+          "WT18": [
+            1920,
+            1932
+          ]
+        }
+      },
+      {
+        "id": "USC00307742",
+        "latitude": 41.3325,
+        "longitude": -73.8369,
+        "elevation": 140.8,
+        "name": "SHRUB OAK",
+        "distance_km": 29.22,
+        "inventory": {
+          "TMAX": [
+            1950,
+            2026
+          ],
+          "TMIN": [
+            1950,
+            2026
+          ],
+          "TOBS": [
+            1950,
+            2026
+          ],
+          "PRCP": [
+            1950,
+            2026
+          ],
+          "SNOW": [
+            1950,
+            2026
+          ],
+          "SNWD": [
+            1950,
+            2026
+          ],
+          "AWND": [
+            2018,
+            2026
+          ],
+          "DAPR": [
+            1950,
+            1971
+          ],
+          "DASF": [
+            1969,
+            1969
+          ],
+          "MDPR": [
+            1950,
+            1971
+          ],
+          "MDSF": [
+            1969,
+            1969
+          ],
+          "WESF": [
+            2018,
+            2024
+          ],
+          "WT01": [
+            1950,
+            1963
+          ],
+          "WT03": [
+            1950,
+            1971
+          ],
+          "WT04": [
+            1950,
+            1970
+          ],
+          "WT05": [
+            1955,
+            1967
+          ],
+          "WT06": [
+            1965,
+            1965
+          ],
+          "WT09": [
+            1950,
+            1950
+          ],
+          "WT11": [
+            1950,
+            1960
+          ]
+        }
+      },
+      {
+        "id": "USC00281582",
+        "latitude": 41.03,
+        "longitude": -74.4247,
+        "elevation": 237.1,
+        "name": "CHARLOTTEBURG RSVR",
+        "distance_km": 38.92,
+        "inventory": {
+          "TMAX": [
+            1893,
+            2026
+          ],
+          "TMIN": [
+            1893,
+            2026
+          ],
+          "TOBS": [
+            1901,
+            2026
+          ],
+          "PRCP": [
+            1893,
+            2026
+          ],
+          "SNOW": [
+            1893,
+            2026
+          ],
+          "SNWD": [
+            1898,
+            2026
+          ],
+          "DAPR": [
+            1893,
+            2026
+          ],
+          "DASF": [
+            1896,
+            2024
+          ],
+          "MDPR": [
+            1893,
+            2026
+          ],
+          "MDSF": [
+            1896,
+            2024
+          ],
+          "WT01": [
+            1933,
+            2008
+          ],
+          "WT03": [
+            1949,
+            2003
+          ],
+          "WT04": [
+            1926,
+            2000
+          ],
+          "WT05": [
+            1928,
+            2003
+          ],
+          "WT06": [
+            1942,
+            2008
+          ],
+          "WT08": [
+            1949,
+            1950
+          ],
+          "WT11": [
+            1942,
+            2000
+          ],
+          "WT14": [
+            1949,
+            1951
+          ],
+          "WT16": [
+            1893,
+            1894
+          ],
+          "WT18": [
+            1997,
+            2008
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "city": "Seattle WA",
+    "latitude": 47.6062,
+    "longitude": -122.3321,
+    "coordinate_status": "approximate research center, not persisted app location",
+    "hourly_nearest_metadata": [
+      {
+        "GHCN_ID": "USL000EBSW1",
+        "LATITUDE": "47.605",
+        "LONGITUDE": "-122.338",
+        "ELEVATION": "2.0",
+        "STATE": "WA",
+        "NAME": "SEATTLE",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 0.46
+      },
+      {
+        "GHCN_ID": "USW00024281",
+        "LATITUDE": "47.65",
+        "LONGITUDE": "-122.3",
+        "ELEVATION": "5.8",
+        "STATE": "WA",
+        "NAME": "SEATTLE PORTAGE BAY",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 5.43
+      },
+      {
+        "GHCN_ID": "USW00024234",
+        "LATITUDE": "47.5456",
+        "LONGITUDE": "-122.3147",
+        "ELEVATION": "7.6",
+        "STATE": "WA",
+        "NAME": "SEATTLE BOEING FLD",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KBFI",
+        "ISO_CODE": "US",
+        "distance_km": 6.86
+      },
+      {
+        "GHCN_ID": "USW00024244",
+        "LATITUDE": "47.6833",
+        "LONGITUDE": "-122.2667",
+        "ELEVATION": "14.9",
+        "STATE": "WA",
+        "NAME": "SEATTLE NAS",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 9.87
+      },
+      {
+        "GHCN_ID": "USL000WPOW1",
+        "LATITUDE": "47.66",
+        "LONGITUDE": "-122.44",
+        "ELEVATION": "3.0",
+        "STATE": "FL",
+        "NAME": "WEST POINT  WA",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 10.06
+      }
+    ],
+    "daily_nearest_three_core_inventory": [
+      {
+        "id": "USW00024281",
+        "latitude": 47.65,
+        "longitude": -122.3,
+        "elevation": 5.8,
+        "name": "SEATTLE URBAN SITE",
+        "distance_km": 5.43,
+        "inventory": {
+          "TMAX": [
+            1894,
+            1998
+          ],
+          "TMIN": [
+            1894,
+            1998
+          ],
+          "PRCP": [
+            1894,
+            1998
+          ],
+          "SNOW": [
+            1894,
+            1998
+          ],
+          "SNWD": [
+            1894,
+            1998
+          ],
+          "PGTM": [
+            1973,
+            1988
+          ],
+          "WDF1": [
+            1973,
+            1973
+          ],
+          "WDFG": [
+            1973,
+            1996
+          ],
+          "WDFI": [
+            1973,
+            1973
+          ],
+          "WDFM": [
+            1974,
+            1984
+          ],
+          "WSF1": [
+            1973,
+            1975
+          ],
+          "WSFG": [
+            1952,
+            1996
+          ],
+          "WSFI": [
+            1973,
+            1973
+          ],
+          "WSFM": [
+            1974,
+            1984
+          ],
+          "WT01": [
+            1948,
+            1957
+          ],
+          "WT03": [
+            1921,
+            1958
+          ],
+          "WT04": [
+            1937,
+            1957
+          ],
+          "WT05": [
+            1921,
+            1958
+          ],
+          "WT06": [
+            1924,
+            1954
+          ],
+          "WT08": [
+            1924,
+            1957
+          ],
+          "WT11": [
+            1962,
+            1962
+          ],
+          "WT14": [
+            1949,
+            1949
+          ],
+          "WT16": [
+            1921,
+            1958
+          ],
+          "WT18": [
+            1921,
+            1958
+          ]
+        }
+      },
+      {
+        "id": "USC00457478",
+        "latitude": 47.65,
+        "longitude": -122.2833,
+        "elevation": 29.0,
+        "name": "SEATTLE UNIV OF WASHIN",
+        "distance_km": 6.09,
+        "inventory": {
+          "TMAX": [
+            1909,
+            1983
+          ],
+          "TMIN": [
+            1909,
+            1983
+          ],
+          "TOBS": [
+            1921,
+            1983
+          ],
+          "PRCP": [
+            1909,
+            1983
+          ],
+          "SNOW": [
+            1909,
+            1983
+          ],
+          "SNWD": [
+            1909,
+            1983
+          ],
+          "DAPR": [
+            1949,
+            1977
+          ],
+          "MDPR": [
+            1949,
+            1977
+          ],
+          "WT01": [
+            1909,
+            1963
+          ],
+          "WT03": [
+            1933,
+            1983
+          ],
+          "WT04": [
+            1953,
+            1981
+          ],
+          "WT05": [
+            1949,
+            1982
+          ],
+          "WT06": [
+            1963,
+            1979
+          ],
+          "WT08": [
+            1913,
+            1951
+          ],
+          "WT09": [
+            1950,
+            1950
+          ],
+          "WT11": [
+            1949,
+            1962
+          ],
+          "WT14": [
+            1949,
+            1953
+          ],
+          "WT16": [
+            1909,
+            1933
+          ],
+          "WT18": [
+            1909,
+            1909
+          ]
+        }
+      },
+      {
+        "id": "USC00450410",
+        "latitude": 47.65,
+        "longitude": -122.3833,
+        "elevation": -999.9,
+        "name": "BALLARD (SEATTLE)",
+        "distance_km": 6.2,
+        "inventory": {
+          "TMAX": [
+            1927,
+            1928
+          ],
+          "TMIN": [
+            1927,
+            1928
+          ],
+          "TOBS": [
+            1927,
+            1928
+          ],
+          "PRCP": [
+            1927,
+            1928
+          ],
+          "SNOW": [
+            1927,
+            1928
+          ],
+          "SNWD": [
+            1927,
+            1928
+          ]
+        }
+      },
+      {
+        "id": "USW00024234",
+        "latitude": 47.5456,
+        "longitude": -122.3147,
+        "elevation": 7.6,
+        "name": "SEATTLE BOEING FLD",
+        "distance_km": 6.86,
+        "inventory": {
+          "TMAX": [
+            1948,
+            2026
+          ],
+          "TMIN": [
+            1948,
+            2026
+          ],
+          "PRCP": [
+            1948,
+            2026
+          ],
+          "SNOW": [
+            1948,
+            1998
+          ],
+          "SNWD": [
+            1948,
+            1999
+          ],
+          "AWND": [
+            1998,
+            2025
+          ],
+          "FMTM": [
+            1998,
+            2005
+          ],
+          "FRGT": [
+            1963,
+            1963
+          ],
+          "PGTM": [
+            1956,
+            2025
+          ],
+          "TAVG": [
+            1998,
+            2026
+          ],
+          "THIC": [
+            1963,
+            1963
+          ],
+          "TSUN": [
+            2000,
+            2005
+          ],
+          "WDF2": [
+            1998,
+            2025
+          ],
+          "WDF5": [
+            1998,
+            2025
+          ],
+          "WDFG": [
+            1956,
+            1956
+          ],
+          "WESD": [
+            1955,
+            1960
+          ],
+          "WSF2": [
+            1998,
+            2025
+          ],
+          "WSF5": [
+            1998,
+            2025
+          ],
+          "WSFG": [
+            1956,
+            1962
+          ],
+          "WT01": [
+            1948,
+            2025
+          ],
+          "WT02": [
+            1965,
+            2025
+          ],
+          "WT03": [
+            1948,
+            2024
+          ],
+          "WT04": [
+            1948,
+            1962
+          ],
+          "WT05": [
+            1948,
+            2009
+          ],
+          "WT06": [
+            1950,
+            1960
+          ],
+          "WT07": [
+            1963,
+            1963
+          ],
+          "WT08": [
+            1948,
+            2025
+          ],
+          "WT09": [
+            1950,
+            1956
+          ],
+          "WT10": [
+            2006,
+            2006
+          ],
+          "WT16": [
+            1948,
+            1965
+          ],
+          "WT18": [
+            1948,
+            1965
+          ]
+        }
+      }
+    ],
+    "daily_inventory_covers_baseline_and_recent_candidates": [
+      {
+        "id": "USW00024234",
+        "latitude": 47.5456,
+        "longitude": -122.3147,
+        "elevation": 7.6,
+        "name": "SEATTLE BOEING FLD",
+        "distance_km": 6.86,
+        "inventory": {
+          "TMAX": [
+            1948,
+            2026
+          ],
+          "TMIN": [
+            1948,
+            2026
+          ],
+          "PRCP": [
+            1948,
+            2026
+          ],
+          "SNOW": [
+            1948,
+            1998
+          ],
+          "SNWD": [
+            1948,
+            1999
+          ],
+          "AWND": [
+            1998,
+            2025
+          ],
+          "FMTM": [
+            1998,
+            2005
+          ],
+          "FRGT": [
+            1963,
+            1963
+          ],
+          "PGTM": [
+            1956,
+            2025
+          ],
+          "TAVG": [
+            1998,
+            2026
+          ],
+          "THIC": [
+            1963,
+            1963
+          ],
+          "TSUN": [
+            2000,
+            2005
+          ],
+          "WDF2": [
+            1998,
+            2025
+          ],
+          "WDF5": [
+            1998,
+            2025
+          ],
+          "WDFG": [
+            1956,
+            1956
+          ],
+          "WESD": [
+            1955,
+            1960
+          ],
+          "WSF2": [
+            1998,
+            2025
+          ],
+          "WSF5": [
+            1998,
+            2025
+          ],
+          "WSFG": [
+            1956,
+            1962
+          ],
+          "WT01": [
+            1948,
+            2025
+          ],
+          "WT02": [
+            1965,
+            2025
+          ],
+          "WT03": [
+            1948,
+            2024
+          ],
+          "WT04": [
+            1948,
+            1962
+          ],
+          "WT05": [
+            1948,
+            2009
+          ],
+          "WT06": [
+            1950,
+            1960
+          ],
+          "WT07": [
+            1963,
+            1963
+          ],
+          "WT08": [
+            1948,
+            2025
+          ],
+          "WT09": [
+            1950,
+            1956
+          ],
+          "WT10": [
+            2006,
+            2006
+          ],
+          "WT16": [
+            1948,
+            1965
+          ],
+          "WT18": [
+            1948,
+            1965
+          ]
+        }
+      },
+      {
+        "id": "USW00094290",
+        "latitude": 47.6872,
+        "longitude": -122.2553,
+        "elevation": 18.3,
+        "name": "SEATTLE SAND PT WFO",
+        "distance_km": 10.69,
+        "inventory": {
+          "TMAX": [
+            1986,
+            2026
+          ],
+          "TMIN": [
+            1986,
+            2026
+          ],
+          "TOBS": [
+            1991,
+            1997
+          ],
+          "PRCP": [
+            1986,
+            2026
+          ],
+          "SNOW": [
+            1986,
+            2026
+          ],
+          "SNWD": [
+            1986,
+            2026
+          ],
+          "ACMH": [
+            1999,
+            1999
+          ],
+          "AWND": [
+            2012,
+            2013
+          ],
+          "TAVG": [
+            1999,
+            2002
+          ],
+          "TSUN": [
+            1999,
+            2000
+          ],
+          "WDF2": [
+            2012,
+            2015
+          ],
+          "WDF5": [
+            2012,
+            2015
+          ],
+          "WSF2": [
+            2012,
+            2015
+          ],
+          "WSF5": [
+            2012,
+            2015
+          ],
+          "WT01": [
+            2012,
+            2026
+          ],
+          "WT02": [
+            2014,
+            2026
+          ],
+          "WT03": [
+            2012,
+            2026
+          ],
+          "WT04": [
+            2012,
+            2022
+          ],
+          "WT05": [
+            2016,
+            2026
+          ],
+          "WT06": [
+            2022,
+            2024
+          ],
+          "WT08": [
+            2012,
+            2026
+          ]
+        }
+      },
+      {
+        "id": "USW00024233",
+        "latitude": 47.4447,
+        "longitude": -122.3144,
+        "elevation": 112.5,
+        "name": "SEATTLE TACOMA AP",
+        "distance_km": 18.01,
+        "inventory": {
+          "TMAX": [
+            1948,
+            2026
+          ],
+          "TMIN": [
+            1948,
+            2026
+          ],
+          "PRCP": [
+            1948,
+            2026
+          ],
+          "SNOW": [
+            1948,
+            2026
+          ],
+          "SNWD": [
+            1948,
+            2026
+          ],
+          "ACMH": [
+            1965,
+            1996
+          ],
+          "ACSH": [
+            1965,
+            1996
+          ],
+          "ADPT": [
+            2006,
+            2024
+          ],
+          "ASLP": [
+            2006,
+            2024
+          ],
+          "ASTP": [
+            2006,
+            2024
+          ],
+          "AWBT": [
+            2006,
+            2024
+          ],
+          "AWND": [
+            1984,
+            2026
+          ],
+          "FMTM": [
+            1984,
+            2012
+          ],
+          "FRGT": [
+            1963,
+            1963
+          ],
+          "PGTM": [
+            1972,
+            2025
+          ],
+          "PSUN": [
+            1965,
+            1983
+          ],
+          "RHAV": [
+            2006,
+            2024
+          ],
+          "RHMN": [
+            2006,
+            2024
+          ],
+          "RHMX": [
+            2006,
+            2024
+          ],
+          "TAVG": [
+            1998,
+            2005
+          ],
+          "THIC": [
+            1963,
+            1963
+          ],
+          "TSUN": [
+            1965,
+            2005
+          ],
+          "WDF1": [
+            1965,
+            1996
+          ],
+          "WDF2": [
+            1996,
+            2026
+          ],
+          "WDF5": [
+            1996,
+            2026
+          ],
+          "WDFG": [
+            1972,
+            1996
+          ],
+          "WDFM": [
+            1968,
+            1994
+          ],
+          "WESD": [
+            1954,
+            2010
+          ],
+          "WSF1": [
+            1965,
+            1996
+          ],
+          "WSF2": [
+            1996,
+            2026
+          ],
+          "WSF5": [
+            1996,
+            2026
+          ],
+          "WSFG": [
+            1972,
+            1996
+          ],
+          "WSFM": [
+            1968,
+            1994
+          ],
+          "WT01": [
+            1948,
+            2026
+          ],
+          "WT02": [
+            1965,
+            2026
+          ],
+          "WT03": [
+            1948,
+            2026
+          ],
+          "WT04": [
+            1948,
+            2025
+          ],
+          "WT05": [
+            1948,
+            2022
+          ],
+          "WT06": [
+            1949,
+            2024
+          ],
+          "WT07": [
+            1948,
+            2010
+          ],
+          "WT08": [
+            1948,
+            2026
+          ],
+          "WT09": [
+            1950,
+            2019
+          ],
+          "WT11": [
+            1948,
+            2011
+          ],
+          "WT13": [
+            1996,
+            2013
+          ],
+          "WT14": [
+            1948,
+            2013
+          ],
+          "WT15": [
+            1984,
+            2004
+          ],
+          "WT16": [
+            1948,
+            2013
+          ],
+          "WT17": [
+            1984,
+            2012
+          ],
+          "WT18": [
+            1948,
+            2013
+          ],
+          "WT19": [
+            1996,
+            2011
+          ],
+          "WT21": [
+            1996,
+            2010
+          ],
+          "WT22": [
+            1996,
+            2013
+          ],
+          "WV01": [
+            1996,
+            2004
+          ],
+          "WV03": [
+            1999,
+            2004
+          ],
+          "WV20": [
+            1996,
+            1996
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "city": "Camas WA Clark",
+    "latitude": 45.587,
+    "longitude": -122.3995,
+    "coordinate_status": "approximate research center, not persisted app location",
+    "hourly_nearest_metadata": [
+      {
+        "GHCN_ID": "USW00024242",
+        "LATITUDE": "45.5511",
+        "LONGITUDE": "-122.4097",
+        "ELEVATION": "7.6",
+        "STATE": "OR",
+        "NAME": "PORTLAND TROUTDALE AP",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KTTD",
+        "ISO_CODE": "US",
+        "distance_km": 4.07
+      },
+      {
+        "GHCN_ID": "USW00004202",
+        "LATITUDE": "45.6",
+        "LONGITUDE": "-122.6",
+        "ELEVATION": "6.1",
+        "STATE": "OR",
+        "NAME": "PORTLAND COLUMBIA AP",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 15.67
+      },
+      {
+        "GHCN_ID": "USW00024229",
+        "LATITUDE": "45.5958",
+        "LONGITUDE": "-122.6092",
+        "ELEVATION": "6.7",
+        "STATE": "OR",
+        "NAME": "PORTLAND INTL AP",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "72698",
+        "ICAO": "KPDX",
+        "ISO_CODE": "US",
+        "distance_km": 16.35
+      },
+      {
+        "GHCN_ID": "USW00094298",
+        "LATITUDE": "45.6211",
+        "LONGITUDE": "-122.6542",
+        "ELEVATION": "6.4",
+        "STATE": "WA",
+        "NAME": "VANCOUVER PEARSON AP",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "KVUO",
+        "ISO_CODE": "US",
+        "distance_km": 20.17
+      },
+      {
+        "GHCN_ID": "USW00024274",
+        "LATITUDE": "45.5333",
+        "LONGITUDE": "-122.6667",
+        "ELEVATION": "9.1",
+        "STATE": "OR",
+        "NAME": "PORTLAND RFC CITY",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 21.64
+      }
+    ],
+    "daily_nearest_three_core_inventory": [
+      {
+        "id": "USC00358634",
+        "latitude": 45.5533,
+        "longitude": -122.3886,
+        "elevation": 10.1,
+        "name": "TROUTDALE",
+        "distance_km": 3.84,
+        "inventory": {
+          "TMAX": [
+            1948,
+            2026
+          ],
+          "TMIN": [
+            1948,
+            2026
+          ],
+          "TOBS": [
+            1953,
+            2026
+          ],
+          "PRCP": [
+            1948,
+            2026
+          ],
+          "SNOW": [
+            1948,
+            2025
+          ],
+          "SNWD": [
+            1948,
+            2025
+          ],
+          "DAPR": [
+            1959,
+            2024
+          ],
+          "DASF": [
+            1978,
+            1998
+          ],
+          "MDPR": [
+            1959,
+            2024
+          ],
+          "MDSF": [
+            1978,
+            1998
+          ],
+          "WT01": [
+            1948,
+            2007
+          ],
+          "WT03": [
+            1948,
+            1999
+          ],
+          "WT04": [
+            1948,
+            1996
+          ],
+          "WT05": [
+            1948,
+            1985
+          ],
+          "WT06": [
+            1948,
+            1985
+          ],
+          "WT08": [
+            1948,
+            1951
+          ],
+          "WT09": [
+            1950,
+            1950
+          ],
+          "WT11": [
+            1948,
+            1989
+          ],
+          "WT14": [
+            1948,
+            1949
+          ],
+          "WT16": [
+            1948,
+            1951
+          ],
+          "WT18": [
+            1948,
+            1951
+          ]
+        }
+      },
+      {
+        "id": "USW00024242",
+        "latitude": 45.5511,
+        "longitude": -122.4097,
+        "elevation": 7.6,
+        "name": "PORTLAND TROUTDALE AP",
+        "distance_km": 4.07,
+        "inventory": {
+          "TMAX": [
+            1998,
+            2026
+          ],
+          "TMIN": [
+            1998,
+            2026
+          ],
+          "PRCP": [
+            1998,
+            2026
+          ],
+          "SNOW": [
+            2011,
+            2019
+          ],
+          "SNWD": [
+            1998,
+            2019
+          ],
+          "AWND": [
+            1998,
+            2026
+          ],
+          "FMTM": [
+            1998,
+            2005
+          ],
+          "PGTM": [
+            1998,
+            2025
+          ],
+          "PSUN": [
+            2020,
+            2020
+          ],
+          "TAVG": [
+            1998,
+            2005
+          ],
+          "TSUN": [
+            2000,
+            2020
+          ],
+          "WDF2": [
+            1998,
+            2026
+          ],
+          "WDF5": [
+            1998,
+            2026
+          ],
+          "WSF2": [
+            1998,
+            2026
+          ],
+          "WSF5": [
+            1998,
+            2026
+          ],
+          "WT01": [
+            2006,
+            2026
+          ],
+          "WT02": [
+            2006,
+            2026
+          ],
+          "WT03": [
+            2006,
+            2026
+          ],
+          "WT05": [
+            2022,
+            2022
+          ],
+          "WT06": [
+            2011,
+            2025
+          ],
+          "WT08": [
+            2006,
+            2026
+          ],
+          "WT09": [
+            2017,
+            2024
+          ]
+        }
+      },
+      {
+        "id": "USC00358631",
+        "latitude": 45.5333,
+        "longitude": -122.3833,
+        "elevation": 27.1,
+        "name": "TROUTDALE",
+        "distance_km": 6.1,
+        "inventory": {
+          "TMAX": [
+            1954,
+            1955
+          ],
+          "TMIN": [
+            1954,
+            1955
+          ],
+          "TOBS": [
+            1954,
+            1955
+          ],
+          "PRCP": [
+            1954,
+            1955
+          ],
+          "SNOW": [
+            1954,
+            1955
+          ],
+          "SNWD": [
+            1954,
+            1955
+          ],
+          "DAPR": [
+            1954,
+            1954
+          ],
+          "MDPR": [
+            1954,
+            1954
+          ],
+          "WT11": [
+            1955,
+            1955
+          ]
+        }
+      },
+      {
+        "id": "USC00358632",
+        "latitude": 45.5333,
+        "longitude": -122.3833,
+        "elevation": 43.0,
+        "name": "TROUTDALE 2",
+        "distance_km": 6.1,
+        "inventory": {
+          "TMAX": [
+            1956,
+            1959
+          ],
+          "TMIN": [
+            1956,
+            1959
+          ],
+          "TOBS": [
+            1956,
+            1959
+          ],
+          "PRCP": [
+            1956,
+            1959
+          ],
+          "SNOW": [
+            1956,
+            1959
+          ],
+          "SNWD": [
+            1956,
+            1959
+          ],
+          "DAPR": [
+            1956,
+            1959
+          ],
+          "DASF": [
+            1956,
+            1957
+          ],
+          "MDPR": [
+            1956,
+            1959
+          ],
+          "MDSF": [
+            1956,
+            1957
+          ],
+          "WT01": [
+            1956,
+            1959
+          ],
+          "WT03": [
+            1956,
+            1959
+          ],
+          "WT04": [
+            1956,
+            1957
+          ],
+          "WT05": [
+            1956,
+            1958
+          ],
+          "WT08": [
+            1956,
+            1956
+          ],
+          "WT11": [
+            1956,
+            1958
+          ]
+        }
+      }
+    ],
+    "daily_inventory_covers_baseline_and_recent_candidates": [
+      {
+        "id": "USC00358634",
+        "latitude": 45.5533,
+        "longitude": -122.3886,
+        "elevation": 10.1,
+        "name": "TROUTDALE",
+        "distance_km": 3.84,
+        "inventory": {
+          "TMAX": [
+            1948,
+            2026
+          ],
+          "TMIN": [
+            1948,
+            2026
+          ],
+          "TOBS": [
+            1953,
+            2026
+          ],
+          "PRCP": [
+            1948,
+            2026
+          ],
+          "SNOW": [
+            1948,
+            2025
+          ],
+          "SNWD": [
+            1948,
+            2025
+          ],
+          "DAPR": [
+            1959,
+            2024
+          ],
+          "DASF": [
+            1978,
+            1998
+          ],
+          "MDPR": [
+            1959,
+            2024
+          ],
+          "MDSF": [
+            1978,
+            1998
+          ],
+          "WT01": [
+            1948,
+            2007
+          ],
+          "WT03": [
+            1948,
+            1999
+          ],
+          "WT04": [
+            1948,
+            1996
+          ],
+          "WT05": [
+            1948,
+            1985
+          ],
+          "WT06": [
+            1948,
+            1985
+          ],
+          "WT08": [
+            1948,
+            1951
+          ],
+          "WT09": [
+            1950,
+            1950
+          ],
+          "WT11": [
+            1948,
+            1989
+          ],
+          "WT14": [
+            1948,
+            1949
+          ],
+          "WT16": [
+            1948,
+            1951
+          ],
+          "WT18": [
+            1948,
+            1951
+          ]
+        }
+      },
+      {
+        "id": "USC00457696",
+        "latitude": 45.6219,
+        "longitude": -122.2178,
+        "elevation": 132.6,
+        "name": "SKAMANIA FISH HATCHERY",
+        "distance_km": 14.66,
+        "inventory": {
+          "TMAX": [
+            1965,
+            2026
+          ],
+          "TMIN": [
+            1965,
+            2026
+          ],
+          "TOBS": [
+            1965,
+            2010
+          ],
+          "PRCP": [
+            1965,
+            2026
+          ],
+          "SNOW": [
+            1965,
+            2025
+          ],
+          "SNWD": [
+            1965,
+            2025
+          ],
+          "DAPR": [
+            1969,
+            2021
+          ],
+          "MDPR": [
+            1969,
+            2021
+          ],
+          "WT01": [
+            1982,
+            1993
+          ],
+          "WT03": [
+            1965,
+            1993
+          ],
+          "WT04": [
+            1965,
+            1994
+          ],
+          "WT05": [
+            1965,
+            1991
+          ],
+          "WT06": [
+            1965,
+            1995
+          ],
+          "WT11": [
+            1983,
+            1983
+          ],
+          "WT14": [
+            1974,
+            1974
+          ]
+        }
+      },
+      {
+        "id": "USW00024229",
+        "latitude": 45.5958,
+        "longitude": -122.6092,
+        "elevation": 6.7,
+        "name": "PORTLAND INTL AP",
+        "distance_km": 16.35,
+        "inventory": {
+          "TMAX": [
+            1938,
+            2026
+          ],
+          "TMIN": [
+            1938,
+            2026
+          ],
+          "PRCP": [
+            1938,
+            2026
+          ],
+          "SNOW": [
+            1939,
+            2026
+          ],
+          "SNWD": [
+            1939,
+            2026
+          ],
+          "ACMH": [
+            1965,
+            1995
+          ],
+          "ACSH": [
+            1965,
+            1995
+          ],
+          "ADPT": [
+            2006,
+            2024
+          ],
+          "ASLP": [
+            2006,
+            2024
+          ],
+          "ASTP": [
+            2006,
+            2024
+          ],
+          "AWBT": [
+            2006,
+            2024
+          ],
+          "AWND": [
+            1984,
+            2026
+          ],
+          "FMTM": [
+            1984,
+            2012
+          ],
+          "PGTM": [
+            1948,
+            2025
+          ],
+          "PSUN": [
+            1965,
+            2019
+          ],
+          "RHAV": [
+            2006,
+            2024
+          ],
+          "RHMN": [
+            2006,
+            2024
+          ],
+          "RHMX": [
+            2006,
+            2024
+          ],
+          "TAVG": [
+            1936,
+            2005
+          ],
+          "TSUN": [
+            1965,
+            2019
+          ],
+          "WDF1": [
+            1981,
+            1995
+          ],
+          "WDF2": [
+            1995,
+            2026
+          ],
+          "WDF5": [
+            1995,
+            2026
+          ],
+          "WDFG": [
+            1948,
+            1995
+          ],
+          "WDFM": [
+            1965,
+            1988
+          ],
+          "WESD": [
+            1954,
+            2010
+          ],
+          "WSF1": [
+            1981,
+            1995
+          ],
+          "WSF2": [
+            1995,
+            2026
+          ],
+          "WSF5": [
+            1995,
+            2026
+          ],
+          "WSFG": [
+            1948,
+            1995
+          ],
+          "WSFM": [
+            1965,
+            1988
+          ],
+          "WT01": [
+            1948,
+            2026
+          ],
+          "WT02": [
+            1965,
+            2026
+          ],
+          "WT03": [
+            1941,
+            2026
+          ],
+          "WT04": [
+            1948,
+            2025
+          ],
+          "WT05": [
+            1939,
+            2026
+          ],
+          "WT06": [
+            1942,
+            2025
+          ],
+          "WT07": [
+            1955,
+            2010
+          ],
+          "WT08": [
+            1948,
+            2026
+          ],
+          "WT09": [
+            1949,
+            2025
+          ],
+          "WT10": [
+            1949,
+            2013
+          ],
+          "WT11": [
+            2009,
+            2009
+          ],
+          "WT12": [
+            1987,
+            1987
+          ],
+          "WT13": [
+            1996,
+            2013
+          ],
+          "WT14": [
+            1984,
+            2013
+          ],
+          "WT15": [
+            1984,
+            2002
+          ],
+          "WT16": [
+            1948,
+            2013
+          ],
+          "WT17": [
+            1984,
+            2011
+          ],
+          "WT18": [
+            1948,
+            2013
+          ],
+          "WT19": [
+            1996,
+            2009
+          ],
+          "WT21": [
+            1997,
+            2013
+          ],
+          "WT22": [
+            1996,
+            2013
+          ],
+          "WV01": [
+            2001,
+            2001
+          ],
+          "WV03": [
+            1998,
+            2005
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "city": "Anchorage AK",
+    "latitude": 61.2181,
+    "longitude": -149.9003,
+    "coordinate_status": "approximate research center, not persisted app location",
+    "hourly_nearest_metadata": [
+      {
+        "GHCN_ID": "USL000ANTA2",
+        "LATITUDE": "61.23",
+        "LONGITUDE": "-149.88",
+        "ELEVATION": "3.0",
+        "STATE": "AK",
+        "NAME": "ANCHORAGE",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 1.71
+      },
+      {
+        "GHCN_ID": "USW00026409",
+        "LATITUDE": "61.2164",
+        "LONGITUDE": "-149.8572",
+        "ELEVATION": "38.4",
+        "STATE": "AK",
+        "NAME": "ANCHORAGE MERRILL FLD",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "PAMR",
+        "ISO_CODE": "US",
+        "distance_km": 2.32
+      },
+      {
+        "GHCN_ID": "USW00026491",
+        "LATITUDE": "61.1786",
+        "LONGITUDE": "-149.965",
+        "ELEVATION": "25.0",
+        "STATE": "AK",
+        "NAME": "ANCHORAGE LK HOOD SEA PLANE BA",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "PALH",
+        "ISO_CODE": "US",
+        "distance_km": 5.6
+      },
+      {
+        "GHCN_ID": "USW00026452",
+        "LATITUDE": "61.25",
+        "LONGITUDE": "-149.8",
+        "ELEVATION": "63.1",
+        "STATE": "AK",
+        "NAME": "ELMENDORF 2 AFB",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 6.43
+      },
+      {
+        "GHCN_ID": "USW00026401",
+        "LATITUDE": "61.2531",
+        "LONGITUDE": "-149.7936",
+        "ELEVATION": "64.6",
+        "STATE": "AK",
+        "NAME": "ANCHORAGE ELMENDORF AFB",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "70272",
+        "ICAO": "PAED",
+        "ISO_CODE": "US",
+        "distance_km": 6.91
+      }
+    ],
+    "daily_nearest_three_core_inventory": [
+      {
+        "id": "USC00500287",
+        "latitude": 61.2044,
+        "longitude": -149.9106,
+        "elevation": 10.7,
+        "name": "ANCHORAGE CHESTER CK",
+        "distance_km": 1.62,
+        "inventory": {
+          "TMAX": [
+            2004,
+            2004
+          ],
+          "TMIN": [
+            2004,
+            2004
+          ],
+          "TOBS": [
+            2004,
+            2004
+          ],
+          "PRCP": [
+            2004,
+            2004
+          ],
+          "SNOW": [
+            2004,
+            2004
+          ],
+          "SNWD": [
+            2004,
+            2004
+          ],
+          "DAPR": [
+            2004,
+            2004
+          ],
+          "MDPR": [
+            2004,
+            2004
+          ]
+        }
+      },
+      {
+        "id": "USW00026453",
+        "latitude": 61.2167,
+        "longitude": -149.8667,
+        "elevation": 25.9,
+        "name": "ANCHORAGE PARK STRIP",
+        "distance_km": 1.81,
+        "inventory": {
+          "TMAX": [
+            1964,
+            1973
+          ],
+          "TMIN": [
+            1964,
+            1973
+          ],
+          "TOBS": [
+            1964,
+            1973
+          ],
+          "PRCP": [
+            1964,
+            1973
+          ],
+          "SNOW": [
+            1964,
+            1973
+          ],
+          "SNWD": [
+            1964,
+            1973
+          ],
+          "DAPR": [
+            1968,
+            1968
+          ],
+          "MDPR": [
+            1968,
+            1968
+          ],
+          "WT01": [
+            1964,
+            1971
+          ],
+          "WT03": [
+            1967,
+            1969
+          ],
+          "WT04": [
+            1969,
+            1969
+          ],
+          "WT05": [
+            1968,
+            1972
+          ],
+          "WT06": [
+            1967,
+            1969
+          ],
+          "WT11": [
+            1971,
+            1971
+          ]
+        }
+      },
+      {
+        "id": "USW00026409",
+        "latitude": 61.2164,
+        "longitude": -149.8572,
+        "elevation": 38.4,
+        "name": "ANCHORAGE MERRILL FLD",
+        "distance_km": 2.32,
+        "inventory": {
+          "TMAX": [
+            1916,
+            2026
+          ],
+          "TMIN": [
+            1916,
+            2026
+          ],
+          "TOBS": [
+            1916,
+            1938
+          ],
+          "PRCP": [
+            1916,
+            2026
+          ],
+          "SNOW": [
+            1916,
+            2005
+          ],
+          "SNWD": [
+            1916,
+            2005
+          ],
+          "AWND": [
+            1998,
+            2025
+          ],
+          "FMTM": [
+            1998,
+            2005
+          ],
+          "PGTM": [
+            1998,
+            2025
+          ],
+          "TAVG": [
+            1998,
+            2026
+          ],
+          "TSUN": [
+            2000,
+            2005
+          ],
+          "WDF2": [
+            1998,
+            2025
+          ],
+          "WDF5": [
+            1998,
+            2025
+          ],
+          "WDMV": [
+            1922,
+            1938
+          ],
+          "WESD": [
+            1952,
+            1953
+          ],
+          "WSF2": [
+            1998,
+            2025
+          ],
+          "WSF5": [
+            1998,
+            2025
+          ],
+          "WSFG": [
+            1950,
+            1950
+          ],
+          "WT01": [
+            1917,
+            2025
+          ],
+          "WT02": [
+            2006,
+            2025
+          ],
+          "WT03": [
+            1949,
+            2014
+          ],
+          "WT04": [
+            1934,
+            1951
+          ],
+          "WT05": [
+            1950,
+            2013
+          ],
+          "WT06": [
+            1948,
+            1953
+          ],
+          "WT07": [
+            1950,
+            1953
+          ],
+          "WT08": [
+            1948,
+            2025
+          ],
+          "WT09": [
+            1948,
+            1953
+          ],
+          "WT10": [
+            2008,
+            2012
+          ],
+          "WT11": [
+            1949,
+            1949
+          ],
+          "WT14": [
+            1949,
+            1949
+          ],
+          "WT16": [
+            1926,
+            1953
+          ],
+          "WT18": [
+            1929,
+            1953
+          ]
+        }
+      },
+      {
+        "id": "USC00500286",
+        "latitude": 61.1939,
+        "longitude": -149.8858,
+        "elevation": 25.0,
+        "name": "ANCHORAGE MIDTOWN",
+        "distance_km": 2.8,
+        "inventory": {
+          "TMAX": [
+            2000,
+            2009
+          ],
+          "TMIN": [
+            2000,
+            2009
+          ],
+          "TOBS": [
+            2000,
+            2009
+          ],
+          "PRCP": [
+            2000,
+            2009
+          ],
+          "SNOW": [
+            2000,
+            2009
+          ],
+          "SNWD": [
+            2000,
+            2009
+          ],
+          "DAPR": [
+            2002,
+            2004
+          ],
+          "MDPR": [
+            2002,
+            2008
+          ],
+          "WT01": [
+            2004,
+            2008
+          ],
+          "WT03": [
+            2008,
+            2008
+          ],
+          "WT04": [
+            2002,
+            2002
+          ],
+          "WT05": [
+            2008,
+            2008
+          ]
+        }
+      }
+    ],
+    "daily_inventory_covers_baseline_and_recent_candidates": [
+      {
+        "id": "USW00026409",
+        "latitude": 61.2164,
+        "longitude": -149.8572,
+        "elevation": 38.4,
+        "name": "ANCHORAGE MERRILL FLD",
+        "distance_km": 2.32,
+        "inventory": {
+          "TMAX": [
+            1916,
+            2026
+          ],
+          "TMIN": [
+            1916,
+            2026
+          ],
+          "TOBS": [
+            1916,
+            1938
+          ],
+          "PRCP": [
+            1916,
+            2026
+          ],
+          "SNOW": [
+            1916,
+            2005
+          ],
+          "SNWD": [
+            1916,
+            2005
+          ],
+          "AWND": [
+            1998,
+            2025
+          ],
+          "FMTM": [
+            1998,
+            2005
+          ],
+          "PGTM": [
+            1998,
+            2025
+          ],
+          "TAVG": [
+            1998,
+            2026
+          ],
+          "TSUN": [
+            2000,
+            2005
+          ],
+          "WDF2": [
+            1998,
+            2025
+          ],
+          "WDF5": [
+            1998,
+            2025
+          ],
+          "WDMV": [
+            1922,
+            1938
+          ],
+          "WESD": [
+            1952,
+            1953
+          ],
+          "WSF2": [
+            1998,
+            2025
+          ],
+          "WSF5": [
+            1998,
+            2025
+          ],
+          "WSFG": [
+            1950,
+            1950
+          ],
+          "WT01": [
+            1917,
+            2025
+          ],
+          "WT02": [
+            2006,
+            2025
+          ],
+          "WT03": [
+            1949,
+            2014
+          ],
+          "WT04": [
+            1934,
+            1951
+          ],
+          "WT05": [
+            1950,
+            2013
+          ],
+          "WT06": [
+            1948,
+            1953
+          ],
+          "WT07": [
+            1950,
+            1953
+          ],
+          "WT08": [
+            1948,
+            2025
+          ],
+          "WT09": [
+            1948,
+            1953
+          ],
+          "WT10": [
+            2008,
+            2012
+          ],
+          "WT11": [
+            1949,
+            1949
+          ],
+          "WT14": [
+            1949,
+            1949
+          ],
+          "WT16": [
+            1926,
+            1953
+          ],
+          "WT18": [
+            1929,
+            1953
+          ]
+        }
+      },
+      {
+        "id": "USW00026451",
+        "latitude": 61.1692,
+        "longitude": -150.0278,
+        "elevation": 38.1,
+        "name": "ANCHORAGE TED STEVENS INTL AP",
+        "distance_km": 8.73,
+        "inventory": {
+          "TMAX": [
+            1952,
+            2026
+          ],
+          "TMIN": [
+            1952,
+            2026
+          ],
+          "TOBS": [
+            1952,
+            1971
+          ],
+          "PRCP": [
+            1952,
+            2026
+          ],
+          "SNOW": [
+            1953,
+            2026
+          ],
+          "SNWD": [
+            1953,
+            2026
+          ],
+          "ACMH": [
+            1965,
+            1998
+          ],
+          "ACSH": [
+            1965,
+            1998
+          ],
+          "ADPT": [
+            2006,
+            2024
+          ],
+          "ASLP": [
+            2006,
+            2024
+          ],
+          "ASTP": [
+            2006,
+            2024
+          ],
+          "AWBT": [
+            2006,
+            2024
+          ],
+          "AWND": [
+            1984,
+            2026
+          ],
+          "DAPR": [
+            1952,
+            1952
+          ],
+          "FMTM": [
+            1984,
+            2012
+          ],
+          "MDPR": [
+            1952,
+            1952
+          ],
+          "PGTM": [
+            1954,
+            2025
+          ],
+          "PSUN": [
+            1965,
+            2024
+          ],
+          "RHAV": [
+            2006,
+            2024
+          ],
+          "RHMN": [
+            2006,
+            2024
+          ],
+          "RHMX": [
+            2006,
+            2024
+          ],
+          "TAVG": [
+            1998,
+            2005
+          ],
+          "TSUN": [
+            1965,
+            2024
+          ],
+          "WDF1": [
+            1965,
+            1996
+          ],
+          "WDF2": [
+            1996,
+            2026
+          ],
+          "WDF5": [
+            1998,
+            2026
+          ],
+          "WDFG": [
+            1954,
+            1998
+          ],
+          "WDFM": [
+            1980,
+            1982
+          ],
+          "WESD": [
+            1953,
+            2010
+          ],
+          "WSF1": [
+            1965,
+            1996
+          ],
+          "WSF2": [
+            1996,
+            2026
+          ],
+          "WSF5": [
+            1998,
+            2026
+          ],
+          "WSFG": [
+            1954,
+            1998
+          ],
+          "WSFM": [
+            1980,
+            1982
+          ],
+          "WT01": [
+            1953,
+            2026
+          ],
+          "WT02": [
+            1965,
+            2026
+          ],
+          "WT03": [
+            1956,
+            2026
+          ],
+          "WT04": [
+            1953,
+            2026
+          ],
+          "WT05": [
+            1955,
+            2026
+          ],
+          "WT06": [
+            1953,
+            2026
+          ],
+          "WT07": [
+            1962,
+            2010
+          ],
+          "WT08": [
+            1953,
+            2026
+          ],
+          "WT09": [
+            1954,
+            2026
+          ],
+          "WT10": [
+            1992,
+            1992
+          ],
+          "WT11": [
+            2001,
+            2007
+          ],
+          "WT13": [
+            1996,
+            2013
+          ],
+          "WT14": [
+            1984,
+            2013
+          ],
+          "WT15": [
+            1984,
+            2013
+          ],
+          "WT16": [
+            1953,
+            2013
+          ],
+          "WT17": [
+            1984,
+            2013
+          ],
+          "WT18": [
+            1953,
+            2013
+          ],
+          "WT19": [
+            1998,
+            2011
+          ],
+          "WT21": [
+            1996,
+            2013
+          ],
+          "WT22": [
+            1989,
+            2013
+          ],
+          "WV01": [
+            1996,
+            2005
+          ],
+          "WV03": [
+            2004,
+            2004
+          ],
+          "WV07": [
+            2005,
+            2005
+          ],
+          "WV20": [
+            1996,
+            2004
+          ]
+        }
+      },
+      {
+        "id": "USC00503163",
+        "latitude": 61.2272,
+        "longitude": -149.6503,
+        "elevation": 143.3,
+        "name": "FT RICHARDSON WTP",
+        "distance_km": 13.42,
+        "inventory": {
+          "TMAX": [
+            1990,
+            2026
+          ],
+          "TMIN": [
+            1990,
+            2026
+          ],
+          "TOBS": [
+            1990,
+            2026
+          ],
+          "PRCP": [
+            1990,
+            2026
+          ],
+          "SNOW": [
+            1990,
+            2026
+          ],
+          "SNWD": [
+            1990,
+            2026
+          ],
+          "DAPR": [
+            2003,
+            2003
+          ],
+          "MDPR": [
+            2003,
+            2005
+          ],
+          "WT01": [
+            1990,
+            2004
+          ],
+          "WT03": [
+            2007,
+            2007
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "city": "Honolulu HI",
+    "latitude": 21.3099,
+    "longitude": -157.8581,
+    "coordinate_status": "approximate research center, not persisted app location",
+    "hourly_nearest_metadata": [
+      {
+        "GHCN_ID": "USW00022522",
+        "LATITUDE": "21.3167",
+        "LONGITUDE": "-157.8667",
+        "ELEVATION": "4.0",
+        "STATE": "HI",
+        "NAME": "HONOLULU SUBSTN 407",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 1.17
+      },
+      {
+        "GHCN_ID": "USL000OOUH1",
+        "LATITUDE": "21.3",
+        "LONGITUDE": "-157.87",
+        "ELEVATION": "3.0",
+        "STATE": "HI",
+        "NAME": "HONOLULU",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 1.65
+      },
+      {
+        "GHCN_ID": "USC00518738",
+        "LATITUDE": "21.3283",
+        "LONGITUDE": "-157.8266",
+        "ELEVATION": "369.4",
+        "STATE": "HI",
+        "NAME": "TANTALUS 2 780.5",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 3.85
+      },
+      {
+        "GHCN_ID": "USC00510404",
+        "LATITUDE": "21.3368",
+        "LONGITUDE": "-157.8344",
+        "ELEVATION": "121.9",
+        "STATE": "HI",
+        "NAME": "DOWSETT 775.4",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "",
+        "ISO_CODE": "US",
+        "distance_km": 3.87
+      },
+      {
+        "GHCN_ID": "USI0000PHIK",
+        "LATITUDE": "21.316",
+        "LONGITUDE": "-157.9266",
+        "ELEVATION": "4.0",
+        "STATE": "HI",
+        "NAME": "HICKAM AFB",
+        "GSN": "",
+        "(US)HCN_(US)CRN": "",
+        "WMO_ID": "",
+        "ICAO": "PHIK",
+        "ISO_CODE": "US",
+        "distance_km": 7.13
+      }
+    ],
+    "daily_nearest_three_core_inventory": [
+      {
+        "id": "USW00022522",
+        "latitude": 21.3167,
+        "longitude": -157.8667,
+        "elevation": 4.0,
+        "name": "HONOLULU SUBSTN 407",
+        "distance_km": 1.17,
+        "inventory": {
+          "TMAX": [
+            1949,
+            1976
+          ],
+          "TMIN": [
+            1949,
+            1976
+          ],
+          "TOBS": [
+            1962,
+            1975
+          ],
+          "PRCP": [
+            1949,
+            1976
+          ],
+          "SNOW": [
+            1949,
+            1976
+          ],
+          "SNWD": [
+            1949,
+            1976
+          ],
+          "WT03": [
+            1950,
+            1952
+          ],
+          "WT16": [
+            1950,
+            1951
+          ]
+        }
+      },
+      {
+        "id": "USC00518316",
+        "latitude": 21.3103,
+        "longitude": -157.8458,
+        "elevation": 103.0,
+        "name": "PUNCHBOWL CRATER 709",
+        "distance_km": 1.27,
+        "inventory": {
+          "TMAX": [
+            1951,
+            1955
+          ],
+          "TMIN": [
+            1951,
+            1955
+          ],
+          "TOBS": [
+            1951,
+            1955
+          ],
+          "PRCP": [
+            1950,
+            2018
+          ],
+          "SNOW": [
+            1950,
+            2010
+          ],
+          "SNWD": [
+            1950,
+            2010
+          ],
+          "DAPR": [
+            1950,
+            1970
+          ],
+          "MDPR": [
+            1950,
+            1970
+          ],
+          "WT05": [
+            1966,
+            1966
+          ],
+          "WT08": [
+            1950,
+            1950
+          ]
+        }
+      },
+      {
+        "id": "USC00514617",
+        "latitude": 21.3,
+        "longitude": -157.85,
+        "elevation": 15.2,
+        "name": "KINAU STREET",
+        "distance_km": 1.38,
+        "inventory": {
+          "TMAX": [
+            1906,
+            1913
+          ],
+          "TMIN": [
+            1906,
+            1913
+          ],
+          "PRCP": [
+            1905,
+            1925
+          ],
+          "SNOW": [
+            1915,
+            1916
+          ],
+          "WT08": [
+            1911,
+            1911
+          ]
+        }
+      },
+      {
+        "id": "USC00510397",
+        "latitude": 21.3167,
+        "longitude": -157.8333,
+        "elevation": 53.3,
+        "name": "COLLEGE HILLS",
+        "distance_km": 2.68,
+        "inventory": {
+          "TMAX": [
+            1905,
+            1908
+          ],
+          "TMIN": [
+            1905,
+            1908
+          ],
+          "PRCP": [
+            1905,
+            1908
+          ]
+        }
+      }
+    ],
+    "daily_inventory_covers_baseline_and_recent_candidates": [
+      {
+        "id": "USC00516128",
+        "latitude": 21.3331,
+        "longitude": -157.8025,
+        "elevation": 152.4,
+        "name": "MANOA LYON ARBO 785.2",
+        "distance_km": 6.31,
+        "inventory": {
+          "TMAX": [
+            1975,
+            2026
+          ],
+          "TMIN": [
+            1975,
+            2026
+          ],
+          "TOBS": [
+            1975,
+            2026
+          ],
+          "PRCP": [
+            1975,
+            2026
+          ],
+          "SNOW": [
+            1975,
+            2010
+          ],
+          "SNWD": [
+            1975,
+            2010
+          ],
+          "DAPR": [
+            1984,
+            2026
+          ],
+          "MDPR": [
+            1984,
+            2026
+          ],
+          "SN02": [
+            1982,
+            2004
+          ],
+          "SN12": [
+            2002,
+            2012
+          ],
+          "SN52": [
+            2011,
+            2013
+          ],
+          "SX02": [
+            1982,
+            2004
+          ],
+          "SX12": [
+            2002,
+            2012
+          ],
+          "SX52": [
+            2011,
+            2013
+          ]
+        }
+      },
+      {
+        "id": "USW00022521",
+        "latitude": 21.3239,
+        "longitude": -157.9394,
+        "elevation": 1.8,
+        "name": "HONOLULU INTL AP",
+        "distance_km": 8.56,
+        "inventory": {
+          "TMAX": [
+            1940,
+            2026
+          ],
+          "TMIN": [
+            1940,
+            2026
+          ],
+          "TOBS": [
+            1968,
+            1974
+          ],
+          "PRCP": [
+            1940,
+            2026
+          ],
+          "SNOW": [
+            1949,
+            2013
+          ],
+          "SNWD": [
+            1949,
+            2007
+          ],
+          "ACMH": [
+            1965,
+            1998
+          ],
+          "ACSH": [
+            1965,
+            1998
+          ],
+          "ADPT": [
+            2006,
+            2024
+          ],
+          "ASLP": [
+            2006,
+            2024
+          ],
+          "ASTP": [
+            2006,
+            2024
+          ],
+          "AWBT": [
+            2006,
+            2024
+          ],
+          "AWND": [
+            1984,
+            2026
+          ],
+          "FMTM": [
+            1984,
+            2012
+          ],
+          "PGTM": [
+            1950,
+            2025
+          ],
+          "PSUN": [
+            1965,
+            1983
+          ],
+          "RHAV": [
+            2006,
+            2024
+          ],
+          "RHMN": [
+            2006,
+            2024
+          ],
+          "RHMX": [
+            2006,
+            2024
+          ],
+          "TAVG": [
+            1939,
+            2005
+          ],
+          "TSUN": [
+            1965,
+            2005
+          ],
+          "WDF1": [
+            1980,
+            1996
+          ],
+          "WDF2": [
+            1996,
+            2026
+          ],
+          "WDF5": [
+            1998,
+            2026
+          ],
+          "WDFG": [
+            1950,
+            1998
+          ],
+          "WDFM": [
+            1965,
+            1979
+          ],
+          "WESD": [
+            1990,
+            2010
+          ],
+          "WSF1": [
+            1980,
+            1996
+          ],
+          "WSF2": [
+            1996,
+            2026
+          ],
+          "WSF5": [
+            1998,
+            2026
+          ],
+          "WSFG": [
+            1950,
+            1998
+          ],
+          "WSFM": [
+            1965,
+            1979
+          ],
+          "WT01": [
+            1950,
+            2026
+          ],
+          "WT02": [
+            2004,
+            2017
+          ],
+          "WT03": [
+            1949,
+            2026
+          ],
+          "WT05": [
+            1972,
+            2010
+          ],
+          "WT07": [
+            2008,
+            2010
+          ],
+          "WT08": [
+            1950,
+            2026
+          ],
+          "WT10": [
+            1989,
+            2015
+          ],
+          "WT11": [
+            1954,
+            2004
+          ],
+          "WT12": [
+            1986,
+            1986
+          ],
+          "WT13": [
+            1996,
+            2013
+          ],
+          "WT14": [
+            1993,
+            2012
+          ],
+          "WT16": [
+            1949,
+            2013
+          ],
+          "WT18": [
+            2010,
+            2010
+          ],
+          "WV03": [
+            2003,
+            2003
+          ],
+          "WV20": [
+            1996,
+            2004
+          ]
+        }
+      },
+      {
+        "id": "USW00022519",
+        "latitude": 21.4506,
+        "longitude": -157.7681,
+        "elevation": 3.0,
+        "name": "KANEOHE BAY MCAS",
+        "distance_km": 18.21,
+        "inventory": {
+          "TMAX": [
+            1942,
+            2026
+          ],
+          "TMIN": [
+            1942,
+            2026
+          ],
+          "PRCP": [
+            1942,
+            2025
+          ],
+          "SNOW": [
+            1942,
+            2020
+          ],
+          "SNWD": [
+            1942,
+            2017
+          ],
+          "ACMH": [
+            1965,
+            1978
+          ],
+          "ACSH": [
+            1965,
+            1978
+          ],
+          "AWND": [
+            1986,
+            2025
+          ],
+          "FMTM": [
+            2004,
+            2005
+          ],
+          "FRGT": [
+            1948,
+            1948
+          ],
+          "PGTM": [
+            1948,
+            2025
+          ],
+          "TAVG": [
+            2025,
+            2026
+          ],
+          "THIC": [
+            1948,
+            1948
+          ],
+          "WDF2": [
+            2004,
+            2025
+          ],
+          "WDF5": [
+            2007,
+            2025
+          ],
+          "WDFG": [
+            1948,
+            2005
+          ],
+          "WESD": [
+            1978,
+            1978
+          ],
+          "WSF2": [
+            2004,
+            2025
+          ],
+          "WSF5": [
+            2007,
+            2025
+          ],
+          "WSFG": [
+            1948,
+            2005
+          ],
+          "WT01": [
+            1945,
+            2025
+          ],
+          "WT02": [
+            1972,
+            2025
+          ],
+          "WT03": [
+            1945,
+            2025
+          ],
+          "WT05": [
+            1973,
+            1973
+          ],
+          "WT08": [
+            1946,
+            2025
+          ],
+          "WT10": [
+            1996,
+            1996
+          ],
+          "WT11": [
+            1996,
+            1996
+          ],
+          "WT13": [
+            1998,
+            2005
+          ],
+          "WT14": [
+            1987,
+            2003
+          ],
+          "WT16": [
+            1945,
+            2005
+          ],
+          "WV20": [
+            2001,
+            2005
+          ]
+        }
+      }
+    ]
+  }
+]

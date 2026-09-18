@@ -1,0 +1,154 @@
+TAP version 13
+# Subtest: alerts validate location, unavailable state and complete official text independently
+ok 1 - alerts validate location, unavailable state and complete official text independently
+  ---
+  duration_ms: 9.200652
+  type: 'test'
+  ...
+# Subtest: expired, ended, test and cancellation records never appear as current alerts
+ok 2 - expired, ended, test and cancellation records never appear as current alerts
+  ---
+  duration_ms: 0.526768
+  type: 'test'
+  ...
+# Subtest: official links only navigate to HTTPS NWS domains
+ok 3 - official links only navigate to HTTPS NWS domains
+  ---
+  duration_ms: 0.207753
+  type: 'test'
+  ...
+# Subtest: Tulsa effects preserve source limits and missing/boundary status without a safe category
+ok 4 - Tulsa effects preserve source limits and missing/boundary status without a safe category
+  ---
+  duration_ms: 12.037864
+  type: 'test'
+  ...
+# Subtest: effects keep all five source bands selectable in either unit system
+ok 5 - effects keep all five source bands selectable in either unit system
+  ---
+  duration_ms: 2.790374
+  type: 'test'
+  ...
+# Subtest: WBGT marker requires successful co-timed eligible hour and fresh online state; never substitutes ordinary wet-bulb
+ok 6 - WBGT marker requires successful co-timed eligible hour and fresh online state; never substitutes ordinary wet-bulb
+  ---
+  duration_ms: 57.000804
+  type: 'test'
+  ...
+# Subtest: Tulsa exact endpoints retain ambiguity before display rounding and convert scale ticks
+ok 7 - Tulsa exact endpoints retain ambiguity before display rounding and convert scale ticks
+  ---
+  duration_ms: 36.184647
+  type: 'test'
+  ...
+# Subtest: visible 24-hour graph preserve real hour spacing, missing gaps, zero, bounds and accessible values
+ok 8 - visible 24-hour graph preserve real hour spacing, missing gaps, zero, bounds and accessible values
+  ---
+  duration_ms: 4.865904
+  type: 'test'
+  ...
+# Subtest: heat precautions precede trend without the removed lower estimate
+ok 9 - heat precautions precede trend without the removed lower estimate
+  ---
+  duration_ms: 1.813454
+  type: 'test'
+  ...
+# Subtest: heat interaction controls and compact hourly list preserve endpoints, all slots and missingness without removed disclosures
+ok 10 - heat interaction controls and compact hourly list preserve endpoints, all slots and missingness without removed disclosures
+  ---
+  duration_ms: 3.174992
+  type: 'test'
+  ...
+# Subtest: heat graph point labels distinguish DST repeated hours
+ok 11 - heat graph point labels distinguish DST repeated hours
+  ---
+  duration_ms: 1.893195
+  type: 'test'
+  ...
+# Subtest: WMO weather icons distinguish precipitation, freezing, fog, snow and hail; unknown remains neutral
+ok 12 - WMO weather icons distinguish precipitation, freezing, fog, snow and hail; unknown remains neutral
+  ---
+  duration_ms: 12.236891
+  type: 'test'
+  ...
+# Subtest: weather theme uses supplied daylight and requires fresh current weather
+ok 13 - weather theme uses supplied daylight and requires fresh current weather
+  ---
+  duration_ms: 0.272326
+  type: 'test'
+  ...
+# Subtest: SI conversions retain missingness and legitimate zeros
+ok 14 - SI conversions retain missingness and legitimate zeros
+  ---
+  duration_ms: 1.843911
+  type: 'test'
+  ...
+# Subtest: local calendar uses location timezone across UTC midnight and DST repeat
+ok 15 - local calendar uses location timezone across UTC midnight and DST repeat
+  ---
+  duration_ms: 17.021971
+  type: 'test'
+  ...
+# Subtest: current conditions never borrow a future or expired hour
+ok 16 - current conditions never borrow a future or expired hour
+  ---
+  duration_ms: 0.24845
+  type: 'test'
+  ...
+# Subtest: runtime validation rejects old location and unordered timelines
+ok 17 - runtime validation rejects old location and unordered timelines
+  ---
+  duration_ms: 10.647762
+  type: 'test'
+  ...
+# Subtest: daily aggregation retains null-only temperatures and a repeated local hour
+ok 18 - daily aggregation retains null-only temperatures and a repeated local hour
+  ---
+  duration_ms: 1.825356
+  type: 'test'
+  ...
+# Subtest: midnight precipitation belongs to preceding date, missing intervals stay missing
+ok 19 - midnight precipitation belongs to preceding date, missing intervals stay missing
+  ---
+  duration_ms: 2.754175
+  type: 'test'
+  ...
+# Subtest: precipitation uses 23/25 actual intervals on spring/fall local DST days
+ok 20 - precipitation uses 23/25 actual intervals on spring/fall local DST days
+  ---
+  duration_ms: 15.117616
+  type: 'test'
+  ...
+# Subtest: night and unknown daylight never imply sunshine
+ok 21 - night and unknown daylight never imply sunshine
+  ---
+  duration_ms: 6.987341
+  type: 'test'
+  ...
+# Subtest: periods preserve repeated DST night hours and missing/partial rain
+ok 22 - periods preserve repeated DST night hours and missing/partial rain
+  ---
+  duration_ms: 42.849457
+  type: 'test'
+  ...
+# Subtest: astronomy uses exact local valid date and rejects mismatches and duplicate dates
+ok 23 - astronomy uses exact local valid date and rejects mismatches and duplicate dates
+  ---
+  duration_ms: 2.073596
+  type: 'test'
+  ...
+# Subtest: daily wording shows forecast conditions and hourly maxima without obscuring missing or DST hours
+ok 24 - daily wording shows forecast conditions and hourly maxima without obscuring missing or DST hours
+  ---
+  duration_ms: 3.397453
+  type: 'test'
+  ...
+1..24
+# tests 24
+# suites 0
+# pass 24
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2454.89421

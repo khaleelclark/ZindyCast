@@ -1,0 +1,13 @@
+HTTP/1.1 206 Partial Content
+Date: Thu, 10 Sep 2026 22:39:16 GMT
+Server: Apache
+Strict-Transport-Security: max-age=31536000
+Last-Modified: Thu, 10 Sep 2026 00:52:59 GMT
+ETag: "2254eb8-65b1663ab5d15"
+Accept-Ranges: bytes
+Content-Length: 7000000
+Content-Range: bytes 18000000-24999999/35999416
+Content-Type: text/plain
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Headers: X-Requested-With, Content-Type
+

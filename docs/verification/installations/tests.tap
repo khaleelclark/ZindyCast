@@ -1,0 +1,48 @@
+TAP version 13
+# (node:702874) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: registration authenticates with digest only; malformed, wrong, unknown and ID-only credentials denied
+ok 1 - registration authenticates with digest only; malformed, wrong, unknown and ID-only credentials denied
+  ---
+  duration_ms: 7.901523
+  type: 'test'
+  ...
+# Subtest: two connections enforce ownership, active admission and terminal release without changing read ownership
+ok 2 - two connections enforce ownership, active admission and terminal release without changing read ownership
+  ---
+  duration_ms: 3.586402
+  type: 'test'
+  ...
+# Subtest: revocation and deletion immediately fence other connections and cleanup removes revoked records
+ok 3 - revocation and deletion immediately fence other connections and cleanup removes revoked records
+  ---
+  duration_ms: 3.375663
+  type: 'test'
+  ...
+# Subtest: expiry is exact across restart and orphan reservation remains charged until expiry
+ok 4 - expiry is exact across restart and orphan reservation remains charged until expiry
+  ---
+  duration_ms: 2.644919
+  type: 'test'
+  ...
+# Subtest: installation and mapping count limits persist across connections; release does not bypass retention cap
+ok 5 - installation and mapping count limits persist across connections; release does not bypass retention cap
+  ---
+  duration_ms: 3.130117
+  type: 'test'
+  ...
+# Subtest: bad input, different persistent config, rollback and lock contention fail closed
+ok 6 - bad input, different persistent config, rollback and lock contention fail closed
+  ---
+  duration_ms: 13.073167
+  type: 'test'
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 343.156417

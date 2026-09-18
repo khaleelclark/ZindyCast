@@ -1,0 +1,110 @@
+[
+  {
+    "file": "ghcnd-inventory-us-tail.txt",
+    "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-inventory.txt",
+    "range": "25000000-35999415",
+    "status": "206",
+    "error": "",
+    "bytes": 10999416,
+    "accessed": "2026-09-10T22:38:34.977996+00:00"
+  },
+  {
+    "file": "USW00003184-2020-head.psv",
+    "url": "https://www.ncei.noaa.gov/oa/global-historical-climatology-network/hourly/access/by-year/2020/psv/GHCNh_USW00003184_2020.psv",
+    "range": "0-262143",
+    "status": "206",
+    "error": "",
+    "bytes": 262144,
+    "accessed": "2026-09-10T22:38:21.202369+00:00"
+  },
+  {
+    "file": "USW00012854-2020-head.psv",
+    "url": "https://www.ncei.noaa.gov/oa/global-historical-climatology-network/hourly/access/by-year/2020/psv/GHCNh_USW00012854_2020.psv",
+    "range": "0-262143",
+    "status": "206",
+    "error": "",
+    "bytes": 262144,
+    "accessed": "2026-09-10T22:38:22.045705+00:00"
+  },
+  {
+    "file": "USW00026451-2020-head.psv",
+    "url": "https://www.ncei.noaa.gov/oa/global-historical-climatology-network/hourly/access/by-year/2020/psv/GHCNh_USW00026451_2020.psv",
+    "range": "0-262143",
+    "status": "206",
+    "error": "",
+    "bytes": 262144,
+    "accessed": "2026-09-10T22:38:22.033769+00:00"
+  },
+  {
+    "file": "USW00022521-2020-head.psv",
+    "url": "https://www.ncei.noaa.gov/oa/global-historical-climatology-network/hourly/access/by-year/2020/psv/GHCNh_USW00022521_2020.psv",
+    "range": "0-262143",
+    "status": "206",
+    "error": "",
+    "bytes": 262144,
+    "accessed": "2026-09-10T22:38:22.705816+00:00"
+  },
+  {
+    "file": "USW00023186-2020-head.psv",
+    "url": "https://www.ncei.noaa.gov/oa/global-historical-climatology-network/hourly/access/by-year/2020/psv/GHCNh_USW00023186_2020.psv",
+    "range": "0-262143",
+    "status": "206",
+    "error": "",
+    "bytes": 262144,
+    "accessed": "2026-09-10T22:38:22.683413+00:00"
+  },
+  {
+    "file": "USW00093198-2020-head.psv",
+    "url": "https://www.ncei.noaa.gov/oa/global-historical-climatology-network/hourly/access/by-year/2020/psv/GHCNh_USW00093198_2020.psv",
+    "range": "0-262143",
+    "status": "404",
+    "error": "",
+    "bytes": 262,
+    "accessed": "2026-09-10T22:38:22.938025+00:00"
+  },
+  {
+    "file": "USW00003184.dly",
+    "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/USW00003184.dly",
+    "range": null,
+    "status": "200",
+    "error": "",
+    "bytes": 1048410,
+    "accessed": "2026-09-10T22:38:23.810196+00:00"
+  },
+  {
+    "file": "USW00012854.dly",
+    "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/USW00012854.dly",
+    "range": null,
+    "status": "200",
+    "error": "",
+    "bytes": 1772820,
+    "accessed": "2026-09-10T22:38:24.466647+00:00"
+  },
+  {
+    "file": "USW00026451.dly",
+    "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/USW00026451.dly",
+    "range": null,
+    "status": "200",
+    "error": "",
+    "bytes": 4486320,
+    "accessed": "2026-09-10T22:38:27.505720+00:00"
+  },
+  {
+    "file": "USW00022521.dly",
+    "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/USW00022521.dly",
+    "range": null,
+    "status": "200",
+    "error": "",
+    "bytes": 3807540,
+    "accessed": "2026-09-10T22:38:30.985400+00:00"
+  },
+  {
+    "file": "USC00427516.dly",
+    "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/USC00427516.dly",
+    "range": null,
+    "status": "200",
+    "error": "",
+    "bytes": 2583900,
+    "accessed": "2026-09-10T22:38:28.739700+00:00"
+  }
+]

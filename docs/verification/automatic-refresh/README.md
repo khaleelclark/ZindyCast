@@ -1,0 +1,9 @@
+# Automatic refresh and slider request control — September 11, 2026
+
+Main forecast refreshes five minutes after completion, observed radar catalog every two minutes, forecast-radar catalog every five minutes. Polling pauses hidden/offline; due refreshes coalesce on return. Background requests keep the same-city display mounted. Failures retain explicitly stale forecast data and automatically retry. Historical datasets remain snapshots rather than silently changing underneath exports.
+
+Future slider displays its draft position immediately, committing after450ms idle or pointer release. Exact model-run/frame/XYZ decoded tiles are reused across selections, bounded to32 entries/16MiB and five minutes (or earlier forecast/run expiry). Shared client serialization and Retry-After cooldown prevent slider changes from bypassing limits; active views recover automatically after cooldown with bounded failure backoff. This reduces redundant traffic, not a promise that new views cannot reach legitimate provider quotas.
+
+Typecheck/production build passed. Full suite279 passed, two opt-in browser cases skipped. Main Chrome fixture clock test passed: five bounded requests across initial load, five-minute refresh, hidden/resume, outage and automatic recovery; existing current card stays mounted; no page exceptions. Test initially advanced the virtual clock after the request handler began but before decoding completed; waiting for completion corrected that test race. No live provider requests were used for virtual-time verification.
+
+Map Chrome fixture cases separately exercise rapid twelve-input scrubbing, cache backtracking,429 cooldown/recovery, catalog polling, hidden pause, regional exclusions and both screen sizes. Final combined outputs are retained in map-browser-tests.tap. Main scenario: tests/browser/forecast-refresh.mjs. Fixtures are never served to ordinary users.

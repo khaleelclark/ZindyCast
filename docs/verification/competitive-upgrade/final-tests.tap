@@ -1,0 +1,2776 @@
+
+> zindycast@0.1.0 test
+> tsx --test packages/*/src/*.test.ts apps/api/src/*.test.ts apps/web/src/*.test.ts apps/worker/src/*.test.ts
+
+TAP version 13
+# (node:4193038) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: invalid coordinates and timezone never call weather provider
+ok 1 - invalid coordinates and timezone never call weather provider
+  ---
+  duration_ms: 213.159671
+  type: 'test'
+  ...
+# Subtest: upstream errors produce sanitized independent resource failures
+ok 2 - upstream errors produce sanitized independent resource failures
+  ---
+  duration_ms: 30.809385
+  type: 'test'
+  ...
+# Subtest: rate-limit status and Retry-After survive API mapping
+ok 3 - rate-limit status and Retry-After survive API mapping
+  ---
+  duration_ms: 24.482066
+  type: 'test'
+  ...
+# Subtest: cached alert snapshots remove expired records and do not refetch within freshness window
+ok 4 - cached alert snapshots remove expired records and do not refetch within freshness window
+  ---
+  duration_ms: 94.217382
+  type: 'test'
+  ...
+# Subtest: configured origin/Host boundary rejects rebinding and scheme mismatch without trusting proxy headers
+ok 5 - configured origin/Host boundary rejects rebinding and scheme mismatch without trusting proxy headers
+  ---
+  duration_ms: 143.090201
+  type: 'test'
+  ...
+# (node:4193040) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: concurrent requests coalesce and persisted cache avoids another provider call
+ok 6 - concurrent requests coalesce and persisted cache avoids another provider call
+  ---
+  duration_ms: 40.91476
+  type: 'test'
+  ...
+# Subtest: quota denial cannot cause an unbudgeted fetch
+ok 7 - quota denial cannot cause an unbudgeted fetch
+  ---
+  duration_ms: 6.562294
+  type: 'test'
+  ...
+# Subtest: provider failure retains permitted stale data without changing freshness
+ok 8 - provider failure retains permitted stale data without changing freshness
+  ---
+  duration_ms: 8.711625
+  type: 'test'
+  ...
+# Subtest: explicit refresh bypasses older fresh cache without shortening normal cache lifetime
+ok 9 - explicit refresh bypasses older fresh cache without shortening normal cache lifetime
+  ---
+  duration_ms: 8.25482
+  type: 'test'
+  ...
+# Subtest: failed explicit refresh labels retained older data stale
+ok 10 - failed explicit refresh labels retained older data stale
+  ---
+  duration_ms: 2.551124
+  type: 'test'
+  ...
+# (node:4193043) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: climate job APIs enforce installation ownership and redact worker authority
+ok 11 - climate job APIs enforce installation ownership and redact worker authority
+  ---
+  duration_ms: 292.981448
+  type: 'test'
+  ...
+# Subtest: completed climate job serves authorized cache-backed local detail and preserves v1 isolation
+ok 12 - completed climate job serves authorized cache-backed local detail and preserves v1 isolation
+  ---
+  duration_ms: 265.384711
+  type: 'test'
+  ...
+# (node:4193054) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: normals route validates station, caches identical source and rejects identity mismatch
+ok 13 - normals route validates station, caches identical source and rejects identity mismatch
+  ---
+  duration_ms: 202.061433
+  type: 'test'
+  ...
+# (node:4193062) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: comparison job APIs enforce installation ownership and redact worker authority
+ok 14 - comparison job APIs enforce installation ownership and redact worker authority
+  ---
+  duration_ms: 197.562338
+  type: 'test'
+  ...
+# Subtest: registration mutations require same-origin header and are bounded
+ok 15 - registration mutations require same-origin header and are bounded
+  ---
+  duration_ms: 42.51341
+  type: 'test'
+  ...
+# (node:4193064) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: catalog singleflight, original retrieval, binary tile bytes, provenance and exact five minute cache
+ok 16 - catalog singleflight, original retrieval, binary tile bytes, provenance and exact five minute cache
+  ---
+  duration_ms: 224.361946
+  type: 'test'
+  ...
+# Subtest: invalid query, XYZ bounds and HI rejected before any provider action
+ok 17 - invalid query, XYZ bounds and HI rejected before any provider action
+  ---
+  duration_ms: 18.62582
+  type: 'test'
+  ...
+# Subtest: cached old model cannot regain freshness; expired tile and arbitrary run cannot fetch
+ok 18 - cached old model cannot regain freshness; expired tile and arbitrary run cannot fetch
+  ---
+  duration_ms: 24.777085
+  type: 'test'
+  ...
+# Subtest: shared NOAA quota charged before fetch; outage redacted and no stale fallback
+ok 19 - shared NOAA quota charged before fetch; outage redacted and no stale fallback
+  ---
+  duration_ms: 23.392602
+  type: 'test'
+  ...
+# Subtest: cached tile is rejected once valid time passes; wrong cached XYZ is refetched
+ok 20 - cached tile is rejected once valid time passes; wrong cached XYZ is refetched
+  ---
+  duration_ms: 36.664498
+  type: 'test'
+  ...
+# Subtest: styled basemaps allow only the fixed Mapbox API origin without widening script or worker policy
+ok 21 - styled basemaps allow only the fixed Mapbox API origin without widening script or worker policy
+  ---
+  duration_ms: 4.591299
+  type: 'test'
+  ...
+# (node:4193069) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Libre catalog singleflight and pinned tile reuse preserve identity
+ok 22 - Libre catalog singleflight and pinned tile reuse preserve identity
+  ---
+  duration_ms: 247.103914
+  type: 'test'
+  ...
+# Subtest: Libre rejects arbitrary paths, archive frames, malformed and stale source data
+ok 23 - Libre rejects arbitrary paths, archive frames, malformed and stale source data
+  ---
+  duration_ms: 42.700134
+  type: 'test'
+  ...
+# Subtest: Libre rejects wrong image timestamp and redacts failures; shared quota prevents fetch
+ok 24 - Libre rejects wrong image timestamp and redacts failures; shared quota prevents fetch
+  ---
+  duration_ms: 24.621269
+  type: 'test'
+  ...
+# Subtest: Libre nowcast expiration is rechecked after slow tile fetch
+ok 25 - Libre nowcast expiration is rechecked after slow tile fetch
+  ---
+  duration_ms: 47.610668
+  type: 'test'
+  ...
+# Subtest: admission is POST only, noncacheable, rejects untrusted input, and fails closed
+ok 26 - admission is POST only, noncacheable, rejects untrusted input, and fails closed
+  ---
+  duration_ms: 229.647931
+  type: 'test'
+  ...
+# Subtest: notification configuration is optional but validates complete matching keys
+ok 27 - notification configuration is optional but validates complete matching keys
+  ---
+  duration_ms: 9.623514
+  type: 'test'
+  ...
+# (node:4193295) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: push destinations fail closed and preference place/timezone validation
+ok 28 - push destinations fail closed and preference place/timezone validation
+  ---
+  duration_ms: 33.47246
+  type: 'test'
+  ...
+# Subtest: authenticated subscription isolation, same-origin, disable and revocation
+ok 29 - authenticated subscription isolation, same-origin, disable and revocation
+  ---
+  duration_ms: 166.194507
+  type: 'test'
+  ...
+# Subtest: durable lease, idempotent saves, endpoint ownership, changed preference and stale lease fences
+ok 30 - durable lease, idempotent saves, endpoint ownership, changed preference and stale lease fences
+  ---
+  duration_ms: 5.270145
+  type: 'test'
+  ...
+# (node:4193296) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: strict current route uses fixed three-hour/three-station contract and coalesces a five-call reservation
+ok 31 - strict current route uses fixed three-hour/three-station contract and coalesces a five-call reservation
+  ---
+  duration_ms: 246.782706
+  type: 'test'
+  ...
+# (node:4193296) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time
+# Subtest: invalid, duplicate, blank and unknown query values never call the observation provider
+ok 32 - invalid, duplicate, blank and unknown query values never call the observation provider
+  ---
+  duration_ms: 15.21583
+  type: 'test'
+  ...
+# Subtest: stale cache is explicit during outage, but wrong geography is never a fallback
+ok 33 - stale cache is explicit during outage, but wrong geography is never a fallback
+  ---
+  duration_ms: 43.59572
+  type: 'test'
+  ...
+# Subtest: malformed quality metadata and future retrievals fail at the API binding
+ok 34 - malformed quality metadata and future retrievals fail at the API binding
+  ---
+  duration_ms: 16.884351
+  type: 'test'
+  ...
+# Subtest: NWS quota denial happens before fetch; provider rate and no-data errors map without private details
+ok 35 - NWS quota denial happens before fetch; provider rate and no-data errors map without private details
+  ---
+  duration_ms: 30.9338
+  type: 'test'
+  ...
+# (node:4193310) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: mutation guard rejects opaque/noncanonical origins, cross-site metadata and forwarded spoofing
+ok 36 - mutation guard rejects opaque/noncanonical origins, cross-site metadata and forwarded spoofing
+  ---
+  duration_ms: 284.963807
+  type: 'test'
+  ...
+# Subtest: simultaneous registration remains bounded and returns retry guidance
+ok 37 - simultaneous registration remains bounded and returns retry guidance
+  ---
+  duration_ms: 49.457767
+  type: 'test'
+  ...
+# Subtest: job admission races are bounded; owner IDs, cookies and other installations cannot read or cancel
+ok 38 - job admission races are bounded; owner IDs, cookies and other installations cannot read or cancel
+  ---
+  duration_ms: 116.622754
+  type: 'test'
+  ...
+# Subtest: zero-stale and reduced TTL reject inherited cache data on failure and lease contention
+ok 39 - zero-stale and reduced TTL reject inherited cache data on failure and lease contention
+  ---
+  duration_ms: 19.836023
+  type: 'test'
+  ...
+# Subtest: coalesced callers validate their own exact-query schema without duplicate provider work
+ok 40 - coalesced callers validate their own exact-query schema without duplicate provider work
+  ---
+  duration_ms: 33.825619
+  type: 'test'
+  ...
+# Subtest: malformed retained data never bypasses quota and oversized results cannot populate cache
+ok 41 - malformed retained data never bypasses quota and oversized results cannot populate cache
+  ---
+  duration_ms: 12.056213
+  type: 'test'
+  ...
+# (node:4193310) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time
+# Subtest: expired refresh lease cannot overwrite a newer result or refund provider quota
+ok 42 - expired refresh lease cannot overwrite a newer result or refund provider quota
+  ---
+  duration_ms: 19.354461
+  type: 'test'
+  ...
+# (node:4193318) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: production shell revalidates, API bypasses caches and unknown data never becomes HTML
+ok 43 - production shell revalidates, API bypasses caches and unknown data never becomes HTML
+  ---
+  duration_ms: 363.540755
+  type: 'test'
+  ...
+# Subtest: oversized and malformed request bodies remain client errors without reflecting payloads
+ok 44 - oversized and malformed request bodies remain client errors without reflecting payloads
+  ---
+  duration_ms: 92.165454
+  type: 'test'
+  ...
+# Subtest: compressed public assets negotiate encoding with exact decoded bytes and cache variation
+ok 45 - compressed public assets negotiate encoding with exact decoded bytes and cache variation
+  ---
+  duration_ms: 130.276864
+  type: 'test'
+  ...
+# (node:4193319) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: strict query; exact selection one-day cache; concurrent coalescing
+ok 46 - strict query; exact selection one-day cache; concurrent coalescing
+  ---
+  duration_ms: 480.086924
+  type: 'test'
+  ...
+# Subtest: query mismatch refetches; stale outage never returns old candidates
+ok 47 - query mismatch refetches; stale outage never returns old candidates
+  ---
+  duration_ms: 201.476054
+  type: 'test'
+  ...
+# Subtest: NOAA quota charged before fetch and upstream retry-after preserved
+ok 48 - NOAA quota charged before fetch and upstream retry-after preserved
+  ---
+  duration_ms: 17.038914
+  type: 'test'
+  ...
+# (node:4193338) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: authenticated opt-in registration is owner scoped, idempotent and mutable only by removal
+ok 49 - authenticated opt-in registration is owner scoped, idempotent and mutable only by removal
+  ---
+  duration_ms: 239.914803
+  type: 'test'
+  ...
+# Subtest: five-place installation and global capacity are enforced
+ok 50 - five-place installation and global capacity are enforced
+  ---
+  duration_ms: 43.804426
+  type: 'test'
+  ...
+# Subtest: forecast hook archives only opted-in exact locations and excludes unrelated/WBGT fields
+ok 51 - forecast hook archives only opted-in exact locations and excludes unrelated/WBGT fields
+  ---
+  duration_ms: 25.42368
+  type: 'test'
+  ...
+# Subtest: scorecard endpoint never authorizes by public place or target id
+ok 52 - scorecard endpoint never authorizes by public place or target id
+  ---
+  duration_ms: 23.436104
+  type: 'test'
+  ...
+# Subtest: alerts validate location, unavailable state and complete official text independently
+ok 53 - alerts validate location, unavailable state and complete official text independently
+  ---
+  duration_ms: 24.456658
+  type: 'test'
+  ...
+# Subtest: expired, ended, test and cancellation records never appear as current alerts
+ok 54 - expired, ended, test and cancellation records never appear as current alerts
+  ---
+  duration_ms: 1.345529
+  type: 'test'
+  ...
+# Subtest: official links only navigate to HTTPS NWS domains
+ok 55 - official links only navigate to HTTPS NWS domains
+  ---
+  duration_ms: 0.444623
+  type: 'test'
+  ...
+# Subtest: basemap failure is source-scoped and sticky; explicit selection preserves weather and tolerates denied storage
+ok 56 - basemap failure is source-scoped and sticky; explicit selection preserves weather and tolerates denied storage
+  ---
+  duration_ms: 6.150734
+  type: 'test'
+  ...
+# Subtest: static tile URLs stay pinned to Streets v12, 512 @2x and valid XYZ
+ok 57 - static tile URLs stay pinned to Streets v12, 512 @2x and valid XYZ
+  ---
+  duration_ms: 0.732017
+  type: 'test'
+  ...
+# Subtest: actual Chrome basemap transitions and failure fixtures
+ok 58 - actual Chrome basemap transitions and failure fixtures # SKIP
+  ---
+  duration_ms: 0.145346
+  type: 'test'
+  ...
+# Subtest: admission validates status/count, never caches permits, and aborts before requesting
+ok 59 - admission validates status/count, never caches permits, and aborts before requesting
+  ---
+  duration_ms: 121.273926
+  type: 'test'
+  ...
+# Subtest: actual Chrome shared quota admission fixtures
+ok 60 - actual Chrome shared quota admission fixtures # SKIP
+  ---
+  duration_ms: 0.327511
+  type: 'test'
+  ...
+# Subtest: chart breaks missing values/hours but keeps repeated local DST hours in chronological order
+ok 61 - chart breaks missing values/hours but keeps repeated local DST hours in chronological order
+  ---
+  duration_ms: 26.035168
+  type: 'test'
+  ...
+# Subtest: chart renders accessible SVG and meaningful missing-data text
+ok 62 - chart renders accessible SVG and meaningful missing-data text
+  ---
+  duration_ms: 215.084357
+  type: 'test'
+  ...
+# Subtest: exact readouts retain zero, independent missing values, units and DST timezone
+ok 63 - exact readouts retain zero, independent missing values, units and DST timezone
+  ---
+  duration_ms: 4.868354
+  type: 'test'
+  ...
+# Subtest: city search starts with labeled native search input and polite status, without fabricated locations
+ok 64 - city search starts with labeled native search input and polite status, without fabricated locations
+  ---
+  duration_ms: 94.207714
+  type: 'test'
+  ...
+# Subtest: climate controls bind normalized coordinates and timezone; dates and full-year bounds are strict
+ok 65 - climate controls bind normalized coordinates and timezone; dates and full-year bounds are strict
+  ---
+  duration_ms: 10.98881
+  type: 'test'
+  ...
+# Subtest: quick periods are inclusive and never imply a 30-year climate normal
+ok 66 - quick periods are inclusive and never imply a 30-year climate normal
+  ---
+  duration_ms: 4.05367
+  type: 'test'
+  ...
+# Subtest: job response rejects wrong identity, changed timezone, invalid expiry and completed without result
+ok 67 - job response rejects wrong identity, changed timezone, invalid expiry and completed without result
+  ---
+  duration_ms: 9.875821
+  type: 'test'
+  ...
+# Subtest: detail selection accepts a month, rejects spillovers, invalid dates and unknown cities
+ok 68 - detail selection accepts a month, rejects spillovers, invalid dates and unknown cities
+  ---
+  duration_ms: 0.754489
+  type: 'test'
+  ...
+# Subtest: detail validates location/calendar and rejects unordered or out-of-window hourly values
+ok 69 - detail validates location/calendar and rejects unordered or out-of-window hourly values
+  ---
+  duration_ms: 19.155533
+  type: 'test'
+  ...
+# Subtest: completed response binds result query, each city timezone and plan windows before display
+ok 70 - completed response binds result query, each city timezone and plan windows before display
+  ---
+  duration_ms: 387.982174
+  type: 'test'
+  ...
+# Subtest: detail rejects shifted UTC boundaries and preserves null hours and zero endpoints
+ok 71 - detail rejects shifted UTC boundaries and preserves null hours and zero endpoints
+  ---
+  duration_ms: 10.267574
+  type: 'test'
+  ...
+# Subtest: converts temperature, wet bulb, wind, precipitation and seconds once; zero and null remain distinct
+ok 72 - converts temperature, wet bulb, wind, precipitation and seconds once; zero and null remain distinct
+  ---
+  duration_ms: 2.561023
+  type: 'test'
+  ...
+# Subtest: partial/no-data headlines cannot expose available values as full coverage
+ok 73 - partial/no-data headlines cannot expose available values as full coverage
+  ---
+  duration_ms: 0.288156
+  type: 'test'
+  ...
+# Subtest: climatology requires explicit valid year, clips leap month and never drills multi-year overview
+ok 74 - climatology requires explicit valid year, clips leap month and never drills multi-year overview
+  ---
+  duration_ms: 2.501319
+  type: 'test'
+  ...
+# Subtest: period drilling respects partial months and maximum 31 local days
+ok 75 - period drilling respects partial months and maximum 31 local days
+  ---
+  duration_ms: 0.213113
+  type: 'test'
+  ...
+# Subtest: daily high/low summaries apply only to temperature metrics
+ok 76 - daily high/low summaries apply only to temperature metrics
+  ---
+  duration_ms: 0.357938
+  type: 'test'
+  ...
+# Subtest: visual means convert SI values once, retaining negatives, zeros, and nulls
+ok 77 - visual means convert SI values once, retaining negatives, zeros, and nulls
+  ---
+  duration_ms: 2.541014
+  type: 'test'
+  ...
+# Subtest: city color/order stay fixed across metric and unit changes without replacing missing means with zero
+ok 78 - city color/order stay fixed across metric and unit changes without replacing missing means with zero
+  ---
+  duration_ms: 3.068604
+  type: 'test'
+  ...
+# Subtest: comparison bounds use shared UTC dates, six-day lag, distinct coordinates and leap years
+ok 79 - comparison bounds use shared UTC dates, six-day lag, distinct coordinates and leap years
+  ---
+  duration_ms: 5.20966
+  type: 'test'
+  ...
+# Subtest: job identity, selection, units and completeness mismatch rejected before display
+ok 80 - job identity, selection, units and completeness mismatch rejected before display
+  ---
+  duration_ms: 27.841431
+  type: 'test'
+  ...
+# Subtest: partial summaries retain zero, null totals, units and common-hours caveat in accessible table
+ok 81 - partial summaries retain zero, null totals, units and common-hours caveat in accessible table
+  ---
+  duration_ms: 66.456905
+  type: 'test'
+  ...
+# Subtest: registration is lazy, coalesced, persisted and recovered without repeat registration
+ok 82 - registration is lazy, coalesced, persisted and recovered without repeat registration
+  ---
+  duration_ms: 1.961216
+  type: 'test'
+  ...
+# Subtest: storage failure before registration prevents mutation; failure after registration preserves credential for save retry
+ok 83 - storage failure before registration prevents mutation; failure after registration preserves credential for save retry
+  ---
+  duration_ms: 1.895261
+  type: 'test'
+  ...
+# Subtest: uncertain registration response and expired credentials never trigger automatic duplicate registration
+ok 84 - uncertain registration response and expired credentials never trigger automatic duplicate registration
+  ---
+  duration_ms: 0.961943
+  type: 'test'
+  ...
+# Subtest: comparison CSV quotes labels, neutralizes formulas and controls, and preserves numeric negatives
+ok 85 - comparison CSV quotes labels, neutralizes formulas and controls, and preserves numeric negatives
+  ---
+  duration_ms: 0.762535
+  type: 'test'
+  ...
+# Subtest: export uses displayed validated snapshot with SI summaries, exact counts, nulls and every source chunk
+ok 86 - export uses displayed validated snapshot with SI summaries, exact counts, nulls and every source chunk
+  ---
+  duration_ms: 59.347485
+  type: 'test'
+  ...
+# Subtest: CSV rejects malformed results and excessive chunk exports
+ok 87 - CSV rejects malformed results and excessive chunk exports
+  ---
+  duration_ms: 6.787771
+  type: 'test'
+  ...
+# Subtest: visual overview precedes closed detail table and explicitly distinguishes missing and unequal coverage
+ok 88 - visual overview precedes closed detail table and explicitly distinguishes missing and unequal coverage
+  ---
+  duration_ms: 11.351698
+  type: 'test'
+  ...
+# Subtest: current estimate keeps its own instant and rejects old/future/unfresh data
+ok 89 - current estimate keeps its own instant and rejects old/future/unfresh data
+  ---
+  duration_ms: 130.818841
+  type: 'test'
+  ...
+# Subtest: daily planning summary states an hourly maximum and only a broad daypart
+ok 90 - daily planning summary states an hourly maximum and only a broad daypart
+  ---
+  duration_ms: 54.435258
+  type: 'test'
+  ...
+# Subtest: zero and missing probability do not invent a likely rain period
+ok 91 - zero and missing probability do not invent a likely rain period
+  ---
+  duration_ms: 27.618869
+  type: 'test'
+  ...
+# Subtest: wet-bulb numerical range preserves missingness, zero and constant values without risk categories
+ok 92 - wet-bulb numerical range preserves missingness, zero and constant values without risk categories
+  ---
+  duration_ms: 86.371377
+  type: 'test'
+  ...
+# Subtest: wind compass retains from-direction and distinguishes missing direction from north and zero speed
+ok 93 - wind compass retains from-direction and distinguishes missing direction from north and zero speed
+  ---
+  duration_ms: 15.953486
+  type: 'test'
+  ...
+# Subtest: hour strip renders moon at night and zone-qualified times
+ok 94 - hour strip renders moon at night and zone-qualified times
+  ---
+  duration_ms: 32.893282
+  type: 'test'
+  ...
+# Subtest: positions actual values only; no fabricated position for stale, missing, equal or outside ranges
+ok 95 - positions actual values only; no fabricated position for stale, missing, equal or outside ranges
+  ---
+  duration_ms: 2.350954
+  type: 'test'
+  ...
+# Subtest: today range includes earlier hours, excludes adjacent local dates, and covers repeated DST hour
+ok 96 - today range includes earlier hours, excludes adjacent local dates, and covers repeated DST hour
+  ---
+  duration_ms: 37.682266
+  type: 'test'
+  ...
+# Subtest: readable exact units and truthful neutral descriptions independent of SVG
+ok 97 - readable exact units and truthful neutral descriptions independent of SVG
+  ---
+  duration_ms: 19.963084
+  type: 'test'
+  ...
+# Subtest: future eligibility preserves pinned run and rejects past/expired/mismatched catalogs
+ok 98 - future eligibility preserves pinned run and rejects past/expired/mismatched catalogs
+  ---
+  duration_ms: 20.014341
+  type: 'test'
+  ...
+# Subtest: playback spans advertised horizon within six-frame and 32-tile bounds, including sparse times
+ok 99 - playback spans advertised horizon within six-frame and 32-tile bounds, including sparse times
+  ---
+  duration_ms: 3.073042
+  type: 'test'
+  ...
+# Subtest: tile session serializes selected visible work, no-store XYZ, disposal fences queued requests
+ok 100 - tile session serializes selected visible work, no-store XYZ, disposal fences queued requests
+  ---
+  duration_ms: 127.132516
+  type: 'test'
+  ...
+# Subtest: 429 stops whole session and queued work; malformed/bounded PNG rejected; abort signals propagated
+ok 101 - 429 stops whole session and queued work; malformed/bounded PNG rejected; abort signals propagated
+  ---
+  duration_ms: 15.5221
+  type: 'test'
+  ...
+# Subtest: decoded tile cache is exact-run/frame/XYZ bounded, copied, expired and shared across sessions; cooldown cannot be bypassed
+ok 102 - decoded tile cache is exact-run/frame/XYZ bounded, copied, expired and shared across sessions; cooldown cannot be bypassed
+  ---
+  duration_ms: 66.974646
+  type: 'test'
+  ...
+# Subtest: expired forecasts are removed and slow responses cannot repopulate or display them
+ok 103 - expired forecasts are removed and slow responses cannot repopulate or display them
+  ---
+  duration_ms: 9.298859
+  type: 'test'
+  ...
+# Subtest: browser forecast XYZ, pinned times, same canvas, keyboard, stale, quota and regional gating
+ok 104 - browser forecast XYZ, pinned times, same canvas, keyboard, stale, quota and regional gating # SKIP
+  ---
+  duration_ms: 0.34285
+  type: 'test'
+  ...
+# Subtest: Tulsa effects preserve source limits and missing/boundary status without a safe category
+ok 105 - Tulsa effects preserve source limits and missing/boundary status without a safe category
+  ---
+  duration_ms: 22.870141
+  type: 'test'
+  ...
+# Subtest: effects keep all five source bands selectable in either unit system
+ok 106 - effects keep all five source bands selectable in either unit system
+  ---
+  duration_ms: 7.97525
+  type: 'test'
+  ...
+# Subtest: available summaries preserve zero, negative and all-missing values without imputing
+ok 107 - available summaries preserve zero, negative and all-missing values without imputing
+  ---
+  duration_ms: 4.457065
+  type: 'test'
+  ...
+# Subtest: daily ranges use UTC labels and available hour counts, never a fabricated complete day
+ok 108 - daily ranges use UTC labels and available hour counts, never a fabricated complete day
+  ---
+  duration_ms: 2.26433
+  type: 'test'
+  ...
+# Subtest: station visual screen excludes QC failures, unknowns, traces and presumed zeros; retains real zero
+ok 109 - station visual screen excludes QC failures, unknowns, traces and presumed zeros; retains real zero
+  ---
+  duration_ms: 0.619634
+  type: 'test'
+  ...
+# Subtest: UTC dates enforce leap months, 31-day bound and availability lag independently of DST
+ok 110 - UTC dates enforce leap months, 31-day bound and availability lag independently of DST
+  ---
+  duration_ms: 8.640051
+  type: 'test'
+  ...
+# Subtest: response identity and export stay tied to successful coordinates/dates, with safe label
+ok 111 - response identity and export stay tied to successful coordinates/dates, with safe label
+  ---
+  duration_ms: 15.210138
+  type: 'test'
+  ...
+# Subtest: partial history renders nullable units, source differences, UTC rain semantics and chart gaps
+ok 112 - partial history renders nullable units, source differences, UTC rain semantics and chart gaps
+  ---
+  duration_ms: 82.442593
+  type: 'test'
+  ...
+# Subtest: displayed normalized snapshot exports without fetch, with identical metadata, zeros and nulls
+ok 113 - displayed normalized snapshot exports without fetch, with identical metadata, zeros and nulls
+  ---
+  duration_ms: 14.612877
+  type: 'test'
+  ...
+# Subtest: Libre timelines preserve advertised epochs, reject invalid/stale catalogs and expire future frames
+ok 114 - Libre timelines preserve advertised epochs, reject invalid/stale catalogs and expire future frames
+  ---
+  duration_ms: 11.722741
+  type: 'test'
+  ...
+# Subtest: Libre visible tile cache is bounded and isolates returned bytes
+ok 115 - Libre visible tile cache is bounded and isolates returned bytes
+  ---
+  duration_ms: 1.127115
+  type: 'test'
+  ...
+# Subtest: Libre sessions pin header/PNG dimensions, reuse cache, and stop queued work on failure or cancellation
+ok 116 - Libre sessions pin header/PNG dimensions, reuse cache, and stop queued work on failure or cancellation
+  ---
+  duration_ms: 88.099972
+  type: 'test'
+  ...
+# Subtest: Libre playback samples the whole advertised horizon within visible tile capacity
+ok 117 - Libre playback samples the whole advertised horizon within visible tile capacity
+  ---
+  duration_ms: 0.556785
+  type: 'test'
+  ...
+# Subtest: Four eight-tile frames stay warm within the 32-tile decoded cache
+ok 118 - Four eight-tile frames stay warm within the 32-tile decoded cache
+  ---
+  duration_ms: 38.443559
+  type: 'test'
+  ...
+# Subtest: Mapbox config accepts only a bounded public token and defaults to no external provider
+ok 119 - Mapbox config accepts only a bounded public token and defaults to no external provider
+  ---
+  duration_ms: 3.343625
+  type: 'test'
+  ...
+# Subtest: map selection keeps independent sorted advertised timelines and regional radar
+ok 120 - map selection keeps independent sorted advertised timelines and regional radar
+  ---
+  duration_ms: 4.439611
+  type: 'test'
+  ...
+# Subtest: geographic marker uses CRS84 orientation and excludes outside bounds without wrapping antimeridian
+ok 121 - geographic marker uses CRS84 orientation and excludes outside bounds without wrapping antimeridian
+  ---
+  duration_ms: 0.558769
+  type: 'test'
+  ...
+# Subtest: frame validation rejects mismatched product/time and preserves unknown coverage/time warnings
+ok 122 - frame validation rejects mismatched product/time and preserves unknown coverage/time warnings
+  ---
+  duration_ms: 5.506543
+  type: 'test'
+  ...
+# Subtest: bounded frame memory revokes least-recently-used URLs, replacement and disposal
+ok 123 - bounded frame memory revokes least-recently-used URLs, replacement and disposal
+  ---
+  duration_ms: 0.841614
+  type: 'test'
+  ...
+# Subtest: interactive overlay requires explicit Mercator and nonwrapping geographic corners
+ok 124 - interactive overlay requires explicit Mercator and nonwrapping geographic corners
+  ---
+  duration_ms: 1.812614
+  type: 'test'
+  ...
+# Subtest: weather source identity survives loading, frame changes and failure without worker removal races
+ok 125 - weather source identity survives loading, frame changes and failure without worker removal races
+  ---
+  duration_ms: 2.193335
+  type: 'test'
+  ...
+# Subtest: recent playback timeline is capped, chronological and uses only advertised instants
+ok 126 - recent playback timeline is capped, chronological and uses only advertised instants
+  ---
+  duration_ms: 7.019469
+  type: 'test'
+  ...
+# Subtest: persistent radar sample colors match retained NOAA style, not invented rainfall classes
+ok 127 - persistent radar sample colors match retained NOAA style, not invented rainfall classes
+  ---
+  duration_ms: 23.834118
+  type: 'test'
+  ...
+# Subtest: actual mobile browser playback, keyboard scrub, pause, quota and URL cleanup
+ok 128 - actual mobile browser playback, keyboard scrub, pause, quota and URL cleanup # SKIP
+  ---
+  duration_ms: 0.540654
+  type: 'test'
+  ...
+# Subtest: shared metric definitions preserve conversions, missingness and display precision
+ok 129 - shared metric definitions preserve conversions, missingness and display precision
+  ---
+  duration_ms: 6.1168
+  type: 'test'
+  ...
+# Subtest: statistic labels make hourly probability and available-hour summaries explicit
+ok 130 - statistic labels make hourly probability and available-hour summaries explicit
+  ---
+  duration_ms: 0.348179
+  type: 'test'
+  ...
+# Subtest: service worker shows only bounded unexpired warnings, never incoming navigation URLs
+ok 131 - service worker shows only bounded unexpired warnings, never incoming navigation URLs
+  ---
+  duration_ms: 11.957616
+  type: 'test'
+  ...
+# Subtest: refresh coalesces wakeups, pauses hidden, resumes once due and stops without catch-up
+ok 132 - refresh coalesces wakeups, pauses hidden, resumes once due and stops without catch-up
+  ---
+  duration_ms: 12.478463
+  type: 'test'
+  ...
+# Subtest: timeout covers slow JSON body and aborts underlying request
+ok 133 - timeout covers slow JSON body and aborts underlying request
+  ---
+  duration_ms: 24.227864
+  type: 'test'
+  ...
+# Subtest: caller cancellation is preserved instead of becoming a timeout
+ok 134 - caller cancellation is preserved instead of becoming a timeout
+  ---
+  duration_ms: 7.666335
+  type: 'test'
+  ...
+# Subtest: structured unavailable errors retain the not-configured distinction on non-200 responses
+ok 135 - structured unavailable errors retain the not-configured distinction on non-200 responses
+  ---
+  duration_ms: 77.110961
+  type: 'test'
+  ...
+# Subtest: CSV export validates media type and applies body timeout
+ok 136 - CSV export validates media type and applies body timeout
+  ---
+  duration_ms: 25.959465
+  type: 'test'
+  ...
+# Subtest: protected JSON mutations carry only header credentials, reject remote targets and redirects
+ok 137 - protected JSON mutations carry only header credentials, reject remote targets and redirects
+  ---
+  duration_ms: 1.690042
+  type: 'test'
+  ...
+# Subtest: lighting follows location sunrise and sunset instants through the entire day
+ok 138 - lighting follows location sunrise and sunset instants through the entire day
+  ---
+  duration_ms: 2.073439
+  type: 'test'
+  ...
+# Subtest: offset/DST instants are equivalent and short days have nonoverlapping windows
+ok 139 - offset/DST instants are equivalent and short days have nonoverlapping windows
+  ---
+  duration_ms: 0.453509
+  type: 'test'
+  ...
+# Subtest: missing or invalid astronomy uses supplied daylight, while stale data stays neutral
+ok 140 - missing or invalid astronomy uses supplied daylight, while stale data stays neutral
+  ---
+  duration_ms: 0.28996
+  type: 'test'
+  ...
+# Subtest: nearby response identity, radius, candidate IDs and computed distance are validated
+ok 141 - nearby response identity, radius, candidate IDs and computed distance are validated
+  ---
+  duration_ms: 15.834241
+  type: 'test'
+  ...
+# Subtest: candidate metadata distinguishes nulls, city/station positions, eligibility and explicit load
+ok 142 - candidate metadata distinguishes nulls, city/station positions, eligibility and explicit load
+  ---
+  duration_ms: 64.238552
+  type: 'test'
+  ...
+# Subtest: explicit station and source calendar selection validates IDs, leap days, future and inclusive 366-day bounds
+ok 143 - explicit station and source calendar selection validates IDs, leap days, future and inclusive 366-day bounds
+  ---
+  duration_ms: 16.535339
+  type: 'test'
+  ...
+# Subtest: response guard rejects wrong station/date and malformed counts, quality, timeline or source link
+ok 144 - response guard rejects wrong station/date and malformed counts, quality, timeline or source link
+  ---
+  duration_ms: 22.740737
+  type: 'test'
+  ...
+# Subtest: station markup preserves flags, unaccepted numeric values, null/zero, coverage and unknown observation intervals
+ok 145 - station markup preserves flags, unaccepted numeric values, null/zero, coverage and unknown observation intervals
+  ---
+  duration_ms: 64.293486
+  type: 'test'
+  ...
+# Subtest: History retains reanalysis by default and station entry works independently without city or automatic loading
+ok 146 - History retains reanalysis by default and station entry works independently without city or automatic loading
+  ---
+  duration_ms: 49.08943
+  type: 'test'
+  ...
+# Subtest: worker excludes all data and release-check requests
+ok 147 - worker excludes all data and release-check requests
+  ---
+  duration_ms: 5.669452
+  type: 'test'
+  ...
+# Subtest: production shell installation caches generated entry assets
+ok 148 - production shell installation caches generated entry assets
+  ---
+  duration_ms: 89.424953
+  type: 'test'
+  ...
+# Subtest: three-release open tabs retain their assets; fallback never uses old HTML or icons
+ok 149 - three-release open tabs retain their assets; fallback never uses old HTML or icons
+  ---
+  duration_ms: 6.762994
+  type: 'test'
+  ...
+# Subtest: pruning waits for no windows and no competing install, preserving one prior shell
+ok 150 - pruning waits for no windows and no competing install, preserving one prior shell
+  ---
+  duration_ms: 4.237699
+  type: 'test'
+  ...
+# Subtest: release mismatch fails before cache writes and asset failure preserves active shell
+ok 151 - release mismatch fails before cache writes and asset failure preserves active shell
+  ---
+  duration_ms: 5.170076
+  type: 'test'
+  ...
+# Subtest: installation waits for explicit activation and ignores unrelated messages
+ok 152 - installation waits for explicit activation and ignores unrelated messages
+  ---
+  duration_ms: 3.093682
+  type: 'test'
+  ...
+# Subtest: reinstalling the same shell identity does not overwrite or delete its active cache
+ok 153 - reinstalling the same shell identity does not overwrite or delete its active cache
+  ---
+  duration_ms: 4.88206
+  type: 'test'
+  ...
+# Subtest: visited hashed lazy assets survive offline/old-release fallback but HTML/errors never cache
+ok 154 - visited hashed lazy assets survive offline/old-release fallback but HTML/errors never cache
+  ---
+  duration_ms: 4.772412
+  type: 'test'
+  ...
+# Subtest: WBGT marker requires successful co-timed eligible hour and fresh online state; never substitutes ordinary wet-bulb
+ok 155 - WBGT marker requires successful co-timed eligible hour and fresh online state; never substitutes ordinary wet-bulb
+  ---
+  duration_ms: 108.332346
+  type: 'test'
+  ...
+# Subtest: Tulsa exact endpoints retain ambiguity before display rounding and convert scale ticks
+ok 156 - Tulsa exact endpoints retain ambiguity before display rounding and convert scale ticks
+  ---
+  duration_ms: 126.906347
+  type: 'test'
+  ...
+# Subtest: visible 24-hour graph preserve real hour spacing, missing gaps, zero, bounds and accessible values
+ok 157 - visible 24-hour graph preserve real hour spacing, missing gaps, zero, bounds and accessible values
+  ---
+  duration_ms: 24.086807
+  type: 'test'
+  ...
+# Subtest: heat precautions precede trend without the removed lower estimate
+ok 158 - heat precautions precede trend without the removed lower estimate
+  ---
+  duration_ms: 4.232479
+  type: 'test'
+  ...
+# Subtest: heat interaction controls and compact hourly list preserve endpoints, all slots and missingness without removed disclosures
+ok 159 - heat interaction controls and compact hourly list preserve endpoints, all slots and missingness without removed disclosures
+  ---
+  duration_ms: 13.178439
+  type: 'test'
+  ...
+# Subtest: heat graph point labels distinguish DST repeated hours
+ok 160 - heat graph point labels distinguish DST repeated hours
+  ---
+  duration_ms: 12.815752
+  type: 'test'
+  ...
+# Subtest: equal bands center every interior value and leave exact boundaries neutral
+ok 161 - equal bands center every interior value and leave exact boundaries neutral
+  ---
+  duration_ms: 114.462411
+  type: 'test'
+  ...
+# Subtest: WMO weather icons distinguish precipitation, freezing, fog, snow and hail; unknown remains neutral
+ok 162 - WMO weather icons distinguish precipitation, freezing, fog, snow and hail; unknown remains neutral
+  ---
+  duration_ms: 35.451029
+  type: 'test'
+  ...
+# Subtest: weather theme uses supplied daylight and requires fresh current weather
+ok 163 - weather theme uses supplied daylight and requires fresh current weather
+  ---
+  duration_ms: 0.614995
+  type: 'test'
+  ...
+# Subtest: decorative scene renders deterministically without interactive or network elements
+ok 164 - decorative scene renders deterministically without interactive or network elements
+  ---
+  duration_ms: 19.94524
+  type: 'test'
+  ...
+# Subtest: all recognized weather scenes clear when current conditions are stale or missing
+ok 165 - all recognized weather scenes clear when current conditions are stale or missing
+  ---
+  duration_ms: 0.518893
+  type: 'test'
+  ...
+# Subtest: chart conversion keeps exact values and nulls, with distinct repeated DST instants
+ok 166 - chart conversion keeps exact values and nulls, with distinct repeated DST instants
+  ---
+  duration_ms: 3.529126
+  type: 'test'
+  ...
+# Subtest: missing intervals and independent nulls remain gaps without invented measurements
+ok 167 - missing intervals and independent nulls remain gaps without invented measurements
+  ---
+  duration_ms: 2.457286
+  type: 'test'
+  ...
+# Subtest: SI conversions retain missingness and legitimate zeros
+ok 168 - SI conversions retain missingness and legitimate zeros
+  ---
+  duration_ms: 9.618494
+  type: 'test'
+  ...
+# Subtest: local calendar uses location timezone across UTC midnight and DST repeat
+ok 169 - local calendar uses location timezone across UTC midnight and DST repeat
+  ---
+  duration_ms: 22.586014
+  type: 'test'
+  ...
+# Subtest: current conditions never borrow a future or expired hour
+ok 170 - current conditions never borrow a future or expired hour
+  ---
+  duration_ms: 0.371434
+  type: 'test'
+  ...
+# Subtest: runtime validation rejects old location and unordered timelines
+ok 171 - runtime validation rejects old location and unordered timelines
+  ---
+  duration_ms: 15.050096
+  type: 'test'
+  ...
+# Subtest: daily aggregation retains null-only temperatures and a repeated local hour
+ok 172 - daily aggregation retains null-only temperatures and a repeated local hour
+  ---
+  duration_ms: 1.671968
+  type: 'test'
+  ...
+# Subtest: midnight precipitation belongs to preceding date, missing intervals stay missing
+ok 173 - midnight precipitation belongs to preceding date, missing intervals stay missing
+  ---
+  duration_ms: 3.761176
+  type: 'test'
+  ...
+# Subtest: precipitation uses 23/25 actual intervals on spring/fall local DST days
+ok 174 - precipitation uses 23/25 actual intervals on spring/fall local DST days
+  ---
+  duration_ms: 33.342323
+  type: 'test'
+  ...
+# Subtest: night and unknown daylight never imply sunshine
+ok 175 - night and unknown daylight never imply sunshine
+  ---
+  duration_ms: 39.192097
+  type: 'test'
+  ...
+# Subtest: periods preserve repeated DST night hours and missing/partial rain
+ok 176 - periods preserve repeated DST night hours and missing/partial rain
+  ---
+  duration_ms: 120.797123
+  type: 'test'
+  ...
+# Subtest: astronomy uses exact local valid date and rejects mismatches and duplicate dates
+ok 177 - astronomy uses exact local valid date and rejects mismatches and duplicate dates
+  ---
+  duration_ms: 20.410711
+  type: 'test'
+  ...
+# Subtest: daily wording shows forecast conditions and hourly maxima without obscuring missing or DST hours
+ok 178 - daily wording shows forecast conditions and hourly maxima without obscuring missing or DST hours
+  ---
+  duration_ms: 10.733596
+  type: 'test'
+  ...
+# Subtest: wildfire area is bounded, clamps poles/date line and compares exact selection
+ok 179 - wildfire area is bounded, clamps poles/date line and compares exact selection
+  ---
+  duration_ms: 22.318446
+  type: 'test'
+  ...
+# Subtest: wildfire response guards bbox, timestamps, metadata and identity without name joins
+ok 180 - wildfire response guards bbox, timestamps, metadata and identity without name joins
+  ---
+  duration_ms: 91.191529
+  type: 'test'
+  ...
+# Subtest: wildfire rendering separates capture/edit/incident/retrieval, geometry and category evidence
+ok 181 - wildfire rendering separates capture/edit/incident/retrieval, geometry and category evidence
+  ---
+  duration_ms: 30.967234
+  type: 'test'
+  ...
+# Subtest: empty and initial/offline views do not claim all clear or load fixture data
+ok 182 - empty and initial/offline views do not claim all clear or load fixture data
+  ---
+  duration_ms: 32.740513
+  type: 'test'
+  ...
+# (node:4193771) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: sequential completion, validated result, shared cache identity and terminal admission release
+ok 183 - sequential completion, validated result, shared cache identity and terminal admission release
+  ---
+  duration_ms: 229.015913
+  type: 'test'
+  ...
+# Subtest: cancel from another actor aborts in-flight work and prevents publication
+ok 184 - cancel from another actor aborts in-flight work and prevents publication
+  ---
+  duration_ms: 23.488163
+  type: 'test'
+  ...
+# Subtest: revoke from another actor aborts in-flight work and prevents publication
+ok 185 - revoke from another actor aborts in-flight work and prevents publication
+  ---
+  duration_ms: 20.424077
+  type: 'test'
+  ...
+# Subtest: unowned payload and too-recent closing padding make no provider calls
+ok 186 - unowned payload and too-recent closing padding make no provider calls
+  ---
+  duration_ms: 16.182731
+  type: 'test'
+  ...
+# Subtest: quota denial and corrupt cached data fail closed without network fallback
+ok 187 - quota denial and corrupt cached data fail closed without network fallback
+  ---
+  duration_ms: 24.545336
+  type: 'test'
+  ...
+# Subtest: shutdown aborts and leaves running lease/admission recoverable; next attempt reuses validated chunks
+ok 188 - shutdown aborts and leaves running lease/admission recoverable; next attempt reuses validated chunks
+  ---
+  duration_ms: 71.956936
+  type: 'test'
+  ...
+# Subtest: lease takeover fences old result and retains new running admission
+ok 189 - lease takeover fences old result and retains new running admission
+  ---
+  duration_ms: 27.03902
+  type: 'test'
+  ...
+# Subtest: heartbeat renews during provider work and runOnce excludes same-instance concurrency
+ok 190 - heartbeat renews during provider work and runOnce excludes same-instance concurrency
+  ---
+  duration_ms: 78.179436
+  type: 'test'
+  ...
+# Subtest: 31-day chunks charge weight three and padding weight one before each request
+ok 191 - 31-day chunks charge weight three and padding weight one before each request
+  ---
+  duration_ms: 419.572198
+  type: 'test'
+  ...
+# Subtest: storage read failure and held cache lease fail without provider work
+ok 192 - storage read failure and held cache lease fail without provider work
+  ---
+  duration_ms: 21.215306
+  type: 'test'
+  ...
+# Subtest: wrong provenance and expired cache write lease are rejected before progress/publication
+ok 193 - wrong provenance and expired cache write lease are rejected before progress/publication
+  ---
+  duration_ms: 36.313272
+  type: 'test'
+  ...
+# Subtest: source retrieval offset -86400000 is rejected without caching or retry
+ok 194 - source retrieval offset -86400000 is rejected without caching or retry
+  ---
+  duration_ms: 17.449993
+  type: 'test'
+  ...
+# Subtest: source retrieval offset 1 is rejected without caching or retry
+ok 195 - source retrieval offset 1 is rejected without caching or retry
+  ---
+  duration_ms: 16.859043
+  type: 'test'
+  ...
+# Subtest: expired job aborts an uncooperative provider and never publishes
+ok 196 - expired job aborts an uncooperative provider and never publishes
+  ---
+  duration_ms: 20.944574
+  type: 'test'
+  ...
+# Subtest: fifteen-minute total fence stops further chunks even with renewed job lease
+ok 197 - fifteen-minute total fence stops further chunks even with renewed job lease
+  ---
+  duration_ms: 55.273837
+  type: 'test'
+  ...
+# Subtest: maximum five-city five-year fixture memory audit
+ok 198 - maximum five-city five-year fixture memory audit # SKIP
+  ---
+  duration_ms: 0.356034
+  type: 'test'
+  ...
+# (node:4193786) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: sequential completion, validated result, shared cache identity and terminal admission release
+ok 199 - sequential completion, validated result, shared cache identity and terminal admission release
+  ---
+  duration_ms: 187.451151
+  type: 'test'
+  ...
+# Subtest: cancel from another actor aborts in-flight work and prevents publication
+ok 200 - cancel from another actor aborts in-flight work and prevents publication
+  ---
+  duration_ms: 54.741418
+  type: 'test'
+  ...
+# Subtest: revoke from another actor aborts in-flight work and prevents publication
+ok 201 - revoke from another actor aborts in-flight work and prevents publication
+  ---
+  duration_ms: 36.5123
+  type: 'test'
+  ...
+# Subtest: unowned payload and too-recent closing padding make no provider calls
+ok 202 - unowned payload and too-recent closing padding make no provider calls
+  ---
+  duration_ms: 20.038677
+  type: 'test'
+  ...
+# Subtest: quota denial and corrupt cached data fail closed without network fallback
+ok 203 - quota denial and corrupt cached data fail closed without network fallback
+  ---
+  duration_ms: 33.619278
+  type: 'test'
+  ...
+# Subtest: shutdown aborts and leaves running lease/admission recoverable; next attempt reuses validated chunks
+ok 204 - shutdown aborts and leaves running lease/admission recoverable; next attempt reuses validated chunks
+  ---
+  duration_ms: 96.569479
+  type: 'test'
+  ...
+# Subtest: lease takeover fences old result and retains new running admission
+ok 205 - lease takeover fences old result and retains new running admission
+  ---
+  duration_ms: 13.232291
+  type: 'test'
+  ...
+# Subtest: heartbeat renews during provider work and runOnce excludes same-instance concurrency
+ok 206 - heartbeat renews during provider work and runOnce excludes same-instance concurrency
+  ---
+  duration_ms: 67.7052
+  type: 'test'
+  ...
+# Subtest: 31-day chunks charge weight three and padding weight one before each request
+ok 207 - 31-day chunks charge weight three and padding weight one before each request
+  ---
+  duration_ms: 213.437939
+  type: 'test'
+  ...
+# Subtest: storage read failure and held cache lease fail without provider work
+ok 208 - storage read failure and held cache lease fail without provider work
+  ---
+  duration_ms: 37.16135
+  type: 'test'
+  ...
+# Subtest: wrong provenance and expired cache write lease are rejected before progress/publication
+ok 209 - wrong provenance and expired cache write lease are rejected before progress/publication
+  ---
+  duration_ms: 58.8489
+  type: 'test'
+  ...
+# (node:4193803) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: quiet hours use place zone across midnight and only official active warning policy
+ok 210 - quiet hours use place zone across midnight and only official active warning policy
+  ---
+  duration_ms: 25.419081
+  type: 'test'
+  ...
+# Subtest: notification worker success: bounded, no duplicate and no invalid-source send
+ok 211 - notification worker success: bounded, no duplicate and no invalid-source send
+  ---
+  duration_ms: 29.637834
+  type: 'test'
+  ...
+# Subtest: notification worker revoked: bounded, no duplicate and no invalid-source send
+ok 212 - notification worker revoked: bounded, no duplicate and no invalid-source send
+  ---
+  duration_ms: 5.85327
+  type: 'test'
+  ...
+# Subtest: notification worker expired-endpoint: bounded, no duplicate and no invalid-source send
+ok 213 - notification worker expired-endpoint: bounded, no duplicate and no invalid-source send
+  ---
+  duration_ms: 7.783518
+  type: 'test'
+  ...
+# Subtest: notification worker stale: bounded, no duplicate and no invalid-source send
+ok 214 - notification worker stale: bounded, no duplicate and no invalid-source send
+  ---
+  duration_ms: 5.723494
+  type: 'test'
+  ...
+# Subtest: notification worker mismatch: bounded, no duplicate and no invalid-source send
+ok 215 - notification worker mismatch: bounded, no duplicate and no invalid-source send
+  ---
+  duration_ms: 5.871955
+  type: 'test'
+  ...
+# Subtest: notification worker ambiguous: bounded, no duplicate and no invalid-source send
+ok 216 - notification worker ambiguous: bounded, no duplicate and no invalid-source send
+  ---
+  duration_ms: 7.331902
+  type: 'test'
+  ...
+# (node:4193804) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: terminal-before-release restart, idempotent reconciliation and retained lookup isolation
+ok 217 - terminal-before-release restart, idempotent reconciliation and retained lookup isolation
+  ---
+  duration_ms: 24.490302
+  type: 'test'
+  ...
+# Subtest: exhausted acquire failure and external queued cancellation release even after revocation
+ok 218 - exhausted acquire failure and external queued cancellation release even after revocation
+  ---
+  duration_ms: 8.491048
+  type: 'test'
+  ...
+# Subtest: keyset pages retain ambiguous absent, queued and expired-running reservations without starvation
+ok 219 - keyset pages retain ambiguous absent, queued and expired-running reservations without starvation
+  ---
+  duration_ms: 19.873754
+  type: 'test'
+  ...
+# Subtest: retry before fence retains queued admission; committed fence survives release failure and restart
+ok 220 - retry before fence retains queued admission; committed fence survives release failure and restart
+  ---
+  duration_ms: 19.338901
+  type: 'test'
+  ...
+# Subtest: failed job with attempts left cannot retry between fence and release
+ok 221 - failed job with attempts left cannot retry between fence and release
+  ---
+  duration_ms: 12.615242
+  type: 'test'
+  ...
+# Subtest: shutdown attempts every database close and counts failures without exposing details
+ok 222 - shutdown attempts every database close and counts failures without exposing details
+  ---
+  duration_ms: 8.50287
+  type: 'test'
+  ...
+# (node:4193823) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: production verification wiring captures baseline and named candidates under quota without raw heat payloads
+ok 223 - production verification wiring captures baseline and named candidates under quota without raw heat payloads
+  ---
+  duration_ms: 182.001065
+  type: 'test'
+  ...
+# (node:4193848) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: captures baseline, budget-admitted candidate and schedules the target without live calls
+ok 224 - captures baseline, budget-admitted candidate and schedules the target without live calls
+  ---
+  duration_ms: 84.558882
+  type: 'test'
+  ...
+# Subtest: candidate is opt-in by explicit budget and daily cadence while baseline uses six hours
+ok 225 - candidate is opt-in by explicit budget and daily cadence while baseline uses six hours
+  ---
+  duration_ms: 27.629259
+  type: 'test'
+  ...
+# Subtest: later cycle archives only requested QC observation times before capturing a new forecast
+ok 226 - later cycle archives only requested QC observation times before capturing a new forecast
+  ---
+  duration_ms: 40.987749
+  type: 'test'
+  ...
+# Subtest: provider failures back off durably and do not create partial forecast snapshots
+ok 227 - provider failures back off durably and do not create partial forecast snapshots
+  ---
+  duration_ms: 9.898725
+  type: 'test'
+  ...
+# Subtest: shutdown and same-instance concurrency abort provider work without publication
+ok 228 - shutdown and same-instance concurrency abort provider work without publication
+  ---
+  duration_ms: 6.790296
+  type: 'test'
+  ...
+# Subtest: NWS adapter preserves source time/QC and never treats shifted precipitation periods as forecast-hour truth
+ok 229 - NWS adapter preserves source time/QC and never treats shifted precipitation periods as forecast-hour truth
+  ---
+  duration_ms: 21.447216
+  type: 'test'
+  ...
+# Maximum fixture: 295 chunks, 607557 bytes, 27086 JSON nodes
+# Precision/identity stress fixture: 878962 bytes, 27086 JSON nodes
+# Subtest: bounded query, frozen per-city source envelope and canonical plan validation
+ok 230 - bounded query, frozen per-city source envelope and canonical plan validation
+  ---
+  duration_ms: 107.468499
+  type: 'test'
+  ...
+# Subtest: local DST days contain 23/25 distinct instants; closing amounts belong once
+ok 231 - local DST days contain 23/25 distinct instants; closing amounts belong once
+  ---
+  duration_ms: 96.660592
+  type: 'test'
+  ...
+# Subtest: fractional boundaries retain instant temperatures and mark only interval totals unsupported
+ok 232 - fractional boundaries retain instant temperatures and mark only interval totals unsupported
+  ---
+  duration_ms: 16.106607
+  type: 'test'
+  ...
+# Subtest: missingness is per-field, distinguishes absence/null and never turns null into zero
+ok 233 - missingness is per-field, distinguishes absence/null and never turns null into zero
+  ---
+  duration_ms: 29.614921
+  type: 'test'
+  ...
+# Subtest: day weighted means differ from hour weighting; average high/low, extrema ties and nearest rank
+ok 234 - day weighted means differ from hour weighting; average high/low, extrema ties and nearest rank
+  ---
+  duration_ms: 231.835405
+  type: 'test'
+  ...
+# Subtest: partial headline stays null; available daily and sample statistics are explicit
+ok 235 - partial headline stays null; available daily and sample statistics are explicit
+  ---
+  duration_ms: 40.024384
+  type: 'test'
+  ...
+# Subtest: leap month weighting, exact wet-day/cloud boundaries, sunshine independent of precipitation
+ok 236 - leap month weighting, exact wet-day/cloud boundaries, sunshine independent of precipitation
+  ---
+  duration_ms: 763.394423
+  type: 'test'
+  ...
+# Subtest: all planned delivery and fixed request/grid identities are mandatory
+ok 237 - all planned delivery and fixed request/grid identities are mandatory
+  ---
+  duration_ms: 547.189954
+  type: 'test'
+  ...
+# Subtest: five-year five-city climatology is twelve pooled months and fits existing JSON limits
+ok 238 - five-year five-city climatology is twelve pooled months and fits existing JSON limits
+  ---
+  duration_ms: 10388.06557
+  type: 'test'
+  ...
+# Subtest: daily mean, average daily high and absolute hourly high are distinct quantities
+ok 239 - daily mean, average daily high and absolute hourly high are distinct quantities
+  ---
+  duration_ms: 6.76597
+  type: 'test'
+  ...
+# Subtest: long identities and full-precision five-year summaries remain bounded
+ok 240 - long identities and full-precision five-year summaries remain bounded
+  ---
+  duration_ms: 8173.898737
+  type: 'test'
+  ...
+# Subtest: hourly distribution uses nearest rank, and all-null source is no-data with unknown days
+ok 241 - hourly distribution uses nearest rank, and all-null source is no-data with unknown days
+  ---
+  duration_ms: 8.338129
+  type: 'test'
+  ...
+# Subtest: 366-day leap-year plan is deterministic, bounded and contains contiguous max31-day queries plus closing date
+ok 242 - 366-day leap-year plan is deterministic, bounded and contains contiguous max31-day queries plus closing date
+  ---
+  duration_ms: 39.657198
+  type: 'test'
+  ...
+# Subtest: reject invalid dates, >366days, coordinates, duplicate identity/coordinates and nonbounded locations
+ok 243 - reject invalid dates, >366days, coordinates, duplicate identity/coordinates and nonbounded locations
+  ---
+  duration_ms: 7.551117
+  type: 'test'
+  ...
+# Subtest: midnight precipitation includes closing midnight, excludes initial overlap and unused padding; instant range differs
+ok 244 - midnight precipitation includes closing midnight, excludes initial overlap and unused padding; instant range differs
+  ---
+  duration_ms: 28.498846
+  type: 'test'
+  ...
+# Subtest: internal chunk midnight included exactly once and leap/DST UTC slots retain equal weights
+ok 245 - internal chunk midnight included exactly once and leap/DST UTC slots retain equal weights
+  ---
+  duration_ms: 192.749761
+  type: 'test'
+  ...
+# Subtest: missing denominators separate absent timestamps and null cells; zero survives and no complete rainfall total is invented
+ok 246 - missing denominators separate absent timestamps and null cells; zero survives and no complete rainfall total is invented
+  ---
+  duration_ms: 49.302383
+  type: 'test'
+  ...
+# Subtest: missing closing rainfall makes total unavailable; missing excluded overlap/padding does not damage selected completeness
+ok 247 - missing closing rainfall makes total unavailable; missing excluded overlap/padding does not damage selected completeness
+  ---
+  duration_ms: 19.7026
+  type: 'test'
+  ...
+# Subtest: merge rejects missing, duplicate, unknown, overlapping, noncommon window and corrupted chunks/plans
+ok 248 - merge rejects missing, duplicate, unknown, overlapping, noncommon window and corrupted chunks/plans
+  ---
+  duration_ms: 132.515345
+  type: 'test'
+  ...
+# Subtest: mixed grid/elevation/model/units/downscaling/request source rejected; individual retrieval times retained
+ok 249 - mixed grid/elevation/model/units/downscaling/request source rejected; individual retrieval times retained
+  ---
+  duration_ms: 182.88005
+  type: 'test'
+  ...
+# Subtest: New York spring/fall days have exact 23/25-hour boundaries and repeated-hour dates
+ok 250 - New York spring/fall days have exact 23/25-hour boundaries and repeated-hour dates
+  ---
+  duration_ms: 36.583555
+  type: 'test'
+  ...
+# Subtest: UTC rollover in Honolulu, Tokyo and Kiritimati does not use host timezone
+ok 251 - UTC rollover in Honolulu, Tokyo and Kiritimati does not use host timezone
+  ---
+  duration_ms: 7.22002
+  type: 'test'
+  ...
+# Subtest: fractional offsets retain exact minute boundaries and historical changes
+ok 252 - fractional offsets retain exact minute boundaries and historical changes
+  ---
+  duration_ms: 9.148394
+  type: 'test'
+  ...
+# Subtest: missing and repeated midnight use the first actual instant of the day
+ok 253 - missing and repeated midnight use the first actual instant of the day
+  ---
+  duration_ms: 3.589491
+  type: 'test'
+  ...
+# Subtest: Samoa skipped date rejects explicitly; adjacent days remain contiguous
+ok 254 - Samoa skipped date rejects explicitly; adjacent days remain contiguous
+  ---
+  duration_ms: 3.444486
+  type: 'test'
+  ...
+# Subtest: strict Gregorian validation, leap/month/year boundaries and supported year limits
+ok 255 - strict Gregorian validation, leap/month/year boundaries and supported year limits
+  ---
+  duration_ms: 3.786434
+  type: 'test'
+  ...
+# Subtest: invalid timezone and invalid instants fail explicitly
+ok 256 - invalid timezone and invalid instants fail explicitly
+  ---
+  duration_ms: 1.160048
+  type: 'test'
+  ...
+# Subtest: UTC envelope includes closing midnight for preceding-hour records, with no implicit padding
+ok 257 - UTC envelope includes closing midnight for preceding-hour records, with no implicit padding
+  ---
+  duration_ms: 0.981359
+  type: 'test'
+  ...
+# Subtest: FAO conversion, raw inputs, geometry and separate components survive the REST contract
+ok 258 - FAO conversion, raw inputs, geometry and separate components survive the REST contract
+  ---
+  duration_ms: 63.876215
+  type: 'test'
+  ...
+# Subtest: calm night retains legitimate zeros and the solver floor
+ok 259 - calm night retains legitimate zeros and the solver floor
+  ---
+  duration_ms: 0.968104
+  type: 'test'
+  ...
+# Subtest: missing inputs never use mean GHI or ordinary wet bulb as substitutes
+ok 260 - missing inputs never use mean GHI or ordinary wet bulb as substitutes
+  ---
+  duration_ms: 1.227095
+  type: 'test'
+  ...
+# Subtest: invalid dates, unsupported years/domain and malformed values fail explicitly
+ok 261 - invalid dates, unsupported years/domain and malformed values fail explicitly
+  ---
+  duration_ms: 1.062383
+  type: 'test'
+  ...
+# Subtest: adapter preserves independent C oracle horizon, cap, domain and failure diagnostics
+ok 262 - adapter preserves independent C oracle horizon, cap, domain and failure diagnostics
+  ---
+  duration_ms: 19.413753
+  type: 'test'
+  ...
+# Subtest: independent C oracle: dry
+ok 263 - independent C oracle: dry
+  ---
+  duration_ms: 5.966284
+  type: 'test'
+  ...
+# Subtest: independent C oracle: humid
+ok 264 - independent C oracle: humid
+  ---
+  duration_ms: 0.696008
+  type: 'test'
+  ...
+# Subtest: independent C oracle: night
+ok 265 - independent C oracle: night
+  ---
+  duration_ms: 0.286523
+  type: 'test'
+  ...
+# Subtest: independent C oracle: wind-0
+ok 266 - independent C oracle: wind-0
+  ---
+  duration_ms: 5.255217
+  type: 'test'
+  ...
+# Subtest: independent C oracle: wind-0.12
+ok 267 - independent C oracle: wind-0.12
+  ---
+  duration_ms: 0.418112
+  type: 'test'
+  ...
+# Subtest: independent C oracle: wind-0.13
+ok 268 - independent C oracle: wind-0.13
+  ---
+  duration_ms: 0.304347
+  type: 'test'
+  ...
+# Subtest: independent C oracle: wind-0.14
+ok 269 - independent C oracle: wind-0.14
+  ---
+  duration_ms: 0.434433
+  type: 'test'
+  ...
+# Subtest: independent C oracle: pressure-1013.25
+ok 270 - independent C oracle: pressure-1013.25
+  ---
+  duration_ms: 0.293015
+  type: 'test'
+  ...
+# Subtest: independent C oracle: pressure-850
+ok 271 - independent C oracle: pressure-850
+  ---
+  duration_ms: 2.578095
+  type: 'test'
+  ...
+# Subtest: independent C oracle: pressure-750
+ok 272 - independent C oracle: pressure-750
+  ---
+  duration_ms: 1.056612
+  type: 'test'
+  ...
+# Subtest: independent C oracle: sunrise-11:00
+ok 273 - independent C oracle: sunrise-11:00
+  ---
+  duration_ms: 0.261646
+  type: 'test'
+  ...
+# Subtest: independent C oracle: sunrise-11:30
+ok 274 - independent C oracle: sunrise-11:30
+  ---
+  duration_ms: 0.203425
+  type: 'test'
+  ...
+# Subtest: independent C oracle: sunrise-12:00
+ok 275 - independent C oracle: sunrise-12:00
+  ---
+  duration_ms: 0.168168
+  type: 'test'
+  ...
+# Subtest: independent C oracle: sunset-00:00
+ok 276 - independent C oracle: sunset-00:00
+  ---
+  duration_ms: 0.183167
+  type: 'test'
+  ...
+# Subtest: independent C oracle: sunset-01:00
+ok 277 - independent C oracle: sunset-01:00
+  ---
+  duration_ms: 0.166906
+  type: 'test'
+  ...
+# Subtest: independent C oracle: sunset-02:00
+ok 278 - independent C oracle: sunset-02:00
+  ---
+  duration_ms: 0.165564
+  type: 'test'
+  ...
+# Subtest: independent C oracle: alaska-summer
+ok 279 - independent C oracle: alaska-summer
+  ---
+  duration_ms: 0.468287
+  type: 'test'
+  ...
+# Subtest: independent C oracle: alaska-winter
+ok 280 - independent C oracle: alaska-winter
+  ---
+  duration_ms: 0.296642
+  type: 'test'
+  ...
+# Subtest: independent C oracle: hawaii
+ok 281 - independent C oracle: hawaii
+  ---
+  duration_ms: 0.29563
+  type: 'test'
+  ...
+# Subtest: independent C oracle: calendar-1950-01-01T00:00:00Z
+ok 282 - independent C oracle: calendar-1950-01-01T00:00:00Z
+  ---
+  duration_ms: 0.313594
+  type: 'test'
+  ...
+# Subtest: independent C oracle: calendar-1991-06-15T20:00:00Z
+ok 283 - independent C oracle: calendar-1991-06-15T20:00:00Z
+  ---
+  duration_ms: 0.305879
+  type: 'test'
+  ...
+# Subtest: independent C oracle: calendar-2000-02-29T12:00:00Z
+ok 284 - independent C oracle: calendar-2000-02-29T12:00:00Z
+  ---
+  duration_ms: 0.30122
+  type: 'test'
+  ...
+# Subtest: independent C oracle: calendar-2020-12-31T23:59:00Z
+ok 285 - independent C oracle: calendar-2020-12-31T23:59:00Z
+  ---
+  duration_ms: 0.303836
+  type: 'test'
+  ...
+# Subtest: independent C oracle: calendar-2049-12-31T23:59:00Z
+ok 286 - independent C oracle: calendar-2049-12-31T23:59:00Z
+  ---
+  duration_ms: 1.468713
+  type: 'test'
+  ...
+# Subtest: independent C oracle: saturated
+ok 287 - independent C oracle: saturated
+  ---
+  duration_ms: 0.321208
+  type: 'test'
+  ...
+# Subtest: independent C oracle: strong-wind
+ok 288 - independent C oracle: strong-wind
+  ---
+  duration_ms: 0.309557
+  type: 'test'
+  ...
+# Subtest: independent C oracle: solar-cap
+ok 289 - independent C oracle: solar-cap
+  ---
+  duration_ms: 0.309756
+  type: 'test'
+  ...
+# Subtest: independent C oracle: stress
+ok 290 - independent C oracle: stress
+  ---
+  duration_ms: 0.504175
+  type: 'test'
+  ...
+# Subtest: invalid, missing, unsupported and temporal inputs are explicit
+ok 291 - invalid, missing, unsupported and temporal inputs are explicit
+  ---
+  duration_ms: 0.551314
+  type: 'test'
+  ...
+# Subtest: floor, cap, extrapolation and provenance remain visible
+ok 292 - floor, cap, extrapolation and provenance remain visible
+  ---
+  duration_ms: 4.167366
+  type: 'test'
+  ...
+# Subtest: activity guidance is separate from metrics and never creates a category
+ok 293 - activity guidance is separate from metrics and never creates a category
+  ---
+  duration_ms: 1.006668
+  type: 'test'
+  ...
+# Subtest: every printed endpoint is unresolved while nearby unrounded values retain their band
+ok 294 - every printed endpoint is unresolved while nearby unrounded values retain their band
+  ---
+  duration_ms: 2.625415
+  type: 'test'
+  ...
+# Subtest: viewport clips only marker, retains true value and reference band, and positions monotonically
+ok 295 - viewport clips only marker, retains true value and reference band, and positions monotonically
+  ---
+  duration_ms: 4.168658
+  type: 'test'
+  ...
+# Subtest: wrong metrics, missing/nonfinite values and invalid domains never produce markers
+ok 296 - wrong metrics, missing/nonfinite values and invalid domains never produce markers
+  ---
+  duration_ms: 2.378657
+  type: 'test'
+  ...
+# Subtest: source description is immutable and keeps categorical notifications disabled
+ok 297 - source description is immutable and keeps categorical notifications disabled
+  ---
+  duration_ms: 0.223764
+  type: 'test'
+  ...
+# (node:4193962) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: explicit ERA5 query, SI data, UTC DST timeline and independent provenance
+ok 298 - explicit ERA5 query, SI data, UTC DST timeline and independent provenance
+  ---
+  duration_ms: 187.442254
+  type: 'test'
+  ...
+# Subtest: null fields, absent variable, and omitted timestamp preserve distinct missingness
+ok 299 - null fields, absent variable, and omitted timestamp preserve distinct missingness
+  ---
+  duration_ms: 8.172985
+  type: 'test'
+  ...
+# Subtest: empty and all-null responses return no_data completeness without invented measurements
+ok 300 - empty and all-null responses return no_data completeness without invented measurements
+  ---
+  duration_ms: 8.422679
+  type: 'test'
+  ...
+# Subtest: invalid dates/coordinates, 32-day spans, future and recent domain rejected without network
+ok 301 - invalid dates/coordinates, 32-day spans, future and recent domain rejected without network
+  ---
+  duration_ms: 2.59694
+  type: 'test'
+  ...
+# Subtest: malformed schema, values, units, lengths and non-hourly/duplicate/outside times fail
+ok 302 - malformed schema, values, units, lengths and non-hourly/duplicate/outside times fail
+  ---
+  duration_ms: 42.035554
+  type: 'test'
+  ...
+# Subtest: HTTP errors, Retry-After, malformed JSON/content and decompressed size are bounded
+ok 303 - HTTP errors, Retry-After, malformed JSON/content and decompressed size are bounded
+  ---
+  duration_ms: 5.387277
+  type: 'test'
+  ...
+# Subtest: pre-abort and in-flight abort preserve reason; query identity is snapshotted
+ok 304 - pre-abort and in-flight abort preserve reason; query identity is snapshotted
+  ---
+  duration_ms: 9.861665
+  type: 'test'
+  ...
+# Subtest: timeout covers stalled fetch and response stream
+ok 305 - timeout covers stalled fetch and response stream
+  ---
+  duration_ms: 13.671583
+  type: 'test'
+  ...
+# Subtest: retained ERA5 live probe replays nine fields without new network
+ok 306 - retained ERA5 live probe replays nine fields without new network
+  ---
+  duration_ms: 5.633353
+  type: 'test'
+  ...
+# Subtest: new fields retain null, absent variables, zero and unknown codes without invented events
+ok 307 - new fields retain null, absent variables, zero and unknown codes without invented events
+  ---
+  duration_ms: 3.518747
+  type: 'test'
+  ...
+# Subtest: new fields reject wrong units, lengths and range violations
+ok 308 - new fields reject wrong units, lengths and range violations
+  ---
+  duration_ms: 10.973321
+  type: 'test'
+  ...
+# Subtest: canonical snapshot rejects tampered identity, timeline, missingness and counts
+ok 309 - canonical snapshot rejects tampered identity, timeline, missingness and counts
+  ---
+  duration_ms: 17.040336
+  type: 'test'
+  ...
+# (node:4194022) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: explicit ERA5 query, SI data, UTC DST timeline and independent provenance
+ok 310 - explicit ERA5 query, SI data, UTC DST timeline and independent provenance
+  ---
+  duration_ms: 156.359442
+  type: 'test'
+  ...
+# Subtest: null fields, absent variable, and omitted timestamp preserve distinct missingness
+ok 311 - null fields, absent variable, and omitted timestamp preserve distinct missingness
+  ---
+  duration_ms: 7.770553
+  type: 'test'
+  ...
+# Subtest: empty and all-null responses return no_data completeness without invented measurements
+ok 312 - empty and all-null responses return no_data completeness without invented measurements
+  ---
+  duration_ms: 4.589897
+  type: 'test'
+  ...
+# Subtest: invalid dates/coordinates, 32-day spans, future and recent domain rejected without network
+ok 313 - invalid dates/coordinates, 32-day spans, future and recent domain rejected without network
+  ---
+  duration_ms: 5.750114
+  type: 'test'
+  ...
+# Subtest: malformed schema, values, units, lengths and non-hourly/duplicate/outside times fail
+ok 314 - malformed schema, values, units, lengths and non-hourly/duplicate/outside times fail
+  ---
+  duration_ms: 19.673586
+  type: 'test'
+  ...
+# Subtest: HTTP errors, Retry-After, malformed JSON/content and decompressed size are bounded
+ok 315 - HTTP errors, Retry-After, malformed JSON/content and decompressed size are bounded
+  ---
+  duration_ms: 5.222424
+  type: 'test'
+  ...
+# Subtest: pre-abort and in-flight abort preserve reason; query identity is snapshotted
+ok 316 - pre-abort and in-flight abort preserve reason; query identity is snapshotted
+  ---
+  duration_ms: 6.574517
+  type: 'test'
+  ...
+# Subtest: timeout covers stalled fetch and response stream
+ok 317 - timeout covers stalled fetch and response stream
+  ---
+  duration_ms: 4.944268
+  type: 'test'
+  ...
+# Subtest: CSV deterministic SI rows, original metadata, nulls and spreadsheet text escaping
+ok 318 - CSV deterministic SI rows, original metadata, nulls and spreadsheet text escaping
+  ---
+  duration_ms: 35.332895
+  type: 'test'
+  ...
+# (node:4194023) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: registration authenticates with digest only; malformed, wrong, unknown and ID-only credentials denied
+ok 319 - registration authenticates with digest only; malformed, wrong, unknown and ID-only credentials denied
+  ---
+  duration_ms: 17.171595
+  type: 'test'
+  ...
+# Subtest: two connections enforce ownership, active admission and terminal release without changing read ownership
+ok 320 - two connections enforce ownership, active admission and terminal release without changing read ownership
+  ---
+  duration_ms: 6.20713
+  type: 'test'
+  ...
+# Subtest: revocation and deletion immediately fence other connections and cleanup removes revoked records
+ok 321 - revocation and deletion immediately fence other connections and cleanup removes revoked records
+  ---
+  duration_ms: 5.974921
+  type: 'test'
+  ...
+# Subtest: expiry is exact across restart and orphan reservation remains charged until expiry
+ok 322 - expiry is exact across restart and orphan reservation remains charged until expiry
+  ---
+  duration_ms: 12.147235
+  type: 'test'
+  ...
+# Subtest: installation and mapping count limits persist across connections; release does not bypass retention cap
+ok 323 - installation and mapping count limits persist across connections; release does not bypass retention cap
+  ---
+  duration_ms: 8.589725
+  type: 'test'
+  ...
+# Subtest: bad input, different persistent config, rollback and lock contention fail closed
+ok 324 - bad input, different persistent config, rollback and lock contention fail closed
+  ---
+  duration_ms: 23.616857
+  type: 'test'
+  ...
+# (node:4194038) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: independent connections compete, recover at exact expiry, and fence all late writes
+ok 325 - independent connections compete, recover at exact expiry, and fence all late writes
+  ---
+  duration_ms: 15.47479
+  type: 'test'
+  ...
+# Subtest: progress monotonic per attempt, renew never shortens or revives expired lease
+ok 326 - progress monotonic per attempt, renew never shortens or revives expired lease
+  ---
+  duration_ms: 5.471748
+  type: 'test'
+  ...
+# Subtest: explicit bounded retry and delayed availability survive orderly restart
+ok 327 - explicit bounded retry and delayed availability survive orderly restart
+  ---
+  duration_ms: 9.879518
+  type: 'test'
+  ...
+# Subtest: expired final attempt becomes failed and restart recovers abandoned running work
+ok 328 - expired final attempt becomes failed and restart recovers abandoned running work
+  ---
+  duration_ms: 5.227515
+  type: 'test'
+  ...
+# Subtest: cancel queued/running is terminal and fences late completion
+ok 329 - cancel queued/running is terminal and fences late completion
+  ---
+  duration_ms: 5.08261
+  type: 'test'
+  ...
+# Subtest: fixed lifetime hides all expired states, clamps lease, and cleanup is bounded
+ok 330 - fixed lifetime hides all expired states, clamps lease, and cleanup is bounded
+  ---
+  duration_ms: 7.870563
+  type: 'test'
+  ...
+# Subtest: JSON, job count and combined byte limits fail atomically; duplicate id never overwrites
+ok 331 - JSON, job count and combined byte limits fail atomically; duplicate id never overwrites
+  ---
+  duration_ms: 8.098294
+  type: 'test'
+  ...
+# Subtest: configuration and backwards clock fail closed; kind filtering and input bounds
+ok 332 - configuration and backwards clock fail closed; kind filtering and input bounds
+  ---
+  duration_ms: 4.531296
+  type: 'test'
+  ...
+# Subtest: busy writer fails within configured timeout without changing job
+ok 333 - busy writer fails within configured timeout without changing job
+  ---
+  duration_ms: 27.494994
+  type: 'test'
+  ...
+# Subtest: source attribution, pinned arithmetic, twelve future quarter-hours, midnight horizon
+ok 334 - source attribution, pinned arithmetic, twelve future quarter-hours, midnight horizon
+  ---
+  duration_ms: 13.155987
+  type: 'test'
+  ...
+# Subtest: calendar, minute, horizon, future retrieval and four-hour run age fail closed
+ok 335 - calendar, minute, horizon, future retrieval and four-hour run age fail closed
+  ---
+  duration_ms: 1.645277
+  type: 'test'
+  ...
+# Subtest: explicit allowlisted XYZ north-origin URL; archive, past, malformed, AK/HI requests rejected
+ok 336 - explicit allowlisted XYZ north-origin URL; archive, past, malformed, AK/HI requests rejected
+  ---
+  duration_ms: 1.208169
+  type: 'test'
+  ...
+# Subtest: gate bounds concurrent work, sliding 30/minute, cooldown and idempotent release
+ok 337 - gate bounds concurrent work, sliding 30/minute, cooldown and idempotent release
+  ---
+  duration_ms: 0.732237
+  type: 'test'
+  ...
+# Subtest: retained scientific sample signature/dimensions and malformed PNG rejection
+ok 338 - retained scientific sample signature/dimensions and malformed PNG rejection
+  ---
+  duration_ms: 1.007158
+  type: 'test'
+  ...
+# Subtest: mock metadata and tile GET: fixed host, no redirects/retries, requested pinned future
+ok 339 - mock metadata and tile GET: fixed host, no redirects/retries, requested pinned future
+  ---
+  duration_ms: 78.56738
+  type: 'test'
+  ...
+# Subtest: metadata body and content checks; upstream failures are generic
+ok 340 - metadata body and content checks; upstream failures are generic
+  ---
+  duration_ms: 4.31735
+  type: 'test'
+  ...
+# Subtest: 429 retry-after creates shared local cooldown and no retry fetch
+ok 341 - 429 retry-after creates shared local cooldown and no retry fetch
+  ---
+  duration_ms: 1.367701
+  type: 'test'
+  ...
+# Subtest: cancellation before start spends no request; inflight abort releases concurrency
+ok 342 - cancellation before start spends no request; inflight abort releases concurrency
+  ---
+  duration_ms: 1.664954
+  type: 'test'
+  ...
+# Subtest: tile byte caps apply to declared and streamed sizes and content type
+ok 343 - tile byte caps apply to declared and streamed sizes and content type
+  ---
+  duration_ms: 5.777376
+  type: 'test'
+  ...
+# Subtest: preserved independent NOAA regional and infrared timelines and extents
+ok 344 - preserved independent NOAA regional and infrared timelines and extents
+  ---
+  duration_ms: 346.180243
+  type: 'test'
+  ...
+# Subtest: malformed/DTD/deep/oversized XML fails closed
+ok 345 - malformed/DTD/deep/oversized XML fails closed
+  ---
+  duration_ms: 10.134341
+  type: 'test'
+  ...
+# Subtest: missing layer and interval times fail independently without fabricating frames
+ok 346 - missing layer and interval times fail independently without fabricating frames
+  ---
+  duration_ms: 504.887193
+  type: 'test'
+  ...
+# Subtest: builder fixes origin, layer, styles, CRS84 and exact source time
+ok 347 - builder fixes origin, layer, styles, CRS84 and exact source time
+  ---
+  duration_ms: 1084.099149
+  type: 'test'
+  ...
+# Subtest: mocked bounded metadata/image fetch preserves Warning without inventing actual time
+ok 348 - mocked bounded metadata/image fetch preserves Warning without inventing actual time
+  ---
+  duration_ms: 395.960922
+  type: 'test'
+  ...
+# Subtest: provider HTTP/XML masquerading as image/oversize/invalid PNG are rejected
+ok 349 - provider HTTP/XML masquerading as image/oversize/invalid PNG are rejected
+  ---
+  duration_ms: 625.782462
+  type: 'test'
+  ...
+# Subtest: cancellation signal reaches fetch and no retry occurs
+ok 350 - cancellation signal reaches fetch and no retry occurs
+  ---
+  duration_ms: 0.761984
+  type: 'test'
+  ...
+# Subtest: Mercator meters match independent known corners and reject polar/wrapping bounds
+ok 351 - Mercator meters match independent known corners and reject polar/wrapping bounds
+  ---
+  duration_ms: 301.390761
+  type: 'test'
+  ...
+# (node:4194075) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: map catalog and frame preserve quota denial as429 with retry, without network
+ok 352 - map catalog and frame preserve quota denial as429 with retry, without network
+  ---
+  duration_ms: 176.489663
+  type: 'test'
+  ...
+# Subtest: upstream429 retry survives both endpoints while invalid provider responses remain502
+ok 353 - upstream429 retry survives both endpoints while invalid provider responses remain502
+  ---
+  duration_ms: 64.092255
+  type: 'test'
+  ...
+# Subtest: regional frame runtime response, cache and independent source time remain valid
+ok 354 - regional frame runtime response, cache and independent source time remain valid
+  ---
+  duration_ms: 39.928032
+  type: 'test'
+  ...
+# Subtest: projection-specific cache identity and validation prevent a CRS84 image becoming Mercator
+ok 355 - projection-specific cache identity and validation prevent a CRS84 image becoming Mercator
+  ---
+  duration_ms: 39.643452
+  type: 'test'
+  ...
+# (node:4194076) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: point query retains upcoming official alerts without polygons, requested identity, UTC and exact text
+ok 356 - point query retains upcoming official alerts without polygons, requested identity, UTC and exact text
+  ---
+  duration_ms: 171.998083
+  type: 'test'
+  ...
+# Subtest: expired information and ended events independently disappear; future onset is retained
+ok 357 - expired information and ended events independently disappear; future onset is retained
+  ---
+  duration_ms: 5.342322
+  type: 'test'
+  ...
+# Subtest: updates and cancellations suppress referenced messages, never unrelated events or real alerts via tests
+ok 358 - updates and cancellations suppress referenced messages, never unrelated events or real alerts via tests
+  ---
+  duration_ms: 15.871221
+  type: 'test'
+  ...
+# Subtest: official polygons and links survive; empty success is distinct from errors
+ok 359 - official polygons and links survive; empty success is distinct from errors
+  ---
+  duration_ms: 8.210737
+  type: 'test'
+  ...
+# Subtest: malformed fields, geometry, payloads and pagination fail the entire snapshot
+ok 360 - malformed fields, geometry, payloads and pagination fail the entire snapshot
+  ---
+  duration_ms: 32.337379
+  type: 'test'
+  ...
+# Subtest: rate limits preserve delay, errors are sanitized, invalid coordinates never fetch
+ok 361 - rate limits preserve delay, errors are sanitized, invalid coordinates never fetch
+  ---
+  duration_ms: 5.138195
+  type: 'test'
+  ...
+# Subtest: eight-second timeout includes streaming response body; caller cancellation retains reason
+ok 362 - eight-second timeout includes streaming response body; caller cancellation retains reason
+  ---
+  duration_ms: 4.88205
+  type: 'test'
+  ...
+# Subtest: documented same-origin active redirects work, unsafe or geographically changed redirects fail
+ok 363 - documented same-origin active redirects work, unsafe or geographically changed redirects fail
+  ---
+  duration_ms: 10.689223
+  type: 'test'
+  ...
+# Subtest: retained NOAA station normal units, metadata and completeness match raw source
+ok 364 - retained NOAA station normal units, metadata and completeness match raw source
+  ---
+  duration_ms: 67.87413
+  type: 'test'
+  ...
+# Subtest: normal parser rejects wrong station and duplicate/missing months
+ok 365 - normal parser rejects wrong station and duplicate/missing months
+  ---
+  duration_ms: 59.289345
+  type: 'test'
+  ...
+# Subtest: quoted CSV commas/escaped quotes and no-data are not zero
+ok 366 - quoted CSV commas/escaped quotes and no-data are not zero
+  ---
+  duration_ms: 20.662008
+  type: 'test'
+  ...
+# (node:4194121) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: one requested prior day plus 14-day SI/UTC timeline retains identity, grid provenance and missingness
+ok 367 - one requested prior day plus 14-day SI/UTC timeline retains identity, grid provenance and missingness
+  ---
+  duration_ms: 303.215939
+  type: 'test'
+  ...
+# Subtest: explicit model candidates use exact provider model IDs and retain nullable fields and model provenance
+ok 368 - explicit model candidates use exact provider model IDs and retain nullable fields and model provenance
+  ---
+  duration_ms: 217.451383
+  type: 'test'
+  ...
+# Subtest: unsupported explicit model is rejected before fetch
+ok 369 - unsupported explicit model is rejected before fetch
+  ---
+  duration_ms: 5.216243
+  type: 'test'
+  ...
+# Subtest: malformed values, units and timeline never become silently missing/shifted weather
+ok 370 - malformed values, units and timeline never become silently missing/shifted weather
+  ---
+  duration_ms: 116.182039
+  type: 'test'
+  ...
+# Subtest: empty/all-null forecasts distinguish no data from successful zero precipitation
+ok 371 - empty/all-null forecasts distinguish no data from successful zero precipitation
+  ---
+  duration_ms: 43.286715
+  type: 'test'
+  ...
+# Subtest: HTTP rate limits preserve Retry-After; other errors and invalid JSON are sanitized
+ok 372 - HTTP rate limits preserve Retry-After; other errors and invalid JSON are sanitized
+  ---
+  duration_ms: 9.592555
+  type: 'test'
+  ...
+# Subtest: response body has a bounded size and network errors map safely
+ok 373 - response body has a bounded size and network errors map safely
+  ---
+  duration_ms: 3.443945
+  type: 'test'
+  ...
+# Subtest: cancellation retains caller reason and snapshots location before fetch
+ok 374 - cancellation retains caller reason and snapshots location before fetch
+  ---
+  duration_ms: 1.834456
+  type: 'test'
+  ...
+# Subtest: eight-second deadline includes response body streaming
+ok 375 - eight-second deadline includes response body streaming
+  ---
+  duration_ms: 7.688838
+  type: 'test'
+  ...
+# Subtest: geocoding preserves disambiguation; empty search/results and malformed are separate
+ok 376 - geocoding preserves disambiguation; empty search/results and malformed are separate
+  ---
+  duration_ms: 7.459593
+  type: 'test'
+  ...
+# Subtest: invalid input never calls provider and identity cannot change while awaiting
+ok 377 - invalid input never calls provider and identity cannot change while awaiting
+  ---
+  duration_ms: 72.782791
+  type: 'test'
+  ...
+# Subtest: extended detail fields retain values, explicit nulls and absent arrays without fabricating zeros
+ok 378 - extended detail fields retain values, explicit nulls and absent arrays without fabricating zeros
+  ---
+  duration_ms: 42.612908
+  type: 'test'
+  ...
+# Subtest: forecast WBGT retains independent radiation and uses source grid, FAO wind and component weighting
+ok 379 - forecast WBGT retains independent radiation and uses source grid, FAO wind and component weighting
+  ---
+  duration_ms: 56.700018
+  type: 'test'
+  ...
+# Subtest: absent/null instantaneous radiation preserves forecast with unavailable WBGT and never substitutes mean
+ok 380 - absent/null instantaneous radiation preserves forecast with unavailable WBGT and never substitutes mean
+  ---
+  duration_ms: 41.132293
+  type: 'test'
+  ...
+# Subtest: real zero nighttime radiation and calm wind remain numeric, while missing pressure affects heat only
+ok 381 - real zero nighttime radiation and calm wind remain numeric, while missing pressure affects heat only
+  ---
+  duration_ms: 36.189608
+  type: 'test'
+  ...
+# Subtest: coordinate resolution preserves requested point and actual AK/HI/DST zones, never a fixed offset
+ok 382 - coordinate resolution preserves requested point and actual AK/HI/DST zones, never a fixed offset
+  ---
+  duration_ms: 13.79673
+  type: 'test'
+  ...
+# Subtest: coordinate resolution rejects invalid inputs before fetching and malformed provider zones
+ok 383 - coordinate resolution rejects invalid inputs before fetching and malformed provider zones
+  ---
+  duration_ms: 10.238699
+  type: 'test'
+  ...
+# Subtest: astronomy retains UTC calendar and adjacent-date event epochs, including DST local display
+ok 384 - astronomy retains UTC calendar and adjacent-date event epochs, including DST local display
+  ---
+  duration_ms: 41.074323
+  type: 'test'
+  ...
+# Subtest: missing astronomy and absent event arrays preserve weather without invented events
+ok 385 - missing astronomy and absent event arrays preserve weather without invented events
+  ---
+  duration_ms: 75.199169
+  type: 'test'
+  ...
+# Subtest: day/night is provider supplied even at noon or midnight; polar missing events do not infer night
+ok 386 - day/night is provider supplied even at noon or midnight; polar missing events do not infer night
+  ---
+  duration_ms: 106.785856
+  type: 'test'
+  ...
+# Subtest: malformed day/night and astronomy units, arrays, UTC calendar and event epochs reject
+ok 387 - malformed day/night and astronomy units, arrays, UTC calendar and event epochs reject
+  ---
+  duration_ms: 34.343109
+  type: 'test'
+  ...
+# Subtest: current uses one shared request, exact SI values, source grid and independent valid instant
+ok 388 - current uses one shared request, exact SI values, source grid and independent valid instant
+  ---
+  duration_ms: 24.652148
+  type: 'test'
+  ...
+# Subtest: missing or malformed current and units preserve hourly forecast and report current missingness
+ok 389 - missing or malformed current and units preserve hourly forecast and report current missingness
+  ---
+  duration_ms: 631.788732
+  type: 'test'
+  ...
+# Subtest: current nulls stay missing and future or old valid times remain unchanged for consumer freshness checks
+ok 390 - current nulls stay missing and future or old valid times remain unchanged for consumer freshness checks
+  ---
+  duration_ms: 59.506577
+  type: 'test'
+  ...
+# Subtest: prior UTC day retains full local-day extremes and sun events before/after UTC rollover and DST
+ok 391 - prior UTC day retains full local-day extremes and sun events before/after UTC rollover and DST
+  ---
+  duration_ms: 463.497061
+  type: 'test'
+  ...
+# Subtest: old 336-hour response cannot silently satisfy the prior-day request
+ok 392 - old 336-hour response cannot silently satisfy the prior-day request
+  ---
+  duration_ms: 2.184208
+  type: 'test'
+  ...
+# (node:4194122) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: bounded nearby histories retain station identity, distance, elevation, time, missingness and exact MADIS flags
+ok 393 - bounded nearby histories retain station identity, distance, elevation, time, missingness and exact MADIS flags
+  ---
+  duration_ms: 171.24221
+  type: 'test'
+  ...
+# Subtest: historical records remain per-station, newest-first, bounded to since/until and never splice candidates
+ok 394 - historical records remain per-station, newest-first, bounded to since/until and never splice candidates
+  ---
+  duration_ms: 37.095354
+  type: 'test'
+  ...
+# Subtest: empty station or observation collections are explicit successful no-published-record states
+ok 395 - empty station or observation collections are explicit successful no-published-record states
+  ---
+  duration_ms: 11.046299
+  type: 'test'
+  ...
+# Subtest: documented optional feature IDs use canonical station/time endpoints without changing data identity
+ok 396 - documented optional feature IDs use canonical station/time endpoints without changing data identity
+  ---
+  duration_ms: 10.818728
+  type: 'test'
+  ...
+# Subtest: malformed units, flags, linked origins, geography, identity, duplicates and truncated history fail closed
+ok 397 - malformed units, flags, linked origins, geography, identity, duplicates and truncated history fail closed
+  ---
+  duration_ms: 52.050088
+  type: 'test'
+  ...
+# Subtest: invalid inputs never fetch; seven-day bound is inclusive
+ok 398 - invalid inputs never fetch; seven-day bound is inclusive
+  ---
+  duration_ms: 2.430295
+  type: 'test'
+  ...
+# Subtest: HTTP limits preserve Retry-After while other failures and content errors are sanitized
+ok 399 - HTTP limits preserve Retry-After while other failures and content errors are sanitized
+  ---
+  duration_ms: 2.569719
+  type: 'test'
+  ...
+# Subtest: caller cancellation is preserved and the ten-second deadline includes response streaming
+ok 400 - caller cancellation is preserved and the ten-second deadline includes response streaming
+  ---
+  duration_ms: 4.665409
+  type: 'test'
+  ...
+# (node:4194136) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:4194136) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time
+# Subtest: research attributes retain RX/WF, source IDs and independent older perimeter timestamps; source geometry mocks only
+ok 401 - research attributes retain RX/WF, source IDs and independent older perimeter timestamps; source geometry mocks only
+  ---
+  duration_ms: 130.234734
+  type: 'test'
+  ...
+# Subtest: pagination continues short transfer-limited pages with increasing object IDs; missing perimeter and CX survive
+ok 402 - pagination continues short transfer-limited pages with increasing object IDs; missing perimeter and CX survive
+  ---
+  duration_ms: 15.413674
+  type: 'test'
+  ...
+# Subtest: empty is successful; null geometry/IDs/times preserved without synthesized joins
+ok 403 - empty is successful; null geometry/IDs/times preserved without synthesized joins
+  ---
+  duration_ms: 10.100547
+  type: 'test'
+  ...
+# Subtest: malformed geometry, fields, conflicting identity, CRS and pagination fail whole retrieval
+ok 404 - malformed geometry, fields, conflicting identity, CRS and pagination fail whole retrieval
+  ---
+  duration_ms: 34.75495
+  type: 'test'
+  ...
+# Subtest: page ceiling and full-page omitted flag cannot silently truncate
+ok 405 - page ceiling and full-page omitted flag cannot silently truncate
+  ---
+  duration_ms: 182.567398
+  type: 'test'
+  ...
+# Subtest: invalid bbox before network; caller query mutation cannot change perimeter request
+ok 406 - invalid bbox before network; caller query mutation cannot change perimeter request
+  ---
+  duration_ms: 6.935882
+  type: 'test'
+  ...
+# Subtest: HTTP errors, 429 retry delay, redirects, body size and bad JSON remain unavailable
+ok 407 - HTTP errors, 429 retry delay, redirects, body size and bad JSON remain unavailable
+  ---
+  duration_ms: 16.843754
+  type: 'test'
+  ...
+# Subtest: pre-abort and in-flight caller reasons preserved; timeout bounds even stalled fetch and body
+ok 408 - pre-abort and in-flight caller reasons preserved; timeout bounds even stalled fetch and body
+  ---
+  duration_ms: 4.350433
+  type: 'test'
+  ...
+# Subtest: runtime result rejects tampered timestamps, normalized IDs, record counts and too many vertices
+ok 409 - runtime result rejects tampered timestamps, normalized IDs, record counts and too many vertices
+  ---
+  duration_ms: 211.407732
+  type: 'test'
+  ...
+# Subtest: REST shared schema identity, strict bbox, fresh response, cache TTL and eight-call reservation
+ok 410 - REST shared schema identity, strict bbox, fresh response, cache TTL and eight-call reservation
+  ---
+  duration_ms: 153.324643
+  type: 'test'
+  ...
+# Subtest: REST quota rejects before fetch; upstream retry and malformed responses map correctly
+ok 411 - REST quota rejects before fetch; upstream retry and malformed responses map correctly
+  ---
+  duration_ms: 17.07928
+  type: 'test'
+  ...
+# Subtest: REST rejects wrong cached bbox, stale fallback and oversized complete geometry without partial success
+ok 412 - REST rejects wrong cached bbox, stale fallback and oversized complete geometry without partial success
+  ---
+  duration_ms: 545.064156
+  type: 'test'
+  ...
+# Subtest: REST 10-second outer abort precedes 15-second cache lease
+ok 413 - REST 10-second outer abort precedes 15-second cache lease
+  ---
+  duration_ms: 8.610805
+  type: 'test'
+  ...
+# (node:4194153) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: NOAA retained fixed-width evidence parses; synthetic missing metadata stays null
+ok 414 - NOAA retained fixed-width evidence parses; synthetic missing metadata stays null
+  ---
+  duration_ms: 145.950099
+  type: 'test'
+  ...
+# Subtest: nearest ten within 150km, stable ID ties, US scope and dateline geometry
+ok 415 - nearest ten within 150km, stable ID ties, US scope and dateline geometry
+  ---
+  duration_ms: 2.567315
+  type: 'test'
+  ...
+# Subtest: reject corrupt width/IDs/coordinates/flags/duplicates and invalid query/time
+ok 416 - reject corrupt width/IDs/coordinates/flags/duplicates and invalid query/time
+  ---
+  duration_ms: 2.883192
+  type: 'test'
+  ...
+# Subtest: fixed URL, no redirects, bounded body/status/type and cancellation
+ok 417 - fixed URL, no redirects, bounded body/status/type and cancellation
+  ---
+  duration_ms: 124.54343
+  type: 'test'
+  ...
+# Subtest: 12 second deadline rejects noncooperative stalled fetch
+ok 418 - 12 second deadline rejects noncooperative stalled fetch
+  ---
+  duration_ms: 2.290099
+  type: 'test'
+  ...
+# Subtest: full-catalog byte columns and unsupported station identifiers do not discard valid US candidates
+ok 419 - full-catalog byte columns and unsupported station identifiers do not discard valid US candidates
+  ---
+  duration_ms: 3.378301
+  type: 'test'
+  ...
+# (node:4194207) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: calendar labels retain leap day, expand absent months, preserve SI zero/missing/raw flags
+ok 420 - calendar labels retain leap day, expand absent months, preserve SI zero/missing/raw flags
+  ---
+  duration_ms: 36.895645
+  type: 'test'
+  ...
+# Subtest: QC screen counts do not imply eligibility; unknown flags remain explicit and values preserved
+ok 421 - QC screen counts do not imply eligibility; unknown flags remain explicit and values preserved
+  ---
+  duration_ms: 2.397963
+  type: 'test'
+  ...
+# Subtest: real research complete file and known raw examples pass without mutating evidence
+ok 422 - real research complete file and known raw examples pass without mutating evidence
+  ---
+  duration_ms: 253.262262
+  type: 'test'
+  ...
+# Subtest: bounds reject malformed IDs/dates/ranges; calendar works before epoch and at DST without invented hours
+ok 423 - bounds reject malformed IDs/dates/ranges; calendar works before epoch and at DST without invented hours
+  ---
+  duration_ms: 1.938994
+  type: 'test'
+  ...
+# Subtest: fixed width, mixed station, duplicate rows, invalid padding/month/integer/flags rejected including irrelevant elements
+ok 424 - fixed width, mixed station, duplicate rows, invalid padding/month/integer/flags rejected including irrelevant elements
+  ---
+  duration_ms: 1.88407
+  type: 'test'
+  ...
+# Subtest: result runtime schema rejects edited values/counts/timeline/identity
+ok 425 - result runtime schema rejects edited values/counts/timeline/identity
+  ---
+  duration_ms: 5.86378
+  type: 'test'
+  ...
+# Subtest: fetch is fixed-source complete-file bounded, query snapshotted, rate/errors/partial/html/oversize rejected
+ok 426 - fetch is fixed-source complete-file bounded, query snapshotted, rate/errors/partial/html/oversize rejected
+  ---
+  duration_ms: 98.223402
+  type: 'test'
+  ...
+# Subtest: pre-abort, in-flight abort and deadlines bound stalled fetch and body
+ok 427 - pre-abort, in-flight abort and deadlines bound stalled fetch and body
+  ---
+  duration_ms: 16.916091
+  type: 'test'
+  ...
+# (node:4194217) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: shared runtime schema is the same object; route validates input and returns bounded normalized cached data
+ok 428 - shared runtime schema is the same object; route validates input and returns bounded normalized cached data
+  ---
+  duration_ms: 252.07831
+  type: 'test'
+  ...
+# Subtest: NOAA quota refusal prevents fetch; upstream retry-after and failures map correctly
+ok 429 - NOAA quota refusal prevents fetch; upstream retry-after and failures map correctly
+  ---
+  duration_ms: 27.615603
+  type: 'test'
+  ...
+# Subtest: cache refuses mismatched query, never serves stale, stores selected JSON with one-day expiry
+ok 430 - cache refuses mismatched query, never serves stale, stores selected JSON with one-day expiry
+  ---
+  duration_ms: 26.243342
+  type: 'test'
+  ...
+# (node:4194217) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time
+# Subtest: 12-second route deadline aborts stalled provider before cache lease expires
+ok 431 - 12-second route deadline aborts stalled provider before cache lease expires
+  ---
+  duration_ms: 8.234361
+  type: 'test'
+  ...
+# (node:4194220) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Mapbox reservations persist, share the final slot, retain at least32days, and reject backwards clocks
+ok 432 - Mapbox reservations persist, share the final slot, retain at least32days, and reject backwards clocks
+  ---
+  duration_ms: 11.966492
+  type: 'test'
+  ...
+# Subtest: Mapbox storage failure never grants a permit
+ok 433 - Mapbox storage failure never grants a permit
+  ---
+  duration_ms: 1.047755
+  type: 'test'
+  ...
+# (node:4194226) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: cache shares JSON, preserves metadata and exact expiry/stale boundaries through restart
+ok 434 - cache shares JSON, preserves metadata and exact expiry/stale boundaries through restart
+  ---
+  duration_ms: 13.681412
+  type: 'test'
+  ...
+# Subtest: entry and total UTF-8 byte/count bounds, replacement accounting, older write protection
+ok 435 - entry and total UTF-8 byte/count bounds, replacement accounting, older write protection
+  ---
+  duration_ms: 6.334081
+  type: 'test'
+  ...
+# Subtest: rejects malformed JSON, timestamps and configuration mismatch without corrupting records
+ok 436 - rejects malformed JSON, timestamps and configuration mismatch without corrupting records
+  ---
+  duration_ms: 4.576841
+  type: 'test'
+  ...
+# Subtest: two connections compete for lease; token fences late release and cache publication after takeover
+ok 437 - two connections compete for lease; token fences late release and cache publication after takeover
+  ---
+  duration_ms: 8.156634
+  type: 'test'
+  ...
+# Subtest: lease capacity and restart expiry do not require successful original-owner release
+ok 438 - lease capacity and restart expiry do not require successful original-owner release
+  ---
+  duration_ms: 4.609704
+  type: 'test'
+  ...
+# Subtest: weighted quota denial rolls back all four windows across independent connections and restart
+ok 439 - weighted quota denial rolls back all four windows across independent connections and restart
+  ---
+  duration_ms: 8.045393
+  type: 'test'
+  ...
+# Subtest: rolling quotas prevent midnight/month boundary bursts and isolate configured providers
+ok 440 - rolling quotas prevent midnight/month boundary bursts and isolate configured providers
+  ---
+  duration_ms: 4.042059
+  type: 'test'
+  ...
+# Subtest: quota ledger capacity fails closed; bounded cleanup reclaims old entries
+ok 441 - quota ledger capacity fails closed; bounded cleanup reclaims old entries
+  ---
+  duration_ms: 4.270682
+  type: 'test'
+  ...
+# Subtest: clock rollback fails closed for coordinated mutations
+ok 442 - clock rollback fails closed for coordinated mutations
+  ---
+  duration_ms: 4.120948
+  type: 'test'
+  ...
+# Subtest: bounded lock wait surfaces contention; cleanup measures physical DB/WAL/SHM and truncates WAL
+ok 443 - bounded lock wait surfaces contention; cleanup measures physical DB/WAL/SHM and truncates WAL
+  ---
+  duration_ms: 26.817661
+  type: 'test'
+  ...
+# Subtest: simultaneous independent processes admit exactly one lease and one final quota unit
+ok 444 - simultaneous independent processes admit exactly one lease and one final quota unit
+  ---
+  duration_ms: 598.600811
+  type: 'test'
+  ...
+# (node:4194268) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: immutable archive deduplicates identical snapshots and never stores non-contract weather fields
+ok 445 - immutable archive deduplicates identical snapshots and never stores non-contract weather fields
+  ---
+  duration_ms: 45.524084
+  type: 'test'
+  ...
+# Subtest: scorecard reports explicit preliminary gate, errors, rain skill and paired candidate evidence
+ok 446 - scorecard reports explicit preliminary gate, errors, rain skill and paired candidate evidence
+  ---
+  duration_ms: 60.749902
+  type: 'test'
+  ...
+# Subtest: quality flags, null values and mismatched precipitation periods are counted, never scored
+ok 447 - quality flags, null values and mismatched precipitation periods are counted, never scored
+  ---
+  duration_ms: 24.350407
+  type: 'test'
+  ...
+# Subtest: leases fence scheduling, installation limit is five and removing final member deletes its archive
+ok 448 - leases fence scheduling, installation limit is five and removing final member deletes its archive
+  ---
+  duration_ms: 12.585245
+  type: 'test'
+  ...
+1..448
+# tests 448
+# suites 0
+# pass 443
+# fail 0
+# cancelled 0
+# skipped 5
+# todo 0
+# duration_ms 34770.009744

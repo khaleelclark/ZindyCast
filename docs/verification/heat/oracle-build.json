@@ -1,0 +1,10 @@
+{
+  "compiler": "cc (Ubuntu 15.2.0-16ubuntu1) 15.2.0",
+  "flags": [
+    "-std=gnu89",
+    "-O0",
+    "-fno-fast-math"
+  ],
+  "sourceSha256": "1bd6bd3a8365225dc9f872e8674c5f76b6fcd62a6edda08df087010e44617d90",
+  "diagnostics": ""
+}

@@ -1,0 +1,108 @@
+{
+  "at": "2026-09-11T21:21:17.136Z",
+  "fahrenheit": "66°",
+  "celsius": "19°",
+  "motion": {
+    "sunny": "sky-glow",
+    "night": "sky-glow",
+    "cloudy": "cloud-drift",
+    "rain": "rain-fall",
+    "snow": "snow-fall",
+    "storm": "cloud-drift",
+    "fog": "cloud-drift",
+    "neutral": "none"
+  },
+  "measurements": [
+    {
+      "width": 1440,
+      "scroll": 1440,
+      "hero": {
+        "x": 30,
+        "y": 812.015625,
+        "width": 839.375,
+        "bottom": 2035.4375
+      },
+      "details": {
+        "x": 885.375,
+        "y": 812.015625,
+        "width": 524.625,
+        "bottom": 1366.5
+      },
+      "map": {
+        "x": 885.375,
+        "y": 1386.5,
+        "width": 524.625,
+        "bottom": 2400.03125
+      }
+    },
+    {
+      "width": 1100,
+      "scroll": 1100,
+      "hero": {
+        "x": 20,
+        "y": 888.09375,
+        "width": 642.453125,
+        "bottom": 2222.953125
+      },
+      "details": {
+        "x": 678.453125,
+        "y": 888.09375,
+        "width": 401.546875,
+        "bottom": 1442.578125
+      },
+      "map": {
+        "x": 678.453125,
+        "y": 1462.578125,
+        "width": 401.546875,
+        "bottom": 2493.375
+      }
+    },
+    {
+      "width": 800,
+      "scroll": 800,
+      "hero": {
+        "x": 20,
+        "y": 912.09375,
+        "width": 760,
+        "bottom": 2104.609375
+      },
+      "details": {
+        "x": 20,
+        "y": 2120.609375,
+        "width": 760,
+        "bottom": 2697.09375
+      },
+      "map": {
+        "x": 20,
+        "y": 2717.09375,
+        "width": 760,
+        "bottom": 3673.84375
+      }
+    },
+    {
+      "width": 390,
+      "scroll": 390,
+      "hero": {
+        "x": 12,
+        "y": 963.921875,
+        "width": 366,
+        "bottom": 2119.671875
+      },
+      "details": {
+        "x": 12,
+        "y": 2135.671875,
+        "width": 366,
+        "bottom": 2723.265625
+      },
+      "map": {
+        "x": 12,
+        "y": 2743.265625,
+        "width": 366,
+        "bottom": 3742.0625
+      }
+    }
+  ],
+  "errors": [],
+  "liveForecast": true,
+  "cssScenarios": true
+}

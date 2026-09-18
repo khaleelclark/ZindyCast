@@ -1,0 +1,104 @@
+{
+  "manifest_created_utc": "2026-09-10T23:40:14.857977+00:00",
+  "source_retrieval_window_utc": "2026-09-10T23:36:40Z through manifest creation; weather requests have precise timestamps in request files",
+  "revision": "7988e4de62a3bf4e2ef4f3034a793af6e3bb3e84",
+  "files": [
+    {
+      "file": "ForecastapiController.swift.txt",
+      "url": "https://raw.githubusercontent.com/open-meteo/open-meteo/7988e4de62a3bf4e2ef4f3034a793af6e3bb3e84/Sources/App/Controllers/ForecastapiController.swift",
+      "sha256": "f5f615c27fab4d93b2a5985c9c45becf629d622b450ccd4214d924ef4b11b917"
+    },
+    {
+      "file": "Era5Controller.swift.txt",
+      "url": "https://raw.githubusercontent.com/open-meteo/open-meteo/7988e4de62a3bf4e2ef4f3034a793af6e3bb3e84/Sources/App/Era5/Era5Controller.swift",
+      "sha256": "081617f83cb9a3952d624a03265f5069cf4f92be00998bd222c253cef3ba6a9e"
+    },
+    {
+      "file": "Era5Variables.swift.txt",
+      "url": "https://raw.githubusercontent.com/open-meteo/open-meteo/7988e4de62a3bf4e2ef4f3034a793af6e3bb3e84/Sources/App/Era5/Era5Variables.swift",
+      "sha256": "589025f06766591096ae695197adc438408be7bd9c740855dd74c11df013ba4d"
+    },
+    {
+      "file": "GfsVariable.swift.txt",
+      "url": "https://raw.githubusercontent.com/open-meteo/open-meteo/7988e4de62a3bf4e2ef4f3034a793af6e3bb3e84/Sources/App/Gfs/GfsVariable.swift",
+      "sha256": "81bdffd0e41abbab3534328bc6658126882cac939453ef3f8e157c40b4189f3f"
+    },
+    {
+      "file": "Zensun.swift.txt",
+      "url": "https://raw.githubusercontent.com/open-meteo/open-meteo/7988e4de62a3bf4e2ef4f3034a793af6e3bb3e84/Sources/App/Helper/Solar/Zensun.swift",
+      "sha256": "1f9e73ce0c8d31ba45b111ceedffcd4a867914abb6ded5312c4c2d71f33e6285"
+    },
+    {
+      "file": "Meteorology.swift.txt",
+      "url": "https://raw.githubusercontent.com/open-meteo/open-meteo/7988e4de62a3bf4e2ef4f3034a793af6e3bb3e84/Sources/App/Helper/Meteorology.swift",
+      "sha256": "b8875e01e2b30a28c8e050ccc12f230fe0f39bf4cc676dd7dc24b0af72233fe6"
+    },
+    {
+      "file": "VariableHourly.swift.txt",
+      "url": "https://raw.githubusercontent.com/open-meteo/open-meteo/7988e4de62a3bf4e2ef4f3034a793af6e3bb3e84/Sources/App/Controllers/VariableHourly.swift",
+      "sha256": "bed54bc12222e68b5c49a10b7e65880f501cc6a9858e38a37bafeaf7d818b1a8"
+    },
+    {
+      "file": "VariableHourlyDeriverHighLevel.swift.txt",
+      "url": "https://raw.githubusercontent.com/open-meteo/open-meteo/7988e4de62a3bf4e2ef4f3034a793af6e3bb3e84/Sources/App/Helper/Reader/VariableHourlyDeriverHighLevel.swift",
+      "sha256": "2a5c8c8f921813d977ed970969e964d48d51e1a2d384d905c2f4262f4a450db8"
+    },
+    {
+      "file": "GenericReaderMixerRaw.swift.txt",
+      "url": "https://raw.githubusercontent.com/open-meteo/open-meteo/7988e4de62a3bf4e2ef4f3034a793af6e3bb3e84/Sources/App/Helper/Reader/GenericReaderMixerRaw.swift",
+      "sha256": "ea33ff313b46e7300b7501f57814f19aadfe8a1a3b55c506acc4785d5e5c1e21"
+    },
+    {
+      "file": "open-meteo-DerivedMapping.swift.txt",
+      "url": "https://raw.githubusercontent.com/open-meteo/open-meteo/7988e4de62a3bf4e2ef4f3034a793af6e3bb3e84/Sources/App/Helper/Reader/DerivedMapping.swift",
+      "sha256": "793a4aa3eed7caa28461b057850587388cb3d13b2aca7fa3571f772fda93f573"
+    },
+    {
+      "file": "open-meteo-GenericReaderDerived.swift.txt",
+      "url": "https://raw.githubusercontent.com/open-meteo/open-meteo/7988e4de62a3bf4e2ef4f3034a793af6e3bb3e84/Sources/App/Helper/Reader/GenericReaderDerived.swift",
+      "sha256": "deb114d6c147f1c2e7ca39541cf4441e1d790f06534faddaf68185eb373788da"
+    },
+    {
+      "file": "open-meteo-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/open-meteo/open-meteo/7988e4de62a3bf4e2ef4f3034a793af6e3bb3e84/LICENSE",
+      "sha256": "20b067f86de375aae6db0f283ab2e65de24d537733b89bd58432c101259d84cf"
+    },
+    {
+      "file": "instant-anchorage-era5-request.json",
+      "sha256": "5be5f1dc0ce4016807f9e83ad8b9ad8a7aa510a5dcaca29f960f66863b9af8a0"
+    },
+    {
+      "file": "instant-anchorage-era5.json",
+      "sha256": "911b68967761b26a05b2c20565cef1f55d18d9e1dabf11b5201ab39cccc3e2f9"
+    },
+    {
+      "file": "instant-anchorage-forecast-request.json",
+      "sha256": "c1fb5730e1e473a19a9300557599aa162cf4fbb1d8d4fe3a2e4dce6f12946ae6"
+    },
+    {
+      "file": "instant-anchorage-forecast.json",
+      "sha256": "185cd80e908c4e69544952acf5b24b9fce179b907eaadfe4152a5ce3b42550c0"
+    },
+    {
+      "file": "instant-honolulu-era5-request.json",
+      "sha256": "e665ac24690e05d785b067a936b4edbbc3cc91fa0dbdd67b7e2c5342a45b9971"
+    },
+    {
+      "file": "instant-honolulu-era5.json",
+      "sha256": "61ee8c972c22976bbde80538253dc1469ca8536e5a9a4ccab616086f634e2d46"
+    },
+    {
+      "file": "instant-honolulu-forecast-request.json",
+      "sha256": "aa0c6e901b6545ea67e3e5d953bb592fe773e2e9e1e80411e81faf9cf6c6854d"
+    },
+    {
+      "file": "instant-honolulu-forecast.json",
+      "sha256": "023eefcb41a6780df46206538a6de4a89f65763fc4791feeeb0e594b70a77fa6"
+    },
+    {
+      "file": "open-meteo-tree.json",
+      "url": "https://api.github.com/repos/open-meteo/open-meteo/git/trees/7988e4de62a3bf4e2ef4f3034a793af6e3bb3e84?recursive=1",
+      "sha256": "65b936beebb142efb9da9bad7435ad74528d9b905fcabf953f08eee29ef0522f"
+    }
+  ]
+}

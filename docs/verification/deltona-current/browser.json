@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-09-17T20:45:22.859Z",
+  "location": {
+    "latitude": 28.90054,
+    "longitude": -81.26367,
+    "id": "open-meteo:4153146",
+    "name": "Deltona",
+    "admin1": "Florida",
+    "admin2": "Volusia",
+    "country": "United States",
+    "timezone": "America/New_York"
+  },
+  "liveForecastAndObservations": true,
+  "otherServicesBlocked": true,
+  "requests": [
+    "/api/v1/observations",
+    "/api/v1/forecast"
+  ],
+  "errors": [],
+  "currentSummary": "Current conditions\n\nNearby station · 4:25 PM EDT · 20 min ago\nRefresh\n\nOrlando / Sanford Airport (KSFB) · 8.1 mi away\n\nFeels like\n92.7°F\n-40.0°F\n140.0°F\n\nFeels-like temperature\n\nHeat index (shade) · from this station’s readings\n\nAir temperature 88° · Mostly Clear\n\nToday’s forecast · High 88° · Low 77°\n\nHumidity\n55%\nStation wind\n16 mph\nForecast rain chance\n0%"
+}

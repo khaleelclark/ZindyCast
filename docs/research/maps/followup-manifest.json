@@ -1,0 +1,117 @@
+{
+  "files": [
+    {
+      "name": "followup-airnow-webservices.html.headers.json",
+      "bytes": 147,
+      "sha256": "940e2f5e32a1d47ed6a2ed485007067dbed8eb191d68daab99de2898895485d3"
+    },
+    {
+      "name": "followup-alaska-arctic-featureinfo.json",
+      "bytes": 204,
+      "sha256": "963206c22e10691fbd24b472fb6904afeb977a15d7b1d55c0b55daaad03a04c8"
+    },
+    {
+      "name": "followup-alaska-arctic-featureinfo.json.headers.json",
+      "bytes": 1855,
+      "sha256": "642e04e13a4d732b394b4640aeea9aec8c042e4509acbcdf1bae90c75c9c0ca3"
+    },
+    {
+      "name": "followup-alaska-featureinfo.json",
+      "bytes": 204,
+      "sha256": "551a1ce19fcf6fe29540796deef7c6bed603c23f02b47afaa413d9e1144b4246"
+    },
+    {
+      "name": "followup-alaska-featureinfo.json.headers.json",
+      "bytes": 2260,
+      "sha256": "729c285c74197c322060858201a44376661d22338baec01fa7fca47c2019baf4"
+    },
+    {
+      "name": "followup-catalog-audit.json",
+      "bytes": 3212,
+      "sha256": "b0476f28ff411b3428ef5e30e4b110cc9d1dbd0f0337307e1bd1361e340ae084"
+    },
+    {
+      "name": "followup-conus-featureinfo.json",
+      "bytes": 204,
+      "sha256": "9462afdd70f227cfdee14916da1f7586585617d60249320ad930dc62220332d6"
+    },
+    {
+      "name": "followup-conus-featureinfo.json.headers.json",
+      "bytes": 2256,
+      "sha256": "b0094f8d4fc4ecf7b98c4c2f6ae8aaa5d6be4dc60ba16887a737226c0aeb82f0"
+    },
+    {
+      "name": "followup-hawaii-featureinfo.json",
+      "bytes": 204,
+      "sha256": "948f877710012ea7af2394b6fb92baa0fc1dba7909755807cea1e86c6e542062"
+    },
+    {
+      "name": "followup-hawaii-featureinfo.json.headers.json",
+      "bytes": 2286,
+      "sha256": "8dc15230542d2ef150ec4607555d58d2ed4b7c5a38b667736d255b6417a642fc"
+    },
+    {
+      "name": "followup-mrms-alaska-catalog.html.headers.json",
+      "bytes": 148,
+      "sha256": "ebfa54dc2bd280f699d9c5a110c9b5609e239c956c6150c7ddde7d572fb0fa0c"
+    },
+    {
+      "name": "followup-mrms-conus-catalog.html.headers.json",
+      "bytes": 147,
+      "sha256": "c949e41c6165ae6f2500254bde1ab2fc3ecb00caf3e174466df868dacbd760e5"
+    },
+    {
+      "name": "followup-mrms-guide.pdf.headers.json",
+      "bytes": 1202,
+      "sha256": "71548b912c2053aa0af7a9437e320faa9f0b1a0fc5d8d27ecefc566b4bbf20ad"
+    },
+    {
+      "name": "followup-mrms-hawaii-catalog.html.headers.json",
+      "bytes": 148,
+      "sha256": "2eb10bd3e57028ff31a29eea3858f2680e96b4675928f669b4ac62523256f5cb"
+    },
+    {
+      "name": "followup-mrms-table.html.headers.json",
+      "bytes": 274,
+      "sha256": "27b4dbef1b2da11036aeaeaed729a36f9e58057d56bd5ef1680e228f6067e6e2"
+    },
+    {
+      "name": "followup-nowcoast-capabilities.xml",
+      "bytes": 458305,
+      "sha256": "4bb64be30c9cece25f079742a653e7230f86f64a15b4f8199f1430cb556d2227"
+    },
+    {
+      "name": "followup-nowcoast-capabilities.xml.headers.json",
+      "bytes": 1692,
+      "sha256": "eb45c489d8861f9c04ca2208de64231a16adb3cf23ea5a460e5c86371968498a"
+    },
+    {
+      "name": "followup-public-source-notes.json",
+      "bytes": 2842,
+      "sha256": "3dd933d17d2da736045fb5bf109f0aba2b163922575f06f84b250746c610d732"
+    },
+    {
+      "name": "followup-radar-faq.html",
+      "bytes": 44937,
+      "sha256": "cdae34f9907ff8019373f68e1009f5f968614014c6faedbb77f7d7b7be0b39b0"
+    },
+    {
+      "name": "followup-radar-faq.html.headers.json",
+      "bytes": 1346,
+      "sha256": "f1b574f3349d1f28b421d0373b5a583fe4a47b2bf742b62772dfa6ecbc353d4a"
+    },
+    {
+      "name": "followup-radar-style.xml",
+      "bytes": 24248,
+      "sha256": "da9c9b7bbd968ae22cafb038067adeddde14502052389b4c2f1944a4ecfcb890"
+    },
+    {
+      "name": "followup-radar-style.xml.headers.json",
+      "bytes": 1976,
+      "sha256": "1fd77db9a9011b8ef1785042b8c249157682c6c1f4a2f69a9d50b1911d28300b"
+    }
+  ],
+  "sample_get_count": 6,
+  "new_imagery_get_count": 0,
+  "local_links_missing": []
+}

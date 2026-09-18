@@ -1,0 +1,23 @@
+import {chromium,expect} from '@playwright/test';
+import {writeFile} from 'node:fs/promises';
+const browser=await chromium.launch({executablePath:'/usr/bin/google-chrome',headless:true});
+const context=await browser.newContext({viewport:{width:1280,height:900},geolocation:{latitude:38.7521,longitude:-121.288},permissions:['geolocation']});
+const page=await context.newPage();page.setDefaultTimeout(20000);
+const results=[],errors=[];
+page.on('pageerror',e=>errors.push(e.message));
+const step=async(name,fn)=>{try{await fn();results.push({name,status:'pass'});}catch(e){results.push({name,status:'fail',reason:e.message.slice(0,600)});}console.log(results.at(-1));};
+try{
+ await page.goto('http://127.0.0.1:4311/');
+ await step('ambiguous city search and live forecast',async()=>{await page.locator('#city-search').fill('Roseville');await page.locator('.search-results button').filter({hasText:'Placer'}).click();await expect(page.locator('.hero-temperature')).not.toContainText('—');await expect(page.locator('h1:visible').first()).toContainText('Roseville');});
+ await step('save location / units / horizon / activity',async()=>{await page.getByRole('button',{name:/Save place/}).click();await page.getByRole('button',{name:'°C',exact:true}).click();await expect(page.locator('.hero-temperature')).toContainText('C');for(const n of [7,10,14]){await page.getByRole('button',{name:`${n} days`,exact:true}).click();await expect(page.locator('.daily-row')).toHaveCount(n);}await page.locator('#activity').selectOption('strenuous');});
+ await step('hourly chart and table',async()=>{await expect(page.locator('svg').first()).toBeVisible();const summary=page.locator('summary').filter({hasText:/hourly/i}).first();await summary.click();await expect(page.locator('table').first()).toBeVisible();});
+ await page.screenshot({path:'docs/verification/browser/today-desktop.png',fullPage:true});
+ await step('preferences survive reload',async()=>{await page.reload();await expect(page.locator('.hero-temperature')).toContainText('C');await expect(page.locator('#activity')).toHaveValue('strenuous');await expect(page.locator('.saved-places')).toContainText('Roseville');});
+ await step('geolocation granted',async()=>{await page.getByRole('button',{name:/Use my location/}).click();await expect(page.locator('h1:visible').first()).toContainText('Current location');await expect(page.locator('.hero-temperature')).not.toContainText('—');});
+ await step('radar current and previous frame',async()=>{await page.getByRole('tab',{name:'Maps',exact:true}).click();await expect(page.locator('.interactive-map')).toHaveAttribute('data-weather-ready','true');const before=await page.locator('.map-controls select').nth(2).inputValue();await page.getByRole('button',{name:'Previous frame',exact:true}).click();await expect(page.locator('.map-controls select').nth(2)).not.toHaveValue(before);await expect(page.locator('.interactive-map')).toHaveAttribute('data-weather-ready','true');});
+ await step('satellite product',async()=>{await page.locator('.map-controls select').nth(1).selectOption('satellite-goes-infrared');await expect(page.locator('.interactive-map')).toHaveAttribute('data-weather-ready','true');await page.locator('.interactive-map').scrollIntoViewIfNeeded();await page.screenshot({path:'docs/verification/browser/satellite.png'});});
+ await step('mobile layout no horizontal overflow',async()=>{await page.setViewportSize({width:390,height:844});await page.getByRole('tab',{name:'Today',exact:true}).click();await expect(page.locator('.hero-temperature')).toBeVisible();const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1);expect(overflow).toBe(false);await page.screenshot({path:'docs/verification/browser/today-mobile.png',fullPage:true});});
+ await step('offline hides weather, reconnect restores',async()=>{await context.setOffline(true);await expect(page.locator('.hero-temperature')).toHaveCount(0);await expect(page.locator('body')).toContainText(/offline/i);await context.setOffline(false);await expect(page.locator('.hero-temperature')).toBeVisible();});
+ await step('settings remove saved location',async()=>{await page.getByRole('tab',{name:'Settings',exact:true}).click();await page.getByRole('button',{name:/Remove Roseville/}).click();await expect(page.locator('.saved-places')).toHaveCount(0);});
+ await step('service worker registration',async()=>{const active=await page.evaluate(async()=>!!(await navigator.serviceWorker.ready).active);expect(active).toBe(true);});
+}finally{await writeFile('docs/verification/browser/core-results.json',JSON.stringify({time:new Date().toISOString(),browser:browser.version(),results,errors},null,2));await browser.close();}

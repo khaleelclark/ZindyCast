@@ -1,0 +1,9 @@
+# Deltona current-reading regression — September 17, 2026
+
+The user's screenshot showed Deltona, a model estimate and “No recent nearby station reading available.” Reproduced the selected geocoded city (28.90054, −81.26367) through the live local observations API:502. A bounded direct manual-redirect request showed NWS301 to `/points/28.9005,-81.2637`. The observation adapter intentionally rejects redirects; the previous Osteen-center test used only three decimals and did not expose this city/GPS-coordinate failure.
+
+The NWS point request now rounds to four decimal places and removes trailing zeros, requesting the canonical URL directly. Original coordinates remain unchanged in response identity and distance calculations. Redirect rejection, byte/call limits, units/QC and station age/distance eligibility are unchanged. A request failure is now labeled “Station service unavailable. Showing the model estimate.” instead of incorrectly implying that no station report exists.
+
+Regression test verifies canonical outbound URL, original response identity/distance and unchanged five-request bound. Relevant node:test run21/21passed; typecheck and `npm run build` passed (existing MapLibre warning). Published assets; restarted only existing ZindyCast API/worker services.
+
+`tests/browser/deltona-current-live.mjs` exercises the real deployed forecast/observation endpoints with the exact geocoded Deltona coordinates, Chrome390px, disposable preferences, other API services and external imagery blocked. Source/time/value capture is in `browser.json` and raw canonical station data in `live-observations.json`. This is a later live reading, not a reconstruction of the user's screenshot. No physical-device claim. The existing four-width fixture suite also checks explicit service-outage wording, source fallback, expiry and previous-location cancellation.

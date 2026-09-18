@@ -1,0 +1,20 @@
+{
+  "url": "https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/hrrr::REFD-F0180-202609111400/9/140/213.png",
+  "status": 200,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "cache-control": "public, max-age=300",
+    "connection": "Keep-Alive",
+    "content-type": "image/png",
+    "date": "Fri, 11 Sep 2026 17:01:32 GMT",
+    "expires": "Fri, 11 Sep 2026 17:06:32 GMT",
+    "keep-alive": "timeout=5, max=100",
+    "server": "gunicorn",
+    "transfer-encoding": "chunked",
+    "x-iem-serverid": "iemvs42-dc.agron.iastate.edu"
+  },
+  "retrievedAt": "2026-09-11T17:01:32.458Z",
+  "bytes": 390,
+  "sha256": "7c818d059b3a73a128613c91c2b2fa43c008603e7d6e080bdadbabcb0138ec8d",
+  "historicalRun": true
+}

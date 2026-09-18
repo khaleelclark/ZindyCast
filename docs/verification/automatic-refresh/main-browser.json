@@ -1,0 +1,10 @@
+{
+  "requests": 5,
+  "errors": [],
+  "automaticRefresh": true,
+  "hiddenPause": true,
+  "resumeCoalesced": true,
+  "failedRefreshRetainsCard": true,
+  "automaticRecovery": true,
+  "fixtureOnly": true
+}

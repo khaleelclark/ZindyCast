@@ -1,0 +1,2705 @@
+{
+  "status": "success",
+  "freshness": "fresh",
+  "data": {
+    "query": {
+      "latitude": 28.846,
+      "longitude": -81.162,
+      "since": "2026-09-17T17:26:58.155Z",
+      "until": "2026-09-17T20:26:58.155Z",
+      "stationLimit": 3
+    },
+    "stations": [
+      {
+        "stationId": "KSFB",
+        "name": "Orlando / Sanford Airport",
+        "coordinates": {
+          "latitude": 28.78333,
+          "longitude": -81.25
+        },
+        "elevationM": 17.0688,
+        "distanceKm": 11.048420482111789,
+        "sourceUrl": "https://api.weather.gov/stations/KSFB",
+        "latestObservationTime": "2026-09-17T20:10:00.000Z",
+        "observationHistoryTruncated": true,
+        "observations": [
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T20:10:00+00:00",
+            "time": "2026-09-17T20:10:00.000Z",
+            "textDescription": "Mostly Clear",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 22,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 58.813923696437,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 6.6899999999999995,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 60,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 101896.44,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T20:05:00+00:00",
+            "time": "2026-09-17T20:05:00.000Z",
+            "textDescription": "Partly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 22,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 58.813923696437,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 7.2,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 50,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 101930.3,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T20:00:00+00:00",
+            "time": "2026-09-17T20:00:00.000Z",
+            "textDescription": "Partly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 30,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 58.581385103971,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 7.2,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 60,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 101930.3,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T19:55:00+00:00",
+            "time": "2026-09-17T19:55:00.000Z",
+            "textDescription": "Mostly Cloudy and Windy",
+            "measurements": {
+              "temperatureC": {
+                "value": 29,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 62.059071991511,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 8.75,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 40,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 101930.3,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T19:53:00+00:00",
+            "time": "2026-09-17T19:53:00.000Z",
+            "textDescription": "Mostly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 28.9,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21.1,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 62.804008959714,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 7.2,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": 11.799999999999999,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "windDirectionDeg": {
+                "value": 40,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 101930,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16090,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              }
+            },
+            "missingFields": [
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T19:50:00+00:00",
+            "time": "2026-09-17T19:50:00.000Z",
+            "textDescription": "Mostly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 29,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 62.059071991511,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 8.23,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 50,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 101930.3,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T19:45:00+00:00",
+            "time": "2026-09-17T19:45:00.000Z",
+            "textDescription": "Mostly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 30,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 58.581385103971,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 8.23,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": 10.8,
+                "qualityControl": "S",
+                "qualityMeaning": "screened_pass_levels_1_2"
+              },
+              "windDirectionDeg": {
+                "value": 40,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 101930.3,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T19:40:00+00:00",
+            "time": "2026-09-17T19:40:00.000Z",
+            "textDescription": "Mostly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 30,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 58.581385103971,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 7.2,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 30,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 101930.3,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T19:35:00+00:00",
+            "time": "2026-09-17T19:35:00.000Z",
+            "textDescription": "Mostly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 30,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 58.581385103971,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 8.23,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 50,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 101964.16,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T19:30:00+00:00",
+            "time": "2026-09-17T19:30:00.000Z",
+            "textDescription": "Mostly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 30,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 58.581385103971,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 5.66,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 40,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 101964.16,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T19:25:00+00:00",
+            "time": "2026-09-17T19:25:00.000Z",
+            "textDescription": "Mostly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 30,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 58.581385103971,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 7.2,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 60,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 101964.16,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T19:20:00+00:00",
+            "time": "2026-09-17T19:20:00.000Z",
+            "textDescription": "Partly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 55.321861254559,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 7.720000000000001,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 60,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 101964.16,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T19:15:00+00:00",
+            "time": "2026-09-17T19:15:00.000Z",
+            "textDescription": "Partly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 55.321861254559,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 6.6899999999999995,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 40,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 101964.16,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T19:10:00+00:00",
+            "time": "2026-09-17T19:10:00.000Z",
+            "textDescription": "Partly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 55.321861254559,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 8.23,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": 10.8,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "windDirectionDeg": {
+                "value": 30,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 101964.16,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T19:05:00+00:00",
+            "time": "2026-09-17T19:05:00.000Z",
+            "textDescription": "Mostly Clear",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 55.321861254559,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 7.2,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 70,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 101998.03,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T19:00:00+00:00",
+            "time": "2026-09-17T19:00:00.000Z",
+            "textDescription": "Mostly Clear",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 55.321861254559,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 6.6899999999999995,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 70,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 101998.03,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T18:55:00+00:00",
+            "time": "2026-09-17T18:55:00.000Z",
+            "textDescription": "Partly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 55.321861254559,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 6.6899999999999995,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 50,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 101998.03,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T18:53:00+00:00",
+            "time": "2026-09-17T18:53:00.000Z",
+            "textDescription": "Partly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 31.1,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21.1,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 55.346207752563,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 7.699999999999999,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 50,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102000,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16090,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T18:50:00+00:00",
+            "time": "2026-09-17T18:50:00.000Z",
+            "textDescription": "Partly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 55.321861254559,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 7.2,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": 9.77,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "windDirectionDeg": {
+                "value": 50,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 101998.03,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T18:45:00+00:00",
+            "time": "2026-09-17T18:45:00.000Z",
+            "textDescription": "Partly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 55.321861254559,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 7.2,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 50,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 101998.03,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T18:40:00+00:00",
+            "time": "2026-09-17T18:40:00.000Z",
+            "textDescription": "Partly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 55.321861254559,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 7.720000000000001,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 50,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102031.89,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T18:35:00+00:00",
+            "time": "2026-09-17T18:35:00.000Z",
+            "textDescription": "Partly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 55.321861254559,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 8.23,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 60,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102031.89,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T18:30:00+00:00",
+            "time": "2026-09-17T18:30:00.000Z",
+            "textDescription": "Partly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 55.321861254559,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 6.6899999999999995,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 50,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102031.89,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T18:25:00+00:00",
+            "time": "2026-09-17T18:25:00.000Z",
+            "textDescription": "Partly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 55.321861254559,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 7.2,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 50,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102031.89,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T18:20:00+00:00",
+            "time": "2026-09-17T18:20:00.000Z",
+            "textDescription": "Partly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 55.321861254559,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 6.6899999999999995,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 50,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102031.89,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T18:15:00+00:00",
+            "time": "2026-09-17T18:15:00.000Z",
+            "textDescription": "Partly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 55.321861254559,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 5.66,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 60,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102065.75,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T18:10:00+00:00",
+            "time": "2026-09-17T18:10:00.000Z",
+            "textDescription": "Mostly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 55.321861254559,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 7.2,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 60,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102065.75,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T18:05:00+00:00",
+            "time": "2026-09-17T18:05:00.000Z",
+            "textDescription": "Mostly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 55.321861254559,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 7.720000000000001,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 60,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102065.75,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T18:00:00+00:00",
+            "time": "2026-09-17T18:00:00.000Z",
+            "textDescription": "Partly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 55.321861254559,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 7.720000000000001,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 50,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102065.75,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T17:55:00+00:00",
+            "time": "2026-09-17T17:55:00.000Z",
+            "textDescription": "Partly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 55.321861254559,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 6.17,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 60,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102065.75,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T17:53:00+00:00",
+            "time": "2026-09-17T17:53:00.000Z",
+            "textDescription": null,
+            "measurements": {
+              "temperatureC": {
+                "value": 30.6,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 20.6,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 55.2243106898,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 7.2,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 40,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102100,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16090,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T17:50:00+00:00",
+            "time": "2026-09-17T17:50:00.000Z",
+            "textDescription": "Mostly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 55.321861254559,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 7.720000000000001,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 60,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102099.62,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T17:45:00+00:00",
+            "time": "2026-09-17T17:45:00.000Z",
+            "textDescription": "Mostly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 30,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 58.581385103971,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 6.6899999999999995,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 40,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102099.62,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T17:40:00+00:00",
+            "time": "2026-09-17T17:40:00.000Z",
+            "textDescription": "Mostly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 22,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 58.813923696437,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 7.720000000000001,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 60,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102099.62,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T17:35:00+00:00",
+            "time": "2026-09-17T17:35:00.000Z",
+            "textDescription": "Mostly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 55.321861254559,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 5.66,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 40,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102099.62,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KSFB/observations/2026-09-17T17:30:00+00:00",
+            "time": "2026-09-17T17:30:00.000Z",
+            "textDescription": "Mostly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 30,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 21,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 58.581385103971,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 7.2,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": 9.77,
+                "qualityControl": "S",
+                "qualityMeaning": "screened_pass_levels_1_2"
+              },
+              "windDirectionDeg": {
+                "value": 40,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102099.62,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16093.44,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": null,
+                "qualityMeaning": null
+              }
+            },
+            "missingFields": [
+              "precipitationLastHourMm"
+            ]
+          }
+        ]
+      },
+      {
+        "stationId": "KDED",
+        "name": "DeLand Municipal Airport",
+        "coordinates": {
+          "latitude": 29.067,
+          "longitude": -81.2837
+        },
+        "elevationM": 24.0792,
+        "distanceKm": 27.27796185760252,
+        "sourceUrl": "https://api.weather.gov/stations/KDED",
+        "latestObservationTime": "2026-09-17T19:50:00.000Z",
+        "observationHistoryTruncated": true,
+        "observations": [
+          {
+            "sourceId": "https://api.weather.gov/stations/KDED/observations/2026-09-17T19:50:00+00:00",
+            "time": "2026-09-17T19:50:00.000Z",
+            "textDescription": "Mostly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 29.8,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 20.1,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 56.060412978319,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 6.7,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": 9.299999999999999,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "windDirectionDeg": {
+                "value": 50,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102030,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16090,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              }
+            },
+            "missingFields": [
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KDED/observations/2026-09-17T19:30:00+00:00",
+            "time": "2026-09-17T19:30:00.000Z",
+            "textDescription": "Partly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 30.9,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 19.9,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 51.98758579514,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 5.7,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 40,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102030,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16090,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KDED/observations/2026-09-17T19:10:00+00:00",
+            "time": "2026-09-17T19:10:00.000Z",
+            "textDescription": "Partly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 30.1,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 19.8,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 54.087649255777,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 5.1,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 50,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102070,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16090,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KDED/observations/2026-09-17T18:50:00+00:00",
+            "time": "2026-09-17T18:50:00.000Z",
+            "textDescription": "Clear",
+            "measurements": {
+              "temperatureC": {
+                "value": 31,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 19.5,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 50.424549005022,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 5.1,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 50,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102070,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16090,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KDED/observations/2026-09-17T18:30:00+00:00",
+            "time": "2026-09-17T18:30:00.000Z",
+            "textDescription": "Partly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 30.3,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 19.6,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 52.811058714693,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 6.2,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": 9.299999999999999,
+                "qualityControl": "S",
+                "qualityMeaning": "screened_pass_levels_1_2"
+              },
+              "windDirectionDeg": {
+                "value": 70,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102130,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16090,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              }
+            },
+            "missingFields": [
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KDED/observations/2026-09-17T18:10:00+00:00",
+            "time": "2026-09-17T18:10:00.000Z",
+            "textDescription": "Mostly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 29.2,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 19,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 54.200838000687,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 5.1,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": 8.799999999999999,
+                "qualityControl": "S",
+                "qualityMeaning": "screened_pass_levels_1_2"
+              },
+              "windDirectionDeg": {
+                "value": 30,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102130,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16090,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              }
+            },
+            "missingFields": [
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KDED/observations/2026-09-17T17:50:00+00:00",
+            "time": "2026-09-17T17:50:00.000Z",
+            "textDescription": "Partly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 29.9,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 19.5,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 53.703325664197,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 4.1,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 40,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102170,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16090,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KDED/observations/2026-09-17T17:30:00+00:00",
+            "time": "2026-09-17T17:30:00.000Z",
+            "textDescription": null,
+            "measurements": {
+              "temperatureC": {
+                "value": 30.3,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 19,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 50.87521420606,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 6.2,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 30,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102200,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16090,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          }
+        ]
+      },
+      {
+        "stationId": "KEVB",
+        "name": "New Smyrna Beach Municipal Airport",
+        "coordinates": {
+          "latitude": 29.05687,
+          "longitude": -80.94909
+        },
+        "elevationM": 0.9144,
+        "distanceKm": 31.288041615918413,
+        "sourceUrl": "https://api.weather.gov/stations/KEVB",
+        "latestObservationTime": "2026-09-17T19:47:00.000Z",
+        "observationHistoryTruncated": true,
+        "observations": [
+          {
+            "sourceId": "https://api.weather.gov/stations/KEVB/observations/2026-09-17T19:47:00+00:00",
+            "time": "2026-09-17T19:47:00.000Z",
+            "textDescription": "Partly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 30,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 24,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 70.293061425925,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 6.2,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": 8.799999999999999,
+                "qualityControl": "S",
+                "qualityMeaning": "screened_pass_levels_1_2"
+              },
+              "windDirectionDeg": {
+                "value": 70,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102000,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16090,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              }
+            },
+            "missingFields": [
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KEVB/observations/2026-09-17T18:47:00+00:00",
+            "time": "2026-09-17T18:47:00.000Z",
+            "textDescription": "Partly Cloudy",
+            "measurements": {
+              "temperatureC": {
+                "value": 29,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 24,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 74.466012570254,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 7.2,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": 9.8,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "windDirectionDeg": {
+                "value": 70,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102030,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16090,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              }
+            },
+            "missingFields": [
+              "precipitationLastHourMm"
+            ]
+          },
+          {
+            "sourceId": "https://api.weather.gov/stations/KEVB/observations/2026-09-17T17:47:00+00:00",
+            "time": "2026-09-17T17:47:00.000Z",
+            "textDescription": null,
+            "measurements": {
+              "temperatureC": {
+                "value": 30,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "dewPointC": {
+                "value": 24,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "humidityPercent": {
+                "value": 70.293061425925,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windSpeedMs": {
+                "value": 7.2,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "windGustMs": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              },
+              "windDirectionDeg": {
+                "value": 50,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "barometricPressurePa": {
+                "value": 102130,
+                "qualityControl": "V",
+                "qualityMeaning": "verified_pass_levels_1_2_3"
+              },
+              "visibilityM": {
+                "value": 16090,
+                "qualityControl": "C",
+                "qualityMeaning": "coarse_pass_level_1"
+              },
+              "precipitationLastHourMm": {
+                "value": null,
+                "qualityControl": "Z",
+                "qualityMeaning": "preliminary_no_qc"
+              }
+            },
+            "missingFields": [
+              "windGustMs",
+              "precipitationLastHourMm"
+            ]
+          }
+        ]
+      }
+    ],
+    "candidateCount": 5,
+    "candidateSetTruncated": true,
+    "provider": "NWS",
+    "dataset": "NWS API station observations (MADIS ingest)",
+    "classification": "observed",
+    "retrievedAt": "2026-09-17T20:26:58.678Z",
+    "stationListSourceUrl": "https://api.weather.gov/gridpoints/MLB/33,83/stations?limit=5",
+    "selectionPolicy": "distance-ranked candidates only; no automatic representativeness selection",
+    "stationContinuity": "observations remain grouped by station; no cross-station splice",
+    "intervalSemantics": "station instants; precipitationLastHourMm is the reported preceding-hour accumulation ending at observation time",
+    "units": {
+      "temperatureC": "wmoUnit:degC",
+      "dewPointC": "wmoUnit:degC",
+      "humidityPercent": "wmoUnit:percent",
+      "windSpeedMs": "wmoUnit:m_s-1",
+      "windGustMs": "wmoUnit:m_s-1",
+      "windDirectionDeg": "wmoUnit:degree_(angle)",
+      "barometricPressurePa": "wmoUnit:Pa",
+      "visibilityM": "wmoUnit:m",
+      "precipitationLastHourMm": "wmoUnit:mm"
+    },
+    "qualityControlSourceUrl": "https://madis.ncep.noaa.gov/madis_sfc_qc_notes.shtml",
+    "attribution": "Station observations from NOAA National Weather Service (https://www.weather.gov/); quality flags from MADIS."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "url": "https://archive-api.open-meteo.com/v1/archive?latitude=28.858&longitude=-81.17&start_date=2025-07-15&end_date=2025-07-15&models=era5&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Cwind_speed_10m%2Cdew_point_2m%2Cwet_bulb_temperature_2m%2Csunshine_duration%2Ccloud_cover%2Cweather_code%2Cis_day%2Cshortwave_radiation&daily=sunrise%2Csunset%2Cdaylight_duration&timezone=GMT&timeformat=unixtime&temperature_unit=celsius&wind_speed_unit=ms&precipitation_unit=mm&cell_selection=land",
+  "startedAt": "2026-09-13T05:25:04.357548+00:00",
+  "requestCount": 1,
+  "maximumWeightedUnits": 2,
+  "retries": 0,
+  "status": 200,
+  "headers": {
+    "Date": "Sun, 13 Sep 2026 05:25:05 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close"
+  },
+  "elapsedMs": 737,
+  "retrievedAt": "2026-09-13T05:25:05.094265+00:00",
+  "bytes": 2287
+}

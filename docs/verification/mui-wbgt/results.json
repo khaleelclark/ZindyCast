@@ -1,0 +1,69 @@
+{
+  "at": "2026-09-11T02:27:57.377Z",
+  "checks": [
+    "Live hourly WBGT matches response; source grid provenance and current marker present",
+    "Heat scale follows current metrics in the same card with green-to-red gradient",
+    "Today has one rendered interactive map and WBGT forecast graph",
+    "Desktop map fills available card height and canvas matches viewport",
+    "Metric value and reference ticks convert correctly",
+    "Today/Maps switching preserves single rendered map",
+    "390px layout has no horizontal overflow",
+    "Offline removes current WBGT and reconnect restores it"
+  ],
+  "errors": [],
+  "requests": [
+    {
+      "path": "/api/v1/locations",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/alerts",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/forecast",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/maps",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/maps/frame",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/maps",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/maps/frame",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/alerts",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/maps",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/maps/frame",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/alerts",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/forecast",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/maps",
+      "status": 200
+    }
+  ],
+  "limits": "Live localhost Chrome, not physical devices. Upstream cache/provider call count not inferred from internal requests."
+}

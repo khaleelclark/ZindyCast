@@ -1,0 +1,5 @@
+{
+  "url": "https://api.open-meteo.com/v1/forecast?latitude=61.22&longitude=-149.9&hourly=temperature_2m%2Crelative_humidity_2m%2Csurface_pressure%2Cwind_speed_10m%2Cshortwave_radiation%2Cshortwave_radiation_instant%2Cdirect_radiation_instant%2Cdiffuse_radiation_instant%2Cdirect_normal_irradiance_instant%2Cwet_bulb_temperature_2m&start_date=2026-09-11&end_date=2026-09-11&timezone=UTC&wind_speed_unit=ms",
+  "retrieved_at": "2026-09-10T23:37:02.657630+00:00",
+  "status": 200
+}

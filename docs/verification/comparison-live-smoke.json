@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-09-11T00:51:22.700Z",
+  "state": "completed",
+  "query": {
+    "locations": [
+      {
+        "id": "honolulu",
+        "name": "Honolulu",
+        "latitude": 21.3069,
+        "longitude": -157.8583
+      },
+      {
+        "id": "anchorage",
+        "name": "Anchorage",
+        "latitude": 61.2181,
+        "longitude": -149.9003
+      }
+    ],
+    "startDate": "2020-07-15",
+    "endDate": "2020-07-15"
+  },
+  "locations": [
+    {
+      "name": "Honolulu",
+      "temperatureCount": 24,
+      "precipitationCount": 24
+    },
+    {
+      "name": "Anchorage",
+      "temperatureCount": 24,
+      "precipitationCount": 24
+    }
+  ],
+  "ownershipDeniedWithoutCredential": true,
+  "leaseRedacted": true,
+  "terminalAdmissionReleased": true,
+  "queuedCancellation": true
+}

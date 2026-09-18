@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "requests": [
+    "2026-09-11T01:04:07.000Z",
+    "2026-09-11T00:44:07.000Z",
+    "2026-09-11T00:48:17.000Z",
+    "2026-09-11T00:52:08.000Z",
+    "2026-09-11T00:56:02.000Z",
+    "2026-09-11T01:00:14.000Z",
+    "2026-09-11T00:52:08.000Z",
+    "2026-09-11T00:52:08.000Z",
+    "2026-09-11T00:52:08.000Z",
+    "2026-09-11T00:44:07.000Z",
+    "2026-09-11T00:52:08.000Z",
+    "2026-09-11T00:52:08.000Z",
+    "2026-09-11T00:52:08.000Z",
+    "2026-09-11T01:08:00.000Z",
+    "2026-09-11T01:04:07.000Z"
+  ],
+  "maxActive": 2,
+  "catalogRequests": [
+    1789160060462,
+    1789160069667,
+    1789160070408,
+    1789160071985,
+    1789160074418
+  ],
+  "historicalSelectionPreserved": true,
+  "noPlayingOrHiddenPoll": true,
+  "maxBlobs": 6,
+  "errors": [],
+  "limitations": "All APIs are retained fixtures with request-adapted metadata; external tiles blocked. Visibility event simulated, no fabricated timestamps. Isolated Chrome mobile viewport, no physical-device claim."
+}

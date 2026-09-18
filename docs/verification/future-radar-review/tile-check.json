@@ -1,0 +1,60 @@
+[
+  {
+    "status": 200,
+    "elapsedSeconds": 0.008,
+    "bytes": 6200,
+    "headers": {
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://tile.openstreetmap.org https://api.mapbox.com; connect-src 'self' blob: https://tile.openstreetmap.org https://api.mapbox.com; worker-src 'self'; font-src 'self' data:; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "DENY",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "permissions-policy": "camera=(), microphone=(), payment=(), geolocation=(self)",
+      "cache-control": "private, no-store",
+      "x-forecast-product": "forecast-hrrr-conus",
+      "x-forecast-frame": "hrrr-202609121400-f0240",
+      "x-forecast-model-run": "2026-09-12T14:00:00.000Z",
+      "x-forecast-valid-time": "2026-09-12T18:00:00.000Z",
+      "x-forecast-lead-minutes": "240",
+      "x-forecast-retrieved-at": "2026-09-12T17:33:34.647Z",
+      "x-forecast-metadata-retrieved-at": "2026-09-12T17:33:28.021Z",
+      "x-forecast-evaluated-at": "2026-09-12T17:37:28.707Z",
+      "x-forecast-source-time-status": "pinned_model_run_requested",
+      "x-forecast-coverage": "unknown",
+      "x-forecast-attribution": "NOAA/NCEP HRRR; Iowa Environmental Mesonet",
+      "x-forecast-freshness": "fresh",
+      "content-type": "image/png",
+      "content-length": "6200",
+      "Date": "Sat, 12 Sep 2026 17:37:28 GMT",
+      "Connection": "close"
+    }
+  },
+  {
+    "status": 200,
+    "elapsedSeconds": 0.001,
+    "bytes": 6200,
+    "headers": {
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://tile.openstreetmap.org https://api.mapbox.com; connect-src 'self' blob: https://tile.openstreetmap.org https://api.mapbox.com; worker-src 'self'; font-src 'self' data:; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "DENY",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "permissions-policy": "camera=(), microphone=(), payment=(), geolocation=(self)",
+      "cache-control": "private, no-store",
+      "x-forecast-product": "forecast-hrrr-conus",
+      "x-forecast-frame": "hrrr-202609121400-f0240",
+      "x-forecast-model-run": "2026-09-12T14:00:00.000Z",
+      "x-forecast-valid-time": "2026-09-12T18:00:00.000Z",
+      "x-forecast-lead-minutes": "240",
+      "x-forecast-retrieved-at": "2026-09-12T17:33:34.647Z",
+      "x-forecast-metadata-retrieved-at": "2026-09-12T17:33:28.021Z",
+      "x-forecast-evaluated-at": "2026-09-12T17:37:28.708Z",
+      "x-forecast-source-time-status": "pinned_model_run_requested",
+      "x-forecast-coverage": "unknown",
+      "x-forecast-attribution": "NOAA/NCEP HRRR; Iowa Environmental Mesonet",
+      "x-forecast-freshness": "fresh",
+      "content-type": "image/png",
+      "content-length": "6200",
+      "Date": "Sat, 12 Sep 2026 17:37:28 GMT",
+      "Connection": "close"
+    }
+  }
+]

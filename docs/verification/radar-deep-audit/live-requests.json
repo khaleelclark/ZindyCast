@@ -1,0 +1,24 @@
+{
+  "requests": [
+    {
+      "path": "/api/v1/maps",
+      "status": 200,
+      "durationMs": 70,
+      "at": "2026-09-12T17:35:46.318Z"
+    },
+    {
+      "path": "/api/v1/maps/frame?product=radar-conus&west=-83.367265625&south=27.648352140332438&east=-78.972734375&north=30.053736629383042&width=800&height=500&projection=EPSG%3A3857&time=2026-09-12T17%3A28%3A04.000Z",
+      "status": 200,
+      "durationMs": 374,
+      "at": "2026-09-12T17:35:46.695Z"
+    },
+    {
+      "path": "/api/v1/maps/frame?product=radar-conus&west=-81.444658203125&south=28.707547200872003&east=-80.895341796875&north=29.008235399253195&width=800&height=500&projection=EPSG%3A3857&time=2026-09-12T17%3A28%3A04.000Z",
+      "status": 200,
+      "durationMs": 217,
+      "at": "2026-09-12T17:35:46.914Z"
+    }
+  ],
+  "conservativeUpstreamBudget": 4,
+  "noRetries": true
+}

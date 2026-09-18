@@ -1,0 +1,26 @@
+[
+  {
+    "query": "Boston",
+    "requestMs": 313.1350440000001,
+    "responseMs": 1053.0488520000001,
+    "status": 200,
+    "visibleMs": 1066.1947790000002,
+    "text": "Search cities\nSearch cities\nSearch cities\nBoston, Suffolk, Massachusetts, United States\n42.358, -71.060 · America/New_York\nBoston, Erie, New York, United States\n42.629, -78.738 · America/New_York\nBoston, Thomas, Georgia, United States\n30.792, -83.790 · America/New_York\nBrilliant, Marion, Alabama, United States\n34.025, -87.758 · America/Chicago\nOwensville, Clermont, Ohio, United States\n39.123, -84.136 · America/New_York\nMoline, Elk County, Kansas, United States\n37.360, -96.304 · America/Chicago\nBoston, Nelson, Kentucky, United States\n37.788, -85.673 · America/New_York\nBoston, Wayne, Indiana, United States\n39.741, -84.852 · America/Indiana/Indianapolis\nEckerty, Crawford, Indiana, United States\n38.320, -86.612 · America/Indiana/Marengo\nBoston, Culpeper, Virginia, United States\n38.541, -78.132 · America/New_York\nBoston, Lincolnshire, England, United Kingdom\n52.976, -0.027 · Europe/London\nBoston, Province of Davao Oriental, Davao Region, Philippines\n7.871, 126.364 · Asia/Manila\nBoston, County Clare, Munster, Ireland\n53.031, -8.932 · Europe/Dublin\nBoston, Allegheny County, Pennsylvania, United States\n40.312, -79.823 · America/New_York\nBoston, Accomack, Virginia, United States\n37.609, -75.843 · America/New_York\nBoston, uMgungundlovu District Municipality, KwaZulu-Natal, South Africa\n-29.667, 29.967 · Africa/Johannesburg\nBoston, Belize District, Belize\n17.683, -88.367 · America/Belize\nBoston, Mangaung Metropolitan Municipality, Free State, South Africa\n-29.000, 26.900 · Africa/Johannesburg\nBo‘ston, Andijan Region, Uzbekistan\n40.832, 71.855 · Asia/Tashkent\nBoston, Jalal-Abad Region, Kyrgyzstan\n41.015, 72.963 · Asia/Bishkek"
+  },
+  {
+    "query": "Deltona",
+    "requestMs": 310.34914800000024,
+    "responseMs": 483.5284609999999,
+    "status": 200,
+    "visibleMs": 492.2954850000001,
+    "text": "Search cities\nSearch cities\nSearch cities\nDeltona, Volusia, Florida, United States\n28.901, -81.264 · America/New_York"
+  },
+  {
+    "query": "Boston",
+    "requestMs": 308.34999199999993,
+    "responseMs": 312.749194,
+    "status": 200,
+    "visibleMs": 319.8915499999998,
+    "text": "Search cities\nSearch cities\nSearch cities\nBoston, Suffolk, Massachusetts, United States\n42.358, -71.060 · America/New_York\nBoston, Erie, New York, United States\n42.629, -78.738 · America/New_York\nBoston, Thomas, Georgia, United States\n30.792, -83.790 · America/New_York\nBrilliant, Marion, Alabama, United States\n34.025, -87.758 · America/Chicago\nOwensville, Clermont, Ohio, United States\n39.123, -84.136 · America/New_York\nMoline, Elk County, Kansas, United States\n37.360, -96.304 · America/Chicago\nBoston, Nelson, Kentucky, United States\n37.788, -85.673 · America/New_York\nBoston, Wayne, Indiana, United States\n39.741, -84.852 · America/Indiana/Indianapolis\nEckerty, Crawford, Indiana, United States\n38.320, -86.612 · America/Indiana/Marengo\nBoston, Culpeper, Virginia, United States\n38.541, -78.132 · America/New_York\nBoston, Lincolnshire, England, United Kingdom\n52.976, -0.027 · Europe/London\nBoston, Province of Davao Oriental, Davao Region, Philippines\n7.871, 126.364 · Asia/Manila\nBoston, County Clare, Munster, Ireland\n53.031, -8.932 · Europe/Dublin\nBoston, Allegheny County, Pennsylvania, United States\n40.312, -79.823 · America/New_York\nBoston, Accomack, Virginia, United States\n37.609, -75.843 · America/New_York\nBoston, uMgungundlovu District Municipality, KwaZulu-Natal, South Africa\n-29.667, 29.967 · Africa/Johannesburg\nBoston, Belize District, Belize\n17.683, -88.367 · America/Belize\nBoston, Mangaung Metropolitan Municipality, Free State, South Africa\n-29.000, 26.900 · Africa/Johannesburg\nBo‘ston, Andijan Region, Uzbekistan\n40.832, 71.855 · Asia/Tashkent\nBoston, Jalal-Abad Region, Kyrgyzstan\n41.015, 72.963 · Asia/Bishkek"
+  }
+]
