@@ -1,0 +1,45 @@
+name: zindycast
+
+x-zindycast-environment: &zindycast-environment
+  ZINDYCAST_PUBLIC_ORIGIN: ${ZINDYCAST_PUBLIC_ORIGIN:-}
+  ZINDYCAST_VAPID_PUBLIC_KEY: ${ZINDYCAST_VAPID_PUBLIC_KEY:-}
+  ZINDYCAST_VAPID_PRIVATE_KEY: ${ZINDYCAST_VAPID_PRIVATE_KEY:-}
+  ZINDYCAST_VAPID_SUBJECT: ${ZINDYCAST_VAPID_SUBJECT:-}
+
+services:
+  app:
+    build:
+      context: .
+      args:
+        PUBLIC_MAPBOX_ACCESS_TOKEN: ${PUBLIC_MAPBOX_ACCESS_TOKEN:-}
+    image: zindycast:local
+    init: true
+    restart: unless-stopped
+    environment:
+      <<: *zindycast-environment
+    ports:
+      - "${ZINDYCAST_BIND_ADDRESS:-127.0.0.1}:${ZINDYCAST_PORT:-4311}:4311"
+    volumes:
+      - zindycast-data:/app/var
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:4311/api/v1/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+  worker:
+    image: zindycast:local
+    init: true
+    restart: unless-stopped
+    command: ["npm", "run", "start:worker"]
+    environment:
+      <<: *zindycast-environment
+    volumes:
+      - zindycast-data:/app/var
+    depends_on:
+      app:
+        condition: service_healthy
+
+volumes:
+  zindycast-data:

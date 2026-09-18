@@ -1,0 +1,17 @@
+.git
+.github
+.env
+.env.*
+!.env.example
+node_modules
+**/node_modules
+apps/web/dist
+var
+backups
+*.log
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+docs/reviews
+docs/verification
+zindycast-source-snapshot.zip

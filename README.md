@@ -2,7 +2,27 @@
 
 A self-hosted weather PWA built with React, TypeScript, Rsbuild and Fastify. It combines current conditions, forecasts, weather maps, historical browsing and city comparisons, with feels-like temperature and estimated outdoor WBGT alongside ordinary temperature.
 
-## Quick start
+## Quick start with Docker
+
+Install Docker Engine with the Compose plugin, then run:
+
+```sh
+cp .env.example .env
+docker compose up --build -d
+```
+
+Open **http://localhost:4311**. Compose builds the web app, starts the API and worker, waits for the API health check, and stores all SQLite data in the `zindycast-data` volume. Follow startup logs with `docker compose logs -f`; stop the app with `docker compose down`.
+
+Updates keep the data volume:
+
+```sh
+git pull
+docker compose up --build -d
+```
+
+`docker compose down -v` permanently deletes ZindyCast's databases and should only be used when you intend to reset the installation. The published port listens on `127.0.0.1` by default. Set `ZINDYCAST_PUBLIC_ORIGIN` and use an HTTPS reverse proxy for access from other devices; see [Access from other devices](#access-from-other-devices).
+
+## Local setup with Node.js
 
 Install **Node.js 22.22.1 or newer within the Node 22 release line** and npm 9.2.0. Run these commands from the repository root:
 
@@ -44,6 +64,8 @@ See [.env.example](.env.example) for the server and worker settings. Keep real c
 | `ZINDYCAST_PUBLIC_ORIGIN` | Your exact HTTPS origin when accessed through a reverse proxy; no trailing slash |
 | `ZINDYCAST_*_PATH` | Shared SQLite files under `var/`; API and worker must use the same paths |
 | `ZINDYCAST_VAPID_PUBLIC_KEY`, `ZINDYCAST_VAPID_PRIVATE_KEY`, `ZINDYCAST_VAPID_SUBJECT` | Optional matching Web Push configuration; leave all unset to disable delivery |
+| `ZINDYCAST_BIND_ADDRESS`, `ZINDYCAST_PORT` | Docker host binding; defaults to loopback port `4311` |
+| `PUBLIC_MAPBOX_ACCESS_TOKEN` | Optional public Mapbox token embedded when Docker builds the web app |
 
 An optional Mapbox public token can be placed in `apps/web/.env.local` using [its example](apps/web/.env.example), then rebuilt. Restrict browser tokens to your application origin. The default basemap does not require this token.
 
@@ -75,7 +97,7 @@ Build before running the complete test suite because some tests inspect generate
 
 Back up the SQLite databases together while the API and worker are stopped, or use a consistent SQLite backup procedure. They contain installation credentials, preferences, job state and provider coordination. Do not commit or distribute `var/`. Clearing coordination storage also resets persisted provider budgets, so it is not a routine cache-clear operation.
 
-For an update, stop the processes, back up data, install dependencies with `npm ci --include=dev`, run the checks and build, then restart the API and worker. Installed clients may need **Update and reload**. The offline shell does not make weather data current.
+For a Node.js update, stop the processes, back up data, install dependencies with `npm ci --include=dev`, run the checks and build, then restart the API and worker. For Docker, back up the `zindycast-data` volume and recreate the services with `docker compose up --build -d`. Installed clients may need **Update and reload**. The offline shell does not make weather data current.
 
 ## Repository layout
 
