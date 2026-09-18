@@ -116,7 +116,8 @@
 @media(max-width:700px){
  .app-shell .selected-place-header{align-items:center;flex-wrap:nowrap;gap:4px;margin:6px 0 4px;padding:4px 0 6px}
  .app-shell .selected-place-header h1{font-size:1.45rem}.app-shell .selected-place-header p:not(.subtle){font-size:.82rem}.app-shell .selected-place-header .subtle{display:none}
- .app-shell .selected-place-actions{width:auto;flex-direction:row;justify-content:flex-end;gap:4px;margin-left:auto}.app-shell .selected-place-actions .MuiButton-root{min-height:36px;padding:4px 7px;font-size:.72rem}.app-shell .selected-place-actions .wide-action-label{display:none}.app-shell .selected-place-actions .short-action-label{display:inline}
+ .app-shell .selected-place-actions{width:auto;flex-direction:row;justify-content:flex-end;gap:4px;margin-left:auto}.app-shell .selected-place-actions .MuiButton-root{min-height:40px;padding:5px 9px;font-size:.76rem}.app-shell .selected-place-actions .wide-action-label{display:none}.app-shell .selected-place-actions .short-action-label{display:inline}.app-shell .selected-place-actions .change-location{font-weight:700;border-color:#255e7b80;background:#f7fcffb8}
+ .app-shell[data-weather] .location-tools.MuiCard-root{margin:6px 0 12px;padding:10px;border:1px solid var(--grid-line);border-radius:12px;background:var(--glass)}
  .app-shell .forecast-jumps{display:none}
  .app-shell[data-weather] .navigation{margin-bottom:4px}
  .app-shell[data-weather] .dashboard-grid{border-radius:14px;margin-top:8px}
