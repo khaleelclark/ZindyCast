@@ -90,4 +90,4 @@ For an update, stop the processes, back up data, install dependencies with `npm 
 
 The application uses external weather and map providers, including Open-Meteo, NOAA/NWS and OpenStreetMap. Their attribution, usage limits and terms still apply to your deployment; this repository does not grant unlimited or commercial API access. Source-specific notices are retained in the app and research documentation.
 
-Third-party licenses and the Argonne WBGT reference notice must remain intact. A license for the project's original code has not yet been selected; availability of the source alone does not grant an open-source license.
+ZindyCast’s original code is licensed under the [MIT License](LICENSE). Third-party code, research material and datasets retain their own terms; third-party licenses and the Argonne WBGT reference notice must remain intact.
