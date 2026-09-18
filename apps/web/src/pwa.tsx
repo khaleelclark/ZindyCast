@@ -61,8 +61,8 @@ export function PwaStatus({ persist }: { persist: () => boolean }) {
     if (!persist()) { setMessage('Update paused because preferences could not be saved. Keep this page open to retain your current choices.'); return; }
     applying.current = true; setMessage('Applying update…'); waiting?.postMessage({ type: 'ACTIVATE_UPDATE' });
   }
-  return <>{waiting && <Alert severity="info" sx={{ my: 2 }} role="status" action={<Button color="inherit" variant="outlined" onClick={update}>Update and reload</Button>}>
-    <AlertTitle>A newer ZindyCast is ready</AlertTitle>
-    This tab is showing an older version. Update to get the latest maps and fixes. Your saved places and preferences will be kept.
+  return <>{waiting && <Alert className="pwa-update" severity="info" sx={{ my: 2 }} role="status" action={<Button color="inherit" variant="outlined" onClick={update}>Update</Button>}>
+    <AlertTitle>Update available</AlertTitle>
+    Get the latest ZindyCast fixes. Your settings stay saved.
   </Alert>}{message && <Alert severity="info" sx={{ my: 2 }} role="status">{message}</Alert>}</>;
 }
