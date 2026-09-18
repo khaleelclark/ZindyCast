@@ -38,11 +38,12 @@ test('wildfire rendering separates capture/edit/incident/retrieval, geometry and
     for (const text of [category === 'RX' ? 'RX · Prescribed fire' : category === 'CX' ? 'CX · Incident complex' : 'Unknown source category', 'Location geometry unavailable', 'Geometry unavailable (source null)', 'Unknown (source null)']) assert.ok(rendered.includes(text), text);
   }
 });
-test('empty and initial/offline views do not claim all clear or load fixture data', () => {
+test('empty and initial/offline views stay concise and do not load fixture data', () => {
   const raw = response(); raw.data.incidents = []; raw.data.perimeters = [];
   for (const kind of ['incidents', 'perimeters']) { raw.data.sources[kind].publishedRecords = 0; raw.data.sources[kind].availability = 'no_published_records'; }
   const html = renderToStaticMarkup(React.createElement(WildfireEvidence, { data: parseWildfires(raw, data.bbox).data, now }));
-  assert.ok(html.includes('does not mean no fires or all clear')); assert.ok(html.includes('No perimeter does not mean no fire'));
+  assert.ok(html.includes('No matching published incident records in this area.')); assert.ok(html.includes('No matching published perimeter records.'));
+  assert.doesNotMatch(html, /all clear|does not mean|no records ≠/i);
   const initial = renderToStaticMarkup(React.createElement(WildfirePanel, { location: null, online: false, now }));
   for (const text of ['Load wildfire evidence', 'disabled', 'Choose a city', 'Offline', 'not evacuation zones']) assert.ok(initial.includes(text), text);
   assert.ok(!initial.includes('Canyon'));

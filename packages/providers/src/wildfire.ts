@@ -135,9 +135,9 @@ export async function getWildfires(bbox: WildfireBbox, signal?: AbortSignal): Pr
       limitations: [
         'Dynamic published incident mapping; completeness and accuracy are not guaranteed. Not a legal document.',
         'WF = wildfire; RX = prescribed fire; CX = incident complex; null = source type unknown.',
-        'No matching published records does not mean no fires. Not every incident has a perimeter.',
+        'Incident and perimeter records are independently published and may not match.',
         'Perimeters are not evacuation zones, spread predictions, or assurances of safety outside them.',
-        'Disappearance from the current feed does not establish extinguishment. Source timestamps are independent.',
+        'Source timestamps are independent.',
         'Pagination completes a changing current view, not an atomic snapshot. Incident and perimeter retrievals are independent.',
       ],
     });
