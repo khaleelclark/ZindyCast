@@ -7,7 +7,7 @@ export const WetBulbTrackerRecordSchema = z.object({
   temperatureC: z.number().finite().nullable(), dewPointC: z.number().finite().nullable(),
   humidityPercent: z.number().min(0).max(100).nullable(), apparentTemperatureC: z.number().finite().nullable(),
   windSpeedMs: z.number().nonnegative().nullable(), precipitationProbability: z.number().min(0).max(100).nullable(),
-  isDay: z.union([z.literal(0), z.literal(1)]).nullable(), provider: z.literal('Open-Meteo'), classification: z.literal('modeled'),
+  weatherCode: z.number().int().min(0).max(99).nullable(), isDay: z.union([z.literal(0), z.literal(1)]).nullable(), provider: z.literal('Open-Meteo'), classification: z.literal('modeled'),
 });
 export type WetBulbTrackerRecord = z.infer<typeof WetBulbTrackerRecordSchema>;
 export const WetBulbTrackerResponseSchema = z.object({ status: z.literal('success'), location: LocationSchema,

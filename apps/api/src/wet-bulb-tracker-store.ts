@@ -21,13 +21,14 @@ export class WetBulbTrackerStore {
       ordinary_wet_bulb_c REAL, wbgt_c REAL, temperature_c REAL, dew_point_c REAL, humidity_percent REAL,
       apparent_temperature_c REAL, wind_speed_ms REAL, precipitation_probability REAL, is_day INTEGER,
       provider TEXT NOT NULL CHECK(provider='Open-Meteo'), classification TEXT NOT NULL CHECK(classification='modeled')) STRICT;`);
+    if(!(this.db.prepare('PRAGMA table_info(wet_bulb_records)').all() as any[]).some(row=>row.name==='weather_code'))this.db.exec('ALTER TABLE wet_bulb_records ADD COLUMN weather_code INTEGER;');
   }
   latestTime(): number | null { const row=this.db.prepare('SELECT max(recorded_at) value FROM wet_bulb_records').get(); return row?.value==null?null:Number(row.value); }
   latest(): WetBulbTrackerRecord | null { return this.list(0)[0]??null; }
-  add(record: WetBulbTrackerRecord) { const r=WetBulbTrackerRecordSchema.parse(record); this.db.prepare(`INSERT OR IGNORE INTO wet_bulb_records VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)`).run(
-    Date.parse(r.recordedAt),Date.parse(r.sourceValidTime),Date.parse(r.retrievedAt),r.ordinaryWetBulbC,r.wbgtC,r.temperatureC,r.dewPointC,r.humidityPercent,r.apparentTemperatureC,r.windSpeedMs,r.precipitationProbability,r.isDay,r.provider,r.classification); }
+  add(record: WetBulbTrackerRecord) { const r=WetBulbTrackerRecordSchema.parse(record); this.db.prepare(`INSERT OR IGNORE INTO wet_bulb_records(recorded_at,source_valid_time,retrieved_at,ordinary_wet_bulb_c,wbgt_c,temperature_c,dew_point_c,humidity_percent,apparent_temperature_c,wind_speed_ms,precipitation_probability,is_day,provider,classification,weather_code) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`).run(
+    Date.parse(r.recordedAt),Date.parse(r.sourceValidTime),Date.parse(r.retrievedAt),r.ordinaryWetBulbC,r.wbgtC,r.temperatureC,r.dewPointC,r.humidityPercent,r.apparentTemperatureC,r.windSpeedMs,r.precipitationProbability,r.isDay,r.provider,r.classification,r.weatherCode); }
   list(since: number): WetBulbTrackerRecord[] { return this.db.prepare('SELECT * FROM wet_bulb_records WHERE recorded_at>=? ORDER BY recorded_at DESC LIMIT 5000').all(since).map((row:any)=>WetBulbTrackerRecordSchema.parse({
-    recordedAt:new Date(Number(row.recorded_at)).toISOString(),sourceValidTime:new Date(Number(row.source_valid_time)).toISOString(),retrievedAt:new Date(Number(row.retrieved_at)).toISOString(),ordinaryWetBulbC:row.ordinary_wet_bulb_c,wbgtC:row.wbgt_c,temperatureC:row.temperature_c,dewPointC:row.dew_point_c,humidityPercent:row.humidity_percent,apparentTemperatureC:row.apparent_temperature_c,windSpeedMs:row.wind_speed_ms,precipitationProbability:row.precipitation_probability,isDay:row.is_day,provider:row.provider,classification:row.classification})); }
+    recordedAt:new Date(Number(row.recorded_at)).toISOString(),sourceValidTime:new Date(Number(row.source_valid_time)).toISOString(),retrievedAt:new Date(Number(row.retrieved_at)).toISOString(),ordinaryWetBulbC:row.ordinary_wet_bulb_c,wbgtC:row.wbgt_c,temperatureC:row.temperature_c,dewPointC:row.dew_point_c,humidityPercent:row.humidity_percent,apparentTemperatureC:row.apparent_temperature_c,windSpeedMs:row.wind_speed_ms,precipitationProbability:row.precipitation_probability,weatherCode:row.weather_code,isDay:row.is_day,provider:row.provider,classification:row.classification})); }
   cleanup(now=Date.now()) { return Number(this.db.prepare('DELETE FROM wet_bulb_records WHERE recorded_at<?').run(now-TRACKER_RETENTION_DAYS*86400000).changes); }
   close(){this.db.close();}
 }
