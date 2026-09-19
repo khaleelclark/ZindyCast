@@ -21,6 +21,7 @@ import './comparison-visuals.css';
 import './climate-results.css';
 import './weather-scene.css';
 import './ui-controls.css';
+import './wet-bulb-tracker.css';
 import {skyPhase} from './sky-phase';
 import {WeatherIcon,weatherKind,observedWeatherKind,weatherKindAtmosphere,WeatherBackdrop} from './weather-appearance';
 import { requestJson } from './request';
@@ -35,6 +36,7 @@ import { DailySummary } from './daily-summary';
 import { AccuracyPanel, ClimateNormalsPanel, ObservationPanel } from './source-panels';
 import { NotificationSettings } from './notifications';
 import { usePullToRefresh } from './pull-to-refresh';
+import {WetBulbTrackerPage} from './wet-bulb-tracker';
 
 type Success = Extract<ForecastResponse, { status: 'success' }>;
 type Preferences = { units: Units; activity: Activity; saved: Location[]; selected: Location | null; backgroundMotion: boolean };
@@ -246,4 +248,4 @@ function App() {
   </div>;
 }
 const root = document.getElementById('root');
-if (root) createRoot(root).render(<React.StrictMode><ThemeProvider theme={weatherTheme}><CssBaseline /><App /></ThemeProvider></React.StrictMode>);
+if (root) createRoot(root).render(<React.StrictMode><ThemeProvider theme={weatherTheme}><CssBaseline />{window.location.pathname==='/wet-bulb-tracker'?<WetBulbTrackerPage/>:<App />}</ThemeProvider></React.StrictMode>);

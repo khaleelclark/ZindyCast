@@ -4,6 +4,7 @@ import {notificationConfig} from './notification-config.js';
 import {registerBoundary} from './boundary.js';
 import { createApp } from './app.js';
 import * as providers from '@zindycast/providers';
+import {WetBulbTrackerStore,wetBulbTrackerLocation} from './wet-bulb-tracker-store.js';
 const port = Number(process.env.API_PORT ?? 4311);
 const host = process.env.API_HOST ?? '127.0.0.1';
 if (!Number.isInteger(port) || port < 1024 || port > 65535) throw new Error('API_PORT must be an integer from 1024 to 65535');
@@ -22,8 +23,11 @@ const notificationsPath=resolve(process.env.ZINDYCAST_NOTIFICATIONS_PATH??'var/n
 mkdirSync(dirname(notificationsPath),{recursive:true,mode:0o700});
 const verificationPath=resolve(process.env.ZINDYCAST_VERIFICATION_PATH??'var/verification.sqlite');
 mkdirSync(dirname(verificationPath),{recursive:true,mode:0o700});
+const trackerLocation=wetBulbTrackerLocation();
+const trackerPath=resolve(process.env.ZINDYCAST_WET_BULB_TRACKER_PATH??'var/wet-bulb-tracker.sqlite');
+if(trackerLocation)mkdirSync(dirname(trackerPath),{recursive:true,mode:0o700});
 const pushConfig=notificationConfig();
-const app = createApp(providers, new SharedStorage({path:dbPath,providers:APP_PROVIDER_LIMITS}),{jobs:new JobRepository({path:jobsPath}),installations:new InstallationRepository({path:installationsPath})},{repo:new NotificationRepository(notificationsPath),publicKey:pushConfig?.publicKey??null},new VerificationRepository({path:verificationPath}));
+const app = createApp(providers, new SharedStorage({path:dbPath,providers:APP_PROVIDER_LIMITS}),{jobs:new JobRepository({path:jobsPath}),installations:new InstallationRepository({path:installationsPath})},{repo:new NotificationRepository(notificationsPath),publicKey:pushConfig?.publicKey??null},new VerificationRepository({path:verificationPath}),{store:trackerLocation?new WetBulbTrackerStore(trackerPath):null,location:trackerLocation});
 registerBoundary(app,[...(process.env.ZINDYCAST_PUBLIC_ORIGIN ? [process.env.ZINDYCAST_PUBLIC_ORIGIN] : []), 'http://127.0.0.1:4310', 'http://localhost:4310', `http://127.0.0.1:${port}`, `http://localhost:${port}`]);
 if (process.env.SERVE_WEB === '1') {
   const { serveWeb } = await import('./static.js');

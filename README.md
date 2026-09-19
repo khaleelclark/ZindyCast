@@ -66,6 +66,11 @@ See [.env.example](.env.example) for the server and worker settings. Keep real c
 | `ZINDYCAST_VAPID_PUBLIC_KEY`, `ZINDYCAST_VAPID_PRIVATE_KEY`, `ZINDYCAST_VAPID_SUBJECT` | Optional matching Web Push configuration; leave all unset to disable delivery |
 | `ZINDYCAST_BIND_ADDRESS`, `ZINDYCAST_PORT` | Docker host binding; defaults to loopback port `4311` |
 | `PUBLIC_MAPBOX_ACCESS_TOKEN` | Optional public Mapbox token embedded when Docker builds the web app |
+| `ZINDYCAST_WET_BULB_TRACKER` and `ZINDYCAST_WET_BULB_*` | Optional private 30-minute modeled WBGT log; copy the placeholders from `.env.example` and set the location |
+
+### Private wet-bulb tracker
+
+Set `ZINDYCAST_WET_BULB_TRACKER=1` and the tracker location variables in the private `.env`, then run both the API and worker. Open `/wet-bulb-tracker` to see estimated outdoor WBGT with the NWS Tulsa reference band, ordinary wet bulb and its supporting weather values. The table retains 90 days and downloads the selected range as CSV. Collection begins at startup and runs every 30 minutes; it does not create historical values. Open-Meteo supplies hourly modeled fields, so two consecutive samples can share a source-valid hour.
 
 An optional Mapbox public token can be placed in `apps/web/.env.local` using [its example](apps/web/.env.example), then rebuilt. Restrict browser tokens to your application origin. The default basemap does not require this token.
 

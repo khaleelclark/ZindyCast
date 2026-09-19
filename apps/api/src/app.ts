@@ -10,6 +10,8 @@ import {registerClimateComparisons} from './climate-comparisons.js';
 import { registerLibreRadar } from './libre-radar.js';
 import { registerMapboxBudget } from './mapbox-budget.js';
 import {registerHeaders} from './headers.js';
+import {registerWetBulbTracker} from './wet-bulb-tracker.js';
+import type {WetBulbTrackerStore} from './wet-bulb-tracker-store.js';
 import Fastify from 'fastify';
 import {JobRepository} from '@zindycast/jobs';
 import {InstallationRepository} from '@zindycast/installations';
@@ -32,7 +34,7 @@ export interface Providers {
   getForecast(location: Location, signal?: AbortSignal): Promise<Forecast>;
 }
 const Query = z.object({ refresh: z.enum(['1']).optional(), latitude: z.coerce.number().finite().min(-90).max(90), longitude: z.coerce.number().finite().min(-180).max(180), name: z.string().min(1).max(160), timezone: z.string().min(1).max(80), id: z.string().max(160).optional(), country: z.string().max(100).default(''), admin1: z.string().max(100).optional(), admin2: z.string().max(100).optional() });
-export function createApp(providers: Providers, storage = new SharedStorage({path: ':memory:', providers:APP_PROVIDER_LIMITS}), jobServices:JobServices={jobs:new JobRepository({path:':memory:'}),installations:new InstallationRepository({path:':memory:'})}, notificationServices:{repo:NotificationRepository;publicKey:string|null}={repo:new NotificationRepository(':memory:'),publicKey:null}, verification=new VerificationRepository({path:':memory:'})) {
+export function createApp(providers: Providers, storage = new SharedStorage({path: ':memory:', providers:APP_PROVIDER_LIMITS}), jobServices:JobServices={jobs:new JobRepository({path:':memory:'}),installations:new InstallationRepository({path:':memory:'})}, notificationServices:{repo:NotificationRepository;publicKey:string|null}={repo:new NotificationRepository(':memory:'),publicKey:null}, verification=new VerificationRepository({path:':memory:'}), tracker:{store:WetBulbTrackerStore|null;location:Location|null}={store:null,location:null}) {
   const failure = (error: unknown) => error instanceof ProviderError && error.code === 'rate_limited'
     ? { http: 429, code: 'rate_limited', message: 'Weather service request limit reached. Try again later.', retry: error.retryAfterSeconds }
     : error instanceof ProviderError && error.code === 'no_data'
@@ -40,6 +42,7 @@ export function createApp(providers: Providers, storage = new SharedStorage({pat
     : { http: 502, code: 'provider_error', message: 'Weather service is temporarily unavailable.', retry: undefined };
   const app = Fastify({ logger: false, bodyLimit: 16384, requestTimeout: 15000, connectionTimeout: 15000, keepAliveTimeout: 5000, maxRequestsPerSocket: 100 });
   registerHeaders(app);
+  registerWetBulbTracker(app,tracker.store,tracker.location);
   registerNotifications(app,notificationServices.repo,jobServices.installations,notificationServices.publicKey);
   app.setErrorHandler((error,_request,reply)=>{ const status=error instanceof Error && 'statusCode' in error ? error.statusCode : null; const invalid=status===400 || status===413 || status===415; reply.code(invalid?status:503).send({status:'error',code:invalid?'invalid_request':'provider_error',message:status===413?'Request body is too large.':invalid?'Invalid request.':'Service temporarily unavailable.'}); });
   app.addHook('onRequest', async (request, reply) => { if (request.url.startsWith('/api/')) reply.header('Cache-Control','no-store'); });
@@ -62,7 +65,7 @@ export function createApp(providers: Providers, storage = new SharedStorage({pat
   registerWildfires(app,cached);
   registerComparisons(app,jobServices);
   registerClimateComparisons(app,jobServices,cached);
-  app.addHook('onClose',async()=>{let failed=false;for(const repository of [jobServices.jobs,jobServices.installations,storage,notificationServices.repo,verification]){try{repository.close();}catch{failed=true;}}if(failed)throw new Error('Repository shutdown failed');});
+  app.addHook('onClose',async()=>{let failed=false;for(const repository of [jobServices.jobs,jobServices.installations,storage,notificationServices.repo,verification,tracker.store]){try{repository?.close();}catch{failed=true;}}if(failed)throw new Error('Repository shutdown failed');});
   app.get('/api/v1/health', async () => ({ status: 'ok', service: 'api', version: '0.1.0' }));
   app.get('/api/v1/locations', async (request, reply) => {
     const parsed = z.object({ q: z.string().trim().min(2).max(100) }).safeParse(request.query);

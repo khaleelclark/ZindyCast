@@ -43,5 +43,6 @@ export * from './forecast-radar';
 export * from './libre-radar';
 export * from './comparison-weather';
 export * from './climate-comparison';
+export * from './wet-bulb-tracker';
 
 export * from "./notifications";

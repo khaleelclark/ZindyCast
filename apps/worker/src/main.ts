@@ -11,6 +11,8 @@ import { ClimateWorker } from './climate-worker.js';
 import { closeRepositories } from './shutdown.js';
 import { mkdirSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
+import {WetBulbTrackerStore,wetBulbTrackerLocation} from '../../api/src/wet-bulb-tracker-store.js';
+import {WetBulbTrackerWorker} from './wet-bulb-tracker-worker.js';
 process.umask(0o077);
 function dbPath(value: string): string { const path = resolve(value); mkdirSync(dirname(path), { recursive: true, mode: 0o700 }); return path; }
 const storage = new SharedStorage({ path: dbPath(process.env.ZINDYCAST_DB_PATH ?? 'var/coordination.sqlite'), providers: APP_PROVIDER_LIMITS });
@@ -22,6 +24,9 @@ const reconciler = new AdmissionReconciler(jobs, installations);
 const notifications=new NotificationRepository(dbPath(process.env.ZINDYCAST_NOTIFICATIONS_PATH??'var/notifications.sqlite'));
 const verification=new VerificationRepository({path:dbPath(process.env.ZINDYCAST_VERIFICATION_PATH??'var/verification.sqlite')});
 const verificationWorker=createVerificationWorker(verification,storage,id=>installations.isActive(id));
+const trackerLocation=wetBulbTrackerLocation();
+const trackerStore=trackerLocation?new WetBulbTrackerStore(dbPath(process.env.ZINDYCAST_WET_BULB_TRACKER_PATH??'var/wet-bulb-tracker.sqlite')):null;
+const trackerWorker=trackerStore&&trackerLocation?new WetBulbTrackerWorker(trackerStore,trackerLocation,storage):null;
 const pushConfig=vapidConfig();
 const notificationWorker=pushConfig?new NotificationWorker({repo:notifications,installations,storage,send:pushSender(pushConfig)}):null;
 const shutdown = new AbortController();
@@ -36,11 +41,12 @@ async function pause(ms:number) {if(shutdown.signal.aborted)return;await new Pro
 async function comparisonLoop(){while(!shutdown.signal.aborted){try{await worker.runOnce(shutdown.signal);await climateWorker.runOnce(shutdown.signal);}catch{if(!shutdown.signal.aborted)console.error(JSON.stringify({service:'worker',status:'job_processing_failed'}));}await pause(1000);}}
 async function warningLoop(){while(!shutdown.signal.aborted){try{await notificationWorker?.runOnce(shutdown.signal);}catch{if(!shutdown.signal.aborted)console.error(JSON.stringify({service:'worker',status:'notification_processing_failed'}));}await pause(2000);}}
 async function verificationLoop(){while(!shutdown.signal.aborted){try{await verificationWorker.runOnce(shutdown.signal);}catch{if(!shutdown.signal.aborted)console.error(JSON.stringify({service:'worker',status:'verification_processing_failed'}));}await pause(5000);}}
+async function trackerLoop(){while(!shutdown.signal.aborted){try{await trackerWorker?.runOnce(shutdown.signal);}catch{if(!shutdown.signal.aborted)console.error(JSON.stringify({service:'worker',status:'wet_bulb_tracker_failed'}));}await pause(30000);}}
 try {
-  await Promise.all([comparisonLoop(),warningLoop(),verificationLoop()]);
+  await Promise.all([comparisonLoop(),warningLoop(),verificationLoop(),trackerLoop()]);
 } finally {
   clearInterval(maintenance);
-  if (closeRepositories([storage, jobs, installations, notifications, verification])) {
+  if (closeRepositories([storage, jobs, installations, notifications, verification, ...(trackerStore?[trackerStore]:[])])) {
     console.error(JSON.stringify({ service: 'worker', status: 'shutdown_failed', time: new Date().toISOString() }));
     process.exitCode = 1;
   }
