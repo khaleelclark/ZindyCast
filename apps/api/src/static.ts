@@ -7,4 +7,5 @@ export async function serveWeb(app: FastifyInstance, root: string) {
       reply.header('X-Content-Type-Options','nosniff');
     }
   });
+  app.get('/wet-bulb-tracker', async (_request, reply) => reply.header('Cache-Control','no-cache').sendFile('index.html'));
 }
