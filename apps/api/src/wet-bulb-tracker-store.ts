@@ -23,6 +23,7 @@ export class WetBulbTrackerStore {
       provider TEXT NOT NULL CHECK(provider='Open-Meteo'), classification TEXT NOT NULL CHECK(classification='modeled')) STRICT;`);
   }
   latestTime(): number | null { const row=this.db.prepare('SELECT max(recorded_at) value FROM wet_bulb_records').get(); return row?.value==null?null:Number(row.value); }
+  latest(): WetBulbTrackerRecord | null { return this.list(0)[0]??null; }
   add(record: WetBulbTrackerRecord) { const r=WetBulbTrackerRecordSchema.parse(record); this.db.prepare(`INSERT OR IGNORE INTO wet_bulb_records VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)`).run(
     Date.parse(r.recordedAt),Date.parse(r.sourceValidTime),Date.parse(r.retrievedAt),r.ordinaryWetBulbC,r.wbgtC,r.temperatureC,r.dewPointC,r.humidityPercent,r.apparentTemperatureC,r.windSpeedMs,r.precipitationProbability,r.isDay,r.provider,r.classification); }
   list(since: number): WetBulbTrackerRecord[] { return this.db.prepare('SELECT * FROM wet_bulb_records WHERE recorded_at>=? ORDER BY recorded_at DESC LIMIT 5000').all(since).map((row:any)=>WetBulbTrackerRecordSchema.parse({
