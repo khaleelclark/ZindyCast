@@ -1,0 +1,23 @@
+{
+  "name": "@zindycast/mobile",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "build": "expo export --platform android",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "tsx --test src/*.test.ts",
+    "generate:android": "expo prebuild --platform android --no-install",
+    "verify:react": "expo export --platform android --source-maps --clear && node scripts/verify-react-singleton.cjs"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@zindycast/contracts": "0.1.0",
+    "expo": "57.0.25",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-safe-area-context": "5.7.0"
+  }
+}

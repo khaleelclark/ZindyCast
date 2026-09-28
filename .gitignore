@@ -16,6 +16,8 @@ var/
 *.sqlite-wal
 *.pem
 *.key
+*.jks
+*.keystore
 
 # Local backups and operating-system metadata.
 /backups/

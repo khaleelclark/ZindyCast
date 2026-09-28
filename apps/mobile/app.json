@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "ZindyCast",
+    "slug": "zindycast",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "android": {
+      "package": "family.zindycast.app",
+      "versionCode": 1,
+      "backgroundColor": "#0a1728",
+      "blockedPermissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.VIBRATE"
+      ]
+    },
+    "platforms": [
+      "android"
+    ],
+    "plugins": [
+      "./plugins/with-release-signing.cjs"
+    ]
+  }
+}

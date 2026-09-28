@@ -1,6 +1,6 @@
 # ZindyCast — Weather beyond temperature
 
-A self-hosted weather PWA built with React, TypeScript, Rsbuild and Fastify. It combines current conditions, forecasts, weather maps, historical browsing and city comparisons, with feels-like temperature and estimated outdoor WBGT alongside ordinary temperature.
+A self-hosted weather PWA built with React, TypeScript, Rsbuild and Fastify, plus a native Android app in the same npm workspace. The PWA combines current conditions, forecasts, weather maps, historical browsing and city comparisons, with feels-like temperature and estimated outdoor WBGT alongside ordinary temperature.
 
 ## Quick start with Docker
 
@@ -42,6 +42,12 @@ npm run start:worker
 Both processes load `.env` automatically; existing environment variables take precedence. Defaults work locally without provider accounts. The worker is needed for comparison jobs and enabled background features. Stop each process with Ctrl+C. Runtime databases are created under `var/` and excluded from Git.
 
 The initial build needs internet access for dependency installation; weather requests also require internet access. No sample weather is substituted when a provider is unavailable.
+
+## Android app
+
+`apps/mobile` is a React Native/Expo client of the same API. Its first signed APK covers city search, Today/Tomorrow and hourly forecasts, daily outlooks, units and foreground official alerts. The PWA retains maps, history, heat guidance, saved places and browser notifications. The Android app's server address is entered on first launch; private deployments require HTTPS and an authorized tailnet connection on the phone.
+
+See [Android setup and APK build instructions](apps/mobile/README.md) and the [first APK verification record](docs/verification/android-app-release/README.md). A direct APK install does not need the Play Store. Native background notifications and the remaining PWA sections are future mobile work.
 
 ## Features
 
@@ -107,6 +113,7 @@ For a Node.js update, stop the processes, back up data, install dependencies wit
 ## Repository layout
 
 - `apps/web`: React PWA
+- `apps/mobile`: React Native Android app and local APK build configuration
 - `apps/api`: REST API
 - `apps/worker`: persistent jobs and background processing
 - `packages`: shared schemas, providers, calculations and storage
