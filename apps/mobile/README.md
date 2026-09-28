@@ -4,21 +4,37 @@ Native React Native/Expo client of the existing ZindyCast REST API. City search 
 
 ## Configure and run
 
-From the monorepo root (Node 22.22.1, npm workspaces; on this host use `export PATH=/usr/bin:$PATH`):
+From the monorepo root (Node 22.22.1, npm workspaces; on the release host use `export PATH=/usr/bin:$PATH`):
 
 ```sh
-npm install --include=dev
+npm ci --include=dev
 cp apps/mobile/.env.example apps/mobile/.env
 ```
 
-On first launch, use **Server settings** to enter your private HTTPS origin. It is saved only on the device. Optionally set `EXPO_PUBLIC_API_BASE_URL` in that file to a public default **origin**, for example `https://your-private-host.example`. Do not append `/api/v1`. This public value is embedded in the bundle; never put secrets in it. The API must be reachable from the phone, including its tailnet connection when applicable. There is deliberately no guessed production server or fixture default. A missing origin opens server setup. Release configuration rejects HTTP, loopback/emulator addresses and reserved example/test placeholders. Connection failures explain how to check Tailscale and server settings. Do not bundle a private hostname in a distributable build.
+On first launch, use **Server settings** to enter your private HTTPS origin. It is saved only on the device. For a personal build, `EXPO_PUBLIC_API_BASE_URL` can optionally hold your real device-reachable HTTPS **origin** as a build-time default. Do not append `/api/v1`. This value is embedded in the bundle; never put secrets in it. The API must be reachable from the device, including its tailnet connection when applicable. The example file leaves this value blank so first launch opens server setup. Release configuration rejects HTTP, loopback/emulator addresses and reserved example/test placeholders. Connection failures explain how to check Tailscale and server settings. Do not bundle a private hostname in a distributable build.
+
+For source development, start Metro in one terminal, then run the Android debug build in another:
 
 ```sh
 npm run start --workspace @zindycast/mobile
+```
+
+```sh
 npm run android --workspace @zindycast/mobile
 ```
 
 `localhost` on a phone means the phone. Android emulator host access commonly uses `http://10.0.2.2:4311`; choose the actual API port. HTTP is for local debug development only; standalone release uses HTTPS with a trusted certificate. Use the existing API process or start it with the root `dev:api` command. This app needs GET `/api/v1/locations`, `/api/v1/forecast`, and `/api/v1/alerts`.
+
+## Try the released app in Android Studio
+
+1. Download **ZindyCast-Android-0.1.0-x86_64-emulator.apk** from Project files for an x86_64 emulator. The separately delivered **ZindyCast-Android-0.1.0-arm64.apk** is for an ARM64 phone or ARM64 emulator. An APK with the wrong native architecture will not install.
+2. In Android Studio, open **Device Manager**, create a virtual phone with an Android API 36 system image matching the APK architecture, and start it. See Google's [Device Manager guide](https://developer.android.com/studio/run/managing-avds).
+3. Drag the downloaded APK onto the running emulator window and open **ZindyCast** from its app list. Google's [APK install guide](https://developer.android.com/studio/run/emulator-install-add-files) shows this flow. Alternatively, run `adb devices` followed by `adb install -r path/to/ZindyCast-Android-0.1.0-x86_64-emulator.apk` in a terminal with Android SDK Platform Tools on `PATH`.
+4. In **Server settings**, enter the exact private HTTPS **origin** used for the PWA: its scheme, hostname and port if present. Do not add `/api/v1`, a password, or an API key; example/test hostnames are rejected. If the server uses Tailscale, the **emulator** needs an authorized network path to it. Check that the emulator's browser can open the PWA address before trying city search. Then search for and select a city.
+
+This is a standalone release build: Android Studio does not need to open the source project, and Metro/Expo Go need not run. The x86_64 APK is for emulator testing; use the ARM64 APK delivered in Project files when your phone arrives. If `adb` reports `INSTALL_FAILED_NO_MATCHING_ABIS`, check the emulator image architecture and use the matching APK. A debug build from Android Studio uses a different signing key; uninstalling an existing release app to install it clears saved app settings.
+
+To edit or debug the source instead, run `npm ci --include=dev` and `npm run generate:android --workspace @zindycast/mobile` from the repo root, open `apps/mobile/android` in Android Studio, start Metro with `npm run start --workspace @zindycast/mobile`, and run the `app` configuration on the emulator. That debug build requires Metro while it runs.
 
 ## Local standalone APK
 
@@ -44,7 +60,6 @@ The source-controlled Expo signing plugin requires all four signing environment 
 npm run typecheck --workspace @zindycast/mobile
 npm run test --workspace @zindycast/mobile
 npm run build --workspace @zindycast/mobile
-npm run verify:react --workspace @zindycast/mobile
 npm run verify:react --workspace @zindycast/mobile
 ```
 

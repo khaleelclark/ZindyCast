@@ -12,6 +12,8 @@ The same source and key also produced a signed universal APK (70,013,922 bytes, 
 
 This check made bounded live requests to the already configured private API. It did not change server settings, register an installation, send a notification or call providers directly from the Android client. The universal emulator APK is not the Project file delivered for ARM64 phones; the ARM64 APK's signature, package metadata and native architecture were checked separately.
 
+For operator testing in Android Studio, a smaller **ZindyCast-Android-0.1.0-x86_64-emulator.apk** was also built from the same source and signing key and added to Project files. It is 27,149,922 bytes, SHA-256 `bf2facff5f9531bdaa79ef5f13340f85abd94296bea171cf063e66157447cba2`. `apksigner verify` passed and its signer certificate matches the ARM64 release; `aapt` reports package `family.zindycast.app`, version `0.1.0`/code `1`, minimum API 24 and only `x86_64` native libraries. The standalone universal APK above was the one actually installed and launched on the API 36 x86_64 emulator; this narrower x86_64 build has been built and inspected but not separately installed. The [mobile README](../../../apps/mobile/README.md) gives Android Studio installation and server setup steps.
+
 ## Repository checks
 
 - `npm run typecheck`: passed after mobile integration.
