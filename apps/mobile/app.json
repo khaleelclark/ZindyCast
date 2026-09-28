@@ -2,11 +2,15 @@
   "expo": {
     "name": "ZindyCast",
     "slug": "zindycast",
-    "version": "0.1.0",
+    "version": "0.1.2",
     "orientation": "portrait",
     "android": {
       "package": "family.zindycast.app",
-      "versionCode": 1,
+      "versionCode": 3,
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ],
       "backgroundColor": "#0a1728",
       "blockedPermissions": [
         "android.permission.READ_EXTERNAL_STORAGE",

@@ -45,9 +45,9 @@ The initial build needs internet access for dependency installation; weather req
 
 ## Android app
 
-`apps/mobile` is a React Native/Expo client of the same API. Its first signed APK covers city search, Today/Tomorrow and hourly forecasts, daily outlooks, units and foreground official alerts. The PWA retains maps, history, heat guidance, saved places and browser notifications. The Android app's server address is entered on first launch; private deployments require HTTPS and an authorized tailnet connection on the device.
+`apps/mobile` is an installable React Native/Expo Android shell. Since version 0.1.2 it displays the existing mobile PWA in WebView, so Today/Tomorrow, radar, visible WBGT band graph, maps, history and settings share the same UI as the browser PWA. The Android app's server address is entered on first launch; private deployments require HTTPS and an authorized tailnet connection on the device.
 
-See [Android setup, Android Studio emulator steps and APK build instructions](apps/mobile/README.md) and the [first APK verification record](docs/verification/android-app-release/README.md). Project files include separate ARM64 phone and x86_64 emulator APKs. A direct APK install does not need the Play Store. Native background notifications and the remaining PWA sections are future mobile work.
+See [Android setup, Android Studio emulator steps and APK build instructions](apps/mobile/README.md), the [initial release record](docs/verification/android-app-release/README.md) and the [PWA visual parity update](docs/verification/android-pwa-parity/README.md). Project files include separate ARM64 phone and x86_64 emulator APKs. A direct APK install does not need the Play Store. Native background notifications remain future work; WebView-specific browser capabilities require device verification.
 
 ## Features
 
