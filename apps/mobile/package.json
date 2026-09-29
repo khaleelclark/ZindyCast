@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "expo start",
+    "start:emulator": "REACT_NATIVE_PACKAGER_HOSTNAME=127.0.0.1 expo start --host lan",
     "android": "expo run:android",
     "build": "expo export --platform android",
     "typecheck": "tsc --noEmit -p tsconfig.json",

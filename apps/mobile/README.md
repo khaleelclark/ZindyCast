@@ -34,7 +34,31 @@ npm run android --workspace @zindycast/mobile
 
 This is a standalone release build: Android Studio does not need to open the source project, and Metro/Expo Go need not run. The x86_64 APK is for emulator testing; use the ARM64 APK when your phone arrives. Both 0.1.2 APKs use the same persistent signing key and higher version code as 0.1.0, so `adb install -r` updates the prior release while retaining app data. If `adb` reports `INSTALL_FAILED_NO_MATCHING_ABIS`, use the matching APK. A debug build from Android Studio uses a different signing key; uninstalling a release app to install it clears saved settings.
 
-To edit or debug the source instead, run `npm ci --include=dev` and `npm run generate:android --workspace @zindycast/mobile` from the repo root, open `apps/mobile/android` in Android Studio, start Metro with `npm run start --workspace @zindycast/mobile`, and run the `app` configuration on the emulator. That debug build requires Metro while it runs.
+## Debug the source in Android Studio
+
+Use Node 22 and JDK 17. On macOS, Android Studio launched from the Dock may have a different `PATH` from your terminal; make sure the Studio process can find Node 22 before syncing or building. Open **`apps/mobile/android`**, not the repository root, as the Android Studio project. From the repository root, install dependencies and generate the native project:
+
+```sh
+npm ci --include=dev
+npm run generate:android --workspace @zindycast/mobile
+```
+
+In Android Studio's Gradle settings, select JDK 17. If Studio created `apps/mobile/android/gradle/gradle-daemon-jvm.properties`, check that it says `toolchainVersion=17`; a daemon JVM criterion takes precedence over `JAVA_HOME` and the Gradle JDK setting. Change an incorrect value (such as 25) to 17, then sync again. The generated `android/` directory is ignored and can be regenerated.
+
+Start the emulator. In one terminal, start Metro with an IPv4 loopback address:
+
+```sh
+npm run start:emulator --workspace @zindycast/mobile
+```
+
+In another terminal, forward the emulator's port 8081 to Metro on the host, then run the Android Studio `app` configuration:
+
+```sh
+adb devices
+adb reverse tcp:8081 tcp:8081
+```
+
+Keep Metro running while using the debug app. If it shows **Unable to load script**, confirm `adb devices` lists the emulator, repeat `adb reverse tcp:8081 tcp:8081`, and check that Metro reports an Android bundle. Avoid `expo start --localhost` for this emulator setup: on macOS it can listen only on IPv6 `::1`, while the emulator's forwarded connection uses IPv4. This Metro setup is only for source debugging; the signed release APK above contains its own JavaScript bundle and does not need Metro.
 
 ## Local standalone APK
 
