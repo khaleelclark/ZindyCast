@@ -2,11 +2,17 @@
   "expo": {
     "name": "ZindyCast",
     "slug": "zindycast",
-    "version": "0.1.2",
+    "version": "0.1.3",
+    "icon": "./assets/icon.png",
     "orientation": "portrait",
     "android": {
       "package": "family.zindycast.app",
-      "versionCode": 3,
+      "versionCode": 4,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo-foreground.png",
+        "monochromeImage": "./assets/logo-monochrome.png",
+        "backgroundColor": "#234e47"
+      },
       "permissions": [
         "ACCESS_COARSE_LOCATION",
         "ACCESS_FINE_LOCATION"
@@ -23,6 +29,14 @@
       "android"
     ],
     "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#234e47",
+          "image": "./assets/logo-foreground.png",
+          "imageWidth": 240
+        }
+      ],
       "./plugins/with-release-signing.cjs"
     ]
   }
