@@ -1,0 +1,18 @@
+{
+  "browser": "152.0.7977.75",
+  "checks": [
+    "Threshold refresh fires once; indicator moves without rerendering or transforming dashboard; listener removed after release",
+    "Subthreshold release does not refresh",
+    "horizontal gesture releases listener without refresh",
+    "upward gesture releases listener without refresh",
+    "multitouch gesture releases listener without refresh",
+    "browser-owned gesture releases listener without refresh",
+    "Controls and nested scrollers keep gestures",
+    "Touch cancellation clears pending animation frame without refreshing",
+    "Disabling during gesture cancels pending refresh",
+    "Scrolled document does not install a blocking move listener",
+    "Desktop viewport does not start pull-to-refresh"
+  ],
+  "passed": 11,
+  "scope": "Synthetic touch events in Chromium; not physical-device frame timing"
+}

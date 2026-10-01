@@ -1,0 +1,27 @@
+{
+  "browser": "152.0.7977.75",
+  "phoneLayouts": [
+    {
+      "width": 360,
+      "scrollWidth": 360,
+      "transform": "none",
+      "refreshVisible": true
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "transform": "none",
+      "refreshVisible": true
+    },
+    {
+      "width": 430,
+      "scrollWidth": 430,
+      "transform": "none",
+      "refreshVisible": true
+    }
+  ],
+  "refreshButtonFetches": true,
+  "settingsNavigation": true,
+  "pageErrors": [],
+  "limitations": "Synthetic browser fixtures; secondary providers deliberately unavailable; no physical-device profiling"
+}

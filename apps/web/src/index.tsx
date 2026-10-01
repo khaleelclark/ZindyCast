@@ -35,7 +35,7 @@ import { ChartBoundary, HourlyChart } from './chart';
 import { DailySummary } from './daily-summary';
 import { AccuracyPanel, ClimateNormalsPanel, ObservationPanel } from './source-panels';
 import { NotificationSettings } from './notifications';
-import { usePullToRefresh } from './pull-to-refresh';
+import { PullRefreshIndicator } from './pull-refresh-indicator';
 import {WetBulbTrackerPage} from './wet-bulb-tracker';
 
 type Success = Extract<ForecastResponse, { status: 'success' }>;
@@ -89,7 +89,6 @@ function App() {
   const { units } = preferences;
   const observations = useObservations(location, online, tab === 'Today', retry);
   const observed = selectObservedCurrent(observations.data, location, Math.max(now, observations.checkedAt ?? now));
-  const pull = usePullToRefresh(online && !!location, () => setRetry(value => value + 1));
   useEffect(() => {
     if (!choosingLocation || !location) return;
     const frame = requestAnimationFrame(() => {
@@ -211,8 +210,8 @@ function App() {
 
   const saved = location && preferences.saved.some(item => item.id === location.id && item.latitude === location.latitude && item.longitude === location.longitude);
   const temp = (value: number | null | undefined) => temperature(value, units);
-  return <div className="app-shell" data-motion={preferences.backgroundMotion ? 'running' : 'paused'} data-weather={weatherKindAtmosphere(sceneKind, conditionsNow?.isDay)} data-weather-kind={sceneKind} data-sky-phase={displaySkyPhase} data-pulling={pull.distance > 0 ? 'true' : undefined} style={{ '--pull-distance': `${pull.distance}px` } as React.CSSProperties}>
-    <div className="pull-refresh-indicator" role="status" aria-live="polite">{loading || observations.busy ? 'Refreshing weather…' : pull.ready ? 'Release to refresh' : 'Pull to refresh'}</div>
+  return <div className="app-shell" data-motion={preferences.backgroundMotion ? 'running' : 'paused'} data-weather={weatherKindAtmosphere(sceneKind, conditionsNow?.isDay)} data-weather-kind={sceneKind} data-sky-phase={displaySkyPhase}>
+    <PullRefreshIndicator enabled={online && !!location && tab === 'Today'} refreshing={loading || observations.busy} refresh={() => setRetry(value => value + 1)} />
     <WeatherBackdrop />
     <a className="skip-link" href="#main">Skip to weather</a>
     <header className="masthead"><a className="brand" href="#main" onClick={() => setTab('Today')}><span className="brand-mark" aria-hidden="true">◒</span><span>ZindyCast<small>Weather beyond temperature</small></span></a><div className="header-controls"><div className="units" aria-label="Temperature units"><Button aria-pressed={units === 'us'} onClick={() => setPreferences(p => ({ ...p, units: 'us' }))}>°F</Button><Button aria-pressed={units === 'metric'} onClick={() => setPreferences(p => ({ ...p, units: 'metric' }))}>°C</Button></div></div></header>
