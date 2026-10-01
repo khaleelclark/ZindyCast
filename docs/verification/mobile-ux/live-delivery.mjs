@@ -47,6 +47,10 @@ try {
   await page.evaluate(() => navigator.serviceWorker.ready);
   await page.reload({ waitUntil: 'domcontentloaded' });
   expect(await page.evaluate(() => !!navigator.serviceWorker.controller)).toBe(true);
+  const installedBuild = await page.evaluate(() => new URL(navigator.serviceWorker.controller.scriptURL).searchParams.get('build'));
+  expect(installedBuild).toBe(assets.join('|'));
+  expect(await page.evaluate(async () => !!(await navigator.serviceWorker.getRegistration('/')).waiting)).toBe(false);
+  await expect(page.getByRole('button', { name: 'Update', exact: true })).toHaveCount(0);
   await expect(page.getByRole('button', { name: '°C', exact: true })).toHaveAttribute('aria-pressed', 'true');
   await page.getByRole('tab', { name: 'Settings', exact: true }).click();
   await expect(page.getByRole('heading', { name: 'Settings', exact: true })).toBeVisible();
@@ -65,6 +69,7 @@ try {
   const report = {
     checkedAt: new Date().toISOString(), browser: await browser.version(), responses,
     healthOk: true, currentServiceWorkerControlsReload: true,
+    installedBuildMatchesServedAssets: true, alreadyCurrentHasNoUpdateButton: true,
     updateButtonPreservesOpenSettingsUntilClicked: true,
     updateLoadsNewShellAndPreservesPreferences: true, pageErrors: errors,
     limitations: 'Certificate-verified private HTTPS and disposable desktop Chromium at phone width. API fixtures return unavailable; no live weather calls. Update transition uses an inert marker intercepted only in this browser. No physical-phone or Android WebView performance claim.'

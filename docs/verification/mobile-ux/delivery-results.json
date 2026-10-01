@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-01T19:35:11.605Z",
+  "checkedAt": "2026-10-01T19:47:45.307Z",
   "browser": "152.0.7977.75",
   "responses": [
     {
@@ -47,6 +47,8 @@
   ],
   "healthOk": true,
   "currentServiceWorkerControlsReload": true,
+  "installedBuildMatchesServedAssets": true,
+  "alreadyCurrentHasNoUpdateButton": true,
   "updateButtonPreservesOpenSettingsUntilClicked": true,
   "updateLoadsNewShellAndPreservesPreferences": true,
   "pageErrors": [],
