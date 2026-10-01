@@ -43,3 +43,26 @@ Run `ZINDYCAST_VERIFY_ORIGIN=<private-HTTPS-origin> node docs/verification/mobil
 Installed clients should reopen ZindyCast while connected to Tailscale and use the existing **Update** button when offered. The gesture fixes are delivered by the web shell; the 0.1.3 APK remains the Android logo update. Physical-phone smoothness and Android WebView frame timing remain unverified.
 
 The delivery check also compares the controlling worker's build identity with the served assets and proves no Update button is offered when that client is already current. The later simulated newer build does offer Update. This conditional behavior was missing from the initial user instructions. Absence of a banner on an uninspected physical phone does not establish either freshness or an update failure; the Today current-weather Refresh control is a visible indicator of the October 1 mobile layout.
+
+## Tab response investigation and fix — October 1, 2026
+
+The operator clarified that scrolling is fine and taps/tab switching are slow. The follow-up therefore preserves the weather animation and layout. A built-app browser fixture reproduces a large synchronous cost: switching tabs creates 2,845–9,360 new `Intl.DateTimeFormat` instances per interaction. Root render calls daily grouping even on other tabs; grouping constructs a formatter for every timestamp and rescans all 336 forecast hours for each displayed day's rain intervals. Today also computes additional daily summaries.
+
+Changes:
+
+- `weather.ts` reuses up to 64 formatter configurations, keyed by timezone and canonical format options. It formats each timestamp anew, preserving DST. Rain intervals are grouped in one pass, retaining the requirement that the entire preceding hour belongs to one local date.
+- `index.tsx` memoizes daily groups, upcoming hours and astronomy against their actual data/time/horizon/zone dependencies. Switching tabs or units does not repeat those unchanged calculations. New forecasts, time changes, horizon changes and location changes still invalidate the relevant results.
+- `weather.test.ts` adds cross-zone/DST/format-option checks and a fractional-offset midnight rain interval case. Existing null, precipitation, 23/25-hour DST-day and freshness tests remain passing.
+
+`tab-response.mjs` uses the built app, an explicitly labeled 336-hour fixture, unavailable secondary providers, blocked external traffic and 4x desktop Chromium CPU throttling. It records click capture to two animation frames after the tab becomes selected. Baseline is the build at `0526664`; `tab-before.json` records the eight successful switches. `tab-after-first.json` preserves the first successful after-run output; `tab-after.json` records the final run with an assertion that each switch constructs at most 20 formatters and a separate Maps navigation check.
+
+| Tab | Baseline mean, two switches | Final mean, two switches | Formatter constructions before → after |
+| --- | ---: | ---: | ---: |
+| Settings | 1,682 ms | 121 ms | 5,690 → 0 |
+| History | 905 ms | 59 ms | 2,845 → 0 |
+| Compare | 775 ms | 45 ms | 2,845 → 0 |
+| Today | 3,446 ms | 387 ms | 9,360 → 0 |
+
+These are small synthetic samples on a shared desktop host. The earlier after run ranged from 90–779 ms; final run ranged from 40–434 ms, so timings vary with host load. The deterministic result is removal of thousands of formatter constructions per tab switch. These results establish a reproduced bottleneck and browser improvement, not the operator's phone latency. Today still mounts its chart/map content when returning to that tab; live Maps setup and physical WebView response remain follow-ups if latency persists.
+
+Checks: root typecheck and production build passed (existing MapLibre warning). 55 focused tests passed, one optional live/browser radar test skipped. Tab navigation, metric-unit switching, 14-day horizon, mobile layouts at 360/390/430 px, weather Refresh, Settings and Maps navigation passed with zero uncaught browser errors. The private HTTPS delivery/update check passed against the new built bytes and preserved settings in a disposable browser profile. All application changes are web-only; no new APK, dependency install, backend restart or database change was needed.

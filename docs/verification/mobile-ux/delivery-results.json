@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-10-01T19:47:45.307Z",
+  "checkedAt": "2026-10-01T20:07:38.818Z",
   "browser": "152.0.7977.75",
   "responses": [
     {
       "path": "/",
       "status": 200,
       "cacheControl": "no-cache",
-      "sha256": "dad7bf3a9041bacc90945bc22502de44376a6c101c3fb9c01c4a2dfdb9acb99d"
+      "sha256": "cb7b88d308cffcf3cff9822c0f6f0d707d734390983a5f4f3d7478faecf5597a"
     },
     {
       "path": "/sw.js",
@@ -33,10 +33,10 @@
       "sha256": "9dcced118a1a9c3fa4f150eebee647577ce8b0e3420b9cec75e67b4fb5cff40c"
     },
     {
-      "path": "/static/js/index.b8c3dd30ee.js",
+      "path": "/static/js/index.480c54ab88.js",
       "status": 200,
       "cacheControl": "public, max-age=31536000, immutable",
-      "sha256": "3561a94a9dfa196f1e4acd60ac096fb01028d1d60bdfd2df891a5f2ae5d24c03"
+      "sha256": "b1759071e31eea37ac80d2577c343b8c4aa67215bd9bd15218794e13e1575f20"
     },
     {
       "path": "/static/js/lib-react.a5c08f7c30.js",

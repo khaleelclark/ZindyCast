@@ -1,0 +1,53 @@
+{
+  "phase": "after",
+  "browser": "152.0.7977.75",
+  "cpuThrottle": 4,
+  "switches": [
+    {
+      "tab": "Settings",
+      "ms": 137.09999990463257,
+      "dateFormatterConstructions": 0
+    },
+    {
+      "tab": "History",
+      "ms": 72.70000004768372,
+      "dateFormatterConstructions": 0
+    },
+    {
+      "tab": "Compare",
+      "ms": 49.5,
+      "dateFormatterConstructions": 0
+    },
+    {
+      "tab": "Today",
+      "ms": 340.5,
+      "dateFormatterConstructions": 0
+    },
+    {
+      "tab": "Settings",
+      "ms": 105.10000014305115,
+      "dateFormatterConstructions": 0
+    },
+    {
+      "tab": "History",
+      "ms": 44.59999990463257,
+      "dateFormatterConstructions": 0
+    },
+    {
+      "tab": "Compare",
+      "ms": 40.39999985694885,
+      "dateFormatterConstructions": 0
+    },
+    {
+      "tab": "Today",
+      "ms": 433.7999999523163,
+      "dateFormatterConstructions": 0
+    }
+  ],
+  "maxTabMs": 433.7999999523163,
+  "pageErrors": [],
+  "horizon14Works": true,
+  "unitsWork": true,
+  "mapsNavigationWorks": true,
+  "limitations": "Synthetic 336-hour forecast, unavailable secondary providers, external traffic blocked, 4x desktop CPU throttling. Click-to-two-animation-frames metric includes rendering; not physical-phone latency or an Android WebView benchmark. Maps navigation checked separately; live map imagery/latency unverified."
+}

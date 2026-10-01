@@ -1,0 +1,20 @@
+{
+  "phase": "after-first-run",
+  "browser": "152.0.7977.75",
+  "cpuThrottle": 4,
+  "switches": [
+    { "tab": "Settings", "ms": 215.20000004768372, "dateFormatterConstructions": 0 },
+    { "tab": "History", "ms": 129.5, "dateFormatterConstructions": 0 },
+    { "tab": "Compare", "ms": 90.5, "dateFormatterConstructions": 0 },
+    { "tab": "Today", "ms": 778.5, "dateFormatterConstructions": 0 },
+    { "tab": "Settings", "ms": 156.89999985694885, "dateFormatterConstructions": 0 },
+    { "tab": "History", "ms": 174, "dateFormatterConstructions": 0 },
+    { "tab": "Compare", "ms": 91.29999995231628, "dateFormatterConstructions": 0 },
+    { "tab": "Today", "ms": 747.6000001430511, "dateFormatterConstructions": 0 }
+  ],
+  "maxTabMs": 778.5,
+  "pageErrors": [],
+  "horizon14Works": true,
+  "unitsWork": true,
+  "limitations": "Preserved from the first successful after-run output before adding the formatter-count assertion and Maps navigation check. Synthetic 336-hour forecast, unavailable secondary providers, external traffic blocked, 4x desktop CPU throttling. Not physical-phone or Android WebView latency."
+}

@@ -1,0 +1,52 @@
+{
+  "phase": "before",
+  "browser": "152.0.7977.75",
+  "cpuThrottle": 4,
+  "switches": [
+    {
+      "tab": "Settings",
+      "ms": 1644.8999998569489,
+      "dateFormatterConstructions": 5690
+    },
+    {
+      "tab": "History",
+      "ms": 1041.5,
+      "dateFormatterConstructions": 2845
+    },
+    {
+      "tab": "Compare",
+      "ms": 805,
+      "dateFormatterConstructions": 2845
+    },
+    {
+      "tab": "Today",
+      "ms": 3599,
+      "dateFormatterConstructions": 9360
+    },
+    {
+      "tab": "Settings",
+      "ms": 1719.7999999523163,
+      "dateFormatterConstructions": 5690
+    },
+    {
+      "tab": "History",
+      "ms": 768.0999999046326,
+      "dateFormatterConstructions": 2845
+    },
+    {
+      "tab": "Compare",
+      "ms": 745.5999999046326,
+      "dateFormatterConstructions": 2845
+    },
+    {
+      "tab": "Today",
+      "ms": 3292.9000000953674,
+      "dateFormatterConstructions": 9360
+    }
+  ],
+  "maxTabMs": 3599,
+  "pageErrors": [],
+  "horizon14Works": true,
+  "unitsWork": true,
+  "limitations": "Synthetic 336-hour forecast, unavailable secondary providers, external traffic blocked, 4x desktop CPU throttling. Click-to-two-animation-frames metric includes rendering; not physical-phone latency or an Android WebView benchmark."
+}

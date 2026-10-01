@@ -5,11 +5,24 @@ export type { Units } from './metric-display';
 export const temperature = (value: number | null | undefined, units: Units) => metricValue('temperatureC', value, units, 'compact', '—').replace(/[FC]$/, '');
 export const speed = (value: number | null | undefined, units: Units) => metricValue('windSpeedMs', value, units, 'compact', '—');
 export const rain = (value: number | null | undefined, units: Units) => value == null ? '—' : metricValue('precipitationMm', value, units, units === 'us' ? 'compact' : 'detail', '—');
+// Reuse formatting rules, not formatted times: DST and each timestamp are still
+// interpreted by Intl. Bound the cache as users switch cities and chart formats.
+const dateFormatters = new Map<string, Intl.DateTimeFormat>();
+function dateFormatter(timezone: string, options: Intl.DateTimeFormatOptions) {
+  const resolved = { ...options, timeZone: timezone };
+  const key = JSON.stringify(Object.entries(resolved).filter(([, value]) => value !== undefined).sort(([a], [b]) => a < b ? -1 : a > b ? 1 : 0));
+  let formatter = dateFormatters.get(key);
+  if (!formatter) formatter = new Intl.DateTimeFormat('en-US', resolved);
+  dateFormatters.delete(key);
+  dateFormatters.set(key, formatter);
+  if (dateFormatters.size > 64) dateFormatters.delete(dateFormatters.keys().next().value!);
+  return formatter;
+}
 export function timeLabel(time: string, timezone: string, options: Intl.DateTimeFormatOptions) {
-  return new Intl.DateTimeFormat('en-US', { ...options, timeZone: timezone }).format(new Date(time));
+  return dateFormatter(timezone, options).format(new Date(time));
 }
 export function dayKey(time: string, timezone: string) {
-  const parts = new Intl.DateTimeFormat('en-US', { timeZone: timezone, year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(new Date(time));
+  const parts = dateFormatter(timezone, { year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(new Date(time));
   return ['year', 'month', 'day'].map(type => parts.find(part => part.type === type)!.value).join('-');
 }
 export const placeLabel = (location: Location) => [location.name, location.admin2, location.admin1, location.country].filter(Boolean).join(', ');
@@ -28,19 +41,25 @@ export function currentHour(hours: Hour[], now: number) {
 export function dailyGroups(forecast: Forecast, now: number, horizon: number) {
   const today = dayKey(new Date(now).toISOString(), forecast.location.timezone);
   const groups = new Map<string, Hour[]>();
+  const rainGroups = new Map<string, Hour[]>();
   for (const hour of forecast.hours) {
     const key = dayKey(hour.time, forecast.location.timezone);
-    if (key >= today) groups.set(key, [...(groups.get(key) ?? []), hour]);
+    if (key >= today) {
+      if (!groups.has(key)) groups.set(key, []);
+      groups.get(key)!.push(hour);
+    }
+    // The contract defines precipitation over [endpoint - 1h, endpoint).
+    // Group each whole interval once, retaining local-date/DST boundaries.
+    const end = Date.parse(hour.time);
+    const rainKey = dayKey(new Date(end - 3_600_000).toISOString(), forecast.location.timezone);
+    if (rainKey >= today && dayKey(new Date(end - 1).toISOString(), forecast.location.timezone) === rainKey) {
+      if (!rainGroups.has(rainKey)) rainGroups.set(rainKey, []);
+      rainGroups.get(rainKey)!.push(hour);
+    }
   }
   return [...groups.entries()].slice(0, horizon).map(([key, hours]) => {
     const temperatures = hours.flatMap(hour => hour.temperatureC == null ? [] : [hour.temperatureC]);
-    // The contract defines precipitation over [endpoint - 1h, endpoint).
-    // Only whole intervals within this local date qualify; do not prorate crossing intervals.
-    const rainHours = forecast.hours.filter(hour => {
-      const end = Date.parse(hour.time);
-      return dayKey(new Date(end - 3_600_000).toISOString(), forecast.location.timezone) === key
-        && dayKey(new Date(end - 1).toISOString(), forecast.location.timezone) === key;
-    });
+    const rainHours = rainGroups.get(key) ?? [];
     const rainTotal = rainHours.length && rainHours.every(hour => hour.precipitationMm !== null)
       ? rainHours.reduce((total, hour) => total + hour.precipitationMm!, 0) : null;
     return { key, hours, rainHours, rainTotal, low: temperatures.length ? Math.min(...temperatures) : null, high: temperatures.length ? Math.max(...temperatures) : null };
@@ -76,7 +95,7 @@ export function hourlySummary(hours: Hour[], rainHours = hours) {
 export function forecastPeriods(forecast: Forecast, now: number) {
   const zone = forecast.location.timezone, today = dayKey(new Date(now).toISOString(), zone);
   const tomorrow = new Date(Date.parse(`${today}T12:00:00Z`) + 86400000).toISOString().slice(0, 10);
-  const localHour = (time: string) => Number(new Intl.DateTimeFormat('en-US', { timeZone: zone, hour: 'numeric', hourCycle: 'h23' }).format(new Date(time)));
+  const localHour = (time: string) => Number(timeLabel(time, zone, { hour: 'numeric', hourCycle: 'h23' }));
   const specs = [
     { label: 'Today', contains: (time: string) => dayKey(time, zone) === today && localHour(time) >= 6 && localHour(time) < 18 },
     { label: 'Tonight', contains: (time: string) => dayKey(time, zone) === today && localHour(time) >= 18 || dayKey(time, zone) === tomorrow && localHour(time) < 6 },

@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { currentHour, dailyGroups, dayKey, parseForecast, rain, speed, temperature } from './weather';
+import { currentHour, dailyGroups, dayKey, parseForecast, rain, speed, temperature, timeLabel } from './weather';
 import type { Forecast, Hour } from '@zindycast/contracts';
 const hour: Hour = { time: '2026-11-01T08:00:00Z', temperatureC: 0, apparentTemperatureC: -1, humidityPercent: 50, precipitationMm: null, precipitationProbability: null, windSpeedMs: 1, windGustMs: null, windDirectionDeg: null, weatherCode: 0, ordinaryWetBulbC: null, dewPointC: null, surfacePressureHpa: null, cloudCoverPercent: null, visibilityM: null, uvIndex: null };
 const forecast: Forecast = { location: { id: 'test', name: 'Test only', country: 'US', latitude: 0, longitude: 0, timezone: 'America/Los_Angeles' }, provenance: { provider: 'test', dataset: 'fixture', classification: 'modeled', retrievedAt: '2026-11-01T08:00:00Z', sourceIssuedAt: null, sourceCoordinates: { latitude: 0, longitude: 0 }, attribution: 'test' }, hours: [hour], intervalSemantics: 'instant meteorology; precipitation and probability preceding hour; gust preceding-hour maximum', missingFields: [] };
@@ -14,6 +14,19 @@ test('local calendar uses location timezone across UTC midnight and DST repeat',
   assert.equal(dayKey('2026-11-01T09:00:00Z', 'America/Los_Angeles'), '2026-11-01');
   assert.equal(dayKey('2026-07-01T06:30:00Z', 'America/Phoenix'), '2026-06-30');
   assert.equal(dayKey('2026-07-01T09:30:00Z', 'Pacific/Honolulu'), '2026-06-30');
+});
+test('reused date formatting preserves timestamp, timezone, options and DST abbreviations', () => {
+  const options: Intl.DateTimeFormatOptions = { hour: 'numeric', minute: '2-digit', timeZoneName: 'short' };
+  for (const zone of ['America/Los_Angeles', 'America/Phoenix', 'Asia/Kathmandu']) {
+    for (const time of ['2026-07-01T08:00:00Z', '2026-11-01T08:00:00Z', '2026-11-01T09:00:00Z']) {
+      assert.equal(timeLabel(time, zone, options), new Intl.DateTimeFormat('en-US', { ...options, timeZone: zone }).format(new Date(time)));
+      assert.equal(timeLabel(time, zone, { timeZoneName: 'short', minute: '2-digit', hour: 'numeric' }), timeLabel(time, zone, options));
+    }
+  }
+  assert.notEqual(timeLabel('2026-11-01T08:00:00Z', 'America/Los_Angeles', options), timeLabel('2026-11-01T09:00:00Z', 'America/Los_Angeles', options));
+  assert.equal(timeLabel(hour.time, 'UTC', { year: 'numeric' }), '2026');
+  assert.throws(() => timeLabel(hour.time, 'invalid/zone', options), RangeError);
+  assert.throws(() => dayKey('not a date', 'UTC'), RangeError);
 });
 test('current conditions never borrow a future or expired hour', () => {
   assert.equal(currentHour([hour], Date.parse('2026-11-01T07:59:00Z')), undefined);
@@ -40,6 +53,15 @@ test('midnight precipitation belongs to preceding date, missing intervals stay m
   assert.equal(days[0]?.rainHours.length, 2);
   data.hours[1]!.precipitationMm = null;
   assert.equal(dailyGroups(data, Date.parse(hours[0]!.time), 7)[0]?.rainTotal, null);
+});
+test('daily rain excludes an hourly interval crossing midnight in a fractional-offset timezone', () => {
+  const hours = ['2026-07-01T18:00:00Z', '2026-07-01T19:00:00Z', '2026-07-01T20:00:00Z'].map((time, index) => ({ ...hour, time, precipitationMm: index + 1 }));
+  const data = { ...forecast, location: { ...forecast.location, timezone: 'Asia/Kathmandu' }, hours };
+  const day = dailyGroups(data, Date.parse('2026-07-01T19:00:00Z'), 1)[0]!;
+  assert.equal(day.key, '2026-07-02');
+  assert.deepEqual(day.hours.map(hour => hour.time), hours.slice(1).map(hour => hour.time));
+  assert.deepEqual(day.rainHours.map(hour => hour.time), [hours[2]!.time]);
+  assert.equal(day.rainTotal, 3);
 });
 test('precipitation uses 23/25 actual intervals on spring/fall local DST days', () => {
   for (const [start, length] of [['2026-03-08T08:00:00Z', 23], ['2026-11-01T07:00:00Z', 25]] as const) {
