@@ -31,3 +31,13 @@ Browser scripts intercept all traffic; forecast responses are clearly named fixt
 ## Device follow-up
 
 Use the affected Android phone/WebView version to compare cold start, continuous Today scrolling, pull-to-refresh, and map pan/animation. Record long tasks and frame timing with weather motion enabled and paused. Confirm pull interruption, two-finger gestures, and native WebView interaction after the web change is delivered. A native APK rebuild alone will not publish these web changes: the shell renders the deployed PWA. Deployment remains with the manager and was not performed here.
+
+## Lead delivery verification — October 1, 2026
+
+The accepted web changes are committed as `2b29e8a`. The existing private API serves `apps/web/dist` directly from the canonical checkout, so the integrated production build published the changed assets without a service restart. The previous handoff's pending-deployment note is superseded by this verification. No API/worker restart, database change, network configuration change, or new APK was needed.
+
+Certificate-verified private HTTPS returned the exact local build bytes for HTML, service worker, manifest, and all four initial JS/CSS assets; health returned HTTP 200 / `ok`. HTML/worker/manifest revalidate, and hashed JS/CSS retain immutable caching. `delivery-results.json` records hashes and the checks.
+
+Run `ZINDYCAST_VERIFY_ORIGIN=<private-HTTPS-origin> node docs/verification/mobile-ux/live-delivery.mjs` to reproduce. A disposable Chromium profile at 390 px loaded the served app, installed the current service worker, and reloaded under its control. A browser-only inert marker then simulated a subsequent shell identity: the actual Update button preserved the open Settings view until clicked, loaded the changed shell, and retained preferences. Zero uncaught page errors. All browser API requests returned intercepted unavailable fixtures; this check made no live weather/provider calls and changed no real installation state.
+
+Installed clients should reopen ZindyCast while connected to Tailscale and use the existing **Update** button when offered. The gesture fixes are delivered by the web shell; the 0.1.3 APK remains the Android logo update. Physical-phone smoothness and Android WebView frame timing remain unverified.

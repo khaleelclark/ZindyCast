@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-10-01T19:35:11.605Z",
+  "browser": "152.0.7977.75",
+  "responses": [
+    {
+      "path": "/",
+      "status": 200,
+      "cacheControl": "no-cache",
+      "sha256": "dad7bf3a9041bacc90945bc22502de44376a6c101c3fb9c01c4a2dfdb9acb99d"
+    },
+    {
+      "path": "/sw.js",
+      "status": 200,
+      "cacheControl": "no-cache",
+      "sha256": "263511759a7c963fb654805e063e9b4874f0f5270dd701bc1017d4d8405b9d6f"
+    },
+    {
+      "path": "/manifest.webmanifest",
+      "status": 200,
+      "cacheControl": "no-cache",
+      "sha256": "7ac84a9b37ba18c93e3cc43b3b2e4b6f5178ab4a7a75f5f628a9e2b25726749e"
+    },
+    {
+      "path": "/static/css/index.4faad216ea.css",
+      "status": 200,
+      "cacheControl": "public, max-age=31536000, immutable",
+      "sha256": "28c379afd0d4b569727658c57242449f0ede7f3339f2751de27decbe361c1b33"
+    },
+    {
+      "path": "/static/js/116.18319ecf7d.js",
+      "status": 200,
+      "cacheControl": "public, max-age=31536000, immutable",
+      "sha256": "9dcced118a1a9c3fa4f150eebee647577ce8b0e3420b9cec75e67b4fb5cff40c"
+    },
+    {
+      "path": "/static/js/index.b8c3dd30ee.js",
+      "status": 200,
+      "cacheControl": "public, max-age=31536000, immutable",
+      "sha256": "3561a94a9dfa196f1e4acd60ac096fb01028d1d60bdfd2df891a5f2ae5d24c03"
+    },
+    {
+      "path": "/static/js/lib-react.a5c08f7c30.js",
+      "status": 200,
+      "cacheControl": "public, max-age=31536000, immutable",
+      "sha256": "f41c8b77b3a7159103836e76f4f7923ae914bcfbd318e21aeeef279239670b3d"
+    }
+  ],
+  "healthOk": true,
+  "currentServiceWorkerControlsReload": true,
+  "updateButtonPreservesOpenSettingsUntilClicked": true,
+  "updateLoadsNewShellAndPreservesPreferences": true,
+  "pageErrors": [],
+  "limitations": "Certificate-verified private HTTPS and disposable desktop Chromium at phone width. API fixtures return unavailable; no live weather calls. Update transition uses an inert marker intercepted only in this browser. No physical-phone or Android WebView performance claim."
+}

@@ -93,6 +93,8 @@ The 0.1.3 checks cover native-to-PWA preference migration, server validation, Re
 
 ## Data behavior and remaining scope
 
+The Android shell loads the deployed PWA. Web UI fixes can arrive without installing another APK: reopen ZindyCast with the private server reachable and tap **Update** when the web app offers it. The update saves city, units and other PWA preferences before reloading. APK updates are still needed for native changes such as the launcher logo. The October 1 pull-to-refresh fixes are available on the private server; browser delivery/update evidence is in `docs/verification/mobile-ux/review.md`. Physical-phone performance has not been verified here.
+
 The web UI owns weather retrieval, freshness, source labels and layout. WebView keeps its own browser storage for PWA preferences; the first 0.1.2 launch seeds it with the earlier native build's city and units if no web preferences exist. The server origin remains in native device storage. The shell opens external links in the device browser and shows retry/server controls if the PWA cannot load.
 
 PWA features shown inside WebView require the configured server and network access. Browser Web Push subscriptions do not become native Android background notifications. Tapping **Use my location** now opens Android's location permission prompt, but a successful GPS fix was not established on the emulator. Downloads, service worker/offline behavior and WebView-specific permissions need separate device checks before being claimed equivalent to Chrome. Official alerts shown in the PWA are foreground information; retain independent warning channels. The browser PWA remains available unchanged.
