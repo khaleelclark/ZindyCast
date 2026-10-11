@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-11T01:56:39.382Z",
+  "markdownFiles": 116,
+  "checkedLocalLinks": 403,
+  "checkedCurrentShellBlocks": 23,
+  "androidVersion": "0.1.4",
+  "androidVersionCode": 5,
+  "failures": [],
+  "historicalImageLinks": [
+    {
+      "file": "docs/reviews/competitive-review.md",
+      "target": "competitive/wunderground-browser.png"
+    },
+    {
+      "file": "docs/reviews/competitive-review.md",
+      "target": "competitive/weather-com-browser.png"
+    },
+    {
+      "file": "docs/reviews/competitive-review.md",
+      "target": "competitive/windy-browser.png"
+    },
+    {
+      "file": "docs/reviews/competitive-review.md",
+      "target": "competitive/today-desktop.png"
+    },
+    {
+      "file": "docs/reviews/competitive-review.md",
+      "target": "competitive/today-mobile.png"
+    },
+    {
+      "file": "docs/reviews/competitive-review.md",
+      "target": "competitive/maps-desktop.png"
+    },
+    {
+      "file": "docs/reviews/competitive-review.md",
+      "target": "competitive/satellite-mobile.png"
+    },
+    {
+      "file": "docs/reviews/competitive-review.md",
+      "target": "competitive/history-result-mobile.png"
+    },
+    {
+      "file": "docs/reviews/competitive-review.md",
+      "target": "competitive/compare-mobile.png"
+    },
+    {
+      "file": "docs/reviews/competitive-review.md",
+      "target": "competitive/simulated-network-failure.png"
+    },
+    {
+      "file": "docs/reviews/competitive-review.md",
+      "target": "competitive/settings-mobile.png"
+    },
+    {
+      "file": "docs/verification/browser-comparison.md",
+      "target": "browser-comparison/results/completed.png"
+    },
+    {
+      "file": "docs/verification/browser-comparison.md",
+      "target": "browser-comparison/results/cancelled.png"
+    },
+    {
+      "file": "docs/verification/map-fix/README.md",
+      "target": "conus.png"
+    },
+    {
+      "file": "docs/verification/map-fix/README.md",
+      "target": "mercator.png"
+    },
+    {
+      "file": "docs/verification/map-imagery-diagnosis/README.md",
+      "target": "florida-satellite.png"
+    },
+    {
+      "file": "docs/verification/map-imagery-diagnosis/README.md",
+      "target": "forecast-z9.png"
+    },
+    {
+      "file": "docs/verification/map-quality/README.md",
+      "target": "satellite-before.png"
+    },
+    {
+      "file": "docs/verification/map-quality/README.md",
+      "target": "satellite-45.png"
+    },
+    {
+      "file": "docs/verification/map-quality/README.md",
+      "target": "future-fixture.png"
+    },
+    {
+      "file": "docs/verification/map-quality/README.md",
+      "target": "forecast-interpolation.png"
+    },
+    {
+      "file": "docs/verification/maps/README.md",
+      "target": "live-alaska-radar.png"
+    },
+    {
+      "file": "docs/verification/radar-deep-audit/README.md",
+      "target": "zoom7.png"
+    },
+    {
+      "file": "docs/verification/radar-deep-audit/README.md",
+      "target": "zoom10.png"
+    }
+  ],
+  "excludedUpstreamSnapshot": "docs/verification/librewxr-trial/readme-upstream.md",
+  "scope": "Offline local links/anchors, shell syntax, release metadata and environment keys. No command execution, external-link availability, runtime restore or device verification."
+}

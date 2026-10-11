@@ -2,6 +2,8 @@
 
 A self-hosted weather PWA built with React, TypeScript, Rsbuild and Fastify, plus a native Android app in the same npm workspace. The PWA combines current conditions, forecasts, weather maps, historical browsing and city comparisons, with feels-like temperature and estimated outdoor WBGT alongside ordinary temperature.
 
+Documentation reviewed October 11, 2026. Start with the [documentation guide](docs/README.md), [current scope and acceptance limits](docs/status.md), and [production operations guide](docs/operations/README.md). Dated research and verification reports describe their original revision.
+
 ## Quick start with Docker
 
 Install Docker Engine with the Compose plugin, then run:
@@ -47,7 +49,9 @@ The initial build needs internet access for dependency installation; weather req
 
 `apps/mobile` is an installable React Native/Expo Android shell. Since version 0.1.2 it displays the existing mobile PWA in WebView, so Today/Tomorrow, radar, visible WBGT band graph, maps, history and settings share the same UI as the browser PWA. The Android app's server address is entered on first launch; private deployments require HTTPS and an authorized tailnet connection on the device.
 
-See [Android setup, Android Studio emulator steps and APK build instructions](apps/mobile/README.md), the [initial release record](docs/verification/android-app-release/README.md) and the [PWA visual parity update](docs/verification/android-pwa-parity/README.md). Project files include separate ARM64 phone and x86_64 emulator APKs. A direct APK install does not need the Play Store. Native background notifications remain future work; WebView-specific browser capabilities require device verification.
+The current Android release is **0.1.4** (version code 5), with the ZindyCast launcher/startup artwork and four home-screen widgets: feels-like gauge, air temperature, outdoor WBGT and a large combined card. Install the signed ARM64 phone APK from Project files, open the app once and select a city, then long-press your home screen → Widgets → ZindyCast. Widgets follow that installation's city and units; their modeled readings can differ from the PWA's station observations. Tailscale must remain connected for private-server updates.
+
+See [Android setup, Android Studio emulator steps and APK build instructions](apps/mobile/README.md) and the [0.1.4 widget release evidence](docs/verification/android-widgets/README.md). Project files include separate ARM64 phone and x86_64 emulator APKs. A direct APK install does not need the Play Store or Metro. Updates over the prior signed release preserve app data; replacing a differently signed debug build requires uninstalling it and clears its settings. Native background notifications remain future work; WebView-specific browser capabilities and physical-phone widgets require device verification.
 
 ## Features
 
@@ -102,13 +106,21 @@ npm run build
 npm test
 ```
 
-Build before running the complete test suite because some tests inspect generated web assets. Browser and live-provider evidence under `docs/verification/` describes the checks actually performed; physical-device behavior is not guaranteed by browser emulation.
+Build before running the complete test suite because some tests inspect generated web assets. Root `npm test` covers the web, API, worker and shared packages. Run mobile and deployment tests separately:
+
+```sh
+npm run typecheck --workspace @zindycast/mobile
+npm run test --workspace @zindycast/mobile
+node --import tsx --test deploy/*.test.ts
+```
+
+Browser and live-provider evidence under `docs/verification/` describes the checks actually performed; physical-device behavior is not guaranteed by browser emulation. When checking a running installation, use an isolated web output directory: building directly into `apps/web/dist` publishes assets immediately if the API serves that checkout.
 
 ## Data, backups and updates
 
-Back up the SQLite databases together while the API and worker are stopped, or use a consistent SQLite backup procedure. They contain installation credentials, preferences, job state and provider coordination. Do not commit or distribute `var/`. Clearing coordination storage also resets persisted provider budgets, so it is not a routine cache-clear operation.
+Back up all five core SQLite databases together while the API and worker are stopped, plus the wet-bulb tracker database when enabled and any retained tracker data. They contain installation credentials, subscriptions, server notification preferences, job state and provider coordination. Browser/WebView city and unit preferences remain on each device. Follow the [complete backup and restore procedure](docs/operations/README.md#backup-and-restore), including protected runtime configuration. Do not commit or distribute `var/`. Clearing coordination storage also resets persisted provider budgets, so it is not a routine cache-clear operation.
 
-For a Node.js update, stop the processes, back up data, install dependencies with `npm ci --include=dev`, run the checks and build, then restart the API and worker. For Docker, back up the `zindycast-data` volume and recreate the services with `docker compose up --build -d`. Installed clients may need **Update and reload**. The offline shell does not make weather data current.
+For a Node.js update, stop the processes, back up data, install dependencies with `npm ci --include=dev`, run the checks and build, then restart the API and worker. For Docker, back up the stopped `zindycast-data` volume and recreate the services with `docker compose up --build -d`. Installed clients offer **Update** in an **Update available** banner only when a newer web shell is waiting. Reopen the app with the server reachable; an already-current client has no update button. The Today **Refresh** button updates weather data separately. Web UI changes need web delivery; native changes such as widgets need a new APK. The offline shell does not make weather data current.
 
 ## Repository layout
 

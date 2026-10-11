@@ -1,5 +1,7 @@
 # Research status ledger
 
+> Historical research ledger from September 10, 2026. Its pre-DEVELOP statements and open tasks describe that research phase, not the current application. Numerical WBGT implementation, private deployment and later features are documented in [current status](../status.md) and the [verification index](../verification/README.md). Original scientific findings and evidence remain preserved below.
+
 Updated September 10, 2026. Research/documentation only; DEVELOP has not been given. No application development, dependency installation, accounts, subscriptions, deployment, deployment host access, or live notification sends authorized in this phase.
 
 Source plan: [implementation plan](../implementation-plan.md), preserved from the complete user attachment. Prior live availability checks are user-supplied evidence, not independently repeated here.

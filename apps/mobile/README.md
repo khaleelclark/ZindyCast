@@ -1,6 +1,27 @@
 # ZindyCast Android
 
-Version 0.1.3 is an installable React Native/Expo Android shell that displays the existing mobile PWA in Android WebView. The Today/Tomorrow layout, radar, visible WBGT band graph, maps, history, comparisons and settings therefore use the same web UI and server logic as the PWA. The shell supplies private HTTPS server setup, external-link handling and migration of the previous Android build's selected city and units. The PWA remains independently installable in a browser. The launcher icon, themed icon, and startup screen use the same ZindyCast sun-and-waves mark as the PWA. No Expo cloud build service is required.
+Guide reviewed October 11, 2026. See [current project status](../../docs/status.md) and [server operations](../../docs/operations/README.md) for deployed web updates, optional features and remaining acceptance checks.
+
+Version 0.1.4 is an installable React Native/Expo Android shell that displays the existing mobile PWA in Android WebView. The Today/Tomorrow layout, radar, visible WBGT band graph, maps, history, comparisons and settings therefore use the same web UI and server logic as the PWA. The shell supplies private HTTPS server setup, external-link handling and migration of the previous Android build's selected city and units. The PWA remains independently installable in a browser. The launcher icon, themed icon, and startup screen use the same ZindyCast sun-and-waves mark as the PWA. No Expo cloud build service is required.
+
+## Android home-screen widgets (0.1.4)
+
+Install the signed **0.1.4 ARM64 APK** over your signed release copy, then open ZindyCast once and choose a city. Long-press an empty space on your Android home screen, choose **Widgets**, find **ZindyCast**, and drag one of these onto the home screen:
+
+- **Feels like**: a rounded temperature gauge (2×2).
+- **Air temperature**: a sunny temperature card (2×2).
+- **Outdoor WBGT**: the modeled outdoor heat estimate and NWS Tulsa reference colors (2×2).
+- **Together**: feels-like gauge, air temperature and WBGT in one larger card (4×3).
+
+All four follow the app's currently selected city and Fahrenheit/Celsius setting. Reopen the app after changing the server so its PWA preferences reach the widgets. Each widget can be resized within its supported minimum size. Tap a card to open ZindyCast; tap **↻** to request a weather refresh. The large widget preserves readable text when made shorter, down to its advertised minimum height. A city change clears the prior city's cached readings immediately.
+
+The widgets fetch the existing forecast endpoint through native HTTPS; no WebView or Metro runs on the home screen. Android requests a refresh about every 30 minutes and may delay it while saving battery or while offline. The server must remain reachable from the phone, including Tailscale when applicable. Widgets are weather summaries, not background warning notifications. Their cached data stays on this installation.
+
+Air temperature and feels-like use **Open-Meteo modeled** current conditions when eligible, otherwise the matching hourly forecast. The PWA can prefer a nearby NWS station observation for air temperature, so that number can differ. WBGT is the existing server's **modeled outdoor short-grass reference estimate**, using the current eligible forecast hour; it is not ordinary wet bulb. Reference colors follow the existing NWS Tulsa bands, with exact boundary values at band edges; they do not represent personal safe-exposure limits. Tap the widget to read the app's source context and guidance.
+
+Each widget labels its source and the reading's local valid time. Missing values display **—**. Old cached temperature/feels-like readings are muted and explicitly marked old; stale, expired, malformed or failed-fetch WBGT displays **—**. A connection failure retains the previous temperatures with an old-reading/Tailscale label, rather than treating the check time as a new observation. Android can retain the last rendered home-screen frame while delaying refreshes: always read its **As of** timestamp. Widgets cannot promise continuously current weather while the device is asleep or offline.
+
+Native source is in `widgets/`; the `with-widgets.cjs` Expo plugin copies receivers, the refresh job, the React Native preference bridge, layouts and resources into the generated Android project. Keep changes there so prebuild preserves them. No new npm or native library dependency is required. Widget verification and the standalone emulator test host are documented in `docs/verification/android-widgets/README.md`.
 
 ## Configure and run
 
@@ -27,12 +48,12 @@ npm run android --workspace @zindycast/mobile
 
 ## Try the released app in Android Studio
 
-1. Download the current **ZindyCast-Android-0.1.3-x86_64-emulator.apk** from Project files for an x86_64 emulator. The separate **ZindyCast-Android-0.1.3-arm64.apk** is for an ARM64 phone or emulator. The older 0.1.0 APKs show the superseded native layout; 0.1.2 has the PWA layout but the default Android icon. An APK with the wrong native architecture will not install.
+1. Download the current **ZindyCast-Android-0.1.4-x86_64-emulator.apk** from Project files for an x86_64 emulator. The separate **ZindyCast-Android-0.1.4-arm64.apk** is for an ARM64 phone or emulator. The older 0.1.0 APKs show the superseded native layout; 0.1.2 has the PWA layout but the default Android icon. An APK with the wrong native architecture will not install.
 2. In Android Studio, open **Device Manager**, create a virtual phone with an Android API 36 system image matching the APK architecture, and start it. See Google's [Device Manager guide](https://developer.android.com/studio/run/managing-avds).
-3. Drag the downloaded APK onto the running emulator window and open **ZindyCast** from its app list. Google's [APK install guide](https://developer.android.com/studio/run/emulator-install-add-files) shows this flow. Alternatively, run `adb devices` followed by `adb install -r path/to/ZindyCast-Android-0.1.3-x86_64-emulator.apk` in a terminal with Android SDK Platform Tools on `PATH`.
+3. Drag the downloaded APK onto the running emulator window and open **ZindyCast** from its app list. Google's [APK install guide](https://developer.android.com/studio/run/emulator-install-add-files) shows this flow. Alternatively, run `adb devices` followed by `adb install -r path/to/ZindyCast-Android-0.1.4-x86_64-emulator.apk` in a terminal with Android SDK Platform Tools on `PATH`.
 4. On first launch, enter the exact private HTTPS **origin** used for the PWA: its scheme, hostname and port if present. Do not add `/api/v1`, a password, or an API key; example/test hostnames are rejected. If the server uses Tailscale, the **emulator** needs an authorized network path to it. Check that the emulator's browser can open the PWA address before opening the APK. Then use the same Today/Maps/History/Compare/Settings interface you see in the mobile browser.
 
-This is a standalone release build: Android Studio does not need to open the source project, and Metro/Expo Go need not run. The x86_64 APK is for emulator testing; use the ARM64 APK on a physical phone. Both 0.1.3 APKs use the same persistent signing key and higher version code as 0.1.0, so `adb install -r` updates the prior release while retaining app data. If `adb` reports `INSTALL_FAILED_NO_MATCHING_ABIS`, use the matching APK. A debug build from Android Studio uses a different signing key; uninstalling a release app to install it clears saved settings.
+This is a standalone release build: Android Studio does not need to open the source project, and Metro/Expo Go need not run. The x86_64 APK is for emulator testing; use the ARM64 APK on a physical phone. Both 0.1.4 APKs use the same persistent signing key as earlier releases and a higher version code than 0.1.3, so `adb install -r` updates the prior release while retaining app data. If `adb` reports `INSTALL_FAILED_NO_MATCHING_ABIS`, use the matching APK. A debug build from Android Studio uses a different signing key; uninstalling a release app to install it clears saved settings.
 
 ## Debug the source in Android Studio
 
@@ -76,7 +97,7 @@ cd apps/mobile/android
 adb install -r app/build/outputs/apk/release/app-release.apk
 ```
 
-The source-controlled Expo signing plugin requires all four signing environment variables for release tasks and prevents fallback to the debug key. Generate and retain the private signing key outside this repository through the lead's release procedure. Losing it prevents updates to existing installations. The 0.1.0 release record is in `docs/verification/android-app-release/README.md`; the 0.1.2 visual correction is recorded in `docs/verification/android-pwa-parity/README.md`; the 0.1.3 icon update is recorded in `docs/verification/android-icon-release/README.md`. Supply the same persistent signing key for future updates. Build with `-PreactNativeArchitectures=x86_64` for a smaller emulator APK. Native files are generated/ignored and can be recreated from app.json; do not store a signing key in source control. No EAS account needed. Change the server in the app without rebuilding. A changed environment default requires rebuilding.
+The source-controlled Expo signing plugin requires all four signing environment variables for release tasks and prevents fallback to the debug key. Generate and retain the private signing key outside this repository through the lead's release procedure. Losing it prevents updates to existing installations. The 0.1.0 release record is in `docs/verification/android-app-release/README.md`; the 0.1.2 visual correction is recorded in `docs/verification/android-pwa-parity/README.md`; the 0.1.3 icon update is recorded in `docs/verification/android-icon-release/README.md`; the 0.1.4 widgets are recorded in `docs/verification/android-widgets/README.md`. Supply the same persistent signing key for future updates. Build with `-PreactNativeArchitectures=x86_64` for a smaller emulator APK. Native files are generated/ignored and can be recreated from app.json; do not store a signing key in source control. No EAS account needed. Change the server in the app without rebuilding. A changed environment default requires rebuilding.
 
 ## Checks
 
@@ -89,7 +110,7 @@ npm run verify:react --workspace @zindycast/mobile
 
 `build` exports an Android Hermes/Metro bundle, not an APK. `generate:android` creates the native project without installing dependencies. Expo SDK 57.0.25's bundled dependency matrix supplies React 19.2.3 / RN 0.86.3; `metro.config.js` explicitly resolves `react` and every `react/*` subpath to mobile React 19.2.3 for all importers, including hoisted Expo/React Native. The web workspace keeps React 19.3.0. `verify:react` performs a clean Android source-map export and rejects any React module outside mobile's copy. Metro resolves `@zindycast/contracts` source directly.
 
-The 0.1.3 checks cover native-to-PWA preference migration, server validation, React singleton resolution, bundle export, signed APK construction and Android emulator launch. Mobile typecheck and all 11 mobile tests pass; the web build retains its existing MapLibre warning. See the versioned verification records for exact evidence. Physical phone installation is still pending.
+The 0.1.4 checks cover preference synchronization, server validation, signed APK construction, Android emulator launch and all four live widgets. Root and mobile typechecks, all 14 mobile tests and 13 native parser assertions pass; the web build retains its existing MapLibre warning. Earlier versioned records cover preference migration and React singleton resolution. See `docs/verification/android-widgets/README.md` for exact evidence and limitations. Physical-phone widget behavior remains unverified.
 
 ## Data behavior and remaining scope
 

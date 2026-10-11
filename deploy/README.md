@@ -1,5 +1,7 @@
 # Private deployment templates
 
+Reviewed October 11, 2026. The existing private installation is active; these files remain portable templates for installation or reviewed updates. Follow the [production operations guide](../docs/operations/README.md) for health checks, complete backup/restore, update and rollback procedures.
+
 These are Linux systemd **user** units, not an installer. They default to a
 checkout at `~/ZindyCast`, `/usr/bin/node` version 22.22.1, and one shared private
 environment file at `~/.config/zindycast/runtime.env`. They do not load the
@@ -15,11 +17,13 @@ unit directives. If Node is installed elsewhere, update both `ExecStartPre` and
 `ExecStart` to its absolute executable path. The templates retain the verified
 22.22.1 runtime check; changing that check requires validating the replacement.
 
-The five SQLite path variables must resolve to the same files for API and worker.
+The five core SQLite path variables must resolve to the same files for API and worker.
 Relative paths resolve against `WorkingDirectory`; for persistent data outside
 the checkout, supply explicit absolute paths in the private environment file.
 Do not put shell expansions in `EnvironmentFile` values. Preserve all five
-databases when moving an existing installation. `sqlite-snapshot.mjs SOURCE
+databases when moving an existing installation, plus the optional tracker database
+when enabled or when retained data exists. Include protected runtime configuration
+in the backup set. `sqlite-snapshot.mjs SOURCE
 NEW_DESTINATION` makes a verified snapshot of one database; stop both application
 processes before taking a consistent set across databases.
 
@@ -52,3 +56,8 @@ rotate existing keys.
 Installing templates, restarting services, and configuring remote access are
 operator actions. Merely editing these repository examples changes no running
 service.
+
+Both processes need the same optional tracker settings. The runtime template
+includes disabled placeholders; the root `.env` is not read by systemd. A web
+build into the served checkout's `apps/web/dist` publishes assets immediately,
+so use isolated output for review and follow the operations update procedure.

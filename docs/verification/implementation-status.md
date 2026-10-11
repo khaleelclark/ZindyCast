@@ -1,5 +1,7 @@
 # Implementation status
 
+> Historical implementation journal, September 10–11, 2026. The initial table and each wave's pending items describe that point in time. Use [current status](../status.md) for today's delivered scope, Android 0.1.4 and remaining acceptance gates; use the [operations guide](../operations/README.md) for current deployment and backups.
+
 DEVELOP authorized September 10, 2026. Workspace confirmed local to the intended deployment host; the private host identity and checkout path are omitted. The earlier assumption that a new remote connection was required was corrected. Local service inspection found 4310/4311 unused; unrelated listeners are preserved.
 
 | Work | Owner | Status / acceptance |

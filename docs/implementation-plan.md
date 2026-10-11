@@ -1,5 +1,7 @@
 # ZindyCast — architecture and implementation backlog
 
+> Historical planning baseline from September 10, 2026. DEVELOP was subsequently authorized that day, and the private deployment was activated after approval. The original phase instructions and backlog below are preserved as planning history. Use the [current status](status.md) for delivered scope and remaining gates, and the [operations guide](operations/README.md) for current procedures.
+
 Planning revision: September 10, 2026. Status: research and planning only. Application development must not begin until the user explicitly says “DEVELOP.” This document does not authorize purchases, account creation, or deployment.
 
 Handoff revision: prepared for Ponderosa, including explicit concurrent-agent execution instructions and the user’s device matrix. Ponderosa may begin research, planning, and read-only provider audits immediately. Implementation instructions below become active only after the user says “DEVELOP” to authorize implementation. The request to update or hand off this plan is not that authorization.
