@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="family.zindycast.widgetcheck">
+  <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="36" />
+  <queries><package android:name="family.zindycast.app" /></queries>
+  <application android:label="Widget verification" android:theme="@android:style/Theme.Material.NoActionBar">
+    <activity android:name=".WidgetHost" android:exported="true"><intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter></activity>
+  </application>
+</manifest>

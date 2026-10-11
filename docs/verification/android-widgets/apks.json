@@ -1,0 +1,12 @@
+[
+  {
+    "file": "ZindyCast-Android-0.1.4-arm64.apk",
+    "bytes": 27109838,
+    "sha256": "ea8be5ca43e39aeeba9cd20cace6b50cb9ad44eaac3db061b3f67a853dd38b7b"
+  },
+  {
+    "file": "ZindyCast-Android-0.1.4-x86_64-emulator.apk",
+    "bytes": 27538553,
+    "sha256": "8b2eb170b596373064e0aef4cf6d741b1ec5486e9ecc0e9841c015ea5dfce5e5"
+  }
+]

@@ -1,10 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { ActivityIndicator, BackHandler, Linking, Pressable, StatusBar, StyleSheet, Text, TextInput, View } from 'react-native';
+import { ActivityIndicator, BackHandler, Linking, NativeModules, Pressable, StatusBar, StyleSheet, Text, TextInput, View } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import WebView from 'react-native-webview';
 import { validateBase } from './api';
 import { migrationFallbackScript, migrationScript, type PreviousPreferences } from './migration';
+import { widgetBridgeScript, widgetPreferences } from './widgets';
 
 const preferencesKey = 'zindycast.preferences.v1';
 
@@ -56,6 +57,7 @@ function WeatherApp() {
       await AsyncStorage.setItem(preferencesKey, JSON.stringify({ ...previous, server: normalized }));
       setPrevious(value => ({ ...value, server: normalized }));
       setOrigin(normalized);
+      NativeModules.ZindyCastWidgets?.resetServer(normalized);
       setWebError('');
       setError('');
       setCanGoBack(false);
@@ -100,11 +102,15 @@ function WeatherApp() {
         sharedCookiesEnabled
         mixedContentMode="never"
         setSupportMultipleWindows={false}
-        injectedJavaScriptBeforeContentLoaded={migrationScript(previous)}
+        injectedJavaScriptBeforeContentLoaded={migrationScript(previous) + widgetBridgeScript()}
+        onMessage={event => {
+          const preferences = widgetPreferences(event.nativeEvent.data, event.nativeEvent.url, origin);
+          if (preferences) NativeModules.ZindyCastWidgets?.configure(JSON.stringify(preferences));
+        }}
         onShouldStartLoadWithRequest={request => allowNavigation(request.url)}
         onNavigationStateChange={navigation => setCanGoBack(navigation.canGoBack)}
         onLoadStart={() => setWebError('')}
-        onLoadEnd={() => web.current?.injectJavaScript(migrationFallbackScript(previous))}
+        onLoadEnd={() => web.current?.injectJavaScript(migrationFallbackScript(previous) + widgetBridgeScript())}
         onError={() => setWebError('Unable to load ZindyCast. Check your connection, Tailscale, and server address.')}
         renderLoading={() => <View style={styles.loading}><ActivityIndicator color="#234e47" /></View>}
         startInLoadingState

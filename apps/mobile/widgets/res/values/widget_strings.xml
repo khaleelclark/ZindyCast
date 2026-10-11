@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_feels">ZindyCast · Feels like</string>
+    <string name="widget_air">ZindyCast · Air temperature</string>
+    <string name="widget_wbgt">ZindyCast · Outdoor WBGT</string>
+    <string name="widget_combined">ZindyCast · Together</string>
+    <string name="widget_feels_description">A little feels-like temperature gauge for your selected city.</string>
+    <string name="widget_air_description">Air temperature in a sunny little card.</string>
+    <string name="widget_wbgt_description">Modeled outdoor wet-bulb globe temperature, with NWS Tulsa reference colors.</string>
+    <string name="widget_combined_description">Feels-like gauge, air temperature and outdoor WBGT together.</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="140dp" android:minHeight="180dp"
+    android:minResizeWidth="140dp" android:minResizeHeight="160dp"
+    android:targetCellWidth="2" android:targetCellHeight="2"
+    android:updatePeriodMillis="1800000" android:initialLayout="@layout/widget_weather"
+    android:previewLayout="@layout/widget_weather" android:description="@string/widget_air_description"
+    android:resizeMode="horizontal|vertical" android:widgetCategory="home_screen" />
