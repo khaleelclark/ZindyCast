@@ -1,5 +1,7 @@
 # Production documentation audit — October 11, 2026
 
+October 12 packaging follow-up: the exact signed 0.1.4 phone and emulator APKs are now included in the [release directory](../../../releases/android/0.1.4/README.md). The offline checker additionally verifies their presence, byte sizes and SHA-256 values against the original release manifest and the distributed checksum file. [Follow-up results](apk-inclusion-2026-10-12.json) record this check; the original audit results below retain their October 11 scope.
+
 The current guides now describe the deployed PWA and Android **0.1.4 / code 5**, including the four widgets, modeled-versus-observed readings, private HTTPS setup, signing/debug distinctions and actual web update behavior. This is a documentation review with bounded build/test checks; it does not certify every planned feature or physical device.
 
 ## Corrected documentation

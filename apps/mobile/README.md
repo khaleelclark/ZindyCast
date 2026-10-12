@@ -4,6 +4,8 @@ Guide reviewed October 11, 2026. See [current project status](../../docs/status.
 
 Version 0.1.4 is an installable React Native/Expo Android shell that displays the existing mobile PWA in Android WebView. The Today/Tomorrow layout, radar, visible WBGT band graph, maps, history, comparisons and settings therefore use the same web UI and server logic as the PWA. The shell supplies private HTTPS server setup, external-link handling and migration of the previous Android build's selected city and units. The PWA remains independently installable in a browser. The launcher icon, themed icon, and startup screen use the same ZindyCast sun-and-waves mark as the PWA. No Expo cloud build service is required.
 
+Download the signed [ARM64 phone APK](../../releases/android/0.1.4/ZindyCast-Android-0.1.4-arm64.apk) or [x86_64 emulator APK](../../releases/android/0.1.4/ZindyCast-Android-0.1.4-x86_64-emulator.apk) from the repository or Project files. See [release details and checksums](../../releases/android/0.1.4/README.md) for the included binaries.
+
 ## Android home-screen widgets (0.1.4)
 
 Install the signed **0.1.4 ARM64 APK** over your signed release copy, then open ZindyCast once and choose a city. Long-press an empty space on your Android home screen, choose **Widgets**, find **ZindyCast**, and drag one of these onto the home screen:

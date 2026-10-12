@@ -3,6 +3,7 @@ import { readFileSync, readdirSync, existsSync, writeFileSync } from 'node:fs';
 import { resolve, relative, dirname, extname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
 const root = fileURLToPath(new URL('../../../', import.meta.url));
 const excluded = new Set(['node_modules', '.git', '.expo', 'android', 'dist', 'var', 'backups']);
 function markdown(directory) {
@@ -13,7 +14,7 @@ function markdown(directory) {
   });
 }
 const docs = ['README.md', 'SECURITY.md', 'AGENTS.md'].map(p => resolve(root, p));
-for (const directory of ['docs', 'deploy', 'apps/mobile', 'packages/heat/reference']) docs.push(...markdown(resolve(root, directory)));
+for (const directory of ['docs', 'deploy', 'apps/mobile', 'packages/heat/reference', 'releases/android']) docs.push(...markdown(resolve(root, directory)));
 const upstream = 'docs/verification/librewxr-trial/readme-upstream.md';
 const failures = [], historicalImageLinks = [];
 let links = 0;
@@ -60,6 +61,18 @@ for (const name of ['README.md', 'apps/mobile/README.md', 'docs/status.md']) {
 }
 const release = JSON.parse(readFileSync(resolve(root, 'docs/verification/android-widgets/apks.json')));
 if (release.length !== 2 || release.some(item => !item.file.includes(expo.version) || !/^[a-f0-9]{64}$/.test(item.sha256) || !(item.bytes > 0))) failures.push({ problem: 'widget release manifest invalid' });
+const releaseDirectory = resolve(root, 'releases/android', expo.version);
+const checksumsPath = resolve(releaseDirectory, 'SHA256SUMS');
+const checksums = existsSync(checksumsPath) ? readFileSync(checksumsPath, 'utf8') : '';
+for (const item of release) {
+  const path = resolve(releaseDirectory, item.file);
+  if (!existsSync(path)) failures.push({ file: relative(root, path), problem: 'current APK missing' });
+  else {
+    const bytes = readFileSync(path);
+    if (bytes.length !== item.bytes || createHash('sha256').update(bytes).digest('hex') !== item.sha256) failures.push({ file: relative(root, path), problem: 'APK differs from release manifest' });
+  }
+  if (!checksums.split('\n').includes(`${item.sha256}  ${item.file}`)) failures.push({ file: relative(root, checksumsPath), problem: `missing checksum for ${item.file}` });
+}
 for (const name of ['.env.example', 'deploy/runtime.env.example']) {
   const source = readFileSync(resolve(root, name), 'utf8');
   for (const key of ['ZINDYCAST_DB_PATH', 'ZINDYCAST_JOBS_PATH', 'ZINDYCAST_INSTALLATIONS_PATH', 'ZINDYCAST_NOTIFICATIONS_PATH', 'ZINDYCAST_VERIFICATION_PATH', 'ZINDYCAST_WET_BULB_TRACKER_PATH']) {
